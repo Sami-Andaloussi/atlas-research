@@ -10,7 +10,7 @@ one question: **can a reader catch this system being wrong?**
 Public data and public APIs, never a paid data broker. World Bank, FRED, BEA, the Swiss Federal
 Statistical Office, the Swiss National Bank, Fedlex, the commercial register, public procurement.
 
-This is a constraint with teeth: it means every figure Atlas publishes can be independently
+This is a constraint with teeth: it means every number Atlas publishes can be independently
 re-fetched by whoever doubts it. It also means Atlas **cannot** promise things that are not public
 — the accounts of an unlisted Swiss company, for instance. Saying so is part of the design.
 

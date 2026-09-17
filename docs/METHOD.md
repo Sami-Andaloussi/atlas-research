@@ -13,8 +13,12 @@ No claim closes on the word of whoever produced it. Every "this is fixed" goes t
 reviewer** that did not write the fix, running on a model no weaker than the producer's.
 
 **954 audit documents** are in the repository. They are not ceremonial — they regularly overturn
-work. Three verdicts from recent sessions, the first from that set and the other two from audits of
-the build environment itself, which is governed by the same rule:
+work.
+
+Three verdicts from recent sessions. The first belongs to that set. The other two audited the
+**build environment** rather than Atlas itself, and their reports are **not in the repository** —
+they are quoted here because they are the sharpest examples, and flagged because you cannot check
+them from the outside:
 
 - A fix I was confident in was found to have a **dead branch**: the assertion meant to detect the
   defect fired on **0 out of 3 000** generated cases. It had never once tested what its name said.
