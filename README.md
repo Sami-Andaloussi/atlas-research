@@ -16,8 +16,13 @@ to publish anything it cannot trace.
 
 > **This is an active build, not a product launch.**
 > The section [Where it stands](#where-it-stands) lists precisely what runs today and what does
-> not. Every number on this page was measured in the source repository on 2026-09-16, using the
-> repository's own measuring tools.
+> not.
+>
+> **On the numbers.** Everything in [The numbers](#the-numbers) and in the refusal examples was
+> measured on 2026-09-16 in the source repository, using that repository's own measuring tools.
+> The [coverage findings](#coverage-switzerland-and-the-united-states) come from a separate
+> feasibility study that is **not published** — you cannot verify those from here, and this page
+> says so rather than letting the word *measured* cover both.
 
 ---
 
@@ -176,7 +181,7 @@ its underlying.
 
 ## Coverage: Switzerland and the United States
 
-An internal feasibility study measured how accessible each country's public data actually is —
+An internal feasibility study, not published here, measured how accessible each country's public data actually is --
 8 source categories, 102 URLs checked, 48 measurements taken live on 2026-09-16.
 
 | Finding | Detail |
