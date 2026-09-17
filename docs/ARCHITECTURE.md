@@ -50,8 +50,8 @@ that a test asks "is this reachable by everyone" instead of "is this on my machi
 ### 5. Rendering — in a process that never held the data
 
 The renderer reads the store **in a separate process that never had the observations in memory**.
-That is not a performance choice. It is a proof: an output produced this way cannot have smuggled
-information from the step that built it.
+That is not a performance choice. It is a proof: an output produced this way cannot have carried
+over hidden information from the step that built it.
 
 The current page states, in its own text, which of its claims are derived and which are hand-made,
 and names the plan item that will make it refuse to run until the selection is derived.
@@ -92,7 +92,7 @@ enforce, chosen because they are unusual:
 Two design rules apply to all of them:
 
 - **A check that prints is not a gate.** If it does not refuse, it does not count.
-- **A gate must be proven to bite.** A test that has never failed on purpose has not been shown to
+- **A gate must be shown to refuse.** A test that has never failed on purpose has not been shown to
   work; sabotage is injected deliberately to confirm each one catches what it claims to catch.
 
 ## Repository shape
@@ -103,7 +103,7 @@ core/         the normative contract and object model
 engine/       capture, store and rendering
 scripts/      acquisition and orchestration entry points
 validation/   599 modules that refuse
-plan/         14 arcs, 173 items — the build itself, versioned
+plan/         14 arcs, 170 steps — the build itself, versioned
 state/        measurements, audits, decisions, provenance manifests
 ```
 

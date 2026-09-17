@@ -12,8 +12,9 @@ judge of its own work.** Everything below follows from taking that seriously.
 No claim closes on the word of whoever produced it. Every "this is fixed" goes to an **independent
 reviewer** that did not write the fix, running on a model no weaker than the producer's.
 
-**954 audit documents** are in the repository. They are not ceremonial — they regularly demolish
-work. Three verdicts from recent sessions:
+**954 audit documents** are in the repository. They are not ceremonial — they regularly overturn
+work. Three verdicts from recent sessions, the first from that set and the other two from audits of
+the build environment itself, which is governed by the same rule:
 
 - A fix I was confident in was found to have a **dead branch**: the assertion meant to detect the
   defect fired on **0 out of 3 000** generated cases. It had never once tested what its name said.
@@ -94,7 +95,7 @@ The habit that saves the most time, stated as rules the project has paid to lear
 - **Two absences of measurement compare equal.** A command that failed and returned nothing looks
   exactly like a result of zero. Distinguishing them is not pedantry — see the fabricated
   justification above.
-- **Prove the gate bites.** Break it on purpose. A test that has never failed has not been shown to
+- **Show that the gate refuses.** Break it on purpose. A test that has never failed has not been shown to
   work.
 - **A frozen number carries its date and the command that re-derives it.** Otherwise it rots
   silently while everything around it moves.
@@ -103,7 +104,7 @@ The habit that saves the most time, stated as rules the project has paid to lear
 
 Because the interesting claim about Atlas is not that an AI wrote a lot of code quickly. It is that
 **the process caught its own errors often enough to be worth trusting** — and that where it did not,
-the failure is in the record rather than out of sight.
+the failure is written down rather than hidden.
 
 Everything asserted here is checkable against the repository's own history: the refusals, the
 audits, the corrections, and the numbers that were wrong before they were right.
