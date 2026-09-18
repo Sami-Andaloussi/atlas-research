@@ -50,7 +50,7 @@ that a test asks "is this reachable by everyone" instead of "is this on my machi
 ### 5. Rendering — in a process that never held the data
 
 The renderer reads the store **in a separate process that never had the observations in memory**.
-That is not a performance choice. It is a proof: an output produced this way cannot have carried
+The reason is evidential rather than about speed: an output produced this way cannot have carried
 over hidden information from the step that built it.
 
 The current page states, in its own text, which of its claims are derived and which are hand-made,

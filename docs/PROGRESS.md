@@ -32,6 +32,10 @@ makes it checkable later.
 etapes=170  faites=60  ENGAGEES=1  LIBRES=14  en_attente=89  vagues=15
 ```
 
+The counter is written in French, as the rest of the private repository is. In English:
+**170 steps, 60 done, 1 in progress, 14 ready to start, 89 waiting on a dependency, 15 not yet
+specified precisely enough to start.**
+
 **170 steps, 60 done.** Per-arc breakdown in the [roadmap](ROADMAP.md).
 
 ---
@@ -41,6 +45,9 @@ etapes=170  faites=60  ENGAGEES=1  LIBRES=14  en_attente=89  vagues=15
 ```
 closure_mix = addressed_by_design:6   closed:25   open_accepted:23   open_blocking:45
 ```
+
+Read: 6 defects answered by a design decision, 25 closed with evidence, 23 open but accepted for
+now, and **45 open and blocking**.
 
 **45 blocking defects remain open, named and tracked.**
 
