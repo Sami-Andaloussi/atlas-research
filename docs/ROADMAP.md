@@ -7,6 +7,10 @@ totals, quoted verbatim rather than recomputed:
 etapes=170  faites=60  ENGAGEES=1  LIBRES=14  en_attente=89  vagues=15
 ```
 
+The counter is written in French, as the rest of the private repository is. In English:
+**170 steps, 60 done, 1 in progress, 14 ready to start, 89 waiting on a dependency, 15 not yet
+specified precisely enough to start.**
+
 **170 steps, 60 of them done.**
 
 An item is not a ticket. It names a property the system must hold, the condition that proves it

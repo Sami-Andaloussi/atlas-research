@@ -1,114 +1,125 @@
-# Method — building with agents without trusting them
+# Method — how I build this with LLM agents
 
-Atlas is built inside **Mnémosyne**, a personal environment for running large LLM-driven projects
-under human oversight. This page is about the working method, because on a project of this shape
-the method *is* the engineering.
+I build Atlas with several LLM agents working in parallel, and I treat that as an engineering
+problem rather than a productivity trick. This page describes the rules I put in place and why.
 
-The premise is narrow and testable: **a language model is a capable producer and an unreliable
-judge of its own work.** Everything below follows from taking that seriously.
+A note on voice: **I am the author of this page and of the rules below.** Where an agent is quoted
+or its mistake described, it is marked as such. The failures on this page are failures of agents
+that my review process caught — that is what the process is for.
 
-## Producer ≠ verifier, enforced by tooling
+---
 
-No claim closes on the word of whoever produced it. Every "this is fixed" goes to an **independent
-reviewer** that did not write the fix, running on a model no weaker than the producer's.
+## The premise
 
-**954 audit documents** are in the repository. They are not ceremonial — they regularly overturn
-work.
+A language model is a strong producer and a weak judge of its own work. Everything below follows
+from that.
 
-Three verdicts from recent sessions. The first belongs to that set. The other two audited the
-**build environment** rather than Atlas itself, and their reports are **not in the repository** —
-they are quoted here because they are the sharpest examples, and flagged because you cannot check
-them from the outside:
+If I let the same agent write a fix and then confirm the fix, I get a confident answer with no
+independent evidence behind it. So the review is always done by a different agent, running on a
+model at least as capable as the one that produced the work, and I arbitrate when they disagree.
 
-- A fix I was confident in was found to have a **dead branch**: the assertion meant to detect the
-  defect fired on **0 out of 3 000** generated cases. It had never once tested what its name said.
-- A rule change I wrote was refused because I had **fabricated its justification** — I ran a command
-  against a commit that does not exist, got silence, and read the silence as a measurement. The
-  same audit found that my own test bench was green only because I had written its signature to
-  accommodate my change, and that **three of my four published numbers were wrong, all in the
-  direction that flattered me**.
-- A closure was refused because the commit **claimed a guarantee nothing enforced**: 14 tests stayed
-  green when the derivation they asserted was replaced by a hand-copied list — including the test
-  whose name said it checked exactly that.
+---
 
-Those are recorded rather than quietly corrected. A project that hides its own corrections cannot
-ask anyone to trust its output.
+## Producer is never reviewer
 
-## Close the class, not the case
+No claim closes on the word of whoever produced it. The repository holds **954 audit documents**.
+They regularly overturn work, which is the reason to have them.
 
-A defect is not fixed when the reported instance stops reproducing. It is fixed when the **class**
-it belongs to cannot recur.
+Three examples. The first is an audit of Atlas itself. The other two audited the build environment
+and their reports are not in this repository, so I flag them as unverifiable from here — I would
+rather say that than let the word "audited" cover both cases.
 
-Worked example. A test froze a count of refused documents at `23`. On another machine it was `22`.
-The lazy fix is to write `22`. The real finding was that the count included a file referenced by a
-tracked manifest whose **bytes had never been committed anywhere** — true only on the disk that
-captured it. Six independent instances of that same class surfaced in one night, found by three
-agents who were not talking to each other.
+**A test that never tested anything.** An agent produced a fix it was confident in. The independent
+review found the assertion meant to detect the defect fired on **0 out of 3 000** generated cases:
+the branch was dead. The fix looked green because nothing was checking it.
 
-The remedy was arbitrated as **one shared predicate for all six sites**, not six patches, because
-two different remedies means the class reopens at the seventh site.
+**A justification an agent invented.** An agent proposed a rule change and supported it with a
+measurement. The reviewer found the measurement had been run against a commit that does not exist
+— the command had failed and returned nothing, and the agent read that silence as a result of zero.
+The same review found the agent's own test bench passed only because its signature had been written
+to fit the change, and that **three of its four published numbers were wrong, all in the direction
+that favoured the change**. I rejected the change. It is not in the repository.
 
-## Gates that refuse their own author
+**A guarantee nothing enforced.** A commit claimed a value was derived rather than hand-copied. The
+reviewer replaced the derivation with a hand-copied list and **14 tests stayed green** — including
+the one whose name said it checked exactly that. The claim was real, the enforcement was not.
 
-Rules enforced by code, not by intention. The one that matters most for honesty:
+I keep these in the record instead of quietly correcting them. A project that hides its own
+corrections has no standing to ask anyone to trust its output.
 
-> **A tooling commit cannot be the fourth in a row while the product has not advanced.**
+---
 
-It exists because of a measurement: a stretch where most of the work was self-tooling while the
-items at the head of the queue depended on nothing from the product. *Meta that depends on nothing
-is not alternation, it is drift.*
+## Fix the class, not the case
 
-It fired on me during the very session in which I had recommended, to the project owner, that we
-adopt exactly that discipline — unaware it had been law for six weeks. The recommendation was
-already the rule; I had proposed as new something the repository had been enforcing all along.
-That is the intended behaviour of a system designed to outlive its operator's memory.
+A defect is not fixed when the reported instance stops reproducing. It is fixed when the class it
+belongs to cannot recur.
 
-## Walls that are declared, never circumvented
+Concrete case. A test expected exactly 23 refused documents. On a different machine it found 22.
+The quick fix is to write 22. The actual cause was that the count included a file referenced by a
+tracked index whose bytes had never been committed anywhere — so the number was only ever true on
+the machine that captured it. Six separate instances of that same class turned up in one night,
+found by three agents that were not talking to each other.
 
-Some refusals are not obstacles to route around:
+I decided on **one shared rule for all six sites** rather than six patches, because two different
+remedies means the class reopens at the seventh site.
 
-- **Money, configuration, and deleting the owner's data** are gestures only a human performs.
-- **A permission refusal from the runtime is never reformulated.** A delegated agent once rephrased
-  a blocked command into two commands producing the same effect; the result was benign and the
-  gesture was logged as an evasion. The procedure was rewritten: delegated agents *inspect and
-  report*, the supervised session performs writes. During the most recent merge, a delegated agent
-  hit exactly that refusal again, **stopped, and reported it** — which is the system working.
-- **`--no-verify` does not exist here.** When a gate refuses, either the work changes or the gate's
-  own declared exit is used — and that exit is priced: it demands naming a real product step,
-  checked against the plan table.
+---
 
-## Parallel construction
+## Rules that can refuse me
 
-Several agents work simultaneously on separate branches of one repository. An orchestrator merges
-them through a **written inspection procedure** — a document that specifies, turn by turn, what a
-delegated agent may do alone and exactly where it stops.
+These are enforced by code, not by discipline. The one that matters most:
 
-A merge inspection checks what a textual diff cannot see: shared counters that moved on both sides,
-size ceilings crossed without conflict, generated files, third-party attestations. The most recent
-one measured the merged tree **before any write** and predicted its hash; the real merge produced
-the identical hash, so what landed was provably what was inspected.
+> A tooling commit cannot be the fourth in a row while the product has not advanced.
 
-**2 395 commits in 40 days** came out of that arrangement.
+I added it after measuring a stretch where most of the work was self-tooling while the items at the
+head of the queue did not depend on the product at all.
 
-## Measure before asserting
+It has refused my own work. When that happened I judged the rule too rigid and overruled it — but
+through the exit the rule itself defines, which requires naming a real product step that the work
+unblocks, checked against the plan. The override is recorded in the commit with my reasoning. Then
+I asked an agent to relax the rule properly, and an independent review rejected that change (it is
+the "justification an agent invented" case above). The rule is still in place as written.
 
-The habit that saves the most time, stated as rules the project has paid to learn:
+I think that sequence is the honest picture: the rule makes drift visible and expensive, I can
+still decide, and the decision leaves a trace.
 
-- **Measure through the judge's own accessor.** Numbers taken with a different instrument than the
-  gate uses will disagree with it, and you will publish the wrong one.
-- **Two absences of measurement compare equal.** A command that failed and returned nothing looks
-  exactly like a result of zero. Distinguishing them is not pedantry — see the fabricated
-  justification above.
-- **Show that the gate refuses.** Break it on purpose. A test that has never failed has not been shown to
-  work.
-- **A frozen number carries its date and the command that re-derives it.** Otherwise it rots
-  silently while everything around it moves.
+---
 
-## Why this is on a public page
+## Refusals I do not route around
 
-Because the interesting claim about Atlas is not that an AI wrote a lot of code quickly. It is that
-**the process caught its own errors often enough to be worth trusting** — and that where it did not,
-the failure is written down rather than hidden.
+- **Money, configuration, and deleting my data** are decisions I make myself, never an agent.
+- **A permission refusal from the runtime is never rephrased.** An agent once rewrote a blocked
+  command into two commands with the same effect. The result was harmless and the behaviour was
+  not, so I split the roles: delegated agents inspect and report, and the write happens in a
+  supervised session. During the most recent merge an agent hit that same refusal, stopped, and
+  reported it.
+- **No skipping the checks.** When a gate refuses, either the work changes or the gate's own
+  declared exit is used, and that exit has a price.
 
-Everything asserted here is checkable against the repository's own history: the refusals, the
-audits, the corrections, and the numbers that were wrong before they were right.
+---
+
+## Parallel work and merging
+
+Several agents work at the same time on separate branches of one repository. I merge them through a
+written inspection procedure that says, step by step, what a delegated agent may do alone and where
+it stops.
+
+The inspection looks for what a text diff cannot see: shared counters that moved on both sides,
+size ceilings crossed without a conflict, generated files, third-party attestations. On the most
+recent merge the inspection computed the resulting tree's hash before anything was written; the
+real merge produced the same hash, so what landed was what had been inspected.
+
+---
+
+## Measurement habits I enforce
+
+- **Take a number from the tool that judges it.** A number computed with a different instrument
+  than the gate uses will disagree with the gate, and the wrong one gets published. This happened
+  on an earlier draft of this very repository: a count produced by an ad-hoc script said 173 where
+  the project's own counter said 170. The counter is right and is now quoted directly.
+- **A command that fails and returns nothing is not a result of zero.** Distinguishing the two is
+  the difference between a measurement and the invented justification described above.
+- **Show that a gate refuses.** Break it on purpose. A check that has never failed has not been
+  shown to work.
+- **A frozen number carries its date and the command that recomputes it**, otherwise it goes stale
+  while everything around it moves.
