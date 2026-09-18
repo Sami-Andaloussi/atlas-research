@@ -45,7 +45,7 @@ This is also where a subtle class of bug lives, and the project has paid for it 
 frozen literal that describes a *population* — a count of records, a set of identifiers — dies the
 moment the population moves. Six instances of that single class were found in one night. The
 adopted remedy is a shared predicate based on **git traceability** rather than disk presence, so
-that a test asks "is this reachable by everyone" instead of "is this on my machine".
+that a test asks "is this reachable by everyone" instead of "is this on the machine that produced it".
 
 ### 5. Rendering — in a process that never held the data
 
