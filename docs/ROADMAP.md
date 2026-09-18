@@ -11,8 +11,6 @@ The counter is written in French, as the rest of the private repository is. In E
 **170 steps, 60 done, 1 in progress, 14 ready to start, 89 waiting on a dependency, 15 not yet
 specified precisely enough to start.**
 
-**170 steps, 60 of them done.**
-
 An item is not a ticket. It names a property the system must hold, the condition that proves it
 holds, and what it unblocks. An arc closes when every item in it has passed an independent review.
 
@@ -78,8 +76,7 @@ The current renderer states in writing that its selection is hand-made, and name
 will make it refuse to run until derived.
 
 **3. Widen the sources.**
-Swiss public procurement first — published next day, with the winner and the amount, which is
-directly actionable for the intended reader.
+Swiss public procurement first — published next day, with the winner and the amount named.
 
 **4. Bring down the open defect count.**
 45 blocking defects are named and tracked. That number, not the commit count, is the measure of
@@ -89,8 +86,8 @@ progress.
 
 ## The question being deliberately deferred
 
-The product promise commits to *conditional scenarios with second-order consequences*. That does
-does not attach to a store of anchored numbers — it requires the engine to carry mechanisms and
+The design commits to *conditional scenarios with second-order consequences*. That does not
+attach to a store of anchored numbers — it requires the engine to carry mechanisms and
 relations, not only values.
 
 The relation catalogue exists. The path from it to a rendered scenario is arcs 08 and 11, and it is
