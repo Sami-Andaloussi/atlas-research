@@ -47,10 +47,10 @@ repository, against the whole store.
 
 ---
 
-## 2. Read a real generated page
+## 2. See the render step's raw output
 
-[`generated-page.md`](generated-page.md) is the actual output of the report engine, copied
-unchanged, with an English walkthrough.
+[`generated-page.md`](generated-page.md) is the actual output of the render step, copied unchanged,
+with an English walkthrough. It is a test of the pipeline, not a preview of the product.
 
 It is short — the store holds 7 records today — and it says so itself. It also names which of its
 own choices are hand-made, and the plan item that will make the engine refuse to run until those

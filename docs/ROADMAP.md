@@ -76,7 +76,8 @@ The current renderer states in writing that its selection is hand-made, and name
 will make it refuse to run until derived.
 
 **3. Widen the sources.**
-Swiss public procurement first — published next day, with the winner and the amount named.
+Swiss public procurement first — published next day, with the winner and the amount named. (This is a
+source being added to the chain; the first product's coverage is the United States.)
 
 **4. Bring down the open defect count.**
 45 blocking defects are named and tracked. That number, not the commit count, is the measure of
@@ -94,4 +95,12 @@ The relation catalogue exists. The path from it to a rendered scenario is arcs 0
 honestly not built.
 
 Deferring it is a choice, not an oversight: the discipline of provenance has to hold before a
-reasoning layer is worth building on top of it.
+reasoning layer is worth building on top of it. What that layer will have to respect is already
+written down: see [`ECONOMICS.md`](ECONOMICS.md).
+
+---
+
+## After the first product
+
+The first product covers the United States. After it: refine that coverage, then add Switzerland,
+then the rest of Europe.

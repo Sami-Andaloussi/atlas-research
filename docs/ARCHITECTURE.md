@@ -1,7 +1,10 @@
-# Architecture
+# Architecture — the data chain
 
-How Atlas is put together, and why each layer exists. Every design choice below was made to answer
-one question: **can a reader catch this system being wrong?**
+How the data side of Atlas is put together, and why each layer exists. The economic layer that
+sits on top of it (the theory map, scenario rules, scoring) is described in
+[`ECONOMICS.md`](ECONOMICS.md).
+
+Every design choice below was made to answer one question: **can a reader catch this system being wrong?**
 
 ## The chain, layer by layer
 
@@ -116,5 +119,6 @@ Named plainly, because a page that only lists what works is not an architecture 
 
 - no user interface, no accounts, no subscription;
 - the grammar and the generator are not connected;
-- the scenario layer — mechanisms, second-order consequences — is designed but not implemented;
+- scenarios: the rules for a valid scenario set are coded and tested (see [`ECONOMICS.md`](ECONOMICS.md));
+  generating scenarios from stored data, with mechanisms and second-order consequences, is not built;
 - the volume of data is small; the plumbing is proven, the corpus is not there.
