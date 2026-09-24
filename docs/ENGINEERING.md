@@ -1,4 +1,4 @@
-# Method — building with LLM agents
+# Engineering — building with LLM agents
 
 Atlas is built by several LLM agents working in parallel, under rules that are enforced by code.
 This page describes those rules and why they exist.
@@ -17,6 +17,10 @@ from that.
 If the same agent writes a fix and then confirms it, the result is a confident answer with no
 independent evidence behind it. So review is always done by a different agent, running on a model
 at least as capable as the one that produced the work, and a human arbitrates when they disagree.
+
+The same premise shapes how models touch the data. Code extracts candidate values from a document,
+and the model picks one or abstains; on judgement questions it picks a rule, and the code computes
+the verdict. A value that does not appear in the document cannot be anchored to it, so it is refused.
 
 ---
 
