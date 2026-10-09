@@ -1,0 +1,38 @@
+{
+  "card": "C11-claim2-cfa-out",
+  "card_hash": "259ac646c67297e2278ac6d554b8f7d4d6feacd8e1eb05cfa16a327597497011",
+  "run_at": "2026-10-02T13:40:50+00:00",
+  "result": {
+    "lines": 149,
+    "left_out_lines": 18,
+    "left_out_monies": [
+      "BEN",
+      "BFA",
+      "CAF",
+      "CIV",
+      "CMR",
+      "COG",
+      "GAB",
+      "GNB",
+      "GNQ",
+      "MLI",
+      "MRT",
+      "SEN",
+      "TGO"
+    ],
+    "supports_count_without_pegs": {
+      "separator": "supports_count_without_pegs",
+      "D_points": 15.511445794445178,
+      "interval_90": [
+        1.053663651465836,
+        35.32129254306331
+      ],
+      "n_one_or_none": 21,
+      "n_two_or_more": 34,
+      "strata_with_both_sides": 8,
+      "dropped_draws": 0,
+      "mde_points": 34.6,
+      "outcome": "confirmed"
+    }
+  }
+}

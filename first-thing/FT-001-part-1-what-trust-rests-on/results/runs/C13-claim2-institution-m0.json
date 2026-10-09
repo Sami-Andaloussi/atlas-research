@@ -1,0 +1,554 @@
+{
+  "card": "C13-claim2-institution-m0",
+  "card_hash": "b6c93f432bda190d3fbe6e5c9552f7220706e509d34dece7b705f46d7c9d82c0",
+  "run_at": "2026-10-02T23:15:40+00:00",
+  "result": {
+    "lines": 167,
+    "monies": 104,
+    "institution_lines": {
+      "yes": 78,
+      "no": 79,
+      "cannot be read": 10
+    },
+    "institution_lines_frame_c": {
+      "yes": 73,
+      "no": 0,
+      "cannot be read": 94
+    },
+    "readings": {
+      "supports_count": {
+        "separator": "supports_count",
+        "D_points": 14.052858020897357,
+        "interval_90": [
+          -5.728085881639914,
+          35.859407589285325
+        ],
+        "n_one_or_none": 15,
+        "n_two_or_more": 65,
+        "strata_with_both_sides": 7,
+        "dropped_draws": 0,
+        "mde_points": 35.4,
+        "outcome": "too thin"
+      },
+      "supports_count_without_taken_back": {
+        "separator": "supports_count_without_taken_back",
+        "D_points": 14.872518614538587,
+        "interval_90": [
+          -2.08182309406298,
+          32.44506482421887
+        ],
+        "n_one_or_none": 20,
+        "n_two_or_more": 83,
+        "strata_with_both_sides": 11,
+        "dropped_draws": 0,
+        "mde_points": 30.8,
+        "outcome": "we cannot conclude"
+      },
+      "supports_count_without_pegs": {
+        "separator": "supports_count_without_pegs",
+        "D_points": 15.837176623871791,
+        "interval_90": [
+          3.908251404280928,
+          29.040207140894147
+        ],
+        "n_one_or_none": 46,
+        "n_two_or_more": 51,
+        "strata_with_both_sides": 10,
+        "dropped_draws": 0,
+        "mde_points": 26.0,
+        "outcome": "confirmed"
+      }
+    },
+    "claim": "we cannot conclude (too thin)",
+    "each_support_alone": {
+      "taken_back": {
+        "separator": "taken_back",
+        "D_points": null,
+        "interval_90": [
+          null,
+          null
+        ],
+        "n_one_or_none": 0,
+        "n_two_or_more": 0,
+        "strata_with_both_sides": 0,
+        "dropped_draws": 2000,
+        "mde_points": null,
+        "outcome": "too thin"
+      },
+      "limit_by_rule": {
+        "separator": "limit_by_rule",
+        "D_points": 8.915662650602409,
+        "interval_90": [
+          -50.0,
+          100.0
+        ],
+        "n_one_or_none": 3,
+        "n_two_or_more": 22,
+        "strata_with_both_sides": 3,
+        "dropped_draws": 115,
+        "mde_points": null,
+        "outcome": "too thin"
+      },
+      "limit_by_institution": {
+        "separator": "limit_by_institution",
+        "D_points": 8.22656655975057,
+        "interval_90": [
+          -5.146470935545265,
+          19.094092934767534
+        ],
+        "n_one_or_none": 45,
+        "n_two_or_more": 63,
+        "strata_with_both_sides": 13,
+        "dropped_draws": 0,
+        "mde_points": null,
+        "outcome": "we cannot conclude"
+      },
+      "force": {
+        "separator": "force",
+        "D_points": 8.50929719508352,
+        "interval_90": [
+          -2.0960026623895414,
+          20.92905392163556
+        ],
+        "n_one_or_none": 57,
+        "n_two_or_more": 55,
+        "strata_with_both_sides": 13,
+        "dropped_draws": 0,
+        "mde_points": null,
+        "outcome": "we cannot conclude"
+      }
+    },
+    "war_in_H_out": {
+      "lines": 157,
+      "supports_count": {
+        "separator": "supports_count",
+        "D_points": 20.236815479954473,
+        "interval_90": [
+          -0.007750190231946057,
+          41.801104411731295
+        ],
+        "n_one_or_none": 15,
+        "n_two_or_more": 61,
+        "strata_with_both_sides": 7,
+        "dropped_draws": 0,
+        "mde_points": 35.8,
+        "outcome": "too thin"
+      },
+      "supports_count_without_taken_back": {
+        "separator": "supports_count_without_taken_back",
+        "D_points": 19.564622396401475,
+        "interval_90": [
+          2.6264668317298634,
+          37.65586152762281
+        ],
+        "n_one_or_none": 20,
+        "n_two_or_more": 78,
+        "strata_with_both_sides": 11,
+        "dropped_draws": 0,
+        "mde_points": 31.1,
+        "outcome": "confirmed"
+      },
+      "supports_count_without_pegs": {
+        "separator": "supports_count_without_pegs",
+        "D_points": 18.24091083432586,
+        "interval_90": [
+          7.220627710893826,
+          31.68306470185205
+        ],
+        "n_one_or_none": 44,
+        "n_two_or_more": 49,
+        "strata_with_both_sides": 10,
+        "dropped_draws": 0,
+        "mde_points": 26.5,
+        "outcome": "confirmed"
+      }
+    },
+    "frame_c_variants": {
+      "regime-carried-out": {
+        "lines": 167,
+        "not_reproduced": 0,
+        "supports_count": {
+          "separator": "supports_count",
+          "D_points": 13.53747416512564,
+          "interval_90": [
+            -6.260648051702903,
+            35.28980612056674
+          ],
+          "n_one_or_none": 15,
+          "n_two_or_more": 66,
+          "strata_with_both_sides": 7,
+          "dropped_draws": 0,
+          "mde_points": 35.3,
+          "outcome": "too thin"
+        },
+        "supports_count_without_taken_back": {
+          "separator": "supports_count_without_taken_back",
+          "D_points": 14.634789365599158,
+          "interval_90": [
+            -2.3455322935201095,
+            32.39208177798005
+          ],
+          "n_one_or_none": 20,
+          "n_two_or_more": 84,
+          "strata_with_both_sides": 11,
+          "dropped_draws": 0,
+          "mde_points": 30.8,
+          "outcome": "we cannot conclude"
+        },
+        "supports_count_without_pegs": {
+          "separator": "supports_count_without_pegs",
+          "D_points": 16.265409282531813,
+          "interval_90": [
+            4.090319169423216,
+            29.671945886071438
+          ],
+          "n_one_or_none": 46,
+          "n_two_or_more": 51,
+          "strata_with_both_sides": 10,
+          "dropped_draws": 0,
+          "mde_points": 26.2,
+          "outcome": "confirmed"
+        }
+      },
+      "war-unreadable-as-no": {
+        "lines": 203,
+        "not_reproduced": 0,
+        "supports_count": {
+          "separator": "supports_count",
+          "D_points": 12.382376190132149,
+          "interval_90": [
+            -7.55321708339315,
+            32.07988645894501
+          ],
+          "n_one_or_none": 16,
+          "n_two_or_more": 82,
+          "strata_with_both_sides": 7,
+          "dropped_draws": 0,
+          "mde_points": 33.6,
+          "outcome": "too thin"
+        },
+        "supports_count_without_taken_back": {
+          "separator": "supports_count_without_taken_back",
+          "D_points": 10.537138198947835,
+          "interval_90": [
+            -6.5560159609600195,
+            28.511757321924843
+          ],
+          "n_one_or_none": 22,
+          "n_two_or_more": 106,
+          "strata_with_both_sides": 12,
+          "dropped_draws": 0,
+          "mde_points": 28.8,
+          "outcome": "we cannot conclude"
+        },
+        "supports_count_without_pegs": {
+          "separator": "supports_count_without_pegs",
+          "D_points": 12.491466870346473,
+          "interval_90": [
+            0.8950773656309914,
+            26.6026123290268
+          ],
+          "n_one_or_none": 51,
+          "n_two_or_more": 70,
+          "strata_with_both_sides": 11,
+          "dropped_draws": 0,
+          "mde_points": 23.3,
+          "outcome": "confirmed"
+        }
+      },
+      "war-after-cow-no": {
+        "lines": 194,
+        "not_reproduced": 0,
+        "supports_count": {
+          "separator": "supports_count",
+          "D_points": 12.669621921193503,
+          "interval_90": [
+            -8.288488011672712,
+            32.916808767857404
+          ],
+          "n_one_or_none": 16,
+          "n_two_or_more": 78,
+          "strata_with_both_sides": 7,
+          "dropped_draws": 0,
+          "mde_points": 33.8,
+          "outcome": "too thin"
+        },
+        "supports_count_without_taken_back": {
+          "separator": "supports_count_without_taken_back",
+          "D_points": 12.681536566710834,
+          "interval_90": [
+            -5.946355870870661,
+            30.419467198867864
+          ],
+          "n_one_or_none": 21,
+          "n_two_or_more": 99,
+          "strata_with_both_sides": 11,
+          "dropped_draws": 0,
+          "mde_points": 29.6,
+          "outcome": "we cannot conclude"
+        },
+        "supports_count_without_pegs": {
+          "separator": "supports_count_without_pegs",
+          "D_points": 14.132787552519451,
+          "interval_90": [
+            2.8236717685226025,
+            26.949262020609957
+          ],
+          "n_one_or_none": 50,
+          "n_two_or_more": 63,
+          "strata_with_both_sides": 10,
+          "dropped_draws": 0,
+          "mde_points": 24.2,
+          "outcome": "confirmed"
+        }
+      },
+      "entry-year-counted": {
+        "lines": 183,
+        "not_reproduced": 0,
+        "supports_count": {
+          "separator": "supports_count",
+          "D_points": 13.180097349918874,
+          "interval_90": [
+            -6.727432331447575,
+            32.22852648985346
+          ],
+          "n_one_or_none": 17,
+          "n_two_or_more": 75,
+          "strata_with_both_sides": 8,
+          "dropped_draws": 0,
+          "mde_points": 33.4,
+          "outcome": "too thin"
+        },
+        "supports_count_without_taken_back": {
+          "separator": "supports_count_without_taken_back",
+          "D_points": 10.232219218009933,
+          "interval_90": [
+            -4.507326655723073,
+            26.12705593891483
+          ],
+          "n_one_or_none": 25,
+          "n_two_or_more": 95,
+          "strata_with_both_sides": 13,
+          "dropped_draws": 0,
+          "mde_points": 28.1,
+          "outcome": "we cannot conclude"
+        },
+        "supports_count_without_pegs": {
+          "separator": "supports_count_without_pegs",
+          "D_points": 12.733514835060106,
+          "interval_90": [
+            1.019072664756198,
+            25.919781135517884
+          ],
+          "n_one_or_none": 54,
+          "n_two_or_more": 63,
+          "strata_with_both_sides": 13,
+          "dropped_draws": 0,
+          "mde_points": 24.1,
+          "outcome": "confirmed"
+        }
+      },
+      "H5": {
+        "lines": 346,
+        "not_reproduced": 0,
+        "supports_count": {
+          "separator": "supports_count",
+          "D_points": 1.6176508646040457,
+          "interval_90": [
+            -8.384800556772538,
+            13.701306339503205
+          ],
+          "n_one_or_none": 34,
+          "n_two_or_more": 152,
+          "strata_with_both_sides": 9,
+          "dropped_draws": 0,
+          "mde_points": 23.4,
+          "outcome": "we cannot conclude"
+        },
+        "supports_count_without_taken_back": {
+          "separator": "supports_count_without_taken_back",
+          "D_points": 2.678261611110363,
+          "interval_90": [
+            -6.496732018602309,
+            13.333561494812345
+          ],
+          "n_one_or_none": 42,
+          "n_two_or_more": 195,
+          "strata_with_both_sides": 13,
+          "dropped_draws": 0,
+          "mde_points": 20.9,
+          "outcome": "we cannot conclude"
+        },
+        "supports_count_without_pegs": {
+          "separator": "supports_count_without_pegs",
+          "D_points": 10.484884037444555,
+          "interval_90": [
+            4.334496124268223,
+            18.281188571916267
+          ],
+          "n_one_or_none": 97,
+          "n_two_or_more": 132,
+          "strata_with_both_sides": 12,
+          "dropped_draws": 0,
+          "mde_points": 17.3,
+          "outcome": "confirmed"
+        }
+      },
+      "H20": {
+        "lines": 63,
+        "not_reproduced": 0,
+        "supports_count": {
+          "separator": "supports_count",
+          "D_points": 17.647058823529413,
+          "interval_90": [
+            -60.84615384615388,
+            99.99999999999999
+          ],
+          "n_one_or_none": 5,
+          "n_two_or_more": 7,
+          "strata_with_both_sides": 4,
+          "dropped_draws": 50,
+          "mde_points": 72.4,
+          "outcome": "too thin"
+        },
+        "supports_count_without_taken_back": {
+          "separator": "supports_count_without_taken_back",
+          "D_points": 8.333333333333334,
+          "interval_90": [
+            -51.86206896551725,
+            70.29411764705883
+          ],
+          "n_one_or_none": 7,
+          "n_two_or_more": 10,
+          "strata_with_both_sides": 6,
+          "dropped_draws": 9,
+          "mde_points": 60.9,
+          "outcome": "too thin"
+        },
+        "supports_count_without_pegs": {
+          "separator": "supports_count_without_pegs",
+          "D_points": 19.131097560975608,
+          "interval_90": [
+            -10.34610472541507,
+            51.89942588365498
+          ],
+          "n_one_or_none": 13,
+          "n_two_or_more": 13,
+          "strata_with_both_sides": 7,
+          "dropped_draws": 0,
+          "mde_points": 48.7,
+          "outcome": "too thin"
+        }
+      }
+    },
+    "separator_variants": {
+      "supports_count_cap_025": {
+        "separator": "supports_count_cap_025",
+        "D_points": 15.507092290537566,
+        "interval_90": [
+          -5.81317310079733,
+          38.81084439285629
+        ],
+        "n_one_or_none": 14,
+        "n_two_or_more": 66,
+        "strata_with_both_sides": 7,
+        "dropped_draws": 0,
+        "mde_points": 36.3,
+        "outcome": "too thin"
+      },
+      "supports_count_cap_075": {
+        "separator": "supports_count_cap_075",
+        "D_points": 14.052858020897357,
+        "interval_90": [
+          -5.728085881639914,
+          35.859407589285325
+        ],
+        "n_one_or_none": 15,
+        "n_two_or_more": 65,
+        "strata_with_both_sides": 7,
+        "dropped_draws": 0,
+        "mde_points": 35.4,
+        "outcome": "too thin"
+      },
+      "supports_count_index_04": {
+        "separator": "supports_count_index_04",
+        "D_points": 5.014464802314366,
+        "interval_90": [
+          -16.38573537663992,
+          26.376805788488937
+        ],
+        "n_one_or_none": 12,
+        "n_two_or_more": 69,
+        "strata_with_both_sides": 7,
+        "dropped_draws": 0,
+        "mde_points": 38.6,
+        "outcome": "too thin"
+      },
+      "supports_count_index_06": {
+        "separator": "supports_count_index_06",
+        "D_points": 6.859739391914468,
+        "interval_90": [
+          -9.983797597893846,
+          24.00469295986888
+        ],
+        "n_one_or_none": 24,
+        "n_two_or_more": 55,
+        "strata_with_both_sides": 7,
+        "dropped_draws": 0,
+        "mde_points": 30.9,
+        "outcome": "we cannot conclude"
+      },
+      "supports_count_ka_01": {
+        "separator": "supports_count_ka_01",
+        "D_points": 4.795139607468821,
+        "interval_90": [
+          -9.526585110065822,
+          18.10466031485143
+        ],
+        "n_one_or_none": 33,
+        "n_two_or_more": 51,
+        "strata_with_both_sides": 8,
+        "dropped_draws": 0,
+        "mde_points": 27.4,
+        "outcome": "we cannot conclude"
+      },
+      "supports_count_ka_05": {
+        "separator": "supports_count_ka_05",
+        "D_points": 15.950647967335346,
+        "interval_90": [
+          -6.248445186514688,
+          39.94027641492174
+        ],
+        "n_one_or_none": 12,
+        "n_two_or_more": 62,
+        "strata_with_both_sides": 6,
+        "dropped_draws": 0,
+        "mde_points": 38.8,
+        "outcome": "too thin"
+      }
+    },
+    "variants_counted": {
+      "supports_count": "6 of 7 variants tell the same outcome",
+      "supports_count_without_taken_back": "5 of 7 variants tell the same outcome",
+      "supports_count_without_pegs": "6 of 7 variants tell the same outcome"
+    },
+    "cfa_out": {
+      "lines": 149,
+      "left_out_lines": 18,
+      "supports_count_without_pegs": {
+        "separator": "supports_count_without_pegs",
+        "D_points": 15.167316586560261,
+        "interval_90": [
+          3.8048503694097215,
+          29.19193982455139
+        ],
+        "n_one_or_none": 35,
+        "n_two_or_more": 45,
+        "strata_with_both_sides": 10,
+        "dropped_draws": 0,
+        "mde_points": 29.1,
+        "outcome": "confirmed"
+      }
+    }
+  }
+}

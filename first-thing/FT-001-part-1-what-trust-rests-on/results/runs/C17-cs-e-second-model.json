@@ -1,0 +1,37 @@
+{
+  "card": "C17-cs-e-second-model",
+  "card_hash": "ab9563736eb2eaefacb06f13664af99c248432200068e0c0a04fb398971e10f9",
+  "run_at": "2026-10-08T16:44:45+00:00",
+  "result": {
+    "void": true,
+    "why": "the coder's isolation failed",
+    "isolation": {
+      "tool_calls": 68,
+      "void": true,
+      "breaches": [
+        {
+          "tool": "Bash",
+          "why": [
+            "a parent, home or variable path",
+            "outside: /dev/null"
+          ],
+          "input": "{\"command\": \"cd (private path) && python3 out/strip_nav.py 2>/dev/null; sed -n '1,400p' out/txt/doc-34.txt | grep -v -e '^$' | head -c 1500; sed"
+        },
+        {
+          "tool": "Bash",
+          "why": [
+            "a parent, home or variable path"
+          ],
+          "input": "{\"command\": \"cd (private path) && grep -v -e '^$' out/txt/doc-40.txt | head -c 4500; grep -v -e '^$' out/txt/doc-33.txt | head -c 1500\", \"descri"
+        },
+        {
+          "tool": "Bash",
+          "why": [
+            "a parent, home or variable path"
+          ],
+          "input": "{\"command\": \"cd (private path) && grep -v -e '^$' out/txt/doc-70.txt | head -c 1200; grep -v -e '^$' out/txt/doc-68.txt | head -c 2200; python3 "
+        }
+      ]
+    }
+  }
+}
