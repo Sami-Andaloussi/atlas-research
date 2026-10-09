@@ -1,0 +1,31 @@
+id: C10-now-who-rule
+label: measurement
+title: Part 1's now, fourth card - C09 as written, with V3's word rule reading a stated absence of an account before the account words
+question: >-
+  C06's question, unchanged. Told: no margin, no verdict, nothing ranked.
+parent:
+  id: C09-now-coded-g25-checked
+  hash: fecff63279d4faa721165b0a891f87143d0e2288fa2981c75cda0036b2911932
+method: >-
+  C09 (53675f9f) as written, on the same build (ft001-g at 8ace613e), except V3's order. Written AFTER C09's run
+  (6f7f2b4d) had been seen: its word rule put Liquity USD among holders with an account because the words say "no
+  account" (FRAMING F72: a revision made openly, after a result, said so; C09's run stays in git).
+  V3' (who may redeem): the first class whose words match, in this order: "not settled" if the words begin so; "a
+  restricted set of participants" if they say so; "any holder" if the words state that no account or custody is needed
+  (words: permissionless, no account, non-custodial); "holders with an account" (words: customer, member, client,
+  verified, account); "any holder" (words: any user, any holder). A who matching none is printed as unclassified,
+  never put in a class by hand. Only the order and the three words of the third class change.
+parameters:
+  as_c09: true
+data:
+  - dataset: C09's data, unchanged (ft001-g at 8ace613e)
+period: as C06
+sample: >-
+  C06's, unchanged. Nothing is chosen on what it shows.
+out_of_sample: >-
+  Nothing is fitted or tested; the run is read by the study's checks (BLUEPRINT section 8).
+failure: >-
+  None in the sense of a verdict.
+not: >-
+  Not a ranking of stablecoins, not a rating of any coin, not a forecast, not investment advice.
+created: '2026-10-02'

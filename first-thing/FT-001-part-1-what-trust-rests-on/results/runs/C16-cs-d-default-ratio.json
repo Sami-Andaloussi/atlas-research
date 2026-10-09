@@ -1,0 +1,298 @@
+{
+  "card": "C16-cs-d-default-ratio",
+  "card_hash": "9c698ac03bdaa43080de04816b95162d6c525904d9fc0ffd91c8c611b3be3ed3",
+  "run_at": "2026-10-08T16:01:27+00:00",
+  "result": {
+    "void": false,
+    "reproduction": {
+      "headline": {
+        "stored": {
+          "breaks": 21,
+          "trials": 1396,
+          "with_act": 513,
+          "no_act_trials": 410,
+          "unread_trials": 473,
+          "readable": 20,
+          "after an act": 14,
+          "same year": 1,
+          "before an act": 1,
+          "no act": 4,
+          "cannot be read": 1
+        },
+        "rebuilt": {
+          "breaks": 21,
+          "trials": 1396,
+          "with_act": 513,
+          "no_act_trials": 410,
+          "unread_trials": 473,
+          "readable": 20,
+          "after an act": 14,
+          "same year": 1,
+          "before an act": 1,
+          "no act": 4,
+          "cannot be read": 1
+        },
+        "reproduces": true
+      },
+      "without_T2": {
+        "stored": {
+          "breaks": 21,
+          "trials": 1396,
+          "with_act": 40,
+          "no_act_trials": 1172,
+          "unread_trials": 184,
+          "readable": 18,
+          "after an act": 0,
+          "same year": 0,
+          "before an act": 1,
+          "no act": 17,
+          "cannot be read": 3
+        },
+        "rebuilt": {
+          "breaks": 21,
+          "trials": 1396,
+          "with_act": 40,
+          "no_act_trials": 1172,
+          "unread_trials": 184,
+          "readable": 18,
+          "after an act": 0,
+          "same year": 0,
+          "before an act": 1,
+          "no act": 17,
+          "cannot be read": 3
+        },
+        "reproduces": true
+      },
+      "T2-var-total": {
+        "stored": {
+          "breaks": 21,
+          "trials": 1396,
+          "with_act": 156,
+          "no_act_trials": 728,
+          "unread_trials": 512,
+          "readable": 19,
+          "after an act": 1,
+          "same year": 1,
+          "before an act": 1,
+          "no act": 16,
+          "cannot be read": 2
+        },
+        "rebuilt": {
+          "breaks": 21,
+          "trials": 1396,
+          "with_act": 156,
+          "no_act_trials": 728,
+          "unread_trials": 512,
+          "readable": 19,
+          "after an act": 1,
+          "same year": 1,
+          "before an act": 1,
+          "no act": 16,
+          "cannot be read": 2
+        },
+        "reproduces": true
+      },
+      "T2-var-private": {
+        "stored": {
+          "breaks": 21,
+          "trials": 1396,
+          "with_act": 168,
+          "no_act_trials": 699,
+          "unread_trials": 529,
+          "readable": 18,
+          "after an act": 3,
+          "same year": 0,
+          "before an act": 1,
+          "no act": 14,
+          "cannot be read": 3
+        },
+        "rebuilt": {
+          "breaks": 21,
+          "trials": 1396,
+          "with_act": 168,
+          "no_act_trials": 699,
+          "unread_trials": 529,
+          "readable": 18,
+          "after an act": 3,
+          "same year": 0,
+          "before an act": 1,
+          "no act": 14,
+          "cannot be read": 3
+        },
+        "reproduces": true
+      }
+    },
+    "readings": {
+      "headline": {
+        "breaks": 21,
+        "after": 14,
+        "readable": 20,
+        "trials": 1396,
+        "with_act": 513,
+        "readable_trials": 923,
+        "no_act_trials": 410,
+        "unread_trials": 473,
+        "classes": {
+          "after an act": 14,
+          "same year": 1,
+          "before an act": 1,
+          "no act": 4,
+          "cannot be read": 1
+        },
+        "share_breaks": 0.7,
+        "share_trials": 0.5557963163596966,
+        "ratio": 1.2594541910331383,
+        "degenerate": false,
+        "interval": {
+          "lo": 0.6996179411594707,
+          "hi": 1.6061366885169595,
+          "draws_used": 4000,
+          "skipped": 0,
+          "clusters": 86,
+          "reading": "bounded",
+          "refuted": false
+        },
+        "by_onset_year": {
+          "lo": 0.6225433507848057,
+          "hi": 1.6704623747315677,
+          "draws_used": 4000,
+          "skipped": 0,
+          "clusters": 54,
+          "reading": "bounded",
+          "refuted": false
+        }
+      },
+      "without_T2": {
+        "breaks": 21,
+        "after": 0,
+        "readable": 18,
+        "trials": 1396,
+        "with_act": 40,
+        "readable_trials": 1212,
+        "no_act_trials": 1172,
+        "unread_trials": 184,
+        "classes": {
+          "after an act": 0,
+          "same year": 0,
+          "before an act": 1,
+          "no act": 17,
+          "cannot be read": 3
+        },
+        "share_breaks": 0.0,
+        "share_trials": 0.033003300330033,
+        "ratio": 0.0,
+        "degenerate": true,
+        "note": "0 or 1 break after an act: counts printed, no P03 reading (the card's item 5)"
+      },
+      "T2-var-total": {
+        "breaks": 21,
+        "after": 1,
+        "readable": 19,
+        "trials": 1396,
+        "with_act": 156,
+        "readable_trials": 884,
+        "no_act_trials": 728,
+        "unread_trials": 512,
+        "classes": {
+          "after an act": 1,
+          "same year": 1,
+          "before an act": 1,
+          "no act": 16,
+          "cannot be read": 2
+        },
+        "share_breaks": 0.05263157894736842,
+        "share_trials": 0.17647058823529413,
+        "ratio": 0.2982456140350877,
+        "degenerate": true,
+        "note": "0 or 1 break after an act: counts printed, no P03 reading (the card's item 5)"
+      },
+      "T2-var-private": {
+        "breaks": 21,
+        "after": 3,
+        "readable": 18,
+        "trials": 1396,
+        "with_act": 168,
+        "readable_trials": 867,
+        "no_act_trials": 699,
+        "unread_trials": 529,
+        "classes": {
+          "after an act": 3,
+          "same year": 0,
+          "before an act": 1,
+          "no act": 14,
+          "cannot be read": 3
+        },
+        "share_breaks": 0.16666666666666666,
+        "share_trials": 0.19377162629757785,
+        "ratio": 0.8601190476190476,
+        "degenerate": false,
+        "interval": {
+          "lo": 0.0,
+          "hi": 2.090059452905641,
+          "draws_used": 4000,
+          "skipped": 0,
+          "clusters": 86,
+          "reading": "bounded",
+          "refuted": false
+        },
+        "by_onset_year": {
+          "lo": 0.0,
+          "hi": 2.116586830357143,
+          "draws_used": 4000,
+          "skipped": 0,
+          "clusters": 54,
+          "reading": "bounded",
+          "refuted": false
+        }
+      },
+      "shared_once": {
+        "breaks": 17,
+        "after": 10,
+        "readable": 16,
+        "trials": 1396,
+        "with_act": 513,
+        "readable_trials": 923,
+        "no_act_trials": 410,
+        "unread_trials": 473,
+        "classes": {
+          "after an act": 10,
+          "same year": 1,
+          "before an act": 1,
+          "no act": 4,
+          "cannot be read": 1
+        },
+        "share_breaks": 0.625,
+        "share_trials": 0.5557963163596966,
+        "ratio": 1.1245126705653021,
+        "degenerate": false,
+        "interval": {
+          "lo": 0.670284229785504,
+          "hi": 1.5505771494404545,
+          "draws_used": 4000,
+          "skipped": 0,
+          "clusters": 86,
+          "reading": "bounded",
+          "refuted": false
+        },
+        "by_onset_year": {
+          "lo": 0.568383388769321,
+          "hi": 1.5737664099462774,
+          "draws_used": 4000,
+          "skipped": 0,
+          "clusters": 54,
+          "reading": "bounded",
+          "refuted": false
+        }
+      }
+    },
+    "audits_beside": "1.26, 95% range 0.91-1.73 with a design effect of 6 (the map's audits, theirs)",
+    "said": [
+      "crises are events and strained years country-years",
+      "T2 is a creditor class newly in arrears, mostly inside a default already running (C15's t2)"
+    ],
+    "t2_breadth": {
+      "t2_lines_from_1960": 1775,
+      "inside_a_running_default": 1424
+    }
+  }
+}

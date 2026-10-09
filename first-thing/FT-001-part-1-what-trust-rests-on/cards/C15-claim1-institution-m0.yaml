@@ -1,0 +1,47 @@
+id: C15-claim1-institution-m0
+label: measurement
+title: Claim 1, third card - C07 as written, its spells' limit by institution read by M0's text (C13's reader)
+question: >-
+  C07's question, unchanged: do breaks follow an act that takes a support away, beside the base rate of strained years
+  that never broke? Only the supports standing at a spell's entry (C04's R5) are re-read, the limit by institution by
+  M0 section 2's text. Told, never counted: no margin, no verdict.
+parent:
+  id: C07-claim1-dated-lines-v2
+  hash: b217ed2aefc9ed74063b749a3ecc4d2568c8309386789d2c3513836c26e06d5e
+method: >-
+  C07 (its card and code as written) on frame c's lines, every column as built except the four supports and the counts
+  built on them, which claim2's reader recomputes (C13's: claim2.Inputs and reread). Written AFTER C07's run and after
+  three isolated checks found one family of fault in turn: frame c's first coding of the limit by institution, which
+  reads "cannot be read" below Garriga's midpoint and never reads the target arm (B1, claim 2, answered by C13; N1, the
+  today table, by C14; B1', claim 1, by this card; check/2026-10-02-opus-narrow-check-c14.md). FRAMING F72: a revision
+  made openly, after a result, said so. The sweep notes/institution-line-sweep.md lists every site of the family in
+  part 1; this card moves the last ones that print the first coding as their record (claim1.py's supports, the
+  registry's claim 1 keys and the numbers the four forms print from them). C07's run stays in git and its figures are
+  printed beside.
+  The line, at each spell's entry year Y: "yes" if Garriga's index at Y is at or above 0.5 or a target was announced
+  before Y; "no" if the index is read below 0.5 and no target was announced before Y; else "cannot be read". The
+  targets are frame a's as claim2.targets reads them: Hammond's 27 with their dates and the three exits unread; the
+  pre-2012 adopters beyond Hammond that frame a dates (Paraguay 2011) or places (Uganda, adopted by 2011); the AREAER
+  2011 column's targeters already (R-A3) on no other list (Albania, Georgia, Moldova: adopted by 2011, date unread);
+  Uruguay's earlier target unread; the AREAER candidates from 2012, G06's nine unread from their first edition. The
+  reader refuses to run unless it first reproduces frame c's columns on every counted line.
+  The narrow check's m3 and m4 (the AREAER 2011 column, Uganda) change claim2.targets for C13 and C14 too: both are
+  rerun with this card and their move is printed (C14 identical; C13's separator variant at an index line of 0.6 moves
+  one spell, a figure no form prints).
+parameters:
+  as: C07
+  index_line: 0.5
+  target_arm: announced in a year before the spell's entry year
+data:
+  - dataset: as C07
+  - dataset: reconstructed/ft001-a (members.csv, series.csv route a4) and reconstructed/ft001-a-areaer (it-column.csv)
+period: as C07
+sample: >-
+  C07's, unchanged; only the supports at entry are re-read, so a spell may enter or leave the base rate.
+out_of_sample: >-
+  None, as C07. C07's run is the comparison, printed beside.
+failure: >-
+  None: told, no verdict.
+not: >-
+  Not a new act, break or spell; not a new list of targets.
+created: '2026-10-02'

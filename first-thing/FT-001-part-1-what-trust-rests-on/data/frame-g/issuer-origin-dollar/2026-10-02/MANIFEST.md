@@ -1,0 +1,25 @@
+# frame-g/issuer-origin-dollar — vintage 2026-10-02
+
+- **Source**: Origin Protocol, Origin Dollar (OUSD) at launch (September 2020), via docs.ousd.com / www.ousd.com / web.archive.org
+- **Retrieved at**: 2026-10-02T14:02:47+00:00
+- **Licence**: issuer's own terms: cited, never republished
+- **Notes**: FT-001 G25b: launch terms of Origin Dollar. docs-root-2020-09.html: version of 2020-09-29 (capture 20200929070443 of https://docs.ousd.com/); fund-management-2020-10.html: version of 2020-10-30 (capture 20201030132037 of https://docs.ousd.com/core-concepts/fund-management); yield-generation-2020-10.html: version of 2020-10-30 (capture 20201030133314 of https://docs.ousd.com/core-concepts/yield-generation); elastic-supply-2020-10.html: version of 2020-10-30 (capture 20201030134135 of https://docs.ousd.com/core-concepts/elastic-supply); supported-stablecoins-2020-10.html: version of 2020-10-30 (capture 20201030135909 of https://docs.ousd.com/core-concepts/supported-stablecoins); audits-2020-11.html: version of 2020-11-17 (capture 20201117014226 of https://docs.ousd.com/v/en/security-and-risks/audits); how-it-works-2020-11.html: version of 2020-11-23 (capture 20201123213228 of https://docs.ousd.com/v/en/how-it-works); faq-2020-11.html: version of 2020-11-23 (capture 20201123220426 of https://docs.ousd.com/v/en/faq); risks-2020-11.html: version of 2020-11-23 (capture 20201123224252 of https://docs.ousd.com/v/en/security-and-risks/risks); principles-2020-11.html: version of 2020-11-23 (capture 20201123224808 of https://docs.ousd.com/v/en/governance/principles); admin-privileges-2020-11.html: version of 2020-11-23 (capture 20201123224840 of https://docs.ousd.com/v/en/governance/admin-privileges); insurance-2021-01.html: version of 2021-01-23 (capture 20210123200432 of https://docs.ousd.com/v/en/security-and-risks/insurance); earn-info-2021-01.html: version of 2021-01-25 (capture 20210125081533 of https://www.ousd.com/earn-info). ousd.com (apex) is refused by the Guard and was not opened; only www.ousd.com/earn-info is in hand from the product site. Files with a .gz suffix are stored exactly as the archive served them (gzip-encoded). Text never committed.
+
+| File | URL | Bytes | sha256 |
+|---|---|---|---|
+| `docs-root-2020-09.html` | https://web.archive.org/web/20200929070443id_/https://docs.ousd.com/ | 219356 | `e65b561824fb2813e1c240e5c134504fc46dd070b13f2e8d72f9ecbac72e20e5` |
+| `fund-management-2020-10.html` | https://web.archive.org/web/20201030132037id_/https://docs.ousd.com/core-concepts/fund-management | 356144 | `01dd1dd7642ded2f2b602c14fa4912b1f73ed8d56399b100c9445bb3c03706c8` |
+| `yield-generation-2020-10.html` | https://web.archive.org/web/20201030133314id_/https://docs.ousd.com/core-concepts/yield-generation | 367815 | `a0b2e45094dd7796487e4519a050c298ffc4caa2bc4367618fa3774e04249b58` |
+| `elastic-supply-2020-10.html` | https://web.archive.org/web/20201030134135id_/https://docs.ousd.com/core-concepts/elastic-supply | 366164 | `67b2d0460c6bdcb65ec693ac6f08234f71cff5747f035a60308a4fec63df56df` |
+| `supported-stablecoins-2020-10.html` | https://web.archive.org/web/20201030135909id_/https://docs.ousd.com/core-concepts/supported-stablecoins | 364819 | `9d22c6ed7583caddcd2a4b606605446d1c8aeb099585284de9bc9480dd1f01d6` |
+| `audits-2020-11.html` | https://web.archive.org/web/20201117014226id_/https://docs.ousd.com/v/en/security-and-risks/audits | 364547 | `7de809e57ea02e9b3ed8a79dc83dd6f6d6802daba968e64e072fb4ac625200de` |
+| `how-it-works-2020-11.html` | https://web.archive.org/web/20201123213228id_/https://docs.ousd.com/v/en/how-it-works | 378425 | `8d8932dcae1dffb339efb7e9d8ce490b0fa3ad8cbd259cf3dbcb59378863a0e7` |
+| `faq-2020-11.html` | https://web.archive.org/web/20201123220426id_/https://docs.ousd.com/v/en/faq | 388118 | `56896e33c982983f2e561e51363d5ebec498c3e1f12e70ce9b920a12a7c4aa17` |
+| `risks-2020-11.html` | https://web.archive.org/web/20201123224252id_/https://docs.ousd.com/v/en/security-and-risks/risks | 367569 | `fc040d6e97c8498e2bbc6f3a695faf1ee1db5b9c1e17534ede73b9499b6a1e73` |
+| `principles-2020-11.html` | https://web.archive.org/web/20201123224808id_/https://docs.ousd.com/v/en/governance/principles | 366298 | `fd225e774b46617a9e18d640cafbd043f620244cfac9f5329ba90dc95afdf391` |
+| `admin-privileges-2020-11.html` | https://web.archive.org/web/20201123224840id_/https://docs.ousd.com/v/en/governance/admin-privileges | 359899 | `b3b44a448e91627c7ece2a740e3fb8ebefbccacaae37c5189817b753ecbb6abe` |
+| `insurance-2021-01.html` | https://web.archive.org/web/20210123200432id_/https://docs.ousd.com/v/en/security-and-risks/insurance | 355993 | `673bc1233feb52c80529c4ffacdf2ba82980438cf053288045ae169dccb2f7a1` |
+| `earn-info-2021-01.html` | https://web.archive.org/web/20210125081533id_/https://www.ousd.com/earn-info | 46071 | `9bfe36cfa680918aa805d41fe8ae1c0ea1d402751b8dbda499e09d6442aaeec7` |
+
+The files are not in git (fetched data); this manifest is. Re-fetch and compare with
+`ft data refetch frame-g/issuer-origin-dollar 2026-10-02`.

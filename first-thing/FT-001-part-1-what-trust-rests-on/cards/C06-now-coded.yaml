@@ -1,0 +1,59 @@
+id: C06-now-coded
+label: measurement
+title: Part 1's now - the dollar, the euro, stablecoins and bitcoin coded on M0's list of supports
+question: >-
+  Which of M0's supports stand today under the dollar and the euro, read by the same rules and readers as frame c
+  reads a money at entry; and which of a private issuer's four lines can be read for the stablecoins named in sourced
+  reading and for bitcoin? Told: no margin, no verdict, nothing ranked.
+method: >-
+  M0 v4.2 section 2's lists as written (bank/maps/FT-001/missions/FT-001-M0-rules.md, commit 3163162). A reading the
+  card adds is marked N.
+  The dollar (USA) and the euro: each support read at the last year its headline source reads (N1), that year
+  printed beside it, with frame c's reader for the four counted supports (panel.supports, the lines 0.5, 0.5 and
+  0.25, as frame c applies them): taken back from panel.default_at; a limit by rule from Garriga's cuk_limlen or a
+  parity class (panel.irr_classes); a limit by institution from Garriga's index (a target announced counts only if
+  frame a's list carries it; below 0.5 and not on the list reads "cannot be read", as frame c reads it); force from
+  Chinn-Ito's ka_open. Habit as frame c reads it (strain.habit: an H1 act of the acts list, inside the chronologies'
+  span, else "cannot be read"). Redemption: frame a's dated suspension (Bernanke and James, Table 2.1, the United
+  States 1933-03) and the Federal Reserve Bulletin of September 1971 (frozen, its note on the suspension of the
+  dollar's convertibility to gold from 16 August 1971), cited, not computed. World demand: the money is in COFER's
+  reported list in the frozen release (data/imf/cofer), read from its codelist and allocated series (N2).
+  The euro (N3): M0 says both readings for euro members. Garriga and Chinn-Ito code the members, not the union; the
+  card prints each member's four readings at the last year read and the counts of members per reading, never one
+  pooled code. Taken back is read per member state (its default), so the euro has no single "taken back".
+  Stablecoins: frame g's mapping as built (ft001-g, after S9, 97f10368): per line the counts yes / no / cannot be
+  read over the 84 launch coins, the coins with a line read, and kappa; no coin's line is filled.
+  Bitcoin (N4): on the private issuer's four lines, read from one source in the library, Casey and Vigna (2015), The
+  Age of Cryptocurrency (Picador), through Mnemosyne's search (passage library/bc2767ae04dc04bf): the release of
+  coins is fixed by the protocol's schedule to 21 million in all, so "a limit by rule" reads yes (issue tied by code
+  to a stated cap); there is no issuer, so redemption, a limit by institution and taken back read "no issuer", a
+  reading of its own, never "no". bitcoin.org is refused by the Guard and was not opened.
+parameters:
+  cap_line: 0.5
+  index_line: 0.5
+  ka_line: 0.25
+  monies: [USA, the euro members from their entry (frame k's dollar-euro rule's euro list)]
+  as_of: the last year each source reads (Garriga 2023, Chinn-Ito 2023, the default database's last year, the chronologies 2016)
+data:
+  - dataset: the panel's readers (bank/maps/FT-001/missions/code/panel.py, strain.py) over their frozen sources
+  - dataset: reconstructed/ft001-acts (third build, a8780e1) for H1 and its coverage
+  - dataset: reconstructed/ft001-a (fourth build, 91edc7b) for the dollar's 1933 suspension
+  - dataset: fraser/federal-reserve-bulletin-text-091971 (frozen 2026-10-01)
+  - dataset: imf/cofer (frozen 2026-10-01)
+  - dataset: reconstructed/ft001-g (after S9, 97f10368)
+  - dataset: the library, Casey and Vigna (2015), through make search (public)
+period: the last year each source reads, printed per reading; frame g at each coin's launch
+sample: >-
+  Fixed by the dossier before any reading: the dollar, the euro, the stablecoins frame g lists, bitcoin (dossier
+  section 11, part 1, page 7). Nothing is chosen on what it shows.
+out_of_sample: >-
+  Nothing is fitted or tested; it is a coding, read with the rules frame c uses on every money at entry. Its check is
+  an isolated reader's recoding of the same cells from the same sources.
+failure: >-
+  None in the sense of a verdict. Where a reader gives "cannot be read" (the default database does not list the
+  United States; Garriga's index for the Fed is below 0.5 and the Fed's 2012 goal is not on frame a's list), the page
+  prints it with its reason and does not fill it from knowledge.
+not: >-
+  Not a ranking of monies, not a forecast, not investment advice. Not a claim that a support standing makes a money
+  safe: claim 2 asks that, and could not conclude in its headline.
+created: '2026-10-02'

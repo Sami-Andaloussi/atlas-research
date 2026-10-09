@@ -1,0 +1,99 @@
+id: C17-cs-e-second-model
+label: measurement
+title: CS-E's second coder — a different model codes a quarter of frame g's coins at launch, and every disagreement is
+  read at its document
+parent:
+  id: C14-now-institution-m0
+  hash: e36d22faf9d5ac459e2030583c86784b8d2d89c46639c1d7e4ead309c3ca7db2
+kind: extension
+seen:
+- 'C14-now-institution-m0 (every result: the stablecoins'' coin-lines, who may redeem in M0''s two classes, the coders''
+  kappas 0.7426, 0.7416 and 0.8426, all between two runs of one model, Sonnet)'
+- 'data/reconstructed/ft001-g (mapping.csv and who-classes.csv as committed at 7b9fc9da: the settled launch codes this
+  card compares against)'
+- 'bank/checks/FT-001-2026-10-08-card-check-p1-c16-c19.md (this card''s check: 199 of 336 settled launch codes cannot
+  be read, 37 of 84 coins with no line read; 47 coins with issuer documents; the settled column''s origins counted)'
+question: 'Part 1''s map v11, P1-10 and K8, under W20 (two runs of one model are not independent coders): when a
+  different model codes the same coins from the same packet and the same frozen issuer documents, by the same lines,
+  how often does it agree with frame g''s settled launch codes, and is any settled code wrong at its document?'
+method: '(1) The sample, drawn by this card''s code before the coder starts, stratified by a seed: frame g''s packet
+  of 84 coins (data/reconstructed/ft001-g/coders/packet/packet.csv, its coin_id column sorted) split into the 47 coins
+  that have a sheet in the issuer packets (coders/issuer-packet/, coders/issuer-packet-2/) and the 37 that have none; 12
+  drawn from the first and 9 from the second, without replacement, by numpy''s default_rng(20261008).choice, the first
+  stratum first; the list is written to the coder''s folder and committed before the coder runs. (2) The staging, before
+  the coder runs: the session builds one folder holding only what the first coders had for these coins — an extract of
+  M7 sections 3, 9, 14 and 17 (bank/maps/FT-001/missions/FT-001-M7-frame-g.md at 7b9fc9da), the packet README and the
+  issuer packets'' READMEs, the sampled coins'' packet sheets and issuer sheets, and every frozen text those sheets name,
+  each copied under a neutral name (doc-01, doc-02, ...) with the sheets'' references rewritten to those names; the
+  folder''s file list with each file''s sha256 is committed (coders/x1/stage-manifest.json) before the coder runs. (3)
+  The coder: one Opus 5.5 subagent (a different model from the Sonnet coders g1, g2 and i1-i4), apart, outcome-aware
+  as theirs were (said), pointed at the staged folder only and told to open nothing else. It codes each sampled coin''s
+  four lines at launch (redemption, a limit by rule, a limit by institution, taken back), yes, no or cannot be read,
+  with source and locator; on every redemption yes it writes who may redeem in the issuer''s own words (who) and picks one of
+  M0''s two classes (who_class: any holder, verified customers only). One output specification is staged, launch only:
+  coin_id, line, phase, code, who, who_class, source, locator, note. The coder writes into the stage''s out/ folder; the
+  session moves the file to data/reconstructed/ft001-g/coders/x1/mapping.csv. The staged copies carry no workshop path
+  and no commit id: the READMEs'' label-to-folder table and every reference are rewritten to the neutral names, and the
+  rename table is applied to the settled locators for the comparison. The packet''s printed launch year is a hint
+  only, as for the first coders. The coder''s brief names instructions/00-output.md first. Isolation is checked after
+  the run on the paths of the coder''s tool calls (never on a command''s other words or a file''s content; each shell
+  command begins by entering the stage): any file opened or
+  command run on a path outside the staged folder voids the run. (4) The comparison,
+  launch lines only: the coder''s code against mapping.csv''s settled launch code for the same coin and line; raw
+  agreement and Cohen''s kappa over the three categories, for each stratum and pooled; the disagreements split by the
+  settled code''s origin (mapping.csv''s settled column: the settlement rule it names, S1-S14, where it names one;
+  otherwise "agreed (first layer)", "agreed (issuer layer)" or "agreed (both layers)"); who_class against who-classes.csv where both say
+  redemption yes (a coin it marks not settled listed apart, never counted as a disagreement). (5) Every disagreement is read at
+  its document by a third isolated reader (a Sonnet subagent that produced neither code), shown the two codes blind as
+  A and B (their order drawn by numpy default_rng(20261009), one draw per disagreement in the comparison''s order,
+  written to blind-key.csv before the reader runs), both locators, M7 section 3''s text and the sections that state the
+  settlement rules S1-S14 (sections 10, 13, 15, 16, 18 and 19, which also print some settled codes: said); it says
+  which code M0''s text and the rules give at the passage
+  (both sides'' sources and locators merged into one unattributed list of places, so the layout stays blind) (A, B, neither, or cannot settle), naming the rule where one
+  governs. A settled code found
+  wrong at its document (the verdict names the coder''s code, or "neither", which enters the variant as cannot be read)
+  is printed as such (P1-10''s refutation) and C14''s counts that
+  rest on it are rerun as a variant beside C14''s, never in its place. (6) Reported as what it is: "a second model
+  coded 21 of 84 coins at launch; it agreed with the settled codes on k of n coin-lines (kappa x; y on the coins with
+  issuer documents)"; the methods say in one sentence that g1 and g2 (and i1-i4) were two runs of one model; most
+  settled launch codes are "cannot be read", so the pooled kappa is led by agreement on unread lines: said. (7) The
+  runs (written 2026-10-08, after run 1 and before run 2; the engine''s ruling of that day): run 1 is void by this
+  card''s own isolation rule (22 of its 54 tool calls flagged); the session''s reading of the flags is a note, never a
+  verdict, and run 1''s codes are never compared, read for content, keyed or used; its stage is left as it is. Run 2:
+  a fresh stage, the same drawn sample (the void concerned isolation, never the codes), a tighter brief (every
+  command begins by entering the stage; no shell variables, no two dots in a row anywhere in a command, no regular
+  expression with slashes in a command; scripts written to a file in the stage and run by name; outputs kept short so
+  the host saves none outside the stage), the isolation rule unchanged. Run 2 is used whatever it codes if its
+  isolation check passes unaltered; if it is void too, or the host refuses its launch, C17 is reported void, W20 said
+  in the methods as a limit; there is no third run. Run 2''s files carry the suffix -run2.'
+parameters:
+  coins_in_packet: 84
+  sample: 21
+  strata: {with_issuer_sheet: 12, without: 9}
+  seed: 20261008
+  draw: numpy default_rng(seed).choice(sorted coin_ids of each stratum, size, replace=False), the first stratum first
+  coder_model: Opus 5.5
+  reader_model: Sonnet
+  reader_verdicts: [A, B, neither, cannot settle]
+  isolation_terms: [mapping, settle, who-classes, coders/g, coders/i, variant, ft001-g]
+  lines: [redemption, limit by rule, limit by institution, taken back]
+  phase: launch
+  compared_against: data/reconstructed/ft001-g/mapping.csv and who-classes.csv at 7b9fc9da
+matters:
+  cs_e_agreement: 'none: an agreement reported as what it is, read against no size (W20); the refutation is a settled
+    code wrong at its document'
+data:
+- dataset: reconstructed/ft001-g
+  vintage: 'as committed at 7b9fc9da'
+- dataset: frame-g (the issuers'' documents frozen 2026-10-02 and the readings named in the packet)
+  vintage: '2026-10-02'
+period: the coins' launch terms, as frame g dates them
+failure: 'If the coder sees any settled code or the first coders'' files, the run is void. A settled code found wrong
+  at its document is not a failure of this card: it is its finding, printed with C14''s variant.'
+not: 'Not an independent replication of the whole coding: a quarter of the coins, launch lines only, the phases not
+  recoded. Not a judgement on which model is right: the document decides, through the third reader. Not a vote: a
+  disagreement the document cannot settle keeps its settled code in the variant.'
+created: '2026-10-08'
+sample: 'A random quarter of the packet''s coins by a seed fixed here, never chosen by name or by fate; the coder is
+  outcome-aware, as the first coders were (M7 section 3), said.'
+out_of_sample: 'Not applicable: a reliability check of a coding, not a fit.'

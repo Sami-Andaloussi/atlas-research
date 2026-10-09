@@ -1,0 +1,87 @@
+id: C05-claim2-supports
+label: test
+title: Claim 2 - under the same strain, did monies with more supports standing hold more often?
+question: >-
+  Among frame c's inconvertible monies under strain from 1970, counted over their horizon, is the share
+  that held (never crossed frame b's break line over H = 10 years) at least 10 points higher where two or
+  more of the currency's four supports stood at entry (taken back, a limit by rule, a limit by
+  institution, force) than where one or none stood, within the same route, strain tercile, era and the
+  state's default at entry?
+method: >-
+  M0 v4.2 section 6, claim 2, as written (bank/maps/FT-001/missions/FT-001-M0-rules.md, commit 3163162);
+  nothing is added to it except where a reading is marked.
+  Lines: frame c's series.csv (data/reconstructed/ft001-c, fifth build), status "counted", entry year 1970
+  or later. Units are spells (one per money per horizon). Outcome: "held" against "not held" ("broke" and
+  "broke and restored" are not held).
+  Separator (headline): supports_count, "two or more" against "one or none"; a line whose count is
+  "cannot be read" is in neither side.
+  Strata: route x tercile x era x default_at_entry; a line whose default at entry is "cannot be read" is in
+  no stratum (the fifth build's N3), and a stratum enters only with both sides present.
+  Statistic: the Mantel-Haenszel difference in the share held, two or more minus one or none, with weights
+  w_k = n1k n0k / (n1k + n0k) over the strata: D = sum_k w_k (p1k - p0k) / sum_k w_k, in points.
+  Interval: 90%, percentile, from 2,000 bootstrap draws over monies (a money's spells are drawn together),
+  seed 1797; a draw in which no stratum has both sides is dropped and the count of dropped draws is
+  printed.
+  Verdict of a reading (M0): too thin if fewer than 20 counted spells on either side (the lines in
+  strata with both sides); else confirmed if D >= 10 and the interval's lower bound > 0; refuted if the
+  interval's upper bound < 10; otherwise we cannot conclude. The smallest detectable effect (80% power, 5%
+  one-sided, share 0.6, strain.claim2_mde) is printed beside each reading, as frame c's manifest already
+  printed it before any count.
+  The claim's verdict: the headline reading's. M0 gives it with and without "taken back" and with and
+  without pegs and boards; if the verdict turns on either, "we cannot conclude". Reading C05-R1: a
+  headline that is too thin gives the claim "we cannot conclude (too thin)", and the readings without
+  "taken back" and without pegs and boards are printed beside it with their own outcome, labelled as
+  readings, never as the claim's verdict.
+  Printed beside, with the same statistic and no verdict of their own: each support alone (yes against
+  no: taken_back, limit_by_rule, limit_by_institution, force); the spells with a war year inside H left
+  out (M0 c-M12); frame c's variants regime-carried-out (entries' regime carried past 2016: gap G04's
+  bound), war-unreadable-as-no and war-after-cow-no (gap G05's bounds), entry-year-counted, H5 and H20;
+  frame c's separator variants (supports_count_cap_025, _cap_075, _index_04, _index_06, _ka_01, _ka_05).
+  Not coded in frame c, said: debt in own money, a substitute at hand (claim 3's cells), habit, world
+  demand and reserve status.
+  Every reading prints its n per side, the strata with both sides, the dropped draws and the MDE.
+parameters:
+  from_year: 1970
+  H_years: 10
+  margin_points: 10
+  floor_spells_per_side: 20
+  interval: 0.90
+  bootstrap_draws: 2000
+  bootstrap_unit: money
+  seed: 1797
+  mde_share: 0.6
+  separator: supports_count
+  strata: [route, tercile, era, default_at_entry]
+  readings_beside_the_verdict: [supports_count_without_taken_back, supports_count_without_pegs]
+  variants:
+    - each support alone (taken_back, limit_by_rule, limit_by_institution, force)
+    - spells with a war year inside H out
+    - frame c's regime-carried-out, war-unreadable-as-no, war-after-cow-no, entry-year-counted, H5, H20
+    - frame c's separator variants (cap 0.25 / 0.75, index 0.4 / 0.6, ka_open 0.1 / 0.5)
+  variants_counted: >-
+    for the headline and each reading beside it, how many variants tell the same outcome, printed beside
+data:
+  - dataset: reconstructed/ft001-c (fifth build, 5dcbcaab; manifest e3c970a8)
+  - dataset: reconstructed/ft001-c variant files (the same build)
+period: frame c's counted spells with an entry from 1970 to 2015 (H = 10; later entries are censored)
+sample: >-
+  Frame c's list, drawn by rule before any outcome was coded (M0 section 5 c; its fifth build): every
+  inconvertible money under strain that met a route, counted when its horizon ran its course. Nothing is
+  matched or dropped on anything measured after entry; the separators and the default are read at entry.
+  Convertible monies, monies already inflating and pegs past frame b's onset are apart by frame c's rules.
+out_of_sample: >-
+  Nothing is fitted: the margin, the floor and the strata were fixed in M0 before any data, and the
+  separators are coded at entry by rule. There is no second sample to check on; the variants (frame b's
+  line, the horizon, the separators' thresholds, the war readings) are counted beside the verdict, so a
+  result that one choice alone carries shows as such.
+failure: >-
+  If the headline is too thin (frame c's manifest printed 101 / 2 lines a side before any count), claim 2
+  ends "we cannot conclude (too thin)", said with why: "taken back" is exactly "not in default", so the
+  fewer side lives only among states in default. A reading beside it that confirms or refutes is printed
+  as that reading's outcome, never promoted to the claim's verdict.
+not: >-
+  Not causal: the supports are not assigned at random, and strain beyond what the matching holds (route,
+  tercile, era, default) is not closed (M0 section 10). Not a test of any one support, since each alone is
+  described. Convertible monies are not in it. A verdict at a floor confirms only effects several times
+  the margin (M0 section 6), said with it.
+created: '2026-10-02'

@@ -1,0 +1,35 @@
+id: C09-now-coded-g25-checked
+label: measurement
+title: Part 1's now, third card - C08 as written, on frame g's build after the issuer layer's small check (M7 section 16)
+question: >-
+  C06's question, unchanged: which of M0's supports stand today under the dollar and the euro, and which of a private
+  issuer's four lines can be read for the stablecoins named in sourced reading and for bitcoin? Told: no margin, no
+  verdict, nothing ranked.
+parent:
+  id: C08-now-coded-g25
+  hash: 8f4507968c62f65553c0b48823d9bfca48ca8033e201959913823a237eab4373
+method: >-
+  C08 (2cbb0a80) as written, V1-V4 kept, on frame g's build after M7 section 16 (ft001-g, mapping.csv at 8ace613e).
+  Written AFTER C08's run (f12a2a7e) had been seen and after the issuer layer's small check
+  (bank/checks/FT-001-M7-frame-g-issuer-layer-2026-10-02-sonnet-small-check.md) had read the build C08 ran on
+  (FRAMING F72: a revision made openly, after a result, said so). Section 16 changed two lines (GYEN's and ZUSD's
+  limit by institution, yes to cannot be read) and, by S13, the who column of six redemption yes lines (the issuer's
+  own words, the readings' words kept in the note). C08's run stays in git beside this one.
+  V5 (who, the two sources): the redemption yes lines whose note keeps the readings' words "a restricted set of
+  participants" are counted and named, so the page can say that the central-bank reading and the issuer describe the
+  same redeemers differently; V3's classes read the who column (the issuer's words) only.
+parameters:
+  as_c08: true
+data:
+  - dataset: C08's data, unchanged, except frame g
+  - dataset: reconstructed/ft001-g (after M7 section 16, 8ace613e), mapping.csv; and variant-fixed-readings-only.csv
+period: as C06
+sample: >-
+  C06's, unchanged. Nothing is chosen on what it shows.
+out_of_sample: >-
+  Nothing is fitted or tested; the run is read by the study's checks (BLUEPRINT section 8).
+failure: >-
+  None in the sense of a verdict. A line no document in hand prints stays "cannot be read".
+not: >-
+  Not a ranking of stablecoins, not a rating of any coin, not a forecast, not investment advice.
+created: '2026-10-02'

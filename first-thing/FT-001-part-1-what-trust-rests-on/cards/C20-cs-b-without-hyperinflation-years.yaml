@@ -1,0 +1,79 @@
+id: C20-cs-b-without-hyperinflation-years
+label: measurement
+title: CS-B corrected — the inflation gap between inconvertible and convertible years with the economy-years above
+  100% a year set apart, on C19's classes
+parent:
+  id: C19-cs-b-inflation-by-convertibility
+  hash: 9ac1b8d2d7bd94f0571fffb3988e1d06ea05e9da4dfdcb7c497a8ceb611b21f3
+kind: correction
+seen:
+- 'C19-cs-b-inflation-by-convertibility (every result: convertible 701 economy-years, mean 1.13%, median 0.0; fiat
+  1,169, median 2.31%, three years above 100% a year, its mean about 90 million percent, carried by Germany''s
+  1922-23 hyperinflation; the gap read "effect" on that mean; the convertible mean lifted by one year too, Germany''s
+  1924, convertible again while its annual-average prices still carried 1923; fiat from 1972 against convertible, gap 3.27, moving
+  blocks -0.04 to 6.58, bounded; the variants, the eras, JST''s peg beside)'
+- 'bank/checks/FT-001-2026-10-08-card-check-p1-c20.md (this card''s check, before its run: the panel''s eight
+  economy-years above 100% named (fiat DEU 1920, 1922, 1923; convertible DEU 1924; war FIN 1918, ITA 1944, JPN 1945;
+  Bretton Woods JPN 1947); the next fiat years below 75%; descriptive means without them, fiat 3.69 and convertible
+  0.09; the log means with and without them; no corrected interval)'
+- 'bank/checks/FT-001-2026-10-08-card-check-p1-c16-c19.md, -card-confirm-p1-c16-c17-c19.md and
+  -card-reconfirm-p1-c16-c17-c19.md (C19''s checks, before its run: none named a mean carried by one year)'
+question: 'Part 1''s map v11, P1-7 and K4, C19''s question corrected: C19''s mean gap measures one economy''s
+  hyperinflation, not the classes. On C19''s classes, unchanged, how much higher was average consumer-price inflation in
+  the inconvertible years than in the convertible years once the economy-years above 100% a year (C19''s own count,
+  fixed before its run) are set apart and named? A description, context to K4, beside Bordo & Schwartz''s Table 3 and
+  Rolnick & Weber, never in place of them.'
+method: '(1) The panel, the classes and the overlays: C19''s, by C19''s code (code/cs_b.py, panel()) and C19''s
+  parameters, unchanged (Table 1A''s dates read by rules (a)-(g); war years and Bretton Woods apart; inflation the
+  simple percent change of JST''s cpi). (2) The years set apart: every economy-year of the panel, in any class, whose
+  inflation is above 100% (C19''s "above_100" count, its threshold fixed on C19''s card before C19''s run), listed with
+  its economy, year, class and value, never dropped silently; those of the war years and Bretton Woods leave those
+  two classes'' descriptions too (they never enter the gap). (3) The gap: mean(fiat) - mean(convertible) on the
+  other economy-years, fiat and convertible as C19 defines them; the moving-block bootstrap of C19''s item 5
+  unchanged (blocks of 5 calendar years, 4,000 draws, default_rng(20261008), all economies of a year together), the
+  single-year bootstrap beside. (4) Beside, never instead: (a) the gap of medians, with the same moving-block
+  bootstrap (each draw''s median over the economy-years its years carry, repeated by their weights; every year kept,
+  a median being read by rank); (b) the gap of mean log rates, 100 * ln(CPI_t / CPI_t-1), on every economy-year, the
+  years above 100% kept, and beside it on the years kept by item 2 (a log rate shrinks a hyperinflation''s weight but
+  does not remove it: Germany''s 1923 is still about 2,000 log points, so the log gap on every year is not shielded
+  from the extreme years); (c) C19''s four variants (no transition years, returns in their
+  own block only, the earlier resumption, the marked suspensions inconvertible), each with the same years set apart;
+  (d) the eras of C19''s item 4 and JST''s peg flag, with the same years set apart; (e) fiat from 1972 against
+  convertible, corrected too: no fiat year after 1971 is above 100%, but its convertible side held Germany''s 1924,
+  so C19''s from-1972 gap is recomputed on the years kept, with the same bootstrap and reading. (5) The reading, P03, on
+  the gap against 1 point a year: an effect if the interval''s lower end is above 1; of the other sign if its upper end
+  is below -1; too small to matter if within -1 to 1; bounded otherwise, written as what it rules out. (6) Said beside
+  the result: the threshold was C19''s, fixed before any run, but setting those years apart is a choice made after
+  C19''s mean was seen (P12); the medians need no threshold, and the log rates are printed with and without it.'
+parameters:
+  parent_parameters: C19's card, read by this card's code (economies, years, status_on, war_years, bretton_woods,
+    eras, draws, block_years, bank_suspension_marks, seed)
+  set_apart_above: 100
+  log_rate: 100 * ln(CPI_t / CPI_t-1)
+matters:
+  cs_b_gap_set_apart: 1.0
+  cs_b_median_gap: 1.0
+  cs_b_log_gap: 1.0
+  cs_b_log_gap_set_apart: 1.0
+  cs_b_gap_set_apart_from_1972: 1.0
+  cs_b_gap_set_apart_no_transition: 1.0
+  cs_b_gap_set_apart_own_block_returns: 1.0
+  cs_b_gap_set_apart_earlier_resumption: 1.0
+  cs_b_gap_set_apart_marked_suspensions: 1.0
+data:
+- dataset: jst/macrohistory
+  vintage: '2026-09-30'
+- dataset: reconstructed/ft001-cs-tables
+  vintage: 'Table 1A as settled (2e7acc0c)'
+- dataset: reconstructed/ft001-a
+  vintage: 'route a4, counted lines, as committed'
+period: 1870-2020
+failure: 'If the convertible and fiat years above 100% are not C19''s four (one convertible, three fiat), the code
+  writes a void result naming them. If the medians or the log rates read differently from the gap, all are printed, the gap leading, the
+  difference said.'
+not: 'Not causal: a class is a regime and its era together. Not a new classification: C19''s classes. Not a claim
+  that the hyperinflations did not happen: they are named where the result is printed, as the fiat years'' extreme.'
+created: '2026-10-08'
+sample: 'C19''s panel, unchanged; the years set apart are named. Designed after C19''s result was seen (its mean), said.'
+out_of_sample: 'Bordo & Schwartz''s Table 3 and Rolnick & Weber beside, as for C19: other measures and populations, not
+  a test of this panel.'

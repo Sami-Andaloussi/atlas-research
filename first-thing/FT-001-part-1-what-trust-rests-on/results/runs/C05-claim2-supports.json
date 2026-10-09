@@ -1,0 +1,520 @@
+{
+  "card": "C05-claim2-supports",
+  "card_hash": "2785e1be559bc6465cbdca701de6496507c35fd72ee50e3c77dbfbf7e5f0f8c1",
+  "run_at": "2026-10-02T11:20:37+00:00",
+  "result": {
+    "lines": 167,
+    "monies": 104,
+    "readings": {
+      "supports_count": {
+        "separator": "supports_count",
+        "D_points": -16.176470588235297,
+        "interval_90": [
+          -50.0,
+          0.0
+        ],
+        "n_one_or_none": 2,
+        "n_two_or_more": 16,
+        "strata_with_both_sides": 2,
+        "dropped_draws": 279,
+        "mde_points": 91.7,
+        "outcome": "too thin"
+      },
+      "supports_count_without_taken_back": {
+        "separator": "supports_count_without_taken_back",
+        "D_points": -16.176470588235297,
+        "interval_90": [
+          -50.0,
+          0.0
+        ],
+        "n_one_or_none": 2,
+        "n_two_or_more": 16,
+        "strata_with_both_sides": 2,
+        "dropped_draws": 279,
+        "mde_points": 91.7,
+        "outcome": "too thin"
+      },
+      "supports_count_without_pegs": {
+        "separator": "supports_count_without_pegs",
+        "D_points": 25.747745107182347,
+        "interval_90": [
+          10.042013949373073,
+          45.35005626077925
+        ],
+        "n_one_or_none": 24,
+        "n_two_or_more": 40,
+        "strata_with_both_sides": 8,
+        "dropped_draws": 0,
+        "mde_points": 32.4,
+        "outcome": "confirmed"
+      }
+    },
+    "claim": "we cannot conclude (too thin)",
+    "each_support_alone": {
+      "taken_back": {
+        "separator": "taken_back",
+        "D_points": null,
+        "interval_90": [
+          null,
+          null
+        ],
+        "n_one_or_none": 0,
+        "n_two_or_more": 0,
+        "strata_with_both_sides": 0,
+        "dropped_draws": 2000,
+        "mde_points": null,
+        "outcome": "too thin"
+      },
+      "limit_by_rule": {
+        "separator": "limit_by_rule",
+        "D_points": 8.915662650602409,
+        "interval_90": [
+          -50.0,
+          100.0
+        ],
+        "n_one_or_none": 3,
+        "n_two_or_more": 22,
+        "strata_with_both_sides": 3,
+        "dropped_draws": 115,
+        "mde_points": null,
+        "outcome": "too thin"
+      },
+      "limit_by_institution": {
+        "separator": "limit_by_institution",
+        "D_points": null,
+        "interval_90": [
+          null,
+          null
+        ],
+        "n_one_or_none": 0,
+        "n_two_or_more": 0,
+        "strata_with_both_sides": 0,
+        "dropped_draws": 2000,
+        "mde_points": null,
+        "outcome": "too thin"
+      },
+      "force": {
+        "separator": "force",
+        "D_points": 8.50929719508352,
+        "interval_90": [
+          -2.0960026623895414,
+          20.92905392163556
+        ],
+        "n_one_or_none": 57,
+        "n_two_or_more": 55,
+        "strata_with_both_sides": 13,
+        "dropped_draws": 0,
+        "mde_points": null,
+        "outcome": "we cannot conclude"
+      }
+    },
+    "war_in_H_out": {
+      "lines": 157,
+      "supports_count": {
+        "separator": "supports_count",
+        "D_points": 0.0,
+        "interval_90": [
+          0.0,
+          0.0
+        ],
+        "n_one_or_none": 2,
+        "n_two_or_more": 14,
+        "strata_with_both_sides": 2,
+        "dropped_draws": 257,
+        "mde_points": 93.2,
+        "outcome": "too thin"
+      },
+      "supports_count_without_taken_back": {
+        "separator": "supports_count_without_taken_back",
+        "D_points": 0.0,
+        "interval_90": [
+          0.0,
+          0.0
+        ],
+        "n_one_or_none": 2,
+        "n_two_or_more": 14,
+        "strata_with_both_sides": 2,
+        "dropped_draws": 257,
+        "mde_points": 93.2,
+        "outcome": "too thin"
+      },
+      "supports_count_without_pegs": {
+        "separator": "supports_count_without_pegs",
+        "D_points": 29.180074131399948,
+        "interval_90": [
+          14.416984346472926,
+          48.63925634649027
+        ],
+        "n_one_or_none": 24,
+        "n_two_or_more": 38,
+        "strata_with_both_sides": 8,
+        "dropped_draws": 0,
+        "mde_points": 32.7,
+        "outcome": "confirmed"
+      }
+    },
+    "frame_c_variants": {
+      "regime-carried-out": {
+        "lines": 167,
+        "supports_count": {
+          "separator": "supports_count",
+          "D_points": -20.370370370370374,
+          "interval_90": [
+            -50.0,
+            0.0
+          ],
+          "n_one_or_none": 2,
+          "n_two_or_more": 18,
+          "strata_with_both_sides": 2,
+          "dropped_draws": 279,
+          "mde_points": 91.3,
+          "outcome": "too thin"
+        },
+        "supports_count_without_taken_back": {
+          "separator": "supports_count_without_taken_back",
+          "D_points": -20.370370370370374,
+          "interval_90": [
+            -50.0,
+            0.0
+          ],
+          "n_one_or_none": 2,
+          "n_two_or_more": 18,
+          "strata_with_both_sides": 2,
+          "dropped_draws": 279,
+          "mde_points": 91.3,
+          "outcome": "too thin"
+        },
+        "supports_count_without_pegs": {
+          "separator": "supports_count_without_pegs",
+          "D_points": 25.23369622238987,
+          "interval_90": [
+            9.668313995999064,
+            44.36924344324772
+          ],
+          "n_one_or_none": 24,
+          "n_two_or_more": 40,
+          "strata_with_both_sides": 8,
+          "dropped_draws": 0,
+          "mde_points": 32.5,
+          "outcome": "confirmed"
+        }
+      },
+      "war-unreadable-as-no": {
+        "lines": 203,
+        "supports_count": {
+          "separator": "supports_count",
+          "D_points": -12.195121951219512,
+          "interval_90": [
+            -40.00000000000001,
+            0.0
+          ],
+          "n_one_or_none": 2,
+          "n_two_or_more": 22,
+          "strata_with_both_sides": 2,
+          "dropped_draws": 263,
+          "mde_points": 90.2,
+          "outcome": "too thin"
+        },
+        "supports_count_without_taken_back": {
+          "separator": "supports_count_without_taken_back",
+          "D_points": -12.195121951219512,
+          "interval_90": [
+            -40.00000000000001,
+            0.0
+          ],
+          "n_one_or_none": 2,
+          "n_two_or_more": 22,
+          "strata_with_both_sides": 2,
+          "dropped_draws": 263,
+          "mde_points": 90.2,
+          "outcome": "too thin"
+        },
+        "supports_count_without_pegs": {
+          "separator": "supports_count_without_pegs",
+          "D_points": 21.312126144495668,
+          "interval_90": [
+            5.4681425136375665,
+            40.118208441022574
+          ],
+          "n_one_or_none": 26,
+          "n_two_or_more": 54,
+          "strata_with_both_sides": 8,
+          "dropped_draws": 0,
+          "mde_points": 29.6,
+          "outcome": "confirmed"
+        }
+      },
+      "war-after-cow-no": {
+        "lines": 194,
+        "supports_count": {
+          "separator": "supports_count",
+          "D_points": -12.195121951219512,
+          "interval_90": [
+            -41.666666666666664,
+            0.0
+          ],
+          "n_one_or_none": 2,
+          "n_two_or_more": 22,
+          "strata_with_both_sides": 2,
+          "dropped_draws": 264,
+          "mde_points": 90.2,
+          "outcome": "too thin"
+        },
+        "supports_count_without_taken_back": {
+          "separator": "supports_count_without_taken_back",
+          "D_points": -12.195121951219512,
+          "interval_90": [
+            -41.666666666666664,
+            0.0
+          ],
+          "n_one_or_none": 2,
+          "n_two_or_more": 22,
+          "strata_with_both_sides": 2,
+          "dropped_draws": 264,
+          "mde_points": 90.2,
+          "outcome": "too thin"
+        },
+        "supports_count_without_pegs": {
+          "separator": "supports_count_without_pegs",
+          "D_points": 22.785509856542944,
+          "interval_90": [
+            8.196635434402815,
+            40.80087968674762
+          ],
+          "n_one_or_none": 26,
+          "n_two_or_more": 50,
+          "strata_with_both_sides": 8,
+          "dropped_draws": 0,
+          "mde_points": 30.3,
+          "outcome": "confirmed"
+        }
+      },
+      "entry-year-counted": {
+        "lines": 183,
+        "supports_count": {
+          "separator": "supports_count",
+          "D_points": -20.805369127516784,
+          "interval_90": [
+            -50.0,
+            0.0
+          ],
+          "n_one_or_none": 2,
+          "n_two_or_more": 17,
+          "strata_with_both_sides": 2,
+          "dropped_draws": 274,
+          "mde_points": 91.5,
+          "outcome": "too thin"
+        },
+        "supports_count_without_taken_back": {
+          "separator": "supports_count_without_taken_back",
+          "D_points": -20.805369127516784,
+          "interval_90": [
+            -50.0,
+            0.0
+          ],
+          "n_one_or_none": 2,
+          "n_two_or_more": 17,
+          "strata_with_both_sides": 2,
+          "dropped_draws": 274,
+          "mde_points": 91.5,
+          "outcome": "too thin"
+        },
+        "supports_count_without_pegs": {
+          "separator": "supports_count_without_pegs",
+          "D_points": 22.49578587117536,
+          "interval_90": [
+            5.307621411115015,
+            41.2232376244486
+          ],
+          "n_one_or_none": 25,
+          "n_two_or_more": 41,
+          "strata_with_both_sides": 8,
+          "dropped_draws": 0,
+          "mde_points": 31.8,
+          "outcome": "confirmed"
+        }
+      },
+      "H5": {
+        "lines": 346,
+        "supports_count": {
+          "separator": "supports_count",
+          "D_points": -11.126961483594865,
+          "interval_90": [
+            -20.68965517241379,
+            -2.777777777777779
+          ],
+          "n_one_or_none": 3,
+          "n_two_or_more": 54,
+          "strata_with_both_sides": 2,
+          "dropped_draws": 273,
+          "mde_points": 72.3,
+          "outcome": "too thin"
+        },
+        "supports_count_without_taken_back": {
+          "separator": "supports_count_without_taken_back",
+          "D_points": -11.126961483594865,
+          "interval_90": [
+            -20.68965517241379,
+            -2.777777777777779
+          ],
+          "n_one_or_none": 3,
+          "n_two_or_more": 54,
+          "strata_with_both_sides": 2,
+          "dropped_draws": 273,
+          "mde_points": 72.3,
+          "outcome": "too thin"
+        },
+        "supports_count_without_pegs": {
+          "separator": "supports_count_without_pegs",
+          "D_points": 9.414551356901049,
+          "interval_90": [
+            0.31378090196438096,
+            21.745983774888355
+          ],
+          "n_one_or_none": 48,
+          "n_two_or_more": 90,
+          "strata_with_both_sides": 9,
+          "dropped_draws": 0,
+          "mde_points": 22.2,
+          "outcome": "we cannot conclude"
+        }
+      },
+      "H20": {
+        "lines": 63,
+        "supports_count": {
+          "separator": "supports_count",
+          "D_points": null,
+          "interval_90": [
+            null,
+            null
+          ],
+          "n_one_or_none": 0,
+          "n_two_or_more": 0,
+          "strata_with_both_sides": 0,
+          "dropped_draws": 2000,
+          "mde_points": null,
+          "outcome": "too thin"
+        },
+        "supports_count_without_taken_back": {
+          "separator": "supports_count_without_taken_back",
+          "D_points": null,
+          "interval_90": [
+            null,
+            null
+          ],
+          "n_one_or_none": 0,
+          "n_two_or_more": 0,
+          "strata_with_both_sides": 0,
+          "dropped_draws": 2000,
+          "mde_points": null,
+          "outcome": "too thin"
+        },
+        "supports_count_without_pegs": {
+          "separator": "supports_count_without_pegs",
+          "D_points": 31.70731707317073,
+          "interval_90": [
+            -38.967741935483886,
+            100.0
+          ],
+          "n_one_or_none": 6,
+          "n_two_or_more": 9,
+          "strata_with_both_sides": 5,
+          "dropped_draws": 23,
+          "mde_points": 65.9,
+          "outcome": "too thin"
+        }
+      }
+    },
+    "separator_variants": {
+      "supports_count_cap_025": {
+        "separator": "supports_count_cap_025",
+        "D_points": -33.33333333333334,
+        "interval_90": [
+          -66.66666666666669,
+          0.0
+        ],
+        "n_one_or_none": 1,
+        "n_two_or_more": 6,
+        "strata_with_both_sides": 1,
+        "dropped_draws": 757,
+        "mde_points": 131.6,
+        "outcome": "too thin"
+      },
+      "supports_count_cap_075": {
+        "separator": "supports_count_cap_075",
+        "D_points": -16.176470588235297,
+        "interval_90": [
+          -50.0,
+          0.0
+        ],
+        "n_one_or_none": 2,
+        "n_two_or_more": 16,
+        "strata_with_both_sides": 2,
+        "dropped_draws": 279,
+        "mde_points": 91.7,
+        "outcome": "too thin"
+      },
+      "supports_count_index_04": {
+        "separator": "supports_count_index_04",
+        "D_points": -20.805369127516784,
+        "interval_90": [
+          -50.0,
+          0.0
+        ],
+        "n_one_or_none": 2,
+        "n_two_or_more": 17,
+        "strata_with_both_sides": 2,
+        "dropped_draws": 279,
+        "mde_points": 91.5,
+        "outcome": "too thin"
+      },
+      "supports_count_index_06": {
+        "separator": "supports_count_index_06",
+        "D_points": -11.76470588235294,
+        "interval_90": [
+          -44.676370622136844,
+          0.0
+        ],
+        "n_one_or_none": 2,
+        "n_two_or_more": 13,
+        "strata_with_both_sides": 2,
+        "dropped_draws": 290,
+        "mde_points": 93.4,
+        "outcome": "too thin"
+      },
+      "supports_count_ka_01": {
+        "separator": "supports_count_ka_01",
+        "D_points": -9.859154929577464,
+        "interval_90": [
+          -37.5,
+          0.0
+        ],
+        "n_one_or_none": 2,
+        "n_two_or_more": 11,
+        "strata_with_both_sides": 2,
+        "dropped_draws": 285,
+        "mde_points": 93.7,
+        "outcome": "too thin"
+      },
+      "supports_count_ka_05": {
+        "separator": "supports_count_ka_05",
+        "D_points": 0.0,
+        "interval_90": [
+          0.0,
+          0.0
+        ],
+        "n_one_or_none": 1,
+        "n_two_or_more": 10,
+        "strata_with_both_sides": 1,
+        "dropped_draws": 725,
+        "mde_points": 127.8,
+        "outcome": "too thin"
+      }
+    },
+    "variants_counted": {
+      "supports_count": "7 of 7 variants tell the same outcome",
+      "supports_count_without_taken_back": "7 of 7 variants tell the same outcome",
+      "supports_count_without_pegs": "5 of 7 variants tell the same outcome"
+    }
+  }
+}

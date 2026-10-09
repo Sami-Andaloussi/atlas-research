@@ -1,0 +1,66 @@
+id: C07-claim1-dated-lines-v2
+label: measurement
+title: Claim 1, second card - C04 as written, with the readings its run's isolated check found missing or misread
+question: >-
+  C04's question, unchanged: for every break of a frame c money from 1970, did the onset come after a headline act,
+  before it, in the same year, or with none near it, and how often does an act fall in strained years that did not
+  break? Told, never counted: no margin, no verdict.
+parent:
+  id: C04-claim1-dated-lines
+  hash: e20550663ff873cd2cdd4d00033a05fdb910722517094c4d2c97baccd5207d47
+method: >-
+  C04 (5342209e) and its readings R1-R5, its code's J1-J12 (3460f3c7) and the plan's decision on its six points, all
+  kept, except as below. Written AFTER C04's run (59a15b88) had been seen and after its isolated check
+  (bank/checks/FT-001-part-1-claims-1-2-runs-2026-10-02-opus-check.md, d7878b89: not ready, B1-B7) had read it
+  (FRAMING F72: a revision made openly, after a result, said so). No reading below is chosen for what it does to a
+  share; each answers a named finding, and C04's run stays in git beside this one.
+  R6 (B3; M0 section 6, "war years apart"): the forward table's headline is the trials with no war year in y; a
+  trial whose war year cannot be read stays in the headline and is counted; the trials with a war year in y are a
+  table beside. C04's "all trials" table is printed as a variant.
+  R7 (B1; the acts manifest, a8780e1, committed before C04: "T2-var-total and T2-var-private are printed beside"
+  claim 1's base rate): the shares, the base rate and the forward table are run three times on T2's readings - the
+  headline (per creditor class), T2-var-total (the first year of a total stock in default) and T2-var-private (private
+  creditors' class) - each variant replacing the headline T2 lines from 1960 by its own, on the headline T2's coverage;
+  the other acts unchanged. The page words T2 as "a creditor class newly in arrears", and says how many T2 acts fall
+  inside a default already running.
+  R8 (B2): beside every count, the same with a shared or foreign money's breaks (frame b's shared_or_foreign_money yes)
+  that share an onset month counted once, as one decision (the CFA franc's devaluation of January 1994 among them).
+  R9 (B4): every forward-table cell gives, beside its trial-years followed by an onset, the number of distinct breaks
+  (money and onset year) among them; a joint stratum's note says which side holds no onset.
+  R10 (B5): every share is given over all the breaks and over the readable ones (all less "cannot be read"); and the
+  shares are given again over the breaks that end a strained spell of the base rate's own population (an onset of a
+  counted, strained frame c spell), beside the base rate.
+  R11 (B7): a break's dated line also shows the acts of y+1..y+3 that fall after the crossing, marked "after the
+  crossing", so a break classed "before an act" shows its act.
+  R12 (C1): a source group that covers no break's window is printed with "no window from 1970 is read by this source"
+  and no shares.
+  Said, not changed (C4, C5, C7): R1 compares years (a spell entered in the onset's year counts as at or before it);
+  the split and the regime at Y read the class of Y-1; R4 censors every trial in a spell's last three years, counted.
+parameters:
+  from_year: 1970
+  L_years: 3
+  H_years: 10
+  at_risk_pi_below: 10
+  acts: [T2, L1, L2, L3, H1]
+  t2_readings: [headline, T2-var-total, T2-var-private]
+  readings: [A, B]
+  variants: [without T2, each act alone, war years apart, all trials (C04's headline), shared decisions once]
+  not_run: [F1, W1]
+data:
+  - dataset: reconstructed/ft001-b (second build, b2a34a89)
+  - dataset: reconstructed/ft001-c (fifth build, 5dcbcaab)
+  - dataset: reconstructed/ft001-acts (third build, a8780e1), its T2-var-total and T2-var-private lines
+  - dataset: the panel's readers (bank/maps/FT-001/missions/code/panel.py) over their frozen sources
+period: breaks with a crossing from 1970; strained at-risk years from 1970
+sample: >-
+  As C04: frame b's breaks and frame c's spells, drawn by rule before any act was set beside them; nothing dropped on
+  its outcome. The T2 variants were committed in the acts list before C04.
+out_of_sample: >-
+  As C04: nothing fitted or tested; the base rate is the check against chance. This card's readings were written after
+  C04's run and its check had been seen, and say so.
+failure: >-
+  As C04: none in the sense of a verdict. If a T2 variant moves "after an act" far from the headline, the page prints
+  both and does not choose.
+not: >-
+  As C04: not a test, not causal. Not a new verdict, and not a replacement of C04's run, which stays beside it.
+created: '2026-10-02'

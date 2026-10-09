@@ -1,0 +1,103 @@
+id: C19-cs-b-inflation-by-convertibility
+label: measurement
+title: CS-B — average consumer-price inflation by convertibility, 17 rich economies 1870–2020, each year classed by
+  Bordo & Schwartz's Table 1A
+kind: extension
+seen:
+- 'bank/checks/FT-001-2026-10-08-card-check-p1-c16-c19.md (this card''s check, before any run: rule (3) walked by hand on
+  the transcription, every anomaly listed; no inflation mean)'
+- 'bank/checks/FT-001-map-2026-10-08-audit-p1v5.md (the v5 audit''s simulation of this design''s precision: an era mean
+  +-1.2 to +-7.2, the convertible-against-fiat gap +-1.7 to +-10.3; no class mean of this card)'
+- 'Bordo & Schwartz (1994) Table 3 and Rolnick & Weber (1997) pp. 13, 16, read for K4 (their own means by regime and
+  period: G10 and Switzerland 0.8% under gold, 6.4% under the float; 9.17% against 1.75%)'
+question: 'Part 1''s map v11, P1-7 and K4: on our own panel (JST R6''s eighteen rich economies but Ireland, 1870–2020),
+  how much higher was average consumer-price inflation in the years a money was inconvertible than in the years it was
+  convertible into specie, each year classed by Bordo & Schwartz''s published chronology — set beside their Table 3 and
+  Rolnick & Weber''s figures, never in place of them? A description, context to K4.'
+method: '(1) The panel: JST R6 (jst/macrohistory 2026-09-30), Australia, Belgium, Canada, Denmark, Finland, France,
+  Germany, Italy, Japan, the Netherlands, Norway, Portugal, Spain, Sweden, Switzerland, the United Kingdom, the United
+  States; 1870-2020; inflation each year, 100 * (CPI_t / CPI_t-1 - 1) from JST''s cpi; a year without both prices is
+  dropped and counted. (2) The chronology: Bordo & Schwartz''s Table 1A (dates of bimetallic or silver
+  convertibility, of gold convertibility, and of suspensions), as transcribed by two coders apart and settled at the
+  page (data/reconstructed/ft001-cs-tables, protocol notes/coding-cs-a-cs-b-tables.md at 5300e0f0). (3) The classes,
+  each economy-year by its status at 1 July, read from Table 1A''s dates of convertibility (bimetallic, silver or gold)
+  and of suspension, in date order: convertible from a date of convertibility until the next date of suspension;
+  inconvertible from a date of suspension until the next date of convertibility, in either block. Fixed here: (a) a
+  date printed as a year only takes effect on 1 January, a month-year on the first of that month; (b) on one date, a
+  suspension is applied before a convertibility date (a change of standard, Japan 1897, Sweden 1873; the US''s 1893);
+  (c) a pair ("1875/1879", "1922/1924") takes the later year (resumption in fact), the earlier in a variant; a range
+  ("1848-50", "1870-78", "1797-1821") is a suspension from its start and convertibility from its end, a convertibility
+  range ("1816-1821") takes its end; (d) a suspension whose date or reason carries Table 1A''s footnote mark (a) (a
+  suspension of the Bank Act of 1844), (b) (a change in the mint ratio) or (c) (a restriction of payments by banks) is
+  not a suspension of convertibility: the status does not change, the year is flagged, and a variant classes those
+  years inconvertible (the marks read from the coders'' files, coders/c2/table-a.csv, a reason''s mark joined to its suspension by
+  economy, block and printed line; the US''s 1893 and 1907 marks were read unsure by both coders, so the main run''s
+  1907 rests on one glyph, said, the variant covering it); (e) a suspension with no return printed in its own block (Belgium 1848, Italy 1866, the US 1862; France''s
+  1870-78 is a range whose end is its printed return, not flagged) lasts until
+  the economy''s next date of convertibility in either block, and the years it governs are flagged, dropped in a
+  variant; (f) a year before the economy''s first printed date is not classed (listed); (g) after the economy''s last
+  printed suspension it is inconvertible to 2020; an economy whose last printed date is a convertibility date
+  (Australia, 03/1930) is not classed from that date until 1937 (the year after Table 1A''s last suspensions, 1936, when every economy of
+  the table is inconvertible), then inconvertible (listed). Every year a rule leaves
+  unclassed is listed, never silently dropped. Three calendar overlays, applied after: war years (1914-18 and
+  1939-45) apart; Bretton Woods (1946-1971) apart, its own class, never pooled with either; the transition years (the
+  calendar year of any event that changes the status) flagged, and dropped in a variant. (4) The comparison: "fiat" = the inconvertible years outside war and
+  Bretton Woods (the suspensions before 1946 and every year from 1972); "convertible" = the convertible years outside
+  war. For each class: the mean, the median, the share of years above 10%, the count of years above 100% (counted,
+  never dropped), and the number of economy-years. The gap = mean(fiat) - mean(convertible). Beside: fiat from 1972
+  only against convertible; fiat from 1972 split by each economy''s inflation-target adoption (A2 panel 4''s counted
+  adoption dates, data/reconstructed/ft001-a series.csv route a4: before and from the adoption year; the economies with no counted adoption date in their own group); the calendar eras
+  (1870-1913, 1919-38, 1946-71, 1972-2020) with each class''s mean inside them; JST''s own peg flag as a second
+  classification, beside (peg = 1 pegged, 0 not, as JST codes it). (5) The precision: a moving-block bootstrap of
+  calendar years (blocks of 5 consecutive years, their starts drawn uniformly among the 147 starts 1870-2016, no
+  wrap-around, until 151 years are filled, the last block cut; all economies of a year travel together; a class mean
+  pooled over its economy-years), 4,000 draws, numpy default_rng(20261008), its 2.5 and 97.5 percentiles for each
+  class mean and for the gap, a draw leaving a class empty left out of that statistic and counted; beside it, the
+  same with single years drawn independently. (6) The
+  reading, P03, on the gap against 1 point a year: an effect if the interval''s lower end is above 1; an effect of the
+  other sign if its upper end is below -1; too small to matter if within -1 to 1; bounded otherwise, written as what
+  it rules out (a bounded reading is likely: said before the run; K4 rests on its sources). (7) Beside, never instead:
+  Bordo & Schwartz''s Table 3 (GNP deflators, log-trend rates, by calendar period) and Rolnick & Weber''s means
+  (twelve countries under both standards), each with its own population; the differences said (prices, rates,
+  classes by year rather than by period).'
+parameters:
+  economies: [AUS, BEL, CAN, CHE, DEU, DNK, ESP, FIN, FRA, GBR, ITA, JPN, NLD, NOR, PRT, SWE, USA]
+  years: [1870, 2020]
+  status_on: 07-01
+  war_years: [[1914, 1918], [1939, 1945]]
+  bretton_woods: [1946, 1971]
+  eras: [[1870, 1913], [1919, 1938], [1946, 1971], [1972, 2020]]
+  draws: 4000
+  block_years: 5
+  bank_suspension_marks: [a, b, c]
+  seed: 20261008
+  inflation: simple percent change of JST cpi
+matters:
+  cs_b_gap: 1.0
+  cs_b_gap_marked_suspensions: 1.0
+  cs_b_gap_own_block_returns: 1.0
+  cs_b_gap_from_1972: 1.0
+  cs_b_gap_no_transition: 1.0
+  cs_b_gap_earlier_resumption: 1.0
+data:
+- dataset: jst/macrohistory
+  vintage: '2026-09-30'
+- dataset: reconstructed/ft001-cs-tables
+  vintage: 'Table 1A as settled (committed before this card runs)'
+- dataset: reconstructed/ft001-a
+  vintage: 'route a4, counted lines, as committed'
+- dataset: frame-a/bordo-schwartz-w4860
+  vintage: the frozen PDF
+period: 1870-2020
+failure: 'If a Table 1A date of these economies cannot be read after settlement, the economy-years it governs are not
+  classed and listed. If the variants give a reading different from the main, all are printed, the main leading.'
+not: 'Not causal: a class is a regime and its era together (oil shocks, the post-war state, wars). Not Bordo &
+  Schwartz''s or Rolnick & Weber''s result: ours, beside theirs. Not IRR''s classes. Not "today''s" inflation: the
+  float''s years from 1972 are many decades.'
+created: '2026-10-08'
+sample: 'JST''s rich economies by coverage, Ireland aside (Table 1A does not class it, G48); every year classed by a
+  published chronology, never by its inflation. Designed with Bordo & Schwartz''s and Rolnick & Weber''s means known
+  (they are K4''s sources), and after the v5 audit''s simulation of its precision (no mean of this card): said.'
+out_of_sample: 'Bordo & Schwartz''s Table 3 (21 countries, GNP deflators, by period) and Rolnick & Weber (twelve countries
+  under both standards) beside, and Reinhart & Rogoff''s other countries named (map frame R): other measures and
+  populations, not a test of this panel.'

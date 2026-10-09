@@ -1,0 +1,60 @@
+id: C08-now-coded-g25
+label: measurement
+title: Part 1's now, second card - C06 as written, with the stablecoins read from frame g's build after the issuers' own documents (G25)
+question: >-
+  C06's question, unchanged: which of M0's supports stand today under the dollar and the euro, and which of a private
+  issuer's four lines can be read for the stablecoins named in sourced reading and for bitcoin? Told: no margin, no
+  verdict, nothing ranked.
+parent:
+  id: C06-now-coded
+  hash: ddbf5e8189336084d473587891e72b4b4eadc8092f59d34c6f646d3a0d8ba85a
+method: >-
+  C06 (993d183e) as written, every reading kept, except the stablecoins' data line. Written AFTER C06's run
+  (fd9382e8) had been seen and after frame g was rebuilt with the issuers' own documents (gap FT001-G25; M7 sections
+  14 and 15; daf87773), which Sami opened by policy request 11 (FRAMING F72: a revision made openly, after a result,
+  said so). The dollar, the euro and bitcoin are read again by C06's code, unchanged.
+  V1 (the stablecoins): frame g's mapping after G25 (ft001-g, mapping.csv at daf87773): per line the counts yes / no /
+  cannot be read over the 84 launch coins, the coins with a line read, and the share of coins with no line read
+  (the engine's ask, 2026-10-02: the told picture rests on the coins whose terms could be read, and the page says how
+  few they are); no coin's line is filled. C06's build is printed beside as the variant fixed-readings-only
+  (variant-fixed-readings-only.csv, identical to mapping.csv at 97f10368), so the move G25 made is in the run.
+  V2 (kappa): the first layer's kappa (coders g1, g2) as C06's registry printed it, and the issuer layer's (coders
+  i1, i2, 17 coins x 4 lines), each on its own coin-lines, never pooled.
+  V3 (who may redeem, for the launch lines that read redemption yes): the issuer's or reading's words in the mapping's
+  who column (S9) are put in one of four classes by the first rule that matches, in this order: "not settled" if the
+  words begin so (two sources disagree, S9); "a restricted set of participants" if they say so; "holders with an
+  account" if they name customers, members, clients, verified users or an account (words: customer, member, client,
+  verified, account); "any holder" if they name any user or any holder, or say permissionless (words: any user, any
+  holder, permissionless). A who matching none is printed as unclassified, never put in a class by hand. C06's
+  registry counted only the first-layer phrases "any user/any holder" and "a restricted set"; the issuer layer's own
+  words need the account class.
+  V4 (late prints, S10): the launch and after-change lines whose note says "late print" are counted and named.
+  Not in hand, said on the page (the engine, 2026-10-02): PayPal USD's taken back (PayPal's own terms, www.paypal.com)
+  and mStable USD's taken back (its whitepaper, github.com), both on hosts the Guard refuses; Liquity's whitepaper
+  (docsend.com), refused, without which its four lines are read; Reserve, for which no launch document was found
+  anywhere.
+parameters:
+  cap_line: 0.5
+  index_line: 0.5
+  ka_line: 0.25
+  monies: [USA, the euro members from their entry (frame k's dollar-euro rule's euro list)]
+  as_of: the last year each source reads (Garriga 2023, Chinn-Ito 2023, the default database's last year, the chronologies 2016)
+  who_classes: [not settled, a restricted set of participants, holders with an account, any holder]
+data:
+  - dataset: C06's data, unchanged, except frame g
+  - dataset: reconstructed/ft001-g (after G25, daf87773), mapping.csv; and variant-fixed-readings-only.csv (C06's build)
+  - dataset: reconstructed/ft001-g/coders g1, g2 (first layer) and i1, i2 (issuer layer), for kappa
+period: as C06; frame g at each coin's launch
+sample: >-
+  C06's, unchanged: the dollar, the euro, the stablecoins frame g lists (84, none added by G25: M7 section 14),
+  bitcoin. Nothing is chosen on what it shows.
+out_of_sample: >-
+  Nothing is fitted or tested. Frame g's issuer layer has its own isolated small check (Sonnet, M7 section 14);
+  the run is read by the study's checks (BLUEPRINT section 8).
+failure: >-
+  None in the sense of a verdict. A line no document in hand prints stays "cannot be read", and the page prints the
+  share of coins with no line read beside the told counts.
+not: >-
+  Not a ranking of stablecoins, not a rating of any coin, not a forecast, not investment advice. Not a claim that a
+  line read yes makes a coin safe.
+created: '2026-10-02'

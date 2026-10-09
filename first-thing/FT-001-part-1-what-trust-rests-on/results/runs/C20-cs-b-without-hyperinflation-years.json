@@ -1,0 +1,456 @@
+{
+ "card": "C20-cs-b-without-hyperinflation-years",
+ "card_hash": "0998117e5c12461d36682c4bfb60d36c4788c8ce0289a8573dab046a25bea992",
+ "run_at": "2026-10-08T16:37:15+00:00",
+ "result": {
+  "void": false,
+  "economy_years": 2508,
+  "by_class": {
+   "convertible": {
+    "n": 700,
+    "mean": 0.08506957966351786,
+    "median": 0.0,
+    "share_above_10": 0.024285714285714285,
+    "above_100": 0
+   },
+   "fiat": {
+    "n": 1166,
+    "mean": 3.693000737291814,
+    "median": 2.3115316448905965,
+    "share_above_10": 0.11406518010291596,
+    "above_100": 0
+   },
+   "war": {
+    "n": 201,
+    "mean": 14.162310752746269,
+    "median": 9.52858473394491,
+    "share_above_10": 0.4975124378109453,
+    "above_100": 0
+   },
+   "bretton_woods": {
+    "n": 441,
+    "mean": 5.193365814085285,
+    "median": 3.25123152709359,
+    "share_above_10": 0.09750566893424037,
+    "above_100": 0
+   }
+  },
+  "main": {
+   "convertible": {
+    "n": 700,
+    "mean": 0.08506957966351786,
+    "median": 0.0,
+    "share_above_10": 0.024285714285714285,
+    "above_100": 0
+   },
+   "fiat": {
+    "n": 1166,
+    "mean": 3.693000737291814,
+    "median": 2.3115316448905965,
+    "share_above_10": 0.11406518010291596,
+    "above_100": 0
+   },
+   "gap": 3.607931157628296,
+   "interval": [
+    1.908834385656476,
+    5.747263376562305
+   ],
+   "means_interval": {
+    "convertible_mean": [
+     -1.0245779311035832,
+     0.9470818088828243
+    ],
+    "fiat_mean": [
+     2.105606138262895,
+     5.550949251288849
+    ]
+   },
+   "iid_years_interval": [
+    2.538088268681347,
+    4.759159032999069
+   ],
+   "reading": "effect",
+   "refuted": false
+  },
+  "median_gap": {
+   "gap": 2.313693839117592,
+   "interval": [
+    1.307840198853337,
+    4.145015919595853
+   ],
+   "draws_left_out": 0,
+   "reading": "effect"
+  },
+  "log_rates": {
+   "convertible": {
+    "n": 701,
+    "mean": 0.28448526146923403,
+    "median": 0.0,
+    "share_above_10": 0.021398002853067047,
+    "above_100": 1
+   },
+   "fiat": {
+    "n": 1169,
+    "mean": 5.467939904038027,
+    "median": 2.2873337631007753,
+    "share_above_10": 0.10521813515825491,
+    "above_100": 2
+   },
+   "gap": 5.183454642568793,
+   "interval": [
+    2.301279938208639,
+    9.535248047640184
+   ],
+   "means_interval": {
+    "convertible_mean": [
+     -0.9329092422634735,
+     1.5062214016206894
+    ],
+    "fiat_mean": [
+     2.4404453908938377,
+     10.151929749035185
+    ]
+   },
+   "iid_years_interval": [
+    2.5146983243174086,
+    9.369888068519188
+   ],
+   "reading": "effect",
+   "refuted": false
+  },
+  "log_rates_set_apart": {
+   "convertible": {
+    "n": 700,
+    "mean": -0.01728876515723855,
+    "median": 0.0,
+    "share_above_10": 0.02,
+    "above_100": 0
+   },
+   "fiat": {
+    "n": 1166,
+    "mean": 3.4154651182851237,
+    "median": 2.28522043929057,
+    "share_above_10": 0.10291595197255575,
+    "above_100": 0
+   },
+   "gap": 3.4327538834423623,
+   "interval": [
+    1.8144890191617813,
+    5.445545152680617
+   ],
+   "means_interval": {
+    "convertible_mean": [
+     -1.1357855053141654,
+     0.8538463429604951
+    ],
+    "fiat_mean": [
+     1.9154452965954758,
+     5.147446397907514
+    ]
+   },
+   "iid_years_interval": [
+    2.395226490716341,
+    4.5202526979525
+   ],
+   "reading": "effect",
+   "refuted": false
+  },
+  "fiat_from_1972": {
+   "convertible": {
+    "n": 700,
+    "mean": 0.08506957966351786,
+    "median": 0.0,
+    "share_above_10": 0.024285714285714285,
+    "above_100": 0
+   },
+   "fiat": {
+    "n": 833,
+    "mean": 4.393265151360099,
+    "median": 2.579767029627722,
+    "share_above_10": 0.11524609843937575,
+    "above_100": 0
+   },
+   "gap": 4.308195571696581,
+   "interval": [
+    2.1013417554540705,
+    7.134016513698719
+   ],
+   "means_interval": {
+    "convertible_mean": [
+     -1.0245779311035832,
+     0.9470818088828243
+    ],
+    "fiat_mean": [
+     2.398112453470316,
+     6.987910861966894
+    ]
+   },
+   "iid_years_interval": [
+    3.0962743698048407,
+    5.682486432707094
+   ],
+   "reading": "effect",
+   "refuted": false
+  },
+  "no_transition_years": {
+   "convertible": {
+    "n": 675,
+    "mean": 0.1605213472272143,
+    "median": 0.0,
+    "share_above_10": 0.023703703703703703,
+    "above_100": 0
+   },
+   "fiat": {
+    "n": 1153,
+    "mean": 3.7537832270821356,
+    "median": 2.3279999999999967,
+    "share_above_10": 0.11448395490026018,
+    "above_100": 0
+   },
+   "gap": 3.5932618798549214,
+   "interval": [
+    1.893186413563481,
+    5.722052787296903
+   ],
+   "means_interval": {
+    "convertible_mean": [
+     -0.9171183199916686,
+     0.9897212585945283
+    ],
+    "fiat_mean": [
+     2.1747357286939173,
+     5.615334549237377
+    ]
+   },
+   "iid_years_interval": [
+    2.5369284332031388,
+    4.7495111678997075
+   ],
+   "reading": "effect",
+   "refuted": false
+  },
+  "own_block_returns_only": {
+   "convertible": {
+    "n": 700,
+    "mean": 0.08506957966351786,
+    "median": 0.0,
+    "share_above_10": 0.024285714285714285,
+    "above_100": 0
+   },
+   "fiat": {
+    "n": 1138,
+    "mean": 3.791196806665715,
+    "median": 2.3261326650228287,
+    "share_above_10": 0.11599297012302284,
+    "above_100": 0
+   },
+   "gap": 3.706127227002197,
+   "interval": [
+    1.9886462230029573,
+    5.88382637119354
+   ],
+   "means_interval": {
+    "convertible_mean": [
+     -1.0245779311035832,
+     0.9470818088828243
+    ],
+    "fiat_mean": [
+     2.1887678716881247,
+     5.710752936149284
+    ]
+   },
+   "iid_years_interval": [
+    2.612785286812688,
+    4.886551711588563
+   ],
+   "reading": "effect",
+   "refuted": false
+  },
+  "earlier_resumption": {
+   "convertible": {
+    "n": 706,
+    "mean": 0.03449835014752937,
+    "median": 0.0,
+    "share_above_10": 0.024079320113314446,
+    "above_100": 0
+   },
+   "fiat": {
+    "n": 1160,
+    "mean": 3.742441146760829,
+    "median": 2.3235534767663046,
+    "share_above_10": 0.1146551724137931,
+    "above_100": 0
+   },
+   "gap": 3.7079427966133,
+   "interval": [
+    2.0030898315350645,
+    5.847202538156709
+   ],
+   "means_interval": {
+    "convertible_mean": [
+     -1.0797702839389993,
+     0.8927962566184854
+    ],
+    "fiat_mean": [
+     2.1487137771506055,
+     5.6050721388585005
+    ]
+   },
+   "iid_years_interval": [
+    2.643039933914201,
+    4.849715253457584
+   ],
+   "reading": "effect",
+   "refuted": false
+  },
+  "marked_suspensions_inconvertible": {
+   "convertible": {
+    "n": 698,
+    "mean": 0.07999150938418102,
+    "median": 0.0,
+    "share_above_10": 0.024355300859598854,
+    "above_100": 0
+   },
+   "fiat": {
+    "n": 1168,
+    "mean": 3.6898574416922596,
+    "median": 2.3115316448905965,
+    "share_above_10": 0.11386986301369863,
+    "above_100": 0
+   },
+   "gap": 3.6098659323080784,
+   "interval": [
+    1.9092844965002542,
+    5.7423734743425
+   ],
+   "means_interval": {
+    "convertible_mean": [
+     -1.0318082768405403,
+     0.9374847874074124
+    ],
+    "fiat_mean": [
+     2.10105720365757,
+     5.547189487644665
+    ]
+   },
+   "iid_years_interval": [
+    2.5373560645210325,
+    4.753079152524113
+   ],
+   "reading": "effect",
+   "refuted": false
+  },
+  "fiat_from_1972_years_above": 0,
+  "eras": {
+   "1870-1913": {
+    "convertible": {
+     "n": 595,
+     "mean": 0.38273383358765173,
+     "median": 0.05327209375349806,
+     "share_above_10": 0.023529411764705882,
+     "above_100": 0
+    },
+    "fiat": {
+     "n": 109,
+     "mean": 0.3080524174701525,
+     "median": 0.0,
+     "share_above_10": 0.009174311926605505,
+     "above_100": 0
+    },
+    "bretton_woods": {
+     "n": 0,
+     "mean": null,
+     "median": null,
+     "share_above_10": null,
+     "above_100": 0
+    }
+   },
+   "1919-1938": {
+    "convertible": {
+     "n": 105,
+     "mean": -1.6016945259065747,
+     "median": -1.5266833050771367,
+     "share_above_10": 0.02857142857142857,
+     "above_100": 0
+    },
+    "fiat": {
+     "n": 224,
+     "mean": 2.7360324781028815,
+     "median": 1.1628895404177664,
+     "share_above_10": 0.16071428571428573,
+     "above_100": 0
+    },
+    "bretton_woods": {
+     "n": 0,
+     "mean": null,
+     "median": null,
+     "share_above_10": null,
+     "above_100": 0
+    }
+   },
+   "1946-1971": {
+    "convertible": {
+     "n": 0,
+     "mean": null,
+     "median": null,
+     "share_above_10": null,
+     "above_100": 0
+    },
+    "fiat": {
+     "n": 0,
+     "mean": null,
+     "median": null,
+     "share_above_10": null,
+     "above_100": 0
+    },
+    "bretton_woods": {
+     "n": 441,
+     "mean": 5.193365814085285,
+     "median": 3.25123152709359,
+     "share_above_10": 0.09750566893424037,
+     "above_100": 0
+    }
+   },
+   "1972-2020": {
+    "convertible": {
+     "n": 0,
+     "mean": null,
+     "median": null,
+     "share_above_10": null,
+     "above_100": 0
+    },
+    "fiat": {
+     "n": 833,
+     "mean": 4.393265151360099,
+     "median": 2.579767029627722,
+     "share_above_10": 0.11524609843937575,
+     "above_100": 0
+    },
+    "bretton_woods": {
+     "n": 0,
+     "mean": null,
+     "median": null,
+     "share_above_10": null,
+     "above_100": 0
+    }
+   }
+  },
+  "jst_peg_beside": {
+   "peg_1": {
+    "n": 1481,
+    "mean": 2.4574113578991033,
+    "median": 2.005919609556428,
+    "share_above_10": 0.0675219446320054,
+    "above_100": 0
+   },
+   "peg_0": {
+    "n": 826,
+    "mean": 3.6518591627236763,
+    "median": 1.997473562742802,
+    "share_above_10": 0.11259079903147699,
+    "above_100": 0
+   }
+  },
+  "said": "the threshold is C19's, fixed before its run; setting those years apart was chosen after C19's mean was seen (P12); the medians keep every year and need no threshold; the log rates are printed with and without the years set apart, and Germany's 1923 still weighs about 2,000 log points"
+ }
+}

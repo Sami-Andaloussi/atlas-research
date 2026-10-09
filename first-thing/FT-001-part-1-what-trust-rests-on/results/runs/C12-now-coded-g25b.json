@@ -1,0 +1,1017 @@
+{
+ "card": "C12-now-coded-g25b",
+ "card_hash": "cf1386a485545d59a29e7458ba586ff78c4e4dcc097dcd3dd68315fb0187a401",
+ "run_at": "2026-10-02T14:39:51+00:00",
+ "result": {
+  "years": {
+   "garriga": 2023,
+   "ka": 2023,
+   "default": 2024
+  },
+  "dollar": {
+   "supports": {
+    "taken_back": {
+     "reading": "cannot be read",
+     "year": 2024,
+     "default": "cannot be read"
+    },
+    "limit_by_rule": {
+     "reading": "yes",
+     "year": 2023,
+     "cap": 0.626
+    },
+    "limit_by_institution": {
+     "reading": "cannot be read",
+     "year": 2023,
+     "index": 0.391
+    },
+    "force": {
+     "reading": "no",
+     "year": 2023
+    }
+   },
+   "redemption": {
+    "reading": "no",
+    "acts": [
+     {
+      "date": "1933-03",
+      "act": "R1, convertibility suspended",
+      "source": "Bernanke and James, Table 2.1, row United States (frame a, ft001-a, frame-a/bernanke-james-chapter)"
+     },
+     {
+      "date": "1971-08-16",
+      "act": "the dollar's convertibility to gold suspended for foreign central banks",
+      "source": "Federal Reserve Bulletin, September 1971, p. A 92, note to the exchange-rate table (fraser/federal-reserve-bulletin-text-091971, frozen 2026-10-01)"
+     }
+    ]
+   },
+   "habit": {
+    "reading": "yes",
+    "year": 2016,
+    "why": "no H1 act in the chronologies' span"
+   },
+   "world_demand": {
+    "reading": "yes",
+    "year": 2025,
+    "share_pct": 56.52156918729038
+   },
+   "default_reason": "the database has no row for the United States"
+  },
+  "euro": {
+   "members": 21,
+   "counts": {
+    "taken_back": {
+     "cannot be read": 12,
+     "yes": 8,
+     "no": 1
+    },
+    "limit_by_rule": {
+     "yes": 21
+    },
+    "limit_by_institution": {
+     "yes": 21
+    },
+    "force": {
+     "no": 20,
+     "cannot be read": 1
+    },
+    "habit": {
+     "yes": 21
+    }
+   },
+   "per_member": {
+    "AUT": {
+     "entry": 1999,
+     "taken_back": {
+      "reading": "cannot be read",
+      "year": 2024,
+      "default": "cannot be read"
+     },
+     "limit_by_rule": {
+      "reading": "yes",
+      "year": 2023,
+      "cap": 1.0
+     },
+     "limit_by_institution": {
+      "reading": "yes",
+      "year": 2023,
+      "index": 0.796
+     },
+     "force": {
+      "reading": "no",
+      "year": 2023
+     },
+     "habit": {
+      "reading": "yes",
+      "year": 2016,
+      "why": "no H1 act in the chronologies' span"
+     }
+    },
+    "BEL": {
+     "entry": 1999,
+     "taken_back": {
+      "reading": "cannot be read",
+      "year": 2024,
+      "default": "cannot be read"
+     },
+     "limit_by_rule": {
+      "reading": "yes",
+      "year": 2023,
+      "cap": 1.0
+     },
+     "limit_by_institution": {
+      "reading": "yes",
+      "year": 2023,
+      "index": 0.796
+     },
+     "force": {
+      "reading": "no",
+      "year": 2023
+     },
+     "habit": {
+      "reading": "yes",
+      "year": 2016,
+      "why": "no H1 act in the chronologies' span"
+     }
+    },
+    "BGR": {
+     "entry": 2026,
+     "taken_back": {
+      "reading": "yes",
+      "year": 2024,
+      "default": "no"
+     },
+     "limit_by_rule": {
+      "reading": "yes",
+      "year": 2023,
+      "cap": 1.0
+     },
+     "limit_by_institution": {
+      "reading": "yes",
+      "year": 2023,
+      "index": 0.78
+     },
+     "force": {
+      "reading": "no",
+      "year": 2023
+     },
+     "habit": {
+      "reading": "yes",
+      "year": 2016,
+      "why": "no H1 act in the chronologies' span"
+     }
+    },
+    "CYP": {
+     "entry": 2008,
+     "taken_back": {
+      "reading": "yes",
+      "year": 2024,
+      "default": "no"
+     },
+     "limit_by_rule": {
+      "reading": "yes",
+      "year": 2023,
+      "cap": 1.0
+     },
+     "limit_by_institution": {
+      "reading": "yes",
+      "year": 2023,
+      "index": 0.796
+     },
+     "force": {
+      "reading": "no",
+      "year": 2023
+     },
+     "habit": {
+      "reading": "yes",
+      "year": 2016,
+      "why": "no H1 act in the chronologies' span"
+     }
+    },
+    "DEU": {
+     "entry": 1999,
+     "taken_back": {
+      "reading": "cannot be read",
+      "year": 2024,
+      "default": "cannot be read"
+     },
+     "limit_by_rule": {
+      "reading": "yes",
+      "year": 2023,
+      "cap": 1.0
+     },
+     "limit_by_institution": {
+      "reading": "yes",
+      "year": 2023,
+      "index": 0.796
+     },
+     "force": {
+      "reading": "no",
+      "year": 2023
+     },
+     "habit": {
+      "reading": "yes",
+      "year": 2016,
+      "why": "no H1 act in the chronologies' span"
+     }
+    },
+    "ESP": {
+     "entry": 1999,
+     "taken_back": {
+      "reading": "cannot be read",
+      "year": 2024,
+      "default": "cannot be read"
+     },
+     "limit_by_rule": {
+      "reading": "yes",
+      "year": 2023,
+      "cap": 1.0
+     },
+     "limit_by_institution": {
+      "reading": "yes",
+      "year": 2023,
+      "index": 0.796
+     },
+     "force": {
+      "reading": "no",
+      "year": 2023
+     },
+     "habit": {
+      "reading": "yes",
+      "year": 2016,
+      "why": "no H1 act in the chronologies' span"
+     }
+    },
+    "EST": {
+     "entry": 2011,
+     "taken_back": {
+      "reading": "cannot be read",
+      "year": 2024,
+      "default": "cannot be read"
+     },
+     "limit_by_rule": {
+      "reading": "yes",
+      "year": 2023,
+      "cap": 1.0
+     },
+     "limit_by_institution": {
+      "reading": "yes",
+      "year": 2023,
+      "index": 0.78
+     },
+     "force": {
+      "reading": "no",
+      "year": 2023
+     },
+     "habit": {
+      "reading": "yes",
+      "year": 2016,
+      "why": "no H1 act in the chronologies' span"
+     }
+    },
+    "FIN": {
+     "entry": 1999,
+     "taken_back": {
+      "reading": "cannot be read",
+      "year": 2024,
+      "default": "cannot be read"
+     },
+     "limit_by_rule": {
+      "reading": "yes",
+      "year": 2023,
+      "cap": 1.0
+     },
+     "limit_by_institution": {
+      "reading": "yes",
+      "year": 2023,
+      "index": 0.796
+     },
+     "force": {
+      "reading": "no",
+      "year": 2023
+     },
+     "habit": {
+      "reading": "yes",
+      "year": 2016,
+      "why": "no H1 act in the chronologies' span"
+     }
+    },
+    "FRA": {
+     "entry": 1999,
+     "taken_back": {
+      "reading": "cannot be read",
+      "year": 2024,
+      "default": "cannot be read"
+     },
+     "limit_by_rule": {
+      "reading": "yes",
+      "year": 2023,
+      "cap": 1.0
+     },
+     "limit_by_institution": {
+      "reading": "yes",
+      "year": 2023,
+      "index": 0.796
+     },
+     "force": {
+      "reading": "no",
+      "year": 2023
+     },
+     "habit": {
+      "reading": "yes",
+      "year": 2016,
+      "why": "no H1 act in the chronologies' span"
+     }
+    },
+    "GRC": {
+     "entry": 2001,
+     "taken_back": {
+      "reading": "yes",
+      "year": 2024,
+      "default": "no"
+     },
+     "limit_by_rule": {
+      "reading": "yes",
+      "year": 2023,
+      "cap": 1.0
+     },
+     "limit_by_institution": {
+      "reading": "yes",
+      "year": 2023,
+      "index": 0.796
+     },
+     "force": {
+      "reading": "no",
+      "year": 2023
+     },
+     "habit": {
+      "reading": "yes",
+      "year": 2016,
+      "why": "no H1 act in the chronologies' span"
+     }
+    },
+    "HRV": {
+     "entry": 2023,
+     "taken_back": {
+      "reading": "no",
+      "year": 2024,
+      "default": "yes"
+     },
+     "limit_by_rule": {
+      "reading": "yes",
+      "year": 2023,
+      "cap": 1.0
+     },
+     "limit_by_institution": {
+      "reading": "yes",
+      "year": 2023,
+      "index": 0.893
+     },
+     "force": {
+      "reading": "no",
+      "year": 2023
+     },
+     "habit": {
+      "reading": "yes",
+      "year": 2016,
+      "why": "no H1 act in the chronologies' span"
+     }
+    },
+    "IRL": {
+     "entry": 1999,
+     "taken_back": {
+      "reading": "yes",
+      "year": 2024,
+      "default": "no"
+     },
+     "limit_by_rule": {
+      "reading": "yes",
+      "year": 2023,
+      "cap": 1.0
+     },
+     "limit_by_institution": {
+      "reading": "yes",
+      "year": 2023,
+      "index": 0.796
+     },
+     "force": {
+      "reading": "no",
+      "year": 2023
+     },
+     "habit": {
+      "reading": "yes",
+      "year": 2016,
+      "why": "no H1 act in the chronologies' span"
+     }
+    },
+    "ITA": {
+     "entry": 1999,
+     "taken_back": {
+      "reading": "cannot be read",
+      "year": 2024,
+      "default": "cannot be read"
+     },
+     "limit_by_rule": {
+      "reading": "yes",
+      "year": 2023,
+      "cap": 1.0
+     },
+     "limit_by_institution": {
+      "reading": "yes",
+      "year": 2023,
+      "index": 0.796
+     },
+     "force": {
+      "reading": "no",
+      "year": 2023
+     },
+     "habit": {
+      "reading": "yes",
+      "year": 2016,
+      "why": "no H1 act in the chronologies' span"
+     }
+    },
+    "LTU": {
+     "entry": 2015,
+     "taken_back": {
+      "reading": "yes",
+      "year": 2024,
+      "default": "no"
+     },
+     "limit_by_rule": {
+      "reading": "yes",
+      "year": 2023,
+      "cap": 1.0
+     },
+     "limit_by_institution": {
+      "reading": "yes",
+      "year": 2023,
+      "index": 0.764
+     },
+     "force": {
+      "reading": "no",
+      "year": 2023
+     },
+     "habit": {
+      "reading": "yes",
+      "year": 2016,
+      "why": "no H1 act in the chronologies' span"
+     }
+    },
+    "LUX": {
+     "entry": 1999,
+     "taken_back": {
+      "reading": "cannot be read",
+      "year": 2024,
+      "default": "cannot be read"
+     },
+     "limit_by_rule": {
+      "reading": "yes",
+      "year": 2023,
+      "cap": 1.0
+     },
+     "limit_by_institution": {
+      "reading": "yes",
+      "year": 2023,
+      "index": 0.796
+     },
+     "force": {
+      "reading": "cannot be read",
+      "year": 2023
+     },
+     "habit": {
+      "reading": "yes",
+      "year": 2016,
+      "why": "no H1 act in the chronologies' span"
+     }
+    },
+    "LVA": {
+     "entry": 2014,
+     "taken_back": {
+      "reading": "yes",
+      "year": 2024,
+      "default": "no"
+     },
+     "limit_by_rule": {
+      "reading": "yes",
+      "year": 2023,
+      "cap": 1.0
+     },
+     "limit_by_institution": {
+      "reading": "yes",
+      "year": 2023,
+      "index": 0.796
+     },
+     "force": {
+      "reading": "no",
+      "year": 2023
+     },
+     "habit": {
+      "reading": "yes",
+      "year": 2016,
+      "why": "no H1 act in the chronologies' span"
+     }
+    },
+    "MLT": {
+     "entry": 2008,
+     "taken_back": {
+      "reading": "cannot be read",
+      "year": 2024,
+      "default": "cannot be read"
+     },
+     "limit_by_rule": {
+      "reading": "yes",
+      "year": 2023,
+      "cap": 1.0
+     },
+     "limit_by_institution": {
+      "reading": "yes",
+      "year": 2023,
+      "index": 0.796
+     },
+     "force": {
+      "reading": "no",
+      "year": 2023
+     },
+     "habit": {
+      "reading": "yes",
+      "year": 2016,
+      "why": "no H1 act in the chronologies' span"
+     }
+    },
+    "NLD": {
+     "entry": 1999,
+     "taken_back": {
+      "reading": "cannot be read",
+      "year": 2024,
+      "default": "cannot be read"
+     },
+     "limit_by_rule": {
+      "reading": "yes",
+      "year": 2023,
+      "cap": 1.0
+     },
+     "limit_by_institution": {
+      "reading": "yes",
+      "year": 2023,
+      "index": 0.796
+     },
+     "force": {
+      "reading": "no",
+      "year": 2023
+     },
+     "habit": {
+      "reading": "yes",
+      "year": 2015,
+      "why": "no H1 act in the chronologies' span"
+     }
+    },
+    "PRT": {
+     "entry": 1999,
+     "taken_back": {
+      "reading": "yes",
+      "year": 2024,
+      "default": "no"
+     },
+     "limit_by_rule": {
+      "reading": "yes",
+      "year": 2023,
+      "cap": 1.0
+     },
+     "limit_by_institution": {
+      "reading": "yes",
+      "year": 2023,
+      "index": 0.796
+     },
+     "force": {
+      "reading": "no",
+      "year": 2023
+     },
+     "habit": {
+      "reading": "yes",
+      "year": 2015,
+      "why": "no H1 act in the chronologies' span"
+     }
+    },
+    "SVK": {
+     "entry": 2009,
+     "taken_back": {
+      "reading": "cannot be read",
+      "year": 2024,
+      "default": "cannot be read"
+     },
+     "limit_by_rule": {
+      "reading": "yes",
+      "year": 2023,
+      "cap": 1.0
+     },
+     "limit_by_institution": {
+      "reading": "yes",
+      "year": 2023,
+      "index": 0.796
+     },
+     "force": {
+      "reading": "no",
+      "year": 2023
+     },
+     "habit": {
+      "reading": "yes",
+      "year": 2016,
+      "why": "no H1 act in the chronologies' span"
+     }
+    },
+    "SVN": {
+     "entry": 2007,
+     "taken_back": {
+      "reading": "yes",
+      "year": 2024,
+      "default": "no"
+     },
+     "limit_by_rule": {
+      "reading": "yes",
+      "year": 2023,
+      "cap": 1.0
+     },
+     "limit_by_institution": {
+      "reading": "yes",
+      "year": 2023,
+      "index": 0.796
+     },
+     "force": {
+      "reading": "no",
+      "year": 2023
+     },
+     "habit": {
+      "reading": "yes",
+      "year": 2016,
+      "why": "no H1 act in the chronologies' span"
+     }
+    }
+   },
+   "redemption": {
+    "reading": "no",
+    "acts": [],
+    "note": "frame a's lists, which date every convertibility the study reads, carry none for the euro, which entered in 1999"
+   },
+   "world_demand": {
+    "reading": "yes",
+    "year": 2025,
+    "share_pct": 20.349552781636817
+   }
+  },
+  "stablecoins": {
+   "coins": 84,
+   "coin_lines": 336,
+   "per_line": {
+    "redemption": {
+     "no": 13,
+     "cannot be read": 41,
+     "yes": 30
+    },
+    "limit by rule": {
+     "yes": 38,
+     "cannot be read": 44,
+     "no": 2
+    },
+    "limit by institution": {
+     "no": 31,
+     "cannot be read": 46,
+     "yes": 7
+    },
+    "taken back": {
+     "yes": 16,
+     "cannot be read": 68
+    }
+   },
+   "coins_by_lines_read": {
+    "0": 37,
+    "1": 3,
+    "2": 12,
+    "3": 18,
+    "4": 14
+   },
+   "coins_none_share_pct": 44.04761904761905,
+   "who_classes": {
+    "any holder": [
+     "Frax",
+     "Liquity USD",
+     "mStable USD"
+    ],
+    "holders with an account": [
+     "BiLira",
+     "Binance USD",
+     "DigixDao",
+     "Euro Tether",
+     "First Digital USD",
+     "GYEN",
+     "Gemini Dollar",
+     "Kinesis Gold",
+     "Neutrino USD",
+     "PAX Gold",
+     "Pax Dollar",
+     "PayPal USD",
+     "Tether",
+     "Tether Gold",
+     "TrueUSD",
+     "USD Coin",
+     "XSGD",
+     "ZUSD"
+    ],
+    "unclassified": [
+     "BitUSD",
+     "Celo Dollar",
+     "Djed",
+     "Dola",
+     "IRON",
+     "MAI",
+     "Origin Dollar",
+     "USDD",
+     "agEUR"
+    ]
+   },
+   "readings_say_restricted": [
+    "Binance USD",
+    "Gemini Dollar",
+    "Pax Dollar",
+    "TrueUSD"
+   ],
+   "late_prints": [
+    [
+     "BitUSD",
+     "limit by rule",
+     "launch"
+    ],
+    [
+     "BitUSD",
+     "redemption",
+     "launch"
+    ],
+    [
+     "Neutrino USD",
+     "limit by rule",
+     "launch"
+    ],
+    [
+     "Neutrino USD",
+     "redemption",
+     "launch"
+    ],
+    [
+     "Synthetix USD",
+     "redemption",
+     "launch"
+    ],
+    [
+     "Synthetix USD",
+     "taken back",
+     "launch"
+    ],
+    [
+     "XSGD",
+     "limit by institution",
+     "launch"
+    ],
+    [
+     "XSGD",
+     "limit by rule",
+     "launch"
+    ],
+    [
+     "XSGD",
+     "redemption",
+     "launch"
+    ],
+    [
+     "XSGD",
+     "taken back",
+     "after-change: transfer-in fee charged in XSGD"
+    ],
+    [
+     "XSGD",
+     "taken back",
+     "launch"
+    ],
+    [
+     "sEUR",
+     "redemption",
+     "launch"
+    ],
+    [
+     "sEUR",
+     "taken back",
+     "launch"
+    ]
+   ],
+   "who_m0": {
+    "any holder": [
+     "BitUSD",
+     "Celo Dollar",
+     "Djed",
+     "Dola",
+     "Frax",
+     "IRON",
+     "Liquity USD",
+     "MAI",
+     "Neutrino USD",
+     "Origin Dollar",
+     "USDD",
+     "agEUR",
+     "mStable USD"
+    ],
+    "verified customers only": [
+     "BiLira",
+     "Binance USD",
+     "DigixDao",
+     "Euro Tether",
+     "First Digital USD",
+     "GYEN",
+     "Gemini Dollar",
+     "Kinesis Gold",
+     "PAX Gold",
+     "Pax Dollar",
+     "PayPal USD",
+     "Tether Gold",
+     "TrueUSD",
+     "USD Coin",
+     "XSGD",
+     "ZUSD"
+    ],
+    "not settled": [
+     "Tether"
+    ]
+   }
+  },
+  "bitcoin": {
+   "source": "Casey and Vigna (2015), The Age of Cryptocurrency, Picador, read through Mnemosyne's search (public), passage library/bc2767ae04dc04bf",
+   "lines": {
+    "redemption": "no issuer",
+    "limit by rule": "yes",
+    "limit by institution": "no issuer",
+    "taken back": "no issuer"
+   },
+   "why": "the release of coins is fixed by the protocol's schedule, halving every four years, to 21 million in all (the passage); there is no issuer to redeem, be supervised or take the coin back",
+   "not_opened": "bitcoin.org (the white paper) is refused by the Guard and was not opened"
+  },
+  "stablecoins_fixed_readings_only": {
+   "coins": 84,
+   "coin_lines": 336,
+   "per_line": {
+    "redemption": {
+     "cannot be read": 74,
+     "yes": 9,
+     "no": 1
+    },
+    "limit by rule": {
+     "cannot be read": 73,
+     "yes": 11
+    },
+    "limit by institution": {
+     "cannot be read": 73,
+     "no": 6,
+     "yes": 5
+    },
+    "taken back": {
+     "cannot be read": 82,
+     "yes": 2
+    }
+   },
+   "coins_by_lines_read": {
+    "0": 66,
+    "1": 10,
+    "2": 1,
+    "3": 6,
+    "4": 1
+   },
+   "coins_none_share_pct": 78.57142857142857,
+   "who_classes": {
+    "not settled": [
+     "Tether"
+    ],
+    "a restricted set of participants": [
+     "Binance USD",
+     "Gemini Dollar",
+     "Pax Dollar",
+     "TrueUSD"
+    ],
+    "any holder": [
+     "Frax",
+     "Liquity USD",
+     "USDD"
+    ],
+    "holders with an account": [
+     "USD Coin"
+    ]
+   },
+   "readings_say_restricted": [],
+   "late_prints": []
+  },
+  "kappa": {
+   "first": {
+    "coin_lines": 336,
+    "agreed": 317,
+    "kappa": 0.7425598838616017
+   },
+   "issuer": {
+    "coin_lines": 68,
+    "agreed": 59,
+    "kappa": 0.7415540540540541
+   },
+   "issuer_2": {
+    "coin_lines": 120,
+    "agreed": 108,
+    "kappa": 0.8425713348638897
+   }
+  },
+  "stablecoins_after_section_16": {
+   "coins": 84,
+   "coin_lines": 336,
+   "per_line": {
+    "redemption": {
+     "cannot be read": 65,
+     "yes": 18,
+     "no": 1
+    },
+    "limit by rule": {
+     "cannot be read": 64,
+     "yes": 20
+    },
+    "limit by institution": {
+     "cannot be read": 68,
+     "no": 9,
+     "yes": 7
+    },
+    "taken back": {
+     "cannot be read": 78,
+     "yes": 6
+    }
+   },
+   "coins_by_lines_read": {
+    "0": 58,
+    "1": 8,
+    "2": 5,
+    "3": 9,
+    "4": 4
+   },
+   "coins_none_share_pct": 69.04761904761905,
+   "who_classes": {
+    "not settled": [
+     "Tether"
+    ],
+    "any holder": [
+     "Frax",
+     "Liquity USD",
+     "USDD",
+     "mStable USD"
+    ],
+    "holders with an account": [
+     "Binance USD",
+     "First Digital USD",
+     "GYEN",
+     "Gemini Dollar",
+     "Kinesis Gold",
+     "PAX Gold",
+     "Pax Dollar",
+     "PayPal USD",
+     "Tether Gold",
+     "TrueUSD",
+     "USD Coin",
+     "XSGD",
+     "ZUSD"
+    ]
+   },
+   "readings_say_restricted": [
+    "Binance USD",
+    "Gemini Dollar",
+    "Pax Dollar",
+    "TrueUSD"
+   ],
+   "late_prints": [
+    [
+     "XSGD",
+     "limit by institution",
+     "launch"
+    ],
+    [
+     "XSGD",
+     "limit by rule",
+     "launch"
+    ],
+    [
+     "XSGD",
+     "redemption",
+     "launch"
+    ],
+    [
+     "XSGD",
+     "taken back",
+     "after-change: transfer-in fee charged in XSGD"
+    ],
+    [
+     "XSGD",
+     "taken back",
+     "launch"
+    ]
+   ]
+  }
+ }
+}

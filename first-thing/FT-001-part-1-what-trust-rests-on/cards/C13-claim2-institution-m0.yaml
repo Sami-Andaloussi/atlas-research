@@ -1,0 +1,60 @@
+id: C13-claim2-institution-m0
+label: test
+title: Claim 2 with the limit by institution read by M0's text - both arms, the index and a target announced
+question: >-
+  C05's question, unchanged, with the line *a limit by institution* read as M0 section 2 writes it: Garriga's
+  index at or above 0.5, or a target announced; "no" where the index is read below the line and no target is
+  announced. Do the claim's readings and its verdict hold?
+parent:
+  id: C05-claim2-supports
+  hash: 2785e1be559bc6465cbdca701de6496507c35fd72ee50e3c77dbfbf7e5f0f8c1
+method: >-
+  Written after C05's and C11's runs and after the confirming check (Opus, isolated,
+  check/2026-10-02-opus-confirming-check.md, B1) found that frame c never reads the line "no": panel.supports
+  codes an index below 0.5 "cannot be read", M3-panel c6's deferral "until M4" (frame a's target list), never
+  lifted once frame a's list existed. With "no" impossible, a money not in default can never stand on the fewer
+  side, which empties it. This card reads M0's text, as written before any data; it chooses nothing new, and is
+  said to come after a result was seen (FRAMING F72). C05's and C11's readings stay printed beside it.
+  Lines: C05's (frame c's series.csv, fifth build, counted, from 1970), and each of C05's variant files.
+  Before any reading, the code recomputes every line's supports from frame c's own inputs (panel.supports on
+  Garriga's index and limit, IRR's class 12 months before, Chinn-Ito, the default at entry) and refuses to run
+  unless the result equals frame c's columns on every headline line.
+  The institution line at the entry year Y: "yes" if the index at Y is at or above the line, or a target was
+  announced in a year before Y; "no" if the index at Y is read below the line and no target was announced
+  before Y; else "cannot be read". A target announced in Y itself cannot be ordered against an annual entry:
+  "cannot be read" for that arm.
+  Targets, from frame a (data/reconstructed/ft001-a, members.csv and series.csv, route a4): Hammond's 27
+  targeters at the start of 2012 with the adoption date row 1.4 prints (formal adoption, P17); the three exits
+  Hammond names (Finland, Spain, Slovakia, each on adopting the euro), whose dates are not read: "cannot be
+  read" in every year; the AREAER candidates from 2012: those read as adopters with their announcement's date,
+  those read as not adopters "no", and the nine whose announcements are not read (gap G06) "no" before the
+  AREAER edition that first lists them and "cannot be read" from it. A money on neither list is no targeter:
+  Hammond names every targeter and every exit up to 2012, and the AREAER's inflation-targeting column every
+  candidate after. Frame a lists no target abandoned.
+  Everything else is C05's: the statistic, the strata, the bootstrap, the verdict rules, the readings without
+  taken back and without pegs and boards, each support alone, the war-in-H variant, frame c's six variant
+  files and six separator variants (the index variants read the index arm at 0.4 and 0.6, the target arm
+  unchanged), and C11's reading (without pegs, the CFA unions' members out).
+  Printed: the institution line's counts under frame c's coding and under this card's.
+parameters:
+  from_year: 1970
+  index_line: 0.5
+  target_arm: announced in a year before the entry year
+  margin_points: 10
+  floor_spells_per_side: 20
+  bootstrap_draws: 2000
+  seed: 1797
+data:
+  - dataset: reconstructed/ft001-c (as C05)
+  - dataset: reconstructed/ft001-a (the targets, members.csv and series.csv route a4)
+period: as C05
+sample: >-
+  C05's counted spells from 1970, unchanged; only the institution line and the counts built on it are re-read.
+out_of_sample: >-
+  None, as C05. The comparison is C05's own reading, printed beside.
+failure: >-
+  As C05: the claim's verdict by M0's rules on this reading. If it differs from C05's, the page prints both and
+  says which reading is M0's text.
+not: >-
+  Not a new separator, not a new threshold: M0's line as written. Not a reading of the stablecoins or of today.
+created: '2026-10-02'

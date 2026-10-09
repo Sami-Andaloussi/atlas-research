@@ -1,0 +1,40 @@
+id: C14-now-institution-m0
+label: measurement
+title: Part 1's now, sixth card - C12 as written, the dollar's and the euro members' limit by institution read by M0's text
+question: >-
+  C06's question, unchanged: which of M0's supports stand today under the dollar and the euro? The line *a limit by
+  institution* only is re-read, as C13 reads it for claim 2. Told: no margin, no verdict, nothing ranked.
+parent:
+  id: C12-now-coded-g25b
+  hash: cf1386a485545d59a29e7458ba586ff78c4e4dcc097dcd3dd68315fb0187a401
+method: >-
+  C12 (e7103961) as written, and run as it runs, except one line. Written AFTER C12's run and after the narrow
+  confirming check (Opus, isolated, check/2026-10-02-opus-narrow-confirming-check.md, N1) found that the today table
+  still read the dollar's limit by institution "cannot be read" below Garriga's midpoint: C06's frame-c coding, which
+  C13 corrects for claim 2. Sami chose this reading through the engine on 2026-10-02, among the readings the session
+  showed (FRAMING F72: a revision made openly, after a result, said so). C12's reading is printed beside it.
+  The line at Garriga's last year Y (C06's P1), by M0 section 2's text, with claim2.py's reader (C13's):
+  "yes" if the index at Y is at or above 0.5 or a target was announced before Y; "no" if the index is read below
+  0.5 and no target was announced before Y; else "cannot be read". The targets are frame a's, as C13 reads them,
+  with the two pre-2012 adopters frame a dates beyond Hammond's 27 (Paraguay and Uganda, 2011; gap G08) and
+  Uruguay's earlier target unread (the narrow check's n1).
+  Beside it, a reading printed with no verdict of its own: Cobham's full categories (frame a's variant
+  4-from-2012-var-cobham-full), a target counted from the first year from 2012 they hold the money (the United States
+  2012: the Federal Reserve's 2 percent goal of January 2012; the euro area 2022). The headline keeps frame a's
+  committed list, on which the United States is not a targeter.
+parameters:
+  index_line: 0.5
+  target_arm: announced in a year before Garriga's last year
+data:
+  - dataset: as C12
+  - dataset: reconstructed/ft001-a (members.csv, series.csv route a4)
+period: as C06
+sample: >-
+  C06's, unchanged: the dollar and the euro's members from their entry.
+out_of_sample: >-
+  None, as C06. C12's reading is printed beside.
+failure: >-
+  None: told, no verdict.
+not: >-
+  Not a reading of claim 2 (C13's), not a ranking of monies, not a new list of targets.
+created: '2026-10-02'

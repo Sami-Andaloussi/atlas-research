@@ -1,0 +1,36 @@
+id: C11-claim2-cfa-out
+label: measurement
+title: Claim 2, the reading without pegs with the CFA franc unions' members left out - the claims check's sensitivity, computed in code
+question: >-
+  C05's reading without pegs and boards, unchanged, with the spells of the CFA franc unions' member states left out:
+  does the difference keep its sign and stay above the margin? A sensitivity printed beside C05's reading, never a
+  verdict of its own.
+parent:
+  id: C05-claim2-supports
+  hash: 2785e1be559bc6465cbdca701de6496507c35fd72ee50e3c77dbfbf7e5f0f8c1
+method: >-
+  C05 (df653034) as written, its reading supports_count_without_pegs only, on frame c's counted spells from 1970,
+  less every spell whose money is a member state of the West African (XOF) or Central African (XAF) CFA franc union,
+  as frame a's union table names them (bank/maps/FT-001/missions/code/frame_a.py, UNIONS; members in any year).
+  Written after C05's run and after the claims check (bank/checks/FT-001-part-1-claims-1-2-runs-2026-10-02-opus-check.md,
+  B2) printed this sensitivity, which the page has cited from that check since; both isolated checks of step h asked
+  for it to be computed by published code (FRAMING F72: written after a result was seen, said so). It adds no
+  reading: it reproduces the check's figure by the card's code, or says how and why it differs.
+parameters:
+  draws: 2000
+  seed: 1797
+  level: 0.90
+  unions: [XOF, XAF]
+data:
+  - dataset: reconstructed/ft001-c (as C05)
+period: as C05
+sample: >-
+  C05's counted spells from 1970, less the CFA unions' members, fixed by frame a's union table before this card.
+out_of_sample: >-
+  None; a sensitivity of one reading. The claims check's own figure (D 15.5, interval 1.0 to 34.2, n 21 and 34) is
+  the comparison.
+failure: >-
+  None in the sense of a verdict: the page prints the number beside C05's reading, as a sensitivity.
+not: >-
+  Not a new reading of claim 2, not a verdict, not a ranking of monies.
+created: '2026-10-02'

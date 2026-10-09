@@ -1,0 +1,6325 @@
+{
+ "schema": 2,
+ "numbers": {
+  "a2_p1_band_hi": {
+   "value": 4.86,
+   "unit": "percentage points",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a-window, window_a.describe and robustness_notes)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:+.2f}",
+   "measure": "no-effect range of the mean gap, high end",
+   "period": "1914",
+   "population": "suspensions of gold convertibility"
+  },
+  "a2_p1_band_lo": {
+   "value": -5.07,
+   "unit": "percentage points",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a-window, window_a.describe and robustness_notes)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:+.2f}",
+   "measure": "no-effect range of the mean gap, low end",
+   "period": "1914",
+   "population": "suspensions of gold convertibility"
+  },
+  "a2_p1_eff_hi": {
+   "value": 6.95542925,
+   "unit": "percentage points",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a-window, window_a.describe and robustness_notes)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:+.1f}",
+   "measure": "the effect's range, high end",
+   "period": "1914",
+   "population": "suspensions of gold convertibility"
+  },
+  "a2_p1_eff_lo": {
+   "value": -2.9745707500000003,
+   "unit": "percentage points",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a-window, window_a.describe and robustness_notes)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:+.1f}",
+   "measure": "the effect's range, low end",
+   "period": "1914",
+   "population": "suspensions of gold convertibility"
+  },
+  "a2_p1_mean": {
+   "value": 1.88542925,
+   "unit": "percentage points",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a-window, window_a.describe and robustness_notes)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:+.2f}",
+   "claim_type": "comparative",
+   "matters": 1.0,
+   "measure": "mean change in inflation, less matched monies'",
+   "period": "1914",
+   "population": "suspensions of gold convertibility"
+  },
+  "a2_p1_n": {
+   "value": 4,
+   "unit": "changes with a gap",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a-window, window_a.describe and robustness_notes)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "changes with a gap that can be read",
+   "period": "1914",
+   "population": "suspensions of gold convertibility"
+  },
+  "a2_p2_band_hi": {
+   "value": 6.41,
+   "unit": "percentage points",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a-window, window_a.describe and robustness_notes)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:+.2f}",
+   "measure": "no-effect range of the mean gap, high end",
+   "period": "1931 to 1936",
+   "population": "exits from gold"
+  },
+  "a2_p2_band_lo": {
+   "value": -6.81,
+   "unit": "percentage points",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a-window, window_a.describe and robustness_notes)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:+.2f}",
+   "measure": "no-effect range of the mean gap, low end",
+   "period": "1931 to 1936",
+   "population": "exits from gold"
+  },
+  "a2_p2_eff_hi": {
+   "value": 10.585597285714286,
+   "unit": "percentage points",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a-window, window_a.describe and robustness_notes)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:+.1f}",
+   "measure": "the effect's range, high end",
+   "period": "1931 to 1936",
+   "population": "exits from gold"
+  },
+  "a2_p2_eff_lo": {
+   "value": -2.6344027142857143,
+   "unit": "percentage points",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a-window, window_a.describe and robustness_notes)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:+.1f}",
+   "measure": "the effect's range, low end",
+   "period": "1931 to 1936",
+   "population": "exits from gold"
+  },
+  "a2_p2_mean": {
+   "value": 3.775597285714286,
+   "unit": "percentage points",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a-window, window_a.describe and robustness_notes)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:+.2f}",
+   "claim_type": "comparative",
+   "matters": 1.0,
+   "measure": "mean change in inflation, less matched monies'",
+   "period": "1931 to 1936",
+   "population": "exits from gold"
+  },
+  "a2_p2_n": {
+   "value": 7,
+   "unit": "changes with a gap",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a-window, window_a.describe and robustness_notes)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "changes with a gap that can be read",
+   "period": "1931 to 1936",
+   "population": "exits from gold"
+  },
+  "a2_p2_single": {
+   "value": 4,
+   "unit": "lines",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a-window, window_a.describe and robustness_notes)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "exits whose gap rests on a single matched money",
+   "period": "1931 to 1936",
+   "population": "exits from gold"
+  },
+  "a2_p3d_band_hi": {
+   "value": 3.89,
+   "unit": "percentage points",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a-window, window_a.describe and robustness_notes)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:+.2f}",
+   "measure": "no-effect range of the mean gap, high end",
+   "period": "1970 to the data's end",
+   "population": "cuts in central-bank independence"
+  },
+  "a2_p3d_band_lo": {
+   "value": -3.0,
+   "unit": "percentage points",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a-window, window_a.describe and robustness_notes)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:+.2f}",
+   "measure": "no-effect range of the mean gap, low end",
+   "period": "1970 to the data's end",
+   "population": "cuts in central-bank independence"
+  },
+  "a2_p3d_eff_hi": {
+   "value": 5.157521048780488,
+   "unit": "percentage points",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a-window, window_a.describe and robustness_notes)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:+.1f}",
+   "measure": "the effect's range, high end",
+   "period": "1970 to the data's end",
+   "population": "cuts in central-bank independence"
+  },
+  "a2_p3d_eff_lo": {
+   "value": -1.732478951219512,
+   "unit": "percentage points",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a-window, window_a.describe and robustness_notes)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:+.1f}",
+   "measure": "the effect's range, low end",
+   "period": "1970 to the data's end",
+   "population": "cuts in central-bank independence"
+  },
+  "a2_p3d_mean": {
+   "value": 2.157521048780488,
+   "unit": "percentage points",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a-window, window_a.describe and robustness_notes)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:+.2f}",
+   "claim_type": "comparative",
+   "matters": 1.0,
+   "measure": "mean change in inflation, less matched monies'",
+   "period": "1970 to the data's end",
+   "population": "cuts in central-bank independence"
+  },
+  "a2_p3d_n": {
+   "value": 41,
+   "unit": "changes with a gap",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a-window, window_a.describe and robustness_notes)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "changes with a gap that can be read",
+   "period": "1970 to the data's end",
+   "population": "cuts in central-bank independence"
+  },
+  "a2_p3u_band_hi": {
+   "value": 3.06,
+   "unit": "percentage points",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a-window, window_a.describe and robustness_notes)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:+.2f}",
+   "measure": "no-effect range of the mean gap, high end",
+   "period": "1970 to the data's end",
+   "population": "rises in central-bank independence"
+  },
+  "a2_p3u_band_lo": {
+   "value": -2.29,
+   "unit": "percentage points",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a-window, window_a.describe and robustness_notes)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:+.2f}",
+   "measure": "no-effect range of the mean gap, low end",
+   "period": "1970 to the data's end",
+   "population": "rises in central-bank independence"
+  },
+  "a2_p3u_eff_hi": {
+   "value": 2.0180583602941176,
+   "unit": "percentage points",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a-window, window_a.describe and robustness_notes)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:+.1f}",
+   "measure": "the effect's range, high end",
+   "period": "1970 to the data's end",
+   "population": "rises in central-bank independence"
+  },
+  "a2_p3u_eff_lo": {
+   "value": -3.3319416397058825,
+   "unit": "percentage points",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a-window, window_a.describe and robustness_notes)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:+.1f}",
+   "measure": "the effect's range, low end",
+   "period": "1970 to the data's end",
+   "population": "rises in central-bank independence"
+  },
+  "a2_p3u_mean": {
+   "value": -0.2719416397058823,
+   "unit": "percentage points",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a-window, window_a.describe and robustness_notes)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:+.2f}",
+   "claim_type": "comparative",
+   "matters": 1.0,
+   "measure": "mean change in inflation, less matched monies'",
+   "period": "1970 to the data's end",
+   "population": "rises in central-bank independence"
+  },
+  "a2_p3u_n": {
+   "value": 136,
+   "unit": "changes with a gap",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a-window, window_a.describe and robustness_notes)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "changes with a gap that can be read",
+   "period": "1970 to the data's end",
+   "population": "rises in central-bank independence"
+  },
+  "a2_p4_band_hi": {
+   "value": 3.74,
+   "unit": "percentage points",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a-window, window_a.describe and robustness_notes)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:+.2f}",
+   "measure": "no-effect range of the mean gap, high end",
+   "period": "1970 to the data's end",
+   "population": "adoptions of an inflation target"
+  },
+  "a2_p4_band_lo": {
+   "value": -2.85,
+   "unit": "percentage points",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a-window, window_a.describe and robustness_notes)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:+.2f}",
+   "measure": "no-effect range of the mean gap, low end",
+   "period": "1970 to the data's end",
+   "population": "adoptions of an inflation target"
+  },
+  "a2_p4_eff_hi": {
+   "value": 0.2526660999999999,
+   "unit": "percentage points",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a-window, window_a.describe and robustness_notes)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:+.1f}",
+   "measure": "the effect's range, high end",
+   "period": "1970 to the data's end",
+   "population": "adoptions of an inflation target"
+  },
+  "a2_p4_eff_lo": {
+   "value": -6.337333900000001,
+   "unit": "percentage points",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a-window, window_a.describe and robustness_notes)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:+.1f}",
+   "measure": "the effect's range, low end",
+   "period": "1970 to the data's end",
+   "population": "adoptions of an inflation target"
+  },
+  "a2_p4_mean": {
+   "value": -2.5973339,
+   "unit": "percentage points",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a-window, window_a.describe and robustness_notes)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:+.2f}",
+   "claim_type": "comparative",
+   "matters": 1.0,
+   "measure": "mean change in inflation, less matched monies'",
+   "period": "1970 to the data's end",
+   "population": "adoptions of an inflation target"
+  },
+  "a2_p4_n": {
+   "value": 30,
+   "unit": "changes with a gap",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a-window, window_a.describe and robustness_notes)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "changes with a gap that can be read",
+   "period": "1970 to the data's end",
+   "population": "adoptions of an inflation target"
+  },
+  "a2_p4v_mean": {
+   "value": -1.62,
+   "unit": "percentage points",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a-window, window_a.describe and robustness_notes)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:+.2f}",
+   "claim_type": "comparative",
+   "matters": 1.0,
+   "measure": "mean change in inflation, less matched monies', later targets",
+   "period": "1970 to the data's end",
+   "population": "adoptions of an inflation target"
+  },
+  "a2_p4v_n": {
+   "value": 35,
+   "unit": "changes with a gap",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a-window, window_a.describe and robustness_notes)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "adoptions with a gap, with later-dated targets",
+   "period": "1970 to the data's end",
+   "population": "adoptions of an inflation target"
+  },
+  "a3_1914_deu": {
+   "value": 0.14042271,
+   "unit": "a year, mean 1915-1920",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a3, A3 card FT-001-M4-A3-premiums.md)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.2f}",
+   "measure": "yearly odds of a return to gold implied by the premium, mean",
+   "period": "1915 to 1920",
+   "population": "the pound, the French franc, the Italian lira and the German mark"
+  },
+  "a3_1914_fra": {
+   "value": 0.36422845,
+   "unit": "a year, mean 1915-1920",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a3, A3 card FT-001-M4-A3-premiums.md)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.2f}",
+   "measure": "yearly odds of a return to gold implied by the premium, mean",
+   "period": "1915 to 1920",
+   "population": "the pound, the French franc, the Italian lira and the German mark"
+  },
+  "a3_1914_gbr": {
+   "value": 1.4211166666666666,
+   "unit": "a year, mean 1915-1920",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a3, A3 card FT-001-M4-A3-premiums.md)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.2f}",
+   "measure": "yearly odds of a return to gold implied by the premium, mean",
+   "period": "1915 to 1920",
+   "population": "the pound, the French franc, the Italian lira and the German mark"
+  },
+  "a3_1914_ita": {
+   "value": 0.14313214999999999,
+   "unit": "a year, mean 1915-1920",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a3, A3 card FT-001-M4-A3-premiums.md)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.2f}",
+   "measure": "yearly odds of a return to gold implied by the premium, mean",
+   "period": "1915 to 1920",
+   "population": "the pound, the French franc, the Italian lira and the German mark"
+  },
+  "a3_consols_coupon": {
+   "value": 3,
+   "unit": "percent coupon",
+   "origin": {
+    "kind": "cited",
+    "source": "First Thing: a rule fixed before the analysis ran (see the methods and proof)",
+    "locator": "A3 card section 4; 3% consols (Millennium M10)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%"
+  },
+  "a3_flat_price": {
+   "value": 4.0,
+   "unit": "pounds an ounce",
+   "origin": {
+    "kind": "cited",
+    "source": "Tooke (1838) vol. 2 p. 379",
+    "locator": "1803 and 1805-1809"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "£4",
+   "measure": "the price of gold Tooke prints in every year but one of the near-par years",
+   "period": "1797-1821 (waits: 1810-16)",
+   "population": "Bank of England notes, in London"
+  },
+  "a3_greenback_after_law_cannot": {
+   "value": 36,
+   "unit": "months",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a3, A3 card FT-001-M4-A3-premiums.md)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "months in which the premium cannot tell an expected return from the paper's own value",
+   "period": "1862-78 (waits: 1863-69)",
+   "population": "United States notes (greenbacks)"
+  },
+  "a3_greenback_after_law_consols": {
+   "value": 20,
+   "unit": "months",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a3, A3 card FT-001-M4-A3-premiums.md)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "a3_greenback_after_law_months": {
+   "value": 48,
+   "unit": "months",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a3, A3 card FT-001-M4-A3-premiums.md)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "months between the 1875 Act and the return to gold",
+   "period": "1862-78 (waits: 1863-69)",
+   "population": "United States notes (greenbacks)"
+  },
+  "a3_greenback_after_law_r_low": {
+   "value": 20,
+   "unit": "months",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a3, A3 card FT-001-M4-A3-premiums.md)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "a3_greenback_lambda_1863_69_high": {
+   "value": 0.22808466666666669,
+   "unit": "a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a3, A3 card FT-001-M4-A3-premiums.md)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.2f}"
+  },
+  "a3_greenback_lambda_1863_69_low": {
+   "value": 0.135711225,
+   "unit": "a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a3, A3 card FT-001-M4-A3-premiums.md)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.2f}"
+  },
+  "a3_greenback_p_low": {
+   "value": 38.7447,
+   "unit": "percent of gold value",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a3, A3 card FT-001-M4-A3-premiums.md)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%",
+   "claim_type": "descriptive",
+   "measure": "the greenbacks' lowest monthly value in gold",
+   "period": "1862-78 (waits: 1863-69)",
+   "population": "United States notes (greenbacks)"
+  },
+  "a3_greenback_wait_high": {
+   "value": 7.368587233664718,
+   "unit": "years",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a3, A3 card FT-001-M4-A3-premiums.md)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}",
+   "claim_type": "descriptive",
+   "measure": "the longest wait for gold the premium implies",
+   "period": "1862-78 (waits: 1863-69)",
+   "population": "United States notes (greenbacks)"
+  },
+  "a3_greenback_wait_low": {
+   "value": 4.384336810599573,
+   "unit": "years",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a3, A3 card FT-001-M4-A3-premiums.md)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}",
+   "claim_type": "descriptive",
+   "measure": "the shortest wait for gold the premium implies",
+   "period": "1862-78 (waits: 1863-69)",
+   "population": "United States notes (greenbacks)"
+  },
+  "a3_mint_price": {
+   "value": 3.89375,
+   "unit": "pounds an ounce of standard gold",
+   "origin": {
+    "kind": "cited",
+    "source": "First Thing: a rule fixed before the analysis ran (see the methods and proof)",
+    "locator": "M0 v4.2 section 7; A3 card section 2; £3 17s 10½d"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "£3 17s 10½d",
+   "measure": "the mint's price of standard gold, an ounce",
+   "period": "1797-1821 (waits: 1810-16)",
+   "population": "Bank of England notes, in London"
+  },
+  "a3_r_high": {
+   "value": 5.0,
+   "unit": "percent",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a3, A3 card FT-001-M4-A3-premiums.md)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%"
+  },
+  "a3_r_low": {
+   "value": 3.2,
+   "unit": "percent",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a3, A3 card FT-001-M4-A3-premiums.md)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}%"
+  },
+  "a3_restriction_lambda_high": {
+   "value": 0.549435,
+   "unit": "a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a3, A3 card FT-001-M4-A3-premiums.md)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.2f}"
+  },
+  "a3_restriction_lambda_low": {
+   "value": 0.134795,
+   "unit": "a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a3, A3 card FT-001-M4-A3-premiums.md)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.2f}"
+  },
+  "a3_restriction_p_low": {
+   "value": 74.8798,
+   "unit": "percent of gold value",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a3, A3 card FT-001-M4-A3-premiums.md)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%",
+   "claim_type": "descriptive",
+   "measure": "lowest yearly average value in gold",
+   "period": "1797-1821 (waits: 1810-16)",
+   "population": "Bank of England notes, in London"
+  },
+  "a3_restriction_premium_low": {
+   "value": 33.5473652440311,
+   "unit": "percent premium on gold",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a3, A3 card FT-001-M4-A3-premiums.md)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%",
+   "claim_type": "descriptive",
+   "measure": "the premium of gold over the notes in their lowest year",
+   "period": "1797-1821 (waits: 1810-16)",
+   "population": "Bank of England notes, in London"
+  },
+  "a3_restriction_wait_high": {
+   "value": 7.418672799436181,
+   "unit": "years",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a3, A3 card FT-001-M4-A3-premiums.md)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}",
+   "claim_type": "descriptive",
+   "measure": "the longest wait for gold the premium implies",
+   "period": "1797-1821 (waits: 1810-16)",
+   "population": "Bank of England notes, in London"
+  },
+  "a3_restriction_wait_low": {
+   "value": 1.820051507457661,
+   "unit": "years",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-a3, A3 card FT-001-M4-A3-premiums.md)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}",
+   "claim_type": "descriptive",
+   "measure": "the shortest wait for gold the premium implies",
+   "period": "1797-1821 (waits: 1810-16)",
+   "population": "Bank of England notes, in London"
+  },
+  "arg_cpi_2002": {
+   "value": 40.953,
+   "unit": "percent",
+   "origin": {
+    "kind": "computed",
+    "script": "code/sources_v11.py"
+   },
+   "as_of": "2026-10-08",
+   "fmt": "{:.0f}%",
+   "measure": "consumer prices, December to December (IMF WEO, October 2013, end-of-period)",
+   "period": "2002",
+   "population": "Argentina"
+  },
+  "as_of": {
+   "value": "2026-10-02",
+   "unit": "date",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (the builds' vintage)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "%-d %B %Y"
+  },
+  "assignat_1793": {
+   "value": 50,
+   "unit": "percent of face value in gold, about",
+   "origin": {
+    "kind": "cited",
+    "source": "Velde & Weir (1992), Journal of Economic History 52(1)",
+    "locator": "p. 17, fn 49 (June 1793)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%",
+   "measure": "the assignats' value against gold, share of face",
+   "period": "June 1793",
+   "population": "the assignats, France"
+  },
+  "bgr_cpi_1996": {
+   "value": 121.60754244925,
+   "unit": "percent a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/sources_v11.py"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:,.1f}%",
+   "measure": "consumer-price inflation, annual average (WDI FP.CPI.TOTL.ZG)",
+   "period": "1996",
+   "population": "Bulgaria"
+  },
+  "bgr_cpi_1997": {
+   "value": 1058.37355921973,
+   "unit": "percent a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/sources_v11.py"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:,.1f}%",
+   "measure": "consumer-price inflation, annual average (WDI FP.CPI.TOTL.ZG)",
+   "period": "1997",
+   "population": "Bulgaria"
+  },
+  "bgr_cpi_1998": {
+   "value": 18.6722044420641,
+   "unit": "percent a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/sources_v11.py"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:,.1f}%",
+   "measure": "consumer-price inflation, annual average (WDI FP.CPI.TOTL.ZG)",
+   "period": "1998",
+   "population": "Bulgaria"
+  },
+  "bgr_cpi_1999": {
+   "value": 2.57304281890212,
+   "unit": "percent a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/sources_v11.py"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:,.1f}%",
+   "measure": "consumer-price inflation, annual average (WDI FP.CPI.TOTL.ZG)",
+   "period": "1999",
+   "population": "Bulgaria"
+  },
+  "bj_economies": {
+   "value": 24,
+   "unit": "economies",
+   "origin": {
+    "kind": "cited",
+    "source": "Bernanke & James (1991), NBER chapter c11482",
+    "locator": "Table 2.1 and fn 6, p. 64"
+   },
+   "as_of": "2026-10-02"
+  },
+  "bj_gap_1932": {
+   "value": 12,
+   "unit": "percentage points of wholesale-price deflation",
+   "origin": {
+    "kind": "cited",
+    "source": "Bernanke & James (1991), NBER chapter c11482",
+    "locator": "p. 42 ('the twelve percentage point difference in rates of deflation between gold and non-gold countries in 1932')"
+   },
+   "as_of": "2026-10-02",
+   "measure": "gap in wholesale-price deflation, on gold less off gold",
+   "period": "1932",
+   "population": "Bernanke and James's 24 economies"
+  },
+  "bj_gold_1932": {
+   "value": -13,
+   "unit": "percent a year (wholesale prices, log change x 100)",
+   "origin": {
+    "kind": "cited",
+    "source": "Bernanke & James (1991), NBER chapter c11482",
+    "locator": "Table 2.2, p. 43, grand average, gold countries, 1932"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%",
+   "measure": "wholesale-price change, average of economies on gold",
+   "period": "1932",
+   "population": "the economies of Bernanke and James's Table 2.2"
+  },
+  "bj_gold_1933": {
+   "value": -7,
+   "unit": "percent a year (wholesale prices, log change x 100)",
+   "origin": {
+    "kind": "cited",
+    "source": "Bernanke & James (1991), NBER chapter c11482",
+    "locator": "Table 2.2, p. 43, grand average, gold countries, 1933"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%",
+   "measure": "wholesale-price change, average of economies on gold",
+   "period": "1933",
+   "population": "the economies of Bernanke and James's Table 2.2"
+  },
+  "bj_gold_1934": {
+   "value": -4,
+   "unit": "percent a year (wholesale prices, log change x 100)",
+   "origin": {
+    "kind": "cited",
+    "source": "Bernanke & James (1991), NBER chapter c11482",
+    "locator": "Table 2.2, p. 43, grand average, gold countries, 1934"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%",
+   "measure": "wholesale-price change, average of economies on gold",
+   "period": "1934",
+   "population": "the economies of Bernanke and James's Table 2.2"
+  },
+  "bj_gold_1935": {
+   "value": -5,
+   "unit": "percent a year (wholesale prices, log change x 100)",
+   "origin": {
+    "kind": "cited",
+    "source": "Bernanke & James (1991), NBER chapter c11482",
+    "locator": "Table 2.2, p. 43, grand average, gold countries, 1935"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%",
+   "measure": "wholesale-price change, average of economies on gold",
+   "period": "1935",
+   "population": "the economies of Bernanke and James's Table 2.2"
+  },
+  "bj_min_cover": {
+   "value": 40,
+   "unit": "percent (statutory minimum gold cover, usually)",
+   "origin": {
+    "kind": "cited",
+    "source": "Bernanke & James (1991), NBER chapter c11482",
+    "locator": "p. 38"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%",
+   "measure": "usual legal minimum gold cover of central-bank notes",
+   "period": "between the wars",
+   "population": "central banks on the gold standard"
+  },
+  "bj_off_1932": {
+   "value": -1,
+   "unit": "percent a year (wholesale prices, log change x 100)",
+   "origin": {
+    "kind": "cited",
+    "source": "Bernanke & James (1991), NBER chapter c11482",
+    "locator": "Table 2.2, p. 43, grand average, non-gold countries, 1932"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%",
+   "measure": "wholesale-price change, average of economies off gold",
+   "period": "1932",
+   "population": "the economies of Bernanke and James's Table 2.2"
+  },
+  "bj_off_1933": {
+   "value": 0,
+   "unit": "percent a year (wholesale prices, log change x 100)",
+   "origin": {
+    "kind": "cited",
+    "source": "Bernanke & James (1991), NBER chapter c11482",
+    "locator": "Table 2.2, p. 43, grand average, non-gold countries, 1933"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%",
+   "measure": "wholesale-price change, average of economies off gold",
+   "period": "1933",
+   "population": "the economies of Bernanke and James's Table 2.2"
+  },
+  "bj_off_1934": {
+   "value": 3,
+   "unit": "percent a year (wholesale prices, log change x 100)",
+   "origin": {
+    "kind": "cited",
+    "source": "Bernanke & James (1991), NBER chapter c11482",
+    "locator": "Table 2.2, p. 43, grand average, non-gold countries, 1934"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%",
+   "measure": "wholesale-price change, average of economies off gold",
+   "period": "1934",
+   "population": "the economies of Bernanke and James's Table 2.2"
+  },
+  "bj_off_1935": {
+   "value": 4,
+   "unit": "percent a year (wholesale prices, log change x 100)",
+   "origin": {
+    "kind": "cited",
+    "source": "Bernanke & James (1991), NBER chapter c11482",
+    "locator": "Table 2.2, p. 43, grand average, non-gold countries, 1935"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%",
+   "measure": "wholesale-price change, average of economies off gold",
+   "period": "1935",
+   "population": "the economies of Bernanke and James's Table 2.2"
+  },
+  "bs3_all_above_us": {
+   "value": 15,
+   "unit": "economies",
+   "origin": {
+    "kind": "computed",
+    "script": "code/sources_v11.py"
+   },
+   "as_of": "2026-10-02",
+   "measure": "economies with inflation above the United States's",
+   "period": "the float, 1974-90",
+   "population": "Bordo and Schwartz's 21 countries"
+  },
+  "bs3_all_nonus": {
+   "value": 20,
+   "unit": "economies",
+   "origin": {
+    "kind": "computed",
+    "script": "code/sources_v11.py"
+   },
+   "as_of": "2026-10-02",
+   "measure": "economies other than the United States in the table",
+   "period": "the float, 1974-90",
+   "population": "Bordo and Schwartz's 21 countries"
+  },
+  "bs3_exits_above_us": {
+   "value": 5,
+   "unit": "economies",
+   "origin": {
+    "kind": "computed",
+    "script": "code/sources_v11.py"
+   },
+   "as_of": "2026-09-30",
+   "measure": "economies with inflation above the US's",
+   "period": "1974-90",
+   "population": "the G10 economies and Switzerland, the United States aside"
+  },
+  "bs3_exits_below_us": {
+   "value": 5,
+   "unit": "economies",
+   "origin": {
+    "kind": "computed",
+    "script": "code/sources_v11.py"
+   },
+   "as_of": "2026-09-30",
+   "measure": "economies with inflation below the US's",
+   "period": "1974-90",
+   "population": "the G10 economies and Switzerland, the United States aside"
+  },
+  "bs3_exits_bw_below_us": {
+   "value": 0,
+   "unit": "economies",
+   "origin": {
+    "kind": "computed",
+    "script": "code/sources_v11.py"
+   },
+   "as_of": "2026-09-30",
+   "measure": "economies with inflation below the US's",
+   "period": "1946-70",
+   "population": "the G10 economies and Switzerland, the United States aside"
+  },
+  "bs3_exits_bw_max": {
+   "value": 5.6,
+   "unit": "percent a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/sources_v11.py"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:.1f}%",
+   "measure": "highest inflation in the GNP deflator",
+   "period": "1946-70",
+   "population": "the G10 economies and Switzerland, the United States aside"
+  },
+  "bs3_exits_bw_min": {
+   "value": 2.4,
+   "unit": "percent a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/sources_v11.py"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:.1f}%",
+   "measure": "lowest inflation in the GNP deflator",
+   "period": "1946-70",
+   "population": "the G10 economies and Switzerland, the United States aside"
+  },
+  "bs3_exits_float_max": {
+   "value": 12.9,
+   "unit": "percent a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/sources_v11.py"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:.1f}%",
+   "measure": "highest inflation in the GNP deflator",
+   "period": "1974-90",
+   "population": "the G10 economies and Switzerland, the United States aside"
+  },
+  "bs3_exits_float_min": {
+   "value": 2.6,
+   "unit": "percent a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/sources_v11.py"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:.1f}%",
+   "measure": "lowest inflation in the GNP deflator",
+   "period": "1974-90",
+   "population": "the G10 economies and Switzerland, the United States aside"
+  },
+  "bs3_exits_n": {
+   "value": 10,
+   "unit": "economies",
+   "origin": {
+    "kind": "computed",
+    "script": "code/sources_v11.py"
+   },
+   "as_of": "2026-09-30",
+   "measure": "economies compared with the US",
+   "period": "1974-90",
+   "population": "the G10 economies and Switzerland, the United States aside"
+  },
+  "bs3_g10_bw": {
+   "value": 3.5,
+   "unit": "percent a year (GNP deflator, log-trend rate)",
+   "origin": {
+    "kind": "cited",
+    "source": "Bordo & Schwartz (1994), NBER Working Paper 4860",
+    "locator": "Table 3, p. 62, row j (G10 and Switzerland)"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:.1f}%",
+   "measure": "inflation in the GNP deflator",
+   "period": "Bretton Woods, 1946-70",
+   "population": "the G10 economies and Switzerland, together"
+  },
+  "bs3_g10_float": {
+   "value": 6.4,
+   "unit": "percent a year (GNP deflator, log-trend rate)",
+   "origin": {
+    "kind": "cited",
+    "source": "Bordo & Schwartz (1994), NBER Working Paper 4860",
+    "locator": "Table 3, p. 62, row j (G10 and Switzerland)"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:.1f}%",
+   "measure": "inflation in the GNP deflator",
+   "period": "the float, 1974-90",
+   "population": "the G10 economies and Switzerland, together"
+  },
+  "bs3_g10_gap": {
+   "value": 5.6000000000000005,
+   "unit": "points a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/sources_v11.py"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}",
+   "measure": "inflation gap, float less gold standard",
+   "period": "1974-90 against 1881-1913",
+   "population": "the G10 economies and Switzerland"
+  },
+  "bs3_g10_gold": {
+   "value": 0.8,
+   "unit": "percent a year (GNP deflator, log-trend rate)",
+   "origin": {
+    "kind": "cited",
+    "source": "Bordo & Schwartz (1994), NBER Working Paper 4860",
+    "locator": "Table 3, p. 62, row j (G10 and Switzerland)"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:.1f}%",
+   "measure": "inflation in the GNP deflator",
+   "period": "gold standard, 1881-1913",
+   "population": "the G10 economies and Switzerland, together"
+  },
+  "bs3_gap_max": {
+   "value": 12.3,
+   "unit": "points a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/sources_v11.py"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:.1f}",
+   "measure": "highest inflation gap, float less gold standard",
+   "period": "1974-90 against 1881-1913",
+   "population": "G10 and Switzerland, both rates"
+  },
+  "bs3_gap_median": {
+   "value": 6.1,
+   "unit": "points a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/sources_v11.py"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:.1f}",
+   "measure": "median inflation gap, float less gold standard",
+   "period": "1974-90 against 1881-1913",
+   "population": "G10 and Switzerland, both rates"
+  },
+  "bs3_gap_min": {
+   "value": -1.9999999999999996,
+   "unit": "points a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/sources_v11.py"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:.1f}",
+   "measure": "lowest inflation gap, float less gold standard",
+   "period": "1974-90 against 1881-1913",
+   "population": "G10 and Switzerland, both rates"
+  },
+  "bs3_gap_n": {
+   "value": 10,
+   "unit": "economies",
+   "origin": {
+    "kind": "computed",
+    "script": "code/sources_v11.py"
+   },
+   "as_of": "2026-09-30",
+   "measure": "economies with both rates",
+   "period": "1974-90 against 1881-1913",
+   "population": "G10 and Switzerland, both rates"
+  },
+  "bs3_usa_float": {
+   "value": 5.6,
+   "unit": "percent a year (GNP deflator, log-trend rate)",
+   "origin": {
+    "kind": "cited",
+    "source": "Bordo & Schwartz (1994), NBER Working Paper 4860",
+    "locator": "Table 3, p. 62, row the United States"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:.1f}%",
+   "measure": "inflation in the GNP deflator, log-trend growth rate",
+   "period": "1974-90",
+   "population": "the United States"
+  },
+  "c19_convertible_median": {
+   "value": 0.0,
+   "unit": "percent a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b.py (card C19)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "c19_convertible_n": {
+   "value": 701,
+   "unit": "economy-years",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b.py (card C19)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c19_earlier_resumption_hi": {
+   "value": 310941399.4577793,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b.py (card C19)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "c19_earlier_resumption_lo": {
+   "value": 2.135712377625002,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b.py (card C19)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "c19_economies": {
+   "value": 17,
+   "unit": "economies",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b.py (card C19)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "economies compared",
+   "period": "1870-2020 minus wars and Bretton Woods",
+   "population": "17 rich economies"
+  },
+  "c19_fiat_from_1972_hi": {
+   "value": 6.577958542053062,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b.py (card C19)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "c19_fiat_from_1972_lo": {
+   "value": -0.04302344223826838,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b.py (card C19)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "c19_fiat_median": {
+   "value": 2.313693839117592,
+   "unit": "percent a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b.py (card C19)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "c19_fiat_n": {
+   "value": 1169,
+   "unit": "economy-years",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b.py (card C19)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c19_main_hi": {
+   "value": 308513834.1411423,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b.py (card C19)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "c19_main_lo": {
+   "value": 2.0952836558897237,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b.py (card C19)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "c19_marked_suspensions_inconvertible_hi": {
+   "value": 308506295.29692423,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b.py (card C19)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "c19_marked_suspensions_inconvertible_lo": {
+   "value": 2.0937637927278123,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b.py (card C19)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "c19_no_transition_years_hi": {
+   "value": 312442381.597874,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b.py (card C19)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "c19_no_transition_years_lo": {
+   "value": 2.468842602341704,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b.py (card C19)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "c19_own_block_returns_only_hi": {
+   "value": 313113703.0226039,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b.py (card C19)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "c19_own_block_returns_only_lo": {
+   "value": 2.1509641056666764,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b.py (card C19)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "c19_target_before_mean": {
+   "value": 6.404014499280517,
+   "unit": "percent a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b.py (card C19)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}%",
+   "measure": "average inflation before adopting an inflation target",
+   "period": "1972-2020",
+   "population": "Australia, Canada, Japan, Norway, Sweden, UK"
+  },
+  "c19_target_before_n": {
+   "value": 151,
+   "unit": "economy-years",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b.py (card C19)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "inconvertible economy-years before adoption",
+   "period": "1972-2020",
+   "population": "Australia, Canada, Japan, Norway, Sweden, UK"
+  },
+  "c19_target_from_mean": {
+   "value": 1.866822732671223,
+   "unit": "percent a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b.py (card C19)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}%",
+   "measure": "average inflation after adopting an inflation target",
+   "period": "1972-2020",
+   "population": "Australia, Canada, Japan, Norway, Sweden, UK"
+  },
+  "c19_target_from_n": {
+   "value": 143,
+   "unit": "economy-years",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b.py (card C19)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "inconvertible economy-years from adoption",
+   "period": "1972-2020",
+   "population": "Australia, Canada, Japan, Norway, Sweden, UK"
+  },
+  "c19_target_none_matched": {
+   "value": 1.7298381129199523,
+   "unit": "percent a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry_v11.py from C19's panel (code/cs_b.py)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}%",
+   "measure": "average inflation in the adopters' target years",
+   "period": "1991-2020",
+   "population": "the eleven other economies, inconvertible years"
+  },
+  "c19_target_none_mean": {
+   "value": 4.500237534173691,
+   "unit": "percent a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b.py (card C19)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}%",
+   "measure": "average inflation in inconvertible years of economies with no adoption counted",
+   "period": "1972-2020",
+   "population": "the 17 rich economies of the Macrohistory Database, inconvertible years"
+  },
+  "c19_target_none_n": {
+   "value": 539,
+   "unit": "economy-years",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b.py (card C19)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "inconvertible economy-years with no adoption counted",
+   "period": "1972-2020",
+   "population": "the 17 rich economies of the Macrohistory Database, inconvertible years"
+  },
+  "c1_after_n": {
+   "value": 46,
+   "unit": "breaks",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "money crises with a default or listed act in the prior 3 years",
+   "period": "since 1970",
+   "population": "monies under fiscal stress"
+  },
+  "c1_after_sr": {
+   "value": 65.71428571428571,
+   "unit": "percent of the readable breaks",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%",
+   "claim_type": "descriptive",
+   "measure": "money crises with a default or listed act in the prior 3 years",
+   "period": "since 1970",
+   "population": "monies under fiscal stress"
+  },
+  "c1_at_risk_pi": {
+   "value": 10,
+   "unit": "percent a year",
+   "origin": {
+    "kind": "cited",
+    "source": "First Thing: a rule fixed before the analysis ran (see the methods and proof)",
+    "locator": "M0 v4.2 section 6 (claim 1); strained at-risk years"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%",
+   "measure": "inflation below which a stress year is read",
+   "period": "fixed in advance",
+   "population": "every money the study reads"
+  },
+  "c1_base_readable_n": {
+   "value": 923,
+   "unit": "readable strained years",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "years of stress that held, whose acts can be read",
+   "period": "since 1970",
+   "population": "strained years the money held"
+  },
+  "c1_base_sr": {
+   "value": 55.57963163596966,
+   "unit": "percent of the readable strained years",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%",
+   "claim_type": "descriptive",
+   "measure": "share with a default or listed act in the prior 3 years",
+   "period": "since 1970",
+   "population": "strained years the money held"
+  },
+  "c1_before_n": {
+   "value": 10,
+   "unit": "breaks",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c1_before_sr": {
+   "value": 14.285714285714285,
+   "unit": "percent of the readable breaks",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%",
+   "claim_type": "descriptive"
+  },
+  "c1_break_line": {
+   "value": 20,
+   "unit": "percent a year",
+   "origin": {
+    "kind": "cited",
+    "source": "First Thing: a rule fixed before the analysis ran (see the methods and proof)",
+    "locator": "M0 v4.2 section 3, frame b; the line (Reinhart and Rogoff)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%",
+   "measure": "the inflation line of a money crisis",
+   "period": "fixed in advance",
+   "population": "every money the study reads"
+  },
+  "c1_breaks": {
+   "value": 96,
+   "unit": "breaks",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "money crises dated",
+   "period": "since 1970",
+   "population": "monies under fiscal stress"
+  },
+  "c1_c07_base_readable_n": {
+   "value": 910,
+   "unit": "readable strained years",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C07)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c1_c07_base_sr": {
+   "value": 55.494505494505496,
+   "unit": "percent of the readable strained years",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C07)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%"
+  },
+  "c1_c07_tot_base_readable_n": {
+   "value": 872,
+   "unit": "readable strained years",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C07)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c1_c07_tot_base_sr": {
+   "value": 17.545871559633028,
+   "unit": "percent of the readable strained years",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C07)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%"
+  },
+  "c1_fwd_a_strata": {
+   "value": 14,
+   "unit": "strata",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c1_fwd_b_e_onsets": {
+   "value": 1,
+   "unit": "years",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c1_fwd_b_ratio": {
+   "value": 1.0,
+   "unit": "risk ratio",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.2f}",
+   "claim_type": "comparative",
+   "matters": 1.5,
+   "null": 1
+  },
+  "c1_fwd_b_strata": {
+   "value": 22,
+   "unit": "strata",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c1_fwd_b_u_onsets": {
+   "value": 1,
+   "unit": "years",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c1_fwd_e_breaks": {
+   "value": 12,
+   "unit": "breaks",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c1_fwd_e_n": {
+   "value": 174,
+   "unit": "years",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c1_fwd_e_onsets": {
+   "value": 15,
+   "unit": "years",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c1_fwd_tot_e_n": {
+   "value": 44,
+   "unit": "years",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "years of stress outside war in which the state newly fell into default or met another act on the list",
+   "period": "since 1970",
+   "population": "strained years the money held"
+  },
+  "c1_fwd_tot_u_n": {
+   "value": 509,
+   "unit": "years",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c1_fwd_tot_u_onsets": {
+   "value": 32,
+   "unit": "years",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c1_fwd_u_breaks": {
+   "value": 6,
+   "unit": "breaks",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c1_fwd_u_n": {
+   "value": 238,
+   "unit": "years",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c1_fwd_u_onsets": {
+   "value": 8,
+   "unit": "years",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c1_none_n": {
+   "value": 11,
+   "unit": "breaks",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c1_none_sr": {
+   "value": 15.714285714285714,
+   "unit": "percent of the readable breaks",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%",
+   "claim_type": "descriptive"
+  },
+  "c1_not2_after_n": {
+   "value": 2,
+   "unit": "breaks",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "money crises after an act other than a default",
+   "period": "since 1970",
+   "population": "monies under fiscal stress"
+  },
+  "c1_not2_base_share": {
+   "value": 3.3003300330033,
+   "unit": "percent of the readable strained years",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%"
+  },
+  "c1_not2_before_n": {
+   "value": 2,
+   "unit": "breaks",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "money crises before an act other than a default",
+   "period": "since 1970",
+   "population": "monies under fiscal stress"
+  },
+  "c1_once_after_n": {
+   "value": 38,
+   "unit": "breaks",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "of those, crises after a creditor class newly in arrears",
+   "period": "since 1970",
+   "population": "monies under fiscal stress"
+  },
+  "c1_once_breaks": {
+   "value": 88,
+   "unit": "breaks",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "money crises with each shared decision counted once",
+   "period": "since 1970",
+   "population": "monies under fiscal stress"
+  },
+  "c1_onset_d": {
+   "value": 15,
+   "unit": "percent a year",
+   "origin": {
+    "kind": "cited",
+    "source": "First Thing: a rule fixed before the analysis ran (see the methods and proof)",
+    "locator": "M0 v4.2 section 3, frame b; the onset's depreciation line"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%",
+   "measure": "the fall against the dollar that dates a crisis's onset",
+   "period": "fixed in advance",
+   "population": "every money the study reads"
+  },
+  "c1_onset_pi": {
+   "value": 10,
+   "unit": "percent a year",
+   "origin": {
+    "kind": "cited",
+    "source": "First Thing: a rule fixed before the analysis ran (see the methods and proof)",
+    "locator": "M0 v4.2 section 3, frame b; the onset's lower line"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%",
+   "measure": "the inflation line above which a crisis's onset is dated",
+   "period": "fixed in advance",
+   "population": "every money the study reads"
+  },
+  "c1_pop_after_n": {
+   "value": 14,
+   "unit": "breaks",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c1_pop_breaks": {
+   "value": 21,
+   "unit": "breaks",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c1_pop_prv_after_n": {
+   "value": 3,
+   "unit": "breaks",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c1_pop_tot_after_n": {
+   "value": 1,
+   "unit": "breaks",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c1_prv_after_n": {
+   "value": 15,
+   "unit": "breaks",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c1_prv_after_sr": {
+   "value": 25.423728813559322,
+   "unit": "percent of the readable breaks",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%",
+   "claim_type": "descriptive",
+   "measure": "crises with a private-creditor default or listed act in the prior 3 years",
+   "period": "since 1970",
+   "population": "monies under fiscal stress"
+  },
+  "c1_prv_base_readable_n": {
+   "value": 867,
+   "unit": "readable strained years",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "years of stress that held, readable, private creditors",
+   "period": "since 1970",
+   "population": "strained years the money held"
+  },
+  "c1_prv_base_sr": {
+   "value": 19.377162629757784,
+   "unit": "percent of the readable strained years",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%",
+   "claim_type": "descriptive",
+   "measure": "share with a private-creditor default or listed act in the prior 3 years",
+   "period": "since 1970",
+   "population": "strained years the money held"
+  },
+  "c1_prv_before_n": {
+   "value": 7,
+   "unit": "breaks",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c1_prv_before_sr": {
+   "value": 11.864406779661017,
+   "unit": "percent of the readable breaks",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%"
+  },
+  "c1_prv_none_n": {
+   "value": 36,
+   "unit": "breaks",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c1_prv_none_sr": {
+   "value": 61.016949152542374,
+   "unit": "percent of the readable breaks",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%"
+  },
+  "c1_prv_readable_n": {
+   "value": 59,
+   "unit": "readable breaks",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "money crises whose nearby acts can be read, private creditors",
+   "period": "since 1970",
+   "population": "monies under fiscal stress"
+  },
+  "c1_prv_same_n": {
+   "value": 1,
+   "unit": "breaks",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c1_prv_same_sr": {
+   "value": 1.694915254237288,
+   "unit": "percent of the readable breaks",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%"
+  },
+  "c1_prv_unread_n": {
+   "value": 37,
+   "unit": "breaks",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c1_readable_n": {
+   "value": 70,
+   "unit": "readable breaks",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "money crises whose nearby acts can be read",
+   "period": "since 1970",
+   "population": "monies under fiscal stress"
+  },
+  "c1_same_n": {
+   "value": 3,
+   "unit": "breaks",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c1_same_sr": {
+   "value": 4.285714285714286,
+   "unit": "percent of the readable breaks",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%",
+   "claim_type": "descriptive"
+  },
+  "c1_shared_breaks": {
+   "value": 22,
+   "unit": "breaks",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "money crises of monies shared between states",
+   "period": "since 1970",
+   "population": "monies under fiscal stress"
+  },
+  "c1_strain_debt": {
+   "value": 90,
+   "unit": "percent of GDP",
+   "origin": {
+    "kind": "cited",
+    "source": "First Thing: a rule fixed before the analysis ran (see the methods and proof)",
+    "locator": "M0 v4.2 section 3, frame c; the debt route"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%",
+   "measure": "the state's debt line of fiscal stress, share of GDP",
+   "period": "fixed in advance",
+   "population": "every money the study reads"
+  },
+  "c1_strain_deficit": {
+   "value": 3,
+   "unit": "percent of GDP",
+   "origin": {
+    "kind": "cited",
+    "source": "First Thing: a rule fixed before the analysis ran (see the methods and proof)",
+    "locator": "M0 v4.2 section 3, frame c; the deficit route"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%",
+   "measure": "the deficit line of fiscal stress, share of GDP",
+   "period": "fixed in advance",
+   "population": "every money the study reads"
+  },
+  "c1_t2_inside": {
+   "value": 1424,
+   "unit": "T2 lines",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "of those, lines for states already in default",
+   "period": "1960 to 2024",
+   "population": "Bank of Canada–Bank of England default database"
+  },
+  "c1_t2_lines": {
+   "value": 1775,
+   "unit": "T2 lines from 1960",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "dated lines of the default database",
+   "period": "1960 to 2024",
+   "population": "Bank of Canada–Bank of England default database"
+  },
+  "c1_tot_after_n": {
+   "value": 18,
+   "unit": "breaks",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c1_tot_after_sr": {
+   "value": 27.692307692307693,
+   "unit": "percent of the readable breaks",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%",
+   "claim_type": "descriptive",
+   "measure": "crises with a state default or listed act in the prior 3 years",
+   "period": "since 1970",
+   "population": "monies under fiscal stress"
+  },
+  "c1_tot_base_readable_n": {
+   "value": 884,
+   "unit": "readable strained years",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "years of stress that held, readable, the state's total debt",
+   "period": "since 1970",
+   "population": "strained years the money held"
+  },
+  "c1_tot_base_sr": {
+   "value": 17.647058823529413,
+   "unit": "percent of the readable strained years",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%",
+   "claim_type": "descriptive",
+   "measure": "share with a state default or listed act in the prior 3 years",
+   "period": "since 1970",
+   "population": "strained years the money held"
+  },
+  "c1_tot_before_n": {
+   "value": 9,
+   "unit": "breaks",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c1_tot_before_sr": {
+   "value": 13.846153846153847,
+   "unit": "percent of the readable breaks",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%",
+   "claim_type": "descriptive"
+  },
+  "c1_tot_none_n": {
+   "value": 36,
+   "unit": "breaks",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c1_tot_none_sr": {
+   "value": 55.38461538461539,
+   "unit": "percent of the readable breaks",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%",
+   "claim_type": "descriptive"
+  },
+  "c1_tot_readable_n": {
+   "value": 65,
+   "unit": "readable breaks",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "money crises whose nearby acts can be read, the state's total debt",
+   "period": "since 1970",
+   "population": "monies under fiscal stress"
+  },
+  "c1_tot_same_n": {
+   "value": 2,
+   "unit": "breaks",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c1_tot_same_sr": {
+   "value": 3.076923076923077,
+   "unit": "percent of the readable breaks",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%",
+   "claim_type": "descriptive"
+  },
+  "c1_tot_unread_n": {
+   "value": 31,
+   "unit": "breaks",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c1_unread_n": {
+   "value": 26,
+   "unit": "breaks",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim1.py (card C15)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c20_bretton_woods_mean": {
+   "value": 5.193365814085285,
+   "unit": "percent a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}%"
+  },
+  "c20_bretton_woods_median": {
+   "value": 3.25123152709359,
+   "unit": "percent a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "c20_bretton_woods_n": {
+   "value": 441,
+   "unit": "economy-years",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c20_bretton_woods_share10": {
+   "value": 9.750566893424036,
+   "unit": "percent of economy-years above 10% a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%"
+  },
+  "c20_convertible_mean": {
+   "value": 0.08506957966351786,
+   "unit": "percent a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}%",
+   "measure": "average inflation in convertible years",
+   "period": "1870-2020 minus wars and Bretton Woods",
+   "population": "17 rich economies"
+  },
+  "c20_convertible_median": {
+   "value": 0.0,
+   "unit": "percent a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "c20_convertible_n": {
+   "value": 700,
+   "unit": "economy-years",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c20_convertible_share10": {
+   "value": 2.4285714285714284,
+   "unit": "percent of economy-years above 10% a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%"
+  },
+  "c20_earlier_resumption_hi": {
+   "value": 5.847202538156709,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "c20_earlier_resumption_lo": {
+   "value": 2.0030898315350645,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "c20_era_1870_1913_convertible": {
+   "value": 0.38273383358765173,
+   "unit": "percent a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}%",
+   "measure": "average inflation in convertible years",
+   "period": "1870-1913",
+   "population": "17 rich economies"
+  },
+  "c20_era_1870_1913_fiat": {
+   "value": 0.3080524174701525,
+   "unit": "percent a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}%",
+   "measure": "average inflation in inconvertible years",
+   "period": "1870-1913",
+   "population": "17 rich economies"
+  },
+  "c20_era_1919_1938_convertible": {
+   "value": -1.6016945259065747,
+   "unit": "percent a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}%",
+   "measure": "average inflation in convertible years",
+   "period": "1919-38",
+   "population": "17 rich economies"
+  },
+  "c20_era_1919_1938_fiat": {
+   "value": 2.7360324781028815,
+   "unit": "percent a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}%",
+   "measure": "average inflation in inconvertible years",
+   "period": "1919-38",
+   "population": "17 rich economies"
+  },
+  "c20_era_1972_2020_fiat": {
+   "value": 4.393265151360099,
+   "unit": "percent a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}%",
+   "measure": "average inflation in inconvertible years",
+   "period": "1972-2020",
+   "population": "17 rich economies"
+  },
+  "c20_fiat_from_1972_hi": {
+   "value": 7.134016513698719,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "c20_fiat_from_1972_lo": {
+   "value": 2.1013417554540705,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "c20_fiat_mean": {
+   "value": 3.693000737291814,
+   "unit": "percent a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}%",
+   "measure": "average inflation in inconvertible years",
+   "period": "1870-2020 minus wars and Bretton Woods",
+   "population": "17 rich economies"
+  },
+  "c20_fiat_median": {
+   "value": 2.3115316448905965,
+   "unit": "percent a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "c20_fiat_n": {
+   "value": 1166,
+   "unit": "economy-years",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c20_fiat_share10": {
+   "value": 11.406518010291595,
+   "unit": "percent of economy-years above 10% a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%"
+  },
+  "c20_float_years_above_line": {
+   "value": 0,
+   "unit": "economy-years above 100% a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c20_log_rates_hi": {
+   "value": 9.535248047640184,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "c20_log_rates_lo": {
+   "value": 2.301279938208639,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "c20_log_rates_set_apart_hi": {
+   "value": 5.445545152680617,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "c20_log_rates_set_apart_lo": {
+   "value": 1.8144890191617813,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "c20_main_hi": {
+   "value": 5.747263376562305,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}",
+   "measure": "range of the inflation gap, high end",
+   "period": "1870-2020 minus wars and Bretton Woods",
+   "population": "17 rich economies"
+  },
+  "c20_main_lo": {
+   "value": 1.908834385656476,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}",
+   "measure": "range of the inflation gap, low end",
+   "period": "1870-2020 minus wars and Bretton Woods",
+   "population": "17 rich economies"
+  },
+  "c20_marked_suspensions_inconvertible_hi": {
+   "value": 5.7423734743425,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "c20_marked_suspensions_inconvertible_lo": {
+   "value": 1.9092844965002542,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "c20_median_hi": {
+   "value": 4.145015919595853,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}",
+   "measure": "range of the median gap, high end",
+   "period": "1870-2020 minus wars and Bretton Woods",
+   "population": "17 rich economies"
+  },
+  "c20_median_lo": {
+   "value": 1.307840198853337,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}",
+   "measure": "range of the median gap, low end",
+   "period": "1870-2020 minus wars and Bretton Woods",
+   "population": "17 rich economies"
+  },
+  "c20_no_transition_years_hi": {
+   "value": 5.722052787296903,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "c20_no_transition_years_lo": {
+   "value": 1.893186413563481,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "c20_own_block_returns_only_hi": {
+   "value": 5.88382637119354,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "c20_own_block_returns_only_lo": {
+   "value": 1.9886462230029573,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "c20_set_apart": {
+   "value": 8,
+   "unit": "economy-years",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "economy-years above 100% inflation",
+   "period": "1870-2020 minus wars and Bretton Woods",
+   "population": "17 rich economies"
+  },
+  "c20_war_mean": {
+   "value": 14.162310752746269,
+   "unit": "percent a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}%"
+  },
+  "c20_war_median": {
+   "value": 9.52858473394491,
+   "unit": "percent a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "c20_war_n": {
+   "value": 201,
+   "unit": "economy-years",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c20_war_share10": {
+   "value": 49.75124378109453,
+   "unit": "percent of economy-years above 10% a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%"
+  },
+  "c2_c05_head_d": {
+   "value": -16.176470588235297,
+   "unit": "points",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim2.py (card C05)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:+.0f}",
+   "claim_type": "comparative",
+   "matters": 10.0
+  },
+  "c2_c05_head_n_fewer": {
+   "value": 2,
+   "unit": "spells",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim2.py (card C05)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c2_c05_head_n_two": {
+   "value": 16,
+   "unit": "spells",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim2.py (card C05)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c2_c05_inst_no": {
+   "value": 0,
+   "unit": "spells",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim2.py (card C13)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c2_c05_inst_unread": {
+   "value": 94,
+   "unit": "spells",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim2.py (card C13)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c2_c05_inst_yes": {
+   "value": 73,
+   "unit": "spells",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim2.py (card C13)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c2_c05_np_d": {
+   "value": 25.747745107182347,
+   "unit": "points",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim2.py (card C05)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}",
+   "claim_type": "comparative",
+   "matters": 10.0
+  },
+  "c2_c05_np_n_fewer": {
+   "value": 24,
+   "unit": "spells",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim2.py (card C05)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c2_c05_np_n_two": {
+   "value": 40,
+   "unit": "spells",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim2.py (card C05)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c2_c11_d": {
+   "value": 15.511445794445178,
+   "unit": "points",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim2.py (card C11)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}",
+   "claim_type": "comparative",
+   "matters": 10.0
+  },
+  "c2_floor": {
+   "value": 20,
+   "unit": "spells a side",
+   "origin": {
+    "kind": "cited",
+    "source": "First Thing: a rule fixed before the analysis ran (see the methods and proof)",
+    "locator": "M0 v4.2 section 6 (claim 2); the floor"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}"
+  },
+  "c2_head_d": {
+   "value": 14.052858020897357,
+   "unit": "points",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim2.py (card C13)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:+.0f}",
+   "claim_type": "comparative",
+   "low": -5.728085881639914,
+   "high": 35.859407589285325,
+   "matters": 10.0,
+   "reading": "bounded",
+   "measure": "held more often, two or more backings against fewer, points: the comparison fixed in advance",
+   "period": "periods of stress entered since 1970, ten years after",
+   "population": "inconvertible monies under fiscal stress"
+  },
+  "c2_head_hi": {
+   "value": 35.859407589285325,
+   "unit": "points",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim2.py (card C13)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}",
+   "measure": "its 90% interval, high end: the comparison fixed in advance",
+   "period": "periods of stress entered since 1970, ten years after",
+   "population": "inconvertible monies under fiscal stress"
+  },
+  "c2_head_lo": {
+   "value": -5.728085881639914,
+   "unit": "points",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim2.py (card C13)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}",
+   "measure": "its 90% interval, low end: the comparison fixed in advance",
+   "period": "periods of stress entered since 1970, ten years after",
+   "population": "inconvertible monies under fiscal stress"
+  },
+  "c2_head_mde": {
+   "value": 35.4,
+   "unit": "points",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim2.py (card C13)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}"
+  },
+  "c2_head_n_fewer": {
+   "value": 15,
+   "unit": "spells",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim2.py (card C13)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "periods of stress on the thin side (one backing or none): the comparison fixed in advance",
+   "period": "periods of stress entered since 1970, ten years after",
+   "population": "inconvertible monies under fiscal stress"
+  },
+  "c2_head_n_two": {
+   "value": 65,
+   "unit": "spells",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim2.py (card C13)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "periods of stress with two or more backings: the comparison fixed in advance",
+   "period": "periods of stress entered since 1970, ten years after",
+   "population": "inconvertible monies under fiscal stress"
+  },
+  "c2_inst_no": {
+   "value": 79,
+   "unit": "spells",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim2.py (card C13)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c2_inst_unread": {
+   "value": 10,
+   "unit": "spells",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim2.py (card C13)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c2_inst_yes": {
+   "value": 78,
+   "unit": "spells",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim2.py (card C13)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c2_interval_level": {
+   "value": 90,
+   "unit": "percent",
+   "origin": {
+    "kind": "cited",
+    "source": "First Thing: a rule fixed before the analysis ran (see the methods and proof)",
+    "locator": "M0 v4.2 section 6 (claim 2); the bootstrap interval"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%",
+   "measure": "the interval's level",
+   "period": "periods of stress entered since 1970, ten years after",
+   "population": "inconvertible monies under fiscal stress"
+  },
+  "c2_lines": {
+   "value": 167,
+   "unit": "spells",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim2.py (card C13)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "periods of fiscal stress compared",
+   "period": "periods of stress entered since 1970, ten years after",
+   "population": "inconvertible monies under fiscal stress"
+  },
+  "c2_margin": {
+   "value": 10,
+   "unit": "points",
+   "origin": {
+    "kind": "cited",
+    "source": "First Thing: a rule fixed before the analysis ran (see the methods and proof)",
+    "locator": "M0 v4.2 section 6 (claim 2); the margin"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}",
+   "measure": "the smallest difference that counts, fixed in advance",
+   "period": "periods of stress entered since 1970, ten years after",
+   "population": "inconvertible monies under fiscal stress"
+  },
+  "c2_monies": {
+   "value": 104,
+   "unit": "monies",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim2.py (card C13)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "monies with a period of stress",
+   "period": "periods of stress entered since 1970, ten years after",
+   "population": "inconvertible monies under fiscal stress"
+  },
+  "c2_nocfa_monies": {
+   "value": 13,
+   "unit": "member states",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim2.py (card C11)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c2_np_d": {
+   "value": 15.837176623871791,
+   "unit": "points",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim2.py (card C13)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}",
+   "claim_type": "comparative",
+   "low": 3.908251404280928,
+   "high": 29.040207140894147,
+   "matters": 10.0,
+   "note": "the range excludes 0 but its near end lies short of the size that matters (10): it rules out no difference, not one smaller than 10 (the engine's ruling of 2026-10-08)",
+   "reading": "effect",
+   "measure": "held more often, two or more backings against fewer, points: pegs and currency boards set aside",
+   "period": "periods of stress entered since 1970, ten years after",
+   "population": "inconvertible monies under fiscal stress"
+  },
+  "c2_np_d_nocfa": {
+   "value": 15.167316586560261,
+   "unit": "points",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim2.py (card C13)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}",
+   "claim_type": "comparative",
+   "low": 3.8048503694097215,
+   "high": 29.19193982455139,
+   "matters": 10.0,
+   "note": "the range excludes 0 but its near end lies short of the size that matters (10): it rules out no difference, not one smaller than 10 (the engine's ruling of 2026-10-08)",
+   "reading": "effect",
+   "measure": "held more often, pegs set aside, without the CFA unions' members, points",
+   "period": "periods of stress entered since 1970, ten years after",
+   "population": "inconvertible monies under fiscal stress"
+  },
+  "c2_np_fewer_in_default": {
+   "value": 44,
+   "unit": "spells",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim2.py (C13's lines: composition)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "periods on the thin side of states already in default at entry",
+   "period": "periods of stress entered since 1970, ten years after",
+   "population": "inconvertible monies under fiscal stress"
+  },
+  "c2_np_hi": {
+   "value": 29.040207140894147,
+   "unit": "points",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim2.py (card C13)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}",
+   "measure": "its 90% interval, high end: pegs and currency boards set aside",
+   "period": "periods of stress entered since 1970, ten years after",
+   "population": "inconvertible monies under fiscal stress"
+  },
+  "c2_np_hi_nocfa": {
+   "value": 29.19193982455139,
+   "unit": "points",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim2.py (card C13)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}"
+  },
+  "c2_np_lo": {
+   "value": 3.908251404280928,
+   "unit": "points",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim2.py (card C13)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}",
+   "measure": "its 90% interval, low end: pegs and currency boards set aside",
+   "period": "periods of stress entered since 1970, ten years after",
+   "population": "inconvertible monies under fiscal stress"
+  },
+  "c2_np_lo_nocfa": {
+   "value": 3.8048503694097215,
+   "unit": "points",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim2.py (card C13)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}"
+  },
+  "c2_np_mde": {
+   "value": 26.0,
+   "unit": "points",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim2.py (card C13)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}"
+  },
+  "c2_np_n_fewer": {
+   "value": 46,
+   "unit": "spells",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim2.py (card C13)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "periods of stress on the thin side (one backing or none): pegs and currency boards set aside",
+   "period": "periods of stress entered since 1970, ten years after",
+   "population": "inconvertible monies under fiscal stress"
+  },
+  "c2_np_n_two": {
+   "value": 51,
+   "unit": "spells",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim2.py (card C13)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "periods of stress with two or more backings: pegs and currency boards set aside",
+   "period": "periods of stress entered since 1970, ten years after",
+   "population": "inconvertible monies under fiscal stress"
+  },
+  "c2_np_variants": {
+   "value": 6,
+   "unit": "variants",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim2.py (card C13)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c2_tb_d": {
+   "value": 14.872518614538587,
+   "unit": "points",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim2.py (card C13)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}",
+   "claim_type": "comparative",
+   "low": -2.08182309406298,
+   "high": 32.44506482421887,
+   "matters": 10.0,
+   "reading": "bounded",
+   "measure": "held more often, two or more backings against fewer, points: without the state's credit",
+   "period": "periods of stress entered since 1970, ten years after",
+   "population": "inconvertible monies under fiscal stress"
+  },
+  "c2_tb_hi": {
+   "value": 32.44506482421887,
+   "unit": "points",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim2.py (card C13)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}",
+   "measure": "its 90% interval, high end: without the state's credit",
+   "period": "periods of stress entered since 1970, ten years after",
+   "population": "inconvertible monies under fiscal stress"
+  },
+  "c2_tb_lo": {
+   "value": -2.08182309406298,
+   "unit": "points",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim2.py (card C13)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}",
+   "measure": "its 90% interval, low end: without the state's credit",
+   "period": "periods of stress entered since 1970, ten years after",
+   "population": "inconvertible monies under fiscal stress"
+  },
+  "c2_tb_mde": {
+   "value": 30.8,
+   "unit": "points",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim2.py (card C13)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}"
+  },
+  "c2_tb_n_fewer": {
+   "value": 20,
+   "unit": "spells",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim2.py (card C13)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "periods of stress on the thin side (one backing or none): without the state's credit",
+   "period": "periods of stress entered since 1970, ten years after",
+   "population": "inconvertible monies under fiscal stress"
+  },
+  "c2_tb_n_two": {
+   "value": 83,
+   "unit": "spells",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim2.py (card C13)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "periods of stress with two or more backings: without the state's credit",
+   "period": "periods of stress entered since 1970, ten years after",
+   "population": "inconvertible monies under fiscal stress"
+  },
+  "c2_variants_n": {
+   "value": 7,
+   "unit": "variants",
+   "origin": {
+    "kind": "computed",
+    "script": "code/claim2.py (card C13)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c3_areaer_closed": {
+   "value": 58,
+   "unit": "entries",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-k, shown.csv and shown-variants.csv)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c3_areaer_open": {
+   "value": 2,
+   "unit": "entries",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-k, shown.csv and shown-variants.csv)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c3_closed_n": {
+   "value": 58,
+   "unit": "entries",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-k, shown.csv and shown-variants.csv)"
+   },
+   "as_of": "2026-10-02",
+   "claim_type": "descriptive",
+   "measure": "cases readable on currency where it is not",
+   "period": "since 1970",
+   "population": "monies whose deposits lost to inflation two years running"
+  },
+  "c3_line": {
+   "value": 5,
+   "unit": "percent a year (real deposit return below minus this)",
+   "origin": {
+    "kind": "cited",
+    "source": "First Thing: a rule fixed before the analysis ran (see the methods and proof)",
+    "locator": "M0 v4.2 section 6 (claim 3); frame k's line"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%",
+   "measure": "deposits losing to inflation by more than this, two years in a row",
+   "period": "since 1970",
+   "population": "monies whose deposits lost to inflation two years running"
+  },
+  "c3_line0_closed": {
+   "value": 117,
+   "unit": "entries",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-k, shown.csv and shown-variants.csv)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c3_line0_open": {
+   "value": 23,
+   "unit": "entries",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-k, shown.csv and shown-variants.csv)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c3_open_n": {
+   "value": 1,
+   "unit": "entries",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-k, shown.csv and shown-variants.csv)"
+   },
+   "as_of": "2026-10-02",
+   "claim_type": "descriptive",
+   "measure": "cases readable on currency where capital is open and a foreign money at hand",
+   "period": "since 1970",
+   "population": "monies whose deposits lost to inflation two years running"
+  },
+  "c4_c10_account": {
+   "value": 18,
+   "unit": "coins",
+   "origin": {
+    "kind": "computed",
+    "script": "code/now.py (card C14)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c4_c10_any": {
+   "value": 3,
+   "unit": "coins",
+   "origin": {
+    "kind": "computed",
+    "script": "code/now.py (card C14)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c4_c10_unclassified": {
+   "value": 9,
+   "unit": "coins",
+   "origin": {
+    "kind": "computed",
+    "script": "code/now.py (card C14)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c4_coin_lines": {
+   "value": 336,
+   "unit": "coin-lines",
+   "origin": {
+    "kind": "computed",
+    "script": "code/now.py (card C14)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "coin-lines (four a coin)",
+   "period": "at launch",
+   "population": "stablecoins in central-bank and academic papers"
+  },
+  "c4_coins": {
+   "value": 84,
+   "unit": "coins",
+   "origin": {
+    "kind": "computed",
+    "script": "code/now.py (card C14)"
+   },
+   "as_of": "2026-10-02",
+   "claim_type": "descriptive",
+   "measure": "stablecoins named in the fixed set of papers",
+   "period": "at launch",
+   "population": "stablecoins in central-bank and academic papers"
+  },
+  "c4_coins_none": {
+   "value": 37,
+   "unit": "coins",
+   "origin": {
+    "kind": "computed",
+    "script": "code/now.py (card C14)"
+   },
+   "as_of": "2026-10-02",
+   "claim_type": "descriptive",
+   "measure": "coins with no line readable",
+   "period": "at launch",
+   "population": "stablecoins in central-bank and academic papers"
+  },
+  "c4_coins_none_before": {
+   "value": 66,
+   "unit": "coins",
+   "origin": {
+    "kind": "computed",
+    "script": "code/now.py (card C14)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c4_coins_none_pct": {
+   "value": 44.04761904761905,
+   "unit": "percent of coins",
+   "origin": {
+    "kind": "computed",
+    "script": "code/now.py (card C14)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%",
+   "claim_type": "descriptive",
+   "measure": "share of coins with no line readable",
+   "period": "at launch",
+   "population": "stablecoins in central-bank and academic papers"
+  },
+  "c4_coins_read": {
+   "value": 47,
+   "unit": "coins",
+   "origin": {
+    "kind": "computed",
+    "script": "code/now.py (card C14)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c4_issuer_coins": {
+   "value": 47,
+   "unit": "coins",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-g, coders/i1 and i3)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "coins whose launch documents were found and read",
+   "period": "at launch",
+   "population": "stablecoins in central-bank and academic papers"
+  },
+  "c4_issuer_sought": {
+   "value": 48,
+   "unit": "coins",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (the coins read, and Reserve, sought with no capture)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "coins whose launch documents were sought",
+   "period": "at launch",
+   "population": "stablecoins in central-bank and academic papers"
+  },
+  "c4_kappa": {
+   "value": 0.7425598838616017,
+   "unit": "Cohen's kappa",
+   "origin": {
+    "kind": "computed",
+    "script": "code/now.py (card C14)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.2f}",
+   "claim_type": "descriptive",
+   "measure": "agreement of two codings made apart, beyond chance (Cohen's kappa)",
+   "period": "at launch",
+   "population": "stablecoins in central-bank and academic papers"
+  },
+  "c4_kappa_issuer": {
+   "value": 0.7415540540540541,
+   "unit": "Cohen's kappa",
+   "origin": {
+    "kind": "computed",
+    "script": "code/now.py (card C14)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.2f}"
+  },
+  "c4_kappa_issuer2": {
+   "value": 0.8425713348638897,
+   "unit": "Cohen's kappa",
+   "origin": {
+    "kind": "computed",
+    "script": "code/now.py (card C14)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.2f}"
+  },
+  "c4_no": {
+   "value": 46,
+   "unit": "coin-lines",
+   "origin": {
+    "kind": "computed",
+    "script": "code/now.py (card C14)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "coin-lines read no",
+   "period": "at launch",
+   "population": "stablecoins in central-bank and academic papers"
+  },
+  "c4_redeem_account": {
+   "value": 16,
+   "unit": "coins",
+   "origin": {
+    "kind": "computed",
+    "script": "code/now.py (card C14)"
+   },
+   "as_of": "2026-10-02",
+   "claim_type": "descriptive",
+   "measure": "coins only verified customers may redeem",
+   "period": "at launch",
+   "population": "stablecoins in central-bank and academic papers"
+  },
+  "c4_redeem_any": {
+   "value": 13,
+   "unit": "coins",
+   "origin": {
+    "kind": "computed",
+    "script": "code/now.py (card C14)"
+   },
+   "as_of": "2026-10-02",
+   "claim_type": "descriptive",
+   "measure": "coins any holder may redeem",
+   "period": "at launch",
+   "population": "stablecoins in central-bank and academic papers"
+  },
+  "c4_redeem_any_bare": {
+   "value": 5,
+   "unit": "coins",
+   "origin": {
+    "kind": "computed",
+    "script": "code/registry.py (ft001-g, coders/who-classes.csv)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c4_redeem_readings_restricted": {
+   "value": 4,
+   "unit": "coins",
+   "origin": {
+    "kind": "computed",
+    "script": "code/now.py (card C14)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "c4_redeem_unsettled": {
+   "value": 1,
+   "unit": "coins",
+   "origin": {
+    "kind": "computed",
+    "script": "code/now.py (card C14)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "coins whose sources disagree on who may redeem",
+   "period": "at launch",
+   "population": "stablecoins in central-bank and academic papers"
+  },
+  "c4_redeem_yes": {
+   "value": 30,
+   "unit": "coins",
+   "origin": {
+    "kind": "computed",
+    "script": "code/now.py (card C14)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "coins whose right to redeem can be read",
+   "period": "at launch",
+   "population": "stablecoins in central-bank and academic papers"
+  },
+  "c4_unread": {
+   "value": 199,
+   "unit": "coin-lines",
+   "origin": {
+    "kind": "computed",
+    "script": "code/now.py (card C14)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "coin-lines that cannot be read",
+   "period": "at launch",
+   "population": "stablecoins in central-bank and academic papers"
+  },
+  "c4_yes": {
+   "value": 91,
+   "unit": "coin-lines",
+   "origin": {
+    "kind": "computed",
+    "script": "code/now.py (card C14)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "coin-lines read yes",
+   "period": "at launch",
+   "population": "stablecoins in central-bank and academic papers"
+  },
+  "cal_demand_notes_1863": {
+   "value": 99.4,
+   "unit": "cents in gold per dollar",
+   "origin": {
+    "kind": "cited",
+    "source": "Calomiris (1988), Oxford Economic Papers 40(4)",
+    "locator": "Table 6, pp. 739-741 (28 February 1863)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}",
+   "measure": "the demand notes' price in gold",
+   "period": "February 1863",
+   "population": "United States demand notes and greenbacks, in New York"
+  },
+  "cal_greenbacks_1863": {
+   "value": 58.1,
+   "unit": "cents in gold per dollar",
+   "origin": {
+    "kind": "cited",
+    "source": "Calomiris (1988), Oxford Economic Papers 40(4)",
+    "locator": "Table 6, pp. 739-741 (28 February 1863)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}",
+   "measure": "the greenbacks' price in gold",
+   "period": "February 1863",
+   "population": "United States demand notes and greenbacks, in New York"
+  },
+  "calomiris_max": {
+   "value": 2.5,
+   "unit": "greenback dollars per gold dollar (the monthly series' highest)",
+   "origin": {
+    "kind": "cited",
+    "source": "Calomiris (1988), Oxford Economic Papers 40(4)",
+    "locator": "p. 719 ('ranged from par to 2.5')"
+   },
+   "as_of": "2026-10-02"
+  },
+  "cs_a_pooled": {
+   "value": 3.7723334879926815,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_a.py (card C18)"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:.1f}",
+   "measure": "consumer-price inflation off gold less on gold",
+   "period": "1932-34",
+   "population": "15 rich economies",
+   "low": -3.1470613828440586,
+   "high": 10.691728358829423,
+   "matters": 1.0,
+   "null": 0.0,
+   "reading": "bounded",
+   "claim_type": "comparative"
+  },
+  "cs_a_pooled_no_exchange_control": {
+   "value": 4.131957917737758,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_a.py (card C18)"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:.1f}",
+   "measure": "consumer-price inflation off gold less on gold",
+   "period": "1932-34",
+   "population": "15 rich economies",
+   "low": -2.701987028850575,
+   "high": 10.96590286432609,
+   "matters": 1.0,
+   "null": 0.0,
+   "reading": "bounded",
+   "claim_type": "comparative"
+  },
+  "cs_a_pooled_no_spain": {
+   "value": 3.752882562538182,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_a.py (card C18)"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:.1f}",
+   "measure": "consumer-price inflation off gold less on gold",
+   "period": "1932-34",
+   "population": "15 rich economies",
+   "low": -2.831693720053641,
+   "high": 10.337458845130005,
+   "matters": 1.0,
+   "null": 0.0,
+   "reading": "bounded",
+   "claim_type": "comparative"
+  },
+  "cs_b_gap": {
+   "value": 90427437.5399767,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b.py (card C19)"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:.1f}",
+   "note": "carried by Germany's 1920-24 years above 100% a year; C20 corrects it with those years set apart",
+   "measure": "mean gap, inconvertible less convertible",
+   "period": "1870-2020 minus wars and Bretton Woods",
+   "population": "17 rich economies",
+   "low": 2.0952836558897237,
+   "high": 308513834.1411423,
+   "matters": 1.0,
+   "null": 0.0,
+   "reading": "effect",
+   "claim_type": "comparative"
+  },
+  "cs_b_gap_earlier_resumption": {
+   "value": 90893959.23918577,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b.py (card C19)"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:.1f}",
+   "note": "carried by Germany's 1920-24 years above 100% a year; C20 corrects it with those years set apart",
+   "measure": "mean gap, inconvertible less convertible",
+   "period": "1870-2020 minus wars and Bretton Woods",
+   "population": "17 rich economies",
+   "low": 2.135712377625002,
+   "high": 310941399.4577793,
+   "matters": 1.0,
+   "null": 0.0,
+   "reading": "effect",
+   "claim_type": "comparative"
+  },
+  "cs_b_gap_from_1972": {
+   "value": 3.2681219851809913,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b.py (card C19)"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:.1f}",
+   "measure": "mean gap, inconvertible less convertible",
+   "period": "1870-2020 minus wars and Bretton Woods",
+   "population": "17 rich economies",
+   "low": -0.04302344223826838,
+   "high": 6.577958542053062,
+   "matters": 1.0,
+   "null": 0.0,
+   "reading": "bounded",
+   "claim_type": "comparative"
+  },
+  "cs_b_gap_marked_suspensions": {
+   "value": 90272992.73112747,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b.py (card C19)"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:.1f}",
+   "note": "carried by Germany's 1920-24 years above 100% a year; C20 corrects it with those years set apart",
+   "measure": "mean gap, inconvertible less convertible",
+   "period": "1870-2020 minus wars and Bretton Woods",
+   "population": "17 rich economies",
+   "low": 2.0937637927278123,
+   "high": 308506295.29692423,
+   "matters": 1.0,
+   "null": 0.0,
+   "reading": "effect",
+   "claim_type": "comparative"
+  },
+  "cs_b_gap_no_transition": {
+   "value": 91444356.086536,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b.py (card C19)"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:.1f}",
+   "note": "carried by Germany's 1920-24 years above 100% a year; C20 corrects it with those years set apart",
+   "measure": "mean gap, inconvertible less convertible",
+   "period": "1870-2020 minus wars and Bretton Woods",
+   "population": "17 rich economies",
+   "low": 2.468842602341704,
+   "high": 312442381.597874,
+   "matters": 1.0,
+   "null": 0.0,
+   "reading": "effect",
+   "claim_type": "comparative"
+  },
+  "cs_b_gap_own_block_returns": {
+   "value": 92646515.7967396,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b.py (card C19)"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:.1f}",
+   "note": "carried by Germany's 1920-24 years above 100% a year; C20 corrects it with those years set apart",
+   "measure": "mean gap, inconvertible less convertible",
+   "period": "1870-2020 minus wars and Bretton Woods",
+   "population": "17 rich economies",
+   "low": 2.1509641056666764,
+   "high": 313113703.0226039,
+   "matters": 1.0,
+   "null": 0.0,
+   "reading": "effect",
+   "claim_type": "comparative"
+  },
+  "cs_b_gap_set_apart": {
+   "value": 3.607931157628296,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:.1f}",
+   "measure": "mean gap, inconvertible less convertible",
+   "period": "1870-2020 minus wars, Bretton Woods, 100%+ years",
+   "population": "17 rich economies",
+   "low": 1.908834385656476,
+   "high": 5.747263376562305,
+   "matters": 1.0,
+   "null": 0.0,
+   "reading": "effect",
+   "claim_type": "comparative"
+  },
+  "cs_b_gap_set_apart_earlier_resumption": {
+   "value": 3.7079427966133,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:.1f}",
+   "measure": "mean gap, inconvertible less convertible",
+   "period": "1870-2020 minus wars, Bretton Woods, 100%+ years",
+   "population": "17 rich economies",
+   "low": 2.0030898315350645,
+   "high": 5.847202538156709,
+   "matters": 1.0,
+   "null": 0.0,
+   "reading": "effect",
+   "claim_type": "comparative"
+  },
+  "cs_b_gap_set_apart_from_1972": {
+   "value": 4.308195571696581,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:.1f}",
+   "measure": "mean gap, inconvertible less convertible",
+   "period": "1870-2020 minus wars, Bretton Woods, 100%+ years",
+   "population": "17 rich economies",
+   "low": 2.1013417554540705,
+   "high": 7.134016513698719,
+   "matters": 1.0,
+   "null": 0.0,
+   "reading": "effect",
+   "claim_type": "comparative"
+  },
+  "cs_b_gap_set_apart_marked_suspensions": {
+   "value": 3.6098659323080784,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:.1f}",
+   "measure": "mean gap, inconvertible less convertible",
+   "period": "1870-2020 minus wars, Bretton Woods, 100%+ years",
+   "population": "17 rich economies",
+   "low": 1.9092844965002542,
+   "high": 5.7423734743425,
+   "matters": 1.0,
+   "null": 0.0,
+   "reading": "effect",
+   "claim_type": "comparative"
+  },
+  "cs_b_gap_set_apart_no_transition": {
+   "value": 3.5932618798549214,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:.1f}",
+   "measure": "mean gap, inconvertible less convertible",
+   "period": "1870-2020 minus wars, Bretton Woods, 100%+ years",
+   "population": "17 rich economies",
+   "low": 1.893186413563481,
+   "high": 5.722052787296903,
+   "matters": 1.0,
+   "null": 0.0,
+   "reading": "effect",
+   "claim_type": "comparative"
+  },
+  "cs_b_gap_set_apart_own_block_returns": {
+   "value": 3.706127227002197,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:.1f}",
+   "measure": "mean gap, inconvertible less convertible",
+   "period": "1870-2020 minus wars, Bretton Woods, 100%+ years",
+   "population": "17 rich economies",
+   "low": 1.9886462230029573,
+   "high": 5.88382637119354,
+   "matters": 1.0,
+   "null": 0.0,
+   "reading": "effect",
+   "claim_type": "comparative"
+  },
+  "cs_b_log_gap": {
+   "value": 5.183454642568793,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:.1f}",
+   "measure": "mean gap in log inflation, inconvertible less convertible",
+   "period": "1870-2020 minus wars and Bretton Woods",
+   "population": "17 rich economies",
+   "low": 2.301279938208639,
+   "high": 9.535248047640184,
+   "matters": 1.0,
+   "null": 0.0,
+   "reading": "effect",
+   "claim_type": "comparative"
+  },
+  "cs_b_log_gap_set_apart": {
+   "value": 3.4327538834423623,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:.1f}",
+   "measure": "mean gap in log inflation, inconvertible less convertible",
+   "period": "1870-2020 minus wars and Bretton Woods",
+   "population": "17 rich economies",
+   "low": 1.8144890191617813,
+   "high": 5.445545152680617,
+   "matters": 1.0,
+   "null": 0.0,
+   "reading": "effect",
+   "claim_type": "comparative"
+  },
+  "cs_b_median_gap": {
+   "value": 2.313693839117592,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_b_trim.py (card C20)"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:.1f}",
+   "measure": "median gap, inconvertible less convertible",
+   "period": "1870-2020 minus wars and Bretton Woods",
+   "population": "17 rich economies",
+   "low": 1.307840198853337,
+   "high": 4.145015919595853,
+   "matters": 1.0,
+   "null": 0.0,
+   "reading": "effect",
+   "claim_type": "comparative"
+  },
+  "cs_d_ratio": {
+   "value": 1.2594541910331383,
+   "unit": "times",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_d.py (card C16)"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:.2f}",
+   "measure": "crises' share after a default over strained years' share",
+   "period": "1970 to the data's end",
+   "population": "crises and strained years",
+   "low": 0.6996179411594707,
+   "high": 1.6061366885169595,
+   "matters": 1.5,
+   "reading": "bounded",
+   "claim_type": "comparative",
+   "scale": "ratio"
+  },
+  "cs_d_ratio_shared_once": {
+   "value": 1.1245126705653021,
+   "unit": "times",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_d.py (card C16)"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:.2f}",
+   "measure": "same ratio, a shared money's crises counted once a month",
+   "period": "1970 to the data's end",
+   "population": "crises and strained years",
+   "low": 0.670284229785504,
+   "high": 1.5505771494404545,
+   "matters": 1.5,
+   "reading": "bounded",
+   "claim_type": "comparative",
+   "scale": "ratio"
+  },
+  "cs_d_ratio_t2_private": {
+   "value": 0.8601190476190476,
+   "unit": "times",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_d.py (card C16)"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:.2f}",
+   "measure": "the same ratio, private creditors' arrears only",
+   "period": "1970 to the data's end",
+   "population": "crises and strained years",
+   "low": 0.0,
+   "high": 2.090059452905641,
+   "matters": 1.5,
+   "reading": "bounded",
+   "claim_type": "comparative",
+   "scale": "ratio"
+  },
+  "csa_economies": {
+   "value": 15,
+   "unit": "economies",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_a.py (card C18)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "economies compared",
+   "period": "1932-34",
+   "population": "15 rich economies"
+  },
+  "csa_half": {
+   "value": 6.91939487083674,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_a.py (card C18)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "csa_half_doubled": {
+   "value": 13.83878974167348,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_a.py (card C18)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "csa_hi": {
+   "value": 10.691728358829423,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_a.py (card C18)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}",
+   "measure": "range of the off-gold less on-gold gap, high end",
+   "period": "1932-34",
+   "population": "15 rich economies"
+  },
+  "csa_lo": {
+   "value": -3.1470613828440586,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_a.py (card C18)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}",
+   "measure": "range of the off-gold less on-gold gap, low end",
+   "period": "1932-34",
+   "population": "15 rich economies"
+  },
+  "csa_noesp_half": {
+   "value": 6.584576282591823,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_a.py (card C18)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "csa_noesp_half_doubled": {
+   "value": 13.169152565183646,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_a.py (card C18)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "csa_noesp_hi": {
+   "value": 10.337458845130005,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_a.py (card C18)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "csa_noesp_lo": {
+   "value": -2.831693720053641,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_a.py (card C18)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "csa_noxc_half": {
+   "value": 6.833944946588333,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_a.py (card C18)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "csa_noxc_half_doubled": {
+   "value": 13.667889893176666,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_a.py (card C18)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "csa_noxc_hi": {
+   "value": 10.96590286432609,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_a.py (card C18)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "csa_noxc_lo": {
+   "value": -2.701987028850575,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_a.py (card C18)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "csa_year_1931": {
+   "value": 2.9341086560455283,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_a.py (card C18)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "csa_year_1932": {
+   "value": 4.558388583353185,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_a.py (card C18)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "csa_year_1933": {
+   "value": 1.4319432476441507,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_a.py (card C18)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "csa_year_1934": {
+   "value": 4.111047963573313,
+   "unit": "points of inflation a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_a.py (card C18)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "csd_headline_after": {
+   "value": 14,
+   "unit": "events",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_d.py (card C16)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "crises after a new default",
+   "period": "1970 to the data's end",
+   "population": "crises and strained years of the same stress spells"
+  },
+  "csd_headline_clusters": {
+   "value": 86,
+   "unit": "clusters",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_d.py (card C16)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "csd_headline_hi": {
+   "value": 1.6061366885169595,
+   "unit": "times",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_d.py (card C16)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.2f}",
+   "measure": "the ratio's 95% range, high end",
+   "period": "1970 to the data's end",
+   "population": "crises and strained years of the same stress spells"
+  },
+  "csd_headline_lo": {
+   "value": 0.6996179411594707,
+   "unit": "times",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_d.py (card C16)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.2f}",
+   "measure": "the ratio's 95% range, low end",
+   "period": "1970 to the data's end",
+   "population": "crises and strained years of the same stress spells"
+  },
+  "csd_headline_readable": {
+   "value": 20,
+   "unit": "events",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_d.py (card C16)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "money crises that can be read",
+   "period": "1970 to the data's end",
+   "population": "crises and strained years of the same stress spells"
+  },
+  "csd_headline_readable_trials": {
+   "value": 923,
+   "unit": "strained years",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_d.py (card C16)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "csd_headline_with_act": {
+   "value": 513,
+   "unit": "strained years",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_d.py (card C16)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "csd_headline_year_hi": {
+   "value": 1.6704623747315677,
+   "unit": "times",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_d.py (card C16)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.2f}"
+  },
+  "csd_headline_year_lo": {
+   "value": 0.6225433507848057,
+   "unit": "times",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_d.py (card C16)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.2f}"
+  },
+  "csd_shared_once_after": {
+   "value": 10,
+   "unit": "events",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_d.py (card C16)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "csd_shared_once_clusters": {
+   "value": 86,
+   "unit": "clusters",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_d.py (card C16)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "csd_shared_once_hi": {
+   "value": 1.5505771494404545,
+   "unit": "times",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_d.py (card C16)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.2f}"
+  },
+  "csd_shared_once_lo": {
+   "value": 0.670284229785504,
+   "unit": "times",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_d.py (card C16)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.2f}"
+  },
+  "csd_shared_once_readable": {
+   "value": 16,
+   "unit": "events",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_d.py (card C16)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "csd_shared_once_readable_trials": {
+   "value": 923,
+   "unit": "strained years",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_d.py (card C16)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "csd_shared_once_with_act": {
+   "value": 513,
+   "unit": "strained years",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_d.py (card C16)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "csd_shared_once_year_hi": {
+   "value": 1.5737664099462774,
+   "unit": "times",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_d.py (card C16)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.2f}"
+  },
+  "csd_shared_once_year_lo": {
+   "value": 0.568383388769321,
+   "unit": "times",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_d.py (card C16)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.2f}"
+  },
+  "csd_t2_var_private_after": {
+   "value": 3,
+   "unit": "events",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_d.py (card C16)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "csd_t2_var_private_clusters": {
+   "value": 86,
+   "unit": "clusters",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_d.py (card C16)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "csd_t2_var_private_hi": {
+   "value": 2.090059452905641,
+   "unit": "times",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_d.py (card C16)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.2f}"
+  },
+  "csd_t2_var_private_lo": {
+   "value": 0.0,
+   "unit": "times",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_d.py (card C16)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.2f}"
+  },
+  "csd_t2_var_private_readable": {
+   "value": 18,
+   "unit": "events",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_d.py (card C16)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "csd_t2_var_private_readable_trials": {
+   "value": 867,
+   "unit": "strained years",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_d.py (card C16)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "csd_t2_var_private_with_act": {
+   "value": 168,
+   "unit": "strained years",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_d.py (card C16)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "csd_t2_var_private_year_hi": {
+   "value": 2.116586830357143,
+   "unit": "times",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_d.py (card C16)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.2f}"
+  },
+  "csd_t2_var_private_year_lo": {
+   "value": 0.0,
+   "unit": "times",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_d.py (card C16)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.2f}"
+  },
+  "csd_t2_var_total_after": {
+   "value": 1,
+   "unit": "events",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_d.py (card C16)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "csd_t2_var_total_readable": {
+   "value": 19,
+   "unit": "events",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_d.py (card C16)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "csd_t2_var_total_readable_trials": {
+   "value": 884,
+   "unit": "strained years",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_d.py (card C16)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "csd_t2_var_total_with_act": {
+   "value": 156,
+   "unit": "strained years",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_d.py (card C16)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "csd_without_t2_after": {
+   "value": 0,
+   "unit": "events",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_d.py (card C16)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "csd_without_t2_readable": {
+   "value": 18,
+   "unit": "events",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_d.py (card C16)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "csd_without_t2_readable_trials": {
+   "value": 1212,
+   "unit": "strained years",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_d.py (card C16)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "csd_without_t2_with_act": {
+   "value": 40,
+   "unit": "strained years",
+   "origin": {
+    "kind": "computed",
+    "script": "code/cs_d.py (card C16)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "door_agio_1800": {
+   "value": 3,
+   "unit": "percent",
+   "origin": {
+    "kind": "cited",
+    "source": "Antipa (2016), Journal of Economic History 76(4)",
+    "locator": "p. 1062 ('on 6 January 1800 the agio increased to 3 percent')"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%",
+   "measure": "premium of gold over paper when it first reached this level",
+   "period": "1797 to 1821",
+   "population": "Bank of England notes, in London"
+  },
+  "door_agio_peak": {
+   "value": 45,
+   "unit": "percent",
+   "origin": {
+    "kind": "cited",
+    "source": "Antipa (2016), Journal of Economic History 76(4)",
+    "locator": "p. 1056 ('reached a peak of 45 percent mid-1813')"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%",
+   "measure": "premium of gold over paper at its peak, as Antipa's text gives it",
+   "period": "1797 to 1821",
+   "population": "Bank of England notes, in London"
+  },
+  "door_par_dates": {
+   "value": 5,
+   "unit": "dates",
+   "as_of": "2026-10-02",
+   "origin": {
+    "kind": "computed",
+    "script": "code/readings.py (the A3 build, its cross-check of Tooke's table)"
+   },
+   "measure": "Tooke's dates with a price of gold, August 1797 to August 1799",
+   "period": "August 1797 to August 1799",
+   "population": "Bank of England notes, in London"
+  },
+  "door_par_high": {
+   "value": 0.48399999999999554,
+   "unit": "percent of the notes' gold value, above par",
+   "fmt": "{:+.1f}%",
+   "as_of": "2026-10-02",
+   "origin": {
+    "kind": "computed",
+    "script": "code/readings.py (the A3 build, its cross-check of Tooke's table)"
+   },
+   "measure": "the gold a note bought against par, highest of Tooke's dates",
+   "period": "August 1797 to August 1799",
+   "population": "Bank of England notes, in London"
+  },
+  "door_par_low": {
+   "value": 0.0,
+   "unit": "percent of the notes' gold value, above par",
+   "fmt": "{:+.1f}%",
+   "as_of": "2026-10-02",
+   "origin": {
+    "kind": "computed",
+    "script": "code/readings.py (the A3 build, its cross-check of Tooke's table)"
+   },
+   "measure": "the gold a note bought against par, lowest of Tooke's dates",
+   "period": "August 1797 to August 1799",
+   "population": "Bank of England notes, in London"
+  },
+  "door_par_value": {
+   "value": 0.16119999999999468,
+   "unit": "percent of the notes' gold value, above par",
+   "fmt": "{:+.1f}%",
+   "as_of": "2026-10-02",
+   "origin": {
+    "kind": "computed",
+    "script": "code/readings.py (the A3 build, its cross-check of Tooke's table)"
+   },
+   "note": "the mean over Tooke's dates; low and high are the lowest and highest date, not a sampling interval: the case is one money",
+   "claim_type": "descriptive",
+   "low": 0.0,
+   "high": 0.48399999999999554,
+   "matters": 1.0,
+   "reading": "too small to matter",
+   "measure": "the gold a note bought against par, mean of Tooke's dates (above par +)",
+   "period": "August 1797 to August 1799",
+   "population": "Bank of England notes, in London"
+  },
+  "est_cpi_1993": {
+   "value": 89.8119490277275,
+   "unit": "percent a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/sources_v11.py"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:,.1f}%",
+   "measure": "consumer-price inflation, annual average (WDI FP.CPI.TOTL.ZG)",
+   "period": "1993",
+   "population": "Estonia"
+  },
+  "est_cpi_1994": {
+   "value": 47.6546906187628,
+   "unit": "percent a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/sources_v11.py"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:,.1f}%",
+   "measure": "consumer-price inflation, annual average (WDI FP.CPI.TOTL.ZG)",
+   "period": "1994",
+   "population": "Estonia"
+  },
+  "est_cpi_1998": {
+   "value": 8.20833333333298,
+   "unit": "percent a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/sources_v11.py"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:,.1f}%",
+   "measure": "consumer-price inflation, annual average (WDI FP.CPI.TOTL.ZG)",
+   "period": "1998",
+   "population": "Estonia"
+  },
+  "fomc_target": {
+   "value": 2,
+   "unit": "percent a year (PCE prices)",
+   "origin": {
+    "kind": "cited",
+    "source": "Federal Reserve, FOMC Statement on Longer-Run Goals and Monetary Policy Strategy, 25 January 2012",
+    "locator": "the statement"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%",
+   "measure": "the Federal Reserve's longer-run inflation goal",
+   "period": "since January 2012",
+   "population": "the United States"
+  },
+  "fsv_above100": {
+   "value": 25,
+   "unit": "economies with inflation above 100% at some point",
+   "origin": {
+    "kind": "cited",
+    "source": "Fischer, Sahay & Vegh (2002), NBER Working Paper 8930",
+    "locator": "p. 7"
+   },
+   "as_of": "2026-10-02",
+   "measure": "economies whose inflation passed 100% a year at some point",
+   "period": "1960-96",
+   "population": "133 market economies, pegged or not"
+  },
+  "fsv_above100_share": {
+   "value": 18.796992481203006,
+   "unit": "percent of the 133 economies",
+   "origin": {
+    "kind": "computed",
+    "script": "code/sources_v11.py"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%"
+  },
+  "fsv_above25": {
+   "value": 92,
+   "unit": "economies with inflation above 25% at some point",
+   "origin": {
+    "kind": "cited",
+    "source": "Fischer, Sahay & Vegh (2002), NBER Working Paper 8930",
+    "locator": "p. 7"
+   },
+   "as_of": "2026-10-02",
+   "measure": "economies whose inflation passed 25% a year at some point",
+   "period": "1960-96",
+   "population": "133 market economies, pegged or not"
+  },
+  "fsv_above25_share": {
+   "value": 69.17293233082707,
+   "unit": "percent of the 133 economies",
+   "origin": {
+    "kind": "computed",
+    "script": "code/sources_v11.py"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%"
+  },
+  "fsv_above50": {
+   "value": 49,
+   "unit": "economies with inflation above 50% at some point",
+   "origin": {
+    "kind": "cited",
+    "source": "Fischer, Sahay & Vegh (2002), NBER Working Paper 8930",
+    "locator": "p. 7"
+   },
+   "as_of": "2026-10-02",
+   "measure": "economies whose inflation passed 50% a year at some point",
+   "period": "1960-96",
+   "population": "133 market economies, pegged or not"
+  },
+  "fsv_above50_share": {
+   "value": 36.8421052631579,
+   "unit": "percent of the 133 economies",
+   "origin": {
+    "kind": "computed",
+    "script": "code/sources_v11.py"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%"
+  },
+  "fsv_economies": {
+   "value": 133,
+   "unit": "market economies, 1960-96",
+   "origin": {
+    "kind": "cited",
+    "source": "Fischer, Sahay & Vegh (2002), NBER Working Paper 8930",
+    "locator": "p. 7"
+   },
+   "as_of": "2026-10-02",
+   "measure": "market economies observed",
+   "period": "1960-96",
+   "population": "133 market economies, pegged or not"
+  },
+  "fsv_line": {
+   "value": 100,
+   "unit": "percent over twelve months (very high inflation)",
+   "origin": {
+    "kind": "cited",
+    "source": "Fischer, Sahay & Vegh (2002), NBER Working Paper 8930",
+    "locator": "p. 5"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%",
+   "measure": "the line of very high inflation over 12 months, this study's collapse line",
+   "period": "fixed by the source",
+   "population": "any money"
+  },
+  "fsv_line25": {
+   "value": 25,
+   "unit": "percent a year (high inflation, their lower line)",
+   "origin": {
+    "kind": "cited",
+    "source": "Fischer, Sahay & Vegh (2002), NBER Working Paper 8930",
+    "locator": "p. 7"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%",
+   "measure": "the lower line of high inflation (Fischer, Sahay and Vegh)",
+   "period": "fixed by the source",
+   "population": "any money"
+  },
+  "gb_low_calomiris": {
+   "value": 40.0,
+   "unit": "cents in gold per greenback dollar",
+   "origin": {
+    "kind": "computed",
+    "script": "code/sources_v11.py"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}",
+   "measure": "the greenback dollar's lowest value in gold, per Calomiris",
+   "period": "1864",
+   "population": "United States notes (greenbacks)"
+  },
+  "gb_low_silber": {
+   "value": 35.08771929824562,
+   "unit": "cents in gold per greenback dollar",
+   "origin": {
+    "kind": "computed",
+    "script": "code/sources_v11.py"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}",
+   "measure": "the greenback dollar's lowest value in gold, per Silber",
+   "period": "1864",
+   "population": "United States notes (greenbacks)"
+  },
+  "hk_cpi_max": {
+   "value": 11.1587982832617,
+   "unit": "percent a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/sources_v11.py"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:.1f}%",
+   "measure": "consumer-price inflation, annual average (WDI FP.CPI.TOTL.ZG)",
+   "period": "1983-2025",
+   "population": "Hong Kong"
+  },
+  "hk_cpi_min": {
+   "value": -4.00943396226445,
+   "unit": "percent a year",
+   "origin": {
+    "kind": "computed",
+    "script": "code/sources_v11.py"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:.1f}%",
+   "measure": "consumer-price inflation, annual average (WDI FP.CPI.TOTL.ZG)",
+   "period": "1983-2025",
+   "population": "Hong Kong"
+  },
+  "judson_abroad_100s": {
+   "value": 65,
+   "unit": "percent of $100 notes held abroad, end-2011",
+   "origin": {
+    "kind": "cited",
+    "source": "Judson (2012), Federal Reserve IFDP 1058",
+    "locator": "p. 12"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%",
+   "measure": "share of US hundred-dollar notes held abroad, estimated",
+   "period": "end of 2011",
+   "population": "US currency"
+  },
+  "mandat_assignat_rate": {
+   "value": 30,
+   "unit": "assignats to one mandat",
+   "origin": {
+    "kind": "cited",
+    "source": "Sargent & Velde (1995), Journal of Political Economy 103(3)",
+    "locator": "p. 510 ('to retire the assignats at 30:1')"
+   },
+   "as_of": "2026-10-02"
+  },
+  "mandat_cap": {
+   "value": 2400,
+   "unit": "livres at face",
+   "origin": {
+    "kind": "cited",
+    "source": "Sargent & Velde (1995), Journal of Political Economy 103(3)",
+    "locator": "p. 510; White (1995) p. 247"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:,.0f} million",
+   "measure": "the legal ceiling on mandats issued, at face",
+   "period": "March to summer 1796",
+   "population": "the mandat territorial, France"
+  },
+  "mandat_deposit": {
+   "value": 25,
+   "unit": "percent of the price, as a first payment",
+   "origin": {
+    "kind": "cited",
+    "source": "Sargent & Velde (1995), Journal of Political Economy 103(3)",
+    "locator": "p. 515"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%"
+  },
+  "mandat_lease_multiple": {
+   "value": 22,
+   "unit": "times the 1790 lease",
+   "origin": {
+    "kind": "cited",
+    "source": "White (1995), Journal of Economic History 55(2)",
+    "locator": "p. 247; Sargent & Velde p. 515 (22 times income)"
+   },
+   "as_of": "2026-10-02"
+  },
+  "mandat_open": {
+   "value": 35,
+   "unit": "percent of face value in coin",
+   "origin": {
+    "kind": "cited",
+    "source": "Sargent & Velde (1995), Journal of Political Economy 103(3)",
+    "locator": "p. 510 (March 1796)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%",
+   "measure": "the mandat's value in coin when it was issued",
+   "period": "March to summer 1796",
+   "population": "the mandat territorial, France"
+  },
+  "mandat_summer": {
+   "value": 6,
+   "unit": "percent of face value in coin",
+   "origin": {
+    "kind": "cited",
+    "source": "Sargent & Velde (1995), Journal of Political Economy 103(3)",
+    "locator": "p. 510 (early summer 1796)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%",
+   "measure": "the mandat's value in coin by early summer",
+   "period": "March to summer 1796",
+   "population": "the mandat territorial, France"
+  },
+  "matters_pts": {
+   "value": 1.0,
+   "unit": "points",
+   "fmt": "{:.0f}",
+   "as_of": "2026-10-07",
+   "origin": {
+    "kind": "computed",
+    "script": "code/readings.py"
+   },
+   "note": "a size that matters, set on 2026-10-07 after the results were seen (check/2026-10-06-readings.md)",
+   "measure": "the size that matters: one point of a note's value or of inflation",
+   "period": "set 2026-10-07",
+   "population": "this study's claims"
+  },
+  "matters_ratio": {
+   "value": 1.5,
+   "unit": "times as likely",
+   "fmt": "{:.1f}",
+   "as_of": "2026-10-07",
+   "origin": {
+    "kind": "computed",
+    "script": "code/readings.py"
+   },
+   "note": "a size that matters, set on 2026-10-07 after the results were seen (check/2026-10-06-readings.md)",
+   "measure": "the size that matters for a ratio of chances",
+   "period": "set 2026-10-07",
+   "population": "this study's claims"
+  },
+  "now_btc_cap": {
+   "value": 21,
+   "unit": "million coins",
+   "origin": {
+    "kind": "cited",
+    "source": "Casey and Vigna (2015), The Age of Cryptocurrency",
+    "locator": "library passage bc2767ae04dc04bf"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f} million",
+   "measure": "the most bitcoins the protocol will ever release",
+   "period": "the protocol's schedule",
+   "population": "bitcoin"
+  },
+  "now_cofer_year": {
+   "value": "2025-12",
+   "unit": "date",
+   "origin": {
+    "kind": "computed",
+    "script": "code/now.py (card C14)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "%Y"
+  },
+  "now_eur_cofer": {
+   "value": 20.349552781636817,
+   "unit": "percent of allocated reserves",
+   "origin": {
+    "kind": "computed",
+    "script": "code/now.py (card C14)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%",
+   "claim_type": "descriptive",
+   "measure": "the euro's share of allocated official reserves",
+   "period": "the latest year each source reads",
+   "population": "the euro and its members"
+  },
+  "now_eur_force_no": {
+   "value": 20,
+   "unit": "members",
+   "origin": {
+    "kind": "computed",
+    "script": "code/now.py (card C14)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "members with no capital controls",
+   "period": "the latest year each source reads",
+   "population": "the euro and its members"
+  },
+  "now_eur_force_unread": {
+   "value": 1,
+   "unit": "members",
+   "origin": {
+    "kind": "computed",
+    "script": "code/now.py (card C14)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "members whose controls cannot be read",
+   "period": "the latest year each source reads",
+   "population": "the euro and its members"
+  },
+  "now_eur_members": {
+   "value": 21,
+   "unit": "members",
+   "origin": {
+    "kind": "computed",
+    "script": "code/now.py (card C14)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "euro area members",
+   "period": "the latest year each source reads",
+   "population": "the euro and its members"
+  },
+  "now_eur_tb_no": {
+   "value": 1,
+   "unit": "members",
+   "origin": {
+    "kind": "computed",
+    "script": "code/now.py (card C14)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "members in default",
+   "period": "the latest year each source reads",
+   "population": "the euro and its members"
+  },
+  "now_eur_tb_unread": {
+   "value": 12,
+   "unit": "members",
+   "origin": {
+    "kind": "computed",
+    "script": "code/now.py (card C14)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "members whose default status cannot be read",
+   "period": "the latest year each source reads",
+   "population": "the euro and its members"
+  },
+  "now_eur_tb_yes": {
+   "value": 8,
+   "unit": "members",
+   "origin": {
+    "kind": "computed",
+    "script": "code/now.py (card C14)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "members not in default",
+   "period": "the latest year each source reads",
+   "population": "the euro and its members"
+  },
+  "now_index_line": {
+   "value": 0.5,
+   "unit": "Garriga's index, 0 to 1",
+   "origin": {
+    "kind": "cited",
+    "source": "First Thing: a rule fixed before the analysis ran (see the methods and proof)",
+    "locator": "M0 v4.2 section 2; a limit by institution"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}",
+   "measure": "the index's line fixed in advance",
+   "period": "the latest year each source reads",
+   "population": "the United States dollar"
+  },
+  "now_usd_cap": {
+   "value": 0.626,
+   "unit": "Garriga's lending-limits component, 0 to 1",
+   "origin": {
+    "kind": "computed",
+    "script": "code/now.py (card C14)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.3f}"
+  },
+  "now_usd_cofer": {
+   "value": 56.52156918729038,
+   "unit": "percent of allocated reserves",
+   "origin": {
+    "kind": "computed",
+    "script": "code/now.py (card C14)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.0f}%",
+   "claim_type": "descriptive",
+   "measure": "the dollar's share of allocated official reserves",
+   "period": "the latest year each source reads",
+   "population": "the United States dollar"
+  },
+  "now_usd_index": {
+   "value": 0.391,
+   "unit": "Garriga's index, 0 to 1",
+   "origin": {
+    "kind": "computed",
+    "script": "code/now.py (card C14)"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.3f}",
+   "claim_type": "descriptive",
+   "measure": "Garriga's legal index of central-bank independence, 0 to 1",
+   "period": "the latest year each source reads",
+   "population": "the United States dollar"
+  },
+  "rm_current_exp_bn": {
+   "value": 1.0,
+   "unit": "billion marks (of the loan to the government, to current expenses)",
+   "origin": {
+    "kind": "cited",
+    "source": "Federal Reserve Bulletin, August 1924",
+    "locator": "p. 636"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "rm_debentures": {
+   "value": 196000,
+   "unit": "marks of debentures issued on redemption, June 1924",
+   "origin": {
+    "kind": "cited",
+    "source": "Federal Reserve Bulletin, August 1924",
+    "locator": "p. 636"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:,.0f}",
+   "measure": "gold mortgage bonds issued on redemption, marks",
+   "period": "December 1923 to June 1924",
+   "population": "the Rentenmark, Germany"
+  },
+  "rm_gov_cap_bn": {
+   "value": 1.2,
+   "unit": "billion gold marks",
+   "origin": {
+    "kind": "cited",
+    "source": "Federal Reserve Bulletin, December 1923",
+    "locator": "p. 1281"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}",
+   "measure": "the cap on the Rentenbank's lending to the government",
+   "period": "December 1923 to June 1924",
+   "population": "the Rentenmark, Germany"
+  },
+  "rm_mortgage_bn": {
+   "value": 3.2,
+   "unit": "billion gold marks",
+   "origin": {
+    "kind": "cited",
+    "source": "Federal Reserve Bulletin, December 1923",
+    "locator": "p. 1281"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}",
+   "measure": "the Rentenbank's mortgage, its capital",
+   "period": "December 1923 to June 1924",
+   "population": "the Rentenmark, Germany"
+  },
+  "rm_note_limit_bn": {
+   "value": 2.4,
+   "unit": "billion marks (the present note limit)",
+   "origin": {
+    "kind": "cited",
+    "source": "Federal Reserve Bulletin, August 1924",
+    "locator": "p. 636"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "rm_notes_bn": {
+   "value": 2.05,
+   "unit": "billion marks of notes, June 1924",
+   "origin": {
+    "kind": "cited",
+    "source": "Federal Reserve Bulletin, August 1924",
+    "locator": "p. 636"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.2f}",
+   "measure": "Rentenmark notes outstanding, billion marks",
+   "period": "December 1923 to June 1924",
+   "population": "the Rentenmark, Germany"
+  },
+  "rm_redeem_sum": {
+   "value": 500,
+   "unit": "marks (the smallest sum redeemable)",
+   "origin": {
+    "kind": "cited",
+    "source": "Federal Reserve Bulletin, December 1923",
+    "locator": "p. 1281"
+   },
+   "as_of": "2026-10-02",
+   "measure": "the smallest sum of Rentenmarks redeemable into bonds",
+   "period": "December 1923 to June 1924",
+   "population": "the Rentenmark, Germany"
+  },
+  "rm_sargent_cap_bn": {
+   "value": 3.2,
+   "unit": "billion marks (the issue limit)",
+   "origin": {
+    "kind": "cited",
+    "source": "Sargent (1982), 'The Ends of Four Big Inflations', NBER chapter c11452",
+    "locator": "p. 83"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}"
+  },
+  "rw_both": {
+   "value": 12,
+   "unit": "countries with both a commodity and a fiat period",
+   "origin": {
+    "kind": "cited",
+    "source": "Rolnick & Weber (1997), Journal of Political Economy 105(6); FRB Minneapolis Quarterly Review 22(2) reprint",
+    "locator": "p. 13"
+   },
+   "as_of": "2026-10-02",
+   "measure": "countries with both a commodity and a fiat period",
+   "period": "all years in the data",
+   "population": "Rolnick and Weber's countries"
+  },
+  "rw_commodity_mean": {
+   "value": 1.75,
+   "unit": "percent a year (all commodity observations)",
+   "origin": {
+    "kind": "cited",
+    "source": "Rolnick & Weber (1997), Journal of Political Economy 105(6); FRB Minneapolis Quarterly Review 22(2) reprint",
+    "locator": "p. 16"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.2f}%",
+   "measure": "average inflation in all commodity observations",
+   "period": "all years in the data",
+   "population": "Rolnick and Weber's 15 countries"
+  },
+  "rw_countries": {
+   "value": 15,
+   "unit": "countries",
+   "origin": {
+    "kind": "cited",
+    "source": "Rolnick & Weber (1997), Journal of Political Economy 105(6); FRB Minneapolis Quarterly Review 22(2) reprint",
+    "locator": "p. 13"
+   },
+   "as_of": "2026-10-02",
+   "measure": "countries Rolnick and Weber observe",
+   "period": "all years in the data",
+   "population": "Rolnick and Weber's countries"
+  },
+  "rw_fiat_mean": {
+   "value": 9.17,
+   "unit": "percent a year (all fiat observations)",
+   "origin": {
+    "kind": "cited",
+    "source": "Rolnick & Weber (1997), Journal of Political Economy 105(6); FRB Minneapolis Quarterly Review 22(2) reprint",
+    "locator": "p. 16"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.2f}%",
+   "measure": "average inflation in all fiat observations",
+   "period": "all years in the data",
+   "population": "Rolnick and Weber's 15 countries"
+  },
+  "sd_conversion": {
+   "value": 150,
+   "unit": "new dinars to one Swiss dinar (the 2003-04 conversion)",
+   "origin": {
+    "kind": "cited",
+    "source": "Foote, Block, Crane & Gray (2004), Journal of Economic Perspectives 18(3)",
+    "locator": "p. 61"
+   },
+   "as_of": "2026-10-02"
+  },
+  "sd_fixed_years": {
+   "value": 13,
+   "unit": "years with an essentially fixed stock",
+   "origin": {
+    "kind": "cited",
+    "source": "Foote, Block, Crane & Gray (2004), Journal of Economic Perspectives 18(3)",
+    "locator": "p. 61"
+   },
+   "as_of": "2026-10-02",
+   "measure": "years the stock of Swiss dinars stayed essentially fixed",
+   "period": "1991-2003",
+   "population": "the Swiss dinar, northern Iraq"
+  },
+  "sd_rate": {
+   "value": 100,
+   "unit": "Saddam dinars to one Swiss dinar, about",
+   "origin": {
+    "kind": "cited",
+    "source": "Foote, Block, Crane & Gray (2004), Journal of Economic Perspectives 18(3)",
+    "locator": "p. 61 (July 1998 to January 2002)"
+   },
+   "as_of": "2026-10-02",
+   "measure": "Saddam dinars to one Swiss dinar, about",
+   "period": "July 1998 to January 2002",
+   "population": "the Swiss dinar, northern Iraq"
+  },
+  "silber_gold_1864": {
+   "value": 285,
+   "unit": "greenback dollars per 100 gold dollars (the year's highest)",
+   "origin": {
+    "kind": "cited",
+    "source": "Silber (2007), When Washington Shut Down Wall Street",
+    "locator": "p. 27 ('from $285 in 1864 to $107 in 1878')"
+   },
+   "as_of": "2026-10-02"
+  },
+  "som_notes_bn": {
+   "value": 481,
+   "unit": "billion unofficial shilling notes printed since 1991, estimated",
+   "origin": {
+    "kind": "cited",
+    "source": "Luther & White (2011), 'Positively Valued Fiat Money after the Sovereign Disappears: The Case of Somalia'",
+    "locator": "section 2.2 (citing Symes 2006a, p. 29); library copy, no page"
+   },
+   "as_of": "2026-10-02",
+   "measure": "unofficial shilling notes printed since 1991, estimated, billions",
+   "period": "1991 on",
+   "population": "the Somali shilling"
+  },
+  "terra_days": {
+   "value": 3,
+   "unit": "days",
+   "origin": {
+    "kind": "cited",
+    "source": "Liu, Makarov & Schoar (2023), NBER Working Paper 31160",
+    "locator": "abstract ('in three days in May 2022')"
+   },
+   "as_of": "2026-10-02",
+   "measure": "days from the first break of the peg to the collapse",
+   "period": "May 2022",
+   "population": "Terra (UST)"
+  },
+  "uk_cpi_1932": {
+   "value": -2.6000000000000023,
+   "unit": "percent",
+   "origin": {
+    "kind": "computed",
+    "script": "code/sources_v11.py"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:.1f}%",
+   "measure": "change in consumer prices over the year",
+   "period": "1932",
+   "population": "the United Kingdom (JST R6)"
+  },
+  "uk_cpi_1932_fall": {
+   "value": 2.6000000000000023,
+   "unit": "percent",
+   "origin": {
+    "kind": "computed",
+    "script": "code/sources_v11.py"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:.1f}%",
+   "measure": "fall in consumer prices over the year",
+   "period": "1932",
+   "population": "the United Kingdom (JST R6)"
+  },
+  "us_cpi_1914_06": {
+   "value": 9.9,
+   "unit": "index, 1982-84 = 100",
+   "origin": {
+    "kind": "computed",
+    "script": "code/sources_v11.py"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:.1f}",
+   "measure": "consumer price index, all urban consumers, not seasonally adjusted",
+   "period": "1914-06",
+   "population": "the United States"
+  },
+  "us_cpi_1920_06": {
+   "value": 20.9,
+   "unit": "index, 1982-84 = 100",
+   "origin": {
+    "kind": "computed",
+    "script": "code/sources_v11.py"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:.1f}",
+   "measure": "consumer price index, all urban consumers, not seasonally adjusted",
+   "period": "1920-06",
+   "population": "the United States"
+  },
+  "us_cpi_1965_01": {
+   "value": 31.2,
+   "unit": "index, 1982-84 = 100",
+   "origin": {
+    "kind": "computed",
+    "script": "code/sources_v11.py"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:.1f}",
+   "measure": "consumer price index, all urban consumers, not seasonally adjusted",
+   "period": "1965-01",
+   "population": "the United States"
+  },
+  "us_cpi_1971_01": {
+   "value": 39.8,
+   "unit": "index, 1982-84 = 100",
+   "origin": {
+    "kind": "computed",
+    "script": "code/sources_v11.py"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:.1f}",
+   "measure": "consumer price index, all urban consumers, not seasonally adjusted",
+   "period": "1971-01",
+   "population": "the United States"
+  },
+  "us_pp_loss_1914_20": {
+   "value": 52.63157894736842,
+   "unit": "percent of purchasing power",
+   "origin": {
+    "kind": "computed",
+    "script": "code/sources_v11.py"
+   },
+   "as_of": "2026-09-30",
+   "fmt": "{:.0f}%",
+   "measure": "the dollar's loss of purchasing power over consumer goods",
+   "period": "June 1914 to June 1920",
+   "population": "the United States"
+  },
+  "usdc_low": {
+   "value": 87,
+   "unit": "cents per dollar",
+   "origin": {
+    "kind": "cited",
+    "source": "Board of Governors of the Federal Reserve System, Financial Stability Report, May 2023",
+    "locator": "p. 55"
+   },
+   "as_of": "2026-10-02",
+   "measure": "USDC's lowest price, cents per dollar",
+   "period": "March 2023",
+   "population": "USDC"
+  },
+  "willard_1864_shift": {
+   "value": 4.8,
+   "unit": "percent (the largest one-day move of the war)",
+   "origin": {
+    "kind": "cited",
+    "source": "Willard, Guinnane & Rosen (1995), NBER Working Paper 5381",
+    "locator": "p. 17"
+   },
+   "as_of": "2026-10-02",
+   "fmt": "{:.1f}%"
+  }
+ },
+ "claims": {
+  "door-1931": {
+   "text": "In September 1931 Britain cut the pound from gold; in 1932, wholesale prices in the countries that had left gold fell about {{bj_gap_1932}} points less than in those still on it.",
+   "type": "cases",
+   "keys": [
+    "bj_gap_1932",
+    "bj_gold_1932",
+    "bj_off_1932"
+   ],
+   "sources": [
+    {
+     "source": "Bernanke, B. & James, H. (1991), 'The Gold Standard, Deflation, and Financial Crisis in the Great Depression: An International Comparison', in Hubbard (ed.), Financial Markets and Financial Crises, NBER (chapter c11482)",
+     "locator": "Table 2.1, p. 37; p. 42; Table 2.2, p. 43",
+     "passage": "Britain's first act, September 1931; 'the twelve percentage point difference in rates of deflation between gold and non-gold countries in 1932' (wholesale prices, log changes; their 24 economies, exchange controls counted as leaving).",
+     "copy": "open",
+     "read": "chapter"
+    }
+   ],
+   "claim_type": "comparative",
+   "component": "K3"
+  },
+  "door-mandat": {
+   "text": "In March 1796 France issued the mandat, paper any holder could use to buy national land at a fixed price; it opened at about {{mandat_open}} of its face value in coin and was worth about {{mandat_summer}} by early summer, with no note issued beyond its legal ceiling.",
+   "type": "cases",
+   "keys": [
+    "mandat_open",
+    "mandat_summer",
+    "mandat_cap"
+   ],
+   "sources": [
+    {
+     "source": "Sargent, T. J. & Velde, F. R. (1995), 'Macroeconomic Features of the French Revolution', JPE 103(3)",
+     "locator": "pp. 510, 515",
+     "passage": "Estates earmarked; 2,400 millions of mandats to retire the assignats at 30 to 1 and finance 1796's spending, land sold at fixed prices; 35% of face in March, 6% by early summer, failing although no note went beyond the ceiling; sales at 22 times income, a 25% deposit.",
+     "copy": "held",
+     "read": "chapter"
+    },
+    {
+     "source": "White, E. N. (1995), 'The French Revolution and the Politics of Government Finance, 1770-1815', JEH 55(2)",
+     "locator": "p. 247",
+     "passage": "The mandat was legal tender, received at par with specie, limited in quantity; the underpriced land was rapidly claimed and the paper became fiat money.",
+     "copy": "held",
+     "read": "passage"
+    }
+   ],
+   "claim_type": "descriptive",
+   "component": "K5"
+  },
+  "door-uk-1932": {
+   "text": "Britain's consumer prices fell by {{uk_cpi_1932_fall}} over 1932: the pound gained purchasing power; what fell was its value against staying on gold.",
+   "type": "cases",
+   "keys": [
+    "uk_cpi_1932",
+    "uk_cpi_1932_fall"
+   ],
+   "sources": [
+    {
+     "source": "Jorda, Schularick & Taylor, Macrohistory Database, release 6 (frozen 2026-09-30)",
+     "locator": "cpi, GBR, 1931-1932",
+     "passage": "The United Kingdom's consumer price index, 1932 against 1931.",
+     "copy": "data",
+     "read": "full"
+    }
+   ],
+   "claim_type": "descriptive",
+   "component": "K3"
+  },
+  "headline": {
+   "text": "Unbacked monies have had more inflation, about {{bs3_g10_gap}} points a year more in the rich economies' float of 1974-90 than in their gold era, but a backing is neither necessary nor a guarantee: monies with nothing behind them have run for decades without collapsing, the dollar, convertible into gold at home, lost half its purchasing power in 1914-20, and land stood behind both a money that collapsed and one that held.",
+   "type": "judgement",
+   "keys": [
+    "bs3_g10_gap"
+   ],
+   "claim_type": "judgement",
+   "component": "answer",
+   "headline": true
+  },
+  "k1-greenbacks": {
+   "text": "At their 1864 low the greenbacks were worth about {{gb_low_silber}} to {{gb_low_calomiris}} cents in gold, depending on the series, and they returned to par in 1879.",
+   "type": "cases",
+   "keys": [
+    "gb_low_silber",
+    "gb_low_calomiris"
+   ],
+   "sources": [
+    {
+     "source": "Silber, W. L. (2007), When Washington Shut Down Wall Street, Princeton University Press",
+     "locator": "p. 27",
+     "passage": "The year's highest gold price fell 'from $285 in 1864 to $107 in 1878' (the greenback's gold value at its low computed from it).",
+     "copy": "held",
+     "read": "passage"
+    },
+    {
+     "source": "Calomiris, C. W. (1988), 'Price and Exchange Rate Determination during the Greenback Suspension', Oxford Economic Papers 40(4)",
+     "locator": "p. 719",
+     "passage": "The greenback price of the gold dollar 'ranged from par to 2.5' over the suspension (monthly series).",
+     "copy": "library",
+     "read": "full"
+    }
+   ],
+   "claim_type": "descriptive",
+   "component": "K1"
+  },
+  "k1-what-backing-does": {
+   "text": "A backing limits how much money can be issued and gives holders a way out; a suspension with a return to gold expected is a promise deferred, priced on the news about that return.",
+   "type": "established",
+   "sources": [
+    {
+     "source": "Bordo, M. D. & Kydland, F. E. (1990), 'The Gold Standard as a Rule', NBER Working Paper 3367",
+     "locator": "pp. 2-3",
+     "passage": "The gold standard was intended as a contingent rule: convertibility could be suspended in a wartime emergency on the understanding that it would be restored at the original price when the emergency passed; outside the core, more a desirable goal than an operational constraint (paraphrase).",
+     "copy": "open",
+     "read": "passage"
+    },
+    {
+     "source": "Calomiris, C. W. (1988), 'Price and Exchange Rate Determination during the Greenback Suspension', Oxford Economic Papers 40(4)",
+     "locator": "pp. 719-720, 747",
+     "passage": "Resumption expectations play a central role in the exchange rate and the price level; fiscal shocks and battle news moved the expected timing of resumption; the paper favours Mitchell's approach over Friedman and Schwartz's quantity explanation.",
+     "copy": "library",
+     "read": "full"
+    },
+    {
+     "source": "Willard, K., Guinnane, T. & Rosen, H. (1995), 'Turning Points in the Civil War: Views from the Greenback Market', NBER Working Paper 5381",
+     "locator": "abstract; p. 17",
+     "passage": "Speculators understood that the probability of redemption depended on the Union army's fortunes and political news; the end of Early's raid in July 1864 was the war's largest one-day shift.",
+     "copy": "open",
+     "read": "full"
+    }
+   ],
+   "claim_type": "causal",
+   "component": "K1"
+  },
+  "k2-cover": {
+   "text": "Between the wars the statutory minimum gold cover of a note issue was usually {{bj_min_cover}}: a floor, not the cover held.",
+   "type": "established",
+   "keys": [
+    "bj_min_cover"
+   ],
+   "sources": [
+    {
+     "source": "Bernanke, B. & James, H. (1991), 'The Gold Standard, Deflation, and Financial Crisis in the Great Depression: An International Comparison', in Hubbard (ed.), Financial Markets and Financial Crises, NBER (chapter c11482)",
+     "locator": "p. 38",
+     "passage": "Central banks were usually required by statute to hold gold cover of at least 40% of their note issue (paraphrase).",
+     "copy": "open",
+     "read": "chapter"
+    }
+   ],
+   "claim_type": "descriptive",
+   "component": "K2"
+  },
+  "k3-1971": {
+   "text": "US prices had been rising under the Bretton Woods tie since 1965 (the index from {{us_cpi_1965_01}} to {{us_cpi_1971_01}} by January 1971); the 1970s' inflation is disputed between oil supply shocks and monetary and policy explanations that link it to Bretton Woods' breakdown.",
+   "type": "established",
+   "keys": [
+    "us_cpi_1965_01",
+    "us_cpi_1971_01"
+   ],
+   "sources": [
+    {
+     "source": "DeLong, J. B. (1997), 'America's Peacetime Inflation: The 1970s', in Romer & Romer (eds.), Reducing Inflation",
+     "locator": "pp. 249-251, 259",
+     "passage": "No one with the mandate stopped inflation before Volcker; Bretton Woods broke down at the beginning of the 1970s, and thereafter domestic political economy predominated.",
+     "copy": "open",
+     "read": "chapter"
+    },
+    {
+     "source": "Barsky, R. & Kilian, L. (2001), 'Do We Really Know That Oil Caused the Great Stagflation? A Monetary Alternative', NBER Working Paper 8389",
+     "locator": "abstract; p. 3",
+     "passage": "Oil price increases were not nearly as essential to the stagflation as believed; monetary expansion can generate it; they link the shift to the breakdown of Bretton Woods (Blinder and Bruno & Sachs the oil-shock reading).",
+     "copy": "open",
+     "read": "abstract"
+    },
+    {
+     "source": "FRED CPIAUCNS, US consumer price index (frozen 2026-09-30)",
+     "locator": "January 1965 and January 1971",
+     "passage": "The index at 31.2 and 39.8.",
+     "copy": "data",
+     "read": "full"
+    }
+   ],
+   "claim_type": "descriptive",
+   "component": "K3"
+  },
+  "k3-chosen": {
+   "text": "Countries chose when to leave, largely by their experience of the 1920s, and the depreciations helped each leaver at its neighbours' expense.",
+   "type": "established",
+   "sources": [
+    {
+     "source": "Eichengreen, B. & Sachs, J. (1985), 'Exchange Rates and Economic Recovery in the 1930s', NBER Working Paper 1498",
+     "locator": "pp. 9-10, 20",
+     "passage": "The timing of devaluation was heavily influenced by considerations exogenous to their model, the historical experience of the 1920s; depreciation conferred macroeconomic benefits on the initiating country, but as made it was beggar-thy-neighbour.",
+     "copy": "open",
+     "read": "full"
+    }
+   ],
+   "claim_type": "descriptive",
+   "component": "K3"
+  },
+  "k3-how": {
+   "text": "In 1932 money growth differed little between leavers and stayers; Bernanke and James suggest the gap came through expectations, and Eichengreen and Sachs find that depreciation put upward pressure on prices; from 1933, leaving freed central banks to expand money.",
+   "type": "established",
+   "sources": [
+    {
+     "source": "Bernanke, B. & James, H. (1991), 'The Gold Standard, Deflation, and Financial Crisis in the Great Depression: An International Comparison', in Hubbard (ed.), Financial Markets and Financial Crises, NBER (chapter c11482)",
+     "locator": "p. 42",
+     "passage": "Despite the 1932 difference in deflation, 'the differences in average money growth in that year … are minor'; leaving gold 'afforded countries more latitude to expand their money supplies and thus to escape deflation'.",
+     "copy": "open",
+     "read": "chapter"
+    },
+    {
+     "source": "Eichengreen, B. & Sachs, J. (1985), 'Exchange Rates and Economic Recovery in the 1930s', NBER Working Paper 1498",
+     "locator": "p. 13",
+     "passage": "Depreciation, 'by putting upward pressure on prices', reduced the real wage.",
+     "copy": "open",
+     "read": "full"
+    }
+   ],
+   "claim_type": "causal",
+   "component": "K3"
+  },
+  "k4-by-choice": {
+   "text": "Today's central banks aim for a little inflation by choice: the Federal Reserve's goal is {{fomc_target}} a year on consumer spending prices.",
+   "type": "established",
+   "keys": [
+    "fomc_target"
+   ],
+   "sources": [
+    {
+     "source": "Federal Reserve, FOMC, Statement on Longer-Run Goals and Monetary Policy Strategy, 25 January 2012",
+     "locator": "the statement",
+     "passage": "'inflation at the rate of 2 percent, as measured by the annual change in the price index for personal consumption expenditures, is most consistent over the longer run' with the mandate.",
+     "copy": "open",
+     "read": "full"
+    }
+   ],
+   "claim_type": "descriptive",
+   "component": "K4"
+  },
+  "k5-boards": {
+   "text": "Currency boards came at or after very high inflations that then fell: Estonia's at {{est_cpi_1993}} in 1993 and {{est_cpi_1998}} by 1998; Bulgaria's after {{bgr_cpi_1997}} in 1997, at {{bgr_cpi_1999}} by 1999; Hong Kong's, redeemable by banks only, between {{hk_cpi_min}} and {{hk_cpi_max}} a year since 1983; Argentina's broke in January 2002, and prices rose {{arg_cpi_2002}} that year.",
+   "type": "cases",
+   "keys": [
+    "est_cpi_1993",
+    "est_cpi_1994",
+    "est_cpi_1998",
+    "bgr_cpi_1996",
+    "bgr_cpi_1997",
+    "bgr_cpi_1998",
+    "bgr_cpi_1999",
+    "hk_cpi_min",
+    "hk_cpi_max",
+    "arg_cpi_2002"
+   ],
+   "sources": [
+    {
+     "source": "World Bank, WDI FP.CPI.TOTL.ZG, consumer-price inflation (frozen 2026-09-30)",
+     "locator": "EST, BGR, HKG",
+     "passage": "Annual consumer-price inflation, 1983 on.",
+     "copy": "data",
+     "read": "full"
+    },
+    {
+     "source": "IMF World Economic Outlook, October 2013, Argentina end-of-period consumer prices, via DBnomics (frozen 2026-10-08)",
+     "locator": "ARG, PCPIEPCH, 2002",
+     "passage": "Consumer prices up 40.95% December to December 2002.",
+     "copy": "data",
+     "read": "full"
+    },
+    {
+     "source": "de la Torre, A., Levy Yeyati, E. & Schmukler, S. (2003), 'Living and Dying with Hard Pegs', World Bank Policy Research Working Paper 2980",
+     "locator": "pp. 3-4, 10-11",
+     "passage": "The rule precluded pesos not backed by hard dollars, up to a third of reserves in Argentine dollar bonds; the April 2001 amendments effectively eliminated the issue rule; convertibility collapsed in January 2002.",
+     "copy": "open",
+     "read": "full"
+    },
+    {
+     "source": "Hong Kong Monetary Authority, the Convertibility Undertakings (its description of the Linked Exchange Rate System)",
+     "locator": "the Convertibility Undertakings",
+     "passage": "The HKMA converts US dollars and Hong Kong dollars upon request by banks.",
+     "copy": "open",
+     "read": "passage"
+    }
+   ],
+   "claim_type": "descriptive",
+   "component": "K5"
+  },
+  "k5-existence": {
+   "text": "We read these cases as existence only: they show that each outcome happened, never how often, and no trait in them is read as what decides whether a money collapses.",
+   "type": "judgement",
+   "claim_type": "judgement",
+   "component": "K5"
+  },
+  "k5-other-collapses": {
+   "text": "The assignats, sold against land at auction, had lost about half their gold value by June 1793, before the hyperinflation; Terra, exchangeable for a dollar's worth of its issuer's own token, collapsed in {{terra_days}} days in May 2022.",
+   "type": "cases",
+   "keys": [
+    "assignat_1793",
+    "terra_days"
+   ],
+   "sources": [
+    {
+     "source": "Velde, F. R. & Weir, D. R. (1992), 'The Financial Market and Government Debt Policy in France, 1746-1793', JEH 52(1)",
+     "locator": "p. 17, fn 49",
+     "passage": "Assignats 'backed by the national wealth'; by June 1793 'their value against gold had fallen to about 50 percent of face value'.",
+     "copy": "held",
+     "read": "passage"
+    },
+    {
+     "source": "Liu, J., Makarov, I. & Schoar, A. (2023), 'Anatomy of a Run: The Terra Luna Crash', NBER Working Paper 31160",
+     "locator": "abstract; pp. 2-3",
+     "passage": "UST was backed not by off-chain collateral but by a contract exchanging one UST for $1 worth of LUNA; it collapsed in three days in May 2022.",
+     "copy": "open",
+     "read": "passage"
+    }
+   ],
+   "claim_type": "descriptive",
+   "component": "K5"
+  },
+  "k5-pair": {
+   "text": "Land stood behind both a money that collapsed and one that held, each capped by law and each financing its state: France's mandat in 1796 and Germany's Rentenmark from 1923.",
+   "type": "cases",
+   "sources": [
+    {
+     "source": "Sargent, T. J. & Velde, F. R. (1995), 'Macroeconomic Features of the French Revolution', JPE 103(3)",
+     "locator": "pp. 510-512",
+     "passage": "The mandat, against national estates, capped at 2,400 millions, issued partly to finance 1796's spending, fell to 6% of face by early summer; revenues were not raised and two-thirds of the debt was defaulted in 1797.",
+     "copy": "held",
+     "read": "chapter"
+    },
+    {
+     "source": "Federal Reserve Bulletin, December 1923",
+     "locator": "p. 1281",
+     "passage": "The Rentenbank's capital a mortgage of 3.2 billion gold marks, half on agricultural land, half on industrial, commercial and banking property; notes redeemable in sums of 500 into 5% gold mortgage bonds; not legal tender, taken in all payments to the government; 1.2 billion lent to the Reich to cover the budget deficit.",
+     "copy": "open",
+     "read": "passage"
+    },
+    {
+     "source": "Sargent, T. J. (1982), 'The Ends of Four Big Inflations', in Hall (ed.), Inflation: Causes and Effects",
+     "locator": "p. 83",
+     "passage": "Binding limits on total Rentenmarks (3.2 billion) and on issue to the government (1.2 billion); then government borrowing stopped, the budget balanced and 'inflation stopped'.",
+     "copy": "open",
+     "read": "chapter"
+    }
+   ],
+   "claim_type": "descriptive",
+   "component": "K5"
+  },
+  "k5-rentenmark": {
+   "text": "The Rentenmark was redeemable, in sums of {{rm_redeem_sum}} marks, into the bank's gold mortgage bonds, and almost no one redeemed: {{rm_debentures}} marks of bonds against {{rm_notes_bn}} billion of notes in June 1924; its lending to the Reich was capped at {{rm_gov_cap_bn}} billion, lent at that maximum.",
+   "type": "cases",
+   "keys": [
+    "rm_redeem_sum",
+    "rm_debentures",
+    "rm_notes_bn",
+    "rm_gov_cap_bn",
+    "rm_current_exp_bn",
+    "rm_mortgage_bn"
+   ],
+   "sources": [
+    {
+     "source": "Federal Reserve Bulletin, December 1923",
+     "locator": "p. 1281",
+     "passage": "Redemption in sums of 500 into the Rentenbank's 5% gold mortgage bonds; lending to the government 1.2 billion, the legal maximum, to cover the budget deficit.",
+     "copy": "open",
+     "read": "passage"
+    },
+    {
+     "source": "Federal Reserve Bulletin, August 1924",
+     "locator": "p. 636",
+     "passage": "About 1.2 billion lent to the government, 1.0 billion to current expenses; 2.4 billion the present note limit; 196,000 marks of debentures against 2.05 billion of notes.",
+     "copy": "open",
+     "read": "passage"
+    }
+   ],
+   "claim_type": "descriptive",
+   "component": "K5"
+  },
+  "k5-somalia": {
+   "text": "The Somali shilling kept circulating at a positive value with no state behind it after 1991, while an estimated {{som_notes_bn}} billion unofficial notes were printed.",
+   "type": "cases",
+   "keys": [
+    "som_notes_bn"
+   ],
+   "sources": [
+    {
+     "source": "Luther, W. J. & White, L. H. (2011), 'Positively Valued Fiat Money after the Sovereign Disappears: The Case of Somalia'",
+     "locator": "sections 2.2-2.3 (library passages, no page)",
+     "passage": "Somalis kept accepting shillings without sovereign support; an estimated 481 billion unofficial notes printed since 1991 (Symes); Somaliland's taking them for taxes in 1991-95 they doubt was real support.",
+     "copy": "held",
+     "read": "passage"
+    }
+   ],
+   "claim_type": "descriptive",
+   "component": "K5"
+  },
+  "k6-independence": {
+   "text": "Whether central-bank independence itself lowers inflation is disputed: the correlation is not evidence of cause.",
+   "type": "established",
+   "sources": [
+    {
+     "source": "Posen, A. S. (1995), 'Declarations Are Not Enough: Financial Sector Sources of Central Bank Independence', NBER Macroeconomics Annual 10",
+     "locator": "p. 253",
+     "passage": "He rejects reading 'the negative correlation between average inflation rates and indices of central bank independence as prima facie evidence of a causal relationship' (Alesina & Summers named).",
+     "copy": "open",
+     "read": "chapter"
+    }
+   ],
+   "claim_type": "descriptive",
+   "component": "K6"
+  },
+  "k6-other-limits": {
+   "text": "Other things can do backing's job: a cap on issue with a balanced budget, the state taking the money in taxes, a fixed stock, and demand from abroad.",
+   "type": "established",
+   "keys": [
+    "cal_demand_notes_1863",
+    "cal_greenbacks_1863",
+    "judson_abroad_100s"
+   ],
+   "sources": [
+    {
+     "source": "Sargent, T. J. (1982), 'The Ends of Four Big Inflations', in Hall (ed.), Inflation: Causes and Effects",
+     "locator": "pp. 45, 83",
+     "passage": "In effect the notes 'were backed by the government's pursuit of an appropriate budget policy'; the Rentenmark's change of unit was cosmetic, the caps and the balanced budget the substance.",
+     "copy": "open",
+     "read": "chapter"
+    },
+    {
+     "source": "Grubb, F. (2012), 'Is Paper Money Just Paper Money?', NBER Working Paper 17997",
+     "locator": "pp. 3, 19, 53",
+     "passage": "Colonial paper was redeemed by accepting it for future taxes; trading below face 'is not depreciation, but simply time-discounting'.",
+     "copy": "open",
+     "read": "full"
+    },
+    {
+     "source": "Calomiris, C. W. (1988), 'Price and Exchange Rate Determination during the Greenback Suspension', Oxford Economic Papers 40(4)",
+     "locator": "Table 6, pp. 739-741",
+     "passage": "The 1861 demand notes, taken for customs duties at par with gold, stood at 99.4 in gold when greenbacks stood at 58.1 (28 February 1863): 'it was expected backing that distinguished demand notes from greenbacks'.",
+     "copy": "library",
+     "read": "full"
+    },
+    {
+     "source": "Judson, R. (2012), 'Crisis and Calm: Demand for U.S. Currency at Home and Abroad from the Fall of the Berlin Wall to 2011', Federal Reserve IFDP 1058",
+     "locator": "p. 12",
+     "passage": "About half of all US currency, and about 65 percent of $100s, were held abroad at the end of 2011.",
+     "copy": "open",
+     "read": "passage"
+    }
+   ],
+   "claim_type": "causal",
+   "component": "K6"
+  },
+  "k7-acts-before-crises": {
+   "text": "Of the {{c1_readable_n}} money crises since 1970 whose acts we could read, {{c1_after_n}} came after a default (a creditor class newly in arrears) or another act on our list; so did {{c1_base_sr}} of the strained years in which the money held; an act other than a default came first in only {{c1_not2_after_n}} crises. Counting only a default newly begun on the state's total debt, {{c1_tot_after_sr}} of crises and {{c1_tot_base_sr}} of strained years.",
+   "type": "measured",
+   "scope": {
+    "measure": "shares of money crises and of strained years that held with an act on the list in the year before",
+    "period": "1970 to the panel's common end",
+    "population": "the panel's money crises and years of fiscal stress whose acts can be read"
+   },
+   "keys": [
+    "c1_readable_n",
+    "c1_after_n",
+    "c1_after_sr",
+    "c1_base_sr",
+    "c1_not2_after_n",
+    "c1_t2_lines",
+    "c1_t2_inside",
+    "c1_tot_after_sr",
+    "c1_tot_base_sr",
+    "c1_tot_after_n",
+    "c1_tot_readable_n",
+    "c1_break_line",
+    "c1_at_risk_pi"
+   ],
+   "card": "C15",
+   "claim_type": "descriptive",
+   "component": "K7"
+  },
+  "k7-fiscal-roots": {
+   "text": "Economists generally agree that great inflations have fiscal roots: deficits explain high inflation, though across countries no long-run link shows, and year by year the link holds only where inflation is high.",
+   "type": "established",
+   "sources": [
+    {
+     "source": "Leeper, E. M. & Leith, C. (2016), 'Understanding Inflation as a Joint Monetary-Fiscal Phenomenon', NBER WP 21867",
+     "locator": "p. 87",
+     "passage": "'Economists generally agree that historical episodes of high and volatile inflation rates inevitably have fiscal roots.'",
+     "copy": "open",
+     "read": "passage"
+    },
+    {
+     "source": "Fischer, S., Sahay, R. & Vegh, C. (2002), 'Modern Hyper- and High Inflations', NBER Working Paper 8930",
+     "locator": "pp. 10, 34",
+     "passage": "'By and large, we find that fiscal deficits indeed explain high inflation'; no significant long-run cross-section relationship between deficits and inflation, the link holding in high-inflation countries.",
+     "copy": "open",
+     "read": "chapter"
+    }
+   ],
+   "claim_type": "causal",
+   "component": "K7"
+  },
+  "k8-usdc": {
+   "text": "In March 2023 USDC, redeemable by verified customers in banking hours, fell to {{usdc_low}} cents and came back near a dollar after the deposit guarantees.",
+   "type": "cases",
+   "keys": [
+    "usdc_low"
+   ],
+   "sources": [
+    {
+     "source": "Board of Governors of the Federal Reserve System, Financial Stability Report, May 2023",
+     "locator": "p. 55",
+     "passage": "With $3.3 billion of its reserves at Silicon Valley Bank, USDC fell 'temporarily below its target $1 value to as low as 87 cents', stabilising near $1 after the guarantees.",
+     "copy": "open",
+     "read": "passage"
+    },
+    {
+     "source": "FEDS Notes, 'Primary and Secondary Markets for Stablecoins', 23 February 2024",
+     "locator": "the note",
+     "passage": "Circle said redemption was 'constrained by the working hours of the U.S. banking system'.",
+     "copy": "open",
+     "read": "passage"
+    }
+   ],
+   "claim_type": "descriptive",
+   "component": "K8"
+  },
+  "p1-1-1930s": {
+   "text": "In the 1930s, wholesale prices in the countries that left gold stabilised by 1933 and rose mildly after, while those still on gold kept falling until the gold standard's end in 1936.",
+   "type": "established",
+   "keys": [
+    "bj_gold_1932",
+    "bj_off_1932",
+    "bj_gold_1933",
+    "bj_off_1933",
+    "bj_gold_1934",
+    "bj_off_1934",
+    "bj_gold_1935",
+    "bj_off_1935"
+   ],
+   "sources": [
+    {
+     "source": "Bernanke, B. & James, H. (1991), 'The Gold Standard, Deflation, and Financial Crisis in the Great Depression: An International Comparison', in Hubbard (ed.), Financial Markets and Financial Crises, NBER (chapter c11482)",
+     "locator": "p. 42; Table 2.2, p. 43",
+     "passage": "'Price levels in countries off the gold standard have stabilized by 1933 (with one or two exceptions), and these countries experience mild inflations in 1934-36'; 'the gold standard countries continue to deflate … until the gold standard's dissolution in 1936' (wholesale prices).",
+     "copy": "open",
+     "read": "chapter"
+    }
+   ],
+   "claim_type": "comparative",
+   "component": "K3"
+  },
+  "p1-10-cs-e": {
+   "text": "Of the {{c4_coins}} stablecoins named in a fixed set of papers, {{c4_redeem_yes}} state who may redeem them: {{c4_redeem_account}} only verified customers, {{c4_redeem_any}} any holder.",
+   "type": "measured",
+   "scope": {
+    "measure": "who may redeem each coin, read in its issuer's documents",
+    "period": "the documents as frozen in 2026",
+    "population": "the stablecoins named in frame g's fixed set of papers"
+   },
+   "keys": [
+    "c4_coins",
+    "c4_redeem_yes",
+    "c4_redeem_account",
+    "c4_redeem_any",
+    "c4_coins_none"
+   ],
+   "card": "C14",
+   "claim_type": "descriptive",
+   "component": "K8"
+  },
+  "p1-10-today": {
+   "text": "We read today's monies on each job: the dollar and the euro rest on institutions and taxes, redeemable into nothing; reserve-backed stablecoins bring backing back, redeemable by verified customers only and worth what their reserves are worth; gold has no issuer; bitcoin has a fixed limit and no one who takes it back.",
+   "type": "judgement",
+   "claim_type": "judgement",
+   "component": "K8"
+  },
+  "p1-11-exits": {
+   "text": "After the 1970-73 exits from the dollar, rich economies' inflation spread: under Bretton Woods all {{bs3_exits_n}} ran at or above the United States, at {{bs3_exits_bw_min}} to {{bs3_exits_bw_max}} a year; in the float of 1974-90 they ran from {{bs3_exits_float_min}} to {{bs3_exits_float_max}}, {{bs3_exits_below_us}} below the US's {{bs3_usa_float}} and {{bs3_exits_above_us}} above.",
+   "type": "established",
+   "keys": [
+    "bs3_exits_n",
+    "bs3_exits_bw_min",
+    "bs3_exits_bw_max",
+    "bs3_exits_float_min",
+    "bs3_exits_float_max",
+    "bs3_exits_below_us",
+    "bs3_exits_above_us",
+    "bs3_usa_float",
+    "bs3_all_above_us",
+    "bs3_all_nonus"
+   ],
+   "sources": [
+    {
+     "source": "Bordo, M. D. & Schwartz, A. J. (1994), 'The Specie Standard as a Contingent Rule: Some Evidence for Core and Peripheral Countries, 1880-1990', NBER Working Paper 4860",
+     "locator": "Table 3, printed p. 62, row j and its rows",
+     "passage": "Inflation in GNP deflators, log-trend rates, by regime (Bretton Woods 1946-70, the float 1974-90), for the G10 economies and Switzerland and 21 countries in all.",
+     "copy": "open",
+     "read": "chapter"
+    },
+    {
+     "source": "Bordo, M. D. (1992), 'The Bretton Woods International Monetary System: An Historical Overview', NBER Working Paper 4033",
+     "locator": "pp. 51-53",
+     "passage": "With US inflation spreading through dollar reserves, 'the only alternative to importing U.S. inflation was to float — the route taken by all countries in 1973' (Darby et al.'s reading, through Bordo).",
+     "copy": "open",
+     "read": "passage"
+    }
+   ],
+   "claim_type": "descriptive",
+   "component": "K3"
+  },
+  "p1-2-cs-a": {
+   "text": "On consumer prices, across {{csa_economies}} economies, inflation in 1932-34 ran {{cs_a_pooled}} points a year higher off gold than on it; the range, {{csa_lo}} to {{csa_hi}}, includes no difference: if leaving gold raised consumer-price inflation in those years, it raised it by less than {{csa_hi}} points a year.",
+   "type": "measured",
+   "scope": {
+    "measure": "consumer-price inflation off gold less on gold, pooled by year weights",
+    "period": "1932-34",
+    "population": "the economies of Bernanke & James's Table 2.1 in the Macrohistory Database, classed by their dates"
+   },
+   "keys": [
+    "cs_a_pooled",
+    "csa_lo",
+    "csa_hi",
+    "csa_economies",
+    "cs_a_pooled_no_exchange_control",
+    "cs_a_pooled_no_spain"
+   ],
+   "card": "C18",
+   "claim_type": "comparative",
+   "component": "K3"
+  },
+  "p1-3-dollar-1914-20": {
+   "text": "The dollar stayed convertible into gold at home through 1914-20, with gold exports embargoed from 1917 to June 1919 and exchange controls from 1918, and it lost about {{us_pp_loss_1914_20}} of its purchasing power between June 1914 and June 1920.",
+   "type": "cases",
+   "keys": [
+    "us_pp_loss_1914_20",
+    "us_cpi_1914_06",
+    "us_cpi_1920_06"
+   ],
+   "sources": [
+    {
+     "source": "Bordo, M. D. & Schwartz, A. J. (1994), 'The Specie Standard as a Contingent Rule: Some Evidence for Core and Peripheral Countries, 1880-1990', NBER Working Paper 4860",
+     "locator": "Table 1A, printed pp. 57-58, row United States",
+     "passage": "Gold convertibility 1879-1933 with no suspension in 1914-20 (restrictions of payment by banks in 1893 and 1907 aside).",
+     "copy": "open",
+     "read": "chapter"
+    },
+    {
+     "source": "Bordo, M. D., Humpage, O. & Schwartz, A. J. (2006), 'The Historical Origins of U.S. Exchange Market Intervention Policy', NBER Working Paper 12662",
+     "locator": "pp. 7-8",
+     "passage": "The gold drain 'led to the imposition of an embargo on gold exports in June 1917, and the institution of strict exchange controls beginning in February 1918'.",
+     "copy": "open",
+     "read": "passage"
+    },
+    {
+     "source": "Federal Reserve Bulletin, 1 October 1919",
+     "locator": "p. 918",
+     "passage": "Gold exported 'since the removal of the gold embargo on June 7' (1919).",
+     "copy": "open",
+     "read": "passage"
+    },
+    {
+     "source": "FRED CPIAUCNS, US consumer price index (frozen 2026-09-30)",
+     "locator": "June 1914 and June 1920",
+     "passage": "The index at 9.9 in June 1914 and 20.9 in June 1920.",
+     "copy": "data",
+     "read": "full"
+    }
+   ],
+   "claim_type": "descriptive",
+   "component": "K2"
+  },
+  "p1-3-worth-its-backing": {
+   "text": "Under the gold standard the quantity of money was tied to the stock of gold: prices fell while gold was scarce, to 1896, and rose once new gold was found, with the backing standing.",
+   "type": "established",
+   "sources": [
+    {
+     "source": "Bordo, M. D., Landon-Lane, J. & Redish, A. (2004), 'Good versus Bad Deflation: Lessons from the Gold Standard Era', NBER Working Paper 10329",
+     "locator": "pp. 1, 4",
+     "passage": "Mild deflation from 1870 to 1896 and inflation after; 'the gold standard tied the quantity of money to the stock of gold'; world gold output low to 1890 and rising after the South African, Australian and North American discoveries.",
+     "copy": "open",
+     "read": "passage"
+    },
+    {
+     "source": "DeLong, J. B. (1997), 'America's Peacetime Inflation: The 1970s', in Romer & Romer (eds.), Reducing Inflation",
+     "locator": "p. 248",
+     "passage": "'Since 1896, there has been a steady upward drift in the price level' (the US GDP deflator).",
+     "copy": "open",
+     "read": "chapter"
+    }
+   ],
+   "claim_type": "causal",
+   "component": "K2"
+  },
+  "p1-4-all-monies": {
+   "text": "Among {{fsv_economies}} market economies in 1960-96, pegged or not, {{fsv_above25}} passed {{fsv_line25}} a year at some point and {{fsv_above100}} passed {{fsv_line}}, while most stayed below {{fsv_line25}} most of the time.",
+   "type": "established",
+   "keys": [
+    "fsv_economies",
+    "fsv_above25",
+    "fsv_above50",
+    "fsv_above100",
+    "fsv_line25",
+    "fsv_line"
+   ],
+   "sources": [
+    {
+     "source": "Fischer, S., Sahay, R. & Vegh, C. (2002), 'Modern Hyper- and High Inflations', NBER Working Paper 8930",
+     "locator": "printed p. 7",
+     "passage": "Of 133 market economies in 1960-96, 92 had inflation above 25% at some point, 49 above 50%, 25 above 100%; 'most countries, most of the time' below 25%; no regime classification.",
+     "copy": "open",
+     "read": "chapter"
+    }
+   ],
+   "claim_type": "descriptive",
+   "component": "K4"
+  },
+  "p1-4-bordo-schwartz": {
+   "text": "In the G10 economies and Switzerland, inflation in the float of 1974-90 ran about {{bs3_g10_gap}} points a year above the gold standard of 1881-1913 (by country, a median of {{bs3_gap_median}}, from {{bs3_gap_min}} in Japan to {{bs3_gap_max}} in Italy), the Bretton Woods years at {{bs3_g10_bw}} between.",
+   "type": "established",
+   "keys": [
+    "bs3_g10_gap",
+    "bs3_g10_gold",
+    "bs3_g10_float",
+    "bs3_g10_bw",
+    "bs3_gap_median",
+    "bs3_gap_min",
+    "bs3_gap_max",
+    "bs3_gap_n"
+   ],
+   "sources": [
+    {
+     "source": "Bordo, M. D. & Schwartz, A. J. (1994), 'The Specie Standard as a Contingent Rule: Some Evidence for Core and Peripheral Countries, 1880-1990', NBER Working Paper 4860",
+     "locator": "Table 3, printed p. 62; pp. 1, 38",
+     "passage": "Row j: 0.8% under gold, 3.5% under Bretton Woods, 6.4% under the float (GNP deflators, log-trend rates; the gold era holding some inconvertible monies); the gold era's stability 'may also reflect the absence of major shocks'.",
+     "copy": "open",
+     "read": "chapter"
+    }
+   ],
+   "claim_type": "comparative",
+   "component": "K4"
+  },
+  "p1-4-rolnick-weber": {
+   "text": "In each of the {{rw_both}} countries Rolnick and Weber observe under both standards, inflation was higher under fiat money; over all their observations it averaged {{rw_fiat_mean}} a year under fiat standards against {{rw_commodity_mean}} under commodity standards.",
+   "type": "established",
+   "keys": [
+    "rw_both",
+    "rw_countries",
+    "rw_fiat_mean",
+    "rw_commodity_mean"
+   ],
+   "sources": [
+    {
+     "source": "Rolnick, A. J. & Weber, W. E. (1997), 'Money, Inflation, and Output under Fiat and Commodity Standards', JPE 105(6); FRB Minneapolis Quarterly Review 22(2) reprint",
+     "locator": "pp. 12, 13, 16",
+     "passage": "Of their fifteen countries, twelve had both a commodity and a fiat period; inflation was higher under fiat in every one; 9.17% a year over all fiat observations against 1.75% over all commodity ones; temporary suspensions with a return counted as commodity standards; the facts are not read as causal.",
+     "copy": "held",
+     "read": "passage"
+    }
+   ],
+   "claim_type": "comparative",
+   "component": "K4"
+  },
+  "p1-5-unbacked-held": {
+   "text": "Monies with nothing behind them have run for decades without collapsing: no year of the rich economies' floats since 1972 crossed {{fsv_line}} inflation, and northern Iraq's Swiss dinar, a stock fixed for about {{sd_fixed_years}} years and redeemable into nothing, kept its value against the Saddam dinar.",
+   "type": "cases",
+   "keys": [
+    "c20_float_years_above_line",
+    "sd_fixed_years",
+    "sd_rate"
+   ],
+   "sources": [
+    {
+     "source": "Jorda, Schularick & Taylor, Macrohistory Database, release 6 (frozen 2026-09-30)",
+     "locator": "cpi, the 17 economies, 1972-2020",
+     "passage": "Annual consumer-price inflation in the inconvertible years since 1972 (C20's count of years above 100%).",
+     "copy": "data",
+     "read": "full"
+    },
+    {
+     "source": "Foote, C., Block, W., Crane, K. & Gray, S. (2004), 'Economic Policy and Prospects in Iraq', JEP 18(3)",
+     "locator": "p. 61",
+     "passage": "The supply of Swiss dinars 'had remained essentially fixed for 13 years', letting the north escape Iraq's ruinous inflation; about 100 Saddam dinars to one from July 1998 to January 2002.",
+     "copy": "held",
+     "read": "passage"
+    }
+   ],
+   "claim_type": "descriptive",
+   "component": "K5"
+  },
+  "p1-6-cs-d": {
+   "text": "On like-for-like populations, money crises followed a newly missed payment about {{cs_d_ratio}} times as often as strained years that held; the range, {{csd_headline_lo}} to {{csd_headline_hi}}, includes no difference: if a missed payment made a crisis more likely, it did so by a factor below {{csd_headline_hi}}.",
+   "type": "measured",
+   "scope": {
+    "measure": "share of readable money crises after a default over share of readable strained years with one",
+    "period": "1970 to the panel's common end",
+    "population": "C07's R10 population: breaks and strained years from the same spells"
+   },
+   "keys": [
+    "cs_d_ratio",
+    "csd_headline_lo",
+    "csd_headline_hi",
+    "csd_headline_after",
+    "csd_headline_readable",
+    "cs_d_ratio_shared_once",
+    "cs_d_ratio_t2_private"
+   ],
+   "card": "C16",
+   "claim_type": "comparative",
+   "component": "K7"
+  },
+  "p1-7-cs-b": {
+   "text": "Across {{c19_economies}} rich economies in 1870-2020, war and Bretton Woods years apart, inflation averaged {{c20_fiat_mean}} a year in inconvertible years against {{c20_convertible_mean}} in convertible ones: a gap of {{cs_b_gap_set_apart}} points, {{c20_main_lo}} to {{c20_main_hi}}, with the {{c20_set_apart}} economy-years above {{fsv_line}} set apart.",
+   "type": "measured",
+   "scope": {
+    "measure": "average consumer-price inflation, inconvertible years less convertible years",
+    "period": "1870-2020",
+    "population": "17 rich economies of the Macrohistory Database, each year classed by Bordo & Schwartz's Table 1A"
+   },
+   "keys": [
+    "cs_b_gap_set_apart",
+    "c20_main_lo",
+    "c20_main_hi",
+    "c20_fiat_mean",
+    "c20_convertible_mean",
+    "c20_set_apart",
+    "c19_economies",
+    "cs_b_median_gap",
+    "c20_median_lo",
+    "c20_median_hi"
+   ],
+   "card": "C20",
+   "claim_type": "comparative",
+   "component": "K4"
+  },
+  "p1-7-cs-b-eras": {
+   "text": "Before 1914 inconvertible years ran at about the same inflation as convertible ones ({{c20_era_1870_1913_fiat}} against {{c20_era_1870_1913_convertible}}); the gap comes from the interwar years and the float since 1972, which averaged {{c20_era_1972_2020_fiat}}: {{c19_target_from_mean}} from adoption of an inflation target in the six economies that adopted one, {{c19_target_before_mean}} before it, {{c19_target_none_mean}} with no adoption counted (C19); every dated adoption came in 1991 or later, and in the same years the economies with no adoption counted averaged {{c19_target_none_matched}}: inflation was low with or without a formal adoption.",
+   "type": "measured",
+   "scope": {
+    "measure": "average consumer-price inflation by class and calendar era",
+    "period": "1870-1913, 1919-38, 1972-2020",
+    "population": "17 rich economies of the Macrohistory Database"
+   },
+   "keys": [
+    "c20_era_1870_1913_fiat",
+    "c20_era_1870_1913_convertible",
+    "c20_era_1919_1938_fiat",
+    "c20_era_1919_1938_convertible",
+    "c20_era_1972_2020_fiat",
+    "c19_target_from_mean",
+    "c19_target_before_mean",
+    "c19_target_none_mean",
+    "c19_target_from_n",
+    "c19_target_before_n",
+    "c19_target_none_n",
+    "c19_target_none_matched"
+   ],
+   "card": "C20",
+   "claim_type": "descriptive",
+   "component": "K4"
+  },
+  "p1-8-cs-c": {
+   "text": "Read as the market's odds of a return to gold, the premiums priced Britain's suspended notes at {{a3_restriction_p_low}} of their gold value in their lowest year and the greenbacks at {{a3_greenback_p_low}} in their lowest month, implying waits for gold of {{a3_restriction_wait_low}} to {{a3_restriction_wait_high}} years and {{a3_greenback_wait_low}} to {{a3_greenback_wait_high}}.",
+   "type": "measured",
+   "scope": {
+    "measure": "the paper's value in gold and the wait for gold its premium implies at the interest rates the protocol fixes",
+    "period": "1797-1821 and 1862-79",
+    "population": "the Bank of England's notes under the Restriction; the US greenbacks"
+   },
+   "keys": [
+    "a3_restriction_p_low",
+    "a3_greenback_p_low",
+    "a3_restriction_wait_low",
+    "a3_restriction_wait_high",
+    "a3_greenback_wait_low",
+    "a3_greenback_wait_high"
+   ],
+   "card": "M4-A3",
+   "claim_type": "descriptive",
+   "component": "K1"
+  },
+  "p1-9-cs-f": {
+   "text": "Within five years of a central bank's legal independence, inflation's change differed from matched monies' by {{a2_p3u_mean}} points on average over {{a2_p3u_n}} changes, inside the {{a2_p3u_band_lo}} to {{a2_p3u_band_hi}} that scenarios with no effect give; after an inflation target's adoption, by {{a2_p4_mean}} over {{a2_p4_n}}, inside {{a2_p4_band_lo}} to {{a2_p4_band_hi}}. Read as ranges on the effect: {{a2_p3u_eff_lo}} to {{a2_p3u_eff_hi}}, and {{a2_p4_eff_lo}} to {{a2_p4_eff_hi}}.",
+   "type": "measured",
+   "scope": {
+    "measure": "inflation's change after the change less matched monies', mean gap, against the band scenarios with no effect give",
+    "period": "five years either side of each change",
+    "population": "central-bank reforms raising independence and inflation-target adoptions in frame a's window build, with matched non-changers"
+   },
+   "keys": [
+    "a2_p3u_mean",
+    "a2_p3u_n",
+    "a2_p3u_band_lo",
+    "a2_p3u_band_hi",
+    "a2_p4_mean",
+    "a2_p4_n",
+    "a2_p4_band_lo",
+    "a2_p4_band_hi",
+    "a2_p3u_eff_lo",
+    "a2_p3u_eff_hi",
+    "a2_p4_eff_lo",
+    "a2_p4_eff_hi"
+   ],
+   "card": "M4-frame-a",
+   "claim_type": "comparative",
+   "component": "K6"
+  },
+  "what-to-ask": {
+   "text": "We would ask four questions of any money, each readable in public documents at the time: who can create more of it and what stops them; who may redeem it, and into what; what the asset behind it is worth and whose it is; and what else its holders could use.",
+   "type": "judgement",
+   "claim_type": "judgement",
+   "component": "answer"
+  }
+ }
+}

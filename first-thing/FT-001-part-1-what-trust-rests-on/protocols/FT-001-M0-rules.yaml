@@ -1,0 +1,444 @@
+# FT-001 M0 - the rules' twin: every parameter of FT-001-M0-rules.md, machine-readable.
+# The lock hashes this file and FT-001-M0-rules.md together (missions/code/m0.py): each coding mission
+# (M2-M9) refuses to run unless both are committed and unchanged, and writes the pair's hash into every
+# coded line. A changed rule is a new version with its parent and the reason, committed first.
+id: FT-001-M0
+version: '4.2'
+created: '2026-09-30'
+parent:
+  version: '4.1'
+  commit: 5b95936
+  yaml_sha256: 21b34af650c4440a79fbd8d674940ba19415068ba031ef39547ee2fe00a3aac1
+  md_sha256: 22ab3c48e37f64f2fa67f063285af4f6d71557e0b0a5647fa26d8f73af5c7106
+  pair_sha256: f87060184fe4c17d1c4b399b5faaa0543435bf4c9e9294295258087a0d95790f
+  why: changes no decision rule - answers the small audit of v4.1 (bank/checks/FT-001-M0-2026-09-30-sonnet-small-audit-v41.md, no B; O1-O5, M1-M9) - section 10 completed against the narrow check, A11's declared option said to need a new version with its recipe before any bank is read, "before any bank-level 2023Q1 figure", the sixth question's table corrected (none for broke; the regime's yardstick not stated), First Republic's variant carried here, a declared list
+grandparent:
+  version: 4
+  commit: 3a1727a
+  yaml_sha256: e1357484df42042755b220c1d196490b38b9beea614657d7ee0d7d10a6ad993d
+  md_sha256: eac2d7c41f6f78fd9d811bf0a888763ca32b6cf637e7bdb33b3a3b2cdc672876
+  pair_sha256: 12ce34547d7d7920b091a41c130872c037bef840a4094c1ad1340b9e330deb0b
+  why: v4.1 changed no decision rule - wrote the narrow check of v4 (A11 not yet, a B) as declared; added one hold, one variant, one duty
+before:
+  - {version: 3, commit: 7cdb4bb, yaml_sha256: 1aa1199c9fe4241fbbd3b1578c1a401c2a3b3b89538b3b8dc70ca95320315398, md_sha256: 4d2ed2c61943f3f09f08b10feb2019f581e234178e8ad58a84e2de2619cf8bdd, pair_sha256_prefix: '92733468'}
+  - {version: 3, commit: 288b6b6, yaml_sha256: d7790724de5f80227c50f7f39fb45a4f1d5fb1e82137e0564d3b1eb2ea376ce7, md_sha256: b9f5496ae75a0ef3b81ef712a34c68173653c25d0eaece41e0b2c00615fd3ab3, pair_sha256: fba40fe28d00e997f6ff015e39c0e0f08cd2ebabbcf5e1c9c6b1a00eee4d848d, edited_once: 'v3 was edited before any coding (an unsourced start year dropped, A11 told); both states are named (third audit, M1)'}
+  - {version: 2, commit: ff44bbe, pair_sha256: 1bfbaae3a686dfbfa4a98f1324da17d47741047b4684f42fee13e5dd4da4b309}
+  - {version: 1, commit: 2990473}
+declared:
+  note: the holes of section 10, listed here so the twin carries them; parameters stay in their blocks
+  items:
+    - round 3's B1 (claim 2's count carried the state's default) answered by the auditor's repair, not re-audited in depth
+    - A11's B (the narrow check of v4) - A11 waits on Sami, declared or told; declared needs a new version writing the flag's recipe and floor before any bank is read
+    - frame d waits on Karaman et al.'s series
+    - claim 5 (ii) - acts or phases answering inflation expected but not yet in prices; strain beyond its route and tercile
+    - claim 2 - strain beyond what its matching holds (route, tercile, era, the state's default)
+    - frame d's pattern has no check outside A7's fitting sample
+    - the market split is a yes or no where a premium's level would be finer
+    - C15's reclassification lines and December spikes (the pilot's O1 and O2)
+    - test (ii) cannot refute in practice
+    - A11's recomputation reads FDIC's current database, not first filings
+    - under force, held, the crossing and a refuge's protection are read on yardsticks the force sets; no second yardstick open for broke
+    - the regime's classes carry no second yardstick M0 names
+    - A10 reads a loss in the account's own money; a loss by inflation is claim 2's and part 2's
+    - an L1 act can leave the statutory cap standing
+  default_source_everywhere: 'the state in default at a date - a stock in default in the Bank of Canada-Bank of England database from 1960, Reinhart-Rogoff before (as T2); read so in supports.taken_back.stands, claims.claim2.matching, frames.c.matching, frames.f.matching, analyses.A10.strata and pressure_strata'
+step8: {rounds_with_B: [1, 2, 3], round_3: the third round with a B - M0 goes forward with it declared and put to Sami; no fourth round of design, round_3_B1_answer: 'the auditor''s own repair (simulated 0-3 pct false confirmations), not re-audited in depth', narrow_check: 'v4 does what round 3 asked (B1 both repairs at 0-1 pct false confirmations together); A11 not yet - a B, written in section 10 as declared, never patched', narrow_check_report: bank/checks/FT-001-M0-2026-09-30-opus-narrow-check-v4.md}
+seen_before_writing: >-
+  The dossier, its maps, the guards table, the three dossier checks, M0's three audits and their simulations,
+  the pilot's cards C05, C09, C11, C12 and C15 and its STATE.md, D1's licence decisions, the coverage of M3's
+  two batches of frozen sources (no value), and two facts the third audit printed (world counts of sovereigns
+  in default; the pound's 1975 inflation in Thomas-Dimsdale). No data of any case of parts 1, 3, 4 or 5.
+reused_from_pilot:
+  frame_e: {cards: [C05-e-episodes, C09-e-episodes-excess, C11-e-episodes-checked, C15-e-episodes-closed], list_used_by_route_c4: C15-e-episodes-closed, accommodation_reading_for_phase2: C12 at m0}
+  c4_card: {id: C15-e-episodes-closed, card_hash: 3bf06edbb0f3c3767191c1d1c63a3c3c70183eb6486ceaddefb149700018d8dc, commit: d58f06f, list: headline (every one-month jump set apart)}
+  c4_declared_holes:
+    O1_reclassification_lines_flagged: [BJ 2003-12, NE 2003-12, SN 2003-12, DM 1984-03, KN 1984-03, VC 1984-03, DK 2012-07, DK 2021-03, GT 2001-12, CI 2001-10 to 2002-12 through its December-2001 seam]
+    O1_handling: enter as in C15's headline, flagged; a variant drops them
+    O2_december_spikes: enter the headline; the pilot's smoothing variant list read beside, a variant
+  never_read: [C09-e-episodes-excess (found faulty)]
+  regime_rule_part2: the pilot's IFS 2 pct band governs part 2's A5; M0's governs parts 1, 3, 4, 5
+
+common:
+  new_money: introduced while the old money is broken, or within 24 months of its restoration; otherwise chained
+  new_money_months_after_restoration: 24
+  regime:
+    source: Ilzetzki-Reinhart-Rogoff fine classes, frozen file 1946-2016 (the 2017-2019 update only on www.ilzetzki.com, a wall; enters by a new version)
+    lag_months: 12
+    parity_fine_classes: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    class_9: announced crawling band of +/-2 pct or wider, no upper bound; read as a parity
+    class_9_variant: read as floating
+    floating_fine_classes: [11, 12, 13]
+    never_used: 14
+    parity_premium_unreadable: 15
+    after_2016: 2016 class carried forward, flagged; variant drops those years
+    before_1946: frame a gold-standard lists
+  depreciation: 12-month change against the dollar or the anchor (Reinhart-Rogoff); the market rate under a floating regime, the official rate under a parity
+  premium: 100 (parallel/official - 1) while a parity stands; only where a parallel series is found by hand (variant, by source); no open parallel-rate file (Reinhart-Rogoff's named, not served)
+  two_prices_headline: a dual, multiple or parallel market recorded (IRR's dual-market dummy = 1, 0 = unified; or class 15) while a parity stands
+  reserves: central-bank reserves less gold, in dollars (IFS RAXG_USD), 12-month change
+  debt_in_own_money_source: Reinhart-Rogoff domestic and external public debt where both exist (to about 2010); after, cannot be read, never assumed
+  source_last_year: past it, the source's items are cannot be read, never none (L2 and H1 after 2016-09; T2's external dummy after 2014 where BoC-BoE does not reach; every premium without a series)
+  common_end_share: 0.5
+  eras:
+    metal: [null, '1914-07-31']
+    gold_exchange_and_bretton_woods: ['1914-08-01', '1971-08-15']
+    fiat: ['1971-08-16', null]
+  war:
+    territory_battle_deaths_per_year: 1000
+    own_forces_battle_deaths_per_war: 1000
+    sources: [UCDP by location from 1989, Correlates of War intra-state wars and interstate wars fought on the state's soil before, Correlates of War participants' own losses]
+    battle_deaths_from_1989: UCDP by location where open, else World Bank VC.BTL.DETH
+    entry_in_war_year: apart
+    war_inside_horizon: coded, never apart
+  fiscal_emergency: frame c's strain (its route and the tercile of the route's measure), a stratum wherever pressure is stratified
+  source_order:
+    prices: [IMF IFS, World Bank, Reinhart-Rogoff, BIS long series, Jorda-Schularick-Taylor]
+    debt: ['IMF HPDD (DBnomics mirror, 2016 vintage, to 2015)', 'IMF WEO general government gross debt (DBnomics, from 1980)', Reinhart-Rogoff, Jorda-Schularick-Taylor]
+    deficits: [IMF WEO (from 1980), Jorda-Schularick-Taylor]
+    central_bank_credit_to_state: [IFS line 12a to 2000, IFS FASAG from 2001 (seam flagged)]
+    money: [IMF IFS, Jorda-Schularick-Taylor]
+    exchange_rates: [IMF IFS, Reinhart-Rogoff]
+    market_structure: [Ilzetzki-Reinhart-Rogoff]
+    not_in_order: [Mauro et al. Public Finances in Modern History (the IMF's site refuses the toolkit's client; enters by a new version if readable)]
+    not_used: [Global Macro Database (terms bar use inside a company; D1)]
+    jst_published_charts: drawn from the public series where JST only compiles them
+
+supports:
+  currency:
+    taken_back: {stands: legal for taxes and the state not in default, stands_carries: 'fiscal distress (the state''s default) - wherever counted, default at entry is also a matching stratum and the verdict is given without taken back', acts: {T1: taxes required in metal another money or kind (variant), T2: default or restructuring external or domestic (its year)}, headline: [T2], sources: {T2: ['Reinhart-Rogoff Varieties to 1959 (M-S countries external only, from the This Time Is Different dummy; their domestic defaults cannot be read)', Bank of Canada-Bank of England database from 1960 (a default's year is the first year of a stock)]}}
+    redemption: {stands: convertible, acts: {R1: convertibility suspended, R2: parity changed while convertible}, claims_1_and_5: not an act (they count inconvertible monies)}
+    limit_by_rule:
+      stands: a statutory cap, a peg or a currency board in force
+      statutory_cap_stands: Garriga's lending-limits component cuk_limlen >= 0.5 (a convention, the midpoint)
+      statutory_cap_grid: [0.25, 0.75]
+      acts: {L1: 'a year in which cuk_limlen falls (a statutory cap on issue or on central-bank credit to the state lifted or raised)', L2: peg band or board abandoned by an announced decision}
+      de_facto_stands_on_value: a de facto class stands on the rate's stability (value) - why claim 2 is also given without pegs and boards
+      headline: [L1, L2]
+      sources: {L1: Garriga lending-limits component 1970-2023, L2: Ilzetzki-Reinhart-Rogoff chronologies 1946-2016}
+      de_facto_class_change_without_announcement: value, never an act
+      variants: [devaluation >= 10 pct within a kept peg, a step beyond an announced crawl]
+    limit_by_institution: {stands: 'Garriga index >= 0.5 (a convention, the midpoint) or a target announced', stands_grid: [0.4, 0.6], acts: {L3: 'a legal reform Garriga codes as decreasing independence (reform and decrease flags), or a target abandoned'}, L3_variant: Garriga index down >= 0.05 (a convention), L3_step_grid: [0.03, 0.10], headline: [L3], sources: {L3: [Garriga 1970-2023, frame a target list]}}
+    habit: {stands: sole legal tender, acts: {H1: another money legal tender or legal for domestic contracts by an announced decision}, headline: [H1], sources: {H1: [Ilzetzki-Reinhart-Rogoff chronologies to 2016]}}
+    force: {stands: Chinn-Ito ka_open <= 0.25 or a ban on residents holding foreign money, stands_grid: [0.1, 0.5], acts: {F1: 'controls or a ban lifted, dated by AREAER text'}, headline: [], F1: variant only (ka_open smears changes over five years; AREAER text behind a sign-in)}
+    world_demand: {stands: in COFER reported list (Eichengreen-Chitu-Mehl before 1999), acts: {W1: official holder decision to cut holdings}, use: variant only}
+    not_acts: [a falling share of payments, a rising premium, a run, a devaluation within a kept peg]
+  account:
+    list: [cash at par, deposit insurance, lender of last resort, solvency, the state behind it]
+    euro_members_own_money: both readings
+    after_entry: dated responses, never separators
+  force_imposed: claim 5 phase 4, a response, never an act of the list
+  private_issuer_lines:
+    redemption: terms give holders a right to redeem at par on demand (who may redeem recorded)
+    limit_by_rule: issue tied by contract or code to reserves held one for one, or to a stated cap; a target alone does not count
+    limit_by_institution: the issuer supervised under a law that limits its issue
+    taken_back: the issuer accepts the coin for its own fees or claims
+    reserves_at_banks: rest on the account's supports
+    outside: a stated mechanism meeting none of these lines
+
+case_line:
+  fields: [money, frame, route, entry_date, entry_measure, entry_measure_date, outcome, outcome_date, onset_date, responses, exit, status, source, locator, coder, rules_sha256]
+  reconstructed_columns: {period: entry date, value: entry measure, unit: entry measure unit, source: source, locator: locator}
+  statuses: [counted, already under way, censored, ended unbroken, cannot be read, apart]
+  refused_unless_already_under_way_or_apart: [entry on or after outcome, response dated before entry]
+  refused: [matching measure whose date ends after the entry's, rules_sha256 not the committed pair's hash, a counted line whose onset is not after its entry]
+  unreadable_dates: reported, not raised
+  follows:
+    ft001-b: [ft001-acts]
+    ft001-c: [ft001-acts]
+    ft001-phases: [ft001-acts]
+    ft001-f: [ft001-acts]
+  follows_read_by: list_problems itself (no flag to forget)
+  commit_order_checked: [a list's first commit strictly after the commit that fixed its rules hash, a list's first commit strictly after the first commit of every list it follows (acts before outcomes)]
+  not_checkable_in_code: nobody looked at an outcome before coding the acts (the coders' protocol only)
+coders:
+  acts_committed_before_outcomes: true
+  headline_acts_from_sources_coded_for_every_money: true
+  hand_found_acts: variant, reported by source
+  act_rate_by_source_reported: true
+  second_coder_sample_share: 0.20
+  seed: 1797
+  agreement: cohen_kappa
+
+censoring:
+  only_common_end_censors: true
+  crisis_stop: coded by what happened, or cannot be read
+  competing_exit: {announced_at_least_months_before: 12, no_crossing_in_months_before: 12, fixed_horizon_status: ended unbroken, verdict_both_ways: true}
+  window_before_record: apart
+  window_past_source_last_year: the source's items cannot be read
+
+frames:
+  a:
+    panels: ['1914 suspensions (Meissner; belligerents told, neutrals counted)', '1931-36 exits from gold (Bernanke-James; Wolf)', 'every legal reform Garriga codes, up or down (reform and direction flags, 1970-2023; index changes >= 0.05 a variant)', 'inflation-targeting adoptions (Hammond, targeters at the start of 2012; central banks after)']
+    window_annual_years: [-3, 5]
+    window_monthly_months: [-24, 36]
+    nonchangers: {exclusion_years: 3, max_per_change: 5, match: inflation in the year before, caliper_points: 3, caliper_grid: [1, 5]}
+    run_exit_reserve_fall_pct: 20
+    run_exit_reserve_fall_grid: [10, 30]
+    part1_timing: read here, forward, each change dated, value and trust from three years before
+  b:
+    break_line_pct: 20
+    break_line_grid: [40, 100]
+    crossing_consecutive_months: 3
+    crossing_months_grid: [1]
+    crossing_annual: year average at or above the line
+    restored_months_below_lower_line: 24
+    pound_1975: above the headline line in every series (22.7 pct in Thomas-Dimsdale's preferred CPI, 24.2 pct RPI-based; frame b reads IFS first); the line is not moved; not a break under the 40 pct grid, reported
+    onset_rule: earliest date from which one route's measure stayed at or above its line up to the crossing, the run begun within the bound
+    onset_run_bound_months: 36
+    onset_run_bound_grid: [24, 60]
+    onset_when_no_run_within_bound: at the bound (crossing - 36 months), flagged; variant sets those breaks apart
+    lower_line_pct: 10
+    lower_line_grid: [5, 15]
+    premium_onset_pct: 10
+    premium_onset_grid: [5, 25]
+    premium_route: variant only, where a parallel series is found by hand
+    depreciation_onset_pct: 15
+    depreciation_onset_grid: [10, 25 with a 10-point rise in the rate (Frankel-Rose)]
+    depreciation_route_rate: market rate under a floating regime, official rate under a parity
+    market_split_or_premium_at_new_controls_dates_no_onset: true
+    inflation_only_onset: variant
+    first_public_crossing: release date of the first index reading at or above the line
+  c:
+    routes: {c1_debt_pct_gdp: 90, c1_grid: [60], c2_deficit_pct_gdp: 3, c2_grid: [5], c3_cb_credit_share_of_deficit_pct: 50, c3_grid: [25, 75], c3_min_deficit_pct_gdp: 3, c3_from: 1948, c4: C15-e-episodes-closed headline list entering in the year of its crossing c (card hash in reused_from_pilot), c4_from: 1950}
+    route_tie_order: [c1, c2, c3, c4]
+    one_spell_per_horizon: true
+    apart: [already inflating (inflation >= lower line in the entry year or the year before), an entry on or after frame b's onset by any route, convertible at entry (claims 2 and 5), entry in a war year]
+    already_inflating_entry_year_variant: entry-year cases counted as entrants whose outcome is read
+    H_years: 10
+    H_grid: [5, 20]
+    outcomes: [broke, held, broke and restored]
+    matching: [route, tercile of entry measure in entry year, era, the state in default at entry or not]
+    outside_fitting_sample: c1's 90 pct line reported apart after 2009 and outside Reinhart-Rogoff's countries; 3 pct and 50 pct fixed, not fitted
+  d:
+    cut_pct: 5
+    contents_source: Karaman-Pamuk-Yildirim-Karaman
+    contents_reachable: false (CEPR 403; other copies on refused hosts; request 8ec0520cf890 under examination) - frame d waits, declared; Allen-Unger's metal contents never swapped in
+    price_search: {source: Allen-Unger, min_commodities: 3, min_commodities_grid: [2, 5], min_year_coverage: 0.70, min_year_coverage_grid: [0.50, 0.90], thresholds: conventions fixed before any data, coverage_span: [entry-5, entry], after_entry: section 4, index: median log change}
+    no_index: told, never counted
+  f:
+    f1_bank_equity_real_total_return_annual_pct: -30
+    f1_gap_to_nonfinancials_points: 10
+    f1_gap_grid: [0, 20]
+    f2_npl_pct: 20
+    f2_needs: an annual series, never Laeven-Valencia's crisis peak
+    f3_bank_claims_on_state_share_of_assets_pct: 10
+    f3_grid: [5, 20]
+    f3_is_a_stratum_never_pooled: true
+    K_years: 5
+    K_grid: [3, 8]
+    route_tie_order: [f1, f2, f3]
+    already_breaking: loss on or before the entry date; on f1 and f2 a loss in the entry year, with a variant counting those as losses
+    window_years: 3
+    window_grid: [1, 5]
+    access_lost_business_days: 5
+    access_grid: [1, 20]
+    materiality_share_of_system_deposits_pct: 5
+    materiality_grid: [1, 10]
+    any_cut_to_insured_deposits_counts: true
+    matching: [route, tercile of entry measure (equity return in the crossing year; loan ratio in the entry year), era, the state in default at entry or not]
+    matching_note: the default stratum is A10's (c-O9); this line had not followed it (narrow check, M5)
+    f1_until_bvx_data_fetched: cannot be read, never swapped (Dataverse's signed URL refused by the toolkit)
+  g:
+    status: told (DefiLlama's terms bar commercial copying, D1; no open census with dead coins)
+    coins: named in sourced reading, two coders apart, kappa, no verdict
+    broke_below_par_pct: 3
+    broke_grid: [1, 10]
+    W_days: 7
+    W_grid: [1, 30]
+  h:
+    card: M8's (dossier section 14); M0 fixes only the frame's rules
+    signals: Kaminsky-Lizondo-Reinhart indicators and percentile thresholds, expanding window
+    rer_trend: expanding linear trend on the log real exchange rate, data to date only
+    min_history_months: 60
+    min_history_grid: [36, 120]
+    alarm_min_indicators: 3
+    alarm_grid: [2, 4]
+    debt_trigger: {public_debt_pct_gdp: 90, external_debt_emerging_pct_gdp: 60}
+    combination: or
+    combination_variants: [and, signals only, debt only]
+    alarm_on_months: 24
+    release_lag_months: {monthly: 1, quarterly: 3, annual: 9}
+    release_lag_variant: doubled
+    vintages: first release where it exists (ALFRED; IFS archived editions)
+    refuge: {saver_in_strained_money: USD, saver_in_usd_or_eur: gold}
+    benchmarks: [cash, 60/40 local portfolio where priced, gold held throughout]
+    bootstrap_block_months: 12
+  i: {rule: frame c applied to the latest complete year, reserve_monies: COFER reported list, euro: [union, member by member]}
+  j: {status: the run test (A11), call_reports: "FDIC's current database (amended filings, not first filings), said", shown_beside: uninsured share and unrealised securities losses at 2022-12-31, banks: every Call Report filer at 2022-12-31 less SVB Signature First Republic, outflow: total deposits change to 2023-03-31 over 2022-12-31 deposits, no_q1_2023_report: 'left out, counted and named', no_report_variant: "a failed bank's outflow 100 pct; a merged bank read on its acquirer's change"}
+  k:
+    Z_pct: 5
+    Z_grid: [0, 10]
+    N_years: 2
+    N_grid: [1, 3]
+    entry: the last year of the run
+    from: 1970
+    one_entry_per_window: true
+    feeds: claim 3 (told)
+
+claims:
+  interval: {level: 0.90, bootstrap_over: monies, draws: 2000}
+  smallest_detectable_effect:
+    power: 0.80
+    alpha_one_sided: 0.05
+    printed_beside_each_verdict: true
+    claim2_note: 'the 39 points predate claim 2''s default stratum and its reading without taken back; the narrow check reads the rule as written at roughly half that power (15-29 pct against 29-51 pct at 0.5 logit per support); the coding mission prints the rule as written''s effect by the same simulation, on no outcome, before any count'
+    at_floors: {claim2_and_A10_points: 39, test_i_C: 0.27, test_ii: 'third audit simulation: confirms 7 pct at a true ratio of 2 per phase, 47 pct at 3; refutes 0-1 pct under no effect'}
+    test_ii_said: test (ii) will in practice end we cannot conclude unless each effect is about twice the margin; claim 5 can fail only through test (i)
+    said: a verdict at a floor confirms only effects several times the margin
+  margins_and_floors: conventions fixed before any data, one per kind (plan Decisions, Headline values)
+  pressure_strata:
+    inflation_pct: [below 5, 5-10, 10 or more]
+    d_inflation_1y_and_3y_points: [<=0, 0-5, above 5]
+    depreciation_every_regime: {rate: 'market under floating, official under a parity', level_pct: [below 5, 5-15, 15 or more], d_1y_and_3y_points: [<=0, 0-10, above 10]}
+    parity_market_split: [recorded, not]
+    reserves_12m_fall_pct: 20
+    reserves_grid: [10, 30]
+    strain: [frame c route, tercile of the route's measure]
+    strain_tercile_cut_points: terciles over all strained at-risk years of that route, the measure read at the date each reading uses
+    state_in_default: [yes, no]
+    state_in_default_source: 'a stock in default - Bank of Canada-Bank of England database from 1960, Reinhart-Rogoff before (as T2)'
+    supports_standing: [one, two or more]
+    regime: [parity, floating]
+    decade: true
+    readings: {A: strata to the end of the year before, B: strata to the end of the year itself}
+  claim1:
+    status: told (ft-map step 8; rounds 1 and 2 found the same kind of hole, a pressure or common cause missing from the strata)
+    span_from: 1970
+    break_lines: every frame b crossing of a frame c counted money, in time order, with route and tercile, each headline act (date, source), the onset and its route, the crossing, and in the year before each act inflation, depreciation, reserves' 12-month change, market split, war years
+    described_shares: [onset after a headline act within L, onset before the first act in the L years around it, act in the onset's own year (order unreadable), no act at all in the window]
+    base_rate: share of strained at-risk years with a headline act in the L years before them (the same window as the shares)
+    strained_at_risk_years: years of a counted frame c spell, entry to entry+H-1, before any onset in the spell, inflation the year before below 10, at least one support standing
+    L_years: 3
+    L_grid: [1, 5]
+    forward_table: {exposed: a headline act (T2 L1 L2 L3 H1) in the year, unexposed: no act in the year or the L years before, outcome: an onset in the next L years, strata: pressure_strata, readings: [A, B], shown: [counts and rates by stratum, pooled Mantel-Haenszel ratio, without T2, each act alone], said: strain and expected inflation are not closed; a ratio above 1 cannot be read as the effect of an act, margin: none, verdict: none, war_years: apart}
+    timing: described, never counted (here and in frame a, an event study with no verdict); claim 5 counts only the order of phases 2-5 in broken lives and the odds after each phase
+  claim2:
+    span_from: 1970
+    before_1970_variant: count taken back and limit by rule only
+    units: spells, one per money per horizon
+    broke_and_restored: not held
+    separators: [count of supports standing among taken back, limit by rule, limit by institution, force (>=2 vs <=1), each support alone, debt in own money >= half, substitute at hand]
+    pegs_and_boards: given with and without them in limit by rule; if the verdict turns, we cannot conclude
+    post_2016_regimes: given with and without them
+    statistic: Mantel-Haenszel difference in share held
+    matching: [route, tercile, era, the state in default at entry or not]
+    without_taken_back: the verdict is also given with taken back out of the count; if it turns on it, we cannot conclude
+    round_3_B1: the auditor's repair (0-3 pct false confirmations in its null, against 9-59 pct without), declared, not re-audited in depth
+    margin_points: 10
+    confirmed: ">= 10 points with interval above 0"
+    refuted: interval wholly below 10 points
+    too_thin_spells_per_side: 20
+    war_inside_H_variant: spells with a war year inside H left out
+    variants_only: [habit, world demand, reserve status]
+  claim3:
+    status: told (no open series splits residents' deposits by currency; m1 readable only in closed cells; m1c blind to open cells' main road out; m2 cross-border only)
+    wording: holders leave the money more where they are free to and have somewhere to go
+    forced: ka_open <= 0.25 or a ban on residents holding foreign money
+    forced_grid: [0.1, 0.5]
+    substitute: foreign-currency deposits legal, or foreign cash legal, or a land border with an economy whose legal tender is the dollar or the euro
+    open: not forced and a substitute at hand
+    cells_held_months_before_entry: 12
+    W_years: 3
+    W_grid: [2, 5]
+    shown: [m1 where readable, m1c, m2 (recorded outflows plus net errors and omissions over GDP), each also net of its own change over the W years before entry]
+    blind_spots_said: {m1: readable only where foreign-currency deposits are banned, m1c: blind to local deposits moving into home foreign-currency deposits, m2: sees only what crosses the border}
+    strata: {depth: ["(-10,-5]", "(-20,-10]", "<=-20"], inflation_pct: [below 20, 20-40, 40 or more]}
+    difference: open minus closed within strata, n in every cell
+    margin: none
+    verdict: none
+    cannot_be_read: [money-years under a deposit freeze]
+  claim4:
+    status: told
+    coins: named in sourced reading less Terra and UST
+    coders: 2
+    kappa: true
+    verdict: none; outside-the-list mechanisms and splits said
+    yield_is_a_support: false
+  claim5:
+    frames: [c (c3 and c4 entrants from phase 3), d (from phase 3)]
+    phase2: frame d cut, L1, or a C15 episode not accommodation read at m0 (C12)
+    phase2_c15_date: the episode's crossing c (as route c4 enters); an episode whose c is on or after the onset is a response
+    phase4_headline: exchange controls imposed or tightened as dated in Ilzetzki-Reinhart-Rogoff's chronologies (every money, 1946-2016)
+    phase4_variants: [bans on foreign money, legal-tender penalties, general price controls - by source]
+    phases_standing_at_entry: dated at entry; tie with each other in test (i) (half-ordered), a variant leaves them out; in test (ii) c3 and c4 entrants enter the risk set at their phase 3 date
+    phase2_headline: counted whatever the regime
+    phase2_variant: not counted under an inflation target
+    phase3_headline: a market split recorded while a parity stands
+    phase3_variant: premium >= 5 pct for 3 months or a year, where a parallel series is found
+    two_prices_pct: 5
+    two_prices_grid: [2, 10]
+    two_prices_months: 3
+    flight: m1 (m1c where m1 cannot be read) fallen more since entry than the median change, over a span of the same length, of money-years whose average inflation over that span is in the same band as the money's own average inflation from entry to the date
+    flight_log_points: 0.20
+    flight_grid: [0.10, 0.30]
+    flight_inflation_bands_pct: [below 20, 20-40, 40 or more]
+    flight_bands_said: below the onset nearly every life is in the lowest band; the pressure strata carry inflation there
+    force_made: a market split or premium first recorded in the month (year) force was imposed; kept after force in permutations
+    test_i:
+      phases_read: {broke: 'from entry to the crossing (phase 6); a phase first reached after it is a response, described, never in C or its permutations', held: over H fully observed}
+      statistic: share of middle-phase pairs in the order 2<3<4<5, averaged over lives
+      ties: two phases first reached in the same year (month) count as half an ordered pair, in C and baseline alike
+      permutations: 10000
+      allowed_orders_only: true
+      groups: [broke, held over H fully observed]
+      confirmed: broken lives above the baseline's 95th percentile and above held lives by at least 0.10 with the difference's 90 pct bootstrap interval above 0
+      refuted: broken lives within the baseline's central 90 pct, or not above held lives
+      too_thin_lives_per_group: 20
+      second_reading: lives entering by c1 or c2 only, reported beside
+      per_pair_of_phases: reported
+      variants: [broken lives read to the onset, lives with a war year before their end of reading left out]
+    test_ii:
+      at_risk: before frame b's onset, the years of a counted spell (entry to entry+H-1)
+      event: the onset (the crossing a variant)
+      per_phase_ratios: true
+      strata: pressure_strata (strain and the state's default included)
+      readings_rule: both readings A and B; the verdict both give, else we cannot conclude
+      phase_in_onset_year: counted apart, its number said
+      war_years: apart; verdict outside them; war years' ratios reported
+      headline_era: fiat
+      margin_rate_ratio: 1.5
+      confirmed: phases 2, 4 and 5 each >= 1.5 with interval above 1
+      refuted: each of phases 2, 4 and 5 wholly below 1.5
+      phase3: reported, never required
+      fit_before: 1946
+      fit_before_phases: [5, 4 where the chronologies reach]
+      fit_before_why: phase 2 has no source before 1950 but frame d's cuts; with fewer than 20 onsets the check is not run, said
+      regions_left_out: true
+      scenario_only_if: every region left out keeps each ratio above 1
+      too_thin_fiat_onsets: 20
+
+analyses:
+  A3:
+    parity_uk: 3 pounds 17s 10.5d per oz standard gold
+    parity_us: 20.67 USD per fine oz
+    before_law: constant hazard, P = lambda/(lambda + r)
+    after_law: legislated date, P = q exp(-r (T - t))
+    rate: long government yield
+    rate_variant: short rate
+    q_range: [0, 1]
+    cannot_separate_if: q >= 1, or lambda implying resumption within a year for three years or more in a row
+  A9: {status: told}
+  A10: {margin_points: 10, pooled_routes: [f1, f2], f3: described, strata: [route, tercile, era, the state in default at entry or not], headline: "insured against not (the dossier's more supports standing, a departure listed)", while_f1_cannot_be_read: 'f2 alone, said'}
+  A11:
+    status: 'declared - not yet: a B (narrow check of v4); no bank read and no verdict computed until Sami decides declared or told; the session recommends told; declared needs a new version writing the flag''s recipe and floor before any bank is read'
+    B: 'flagged can confirm with no effect of insolvency risk - (a) the uninsured share held only as a line while a run grows faster than linearly in it (up to 45-100 pct false confirmations in the check''s null, the flag rising with that share); (b) the deposit path already under way in 2022, held by nothing (up to 21-66 pct in the check''s worst cells, whichever way the flag goes)'
+    reader_told_if_run_as_written: a confirmed shows banks like SVB lost more deposits in early 2023, not that insolvency under a run sorted them; a refuted leans on total deposits, which include brokered deposits bought to replace a run
+    open_with_it: [the flag's recipe not written and not runnable on the frozen FDIC files (O1), amended filings may carry the outcome into the flag (O2), brokered deposits in the refuting measure (O3), no floor and no smallest detectable effect (O4), whether the rule changed between 13 March and 5 April 2023 cannot be checked (O5), interval weights outliers and merger jumps unset (M11), First Republic out by name (M8), the year-end deposit level both the flag's input and the outflow's base with no second yardstick (M9)]
+    for_the_record_not_a_rule: in the check's null cells the uninsured share held finely and each bank's own 2022 path bring false confirmations to 0-2 pct - a fifth round of design, on Sami's word only
+    status_before_the_narrow_check: tested
+    version: Jiang, Matvos, Piskorski and Seru, version of 5 April 2023 (Stanford GSB Research Paper 4080), the earliest that can be had
+    why_this_version: the first version (13 March 2023) cannot be had; every later copy (NBER Oct 2023 and Jul 2024, SSRN Apr 2024, JFE 2024) knows the 2023 outflows; the April version's own data are 2022Q1 Call Reports, and banks' 2023Q1 deposits were first published with the Call Reports due 30 April 2023
+    flagged: insolvent if half of uninsured depositors withdraw, assets marked to market as that version marks them
+    flagged_variant: all uninsured withdraw
+    variant_first_republic_in: the three banks out less First Republic (out by name, its run seen by the rule's authors)
+    fixed_before: any bank-level 2023Q1 figure (Call Reports due 30 April 2023) - not before the event (SVB and Signature failed on 10 and 12 March)
+    recomputed_to: '2022-12-31'
+    regression: outflow on flagged, uninsured share controlled
+    out: [SVB, Signature, First Republic]
+    no_q1_2023_report: as frame j
+    margin_points: 2
+    confirmed: ">= 2 points with interval above 0"
+    refuted: interval wholly below 2
+    limit_said: written after SVB failed - tests whether the mechanism named from SVB sorted the other banks' outflows, never whether it could have foreseen SVB
+    published_version: JFE 159 (2024) 103899, cited for the mechanism, never read for the rule
+  A12: {horizons_years: [1, 3, 5], common_set: true, deflator: local CPI, parallel_rate_if_premium_pct: 10, parallel_rate_needs: a series found, split_without_parallel_series: flagged and reported apart (the official rate understates a foreign refuge's local value), protected_share_pct: 80, protected_grid: [50, 90]}

@@ -1,0 +1,88 @@
+id: C04-claim1-dated-lines
+label: measurement
+title: Claim 1 - do breaks follow an act that takes a support away? Each break's dated line, the shares, the base rate, the forward table
+question: >-
+  For every break of an inconvertible money under strain from 1970, did the onset of the break come after
+  one of the headline acts that take a support away (a default, T2; a central bank's lending limit cut,
+  L1; a hard peg abandoned, L2; independence cut, L3; a holding of foreign money forbidden, H1), before
+  it, in the same year, or with none near it - and how often does such an act fall in any three years of
+  a strained money that did not break? Told, never counted: no margin, no verdict.
+method: >-
+  M0 v4.2 section 6, claim 1, as written (bank/maps/FT-001/missions/FT-001-M0-rules.md, commit 3163162);
+  the acts are M0 section 2's headline acts as ft001-acts codes them (T2, L1, L2, L3, H1; status counted,
+  headline yes); F1 and W1 are variants in M0 and are not run here (said). A reading the card adds is
+  marked R.
+  Breaks: frame b's counted lines (ft001-b, second build) whose money has at least one counted spell in
+  frame c (ft001-c, fifth build), with the crossing (entry_date) in 1970 or later. Each break: its
+  crossing, its onset (break_onset) and the route that dated it (onset_route), and from frame c the
+  route and tercile of the money's last counted spell entered at or before the onset (R1; none: "no
+  frame c spell before the onset", said).
+  The dated line (one per break, in time order): each headline act of the money dated from three years
+  before the onset's year to the crossing (R2), with its date and source; the onset; the crossing; and
+  for each act, in the year before it: pi (the panel's annual inflation, M0's source order), d (the
+  depreciation against the dollar or the anchor, market rate under a floating regime, official rate
+  under a parity), reserves' 12-month change, the market split (panel.split_at), and war years
+  (panel.war_at, W12 included). A value that cannot be read is printed "cannot be read".
+  The described shares, over the breaks, by the onset's year y and L = 3 (R3, M0's "before the first act in
+  the L years around it" read as a priority, mutually exclusive, in this order): "after an act" if an act falls in y-3..y-1; "same year" if none does and one falls in y (the
+  order cannot be read by year); "before an act" if none falls in y-3..y and one falls in y+1..y+3; "no
+  act" if none falls in y-3..y+3; "cannot be read" if no act is found and some act's source does not
+  cover every year of y-3..y+3 (ft001-acts/coverage.csv: past a source's last year an act cannot be
+  read, never "none"). Each share is given with its n, by act source, and the same without T2.
+  The base rate on the same window: the strained at-risk years (frame c's counted spells, from entry to
+  entry + H - 1, before any onset in the spell, with pi the year before below 10% and at least one
+  support standing), and the share of them with a headline act in y-3..y-1; with its n, and without T2.
+  Supports standing are frame c's four, read at the spell's entry (R5): "at least one" if one of
+  taken_back, limit_by_rule, limit_by_institution and force reads yes; a spell with none yes and one or
+  more that cannot be read is left out of the at-risk years and counted apart; the stratum "one, two or
+  more" counts the yes the same way.
+  The forward table, a description: those years as trials; exposed if a headline act falls in the year,
+  unexposed if none falls in the year or the three before; the outcome an onset in the next three years
+  (y+1..y+3; a trial whose next three years pass the panel's common end or the spell's end is censored,
+  R4); counted within M0's pressure strata - pi (below 5, 5-10, 10 or more), the change in pi over 1 and
+  3 years (<= 0, 0-5, above 5 points), d (below 5, 5-15, 15 or more), the change in d over 1 and 3 years
+  (<= 0, 0-10, above 10), the market split for parities, reserves over 12 months (a fall of 20% or more,
+  or not), frame c's route and tercile, the state in default or not, supports standing (one, two or
+  more), the regime and the decade - in readings A (the strata measured up to the end of the year before)
+  and B (up to the end of the year itself). Each stratum's counts and rates; the pooled Mantel-Haenszel
+  risk ratio over the strata with both sides; the same without T2, and each act alone. War years are
+  apart (trials with a war year in y, reported beside). Printed with it, in words: strain and expected
+  inflation are not closed; a ratio above 1 here cannot be read as the effect of an act.
+parameters:
+  from_year: 1970
+  L_years: 3
+  H_years: 10
+  at_risk_pi_below: 10
+  acts: [T2, L1, L2, L3, H1]
+  pi_bins: [5, 10]
+  dpi_bins: [0, 5]
+  d_bins: [5, 15]
+  dd_bins: [0, 10]
+  reserves_fall: 20
+  readings: [A, B]
+  variants: [without T2, each act alone, war years apart]
+  not_run: [F1, W1]
+data:
+  - dataset: reconstructed/ft001-b (second build, b2a34a89)
+  - dataset: reconstructed/ft001-c (fifth build, 5dcbcaab)
+  - dataset: reconstructed/ft001-acts (third build, a8780e1)
+  - dataset: the panel's readers (bank/maps/FT-001/missions/code/panel.py) over their frozen sources (IFS, the World Bank, Reinhart-Rogoff, BIS, JST, Ilzetzki-Reinhart-Rogoff, COW and UCDP)
+period: breaks with a crossing from 1970; strained at-risk years from 1970
+sample: >-
+  Frame b's breaks and frame c's spells, drawn by rule before any act was set beside them (M0 sections 3
+  and 5); the acts list was committed before any outcome list (its third build, a8780e1). Every break
+  of a frame c money from 1970 enters, whatever its acts; nothing is dropped on its outcome.
+out_of_sample: >-
+  Nothing is fitted and nothing is tested: the claim is told (ft-map step 8, after five rounds found the
+  same kind of hole). The base rate is the check against chance: "after an act" is read against how
+  often an act falls in any three years of a strained money that did not break. There is no held-out
+  sample.
+failure: >-
+  None in the sense of a verdict: claim 1 is told. If the shares cannot be read for most breaks (acts'
+  sources ending before the window), the page says so and prints the lines alone. If the forward table's
+  strata leave no stratum with both sides, it prints the counts and no ratio.
+not: >-
+  Not a test, not causal: strain and expected inflation are not closed, so an act that comes before an
+  onset may be a sign of the same pressure, not its cause (M0 section 6). Not counted in any verdict. Not
+  a reading of convertible monies, which are apart in frame c.
+created: '2026-10-02'

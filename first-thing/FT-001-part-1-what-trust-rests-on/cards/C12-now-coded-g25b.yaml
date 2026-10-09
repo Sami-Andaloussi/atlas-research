@@ -1,0 +1,36 @@
+id: C12-now-coded-g25b
+label: measurement
+title: Part 1's now, fifth card - C10 as written, on frame g's build after G25b (M7 sections 17-18), who may redeem in M0's two classes
+question: >-
+  C06's question, unchanged: which of M0's supports stand today under the dollar and the euro, and which of a private
+  issuer's four lines can be read for the stablecoins named in sourced reading and for bitcoin? Told: no margin, no
+  verdict, nothing ranked.
+parent:
+  id: C10-now-who-rule
+  hash: e8baf001cbd88d2f5733aa105373c5fca5ffe49d19ec5ed484f66f980c74879d
+method: >-
+  C10 (d7396178) as written, V1, V2, V4 and V5 kept, on frame g's build after M7 section 18 (ft001-g, mapping.csv at
+  0b3d6467 or the commit that answers its small check). Written AFTER C10's run (e8b523e5) had been seen, and after
+  step h's second check (B4) reopened G25 and the second issuer round was coded (FRAMING F72: a revision made openly,
+  after a result, said so). C10's run stays in git beside this one.
+  V2' (kappa): each issuer layer's kappa on its own coin-lines (i1/i2 and i3/i4), beside the first layer's.
+  V3'' (who may redeem): M0 records who may redeem as "any holder, or verified customers only". The class of each
+  redemption yes line is read from coders/who-classes.csv, which two readers apart drew from the recorded words
+  (M7 section 18), their disagreements settled by M0's text; C10's word rule is printed beside as a variant. A line
+  with no class in that file is printed as unclassified, never put in a class by hand.
+  V6 (the build before G25b): C10's build (variant-after-section-16.csv) is run beside, so the move G25b made is in
+  the run.
+parameters:
+  who_classes: [any holder, verified customers only, not settled]
+data:
+  - dataset: reconstructed/ft001-g (after M7 section 18), mapping.csv, variant-after-section-16.csv and coders/who-classes.csv
+period: as C06
+sample: >-
+  C06's, unchanged: the 84 coins frame g lists. Nothing is chosen on what it shows.
+out_of_sample: >-
+  Nothing is fitted or tested; the run is read by the study's checks (BLUEPRINT section 8).
+failure: >-
+  None in the sense of a verdict. A line no document in hand prints stays "cannot be read".
+not: >-
+  Not a ranking of stablecoins, not a rating of any coin, not a forecast, not investment advice.
+created: '2026-10-02'

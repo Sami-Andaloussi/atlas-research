@@ -1,0 +1,80 @@
+id: C16-cs-d-default-ratio
+label: measurement
+title: CS-D — on C07's R10 population, how much more often a creditor class newly in arrears came before a money crisis
+  than before a strained year that held, with an interval by money
+parent:
+  id: C15-claim1-institution-m0
+  hash: 28b1423b7af66d15139570c746e376b83da839808222acfaab42fd51773a6f1e
+kind: extension
+seen:
+- 'C15-claim1-institution-m0 (every result: the shares on the base rate''s own population, R10, 14 of 20 readable
+  breaks after an act; the base rate, 513 of the 923 readable strained years with an act; the T2 readings beside)'
+- 'bank/checks/FT-001-2026-10-08-card-check-p1-c16-c19.md (this card''s check, before any run: C15''s stored counts
+  read, without T2 0 of 18 readable R10 breaks after an act, T2-var-total 1 of 19; six R10 breaks of the CFA franc''s
+  1994 devaluation by frame c''s rows)'
+- 'bank/checks/FT-001-map-2026-10-08-audit-p1v5.md to -p1v11.md (the audits'' recomputation of the ratio on R10: 1.26,
+  95% range 0.91-1.73 with a design effect of 6; the T2 readings, T2-var-total 1.57 on all breaks, T2-var-private 0.86
+  on R10, their ranges; the size that matters, 1.5, set after these were seen)'
+question: 'Part 1''s map v11, P1-6 and K7: on C07''s R10 population (the breaks whose money and onset year are the onset
+  of a strained spell, so that breaks and strained years come from the same spells), how many times more often did an
+  act on the headline list (a creditor class newly in arrears, T2, almost all of them) come in the three years before a
+  money crisis than in the three years before a strained year that held — and how precisely is that ratio known, money
+  by money?'
+method: '(1) The inputs, rebuilt as C15 builds them and nothing else: claim1.py''s run_v3 pipeline (frame b''s breaks,
+  frame c''s spells re-read by M0''s text, the acts list and its coverage, the panel reader) up to build_result_v2''s
+  breaks, trials, acts, coverage and R10 population, for the headline acts and for the two T2 readings
+  (T2-var-total, T2-var-private). Reproduction: the rebuilt R10 breaks and trials must equal C15''s stored run to the
+  unit — the number of R10 breaks and of trials (C15''s spells.trials), every class count of the R10 shares (after,
+  same year, before, no act, cannot be read; 14 after an act of 20 readable on the headline) and of the base rate (513
+  with an act, 410 with none, 473 that cannot be read), for each reading beside; otherwise the run is void. The
+  shared-once reading has no stored R10 counterpart (C15 stores it on all breaks): said. (2) The units: each R10 break, classed by C15''s rule R3 (after an act, same
+  year, before an act, no act, cannot be read), and each base-rate trial (a strained year), marked by C15''s rule J6
+  (an act in the three years before, no act, cannot be read). The trials are the at-risk years of every strained
+  spell, years before a later break included (C15''s rule); breaks and trials are read on the same acts, and a money''s
+  breaks and trials travel together in the bootstrap. (3) The ratio: r = (breaks after an act / readable R10
+  breaks) / (trials with an act / readable trials), readable as C15 reads it. (4) The interval: a cluster bootstrap, 4,000
+  draws, seed 20261008, its 2.5 and 97.5 percentiles; a cluster brings all its R10 breaks and all its trials. The
+  clusters, fixed here: the members of one money share one cluster — the CFA franc (BEN, BFA, CIV, GNB, MLI, NER, SEN,
+  TGO, CMR, CAF, TCD, COG, GNQ, GAB), the East Caribbean dollar (ATG, DMA, GRD, KNA, LCA, VCT), the rand area (LSO,
+  SWZ), the US dollar''s users (ECU, PAN, FSM, MHL, PLW), the euro''s users outside the area (MNE, SMR); every other money code is its own cluster. Beside it,
+  never instead, a bootstrap by onset year (the clusters are calendar years; a trial goes with its year). A draw with
+  no readable break or a zero base share is skipped and counted. (5) The reading, P03, against 1.5:
+  an effect if the interval''s lower end is above 1.5; an effect of the other sign if its upper end is below 1/1.5;
+  too small to matter if the interval lies within 1/1.5 to 1.5; bounded otherwise, written as what it rules out. The
+  refutation of P1-6''s "bounded": any other reading. Where a reading''s numerator is 0 or 1 break after an act, its
+  counts are printed and no P03 reading is made (the interval is degenerate). (6) Beside, never instead, each read by the same
+  rule: without T2 (the other acts alone), T2-var-total and T2-var-private on R10, each with its own bootstrap; the
+  R10 breaks with a shared money''s breaks of one onset month kept once (C15''s R8 applied after the R10 filter, so a
+  shared event inside R10 is kept once per onset month, never lost to a member outside it; the CFA franc''s 1994
+  devaluation stays twice, its members'' onset months being 1993-12 and 1994-01: said); and the audits'' 0.91-1.73
+  with a design effect of 6, printed as theirs. (7) Words: "a creditor class newly in arrears" for T2, with its
+  breadth said wherever a share is printed (most T2 lines fall inside a default already running: C15''s t2 counts);
+  crises are events and strained years are country-years, said.'
+parameters:
+  population: R10 (C07's base rate's own population)
+  window_years: 3
+  bootstrap_draws: 4000
+  seed: 20261008
+  interval: 0.95
+  readings_beside: [without_T2, T2-var-total, T2-var-private, shared_once]
+matters:
+  cs_d_ratio: 1.5
+  cs_d_ratio_without_t2: 1.5
+  cs_d_ratio_t2_total: 1.5
+  cs_d_ratio_t2_private: 1.5
+  cs_d_ratio_shared_once: 1.5
+data:
+- dataset: as C15
+- dataset: results/runs/C15-claim1-institution-m0.json
+  vintage: 'C15''s run as committed (in the study''s folder), card_hash 28b1423b'
+period: as C15 (breaks and strained years from 1970 to the panel's common end)
+failure: 'If the rebuilt inputs do not reproduce C15''s stored counts, the run is void. If the bootstrap interval and
+  the audits'' design-effect range give different readings, both are printed, the bootstrap''s leading; the by-money interval decides the refutation, the by-year one beside.'
+not: 'Not causal: an act "came before". Not a rate at which defaults end in crises: the strained years that held are
+  the comparison, not all years. Not a separation of T2 from the default already running. Not a headline: context to
+  K7, whose root rests on the literature''s consensus.'
+created: '2026-10-08'
+sample: 'C15''s units, unchanged: no unit is chosen by this card. The size that matters (1.5) and the population (R10)
+  were set after C15''s shares and the audits'' ratio had been seen (F72, P12): said on the card and in the methods.'
+out_of_sample: 'None: a re-reading of C15''s units with an interval. The readings beside (other acts, T2''s breadth,
+  shared monies once) are within the build, said.'

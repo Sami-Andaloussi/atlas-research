@@ -1,0 +1,76 @@
+id: C18-cs-a-consumer-prices-off-gold
+label: measurement
+title: CS-A — on consumer prices, did the economies Bernanke & James count as off gold have more inflation in 1932–34
+  than those still on it, by their dates?
+kind: extension
+seen:
+- 'data/reconstructed/ft001-a-window (A2 panel 2, the 1931-36 gold exits against the same years'' stayers: these
+  economies'' consumer prices around their exits, fifth build)'
+- 'bank/checks/FT-001-map-2026-10-07-audit-p1v4.md to bank/checks/FT-001-map-2026-10-08-audit-p1v11.md (the v6 and v8
+  audits'' simulations of this comparison''s precision, +-1.9 to +-9.2 and +-3.9 to +-9.0, up to +-17.9 doubled; the v7
+  audit printed these economies'' 1932-34 consumer-price changes)'
+question: 'Part 1''s map v11, P1-2 and K3: pooled over 1932-34, was the mean consumer-price inflation of the economies
+  off gold (Bernanke & James''s dates) above that of the economies still on gold — the same comparison Bernanke & James
+  make on wholesale prices (their Table 2.2), on consumer prices? Context to K3, whose clause rests on their
+  wholesale result; never a headline.'
+method: '(1) Frame G: the fifteen economies of Bernanke & James''s Table 2.1 that JST R6 covers (Australia, Belgium,
+  Canada, Denmark, Finland, France, Germany, Italy, Japan, the Netherlands, Norway, Spain, Sweden, the United Kingdom,
+  the United States). Their dates: Table 2.1 as transcribed by two coders apart and settled at the page
+  (data/reconstructed/ft001-cs-tables, protocol studies/FT-001-part-1-what-trust-rests-on/notes/coding-cs-a-cs-b-tables.md
+  at 5300e0f0). (2) Off gold from the month of the first of the three acts Table 2.1 dates (suspension of the gold
+  standard, exchange control, devaluation: their "abandonment"); on gold from the month of the return Table 2.1 dates
+  until then; an economy not on gold at a year''s start and not yet returned is off gold (Spain, never on gold in
+  their table, off gold throughout, with a variant without Spain). (3) The outcome: each economy-year''s consumer-price
+  inflation, 100 * (CPI_t / CPI_t-1 - 1), JST R6 cpi; an economy-year without both prices is dropped and counted. (4) The weights, Bernanke &
+  James''s own (their notes, printed p. 65: a country leaving in the middle of a year is in both categories, weighted by
+  the fraction of the year spent in each), the month convention ours: an economy-year
+  enters the off-gold group with weight m/12 and the on-gold group with weight 1 - m/12, m the months of the year off
+  gold (the month of the act counted off). (5) The statistic: for each year 1932, 1933 and 1934, the weighted mean
+  inflation off gold less the weighted mean on gold; pooled, the weighted mean over all off-gold economy-years of
+  1932-34 less the weighted mean over all on-gold economy-years of 1932-34. (6) The precision, fixed before the run
+  as the v8 audit calibrated it: the noise of each economy''s inflation in 1925-29 around its own 1925-29 mean; 10,000
+  draws, seed 20261008, each draw taking three whole years of 1925-29 deviations with replacement (each year keeps
+  every economy''s deviation, so blocs move together) as 1932-34''s noise, recomputing the pooled difference with the
+  observed weights; the interval is the observed pooled difference plus and minus the 97.5th percentile of the
+  absolute simulated difference. Beside it, the same with the noise doubled. (7) The reading, P03, against 1 point a
+  year: an effect if the interval''s lower end is above 1; an effect of the other sign if its upper end is below -1;
+  too small to matter if the interval lies within -1 to 1; bounded otherwise, written as what it rules out. (8) The
+  variant (map §7.3): exchange control alone is not leaving — an economy whose first act is exchange control with the
+  parity kept is set apart (dropped) from its exchange control until it suspends or devalues, and is on gold
+  before its exchange control (Germany from July 1931, Italy from May 1934, so Italy''s 1934 keeps four months on gold);
+  Spain, off gold throughout with an exchange control from May 1931, is therefore dropped from May 1931 in this
+  variant; read by the same rule. (9) 1935-36: the yearly
+  differences printed, never read (fewer than three economies on gold). (10) Beside, never instead: Bernanke &
+  James''s wholesale result (Table 2.2, p. 42), as theirs.'
+parameters:
+  economies: [AUS, BEL, CAN, DNK, FIN, FRA, DEU, ITA, JPN, NLD, NOR, ESP, SWE, GBR, USA]
+  years_read: [1932, 1933, 1934]
+  years_described: [1930, 1931, 1935, 1936]
+  calibration_years: [1925, 1929]
+  draws: 10000
+  seed: 20261008
+  noise_doubled: 2
+  inflation: simple percent change of JST cpi
+matters:
+  cs_a_pooled: 1.0
+  cs_a_pooled_no_exchange_control: 1.0
+  cs_a_pooled_no_spain: 1.0
+data:
+- dataset: jst/macrohistory
+  vintage: '2026-09-30'
+- dataset: reconstructed/ft001-cs-tables
+  vintage: 'Table 2.1 as settled (committed before this card runs)'
+- dataset: frame-a/bernanke-james-chapter
+  vintage: '2026-09-30'
+period: 1932-34 read; 1930-31 and 1935-36 described; 1925-29 for the noise
+failure: 'If an economy''s Table 2.1 date cannot be read after settlement, it is dropped and listed. If the two
+  variants (no exchange control, no Spain) give a reading different from the main, all are printed, the main leading.'
+not: 'Not causal: leavers chose when to leave (Eichengreen & Sachs p. 10), and that a worse deflation hastened some
+  exits stays a possible selection, said as ours (map §9, frame G, Q5). Not wholesale prices: their result is
+  theirs, beside. Not an absolute loss of purchasing power: relative to the stayers. Not outside the build: A2 read
+  these economies.'
+created: '2026-10-08'
+sample: 'Bernanke & James''s list and dates, not ours; the fifteen JST covers. Designed after A2 panel 2 had read these
+  economies'' consumer prices and after an audit printed their 1932-34 rows (P12): said on the card and in the methods.'
+out_of_sample: 'None: not outside the build (said); League of Nations consumer prices for other economies would be the
+  test (gap G42).'
