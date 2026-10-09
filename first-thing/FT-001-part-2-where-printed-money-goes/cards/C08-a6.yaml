@@ -1,0 +1,95 @@
+id: C08-a6
+label: measurement
+title: A6 - what inflation took from US cash and from deposits paying nothing since February 2020, and what the printing earned
+question: >-
+  Since February 2020, how many dollars of purchasing power did inflation take from the currency the
+  public held and from bank deposits that paid no interest - in total, per household, and as a share of
+  each year's GDP - and how large was seigniorage over the same years?
+method: >-
+  Monthly, from February 2020 (the door's second window) to the last month with both the CPI and
+  currency; P = CPIAUCSL. The inflation tax on a stock S in month t: S(t-1) * (1 - P(t-1)/P(t)), in
+  dollars of month t - the purchasing power the stock held at the month's start lost during it. A month
+  missing from the CPI (October 2025 in this vintage) is bridged: the loss over the gap is taken once, on
+  the stock at its start. Months of falling prices give a negative tax, kept.
+  Cash: S = CURRSL (the currency component of M1, billions, seasonally adjusted). Deposits paying
+  nothing: S = QBPBSTLKDPDOFFDPNIDP (FDIC-insured institutions' domestic non-interest-bearing deposits,
+  millions, quarterly; the value FRED dates at a quarter's first day is the stock at that quarter's end),
+  held at the last quarter-end level at or before each month's start.
+  Totals: the sum over the months, in current dollars and in February-2020 dollars (each month's tax
+  times P(February 2020)/P(t)); per year; cash and deposits apart and together.
+  Per household: the total divided by the number of households (TTLHH, thousands, annual; each month the
+  value of its year, the last year for later months) - "if shared equally": firms and holders abroad hold
+  part of both stocks, not measured here, so this is not what a typical household paid.
+  Households only (variant): S = BOGZ1FL193020005Q (households' checkable deposits and currency, Z.1,
+  millions, quarter-end, held as above), as an upper bound (as if none of it paid interest), and a lower
+  bound that subtracts, from April 2021 when the series begins, the interest the national interest-
+  checking rate (ICNDR) would pay on all of it (S * ICNDR / 1200 a month); nothing is subtracted before
+  April 2021, said.
+  Share of GDP: each calendar year's tax over that year's GDP (the mean of its quarters; the last year's
+  quarters so far, said).
+  Seigniorage: (1) the base's increase, December to December (BOGMBASE), as a share of that year's GDP,
+  2020-2025, and from February 2020 to the last month; (2) the Federal Reserve's remittances to the
+  Treasury each year, from the Board's annual releases, read on www.federalreserve.gov and cited in the
+  notes before this part is written - not reported if unread, said; (3) the deferred asset: the lowest
+  weekly value of RESPPLLOPNWW (remittances due to the Treasury; negative while the Reserve Banks' earnings
+  fall short) with its date, and its latest value.
+  Where the base sits now: at the last week, reserve balances (WRESBAL) and currency in circulation
+  (WCURCIR), each as a share of their sum.
+parameters:
+  start: 2020-02
+  cpi: CPIAUCSL, seasonally adjusted, the 2026-09-27 vintage (the door's)
+  constant_dollars_of: 2020-02
+  households_lower_bound_from: 2021-04
+  variants:
+    - start at m0 of C05's headline US episode holding or nearest February 2020 (the rule's start, not the
+      door's)
+    - the CPI not seasonally adjusted (CPIAUCNS)
+    - currency in circulation (CURRCIR) in place of the currency component of M1 (it includes cash in bank
+      vaults)
+data:
+  - dataset: fred/CPIAUCSL
+    vintage: '2026-09-27'
+  - dataset: fred/CPIAUCNS
+    vintage: '2026-09-30'
+  - dataset: fred/CURRSL
+    vintage: '2026-09-30'
+  - dataset: fred/CURRCIR
+    vintage: '2026-09-30'
+  - dataset: fred/QBPBSTLKDPDOFFDPNIDP
+    vintage: '2026-09-30'
+  - dataset: fred/BOGZ1FL193020005Q
+    vintage: '2026-09-30'
+  - dataset: fred/ICNDR
+    vintage: '2026-09-30'
+  - dataset: fred/TTLHH
+    vintage: '2026-09-30'
+  - dataset: fred/GDP
+    vintage: '2026-09-30'
+  - dataset: fred/BOGMBASE
+    vintage: '2026-09-30'
+  - dataset: fred/RESPPLLOPNWW
+    vintage: '2026-09-30'
+  - dataset: fred/WRESBAL
+    vintage: '2026-09-30'
+  - dataset: fred/WCURCIR
+    vintage: '2026-09-30'
+  - dataset: the result of C05-e-episodes, for the variant's start only
+period: 2020-02 to 2026-08 (the last month both the CPI and currency reach in these vintages)
+sample: >-
+  Not a sample: every month of the period, the whole of each stock as the statistics define it. The
+  start is the door's (February 2020), told, not chosen from the tax; the rule's start is the variant.
+out_of_sample: >-
+  Not applicable: a measurement with nothing fitted and no threshold. Its checks are internal: cash and
+  deposits reported apart and together; the households-only bounds show how much of the tax falls on
+  households' own cash and checkable deposits; the variants on the CPI and on the currency measure show
+  how much the definitions move it.
+failure: >-
+  If the per-household figure cannot be written without a reader taking it for what a household paid,
+  the post leads with the share of GDP and gives the per-household figure only as "if shared equally".
+  If the three currency and deposit measures disagree by more than a quarter on the total, the study
+  reports the range, not one number.
+not: >-
+  Not the loss on deposits that paid interest below inflation (negative real rates are LL-121's). Not a
+  welfare cost, not a claim about intent, not a verdict on the policy. Not what any one household paid.
+  Not investment advice.
+created: '2026-09-30'

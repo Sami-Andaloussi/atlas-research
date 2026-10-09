@@ -1,0 +1,116 @@
+id: C24-a5-deciders-war-coded
+label: test
+title: A5 on the closed list, wars coded before 1989 - C18's "war episodes out" run extended from the World Bank's 1989 onward to UCDP's armed conflicts from 1946
+parent:
+  id: C18-a5-deciders-bare
+  hash: eb251de1702dfb87f3cd6f427b389e4fb601a45a33bc6a8a8dfeb7120adb4ead
+question: >-
+  C18 reads war as a common cause and runs one variant with the war episodes out, but codes war only from
+  1989 (the World Bank's battle deaths): "before 1989, not coded, and a war-out run keeps those episodes"
+  (code/deciders.py). 206 of the list's 667 episodes start before 1989. When the war episodes of 1946-1988
+  are also taken out, by a rule set here, does any decider's verdict change on any outcome - or does the
+  finding that no decider separates (D2 "we cannot conclude") stand as C18's headline gives it?
+method: >-
+  C18's method in every part, with one change: its counted run "war episodes out" is replaced by the run
+  below, so that C18's list of 29 counted runs keeps its 29, and nothing is added to the count.
+  (1) The war coding, read for the year of m0 (C18's own reading: the economy-year of the episode's start),
+  by the year Y:
+  - Y in 1989-2024: C18's rule unchanged: the World Bank's battle-related deaths (VC.BTL.DETH) of 1,000
+  or more in the economy-year, an economy-year absent from the counts read as none.
+  - Y in 1946-1988: UCDP/PRIO Armed Conflict Dataset v26.1 (data/ucdp/conflict-dyadic-v26.1/2026-10-01,
+  UcdpPrioConflict_v26_1.csv): the economy is at war in Y if a row has year = Y, intensity_level = 2 (at
+  least 1,000 battle-related deaths in the year) and the economy is one of the countries of the conflict's
+  location (the column gwno_loc, Gleditsch-Ward numbers, several per row for a conflict fought in several
+  countries, each of them counting). The location, not the parties: this is the nearest reading to a count
+  by the country where the deaths occur, which is how the World Bank's series, itself from UCDP, is read in
+  C18; it is not verified here against the World Bank's own documentation. Intensity 2 is the dataset's
+  "war" and shares the 1,000 deaths of C18's rule.
+  - Y before 1946: the Correlates of War lists (data/cow/inter-state-wars, intra-state-wars and
+  extra-state-wars, 1816-2007): the economy's state is a participant in a war that includes Y. No episode of
+  the list starts before 1963, so this rule codes nothing here; it stands so that the coding has no gap,
+  and the code asserts that no episode starts before 1946.
+  (2) The Gleditsch-Ward numbers are matched to the study's economy codes by a table in the code
+  (code/deciders.py, GW_ISO2), committed before the run: for every number the dataset gives in a 1946-1988
+  intensity-2 row, the economy code of the same country (the Soviet Union 365 to RU; North and South
+  Vietnam 816 and 817 to VN; North and South Yemen 678 and 680 to YE; Taiwan, North Korea and the like to
+  their own codes), or none where the place had no money of its own (751, Hyderabad). A number with no entry
+  stops the run. The table is made from the dataset's own names and numbers; no episode, outcome or verdict
+  is read to make it.
+  (3) The extended run: C18's headline list and C18's tests (both accommodation readings, the permutation
+  test within eras, Holm's adjustment, the verdicts of C18 (3)), with the episodes whose m0 year is coded as
+  war by (1) taken out of the tested set under each reading before any test, as C18's war-out run does for
+  1989 on. Nothing else changes: the thresholds, the seed, the permutations, the eras.
+  (4) The headline is run again from the same code and must reproduce C18's stored result (every p, every
+  difference of medians, every verdict); if it does not, the run says so and nothing is read from it.
+  (5) Reported, with no selection: for each of the four deciders and three outcomes, the extended run's
+  verdict beside the headline's and beside C18's World-Bank-only war-out run; the number of episodes out
+  under each reading, from 1989 on and before 1989; the pre-1989 episodes taken out, one line each, with
+  the war years that took them out; the two-thirds count of C18 (4) recomputed with the extended run in
+  place of C18's war-out run (k of n, with and without the runs that change only another decider's
+  threshold), beside C18's, never instead.
+parameters:
+  episodes: C18's, C15 headline (X 5, Y 2, T 12, H 36, q 0.1, units factor 2, gamma floored at 0, jump share 0.8, no exception)
+  accommodation_readings: [at m0, m0 to the month before c]
+  permutations: 10000
+  seed: 20260930
+  strata: [[1950, 1971], [1972, 1999], [2000, 2026]]
+  min_per_category_per_stratum: 3
+  min_qualifying_strata: 2
+  alpha_after_holm: 0.05
+  tested_deciders: [D1 regime, D2 floor, D4 channel, D5 deficit]
+  war_threshold_battle_deaths: 1000
+  war_1989_2024: World Bank VC.BTL.DETH, as C18
+  war_1946_1988: UCDP/PRIO ACD v26.1, intensity_level 2, the economy in the conflict's location (gwno_loc)
+  war_before_1946: 'Correlates of War war lists (they code no episode: the list starts in 1963)'
+  war_year_read: the year of m0, as C18
+  replaces_in_C18_count: war episodes out
+  seen_before_writing: >-
+    C18's result has been seen, its war-out run included (the World Bank's 1989-2024 coding): 20 of the 667
+    episodes have a start year coded as war; the tested set falls from 287 to 282 under the design's reading
+    and from 353 to 344 at m0; and each of the twelve verdict cells (four deciders, three outcomes) is the
+    headline's. Counts of the list by start year have been looked at: 206 episodes start before 1989, 67 of
+    the tested ones (design's reading or m0), the first in January 1963. Not seen: which of those episodes
+    start in a year UCDP codes as war for their economy, how many, or any run with them out. The expectation,
+    fixed here so that it steers nothing: the verdicts do not change, since the 1989-2024 removal changed
+    none.
+data:
+  - dataset: the result of C18-a5-deciders-bare (its run, naming C18's hash)
+  - dataset: the result of C15-e-episodes-closed (through C18)
+  - dataset: ucdp/conflict-dyadic-v26.1
+    vintage: '2026-10-01'
+  - dataset: cow/inter-state-wars
+    vintage: '2026-09-30'
+  - dataset: cow/intra-state-wars
+    vintage: '2026-09-30'
+  - dataset: cow/extra-state-wars
+    vintage: '2026-09-30'
+  - dataset: worldbank/VC.BTL.DETH
+    vintage: '2026-09-30'
+  - dataset: the datasets of C18, at the same vintages
+period: C18's, episodes starting 1950-2026 whose horizon ends by the panel's common end (August 2026); the new coding reaches 1946-1988
+sample: >-
+  C18's: C15's list, made by rule before any outcome is read; the tested set under each accommodation
+  reading. The war coding removes episodes by the year of their start and the place, never by an outcome:
+  the rule reads UCDP's conflicts and the World Bank's deaths, not prices or money.
+out_of_sample: >-
+  Nothing is fitted. The war coding for 1946-1988 comes from UCDP/PRIO's own dataset, outside the data C18
+  ran on, and the rule that uses it is fixed here before any episode is looked at against it; the
+  run checks whether C18's verdicts hold when more of the list is removed by a rule fixed before the run. It
+  is not new data: the episodes are C18's.
+failure: >-
+  If any of the twelve verdict cells of the extended run differs from the headline's, or any decider
+  "separates" on an outcome where the headline's does not, the study says so, naming the decider and the
+  outcome, says that C18's finding holds only with the wars before 1989 in, and rewrites the long version's
+  sentence on wars from the run. If the extended run takes out fewer than five episodes before 1989 from the
+  tested set under either reading, it is said to remove too little before 1989 to test the point, and the
+  sentence says so. If the headline rerun does not reproduce C18's stored result, the run is void and says so.
+  If no cell differs, the long version says that wars were coded from UCDP for 1946-1988 as from the World
+  Bank for 1989-2024, and that the verdicts hold with them out.
+not: >-
+  Not war as a decider (a common cause, C18): no test of war itself. Not a war in the years around m0: the
+  year of m0 only, which carries over from C18 the fact that the months from m0 to the end of its year also
+  lie in the outcome's window; the rule is kept as C18's so that the two runs are comparable, and the trait is
+  said. Not COW for 1946-1988 (UCDP is preferred there; COW's thresholds are per war, not per year). Not a
+  rerun of C18's other 28 counted runs or of its beside runs, nor of its described rows. Not a change to
+  C18's headline. Not causal (C18).
+created: '2026-10-02'

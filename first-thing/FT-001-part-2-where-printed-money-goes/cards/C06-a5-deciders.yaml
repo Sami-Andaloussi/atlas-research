@@ -1,0 +1,195 @@
+id: C06-a5-deciders
+label: test
+title: A5 - after a big addition of base money, what decided whether it reached prices and broad money?
+question: >-
+  Among frame e's episodes (C05) that were not accommodation and whose horizon is observed, did prices
+  and broad money rise more after the addition when the money was floating rather than pegged, when the
+  interest rate was above its floor, when reserves paid no interest, when the central bank bought from
+  the government rather than lending to banks or buying foreign assets, or when the deficit at the start
+  was large - each decider dated at or before the start?
+method: >-
+  Episodes: C05's run at its headline (X = 5, Y = 2, T = 12, H = 36, q = 0.1), the episodes neither
+  accommodation (nor "cannot be read") nor censored at H. m0 and c as C05 dates them.
+  Outcomes, over the H months from m0:
+  O1 (headline) - the change in inflation: 100 * ln(P(m0 + H)/P(m0)) * 12/H minus 100 * ln(P(m0)/P(m0 -
+  12)), points a year; O1' - O1 divided by the rise as a share of GDP (C05), the price rise per point of
+  printing; O1'' - the level, 100 * ln(P(m0 + H)/P(m0)) * 12/H.
+  O2 - broad money (annual; from the year-end before m0 to the first year-end at or after m0 + H),
+  annualised as a share of broad money at the start, as two bounds: gross, the growth of broad money;
+  net, broad money's increase minus the increase in the central bank's claims on the government, on
+  others and on the rest of the world (the purchases' first-round deposits: a purchase from a non-bank
+  creates a deposit one for one, McLeay, Radia and Thomas, 2014, p. 24 - notes/sources.md). The
+  claims' sellers are not known, so net is a lower bound and gross an upper bound.
+  O3 (descriptive) - the share of the rise B(c) - B(m0) withdrawn by m0 + H: (the highest B from c to
+  m0 + H minus B(m0 + H)) over (that highest B minus B(m0)).
+  O4 (descriptive, United States only) - equity prices (NASDAQ composite) and house prices (Case-Shiller
+  national index) over [m0, m0 + H]: "moved alongside", never tested (no open cross-country series here).
+  A money whose series stops before m0 + H is coded by what happened: the outcome over what exists, with
+  the stop and its month said, or "cannot be read" - never censored (conf-N3).
+  Deciders, each dated at m0; the floor and interest on reserves may be read at m0 + 3 if the twelve-month
+  inflation stayed below T from m0 to m0 + 3 (the dossier's rule):
+  D1 regime - "pegged" if the money's end-of-month rate against an anchor stayed within a band of +/-2%
+  around its midpoint (highest/lowest at most 1.02/0.98) over the 12 months to m0; anchors: the dollar
+  (IFS rate), and by cross rates the pound (GB), the French franc (FR, to 1998), the Deutsche Mark (DE,
+  to 1998) and the euro (U2, from 1999); else "not pegged"; the United States and the euro area "not
+  pegged". Annual episodes: the last two year-ends before m0. A currency board or a legal cap on issue
+  is coded only from a document read and cited in notes/a5-coding.md, else not coded (said).
+  D2 floor - the short rate (the panel's rate_short: policy, else money market, else Treasury bill) at or
+  below 0.5% a year.
+  D3 interest on reserves - coded from documents read and cited only (United States: from 9 October
+  2008, notes/fed-statements.md); a money with no document read is "not coded".
+  D4 channel - the central bank asset line whose increase was largest from the last year-end before m0
+  to the first year-end at or after c: government (claims on central government), banks (claims on
+  banks), others, or foreign assets;
+  tested as government against the rest. The United States from the H.4.1 series between the Wednesdays
+  nearest m0 and c: Treasuries (government), mortgage-backed securities (others), the rest of total
+  assets (banks and facilities). Never read from the deposits that followed.
+  D5 deficit at the start - general government net lending at or below -5% of GDP in the year before
+  m0's year (WEO, from 1980; the United States before 1980 from the federal deficit, FYFSGDA188S);
+  before 1980 elsewhere not coded.
+  D6 expectations - announced as bounded, open-ended, or temporary, from statements read and cited
+  (notes/fed-statements.md for the United States); Michigan's surveyed expectations at m0 (United States,
+  from 1978); the government bond yield where it exists (IFS, annual: the year before m0's year; the
+  United States: the ten-year yield, DGS10, at m0), labelled "read from bond yields".
+  Coded where documented, described, not tested unless C06's count rule below allows it.
+  War, a common cause coded everywhere it can be: battle-related deaths of 1,000 or more in m0's year
+  (World Bank VC.BTL.DETH, 1989-2024); before 1989 not coded. Not a decider: the tests are re-run with
+  war episodes out.
+  The test, per decider and outcome (O1 headline; O2 net and gross second): the difference between the
+  two categories' medians; its p-value from 10,000 permutations of the decider's labels within era
+  strata of m0's year (1950-1971, 1972-1999, 2000-2026), seed 20260930; Holm's adjustment across the
+  deciders tested for that outcome. A decider "separates" if its adjusted p < 0.05 and the difference has
+  the same sign in every stratum where both categories hold at least 3 episodes; "does not separate" if
+  its adjusted p >= 0.05 with at least two strata holding 3 or more episodes in each category; "we cannot
+  conclude" otherwise (too few cases in each category within eras). Beside it, descriptive only: O1 on
+  all coded deciders at once with era dummies and the rise's size (OLS, robust errors), and the
+  deciders' cross-tabulation (they move together by era, as the dossier expects).
+parameters:
+  episodes: C05 headline (X 5, Y 2, T 12, H 36, q 0.1); neither accommodation nor censored
+  H_months: 36
+  peg_band_pct: 2
+  peg_months: 12
+  floor_rate_pct: 0.5
+  deficit_pct_of_gdp: -5
+  war_battle_deaths: 1000
+  late_dating_months: 3
+  permutations: 10000
+  seed: 20260930
+  strata: [[1950, 1971], [1972, 1999], [2000, 2026]]
+  min_per_category_per_stratum: 3
+  alpha_after_holm: 0.05
+  variants:
+    - each of C05's other eight X-Y lists
+    - H 24 and 60 months
+    - T 10 and 20 (the accommodation split moves)
+    - the accommodation variant counting the crossing month
+    - q 0 (the lowest month as the start)
+    - peg band 1% and 5%
+    - floor 0.25% and 1%
+    - deficit -3% and -7% of GDP
+    - war episodes out
+    - episodes starting in 2020-2021 apart (one shared shock)
+    - the money giving the most episodes out
+    - moneys with a flagged base-money seam out
+  variants_counted: >-
+    for each decider, how many of the variant runs tell the headline's verdict, reported beside it
+data:
+  - dataset: the result of C05-e-episodes (its run, naming C05's hash)
+  - dataset: dbnomics/IMF/IFS/M~~PCPI_IX
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/M~~14____XDC
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/M~~FASMB_XDC
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/M~~ENDE_XDC_USD_RATE
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/M~~FPOLM_PA
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/M~~FIMM_PA
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/M~~FITB_PA
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/A~~35L___XDC
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/A~~FMB_XDC
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/A~~12A___XDC
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/A~~FASAG_XDC
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/A~~12E___XDC
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/A~~FASAD_XDC
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/A~~12D___XDC
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/A~~FASAO_XDC
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/A~~11____XDC
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/A~~FASAF_XDC
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/A~~FIGB_PA
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/WEO_2025-04/~GGXCNL_NGDP~pcent_gdp
+    vintage: '2026-09-30'
+  - dataset: worldbank/VC.BTL.DETH
+    vintage: '2026-09-30'
+  - dataset: fred/BOGMBASE
+    vintage: '2026-09-30'
+  - dataset: fred/CPIAUCSL
+    vintage: '2026-09-27'
+  - dataset: fred/FEDFUNDS
+    vintage: '2026-09-30'
+  - dataset: fred/M2SL
+    vintage: '2026-09-30'
+  - dataset: fred/WALCL
+    vintage: '2026-09-30'
+  - dataset: fred/TREAST
+    vintage: '2026-09-30'
+  - dataset: fred/WSHOMCB
+    vintage: '2026-09-30'
+  - dataset: fred/IOER
+    vintage: '2026-09-30'
+  - dataset: fred/IORB
+    vintage: '2026-09-30'
+  - dataset: fred/MICH
+    vintage: '2026-09-30'
+  - dataset: fred/DGS10
+    vintage: '2026-09-30'
+  - dataset: fred/FYFSGDA188S
+    vintage: '2026-09-30'
+  - dataset: fred/NASDAQCOM
+    vintage: '2026-09-30'
+  - dataset: fred/CSUSHPISA
+    vintage: '2026-09-30'
+  - dataset: dbnomics/ECB/BSI/M~U2~Y~V~M30~X~1~U2~2300~Z01~E
+    vintage: '2026-09-30'
+  - dataset: dbnomics/ECB/FM/D~U2~EUR~4F~KR~DFR~LEV
+    vintage: '2026-09-30'
+period: episodes starting 1950-2026 whose 36-month horizon ends by the panel's common end
+sample: >-
+  C05's list, made by rule before any outcome is read: every episode that is neither accommodation nor
+  censored, whatever followed it. Accommodation episodes are reported apart with their outcomes, never
+  pooled into the tests; censored episodes are reported with what happened so far, counted neither way.
+  No episode is matched or dropped on anything measured after m0 (the deciders are dated at m0, or m0 + 3
+  for the floor and interest on reserves while inflation is below T).
+out_of_sample: >-
+  Nothing is fitted: codings are fixed rules and the test permutes labels. The thresholds come from
+  outside the episodes (T from Teles and Uhlig; the band, the floor and the deficit are round values fixed
+  here before any episode is listed). The check outside the cases that could build a pattern is the era
+  rule: a decider separates only if its sign holds in every era stratum with enough cases, so a pattern
+  carried by one era alone does not pass; the grids and variants are counted.
+failure: >-
+  If no decider separates, part 2 says "we cannot conclude" on what decides - the dossier's expected
+  outcome, since the deciders move together by era - keeps A4, and still reports every episode's
+  measured outcomes. If a decider separates on O1 but its sign reverses on O2's net bound, the study
+  says prices and broad money tell different stories and does not choose. A decider coded for fewer than
+  ten episodes is described, never tested.
+not: >-
+  Not causal: the deciders are not assigned at random and move together (floating, floors and interest on
+  reserves arrive in the same decades). Excess reserves are never an outcome: they rise with any purchase
+  whatever banks lend (O3 guard; McLeay, Radia and Thomas, 2014, p. 25). Asset prices are never tested.
+  The fiscal theory is not tested here (Sargent, 1982, cited; LL-515). The money-demand side of A5 is
+  C07's velocity test.
+created: '2026-09-30'

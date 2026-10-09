@@ -1,0 +1,118 @@
+id: C02-a4-base
+label: regression
+title: A4 - base money growth and inflation over the long run, every money with data, 1950-2020
+question: >-
+  Across every money with the data, over ten-year averages from 1950 to 2020, does inflation follow
+  base money growth one for one once real output growth is taken out - and does the answer hold on
+  moneys and decades the fit did not see, and above and below the lines prior work drew?
+method: >-
+  Panel: code/panel.py as committed in 2445181 (its seven rules, written at its top, are part of this
+  card). Windows: non-overlapping ten-year windows between the year-ends 1950, 1960, ..., 2020 (seven
+  windows); the window 2020 to the panel's last year with base money, CPI and real GDP for at least half
+  the moneys is reported apart (shorter, and inside the latest printing). For a money i and a window
+  from year a to year b: mu = 100 * ln(B(b)/B(a)) / (b - a), with B base money at the year's end;
+  pi = 100 * ln(P(b)/P(a)) / (b - a), with P the CPI's yearly average; g = 100 * ln(Y(b)/Y(a)) / (b -
+  a), with Y real GDP. The model: pi = alpha + beta * mu + gamma * g + e, pooled OLS, standard errors
+  clustered by money. The quantity theory with a stable velocity says beta = 1 and gamma = -1.
+  Verdict on beta's 95% interval: "prices followed base money one for one" if it holds 1 and excludes 0;
+  "no relation" if it holds 0 and excludes 1; "partly" if it excludes both; "cannot tell" if it holds
+  both. The same rule is read on gamma against -1 and 0, reported beside.
+  Prior lines, tested and never refitted: Teles and Uhlig's 12% (notes/sources.md: the working paper,
+  pp. 3 and 11), applied two ways - as they drew it, on the window's inflation pi (a split on the
+  outcome, which truncates it and pulls beta toward zero whatever the relation), and on money growth mu
+  (a split on the regressor, which does not truncate the outcome). Each way: pi = alpha + beta * mu +
+  delta * A + theta * mu * A + gamma * g + e, A = 1 above the line; beta below the line and beta +
+  theta above, each with its interval and the verdict rule above. "The line separates" if theta > 0
+  with p < 0.05 and beta below the line excludes 1. De Grauwe and Polan's line is not run here: their
+  text is unread (notes/sources.md); a child card states it from their text, before it runs.
+parameters:
+  window_years: 10
+  window_ends: [1950, 1960, 1970, 1980, 1990, 2000, 2010, 2020]
+  interval: 0.95
+  prior_line_teles_uhlig_pct: 12
+  prior_line_de_grauwe_polan: not run here; fixed from their text by a child card, before it runs
+  line_significance: 0.05
+  held_out_years: fit on windows ending in or before 1990; test on windows starting in or after 1990
+  held_out_moneys: five folds, fold = position of the money's code in the sorted list of codes, modulo 5
+  variants:
+    - five-year windows (year-ends 1950, 1955, ..., 2020)
+    - twenty-year windows (1950-1970, 1970-1990, 1990-2010)
+    - one window per money, its first to its last year with all three series (at least 20 years)
+    - moneys whose base-money seam is flagged (base_break) dropped
+    - without g
+    - with window dummies (a common shock per decade)
+    - Teles and Uhlig's yield correction (p. 10, eq. 19) where the short rate is at least 1% at both
+      ends of the window - mu replaced by mu + 0.5 * 100 * ln(i(b)/i(a)) / (b - a)
+data:
+  - dataset: dbnomics/IMF/IFS/A~~14____XDC
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/A~~FASMB_XDC
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/A~~14____USD
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/A~~NGDP_XDC
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/A~~NGDP_R_XDC
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/A~~PCPI_IX
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/A~~ENDE_XDC_USD_RATE
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/A~~FPOLM_PA
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/A~~FIMM_PA
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/A~~FITB_PA
+    vintage: '2026-09-30'
+  - dataset: worldbank/NY.GDP.MKTP.CN
+    vintage: '2026-09-30'
+  - dataset: worldbank/NY.GDP.MKTP.KN
+    vintage: '2026-09-30'
+  - dataset: worldbank/FP.CPI.TOTL
+    vintage: '2026-09-30'
+  - dataset: fred/BOGMBASE
+    vintage: '2026-09-30'
+  - dataset: fred/GDPC1
+    vintage: '2026-09-30'
+  - dataset: fred/CPIAUCSL
+    vintage: '2026-09-27'
+  - dataset: fred/FEDFUNDS
+    vintage: '2026-09-30'
+  - dataset: dbnomics/ECB/ILM/M~U2~C~LT00001MP~Z5~EUR
+    vintage: '2026-09-30'
+  - dataset: dbnomics/ECB/ICP/M~U2~N~000000~4~INX
+    vintage: '2026-09-30'
+  - dataset: dbnomics/ECB/MNA/Q~Y~I9~W2~S1~S1~B~B1GQ~_Z~_Z~_Z~EUR~LR~N
+    vintage: '2026-09-30'
+  - dataset: dbnomics/ECB/FM/D~U2~EUR~4F~KR~DFR~LEV
+    vintage: '2026-09-30'
+period: 1950 to 2020 (seven decade windows); 2020 to the panel's last common year apart
+sample: >-
+  Every money of the panel with base money, the CPI and real GDP at both ends of a window, whatever its
+  inflation, its size or its history: the sample is set by data coverage only. Dropped, by the panel's
+  rules and never by outcome: IMF groups; the six moneys flagged units_break (their base money and GDP
+  share no unit in the open data: Equatorial Guinea, Slovakia, Sierra Leone, Somalia, Venezuela,
+  Zimbabwe); money-years using the euro outside the euro area; a euro member's windows once it uses the
+  euro (the euro area counts as one money from 1999, its founding members have no base money here
+  before 1999 - a hole, notes/data.md). High-inflation moneys stay in: the prior lines are tested on
+  them, not used to remove them. The list of moneys and windows used is written with the result.
+out_of_sample: >-
+  By years: the model fitted on the windows ending in or before 1990 (1950-1990) predicts the windows
+  starting in or after 1990 (1990-2020) - Teles and Uhlig's own split year (p. 2), taken, not chosen;
+  reported: the out-of-sample R2 against the training mean, and beta re-estimated on the held-out
+  windows with the verdict rule. By moneys: five folds fixed by code position, each predicted by the
+  fit on the other four; reported: each fold's out-of-sample R2 and beta. The prior lines are checked
+  out of sample by construction: they were drawn by others on other samples (Teles and Uhlig: OECD
+  countries, 1970-2005, M1) and are only applied here.
+failure: >-
+  The verdict fails to hold if the held-out windows (by years) or two or more of the five folds give a
+  beta whose interval tells another verdict; the study then says the long-run relation depends on the
+  period or the moneys, and names which. If fewer than 30 moneys reach both halves of the year split,
+  the split cannot judge and says so.
+not: >-
+  Not a causal estimate: money growth and inflation are both outcomes of policy and shocks; this is the
+  association the quantity theory predicts, over long averages. Not M1: base money here (broad money
+  is C03's; Teles and Uhlig use M1). Not the published version of Teles, Uhlig and Valle e Azevedo
+  (2016): their working paper's line, said. Not 1870-1950 (C04, waiting for the Jorda-Schularick-Taylor
+  files).
+created: '2026-09-30'

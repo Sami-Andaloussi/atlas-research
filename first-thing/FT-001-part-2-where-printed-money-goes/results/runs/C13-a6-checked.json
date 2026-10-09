@@ -1,0 +1,178 @@
+{
+  "card": "C13-a6-checked",
+  "card_hash": "6ea438d07533cdcbf5301ef0e49e777d94c045d1b3ea734b96ff41ef0d79997f",
+  "run_at": "2026-09-30T15:17:13+00:00",
+  "result": {
+    "period": {
+      "first_loss_month": "2020-03",
+      "last_month": "2026-08",
+      "cpi_missing": [
+        "2025-10"
+      ]
+    },
+    "whole_stock": {
+      "total_bn": 1749.5389962313664,
+      "total_const_bn": 1556.2966542441675,
+      "cash_bn": 552.9110913762822,
+      "deposits_bn": 1196.6279048550841,
+      "cash_const_bn": 488.2267620763241,
+      "deposits_const_bn": 1068.0698921678434,
+      "period_gdp_bn": 174285.71066666656,
+      "share_of_period_gdp_pct": 1.003833871141324,
+      "by_year": {
+        "2020": {
+          "loss_bn": 75.81802188262704,
+          "gdp_bn": 21375.2815,
+          "share_pct": 0.35469952469457317,
+          "quarters": 4
+        },
+        "2021": {
+          "loss_bn": 494.2595552199378,
+          "gdp_bn": 23725.6455,
+          "share_pct": 2.083229116864019,
+          "quarters": 4
+        },
+        "2022": {
+          "loss_bn": 471.6162146032445,
+          "gdp_bn": 26054.61425,
+          "share_pct": 1.8101063023922703,
+          "quarters": 4
+        },
+        "2023": {
+          "loss_bn": 217.68172659908024,
+          "gdp_bn": 27811.517,
+          "share_pct": 0.7827035346510594,
+          "quarters": 4
+        },
+        "2024": {
+          "loss_bn": 174.67647066052362,
+          "gdp_bn": 29298.01275,
+          "share_pct": 0.5962058660805368,
+          "quarters": 4
+        },
+        "2025": {
+          "loss_bn": 161.40163642385124,
+          "gdp_bn": 30762.09875,
+          "share_pct": 0.5246769335718723,
+          "quarters": 4
+        },
+        "2026": {
+          "loss_bn": 154.08537084210192,
+          "gdp_bn": 32175.8935,
+          "share_pct": 0.47888451284842154,
+          "quarters": 2
+        }
+      },
+      "stock_start_bn": {
+        "cash": 1724.4,
+        "deposits": 3161.05
+      },
+      "stock_last_bn": {
+        "cash": 2389.7,
+        "deposits": 4044.829
+      }
+    },
+    "households": {
+      "reclassification": {
+        "rise_bn": 1206.6399999999999,
+        "other_fall_bn": 497.3289999999997,
+        "found": false,
+        "R_bn": 0.0
+      },
+      "per_household": {
+        "upper_current": 7581.14871419028,
+        "upper_constant": 6644.9818160849145,
+        "lower_current": 7480.153457988637,
+        "lower_constant": 6560.6460668245245
+      },
+      "upper_total_bn": 998.2345774840055,
+      "lower_total_bn": 984.8266775971294,
+      "interest_deducted_bn": 13.407899886876018,
+      "households_first_year": 128451.0,
+      "households_last": 134790.0,
+      "households_last_year": 2025,
+      "range_ratio": 1.0135017626000418,
+      "stock_2020Q3_bn": 1669.522,
+      "stock_2020Q4_bn": 2876.162
+    },
+    "variants": {
+      "CPI not seasonally adjusted": {
+        "total_bn": 1773.6230684955085,
+        "cash_bn": 562.1006146524304,
+        "deposits_bn": 1211.522453843078,
+        "total_const_bn": 1574.5680867011708
+      },
+      "currency in circulation (CURRCIR)": {
+        "total_bn": 1706.0810199012576,
+        "cash_bn": 509.4531150461734,
+        "deposits_bn": 1196.6279048550841,
+        "total_const_bn": 1524.3855818669776
+      },
+      "start at the rule's m0 (2019-11)": {
+        "total_bn": 1775.2641261567614
+      }
+    },
+    "seigniorage": {
+      "by_year": {
+        "2020": {
+          "currency_rise_bn": 275.1999999999998,
+          "currency_share_pct": 1.287468424684839,
+          "base_rise_bn": 1780.0,
+          "base_share_pct": 8.327375711987699
+        },
+        "2021": {
+          "currency_rise_bn": 153.5,
+          "currency_share_pct": 0.6469792360338521,
+          "base_rise_bn": 1206.6000000000004,
+          "base_share_pct": 5.085636131585968
+        },
+        "2022": {
+          "currency_rise_bn": 73.59999999999991,
+          "currency_share_pct": 0.2824835527933403,
+          "base_rise_bn": -1007.1000000000004,
+          "base_share_pct": -3.865342201333878
+        },
+        "2023": {
+          "currency_rise_bn": 36.5,
+          "currency_share_pct": 0.13124059360012616,
+          "base_rise_bn": 421.1999999999998,
+          "base_share_pct": 1.5144804938184417
+        },
+        "2024": {
+          "currency_rise_bn": 27.90000000000009,
+          "currency_share_pct": 0.09522830178985464,
+          "base_rise_bn": -223.69999999999982,
+          "base_share_pct": -0.7635330147093332
+        },
+        "2025": {
+          "currency_rise_bn": 68.90000000000009,
+          "currency_share_pct": 0.22397691574928738,
+          "base_rise_bn": -229.80000000000018,
+          "base_share_pct": -0.7470231529635154
+        }
+      },
+      "base_created": {
+        "from": "2020-02",
+        "to": "2026-08",
+        "bn": 1957.1000000000004,
+        "level_start_bn": 3454.5,
+        "level_last_bn": 5411.6
+      },
+      "remittances": "cited from the Board's releases for 2020-2023 (notes/fed-statements.md); 2024-2025 not found"
+    },
+    "deferred_asset": {
+      "lowest_mn": -245927.0,
+      "lowest_date": "2026-01-28",
+      "latest_mn": -232999.0,
+      "latest_date": "2026-09-23",
+      "first_negative": "2011-07-27"
+    },
+    "where_the_base_sits": {
+      "week": "2026-09-23",
+      "reserves_bn": 2930193.0,
+      "currency_bn": 2482200.0,
+      "reserves_share_pct": 54.13858528011547,
+      "currency_share_pct": 45.86141471988453
+    }
+  }
+}

@@ -46,4 +46,5 @@ the earlier version stays in this repository's history.
 |---|---|
 | **FT-001** | *published part by part* |
 | part 1 — [FT-001-part-1-what-trust-rests-on](FT-001-part-1-what-trust-rests-on/) | Does a money lose its value when its backing goes? — methods and proof |
+| part 2 — [FT-001-part-2-where-printed-money-goes](FT-001-part-2-where-printed-money-goes/) | Does printing money really cause inflation? — methods and proof |
 <!-- index:end -->

@@ -1,0 +1,803 @@
+{
+ "card": "C27-a4-broad-hko-fill",
+ "card_hash": "6ce96b101f582e8f537a352bb70a09d5cdd128b082f5ffe2efb835f4cf69448f",
+ "run_at": "2026-10-02T11:09:29+00:00",
+ "result": {
+  "void": false,
+  "reproduces_stored": {
+   "C03": true
+  },
+  "fill": {
+   "economies_filled": 70,
+   "economies_refused_by_the_guard": [
+    {
+     "area": "AM",
+     "note": "ratio spread 1.563 over 32 years"
+    },
+    {
+     "area": "AZ",
+     "note": "ratio spread 11.443 over 34 years"
+    },
+    {
+     "area": "BD",
+     "note": "ratio spread 1.133 over 39 years"
+    },
+    {
+     "area": "BT",
+     "note": "ratio spread 1.185 over 45 years"
+    },
+    {
+     "area": "BZ",
+     "note": "ratio spread 1.184 over 45 years"
+    },
+    {
+     "area": "CF",
+     "note": "ratio spread 1.171 over 45 years"
+    },
+    {
+     "area": "CG",
+     "note": "ratio spread 1.768 over 39 years"
+    },
+    {
+     "area": "CV",
+     "note": "ratio spread 1.105 over 42 years"
+    },
+    {
+     "area": "DJ",
+     "note": "ratio spread 1.288 over 25 years"
+    },
+    {
+     "area": "HR",
+     "note": "ratio spread 1.298 over 40 years"
+    },
+    {
+     "area": "IQ",
+     "note": "ratio spread 23369.418 over 45 years"
+    },
+    {
+     "area": "KH",
+     "note": "ratio spread 1.136 over 31 years"
+    },
+    {
+     "area": "KZ",
+     "note": "ratio spread 2.035 over 32 years"
+    },
+    {
+     "area": "LA",
+     "note": "ratio spread 2.158 over 37 years"
+    },
+    {
+     "area": "LR",
+     "note": "ratio spread 1.105 over 24 years"
+    },
+    {
+     "area": "MM",
+     "note": "ratio spread 1.211 over 51 years"
+    },
+    {
+     "area": "MN",
+     "note": "ratio spread 1.568 over 33 years"
+    },
+    {
+     "area": "MW",
+     "note": "ratio spread 1.496 over 45 years"
+    },
+    {
+     "area": "RO",
+     "note": "ratio spread 1.274 over 35 years"
+    },
+    {
+     "area": "ST",
+     "note": "ratio spread 1.245 over 29 years"
+    },
+    {
+     "area": "TD",
+     "note": "ratio spread 1.124 over 42 years"
+    },
+    {
+     "area": "TO",
+     "note": "ratio spread 1.361 over 50 years"
+    },
+    {
+     "area": "VC",
+     "note": "ratio spread 1.117 over 51 years"
+    },
+    {
+     "area": "YE",
+     "note": "ratio spread 2.167 over 25 years"
+    }
+   ],
+   "years_added": [
+    {
+     "area": "AE",
+     "years_added": 37,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "AF",
+     "years_added": 34,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "AG",
+     "years_added": 28,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "AL",
+     "years_added": 2,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "AO",
+     "years_added": 20,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "AR",
+     "years_added": 55,
+     "sources": "annual+monthly",
+     "note": "no study CPI: database as it is"
+    },
+    {
+     "area": "AW",
+     "years_added": 5,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "BA",
+     "years_added": 11,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "BB",
+     "years_added": 2,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "BG",
+     "years_added": 15,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "BJ",
+     "years_added": 22,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "BN",
+     "years_added": 9,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "BR",
+     "years_added": 10,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "BW",
+     "years_added": 4,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "BY",
+     "years_added": 22,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "CN",
+     "years_added": 16,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "CW",
+     "years_added": 28,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "CZ",
+     "years_added": 21,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "EE",
+     "years_added": 2,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "ER",
+     "years_added": 32,
+     "sources": "annual",
+     "note": "no study CPI: database as it is"
+    },
+    {
+     "area": "FM",
+     "years_added": 6,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "FO",
+     "years_added": 23,
+     "sources": "quarterly",
+     "note": "no study CPI: database as it is"
+    },
+    {
+     "area": "GD",
+     "years_added": 6,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "GN",
+     "years_added": 34,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "GQ",
+     "years_added": 15,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "GW",
+     "years_added": 17,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "GY",
+     "years_added": 24,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "HK",
+     "years_added": 2,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "HU",
+     "years_added": 2,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "KG",
+     "years_added": 4,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "KI",
+     "years_added": 27,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "KM",
+     "years_added": 30,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "KN",
+     "years_added": 10,
+     "sources": "annual+monthly",
+     "note": ""
+    },
+    {
+     "area": "KW",
+     "years_added": 2,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "KY",
+     "years_added": 22,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "LB",
+     "years_added": 38,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "LI",
+     "years_added": 49,
+     "sources": "quarterly",
+     "note": "no study CPI: database as it is"
+    },
+    {
+     "area": "LT",
+     "years_added": 11,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "ME",
+     "years_added": 6,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "MH",
+     "years_added": 22,
+     "sources": "annual",
+     "note": "no study CPI: database as it is"
+    },
+    {
+     "area": "MK",
+     "years_added": 12,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "ML",
+     "years_added": 18,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "MZ",
+     "years_added": 34,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "NA",
+     "years_added": 32,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "NC",
+     "years_added": 24,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "NI",
+     "years_added": 29,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "NR",
+     "years_added": 18,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "OM",
+     "years_added": 30,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "PG",
+     "years_added": 1,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "PR",
+     "years_added": 45,
+     "sources": "annual",
+     "note": "no study CPI: database as it is"
+    },
+    {
+     "area": "PW",
+     "years_added": 1,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "QA",
+     "years_added": 9,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "RU",
+     "years_added": 22,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "SK",
+     "years_added": 6,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "SL",
+     "years_added": 36,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "SM",
+     "years_added": 1,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "SZ",
+     "years_added": 5,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "TC",
+     "years_added": 17,
+     "sources": "annual",
+     "note": "no study CPI: database as it is"
+    },
+    {
+     "area": "TJ",
+     "years_added": 16,
+     "sources": "annual+monthly",
+     "note": ""
+    },
+    {
+     "area": "TM",
+     "years_added": 33,
+     "sources": "annual",
+     "note": "no study CPI: database as it is"
+    },
+    {
+     "area": "TN",
+     "years_added": 13,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "TV",
+     "years_added": 23,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "UA",
+     "years_added": 22,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "UG",
+     "years_added": 23,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "VE",
+     "years_added": 46,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "VG",
+     "years_added": 10,
+     "sources": "annual+monthly",
+     "note": "no study CPI: database as it is"
+    },
+    {
+     "area": "VN",
+     "years_added": 25,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "VU",
+     "years_added": 6,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "ZM",
+     "years_added": 15,
+     "sources": "annual",
+     "note": ""
+    },
+    {
+     "area": "ZW",
+     "years_added": 41,
+     "sources": "annual",
+     "note": ""
+    }
+   ],
+   "years_added_total": 1338
+  },
+  "lost_for_missing_cpi": {
+   "unfilled": 73,
+   "filled": 28,
+   "filled_starting_before_1970": 13
+  },
+  "filled": {
+   "windows": 625,
+   "moneys": 155,
+   "beta": 1.012495705917125,
+   "lo": 0.9479430933061164,
+   "hi": 1.0770483185281334,
+   "verdict": "one for one",
+   "r2": 0.9321688090060537,
+   "gamma": -0.11433737217020379,
+   "gamma_lo": -0.2913543331669399,
+   "gamma_hi": 0.06267958882653238,
+   "gamma_verdict": "no relation",
+   "line_pi": {
+    "beta_below": 0.3837097560742677,
+    "beta_below_lo": 0.33910320529139987,
+    "beta_below_hi": 0.42831630685713556,
+    "verdict_below": "partly (between zero and one)",
+    "beta_above": 1.0459881124972767,
+    "beta_above_lo": 0.9663035517380519,
+    "beta_above_hi": 1.1256726732565014,
+    "verdict_above": "one for one",
+    "theta": 0.6622783564230089,
+    "p_theta": 1.586920496530822e-45,
+    "separates": true,
+    "windows_above": 126,
+    "windows_below": 499
+   },
+   "line_mu": {
+    "beta_below": 0.4012108274333114,
+    "beta_below_lo": 0.2927034398362105,
+    "beta_below_hi": 0.5097182150304123,
+    "verdict_below": "partly (between zero and one)",
+    "beta_above": 1.0667844240359465,
+    "beta_above_lo": 0.9978444856669764,
+    "beta_above_hi": 1.1357243624049167,
+    "verdict_above": "one for one",
+    "theta": 0.6655735966026352,
+    "p_theta": 1.4529807507024872e-24,
+    "separates": true,
+    "windows_above": 340,
+    "windows_below": 285
+   },
+   "held_out": {
+    "train_windows": 223,
+    "test_windows": 402,
+    "moneys_in_both": 103,
+    "oos_r2": 0.9088140300868319,
+    "beta": 0.9454335028248191,
+    "lo": 0.8898775545633174,
+    "hi": 1.0009894510863209,
+    "verdict": "one for one",
+    "same_verdict": true,
+    "fit_train_beta": 1.0651717907089115
+   },
+   "folds": [
+    {
+     "fold": 0,
+     "windows": 113,
+     "moneys": 31,
+     "oos_r2": 0.8801147940542888,
+     "beta": 0.9649571982768683,
+     "beta_lo": 0.9077977550712271,
+     "beta_hi": 1.0221166414825096,
+     "verdict": "one for one"
+    },
+    {
+     "fold": 1,
+     "windows": 128,
+     "moneys": 31,
+     "oos_r2": 0.9373722345663088,
+     "beta": 1.0569206502215929,
+     "beta_lo": 0.9047520031559972,
+     "beta_hi": 1.2090892972871885,
+     "verdict": "one for one"
+    },
+    {
+     "fold": 2,
+     "windows": 139,
+     "moneys": 31,
+     "oos_r2": 0.9510247590216805,
+     "beta": 1.0380047515743298,
+     "beta_lo": 1.006429214752201,
+     "beta_hi": 1.0695802883964587,
+     "verdict": "partly (above one)"
+    },
+    {
+     "fold": 3,
+     "windows": 127,
+     "moneys": 31,
+     "oos_r2": 0.9577160929351307,
+     "beta": 0.9605475888066237,
+     "beta_lo": 0.9127465385857478,
+     "beta_hi": 1.0083486390274996,
+     "verdict": "one for one"
+    },
+    {
+     "fold": 4,
+     "windows": 118,
+     "moneys": 31,
+     "oos_r2": -2.2252105880381987,
+     "beta": 0.9117639155075045,
+     "beta_lo": 0.688286168268149,
+     "beta_hi": 1.1352416627468598,
+     "verdict": "one for one"
+    }
+   ],
+   "folds_differing": 1,
+   "holds": true
+  },
+  "unfilled": {
+   "windows": 580,
+   "moneys": 152,
+   "beta": 0.964307622957844,
+   "lo": 0.9144738205958359,
+   "hi": 1.014141425319852,
+   "verdict": "one for one",
+   "r2": 0.9270661957112781,
+   "gamma": -0.10257309383395903,
+   "gamma_lo": -0.2610672669142193,
+   "gamma_hi": 0.05592107924630123,
+   "gamma_verdict": "no relation",
+   "line_pi": {
+    "beta_below": 0.3857179382073769,
+    "beta_below_lo": 0.34001186438846354,
+    "beta_below_hi": 0.4314240120262902,
+    "verdict_below": "partly (between zero and one)",
+    "beta_above": 0.9891655565116205,
+    "beta_above_lo": 0.9460873974128703,
+    "beta_above_hi": 1.0322437156103708,
+    "verdict_above": "one for one",
+    "theta": 0.6034476183042436,
+    "p_theta": 6.316426367263535e-80,
+    "separates": true,
+    "windows_above": 108,
+    "windows_below": 472
+   },
+   "line_mu": {
+    "beta_below": 0.4009911709058458,
+    "beta_below_lo": 0.29270612941993945,
+    "beta_below_hi": 0.5092762123917521,
+    "verdict_below": "partly (between zero and one)",
+    "beta_above": 1.018913622136834,
+    "beta_above_lo": 0.9812111643073118,
+    "beta_above_hi": 1.0566160799663562,
+    "verdict_above": "one for one",
+    "theta": 0.6179224512309883,
+    "p_theta": 1.123757358581657e-23,
+    "separates": true,
+    "windows_above": 306,
+    "windows_below": 274
+   },
+   "held_out": {
+    "train_windows": 202,
+    "test_windows": 378,
+    "moneys_in_both": 91,
+    "oos_r2": 0.9249770396808028,
+    "beta": 0.9614302503423349,
+    "lo": 0.9258233505282073,
+    "hi": 0.9970371501564624,
+    "verdict": "partly (between zero and one)",
+    "same_verdict": false,
+    "fit_train_beta": 0.9712689491694958
+   },
+   "folds": [
+    {
+     "fold": 0,
+     "windows": 123,
+     "moneys": 31,
+     "oos_r2": 0.9570857372834529,
+     "beta": 0.9414474406298825,
+     "beta_lo": 0.9066737397662322,
+     "beta_hi": 0.9762211414935328,
+     "verdict": "partly (between zero and one)"
+    },
+    {
+     "fold": 1,
+     "windows": 116,
+     "moneys": 31,
+     "oos_r2": 0.6974054857744052,
+     "beta": 0.9151760028918281,
+     "beta_lo": 0.7227279433614181,
+     "beta_hi": 1.107624062422238,
+     "verdict": "one for one"
+    },
+    {
+     "fold": 2,
+     "windows": 117,
+     "moneys": 30,
+     "oos_r2": 0.965721505122635,
+     "beta": 0.972288627480232,
+     "beta_lo": 0.937088113747237,
+     "beta_hi": 1.007489141213227,
+     "verdict": "one for one"
+    },
+    {
+     "fold": 3,
+     "windows": 111,
+     "moneys": 30,
+     "oos_r2": -2.5297730699920176,
+     "beta": 0.836501281077931,
+     "beta_lo": 0.6485617166513767,
+     "beta_hi": 1.024440845504485,
+     "verdict": "one for one"
+    },
+    {
+     "fold": 4,
+     "windows": 113,
+     "moneys": 30,
+     "oos_r2": 0.9315034146427523,
+     "beta": 1.009359439713945,
+     "beta_lo": 0.9451223816280462,
+     "beta_hi": 1.0735964977998438,
+     "verdict": "one for one"
+    }
+   ],
+   "folds_differing": 1,
+   "holds": false
+  },
+  "n_added": 45,
+  "moneys_added": [
+   "AR",
+   "ER",
+   "LB"
+  ],
+  "kept_windows_unchanged": true,
+  "held_out_agrees_with_headline": {
+   "unfilled": false,
+   "filled": true
+  },
+  "beside_base_money": {
+   "common_windows": 622,
+   "beta_broad_common": 1.0137922838845868,
+   "lo_broad_common": 0.9495892197036647,
+   "hi_broad_common": 1.077995348065509,
+   "verdict_broad_common": "one for one",
+   "beta_base_common": 1.0114655729575608,
+   "lo_base_common": 0.9462105641772238,
+   "hi_base_common": 1.0767205817378978,
+   "verdict_base_common": "one for one",
+   "only_in_C27": 3,
+   "only_in_C25": 13,
+   "depends_on_the_aggregate": false,
+   "unfilled_depends_on_the_aggregate": false,
+   "c25_filled_headline_verdict": "one for one"
+  },
+  "differs": [
+   "held-out windows' verdict: partly (between zero and one) -> one for one",
+   "the held-out verdict equals the headline's: False -> True"
+  ],
+  "any_verdict_differs": true,
+  "expected_check": {
+   "before": [
+    580,
+    152
+   ],
+   "after": [
+    625,
+    155
+   ],
+   "added": 45,
+   "added_economies": 25,
+   "as_the_card_counted": true
+  }
+ }
+}

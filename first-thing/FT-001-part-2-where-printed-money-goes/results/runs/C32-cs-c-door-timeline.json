@@ -1,0 +1,1845 @@
+{
+ "card": "C32-cs-c-door-timeline",
+ "card_hash": "50ce4d529c9c92243a85761250fd44712b32ef40fea6b6c84d1173fee3a6c0a3",
+ "run_at": "2026-10-08T15:24:01+00:00",
+ "result": {
+  "units": "billions of dollars; rates in percent",
+  "windows": {
+   "W1": {
+    "start": "2008-08",
+    "end": "2014-10",
+    "months": 74,
+    "base_added_bn": 3153.9,
+    "reserves_added_bn": 2702.91195,
+    "currency_added_bn": 463.52330000000006,
+    "walcl_added_bn": 3563.4448499999994,
+    "treasuries_and_mbs_added_bn": 3684.9092,
+    "treasuries_added_bn": 1976.9770000000003,
+    "mbs_added_bn": 1707.9322,
+    "reserves_share_pct": 85.70062303814325,
+    "currency_share_pct": 14.696829322426204,
+    "deficits_fiscal_years": {
+     "years": [
+      2009,
+      2010,
+      2011,
+      2012,
+      2013,
+      2014
+     ],
+     "sum_bn": 6247.8009999999995
+    },
+    "purchases_share_fiscal_years_pct": 31.642765190504637,
+    "deficits_months_weighted": {
+     "fiscal_year_weights": {
+      "2008": 0.08333333333333333,
+      "2009": 1.0,
+      "2010": 1.0,
+      "2011": 1.0,
+      "2012": 1.0,
+      "2013": 1.0,
+      "2014": 1.0,
+      "2015": 0.08333333333333333
+     },
+     "weighted_deficits_bn": 6322.84375,
+     "missing_fiscal_years": []
+    },
+    "purchases_share_months_weighted_pct": 31.267212636719044,
+    "m2_pace_pa": 6.622818013539344,
+    "m2_pace_before_pa": 5.851826398321869,
+    "m2_before_months": 84
+   },
+   "W2": {
+    "start": "2020-02",
+    "end": "2021-12",
+    "months": 22,
+    "base_added_bn": 2958.6000000000004,
+    "reserves_added_bn": 2560.36915,
+    "currency_added_bn": 427.8334500000003,
+    "walcl_added_bn": 4554.008650000001,
+    "treasuries_and_mbs_added_bn": 4401.178650000001,
+    "treasuries_added_bn": 3178.2721500000007,
+    "mbs_added_bn": 1222.9064999999998,
+    "reserves_share_pct": 86.53988879875617,
+    "currency_share_pct": 14.460672277428522,
+    "reverse_repo_added_bn": 1642.1363999999999,
+    "deficits_fiscal_years": {
+     "years": [
+      2020,
+      2021
+     ],
+     "sum_bn": 5869.246999999999
+    },
+    "purchases_share_fiscal_years_pct": 54.15127613474098,
+    "deficits_months_weighted": {
+     "fiscal_year_weights": {
+      "2020": 0.5833333333333334,
+      "2021": 1.0,
+      "2022": 0.25
+     },
+     "weighted_deficits_bn": 4922.934333333333,
+     "missing_fiscal_years": []
+    },
+    "purchases_share_months_weighted_pct": 64.56052294827145,
+    "m2_pace_pa": 19.578662493344765,
+    "m2_pace_before_pa": 5.68141525391308,
+    "m2_before_months": 84
+   }
+  },
+  "reproduction": {
+   "targets": {
+    "W1 base_added_bn": {
+     "audits": 3154,
+     "run": 3153.9,
+     "matches": true
+    },
+    "W1 reserves_share_pct": {
+     "audits": 86,
+     "run": 85.7,
+     "matches": true
+    },
+    "W1 walcl_added_bn": {
+     "audits": 3563,
+     "run": 3563.44,
+     "matches": true
+    },
+    "W1 purchases_share_fiscal_years_pct": {
+     "audits": 32,
+     "run": 31.64,
+     "matches": true
+    },
+    "W2 base_added_bn": {
+     "audits": 2959,
+     "run": 2958.6,
+     "matches": true
+    },
+    "W2 reserves_share_pct": {
+     "audits": 87,
+     "run": 86.54,
+     "matches": true
+    },
+    "W2 walcl_added_bn": {
+     "audits": 4554,
+     "run": 4554.01,
+     "matches": true
+    },
+    "W2 purchases_share_fiscal_years_pct": {
+     "audits": 54,
+     "run": 54.15,
+     "matches": true
+    }
+   },
+   "all_match": true
+  },
+  "timeline": {
+   "monthly": {
+    "2008-08": {
+     "base_bn": 847.6,
+     "reserves_bn": 10.44325,
+     "currency_bn": 830.5135,
+     "m2_yoy_pct": 5.5671218061376315,
+     "cpi_yoy_pct": 5.308017162091239,
+     "unrate_pct": 6.1
+    },
+    "2008-09": {
+     "base_bn": 909.7,
+     "reserves_bn": 43.10575,
+     "currency_bn": 833.9425,
+     "m2_yoy_pct": 6.201947719118395,
+     "cpi_yoy_pct": 4.953319875136075,
+     "unrate_pct": 6.1
+    },
+    "2008-10": {
+     "base_bn": 1136.4,
+     "reserves_bn": 225.99820000000003,
+     "currency_bn": 849.1221999999999,
+     "m2_yoy_pct": 7.367074976443666,
+     "cpi_yoy_pct": 3.7310578899565128,
+     "unrate_pct": 6.5
+    },
+    "2008-11": {
+     "base_bn": 1442.3,
+     "reserves_bn": 574.333,
+     "currency_bn": 864.0745,
+     "m2_yoy_pct": 7.697880332707263,
+     "cpi_yoy_pct": 1.0999174706166848,
+     "unrate_pct": 6.8
+    },
+    "2008-12": {
+     "base_bn": 1666.4,
+     "reserves_bn": 768.9276,
+     "currency_bn": 877.8834,
+     "m2_yoy_pct": 9.626204444919617,
+     "cpi_yoy_pct": -0.02222800255385904,
+     "unrate_pct": 7.3
+    },
+    "2009-01": {
+     "base_bn": 1712.0,
+     "reserves_bn": 840.83975,
+     "currency_bn": 886.184,
+     "m2_yoy_pct": 10.256068994889267,
+     "cpi_yoy_pct": -0.11358601902212717,
+     "unrate_pct": 7.8
+    },
+    "2009-02": {
+     "base_bn": 1561.7,
+     "reserves_bn": 661.57275,
+     "currency_bn": 894.1555,
+     "m2_yoy_pct": 9.399628962014672,
+     "cpi_yoy_pct": 0.008463140671510772,
+     "unrate_pct": 8.3
+    },
+    "2009-03": {
+     "base_bn": 1647.3,
+     "reserves_bn": 712.52175,
+     "currency_bn": 900.752,
+     "m2_yoy_pct": 9.33606439744812,
+     "cpi_yoy_pct": -0.4464787676623838,
+     "unrate_pct": 8.7
+    },
+    "2009-04": {
+     "base_bn": 1753.2,
+     "reserves_bn": 846.9974,
+     "currency_bn": 903.4116,
+     "m2_yoy_pct": 8.802552065772762,
+     "cpi_yoy_pct": -0.5763244243767063,
+     "unrate_pct": 9.0
+    },
+    "2009-05": {
+     "base_bn": 1775.1,
+     "reserves_bn": 859.18275,
+     "currency_bn": 905.5145,
+     "m2_yoy_pct": 9.375930023420409,
+     "cpi_yoy_pct": -1.015761495855172,
+     "unrate_pct": 9.4
+    },
+    "2009-06": {
+     "base_bn": 1683.7,
+     "reserves_bn": 792.0055,
+     "currency_bn": 907.57575,
+     "m2_yoy_pct": 9.236766357311566,
+     "cpi_yoy_pct": -1.2291746182109153,
+     "unrate_pct": 9.5
+    },
+    "2009-07": {
+     "base_bn": 1673.6,
+     "reserves_bn": 755.3832,
+     "currency_bn": 909.5595999999999,
+     "m2_yoy_pct": 8.62615299747269,
+     "cpi_yoy_pct": -1.9587610037622771,
+     "unrate_pct": 9.5
+    },
+    "2009-08": {
+     "base_bn": 1710.8,
+     "reserves_bn": 776.3065,
+     "currency_bn": 910.77425,
+     "m2_yoy_pct": 8.418707099682422,
+     "cpi_yoy_pct": -1.4838355663267633,
+     "unrate_pct": 9.6
+    },
+    "2009-09": {
+     "base_bn": 1801.2,
+     "reserves_bn": 875.6411999999999,
+     "currency_bn": 912.9694000000001,
+     "m2_yoy_pct": 7.481965047754535,
+     "cpi_yoy_pct": -1.377942862886472,
+     "unrate_pct": 9.8
+    },
+    "2009-10": {
+     "base_bn": 1936.3,
+     "reserves_bn": 1014.96275,
+     "currency_bn": 915.31675,
+     "m2_yoy_pct": 6.430299763048031,
+     "cpi_yoy_pct": -0.22396829420033848,
+     "unrate_pct": 10.0
+    },
+    "2009-11": {
+     "base_bn": 2024.6,
+     "reserves_bn": 1094.4785,
+     "currency_bn": 918.2415,
+     "m2_yoy_pct": 6.105035003363302,
+     "cpi_yoy_pct": 1.9145871744709275,
+     "unrate_pct": 9.9
+    },
+    "2009-12": {
+     "base_bn": 2026.2,
+     "reserves_bn": 1107.1003999999998,
+     "currency_bn": 924.3148,
+     "m2_yoy_pct": 3.749847616725588,
+     "cpi_yoy_pct": 2.8141231232083674,
+     "unrate_pct": 9.9
+    },
+    "2010-01": {
+     "base_bn": 1995.0,
+     "reserves_bn": 1059.17375,
+     "currency_bn": 921.23475,
+     "m2_yoy_pct": 2.280244320513747,
+     "cpi_yoy_pct": 2.6211113889767157,
+     "unrate_pct": 9.8
+    },
+    "2010-02": {
+     "base_bn": 2115.2,
+     "reserves_bn": 1177.25975,
+     "currency_bn": 927.20975,
+     "m2_yoy_pct": 2.510012387698879,
+     "cpi_yoy_pct": 2.151336357866529,
+     "unrate_pct": 9.8
+    },
+    "2010-03": {
+     "base_bn": 2079.6,
+     "reserves_bn": 1149.8113999999998,
+     "currency_bn": 932.5351999999999,
+     "m2_yoy_pct": 1.652646023506943,
+     "cpi_yoy_pct": 2.2861714393279886,
+     "unrate_pct": 9.9
+    },
+    "2010-04": {
+     "base_bn": 2014.4,
+     "reserves_bn": 1081.48675,
+     "currency_bn": 935.054,
+     "m2_yoy_pct": 1.955853257371687,
+     "cpi_yoy_pct": 2.2067707525304403,
+     "unrate_pct": 9.9
+    },
+    "2010-05": {
+     "base_bn": 2012.3,
+     "reserves_bn": 1065.7005,
+     "currency_bn": 937.47425,
+     "m2_yoy_pct": 1.882194276520499,
+     "cpi_yoy_pct": 2.003548929218568,
+     "unrate_pct": 9.6
+    },
+    "2010-06": {
+     "base_bn": 2002.4,
+     "reserves_bn": 1059.4678000000001,
+     "currency_bn": 941.3625999999999,
+     "m2_yoy_pct": 1.9863167472143228,
+     "cpi_yoy_pct": 1.1215605940686268,
+     "unrate_pct": 9.4
+    },
+    "2010-07": {
+     "base_bn": 1994.3,
+     "reserves_bn": 1046.74025,
+     "currency_bn": 944.76475,
+     "m2_yoy_pct": 2.066774532613702,
+     "cpi_yoy_pct": 1.3407784804821077,
+     "unrate_pct": 9.4
+    },
+    "2010-08": {
+     "base_bn": 1993.7,
+     "reserves_bn": 1047.02125,
+     "currency_bn": 946.0875,
+     "m2_yoy_pct": 2.6493586260659896,
+     "cpi_yoy_pct": 1.1501775395112546,
+     "unrate_pct": 9.5
+    },
+    "2010-09": {
+     "base_bn": 1961.2,
+     "reserves_bn": 1012.6864,
+     "currency_bn": 951.3304,
+     "m2_yoy_pct": 3.0356741938152076,
+     "cpi_yoy_pct": 1.1183122472331775,
+     "unrate_pct": 9.5
+    },
+    "2010-10": {
+     "base_bn": 1961.7,
+     "reserves_bn": 998.47175,
+     "currency_bn": 960.369,
+     "m2_yoy_pct": 3.3053762427554867,
+     "cpi_yoy_pct": 1.1666951489314625,
+     "unrate_pct": 9.4
+    },
+    "2010-11": {
+     "base_bn": 1973.1,
+     "reserves_bn": 995.18725,
+     "currency_bn": 970.89025,
+     "m2_yoy_pct": 3.1979713309618463,
+     "cpi_yoy_pct": 1.084544776600338,
+     "unrate_pct": 9.8
+    },
+    "2010-12": {
+     "base_bn": 2017.0,
+     "reserves_bn": 1029.6802,
+     "currency_bn": 979.3901999999999,
+     "m2_yoy_pct": 3.6589664653490894,
+     "cpi_yoy_pct": 1.437793022217937,
+     "unrate_pct": 9.3
+    },
+    "2011-01": {
+     "base_bn": 2047.9,
+     "reserves_bn": 1054.267,
+     "currency_bn": 978.9125,
+     "m2_yoy_pct": 4.383283567997531,
+     "cpi_yoy_pct": 1.7007834915029774,
+     "unrate_pct": 9.1
+    },
+    "2011-02": {
+     "base_bn": 2211.6,
+     "reserves_bn": 1182.5795,
+     "currency_bn": 987.0875,
+     "m2_yoy_pct": 4.534575404181429,
+     "cpi_yoy_pct": 2.124898173333145,
+     "unrate_pct": 9.0
+    },
+    "2011-03": {
+     "base_bn": 2395.3,
+     "reserves_bn": 1377.7518,
+     "currency_bn": 1000.6948000000001,
+     "m2_yoy_pct": 5.267050123253902,
+     "cpi_yoy_pct": 2.619241510354109,
+     "unrate_pct": 9.0
+    },
+    "2011-04": {
+     "base_bn": 2496.6,
+     "reserves_bn": 1488.19625,
+     "currency_bn": 1009.366,
+     "m2_yoy_pct": 5.603030055060043,
+     "cpi_yoy_pct": 3.0772344447868694,
+     "unrate_pct": 9.1
+    },
+    "2011-05": {
+     "base_bn": 2567.2,
+     "reserves_bn": 1525.77175,
+     "currency_bn": 1016.6645,
+     "m2_yoy_pct": 5.775661867162096,
+     "cpi_yoy_pct": 3.4589718808964998,
+     "unrate_pct": 9.0
+    },
+    "2011-06": {
+     "base_bn": 2648.5,
+     "reserves_bn": 1617.673,
+     "currency_bn": 1023.5266,
+     "m2_yoy_pct": 6.4094542926659726,
+     "cpi_yoy_pct": 3.5023181506360412,
+     "unrate_pct": 9.1
+    },
+    "2011-07": {
+     "base_bn": 2684.8,
+     "reserves_bn": 1654.8265,
+     "currency_bn": 1029.57025,
+     "m2_yoy_pct": 8.152922254492445,
+     "cpi_yoy_pct": 3.5798809769996165,
+     "unrate_pct": 9.0
+    },
+    "2011-08": {
+     "base_bn": 2657.7,
+     "reserves_bn": 1622.452,
+     "currency_bn": 1033.0404,
+     "m2_yoy_pct": 9.688740578792942,
+     "cpi_yoy_pct": 3.75499603070808,
+     "unrate_pct": 9.0
+    },
+    "2011-09": {
+     "base_bn": 2637.7,
+     "reserves_bn": 1594.5085,
+     "currency_bn": 1038.7375,
+     "m2_yoy_pct": 9.56121840451396,
+     "cpi_yoy_pct": 3.812621692818685,
+     "unrate_pct": 9.0
+    },
+    "2011-10": {
+     "base_bn": 2637.8,
+     "reserves_bn": 1599.2815,
+     "currency_bn": 1042.12925,
+     "m2_yoy_pct": 9.309220278683682,
+     "cpi_yoy_pct": 3.5222681306640524,
+     "unrate_pct": 8.8
+    },
+    "2011-11": {
+     "base_bn": 2605.4,
+     "reserves_bn": 1549.913,
+     "currency_bn": 1055.2306,
+     "m2_yoy_pct": 9.660648669556227,
+     "cpi_yoy_pct": 3.451432214581729,
+     "unrate_pct": 8.6
+    },
+    "2011-12": {
+     "base_bn": 2619.6,
+     "reserves_bn": 1548.04975,
+     "currency_bn": 1066.40575,
+     "m2_yoy_pct": 9.765359328950352,
+     "cpi_yoy_pct": 3.062066838419386,
+     "unrate_pct": 8.5
+    },
+    "2012-01": {
+     "base_bn": 2640.8,
+     "reserves_bn": 1565.08025,
+     "currency_bn": 1069.69075,
+     "m2_yoy_pct": 10.275312341002873,
+     "cpi_yoy_pct": 3.0087663379855023,
+     "unrate_pct": 8.3
+    },
+    "2012-02": {
+     "base_bn": 2694.4,
+     "reserves_bn": 1607.4156,
+     "currency_bn": 1080.197,
+     "m2_yoy_pct": 10.06071897552161,
+     "cpi_yoy_pct": 2.8981784423473878,
+     "unrate_pct": 8.3
+    },
+    "2012-03": {
+     "base_bn": 2655.2,
+     "reserves_bn": 1555.259,
+     "currency_bn": 1095.16625,
+     "m2_yoy_pct": 9.830837338447962,
+     "cpi_yoy_pct": 2.5828752813320977,
+     "unrate_pct": 8.2
+    },
+    "2012-04": {
+     "base_bn": 2639.8,
+     "reserves_bn": 1550.32125,
+     "currency_bn": 1099.97775,
+     "m2_yoy_pct": 9.64620970598653,
+     "cpi_yoy_pct": 2.2731633741348567,
+     "unrate_pct": 8.2
+    },
+    "2012-05": {
+     "base_bn": 2616.5,
+     "reserves_bn": 1505.4472,
+     "currency_bn": 1103.6686000000002,
+     "m2_yoy_pct": 9.24868816826574,
+     "cpi_yoy_pct": 1.7379429374660749,
+     "unrate_pct": 8.2
+    },
+    "2012-06": {
+     "base_bn": 2618.8,
+     "reserves_bn": 1508.761,
+     "currency_bn": 1108.54525,
+     "m2_yoy_pct": 9.140698155527982,
+     "cpi_yoy_pct": 1.653870448297634,
+     "unrate_pct": 8.2
+    },
+    "2012-07": {
+     "base_bn": 2647.8,
+     "reserves_bn": 1527.24225,
+     "currency_bn": 1113.75575,
+     "m2_yoy_pct": 7.800447207095407,
+     "cpi_yoy_pct": 1.4175114798464783,
+     "unrate_pct": 8.2
+    },
+    "2012-08": {
+     "base_bn": 2650.7,
+     "reserves_bn": 1536.8963999999999,
+     "currency_bn": 1115.8662,
+     "m2_yoy_pct": 6.454760031471274,
+     "cpi_yoy_pct": 1.6859349154821235,
+     "unrate_pct": 8.1
+    },
+    "2012-09": {
+     "base_bn": 2594.9,
+     "reserves_bn": 1475.56725,
+     "currency_bn": 1126.38875,
+     "m2_yoy_pct": 7.06666806234495,
+     "cpi_yoy_pct": 1.9497168982819613,
+     "unrate_pct": 7.8
+    },
+    "2012-10": {
+     "base_bn": 2611.8,
+     "reserves_bn": 1474.261,
+     "currency_bn": 1134.6226000000001,
+     "m2_yoy_pct": 7.387703156620962,
+     "cpi_yoy_pct": 2.1556780595369363,
+     "unrate_pct": 7.8
+    },
+    "2012-11": {
+     "base_bn": 2646.8,
+     "reserves_bn": 1495.67325,
+     "currency_bn": 1149.0195,
+     "m2_yoy_pct": 7.5325483686913275,
+     "cpi_yoy_pct": 1.7960197033926262,
+     "unrate_pct": 7.7
+    },
+    "2012-12": {
+     "base_bn": 2675.9,
+     "reserves_bn": 1516.76025,
+     "currency_bn": 1156.69525,
+     "m2_yoy_pct": 8.281096710899982,
+     "cpi_yoy_pct": 1.7595049796895523,
+     "unrate_pct": 7.9
+    },
+    "2013-01": {
+     "base_bn": 2741.7,
+     "reserves_bn": 1570.1814,
+     "currency_bn": 1160.0824,
+     "m2_yoy_pct": 7.679452082884763,
+     "cpi_yoy_pct": 1.684061762098299,
+     "unrate_pct": 8.0
+    },
+    "2013-02": {
+     "base_bn": 2845.3,
+     "reserves_bn": 1672.1375,
+     "currency_bn": 1164.5845,
+     "m2_yoy_pct": 7.308566941659955,
+     "cpi_yoy_pct": 2.0181404902574807,
+     "unrate_pct": 7.7
+    },
+    "2013-03": {
+     "base_bn": 2935.0,
+     "reserves_bn": 1759.689,
+     "currency_bn": 1174.35375,
+     "m2_yoy_pct": 7.405602428599001,
+     "cpi_yoy_pct": 1.5187472411246183,
+     "unrate_pct": 7.5
+    },
+    "2013-04": {
+     "base_bn": 3011.7,
+     "reserves_bn": 1829.72,
+     "currency_bn": 1178.421,
+     "m2_yoy_pct": 7.106511862695597,
+     "cpi_yoy_pct": 1.138808047576867,
+     "unrate_pct": 7.6
+    },
+    "2013-05": {
+     "base_bn": 3116.9,
+     "reserves_bn": 1908.591,
+     "currency_bn": 1185.0258000000001,
+     "m2_yoy_pct": 6.979571740069734,
+     "cpi_yoy_pct": 1.3903888279197085,
+     "unrate_pct": 7.5
+    },
+    "2013-06": {
+     "base_bn": 3201.5,
+     "reserves_bn": 2006.4245,
+     "currency_bn": 1189.69325,
+     "m2_yoy_pct": 6.802877181080835,
+     "cpi_yoy_pct": 1.7157935271568725,
+     "unrate_pct": 7.5
+    },
+    "2013-07": {
+     "base_bn": 3290.9,
+     "reserves_bn": 2087.1316,
+     "currency_bn": 1196.5808,
+     "m2_yoy_pct": 6.6196903533148,
+     "cpi_yoy_pct": 1.885471805415806,
+     "unrate_pct": 7.3
+    },
+    "2013-08": {
+     "base_bn": 3398.9,
+     "reserves_bn": 2190.7845,
+     "currency_bn": 1198.79825,
+     "m2_yoy_pct": 6.46248447939457,
+     "cpi_yoy_pct": 1.538809488600279,
+     "unrate_pct": 7.2
+    },
+    "2013-09": {
+     "base_bn": 3486.9,
+     "reserves_bn": 2276.101,
+     "currency_bn": 1206.3275,
+     "m2_yoy_pct": 6.231668687184699,
+     "cpi_yoy_pct": 1.0947341081747997,
+     "unrate_pct": 7.2
+    },
+    "2013-10": {
+     "base_bn": 3589.5,
+     "reserves_bn": 2364.8112,
+     "currency_bn": 1213.4248,
+     "m2_yoy_pct": 6.749300590612384,
+     "cpi_yoy_pct": 0.8767991434911471,
+     "unrate_pct": 7.2
+    },
+    "2013-11": {
+     "base_bn": 3684.6,
+     "reserves_bn": 2457.50975,
+     "currency_bn": 1220.8445,
+     "m2_yoy_pct": 6.118314424635329,
+     "cpi_yoy_pct": 1.2328701961954458,
+     "unrate_pct": 6.9
+    },
+    "2013-12": {
+     "base_bn": 3717.5,
+     "reserves_bn": 2503.022,
+     "currency_bn": 1230.286,
+     "m2_yoy_pct": 5.502889732389793,
+     "cpi_yoy_pct": 1.5128383667573297,
+     "unrate_pct": 6.7
+    },
+    "2014-01": {
+     "base_bn": 3728.5,
+     "reserves_bn": 2479.5286,
+     "currency_bn": 1231.6314,
+     "m2_yoy_pct": 5.952981727812001,
+     "cpi_yoy_pct": 1.557758795574915,
+     "unrate_pct": 6.6
+    },
+    "2014-02": {
+     "base_bn": 3833.4,
+     "reserves_bn": 2587.04875,
+     "currency_bn": 1237.5345,
+     "m2_yoy_pct": 6.3565523139788915,
+     "cpi_yoy_pct": 1.1204746347724948,
+     "unrate_pct": 6.7
+    },
+    "2014-03": {
+     "base_bn": 3885.9,
+     "reserves_bn": 2634.68975,
+     "currency_bn": 1261.586,
+     "m2_yoy_pct": 6.145367578246841,
+     "cpi_yoy_pct": 1.6126949139408042,
+     "unrate_pct": 6.7
+    },
+    "2014-04": {
+     "base_bn": 3930.7,
+     "reserves_bn": 2648.2016,
+     "currency_bn": 1270.1276,
+     "m2_yoy_pct": 6.288116581360947,
+     "cpi_yoy_pct": 2.015125303606169,
+     "unrate_pct": 6.2
+    },
+    "2014-05": {
+     "base_bn": 3911.5,
+     "reserves_bn": 2628.84625,
+     "currency_bn": 1275.94825,
+     "m2_yoy_pct": 6.542995350584713,
+     "cpi_yoy_pct": 2.166947687079812,
+     "unrate_pct": 6.3
+    },
+    "2014-06": {
+     "base_bn": 3948.7,
+     "reserves_bn": 2683.20225,
+     "currency_bn": 1279.37525,
+     "m2_yoy_pct": 6.471379464952909,
+     "cpi_yoy_pct": 2.0589816945944195,
+     "unrate_pct": 6.1
+    },
+    "2014-07": {
+     "base_bn": 3989.1,
+     "reserves_bn": 2688.504,
+     "currency_bn": 1284.825,
+     "m2_yoy_pct": 6.604300474727731,
+     "cpi_yoy_pct": 1.9742378703305974,
+     "unrate_pct": 6.2
+    },
+    "2014-08": {
+     "base_bn": 4075.0,
+     "reserves_bn": 2786.2725,
+     "currency_bn": 1287.50325,
+     "m2_yoy_pct": 6.240512421785316,
+     "cpi_yoy_pct": 1.7150983482969062,
+     "unrate_pct": 6.1
+    },
+    "2014-09": {
+     "base_bn": 4049.2,
+     "reserves_bn": 2773.7575,
+     "currency_bn": 1290.7725,
+     "m2_yoy_pct": 6.027167810929712,
+     "cpi_yoy_pct": 1.6840509711232077,
+     "unrate_pct": 5.9
+    },
+    "2014-10": {
+     "base_bn": 4001.5,
+     "reserves_bn": 2713.3552,
+     "currency_bn": 1294.0368,
+     "m2_yoy_pct": 5.526334947038913,
+     "cpi_yoy_pct": 1.6095417021513292,
+     "unrate_pct": 5.7
+    },
+    "2014-11": {
+     "base_bn": 3830.4,
+     "reserves_bn": 2533.9765,
+     "currency_bn": 1309.49225,
+     "m2_yoy_pct": 5.810105638284346,
+     "cpi_yoy_pct": 1.231524989320798,
+     "unrate_pct": 5.8
+    },
+    "2014-12": {
+     "base_bn": 3934.5,
+     "reserves_bn": 2585.2147999999997,
+     "currency_bn": 1326.6982,
+     "m2_yoy_pct": 5.955308070581444,
+     "cpi_yoy_pct": 0.6531213919623191,
+     "unrate_pct": 5.6
+    },
+    "2015-01": {
+     "base_bn": 4017.1,
+     "reserves_bn": 2685.5115,
+     "currency_bn": 1333.447,
+     "m2_yoy_pct": 6.09930352729724,
+     "cpi_yoy_pct": -0.22993097820542818,
+     "unrate_pct": 5.7
+    },
+    "2015-02": {
+     "base_bn": 3840.5,
+     "reserves_bn": 2501.813,
+     "currency_bn": 1341.2565,
+     "m2_yoy_pct": 6.51185232176843,
+     "cpi_yoy_pct": -0.08703146293520536,
+     "unrate_pct": 5.5
+    },
+    "2015-03": {
+     "base_bn": 4030.6,
+     "reserves_bn": 2674.9785,
+     "currency_bn": 1354.764,
+     "m2_yoy_pct": 6.147584781989179,
+     "cpi_yoy_pct": -0.022031284423873476,
+     "unrate_pct": 5.4
+    },
+    "2015-04": {
+     "base_bn": 4059.4,
+     "reserves_bn": 2695.5957999999996,
+     "currency_bn": 1359.9261999999999,
+     "m2_yoy_pct": 6.00744945015963,
+     "cpi_yoy_pct": -0.10403098939391064,
+     "unrate_pct": 5.4
+    },
+    "2015-05": {
+     "base_bn": 3949.4,
+     "reserves_bn": 2590.157,
+     "currency_bn": 1364.56975,
+     "m2_yoy_pct": 5.631617459072036,
+     "cpi_yoy_pct": 0.03503321824429584,
+     "unrate_pct": 5.6
+    },
+    "2015-06": {
+     "base_bn": 3919.6,
+     "reserves_bn": 2562.6685,
+     "currency_bn": 1366.158,
+     "m2_yoy_pct": 5.461292813026386,
+     "cpi_yoy_pct": 0.1795718097550525,
+     "unrate_pct": 5.3
+    },
+    "2015-07": {
+     "base_bn": 3961.2,
+     "reserves_bn": 2577.7664,
+     "currency_bn": 1369.7752,
+     "m2_yoy_pct": 5.335079676926435,
+     "cpi_yoy_pct": 0.22568611104094582,
+     "unrate_pct": 5.2
+    },
+    "2015-08": {
+     "base_bn": 3984.0,
+     "reserves_bn": 2592.0775,
+     "currency_bn": 1375.05275,
+     "m2_yoy_pct": 5.5088954329227,
+     "cpi_yoy_pct": 0.2413037985344868,
+     "unrate_pct": 5.1
+    },
+    "2015-09": {
+     "base_bn": 4028.5,
+     "reserves_bn": 2649.3856,
+     "currency_bn": 1383.8722,
+     "m2_yoy_pct": 5.659378336385812,
+     "cpi_yoy_pct": 0.008842961634170088,
+     "unrate_pct": 5.0
+    },
+    "2015-10": {
+     "base_bn": 4060.5,
+     "reserves_bn": 2670.22025,
+     "currency_bn": 1391.429,
+     "m2_yoy_pct": 5.449057905402488,
+     "cpi_yoy_pct": 0.12761656067050708,
+     "unrate_pct": 5.0
+    },
+    "2015-11": {
+     "base_bn": 4006.7,
+     "reserves_bn": 2621.57175,
+     "currency_bn": 1402.991,
+     "m2_yoy_pct": 5.875125656204627,
+     "cpi_yoy_pct": 0.4363182169185187,
+     "unrate_pct": 5.1
+    },
+    "2015-12": {
+     "base_bn": 3835.8,
+     "reserves_bn": 2458.6294,
+     "currency_bn": 1415.0438000000001,
+     "m2_yoy_pct": 5.736613998566686,
+     "cpi_yoy_pct": 0.6387247515364791,
+     "unrate_pct": 5.0
+    },
+    "2016-01": {
+     "base_bn": 3792.7,
+     "reserves_bn": 2348.5185,
+     "currency_bn": 1417.33125,
+     "m2_yoy_pct": 6.064610120106395,
+     "cpi_yoy_pct": 1.2375025026943876,
+     "unrate_pct": 4.8
+    },
+    "2016-02": {
+     "base_bn": 3872.5,
+     "reserves_bn": 2429.15075,
+     "currency_bn": 1420.97625,
+     "m2_yoy_pct": 5.735401444546029,
+     "cpi_yoy_pct": 0.8472775790126619,
+     "unrate_pct": 4.9
+    },
+    "2016-03": {
+     "base_bn": 3898.4,
+     "reserves_bn": 2465.5728,
+     "currency_bn": 1436.8766,
+     "m2_yoy_pct": 6.234531130706178,
+     "cpi_yoy_pct": 0.8916160965521946,
+     "unrate_pct": 5.0
+    },
+    "2016-04": {
+     "base_bn": 3872.9,
+     "reserves_bn": 2433.30375,
+     "currency_bn": 1444.63825,
+     "m2_yoy_pct": 6.5964495457359495,
+     "cpi_yoy_pct": 1.1726257503534843,
+     "unrate_pct": 5.1
+    },
+    "2016-05": {
+     "base_bn": 3836.5,
+     "reserves_bn": 2377.85775,
+     "currency_bn": 1450.9975,
+     "m2_yoy_pct": 6.833640741451696,
+     "cpi_yoy_pct": 1.0784764621246223,
+     "unrate_pct": 4.8
+    },
+    "2016-06": {
+     "base_bn": 3825.5,
+     "reserves_bn": 2378.1972,
+     "currency_bn": 1457.5058000000001,
+     "m2_yoy_pct": 6.891330931960171,
+     "cpi_yoy_pct": 1.0792865347959424,
+     "unrate_pct": 4.9
+    },
+    "2016-07": {
+     "base_bn": 3772.5,
+     "reserves_bn": 2303.4595,
+     "currency_bn": 1463.67725,
+     "m2_yoy_pct": 6.994653292991249,
+     "cpi_yoy_pct": 0.8683633430518256,
+     "unrate_pct": 4.8
+    },
+    "2016-08": {
+     "base_bn": 3816.7,
+     "reserves_bn": 2350.5258,
+     "currency_bn": 1464.3406,
+     "m2_yoy_pct": 7.2385859736913805,
+     "cpi_yoy_pct": 1.0553158595656864,
+     "unrate_pct": 4.9
+    },
+    "2016-09": {
+     "base_bn": 3735.9,
+     "reserves_bn": 2279.63975,
+     "currency_bn": 1470.25,
+     "m2_yoy_pct": 7.229291775859092,
+     "cpi_yoy_pct": 1.5486446201652182,
+     "unrate_pct": 5.0
+    },
+    "2016-10": {
+     "base_bn": 3572.1,
+     "reserves_bn": 2084.625,
+     "currency_bn": 1475.81075,
+     "m2_yoy_pct": 7.328023290046115,
+     "cpi_yoy_pct": 1.685924966243646,
+     "unrate_pct": 4.9
+    },
+    "2016-11": {
+     "base_bn": 3629.8,
+     "reserves_bn": 2135.8016000000002,
+     "currency_bn": 1488.5398,
+     "m2_yoy_pct": 7.234615790370613,
+     "cpi_yoy_pct": 1.6843334719788938,
+     "unrate_pct": 4.7
+    },
+    "2016-12": {
+     "base_bn": 3531.6,
+     "reserves_bn": 2064.45975,
+     "currency_bn": 1499.35475,
+     "m2_yoy_pct": 6.834172476116707,
+     "cpi_yoy_pct": 2.0507989115119862,
+     "unrate_pct": 4.7
+    },
+    "2017-01": {
+     "base_bn": 3595.5,
+     "reserves_bn": 2044.5665,
+     "currency_bn": 1504.57875,
+     "m2_yoy_pct": 6.362300554215694,
+     "cpi_yoy_pct": 2.5103933482571117,
+     "unrate_pct": 4.7
+    },
+    "2017-02": {
+     "base_bn": 3746.4,
+     "reserves_bn": 2215.44525,
+     "currency_bn": 1504.65475,
+     "m2_yoy_pct": 6.2739995557107076,
+     "cpi_yoy_pct": 2.8103616813294208,
+     "unrate_pct": 4.6
+    },
+    "2017-03": {
+     "base_bn": 3856.3,
+     "reserves_bn": 2317.218,
+     "currency_bn": 1527.1188,
+     "m2_yoy_pct": 6.336971458356366,
+     "cpi_yoy_pct": 2.44119623655914,
+     "unrate_pct": 4.4
+    },
+    "2017-04": {
+     "base_bn": 3821.7,
+     "reserves_bn": 2293.6615,
+     "currency_bn": 1539.4725,
+     "m2_yoy_pct": 6.1089790376631425,
+     "cpi_yoy_pct": 2.176223471915395,
+     "unrate_pct": 4.4
+    },
+    "2017-05": {
+     "base_bn": 3774.4,
+     "reserves_bn": 2218.109,
+     "currency_bn": 1548.1632,
+     "m2_yoy_pct": 5.9895161983329,
+     "cpi_yoy_pct": 1.8563431667619756,
+     "unrate_pct": 4.4
+    },
+    "2017-06": {
+     "base_bn": 3762.8,
+     "reserves_bn": 2229.8965,
+     "currency_bn": 1555.20975,
+     "m2_yoy_pct": 5.663343528441245,
+     "cpi_yoy_pct": 1.640565809959127,
+     "unrate_pct": 4.3
+    },
+    "2017-07": {
+     "base_bn": 3795.4,
+     "reserves_bn": 2207.9415,
+     "currency_bn": 1562.5925,
+     "m2_yoy_pct": 5.6650112726906565,
+     "cpi_yoy_pct": 1.7251073506566073,
+     "unrate_pct": 4.3
+    },
+    "2017-08": {
+     "base_bn": 3910.0,
+     "reserves_bn": 2332.8363999999997,
+     "currency_bn": 1565.2882,
+     "m2_yoy_pct": 5.45404144239876,
+     "cpi_yoy_pct": 1.92812155729698,
+     "unrate_pct": 4.4
+    },
+    "2017-09": {
+     "base_bn": 3874.5,
+     "reserves_bn": 2307.643,
+     "currency_bn": 1578.29525,
+     "m2_yoy_pct": 5.288560987381907,
+     "cpi_yoy_pct": 2.1805652303711787,
+     "unrate_pct": 4.3
+    },
+    "2017-10": {
+     "base_bn": 3829.9,
+     "reserves_bn": 2234.70975,
+     "currency_bn": 1583.26425,
+     "m2_yoy_pct": 5.158291744447419,
+     "cpi_yoy_pct": 2.020757753132485,
+     "unrate_pct": 4.2
+    },
+    "2017-11": {
+     "base_bn": 3907.7,
+     "reserves_bn": 2305.2402,
+     "currency_bn": 1592.1306000000002,
+     "m2_yoy_pct": 4.804679814139323,
+     "cpi_yoy_pct": 2.172493864295566,
+     "unrate_pct": 4.2
+    },
+    "2017-12": {
+     "base_bn": 3851.0,
+     "reserves_bn": 2287.06025,
+     "currency_bn": 1604.5445,
+     "m2_yoy_pct": 4.884219748349761,
+     "cpi_yoy_pct": 2.129930719552253,
+     "unrate_pct": 4.1
+    },
+    "2018-01": {
+     "base_bn": 3824.8,
+     "reserves_bn": 2188.66,
+     "currency_bn": 1611.3406,
+     "m2_yoy_pct": 4.3809924242993015,
+     "cpi_yoy_pct": 2.151318868063945,
+     "unrate_pct": 4.0
+    },
+    "2018-02": {
+     "base_bn": 3855.1,
+     "reserves_bn": 2238.77525,
+     "currency_bn": 1616.28075,
+     "m2_yoy_pct": 4.14028905876731,
+     "cpi_yoy_pct": 2.263468931091861,
+     "unrate_pct": 4.1
+    },
+    "2018-03": {
+     "base_bn": 3800.6,
+     "reserves_bn": 2173.43825,
+     "currency_bn": 1633.03775,
+     "m2_yoy_pct": 4.084042600597115,
+     "cpi_yoy_pct": 2.3309497646499366,
+     "unrate_pct": 4.0
+    },
+    "2018-04": {
+     "base_bn": 3727.1,
+     "reserves_bn": 2101.9975,
+     "currency_bn": 1639.95075,
+     "m2_yoy_pct": 3.8053889336775004,
+     "cpi_yoy_pct": 2.4709963021052994,
+     "unrate_pct": 4.0
+    },
+    "2018-05": {
+     "base_bn": 3674.8,
+     "reserves_bn": 2019.6462,
+     "currency_bn": 1650.8788,
+     "m2_yoy_pct": 3.8592508513053403,
+     "cpi_yoy_pct": 2.781921607842497,
+     "unrate_pct": 3.8
+    },
+    "2018-06": {
+     "base_bn": 3650.5,
+     "reserves_bn": 1999.9195,
+     "currency_bn": 1661.27175,
+     "m2_yoy_pct": 4.096634013405032,
+     "cpi_yoy_pct": 2.8075506935940187,
+     "unrate_pct": 4.0
+    },
+    "2018-07": {
+     "base_bn": 3618.3,
+     "reserves_bn": 1947.5775,
+     "currency_bn": 1669.05675,
+     "m2_yoy_pct": 3.8970561278732996,
+     "cpi_yoy_pct": 2.854124785561929,
+     "unrate_pct": 3.8
+    },
+    "2018-08": {
+     "base_bn": 3584.5,
+     "reserves_bn": 1915.7323999999999,
+     "currency_bn": 1671.608,
+     "m2_yoy_pct": 3.843008397225267,
+     "cpi_yoy_pct": 2.6429238568742575,
+     "unrate_pct": 3.8
+    },
+    "2018-09": {
+     "base_bn": 3559.8,
+     "reserves_bn": 1882.0955,
+     "currency_bn": 1685.51475,
+     "m2_yoy_pct": 3.6447646074365014,
+     "cpi_yoy_pct": 2.332055105808828,
+     "unrate_pct": 3.7
+    },
+    "2018-10": {
+     "base_bn": 3520.9,
+     "reserves_bn": 1828.0068,
+     "currency_bn": 1690.1318,
+     "m2_yoy_pct": 3.3047132558055248,
+     "cpi_yoy_pct": 2.492032470218053,
+     "unrate_pct": 3.8
+    },
+    "2018-11": {
+     "base_bn": 3476.3,
+     "reserves_bn": 1780.9755,
+     "currency_bn": 1701.60225,
+     "m2_yoy_pct": 3.1720472810507383,
+     "cpi_yoy_pct": 2.147328577667773,
+     "unrate_pct": 3.8
+    },
+    "2018-12": {
+     "base_bn": 3400.7,
+     "reserves_bn": 1708.51025,
+     "currency_bn": 1706.89225,
+     "m2_yoy_pct": 3.6342557588588287,
+     "cpi_yoy_pct": 2.0023809043401064,
+     "unrate_pct": 3.9
+    },
+    "2019-01": {
+     "base_bn": 3346.9,
+     "reserves_bn": 1635.1592,
+     "currency_bn": 1709.7258,
+     "m2_yoy_pct": 4.012256876510545,
+     "cpi_yoy_pct": 1.4875893578291333,
+     "unrate_pct": 4.0
+    },
+    "2019-02": {
+     "base_bn": 3353.5,
+     "reserves_bn": 1642.964,
+     "currency_bn": 1707.78425,
+     "m2_yoy_pct": 3.991455074624728,
+     "cpi_yoy_pct": 1.5188615351321877,
+     "unrate_pct": 3.8
+    },
+    "2019-03": {
+     "base_bn": 3381.5,
+     "reserves_bn": 1669.39375,
+     "currency_bn": 1719.26225,
+     "m2_yoy_pct": 3.8888294266652412,
+     "cpi_yoy_pct": 1.8831863513063984,
+     "unrate_pct": 3.8
+    },
+    "2019-04": {
+     "base_bn": 3286.7,
+     "reserves_bn": 1586.2245,
+     "currency_bn": 1726.40875,
+     "m2_yoy_pct": 3.9843816798244447,
+     "cpi_yoy_pct": 2.000583470209061,
+     "unrate_pct": 3.7
+    },
+    "2019-05": {
+     "base_bn": 3244.5,
+     "reserves_bn": 1503.8258,
+     "currency_bn": 1732.2266000000002,
+     "m2_yoy_pct": 4.344617131502382,
+     "cpi_yoy_pct": 1.7959105553606136,
+     "unrate_pct": 3.6
+    },
+    "2019-06": {
+     "base_bn": 3274.8,
+     "reserves_bn": 1549.186,
+     "currency_bn": 1737.76075,
+     "m2_yoy_pct": 4.709478391305577,
+     "cpi_yoy_pct": 1.671194894390049,
+     "unrate_pct": 3.6
+    },
+    "2019-07": {
+     "base_bn": 3260.3,
+     "reserves_bn": 1504.9622,
+     "currency_bn": 1746.8978,
+     "m2_yoy_pct": 5.02964008468596,
+     "cpi_yoy_pct": 1.826331335037068,
+     "unrate_pct": 3.7
+    },
+    "2019-08": {
+     "base_bn": 3271.4,
+     "reserves_bn": 1526.09375,
+     "currency_bn": 1749.11525,
+     "m2_yoy_pct": 5.295577760120396,
+     "cpi_yoy_pct": 1.7376412106666406,
+     "unrate_pct": 3.6
+    },
+    "2019-09": {
+     "base_bn": 3202.7,
+     "reserves_bn": 1434.661,
+     "currency_bn": 1762.662,
+     "m2_yoy_pct": 5.639607130069724,
+     "cpi_yoy_pct": 1.6844977040391562,
+     "unrate_pct": 3.5
+    },
+    "2019-10": {
+     "base_bn": 3252.8,
+     "reserves_bn": 1477.7536,
+     "currency_bn": 1769.4848,
+     "m2_yoy_pct": 6.508809336774779,
+     "cpi_yoy_pct": 1.7339736996186295,
+     "unrate_pct": 3.6
+    },
+    "2019-11": {
+     "base_bn": 3315.6,
+     "reserves_bn": 1525.42775,
+     "currency_bn": 1785.601,
+     "m2_yoy_pct": 7.088967274152447,
+     "cpi_yoy_pct": 2.092290394862917,
+     "unrate_pct": 3.6
+    },
+    "2019-12": {
+     "base_bn": 3426.5,
+     "reserves_bn": 1631.0235,
+     "currency_bn": 1794.25975,
+     "m2_yoy_pct": 6.666898276820454,
+     "cpi_yoy_pct": 2.3195274699624457,
+     "unrate_pct": 3.6
+    },
+    "2020-01": {
+     "base_bn": 3442.6,
+     "reserves_bn": 1638.9528,
+     "currency_bn": 1798.9843999999998,
+     "m2_yoy_pct": 6.672106886488427,
+     "cpi_yoy_pct": 2.599767976845202,
+     "unrate_pct": 3.6
+    },
+    "2020-02": {
+     "base_bn": 3454.5,
+     "reserves_bn": 1650.29225,
+     "currency_bn": 1795.98375,
+     "m2_yoy_pct": 6.798284918588782,
+     "cpi_yoy_pct": 2.3413166797595197,
+     "unrate_pct": 3.5
+    },
+    "2020-03": {
+     "base_bn": 3883.1,
+     "reserves_bn": 1881.48475,
+     "currency_bn": 1826.07575,
+     "m2_yoy_pct": 10.130155568529142,
+     "cpi_yoy_pct": 1.4940399642909163,
+     "unrate_pct": 4.4
+    },
+    "2020-04": {
+     "base_bn": 4844.9,
+     "reserves_bn": 2895.2092000000002,
+     "currency_bn": 1887.3796,
+     "m2_yoy_pct": 16.924763601480052,
+     "cpi_yoy_pct": 0.3130472940411133,
+     "unrate_pct": 14.8
+    },
+    "2020-05": {
+     "base_bn": 5149.4,
+     "reserves_bn": 3214.3285,
+     "currency_bn": 1929.7285,
+     "m2_yoy_pct": 21.95916535176017,
+     "cpi_yoy_pct": 0.1982013035848551,
+     "unrate_pct": 13.2
+    },
+    "2020-06": {
+     "base_bn": 5001.8,
+     "reserves_bn": 3104.234,
+     "currency_bn": 1955.37,
+     "m2_yoy_pct": 22.84779847014624,
+     "cpi_yoy_pct": 0.7166562831830481,
+     "unrate_pct": 11.0
+    },
+    "2020-07": {
+     "base_bn": 4700.3,
+     "reserves_bn": 2744.6882,
+     "currency_bn": 1978.2678,
+     "m2_yoy_pct": 23.172542616595116,
+     "cpi_yoy_pct": 0.9968647625897997,
+     "unrate_pct": 10.2
+    },
+    "2020-08": {
+     "base_bn": 4807.4,
+     "reserves_bn": 2786.43175,
+     "currency_bn": 2004.5235,
+     "m2_yoy_pct": 22.965193930975538,
+     "cpi_yoy_pct": 1.2810698495523853,
+     "unrate_pct": 8.4
+    },
+    "2020-09": {
+     "base_bn": 4880.3,
+     "reserves_bn": 2852.9212,
+     "currency_bn": 2026.2462,
+     "m2_yoy_pct": 23.644266042851815,
+     "cpi_yoy_pct": 1.3910228912373812,
+     "unrate_pct": 7.8
+    },
+    "2020-10": {
+     "base_bn": 4917.1,
+     "reserves_bn": 2861.0125,
+     "currency_bn": 2040.20125,
+     "m2_yoy_pct": 23.537430197028762,
+     "cpi_yoy_pct": 1.2303863428671624,
+     "unrate_pct": 6.9
+    },
+    "2020-11": {
+     "base_bn": 5093.0,
+     "reserves_bn": 3017.59125,
+     "currency_bn": 2055.63325,
+     "m2_yoy_pct": 24.18814087691896,
+     "cpi_yoy_pct": 1.1757452138405844,
+     "unrate_pct": 6.7
+    },
+    "2020-12": {
+     "base_bn": 5206.5,
+     "reserves_bn": 3133.6448,
+     "currency_bn": 2070.5263999999997,
+     "m2_yoy_pct": 24.544181350356652,
+     "cpi_yoy_pct": 1.3204191315779434,
+     "unrate_pct": 6.7
+    },
+    "2021-01": {
+     "base_bn": 5248.0,
+     "reserves_bn": 3142.45825,
+     "currency_bn": 2093.5345,
+     "m2_yoy_pct": 25.60972447325769,
+     "cpi_yoy_pct": 1.3738437137002402,
+     "unrate_pct": 6.4
+    },
+    "2021-02": {
+     "base_bn": 5446.8,
+     "reserves_bn": 3299.991,
+     "currency_bn": 2100.21625,
+     "m2_yoy_pct": 26.777599917381,
+     "cpi_yoy_pct": 1.6698167791706853,
+     "unrate_pct": 6.2
+    },
+    "2021-03": {
+     "base_bn": 5839.0,
+     "reserves_bn": 3695.7394,
+     "currency_bn": 2115.2816000000003,
+     "m2_yoy_pct": 23.94913436112358,
+     "cpi_yoy_pct": 2.6678187820641908,
+     "unrate_pct": 6.1
+    },
+    "2021-04": {
+     "base_bn": 6042.1,
+     "reserves_bn": 3891.3715,
+     "currency_bn": 2154.81925,
+     "m2_yoy_pct": 18.2260900140647,
+     "cpi_yoy_pct": 4.133077115360573,
+     "unrate_pct": 6.1
+    },
+    "2021-05": {
+     "base_bn": 6041.9,
+     "reserves_bn": 3886.5695,
+     "currency_bn": 2167.934,
+     "m2_yoy_pct": 14.084397080064015,
+     "cpi_yoy_pct": 4.918257089467626,
+     "unrate_pct": 5.8
+    },
+    "2021-06": {
+     "base_bn": 6027.0,
+     "reserves_bn": 3843.4737999999998,
+     "currency_bn": 2178.8432000000003,
+     "m2_yoy_pct": 12.611111111111107,
+     "cpi_yoy_pct": 5.295632620349999,
+     "unrate_pct": 5.9
+    },
+    "2021-07": {
+     "base_bn": 6130.2,
+     "reserves_bn": 3932.73425,
+     "currency_bn": 2186.1175,
+     "m2_yoy_pct": 12.539140491179058,
+     "cpi_yoy_pct": 5.245169381309234,
+     "unrate_pct": 5.4
+    },
+    "2021-08": {
+     "base_bn": 6328.7,
+     "reserves_bn": 4112.63575,
+     "currency_bn": 2187.59575,
+     "m2_yoy_pct": 13.2007842157571,
+     "cpi_yoy_pct": 5.152015301793966,
+     "unrate_pct": 5.1
+    },
+    "2021-09": {
+     "base_bn": 6388.8,
+     "reserves_bn": 4199.5532,
+     "currency_bn": 2194.8217999999997,
+     "m2_yoy_pct": 12.794410104810549,
+     "cpi_yoy_pct": 5.351215590949132,
+     "unrate_pct": 4.7
+    },
+    "2021-10": {
+     "base_bn": 6330.9,
+     "reserves_bn": 4134.10925,
+     "currency_bn": 2202.38725,
+     "m2_yoy_pct": 12.81616639747547,
+     "cpi_yoy_pct": 6.235042390298062,
+     "unrate_pct": 4.5
+    },
+    "2021-11": {
+     "base_bn": 6394.7,
+     "reserves_bn": 4156.99725,
+     "currency_bn": 2211.54025,
+     "m2_yoy_pct": 12.306340251757675,
+     "cpi_yoy_pct": 6.901970403700863,
+     "unrate_pct": 4.1
+    },
+    "2021-12": {
+     "base_bn": 6413.1,
+     "reserves_bn": 4210.6614,
+     "currency_bn": 2223.8172000000004,
+     "m2_yoy_pct": 12.465872360011288,
+     "cpi_yoy_pct": 7.174340285065539,
+     "unrate_pct": 3.9
+    }
+   },
+   "quarterly": {
+    "2008Q3": {
+     "m2v": 1.904,
+     "ngdp_4q_growth_pct": 2.299363565947732
+    },
+    "2008Q4": {
+     "m2v": 1.81,
+     "ngdp_4q_growth_pct": -0.7261201416943086
+    },
+    "2009Q1": {
+     "m2v": 1.733,
+     "ngdp_4q_growth_pct": -1.8742412388286112
+    },
+    "2009Q2": {
+     "m2v": 1.705,
+     "ngdp_4q_growth_pct": -3.2589448691319634
+    },
+    "2009Q3": {
+     "m2v": 1.707,
+     "ngdp_4q_growth_pct": -3.021122425741485
+    },
+    "2009Q4": {
+     "m2v": 1.722,
+     "ngdp_4q_growth_pct": 0.2946288624430249
+    },
+    "2010Q1": {
+     "m2v": 1.736,
+     "ngdp_4q_growth_pct": 2.3124542041793372
+    },
+    "2010Q2": {
+     "m2v": 1.742,
+     "ngdp_4q_growth_pct": 4.16485064287937
+    },
+    "2010Q3": {
+     "m2v": 1.744,
+     "ngdp_4q_growth_pct": 4.794315574035424
+    },
+    "2010Q4": {
+     "m2v": 1.741,
+     "ngdp_4q_growth_pct": 4.492620390247959
+    },
+    "2011Q1": {
+     "m2v": 1.723,
+     "ngdp_4q_growth_pct": 3.9746258113150246
+    },
+    "2011Q2": {
+     "m2v": 1.708,
+     "ngdp_4q_growth_pct": 3.854062494388444
+    },
+    "2011Q3": {
+     "m2v": 1.651,
+     "ngdp_4q_growth_pct": 3.3422674356823556
+    },
+    "2011Q4": {
+     "m2v": 1.644,
+     "ngdp_4q_growth_pct": 3.480099969469874
+    },
+    "2012Q1": {
+     "m2v": 1.639,
+     "ngdp_4q_growth_pct": 4.6728947002263155
+    },
+    "2012Q2": {
+     "m2v": 1.627,
+     "ngdp_4q_growth_pct": 4.17531333201222
+    },
+    "2012Q3": {
+     "m2v": 1.608,
+     "ngdp_4q_growth_pct": 4.29367804045071
+    },
+    "2012Q4": {
+     "m2v": 1.582,
+     "ngdp_4q_growth_pct": 3.6494795344527597
+    },
+    "2013Q1": {
+     "m2v": 1.58,
+     "ngdp_4q_growth_pct": 3.605644601449809
+    },
+    "2013Q2": {
+     "m2v": 1.57,
+     "ngdp_4q_growth_pct": 3.2181668359853255
+    },
+    "2013Q3": {
+     "m2v": 1.569,
+     "ngdp_4q_growth_pct": 3.886733088877925
+    },
+    "2013Q4": {
+     "m2v": 1.56,
+     "ngdp_4q_growth_pct": 4.6990274730504655
+    },
+    "2014Q1": {
+     "m2v": 1.538,
+     "ngdp_4q_growth_pct": 3.3009536352572866
+    },
+    "2014Q2": {
+     "m2v": 1.545,
+     "ngdp_4q_growth_pct": 4.721356792675957
+    },
+    "2014Q3": {
+     "m2v": 1.55,
+     "ngdp_4q_growth_pct": 5.015914390594034
+    },
+    "2014Q4": {
+     "m2v": 1.537,
+     "ngdp_4q_growth_pct": 4.188338786735879
+    },
+    "2015Q1": {
+     "m2v": 1.52,
+     "ngdp_4q_growth_pct": 5.034330677673982
+    },
+    "2015Q2": {
+     "m2v": 1.525,
+     "ngdp_4q_growth_pct": 4.34555271487731
+    },
+    "2015Q3": {
+     "m2v": 1.519,
+     "ngdp_4q_growth_pct": 3.355371544332053
+    },
+    "2015Q4": {
+     "m2v": 1.497,
+     "ngdp_4q_growth_pct": 2.920141207505833
+    },
+    "2016Q1": {
+     "m2v": 1.471,
+     "ngdp_4q_growth_pct": 2.5598763120982637
+    },
+    "2016Q2": {
+     "m2v": 1.462,
+     "ngdp_4q_growth_pct": 2.362817853865229
+    },
+    "2016Q3": {
+     "m2v": 1.455,
+     "ngdp_4q_growth_pct": 2.6683131153736106
+    },
+    "2016Q4": {
+     "m2v": 1.447,
+     "ngdp_4q_growth_pct": 3.5488860212972817
+    },
+    "2017Q1": {
+     "m2v": 1.44,
+     "ngdp_4q_growth_pct": 4.070785530747623
+    },
+    "2017Q2": {
+     "m2v": 1.434,
+     "ngdp_4q_growth_pct": 3.884953918141698
+    },
+    "2017Q3": {
+     "m2v": 1.438,
+     "ngdp_4q_growth_pct": 4.234220534251465
+    },
+    "2017Q4": {
+     "m2v": 1.447,
+     "ngdp_4q_growth_pct": 4.964587899899731
+    },
+    "2018Q1": {
+     "m2v": 1.457,
+     "ngdp_4q_growth_pct": 5.438093526978416
+    },
+    "2018Q2": {
+     "m2v": 1.461,
+     "ngdp_4q_growth_pct": 5.876279532475603
+    },
+    "2018Q3": {
+     "m2v": 1.463,
+     "ngdp_4q_growth_pct": 5.617009845579002
+    },
+    "2018Q4": {
+     "m2v": 1.461,
+     "ngdp_4q_growth_pct": 4.395743533192031
+    },
+    "2019Q1": {
+     "m2v": 1.455,
+     "ngdp_4q_growth_pct": 3.851956408309043
+    },
+    "2019Q2": {
+     "m2v": 1.456,
+     "ngdp_4q_growth_pct": 3.9698240777668037
+    },
+    "2019Q3": {
+     "m2v": 1.451,
+     "ngdp_4q_growth_pct": 4.4158513524623855
+    },
+    "2019Q4": {
+     "m2v": 1.435,
+     "ngdp_4q_growth_pct": 4.853984395254085
+    },
+    "2020Q1": {
+     "m2v": 1.39,
+     "ngdp_4q_growth_pct": 3.029794046874712
+    },
+    "2020Q2": {
+     "m2v": 1.126,
+     "ngdp_4q_growth_pct": -6.727970704466935
+    },
+    "2020Q3": {
+     "m2v": 1.176,
+     "ngdp_4q_growth_pct": -0.058635629843306614
+    },
+    "2020Q4": {
+     "m2v": 1.165,
+     "ngdp_4q_growth_pct": 0.7018715038473289
+    },
+    "2021Q1": {
+     "m2v": 1.155,
+     "ngdp_4q_growth_pct": 4.273113098206172
+    },
+    "2021Q2": {
+     "m2v": 1.15,
+     "ngdp_4q_growth_pct": 17.3743282929385
+    },
+    "2021Q3": {
+     "m2v": 1.152,
+     "ngdp_4q_growth_pct": 10.49528260051158
+    },
+    "2021Q4": {
+     "m2v": 1.163,
+     "ngdp_4q_growth_pct": 12.344004389880814
+    }
+   }
+  },
+  "stretch": {
+   "monthly": {
+    "2022-01": {
+     "base_bn": 6103.9,
+     "reserves_bn": 3890.495,
+     "currency_bn": 2233.526,
+     "m2_yoy_pct": 11.726786165891646,
+     "cpi_yoy_pct": 7.558805726967832,
+     "unrate_pct": 4.0
+    },
+    "2022-02": {
+     "base_bn": 6039.9,
+     "reserves_bn": 3782.86675,
+     "currency_bn": 2231.9795,
+     "m2_yoy_pct": 10.611259889824542,
+     "cpi_yoy_pct": 7.937278766517819,
+     "unrate_pct": 3.9
+    },
+    "2022-03": {
+     "base_bn": 6134.3,
+     "reserves_bn": 3879.3742,
+     "currency_bn": 2257.4854,
+     "m2_yoy_pct": 9.628418324989308,
+     "cpi_yoy_pct": 8.572204966013853,
+     "unrate_pct": 3.7
+    },
+    "2022-04": {
+     "base_bn": 5885.0,
+     "reserves_bn": 3660.4775,
+     "currency_bn": 2269.63275,
+     "m2_yoy_pct": 7.902706936121073,
+     "cpi_yoy_pct": 8.231750770777225,
+     "unrate_pct": 3.7
+    },
+    "2022-05": {
+     "base_bn": 5591.3,
+     "reserves_bn": 3311.7985,
+     "currency_bn": 2272.07825,
+     "m2_yoy_pct": 6.16155444213613,
+     "cpi_yoy_pct": 8.538171195642065,
+     "unrate_pct": 3.6
+    },
+    "2022-06": {
+     "base_bn": 5506.3,
+     "reserves_bn": 3244.6064,
+     "currency_bn": 2277.936,
+     "m2_yoy_pct": 5.735931264562066,
+     "cpi_yoy_pct": 8.979361103105798,
+     "unrate_pct": 3.6
+    },
+    "2022-07": {
+     "base_bn": 5536.9,
+     "reserves_bn": 3251.3155,
+     "currency_bn": 2278.9125,
+     "m2_yoy_pct": 4.940378090159969,
+     "cpi_yoy_pct": 8.462576727730099,
+     "unrate_pct": 3.5
+    },
+    "2022-08": {
+     "base_bn": 5582.0,
+     "reserves_bn": 3301.9854,
+     "currency_bn": 2275.1728,
+     "m2_yoy_pct": 3.8279600844367767,
+     "cpi_yoy_pct": 8.222579178218826,
+     "unrate_pct": 3.6
+    },
+    "2022-09": {
+     "base_bn": 5411.1,
+     "reserves_bn": 3146.264,
+     "currency_bn": 2280.151,
+     "m2_yoy_pct": 2.6489845321032712,
+     "cpi_yoy_pct": 8.192106896425821,
+     "unrate_pct": 3.5
+    },
+    "2022-10": {
+     "base_bn": 5340.3,
+     "reserves_bn": 3048.917,
+     "currency_bn": 2284.461,
+     "m2_yoy_pct": 1.4174880222262098,
+     "cpi_yoy_pct": 7.758813957693,
+     "unrate_pct": 3.6
+    },
+    "2022-11": {
+     "base_bn": 5419.4,
+     "reserves_bn": 3117.7234,
+     "currency_bn": 2292.0484,
+     "m2_yoy_pct": 0.321448486240028,
+     "cpi_yoy_pct": 7.122856456533988,
+     "unrate_pct": 3.6
+    },
+    "2022-12": {
+     "base_bn": 5406.0,
+     "reserves_bn": 3123.548,
+     "currency_bn": 2297.93825,
+     "m2_yoy_pct": -0.9747567758617404,
+     "cpi_yoy_pct": 6.404600402357152,
+     "unrate_pct": 3.5
+    },
+    "2023-01": {
+     "base_bn": 5329.0,
+     "reserves_bn": 3022.6505,
+     "currency_bn": 2300.4595,
+     "m2_yoy_pct": -1.724918465958969,
+     "cpi_yoy_pct": 6.327178517960097,
+     "unrate_pct": 3.5
+    },
+    "2023-02": {
+     "base_bn": 5321.6,
+     "reserves_bn": 3027.67625,
+     "currency_bn": 2297.997,
+     "m2_yoy_pct": -2.2342305851161703,
+     "cpi_yoy_pct": 5.957820738137087,
+     "unrate_pct": 3.6
+    },
+    "2023-03": {
+     "base_bn": 5571.5,
+     "reserves_bn": 3222.4344,
+     "currency_bn": 2310.8437999999996,
+     "m2_yoy_pct": -3.8819355519756127,
+     "cpi_yoy_pct": 4.917719362889961,
+     "unrate_pct": 3.5
+    }
+   },
+   "quarterly": {
+    "2022Q1": {
+     "m2v": 1.163,
+     "ngdp_4q_growth_pct": 11.32969790649696
+    },
+    "2022Q2": {
+     "m2v": 1.191,
+     "ngdp_4q_growth_pct": 10.396104142805985
+    },
+    "2022Q3": {
+     "m2v": 1.219,
+     "ngdp_4q_growth_pct": 9.815227254977499
+    },
+    "2022Q4": {
+     "m2v": 1.252,
+     "ngdp_4q_growth_pct": 7.886457426572524
+    },
+    "2023Q1": {
+     "m2v": 1.287,
+     "ngdp_4q_growth_pct": 7.78641972722196
+    }
+   },
+   "note": "drawn on the web study's door figure only (the card); the decomposition and v/u end in 2023Q1"
+  },
+  "authors_figure_starts": "2019Q4 (code/Python/figure_12_13_decomposition.py); this card draws from 2020Q1, said",
+  "identity": "M2V is GDP over M2: velocity, nominal GDP and M2 are one fact, never three corroborations",
+  "annotations": {
+   "W1": [],
+   "W2": [
+    {
+     "month": "2020-03",
+     "label": "the lockdown orders and the CARES Act"
+    },
+    {
+     "month": "2021-03",
+     "label": "the American Rescue Plan"
+    }
+   ],
+   "stretch": [
+    {
+     "month": "2022-02",
+     "label": "Russia's invasion of Ukraine (24 February 2022)"
+    },
+    {
+     "month": "2022-03",
+     "label": "the Fed's first rise (FOMC statement, 16 March 2022)"
+    }
+   ]
+  },
+  "facts": {
+   "m2_feb_to_may_2020_pct": 15.743442115047014,
+   "m2_feb_to_may_2020_bn": 2439.100000000002,
+   "m2v_2020Q1": 1.39,
+   "m2v_2020Q2": 1.126,
+   "m2_growth_2021_dec_dec_pct": 12.465872360011288,
+   "m2v_2020Q4": 1.165,
+   "m2v_2021Q4": 1.163,
+   "ngdp_growth_2021_q4_q4_pct": 12.344004389880814,
+   "unrate": {
+    "2009-02": 8.3,
+    "2009-10": 10.0,
+    "2012-08": 8.1,
+    "2012-09": 7.8,
+    "2020-04": 14.8,
+    "2020-06": 11.0,
+    "2020-12": 6.7,
+    "2021-01": 6.4,
+    "2021-12": 3.9
+   },
+   "unrate_above_8_from_to": [
+    "2009-02",
+    "2012-08"
+   ],
+   "unrate_peak_W1": 10.0
+  },
+  "lag": "in moderate inflations, monetary policy's peak effect on prices has come more than a year later (Batini & Nelson 2002, pp. 1-2; p. 7, no stand on money's special role)",
+  "caption": "Blanchard & Bernanke's decomposition, as theirs: their model has no money variable; demand from fiscal and monetary policy enters through v/u and, in their reading, through the price shocks themselves (p. 39). BIS 67 weighs the money more; Barro & Bianchi find the fiscal surge a key driver of inflation across OECD countries, an estimated four-fifths of it paid for by inflation eroding the public debt (K5)."
+ }
+}

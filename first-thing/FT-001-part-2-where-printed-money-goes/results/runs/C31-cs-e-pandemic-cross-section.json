@@ -1,0 +1,1452 @@
+{
+  "card": "C31-cs-e-pandemic-cross-section",
+  "card_hash": "7a4412bebdb2824849698e3e3b07d41a1a7ea0556bbe499c095bdb3cb1657a33",
+  "run_at": "2026-10-08T16:02:18+00:00",
+  "result": {
+    "coverage": {
+      "dropped": {
+        "euro member, enters as the euro area": [
+          "EE",
+          "LT",
+          "LV",
+          "SK"
+        ],
+        "no broad money at every year-end": [
+          "AF",
+          "AN",
+          "BH",
+          "CA",
+          "CD",
+          "CH",
+          "CM",
+          "ER",
+          "ET",
+          "GA",
+          "HR",
+          "IR",
+          "LA",
+          "LB",
+          "LK",
+          "LR",
+          "LS",
+          "MM",
+          "MR",
+          "OM",
+          "PA",
+          "PG",
+          "RU",
+          "SA",
+          "SD",
+          "SG",
+          "SM",
+          "SO",
+          "SY",
+          "VE",
+          "YE"
+        ],
+        "units guard": [],
+        "no price at both dates": [
+          "AR",
+          "AW",
+          "KM",
+          "NP",
+          "SZ",
+          "TJ",
+          "ZW"
+        ]
+      },
+      "lacking_the_outcome_price": [
+        "AR",
+        "AW",
+        "KM",
+        "NP",
+        "SZ",
+        "TJ",
+        "ZW"
+      ],
+      "entering": 126
+    },
+    "calm_start_unknown": [
+      "SR"
+    ],
+    "main_set": [
+      "AE",
+      "AG",
+      "AI",
+      "AL",
+      "AM",
+      "AU",
+      "AZ",
+      "BA",
+      "BB",
+      "BD",
+      "BF",
+      "BG",
+      "BI",
+      "BJ",
+      "BN",
+      "BO",
+      "BR",
+      "BS",
+      "BT",
+      "BW",
+      "BY",
+      "BZ",
+      "CF",
+      "CG",
+      "CI",
+      "CL",
+      "CN",
+      "CO",
+      "CR",
+      "CV",
+      "CZ",
+      "DJ",
+      "DK",
+      "DM",
+      "DO",
+      "DZ",
+      "FJ",
+      "GB",
+      "GD",
+      "GE",
+      "GM",
+      "GN",
+      "GQ",
+      "GT",
+      "GW",
+      "GY",
+      "HK",
+      "HN",
+      "HU",
+      "ID",
+      "IL",
+      "IN",
+      "IQ",
+      "IS",
+      "JM",
+      "JO",
+      "JP",
+      "KE",
+      "KG",
+      "KH",
+      "KN",
+      "KR",
+      "KW",
+      "KZ",
+      "LC",
+      "MA",
+      "MD",
+      "MG",
+      "MK",
+      "ML",
+      "MN",
+      "MO",
+      "MS",
+      "MU",
+      "MV",
+      "MX",
+      "MY",
+      "MZ",
+      "NA",
+      "NE",
+      "NI",
+      "NO",
+      "NZ",
+      "PE",
+      "PH",
+      "PK",
+      "PL",
+      "PY",
+      "QA",
+      "RO",
+      "RS",
+      "RW",
+      "SB",
+      "SC",
+      "SE",
+      "SN",
+      "ST",
+      "TD",
+      "TG",
+      "TH",
+      "TN",
+      "TO",
+      "TT",
+      "TZ",
+      "U2",
+      "UG",
+      "UY",
+      "VC",
+      "VN",
+      "VU",
+      "WS",
+      "ZA"
+    ],
+    "control_missing": [
+      "AG",
+      "AI",
+      "BB",
+      "BF",
+      "BI",
+      "BS",
+      "BT",
+      "BZ",
+      "CF",
+      "CV",
+      "DJ",
+      "DM",
+      "FJ",
+      "GD",
+      "GM",
+      "GN",
+      "GW",
+      "GY",
+      "IS",
+      "KH",
+      "KN",
+      "LC",
+      "MG",
+      "ML",
+      "MO",
+      "MS",
+      "MU",
+      "MV",
+      "SB",
+      "SC",
+      "ST",
+      "TG",
+      "TO",
+      "VC",
+      "VU",
+      "WS"
+    ],
+    "main": {
+      "n": 76,
+      "clusters": 71,
+      "huber": 0.27430507069551247,
+      "huber_boot": {
+        "lo": 0.10469244950063147,
+        "hi": 0.475934686099399,
+        "half_width": 0.18562111829938377,
+        "draws_used": 2000,
+        "skipped": 0
+      },
+      "reading": "effect",
+      "refuted": false,
+      "ols": 0.3108227326256999,
+      "ols_boot": {
+        "lo": 0.1403225984263771,
+        "hi": 0.49700540218442724,
+        "half_width": 0.17834140187902509,
+        "draws_used": 2000,
+        "skipped": 0
+      },
+      "ols_reading": "effect",
+      "readings_differ": false,
+      "downweighted": [
+        {
+          "area": "PK",
+          "weight": 0.2658162799770514,
+          "residual_sign": "+",
+          "money_growth_vs_mean": 1.579340574098266
+        },
+        {
+          "area": "RW",
+          "weight": 0.5475030031238449,
+          "residual_sign": "+",
+          "money_growth_vs_mean": 7.459338311101487
+        },
+        {
+          "area": "MD",
+          "weight": 0.5812301272738656,
+          "residual_sign": "+",
+          "money_growth_vs_mean": 3.6781082431100725
+        },
+        {
+          "area": "BJ",
+          "weight": 0.7193022421441891,
+          "residual_sign": "-",
+          "money_growth_vs_mean": 5.047631123580258
+        },
+        {
+          "area": "KZ",
+          "weight": 0.7813979204171944,
+          "residual_sign": "+",
+          "money_growth_vs_mean": 6.5990880279190165
+        },
+        {
+          "area": "CN",
+          "weight": 0.8489107431317738,
+          "residual_sign": "-",
+          "money_growth_vs_mean": -1.523565304970882
+        },
+        {
+          "area": "HU",
+          "weight": 0.8787387609038404,
+          "residual_sign": "+",
+          "money_growth_vs_mean": 7.416099448803671
+        },
+        {
+          "area": "CZ",
+          "weight": 0.926480259631591,
+          "residual_sign": "+",
+          "money_growth_vs_mean": -2.6181580974910794
+        },
+        {
+          "area": "MK",
+          "weight": 0.9833758070650499,
+          "residual_sign": "+",
+          "money_growth_vs_mean": -2.5733375594602563
+        },
+        {
+          "area": "AE",
+          "weight": 1.0,
+          "residual_sign": "-",
+          "money_growth_vs_mean": -5.599333655082499
+        }
+      ]
+    },
+    "main_no_control": {
+      "n": 112,
+      "clusters": 95,
+      "huber": 0.2158216391686193,
+      "huber_boot": {
+        "lo": 0.07856260626901017,
+        "hi": 0.3789217024103306,
+        "half_width": 0.1501795480706602,
+        "draws_used": 2000,
+        "skipped": 0
+      },
+      "reading": "bounded",
+      "refuted": false,
+      "ols": 0.2506840440667688,
+      "ols_boot": {
+        "lo": 0.09966105333038332,
+        "hi": 0.4239880773320444,
+        "half_width": 0.16216351200083054,
+        "draws_used": 2000,
+        "skipped": 0
+      },
+      "ols_reading": "bounded",
+      "readings_differ": false,
+      "downweighted": [
+        {
+          "area": "PK",
+          "weight": 0.2406388852182543,
+          "residual_sign": "+",
+          "money_growth_vs_mean": 2.3779341543133405
+        },
+        {
+          "area": "ST",
+          "weight": 0.2902863076165871,
+          "residual_sign": "+",
+          "money_growth_vs_mean": -6.115940309388496
+        },
+        {
+          "area": "BI",
+          "weight": 0.3297005095213793,
+          "residual_sign": "+",
+          "money_growth_vs_mean": 10.216398818754632
+        },
+        {
+          "area": "RW",
+          "weight": 0.46917195591305044,
+          "residual_sign": "+",
+          "money_growth_vs_mean": 8.257931891316561
+        },
+        {
+          "area": "MD",
+          "weight": 0.5098327717483723,
+          "residual_sign": "+",
+          "money_growth_vs_mean": 4.476701823325147
+        },
+        {
+          "area": "KZ",
+          "weight": 0.6550508063273459,
+          "residual_sign": "+",
+          "money_growth_vs_mean": 7.397681608134091
+        },
+        {
+          "area": "SC",
+          "weight": 0.6716309515850966,
+          "residual_sign": "-",
+          "money_growth_vs_mean": -0.41867460860458294
+        },
+        {
+          "area": "GM",
+          "weight": 0.6841098380239091,
+          "residual_sign": "+",
+          "money_growth_vs_mean": 10.145915107487342
+        },
+        {
+          "area": "BJ",
+          "weight": 0.7114654362723412,
+          "residual_sign": "-",
+          "money_growth_vs_mean": 5.8462247037953325
+        },
+        {
+          "area": "HU",
+          "weight": 0.7245892061466391,
+          "residual_sign": "+",
+          "money_growth_vs_mean": 8.214693029018745
+        }
+      ]
+    },
+    "variants": {
+      "a_currency": {
+        "n": 76,
+        "clusters": 71,
+        "huber": 0.24607462777139094,
+        "huber_boot": {
+          "lo": 0.0734052701704832,
+          "hi": 0.46233740354221536,
+          "half_width": 0.19446606668586608,
+          "draws_used": 2000,
+          "skipped": 0
+        },
+        "reading": "bounded",
+        "refuted": false
+      },
+      "b_led": {
+        "n": 76,
+        "clusters": 71,
+        "huber": 0.1437325095168057,
+        "huber_boot": {
+          "lo": 0.03757537559185052,
+          "hi": 0.2899407293621966,
+          "half_width": 0.12618267688517304,
+          "draws_used": 2000,
+          "skipped": 0
+        },
+        "reading": "bounded",
+        "refuted": false
+      },
+      "c_momentum": {
+        "n": 76,
+        "clusters": 71,
+        "huber": 0.09995791549162208,
+        "huber_boot": {
+          "lo": -0.04538460664146479,
+          "hi": 0.3306848620633609,
+          "half_width": 0.18803473435241286,
+          "draws_used": 2000,
+          "skipped": 0
+        },
+        "reading": "bounded",
+        "refuted": false
+      },
+      "d_net_claims": {
+        "n": 62,
+        "clusters": 57,
+        "huber": 0.22634216073937452,
+        "huber_boot": {
+          "lo": 0.08323132730000057,
+          "hi": 0.5005153155434501,
+          "half_width": 0.20864199412172474,
+          "draws_used": 2000,
+          "skipped": 0
+        },
+        "reading": "bounded",
+        "refuted": false,
+        "dropped_nonpositive": []
+      },
+      "e_no_hard_pegs": {
+        "n": 72,
+        "clusters": 67,
+        "huber": 0.24473604703616994,
+        "huber_boot": {
+          "lo": 0.08068797711995544,
+          "hi": 0.462522272686346,
+          "half_width": 0.19091714778319527,
+          "draws_used": 2000,
+          "skipped": 0
+        },
+        "reading": "bounded",
+        "refuted": false
+      },
+      "f_annual": {
+        "n": 76,
+        "clusters": 71,
+        "huber": 0.3214964466005383,
+        "huber_boot": {
+          "lo": 0.13543009948847987,
+          "hi": 0.5314988431300535,
+          "half_width": 0.19803437182078681,
+          "draws_used": 2000,
+          "skipped": 0
+        },
+        "reading": "effect",
+        "refuted": false
+      },
+      "g_all": {
+        "n": 87,
+        "clusters": 82,
+        "huber": 0.3983020143409123,
+        "huber_boot": {
+          "lo": 0.075649193115721,
+          "hi": 0.8027704036433982,
+          "half_width": 0.3635606052638386,
+          "draws_used": 2000,
+          "skipped": 0
+        },
+        "reading": "bounded",
+        "refuted": false
+      }
+    },
+    "h_base_described": {
+      "huber": 0.02047721811433969,
+      "ols": 0.027637043116277717,
+      "huber_boot": {
+        "lo": -0.019014976960614313,
+        "hi": 0.09847458579830883,
+        "half_width": 0.05874478137946157,
+        "draws_used": 2000,
+        "skipped": 0
+      },
+      "cor_broad": 0.38454777265882933,
+      "cor_base": 0.12176222421754582,
+      "n": 75,
+      "base_growth": {
+        "share_of_variance_top5": 0.6357503104722181,
+        "top5": [
+          "SE",
+          "NZ",
+          "NO",
+          "DK",
+          "MN"
+        ],
+        "sd": 13.328044945219702
+      },
+      "c15_flags": {
+        "DK": "C15 flags Denmark's window holding March 2021 as a likely reclassification, unread"
+      },
+      "series": {
+        "FASMB_XDC": 71,
+        "14____XDC": 4
+      },
+      "dcor_broad_minus_base": 0.26278554844128355
+    },
+    "leave_one_out": [
+      {
+        "dropped": "AE",
+        "huber": 0.2666930679151495,
+        "lo": 0.10243358519427888,
+        "hi": 0.47548396035432466,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.3047189489877996
+      },
+      {
+        "dropped": "AL",
+        "huber": 0.2748746656454098,
+        "lo": 0.10907364530398364,
+        "hi": 0.48154242046636747,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.3097840994880292
+      },
+      {
+        "dropped": "AM",
+        "huber": 0.27317769476721293,
+        "lo": 0.1043731193823492,
+        "hi": 0.4840172375931112,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.308692555481663
+      },
+      {
+        "dropped": "AU",
+        "huber": 0.275500130214313,
+        "lo": 0.10858840750894452,
+        "hi": 0.48490519461841075,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.31104062445322705
+      },
+      {
+        "dropped": "AZ",
+        "huber": 0.27382240587414575,
+        "lo": 0.10509607955341208,
+        "hi": 0.48490519461841075,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.31026970077360605
+      },
+      {
+        "dropped": "BA",
+        "huber": 0.2766372425871094,
+        "lo": 0.10897129056565946,
+        "hi": 0.48779749950133416,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.31330225318230875
+      },
+      {
+        "dropped": "BD",
+        "huber": 0.27223005709559256,
+        "lo": 0.10795039211081264,
+        "hi": 0.4833184402776256,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.3116946978003522
+      },
+      {
+        "dropped": "BG",
+        "huber": 0.2729340950456429,
+        "lo": 0.11021708058286865,
+        "hi": 0.4846503933278205,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.31305389540394923
+      },
+      {
+        "dropped": "BN",
+        "huber": 0.2605850921848083,
+        "lo": 0.0958079167648206,
+        "hi": 0.4791838974277873,
+        "reading": "bounded",
+        "moves": true,
+        "ols": 0.30108532593145276
+      },
+      {
+        "dropped": "BO",
+        "huber": 0.26763520173014754,
+        "lo": 0.10437800982621055,
+        "hi": 0.4859793594076113,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.3051961190675172
+      },
+      {
+        "dropped": "BR",
+        "huber": 0.2804574234382374,
+        "lo": 0.11704825474518832,
+        "hi": 0.5029357056861548,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.31577338960629964
+      },
+      {
+        "dropped": "BW",
+        "huber": 0.28374013145768334,
+        "lo": 0.12338321276462204,
+        "hi": 0.5057322545510587,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.3209838243740717
+      },
+      {
+        "dropped": "BY",
+        "huber": 0.28875956364852606,
+        "lo": 0.13140377265078446,
+        "hi": 0.5116587166942163,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.325804119488873
+      },
+      {
+        "dropped": "CEMAC",
+        "huber": 0.28811494282009176,
+        "lo": 0.11041758753449094,
+        "hi": 0.5291192686992986,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.3282811309950183
+      },
+      {
+        "dropped": "CL",
+        "huber": 0.27466895066682473,
+        "lo": 0.11066885281104377,
+        "hi": 0.5012749209056687,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.3116034937453636
+      },
+      {
+        "dropped": "CN",
+        "huber": 0.26954468990109537,
+        "lo": 0.10662918788443672,
+        "hi": 0.4884923154774679,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.3035244147627796
+      },
+      {
+        "dropped": "CO",
+        "huber": 0.2627065118814884,
+        "lo": 0.10772290203457434,
+        "hi": 0.4821258960538333,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.3052999713643525
+      },
+      {
+        "dropped": "CR",
+        "huber": 0.28074847627778843,
+        "lo": 0.11957126360616765,
+        "hi": 0.5020152406307781,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.31389577989726003
+      },
+      {
+        "dropped": "CZ",
+        "huber": 0.2810556106001384,
+        "lo": 0.12620928563224224,
+        "hi": 0.5032738203248378,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.3210606646974735
+      },
+      {
+        "dropped": "DK",
+        "huber": 0.2744851636166773,
+        "lo": 0.10606261725875166,
+        "hi": 0.49811549135038513,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.3097600841235733
+      },
+      {
+        "dropped": "DO",
+        "huber": 0.2849586718025946,
+        "lo": 0.11934657787195632,
+        "hi": 0.5113875788303369,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.32034301162515066
+      },
+      {
+        "dropped": "DZ",
+        "huber": 0.2741068971260624,
+        "lo": 0.10994769283299816,
+        "hi": 0.49005008255159793,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.3108192132254066
+      },
+      {
+        "dropped": "GB",
+        "huber": 0.27540354344728657,
+        "lo": 0.11240437360878211,
+        "hi": 0.49062465778103015,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.3109843611447495
+      },
+      {
+        "dropped": "GE",
+        "huber": 0.2898930794184369,
+        "lo": 0.1219049206434136,
+        "hi": 0.5122264377936152,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.3251095958212995
+      },
+      {
+        "dropped": "GT",
+        "huber": 0.27579276875998504,
+        "lo": 0.11239059007709991,
+        "hi": 0.4866138023279911,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.3113068600334495
+      },
+      {
+        "dropped": "HK",
+        "huber": 0.25557098905058345,
+        "lo": 0.09013325914596342,
+        "hi": 0.4741484527760624,
+        "reading": "bounded",
+        "moves": true,
+        "ols": 0.2944652501358058
+      },
+      {
+        "dropped": "HN",
+        "huber": 0.27518179108314256,
+        "lo": 0.10792158281505743,
+        "hi": 0.4896139373908455,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.3112779103007491
+      },
+      {
+        "dropped": "HU",
+        "huber": 0.24671259036280174,
+        "lo": 0.09009335358922776,
+        "hi": 0.4590590856868065,
+        "reading": "bounded",
+        "moves": true,
+        "ols": 0.28960093883416715
+      },
+      {
+        "dropped": "ID",
+        "huber": 0.28167916897951223,
+        "lo": 0.10796896903693322,
+        "hi": 0.5006715751032632,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.3161773900142538
+      },
+      {
+        "dropped": "IL",
+        "huber": 0.29493429964605833,
+        "lo": 0.12496297747690224,
+        "hi": 0.5099230372131974,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.32967653877034786
+      },
+      {
+        "dropped": "IN",
+        "huber": 0.2760164367926766,
+        "lo": 0.10909888663071038,
+        "hi": 0.4889602652343568,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.31085188063646224
+      },
+      {
+        "dropped": "IQ",
+        "huber": 0.2955372537193065,
+        "lo": 0.12435750289438226,
+        "hi": 0.516694620463291,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.33210823906988535
+      },
+      {
+        "dropped": "JM",
+        "huber": 0.2747624161761425,
+        "lo": 0.1056238383027786,
+        "hi": 0.4967505137191078,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.31139592006441413
+      },
+      {
+        "dropped": "JO",
+        "huber": 0.26390551293483383,
+        "lo": 0.09269820376804612,
+        "hi": 0.48468170111355086,
+        "reading": "bounded",
+        "moves": true,
+        "ols": 0.301507978252708
+      },
+      {
+        "dropped": "JP",
+        "huber": 0.26832620100034665,
+        "lo": 0.092046665969664,
+        "hi": 0.48878727326117516,
+        "reading": "bounded",
+        "moves": true,
+        "ols": 0.30260705911503877
+      },
+      {
+        "dropped": "KE",
+        "huber": 0.27598794045655417,
+        "lo": 0.10598249213009181,
+        "hi": 0.49240606360313366,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.31233977264700435
+      },
+      {
+        "dropped": "KG",
+        "huber": 0.2642752926467273,
+        "lo": 0.08727896271122348,
+        "hi": 0.5004196138583392,
+        "reading": "bounded",
+        "moves": true,
+        "ols": 0.30587469646436716
+      },
+      {
+        "dropped": "KR",
+        "huber": 0.2736343579916102,
+        "lo": 0.10492075782438023,
+        "hi": 0.49159364334236033,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.30923812056774486
+      },
+      {
+        "dropped": "KW",
+        "huber": 0.27635677575962936,
+        "lo": 0.10177205245471352,
+        "hi": 0.5116186623550557,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.3142837352505979
+      },
+      {
+        "dropped": "KZ",
+        "huber": 0.24429935505766107,
+        "lo": 0.09125177058107904,
+        "hi": 0.44067382739910743,
+        "reading": "bounded",
+        "moves": true,
+        "ols": 0.28295664119215047
+      },
+      {
+        "dropped": "MA",
+        "huber": 0.27615073895241987,
+        "lo": 0.11229979390650183,
+        "hi": 0.48234197795799044,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.3115616562407122
+      },
+      {
+        "dropped": "MD",
+        "huber": 0.2594780219086558,
+        "lo": 0.10267547026919806,
+        "hi": 0.46239296653010764,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.29699920876581326
+      },
+      {
+        "dropped": "MK",
+        "huber": 0.28115081665805725,
+        "lo": 0.11861953408725008,
+        "hi": 0.48728602529171233,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.3207604724213
+      },
+      {
+        "dropped": "MN",
+        "huber": 0.25857986346653905,
+        "lo": 0.0980664963232162,
+        "hi": 0.48071147485453797,
+        "reading": "bounded",
+        "moves": true,
+        "ols": 0.30236432415995157
+      },
+      {
+        "dropped": "MX",
+        "huber": 0.2754986489712334,
+        "lo": 0.11125897226214906,
+        "hi": 0.48194735487594265,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.31072862313395394
+      },
+      {
+        "dropped": "MY",
+        "huber": 0.2629023097465924,
+        "lo": 0.09680065862303304,
+        "hi": 0.4722808445570468,
+        "reading": "bounded",
+        "moves": true,
+        "ols": 0.301165523328804
+      },
+      {
+        "dropped": "MZ",
+        "huber": 0.2737312566255461,
+        "lo": 0.11002429626885085,
+        "hi": 0.4786271779276062,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.31017891549403676
+      },
+      {
+        "dropped": "NA",
+        "huber": 0.27608631355464397,
+        "lo": 0.11251091770436795,
+        "hi": 0.48381599784861906,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.31156017783346035
+      },
+      {
+        "dropped": "NI",
+        "huber": 0.2731320631872933,
+        "lo": 0.10590418967129549,
+        "hi": 0.4801811867380898,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.30998277060297474
+      },
+      {
+        "dropped": "NO",
+        "huber": 0.2797381163455861,
+        "lo": 0.11381852934053213,
+        "hi": 0.48954525220862943,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.3166261364103217
+      },
+      {
+        "dropped": "NZ",
+        "huber": 0.2753131622774706,
+        "lo": 0.11440188986753272,
+        "hi": 0.47966484805809045,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.31077096895371126
+      },
+      {
+        "dropped": "PE",
+        "huber": 0.2891151762358197,
+        "lo": 0.12248470230862789,
+        "hi": 0.507264244328891,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.32546468192222994
+      },
+      {
+        "dropped": "PH",
+        "huber": 0.2752740660200197,
+        "lo": 0.1101680017549521,
+        "hi": 0.48483117645760493,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.31053880757156904
+      },
+      {
+        "dropped": "PK",
+        "huber": 0.2656009922235493,
+        "lo": 0.10775028147506283,
+        "hi": 0.4796335236247185,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.29878212280948513
+      },
+      {
+        "dropped": "PL",
+        "huber": 0.2673855215760384,
+        "lo": 0.1095595075423387,
+        "hi": 0.48371567875434834,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.30929093516222883
+      },
+      {
+        "dropped": "PY",
+        "huber": 0.27782185429239564,
+        "lo": 0.11321565382176244,
+        "hi": 0.49532334194008953,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.31303219373217056
+      },
+      {
+        "dropped": "QA",
+        "huber": 0.27232487208217954,
+        "lo": 0.11171009564820375,
+        "hi": 0.49139047955965337,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.3091789575477262
+      },
+      {
+        "dropped": "RO",
+        "huber": 0.26047511609251417,
+        "lo": 0.10295722526524569,
+        "hi": 0.4804864648951317,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.3043630387346935
+      },
+      {
+        "dropped": "RS",
+        "huber": 0.260608269810741,
+        "lo": 0.1029142498062228,
+        "hi": 0.4809679925028268,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.304454702789254
+      },
+      {
+        "dropped": "RW",
+        "huber": 0.24547061009148258,
+        "lo": 0.09368731820684031,
+        "hi": 0.43775093844106916,
+        "reading": "bounded",
+        "moves": true,
+        "ols": 0.27223967292327644
+      },
+      {
+        "dropped": "SE",
+        "huber": 0.273609168814032,
+        "lo": 0.11097987437386046,
+        "hi": 0.4902817549692826,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.31025425721880134
+      },
+      {
+        "dropped": "TH",
+        "huber": 0.2647152749776782,
+        "lo": 0.10229782940873434,
+        "hi": 0.4800019517708804,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.3017511684281652
+      },
+      {
+        "dropped": "TN",
+        "huber": 0.2760754723325478,
+        "lo": 0.11440360102523117,
+        "hi": 0.5042576605732421,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.31460899790321983
+      },
+      {
+        "dropped": "TT",
+        "huber": 0.2745799738246556,
+        "lo": 0.1063272249474014,
+        "hi": 0.4914853957728624,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.31005330112981433
+      },
+      {
+        "dropped": "TZ",
+        "huber": 0.2730596355846332,
+        "lo": 0.10482079183533385,
+        "hi": 0.49293168984459423,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.3089784627132083
+      },
+      {
+        "dropped": "U2",
+        "huber": 0.27505360787621586,
+        "lo": 0.11035652173487627,
+        "hi": 0.4898969896069302,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.3101870254886862
+      },
+      {
+        "dropped": "UG",
+        "huber": 0.2752622261552749,
+        "lo": 0.11093608960335365,
+        "hi": 0.4912048763258669,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.31058454734172647
+      },
+      {
+        "dropped": "UY",
+        "huber": 0.28826596650766706,
+        "lo": 0.11832866898452378,
+        "hi": 0.5257588074444245,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.3253394379669273
+      },
+      {
+        "dropped": "VN",
+        "huber": 0.27500931885121765,
+        "lo": 0.10666630271058251,
+        "hi": 0.49964622222916383,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.3104508039010876
+      },
+      {
+        "dropped": "WAEMU",
+        "huber": 0.3234104798904515,
+        "lo": 0.17740716467665882,
+        "hi": 0.5333410778267795,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.3618712896849132
+      },
+      {
+        "dropped": "ZA",
+        "huber": 0.27624267387503987,
+        "lo": 0.11241165511073609,
+        "hi": 0.49427504459647476,
+        "reading": "effect",
+        "moves": false,
+        "ols": 0.31196688351008306
+      }
+    ],
+    "null": {
+      "draws": 2000,
+      "p_value_one_sided": 0.0,
+      "false_confirmation_rate": 0.001
+    },
+    "q6": {
+      "coverage": {
+        "dropped": {
+          "euro member or joiner inside the money window: the euro area is left out of Q6": [
+            "SK"
+          ],
+          "no broad money at every year-end": [
+            "CA",
+            "ET",
+            "HR",
+            "LT",
+            "LV",
+            "PA",
+            "SM",
+            "SO",
+            "SS",
+            "UZ",
+            "ZW"
+          ],
+          "units guard": [],
+          "no price at both dates": [
+            "AN",
+            "AR",
+            "ER",
+            "NP"
+          ]
+        },
+        "lacking_the_outcome_price": [
+          "AN",
+          "AR",
+          "ER",
+          "NP"
+        ],
+        "entering": 151
+      },
+      "main_set": [
+        "AG",
+        "AI",
+        "AL",
+        "AM",
+        "AU",
+        "AW",
+        "AZ",
+        "BB",
+        "BD",
+        "BF",
+        "BG",
+        "BH",
+        "BI",
+        "BJ",
+        "BN",
+        "BO",
+        "BR",
+        "BS",
+        "BT",
+        "BW",
+        "BZ",
+        "CF",
+        "CG",
+        "CH",
+        "CI",
+        "CL",
+        "CM",
+        "CN",
+        "CO",
+        "CV",
+        "CZ",
+        "DJ",
+        "DK",
+        "DM",
+        "DZ",
+        "EE",
+        "EG",
+        "FJ",
+        "GA",
+        "GB",
+        "GD",
+        "GE",
+        "GM",
+        "GQ",
+        "GT",
+        "GW",
+        "GY",
+        "HK",
+        "HN",
+        "HU",
+        "ID",
+        "IL",
+        "IN",
+        "IS",
+        "JO",
+        "JP",
+        "KG",
+        "KH",
+        "KM",
+        "KN",
+        "KR",
+        "KW",
+        "KZ",
+        "LA",
+        "LC",
+        "LR",
+        "LS",
+        "LY",
+        "MA",
+        "MK",
+        "ML",
+        "MN",
+        "MO",
+        "MR",
+        "MS",
+        "MU",
+        "MV",
+        "MX",
+        "MY",
+        "NA",
+        "NE",
+        "NI",
+        "NO",
+        "NZ",
+        "OM",
+        "PE",
+        "PG",
+        "PH",
+        "PK",
+        "PL",
+        "PY",
+        "QA",
+        "RO",
+        "RW",
+        "SA",
+        "SB",
+        "SC",
+        "SD",
+        "SE",
+        "SG",
+        "SN",
+        "SY",
+        "SZ",
+        "TD",
+        "TG",
+        "TH",
+        "TN",
+        "TO",
+        "TT",
+        "TZ",
+        "UA",
+        "UG",
+        "UY",
+        "VC",
+        "VN",
+        "VU",
+        "WS",
+        "ZA"
+      ],
+      "read": {
+        "n": 76,
+        "clusters": 69,
+        "huber": 0.21660679670706467,
+        "huber_boot": {
+          "lo": 0.1241304623967292,
+          "hi": 0.41093199124162655,
+          "half_width": 0.14340076442244867,
+          "draws_used": 2000,
+          "skipped": 0
+        },
+        "reading": "effect",
+        "refuted": false,
+        "ols": 0.2614557802463922,
+        "ols_boot": {
+          "lo": 0.15369180796444865,
+          "hi": 0.4118226154116799,
+          "half_width": 0.12906540372361563,
+          "draws_used": 2000,
+          "skipped": 0
+        },
+        "ols_reading": "effect",
+        "readings_differ": false,
+        "downweighted": [
+          {
+            "area": "SD",
+            "weight": 0.3208328229917308,
+            "residual_sign": "+",
+            "money_growth_vs_mean": 6.413546178980276
+          },
+          {
+            "area": "VN",
+            "weight": 0.44214506604249293,
+            "residual_sign": "+",
+            "money_growth_vs_mean": 9.229549045894998
+          },
+          {
+            "area": "PK",
+            "weight": 0.44777033652497733,
+            "residual_sign": "+",
+            "money_growth_vs_mean": -0.5536000089967601
+          },
+          {
+            "area": "LY",
+            "weight": 0.47563385688316845,
+            "residual_sign": "+",
+            "money_growth_vs_mean": 16.205410198963424
+          },
+          {
+            "area": "MN",
+            "weight": 0.5083770123590683,
+            "residual_sign": "+",
+            "money_growth_vs_mean": -2.744006695137127
+          },
+          {
+            "area": "KG",
+            "weight": 0.5129936180152487,
+            "residual_sign": "+",
+            "money_growth_vs_mean": 1.9415021654180347
+          },
+          {
+            "area": "EG",
+            "weight": 0.6081864548796871,
+            "residual_sign": "+",
+            "money_growth_vs_mean": -2.3144260447766456
+          },
+          {
+            "area": "UG",
+            "weight": 0.6087167770935762,
+            "residual_sign": "+",
+            "money_growth_vs_mean": 9.666525624085288
+          },
+          {
+            "area": "RW",
+            "weight": 0.753118347086982,
+            "residual_sign": "-",
+            "money_growth_vs_mean": -1.9759506957018278
+          },
+          {
+            "area": "BH",
+            "weight": 0.7540051142951368,
+            "residual_sign": "-",
+            "money_growth_vs_mean": -0.0180573956782748
+          }
+        ],
+        "prediction": "a positive Huber slope whose bootstrap interval's lower end is above 0",
+        "prediction_holds": true
+      },
+      "calm_start_unknown": [
+        "AE",
+        "AF",
+        "BA",
+        "GN",
+        "LB",
+        "MZ",
+        "SL",
+        "VE"
+      ],
+      "null": {
+        "draws": 2000,
+        "p_value_one_sided": 0.0,
+        "prediction_met_under_null": 0.034
+      }
+    },
+    "broad_growth": {
+      "share_of_variance_top5": 0.26997649116340283,
+      "top5": [
+        "AI",
+        "DM",
+        "MS",
+        "GQ",
+        "KW"
+      ],
+      "sd": 5.752802375031265
+    },
+    "calibration": "Huber about +-0.075 to 0.15 by cluster bootstrap on past cross-sections; OLS up to +-1.2 with one crisis economy",
+    "beside": {
+      "bis67": "0.29: excess broad money Q4 2019 to Q4 2020, 30 economies, inflation to Q3 2022",
+      "cannot_separate": "the money from the fiscal demand that carried it (BIS 67 p. 5)"
+    }
+  }
+}

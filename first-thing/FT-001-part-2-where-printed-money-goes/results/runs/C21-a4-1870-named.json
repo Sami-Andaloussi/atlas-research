@@ -1,0 +1,387 @@
+{
+ "card": "C21-a4-1870-named",
+ "card_hash": "4c662b45d8e9f05350c86aa4560cf57c779e270fef8dfa819cd733692a154949",
+ "run_at": "2026-09-30T18:29:31+00:00",
+ "result": {
+  "stopped": false,
+  "dataset": {
+   "name": "jst/macrohistory",
+   "vintage": "2026-09-30",
+   "file": "JSTdatasetR6.dta",
+   "columns": {
+    "codes": {
+     "Narrow Money (nominal, local currency)": "narrowm",
+     "Broad Money (nominal, local currency)": "money",
+     "Consumer Prices (index, 1990=100)": "cpi",
+     "Real GDP per capita (index, 2005=100)": "rgdpbarro",
+     "Population": "pop"
+    },
+    "header": [
+     "year",
+     "country",
+     "iso",
+     "ifs",
+     "pop",
+     "rgdpmad",
+     "rgdpbarro",
+     "rconsbarro",
+     "gdp",
+     "iy",
+     "cpi",
+     "ca",
+     "imports",
+     "exports",
+     "narrowm",
+     "money",
+     "stir",
+     "ltrate",
+     "hpnom",
+     "unemp",
+     "wage",
+     "debtgdp",
+     "revenue",
+     "expenditure",
+     "xrusd",
+     "tloans",
+     "tmort",
+     "thh",
+     "tbus",
+     "bdebt",
+     "lev",
+     "ltd",
+     "noncore",
+     "crisisJST",
+     "crisisJST_old",
+     "peg",
+     "peg_strict",
+     "peg_type",
+     "peg_base",
+     "JSTtrilemmaIV",
+     "eq_tr",
+     "housing_tr",
+     "bond_tr",
+     "bill_rate",
+     "rent_ipolated",
+     "housing_capgain_ipolated",
+     "housing_capgain",
+     "housing_rent_rtn",
+     "housing_rent_yd",
+     "eq_capgain",
+     "eq_dp",
+     "eq_capgain_interp",
+     "eq_tr_interp",
+     "eq_dp_interp",
+     "bond_rate",
+     "eq_div_rtn",
+     "capital_tr",
+     "risky_tr",
+     "safe_tr"
+    ],
+    "missing": {}
+   }
+  },
+  "sample": {
+   "windows": 127,
+   "economies": 18
+  },
+  "headline": {
+   "n": 127,
+   "moneys": 18,
+   "r2": 0.8176254235572228,
+   "coef": {
+    "const": {
+     "b": -1.6155330604764357,
+     "lo": -2.9056074575758926,
+     "hi": -0.32545866337697915,
+     "p": 0.014111138591301794
+    },
+    "mu": {
+     "b": 0.9470109097915171,
+     "lo": 0.7903298448848972,
+     "hi": 1.103691974698137,
+     "p": 2.2462319940035232e-32
+    },
+    "g": {
+     "b": -0.5961004438945756,
+     "lo": -1.0777083986345355,
+     "hi": -0.11449248915461568,
+     "p": 0.015270244610336459
+    }
+   },
+   "beta": 0.9470109097915171,
+   "beta_lo": 0.7903298448848972,
+   "beta_hi": 1.103691974698137,
+   "verdict": "one for one",
+   "gamma_verdict": "one for one"
+  },
+  "vs_C02": {
+   "C02_verdict": "one for one",
+   "same": true
+  },
+  "prior_line_on_pi": {
+   "windows_above": 11,
+   "windows_below": 116,
+   "beta_below": 0.5580990262795249,
+   "beta_below_lo": 0.47798701471381555,
+   "beta_below_hi": 0.6382110378452343,
+   "verdict_below": "partly (between zero and one)",
+   "beta_above": 1.1256087960205594,
+   "beta_above_lo": 1.0447022033304316,
+   "beta_above_hi": 1.2065153887106872,
+   "verdict_above": "partly (above one)",
+   "theta": 0.5675097697410345,
+   "p_theta": 7.229582354367176e-22,
+   "separates": true
+  },
+  "prior_line_on_mu": {
+   "windows_above": 22,
+   "windows_below": 105,
+   "beta_below": 0.5788546903472526,
+   "beta_below_lo": 0.43302280344155747,
+   "beta_below_hi": 0.7246865772529476,
+   "verdict_below": "partly (between zero and one)",
+   "beta_above": 1.300306417700093,
+   "beta_above_lo": 1.1858328767600925,
+   "beta_above_hi": 1.4147799586400933,
+   "verdict_above": "partly (above one)",
+   "theta": 0.7214517273528404,
+   "p_theta": 8.202615235536169e-15,
+   "separates": true
+  },
+  "out_of_sample": {
+   "oos_r2_from_C02": 0.7630013090686433,
+   "note": "C02's headline coefficients (1950-2020, every money) predicting 1870-1950, against the 1870-1950 mean"
+  },
+  "folds": [
+   {
+    "fold": 0,
+    "economies": [
+     "AU",
+     "DK",
+     "IE",
+     "PT"
+    ],
+    "windows": 26,
+    "oos_r2": 0.48346089027366246,
+    "beta": 0.664350279828717,
+    "verdict": "partly (between zero and one)"
+   },
+   {
+    "fold": 1,
+    "economies": [
+     "BE",
+     "ES",
+     "IT",
+     "SE"
+    ],
+    "windows": 27,
+    "oos_r2": 0.9036999957050483,
+    "beta": 1.0243325862281116,
+    "verdict": "one for one"
+   },
+   {
+    "fold": 2,
+    "economies": [
+     "CA",
+     "FI",
+     "JP",
+     "US"
+    ],
+    "windows": 30,
+    "oos_r2": 0.8514044678913336,
+    "beta": 1.079796070876481,
+    "verdict": "one for one"
+   },
+   {
+    "fold": 3,
+    "economies": [
+     "CH",
+     "FR",
+     "NL"
+    ],
+    "windows": 24,
+    "oos_r2": 0.5367075963090704,
+    "beta": 0.9035209015758829,
+    "verdict": "one for one"
+   },
+   {
+    "fold": 4,
+    "economies": [
+     "DE",
+     "GB",
+     "NO"
+    ],
+    "windows": 20,
+    "oos_r2": 0.7272492598644795,
+    "beta": 0.6733077040305677,
+    "verdict": "partly (between zero and one)"
+   }
+  ],
+  "variants": {
+   "broad money": {
+    "n": 122,
+    "moneys": 17,
+    "r2": 0.986296963163074,
+    "coef": {
+     "const": {
+      "b": -1.27456468921386,
+      "lo": -2.4975417586907827,
+      "hi": -0.05158761973693737,
+      "p": 0.04108816890767988
+     },
+     "mu": {
+      "b": 1.041004158010646,
+      "lo": 1.025408405554394,
+      "hi": 1.056599910466898,
+      "p": 0.0
+     },
+     "g": {
+      "b": -1.0613908425567775,
+      "lo": -1.670488309775506,
+      "hi": -0.4522933753380489,
+      "p": 0.0006369749580586822
+     }
+    },
+    "beta": 1.041004158010646,
+    "beta_lo": 1.025408405554394,
+    "beta_hi": 1.056599910466898,
+    "verdict": "partly (above one)",
+    "gamma_verdict": "one for one"
+   },
+   "world-war windows apart": {
+    "n": 79,
+    "moneys": 17,
+    "r2": 0.5831711138995954,
+    "coef": {
+     "const": {
+      "b": -0.9074533573751451,
+      "lo": -1.4683181150893756,
+      "hi": -0.3465885996609146,
+      "p": 0.0015184638981567702
+     },
+     "mu": {
+      "b": 0.5783647112520284,
+      "lo": 0.40660867026807435,
+      "hi": 0.7501207522359824,
+      "p": 4.1141405795705017e-11
+     },
+     "g": {
+      "b": -0.32811130623970297,
+      "lo": -0.5489491145396586,
+      "hi": -0.10727349793974744,
+      "p": 0.003590880403777424
+     }
+    },
+    "beta": 0.5783647112520284,
+    "beta_lo": 0.40660867026807435,
+    "beta_hi": 0.7501207522359824,
+    "verdict": "partly (between zero and one)",
+    "gamma_verdict": "partly (above one)"
+   },
+   "five-year windows": {
+    "n": 257,
+    "moneys": 18,
+    "r2": 0.7119489198114648,
+    "coef": {
+     "const": {
+      "b": -1.268552404136448,
+      "lo": -2.4073707297161038,
+      "hi": -0.12973407855679242,
+      "p": 0.029017926986130215
+     },
+     "mu": {
+      "b": 0.8461554555826163,
+      "lo": 0.6631277836401395,
+      "hi": 1.0291831275250931,
+      "p": 1.2912744290704345e-19
+     },
+     "g": {
+      "b": -0.4894046855680026,
+      "lo": -0.9895462584684456,
+      "hi": 0.010736887332440326,
+      "p": 0.05512520486035872
+     }
+    },
+    "beta": 0.8461554555826163,
+    "beta_lo": 0.6631277836401395,
+    "beta_hi": 1.0291831275250931,
+    "verdict": "one for one",
+    "gamma_verdict": "no relation"
+   }
+  },
+  "overlap_1950_2020": {
+   "jst_1950_2020": {
+    "n": 125,
+    "moneys": 18,
+    "r2": 0.30142669997698646,
+    "coef": {
+     "const": {
+      "b": -0.215504472744385,
+      "lo": -1.7626234209981666,
+      "hi": 1.3316144755093964,
+      "p": 0.7848445045610388
+     },
+     "mu": {
+      "b": 0.4541990812168508,
+      "lo": 0.2562909484390794,
+      "hi": 0.6521072139946222,
+      "p": 6.855812290119373e-06
+     },
+     "g": {
+      "b": 0.228541848310155,
+      "lo": -0.007488927039832144,
+      "hi": 0.4645726236601422,
+      "p": 0.05772545593981792
+     }
+    },
+    "beta": 0.4541990812168508,
+    "beta_lo": 0.2562909484390794,
+    "beta_hi": 0.6521072139946222,
+    "verdict": "partly (between zero and one)",
+    "gamma_verdict": "no relation"
+   },
+   "panel_same_economies": {
+    "n": 54,
+    "moneys": 9,
+    "r2": 0.10854033503283178,
+    "coef": {
+     "const": {
+      "b": 1.7035230971097937,
+      "lo": 1.0373315134333452,
+      "hi": 2.369714680786242,
+      "p": 5.391274241540286e-07
+     },
+     "mu": {
+      "b": 0.09933020154940973,
+      "lo": 0.009122444907288071,
+      "hi": 0.1895379581915314,
+      "p": 0.030914665653905844
+     },
+     "g": {
+      "b": 0.5333308082015193,
+      "lo": 0.39862748359460454,
+      "hi": 0.6680341328084342,
+      "p": 8.487284492725874e-15
+     }
+    },
+    "beta": 0.09933020154940973,
+    "beta_lo": 0.009122444907288071,
+    "beta_hi": 0.1895379581915314,
+    "verdict": "partly (between zero and one)",
+    "gamma_verdict": "partly (above one)"
+   },
+   "panel_economies": [
+    "AU",
+    "CA",
+    "CH",
+    "DK",
+    "GB",
+    "JP",
+    "NO",
+    "SE",
+    "US"
+   ],
+   "different": false
+  }
+ }
+}
