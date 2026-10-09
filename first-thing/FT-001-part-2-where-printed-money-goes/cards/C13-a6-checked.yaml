@@ -1,0 +1,105 @@
+id: C13-a6-checked
+label: measurement
+title: A6 checked - what inflation took from US households' cash and checking accounts since February 2020, and what the base's growth created and earned
+parent:
+  id: C08-a6
+  hash: adcc410c4c976e4d44e341e3cb5c8ec0c7d73e5168002752cd03f95c953c7c14
+question: >-
+  Since February 2020, how much purchasing power did inflation take from US households' own cash and
+  checking deposits - a range, per household - how large was the loss on all the cash and the deposits
+  that paid nothing, as a share of each year's GDP, and how much did the growth of the base create, and
+  the Federal Reserve earn or lose?
+method: >-
+  C08's method, with these changes answering the check of 2026-09-30 (check/2026-09-30-opus-cards.md: O3,
+  O4 and the minor points on the formula and FDIC's dates):
+  (1) The formula's price base: the loss in month t on a stock S held at the month's start,
+  S(t-1) * (1 - P(t-1)/P(t)), is in dollars of the month's start (price level P(t-1)); in February-2020
+  dollars it is multiplied by P(February 2020)/P(t-1). A month missing from the CPI is bridged as in C08.
+  (2) Quarterly stocks: FRED dates each quarter at its first day; the value is the stock at that quarter's
+  end, and the code maps it there before use; a month uses the last quarter-end stock at or before its
+  start.
+  (3) Per household, only from households' own holdings, as a range. The stock: households' checkable
+  deposits and currency (Z.1, BOGZ1FL193020005Q). First, its rise in 2020Q4 is checked for a
+  reclassification: if households' other deposits, time and savings included (Z.1, BOGZ1FL193030205Q),
+  fell from 2020Q3 to 2020Q4 by at least half that rise, the rise is read as deposits moved between
+  categories, and R = the smaller of the rise and the fall. Upper bound: the tax on the stock as
+  published, as if none of it paid interest. Lower bound: the tax on the stock less R from 2020Q4 on (R =
+  0 if no reclassification is found), minus the interest the national interest-checking rate (ICNDR, from
+  April 2021) would pay on it. Per household: each bound over the number of households (TTLHH, the
+  year's value; the last year's for later months). The range is always given as a range, never a
+  midpoint.
+  (4) The whole stock - currency (CURRSL) and FDIC-insured institutions' non-interest-bearing deposits -
+  is given only as a share of GDP (each calendar year's loss over that year's GDP, and the total over the
+  period against the period's GDP), never per household: part of it is held abroad and by firms.
+  (5) Seigniorage: (a) on currency, the part of the base that pays nothing - the December-to-December
+  rise of currency in circulation (MBCURRCIR) as a share of that year's GDP; (b) the base's own rise
+  (BOGMBASE, December to December, and from February 2020 to the last month) reported as base money
+  "created", not earned - most of it is reserves, on which the Federal Reserve pays interest; (c) what
+  the Federal Reserve earned or lost: its remittances to the Treasury each year from the Board's annual
+  releases (read and cited before this part is written; not reported if unread), and the deferred asset
+  (RESPPLLOPNWW's lowest weekly value with its date, and its latest).
+  (6) Where the base sits now: reserve balances (WRESBAL) and currency in circulation (WCURCIR), shares
+  of their sum at the last week, as C08.
+parameters:
+  start: 2020-02
+  cpi: CPIAUCSL, seasonally adjusted, the 2026-09-27 vintage
+  constant_dollars_of: 2020-02
+  price_base_of_monthly_loss: P(t-1), the month's start
+  reclassification_test: other deposits fall 2020Q3 to 2020Q4 by at least half the rise of checkable deposits and currency
+  households_interest_deducted_from: 2021-04
+  per_household: range only, from households' own holdings
+  whole_stock: share of GDP only
+  variants:
+    - the CPI not seasonally adjusted (CPIAUCNS)
+    - start at m0 of C11's headline US episode holding or nearest February 2020
+    - currency in circulation (CURRCIR) in place of the currency component of M1 in the whole stock
+data:
+  - dataset: fred/CPIAUCSL
+    vintage: '2026-09-27'
+  - dataset: fred/CPIAUCNS
+    vintage: '2026-09-30'
+  - dataset: fred/CURRSL
+    vintage: '2026-09-30'
+  - dataset: fred/CURRCIR
+    vintage: '2026-09-30'
+  - dataset: fred/MBCURRCIR
+    vintage: '2026-09-30'
+  - dataset: fred/QBPBSTLKDPDOFFDPNIDP
+    vintage: '2026-09-30'
+  - dataset: fred/BOGZ1FL193020005Q
+    vintage: '2026-09-30'
+  - dataset: fred/BOGZ1FL193030205Q
+    vintage: '2026-09-30'
+  - dataset: fred/ICNDR
+    vintage: '2026-09-30'
+  - dataset: fred/TTLHH
+    vintage: '2026-09-30'
+  - dataset: fred/GDP
+    vintage: '2026-09-30'
+  - dataset: fred/BOGMBASE
+    vintage: '2026-09-30'
+  - dataset: fred/RESPPLLOPNWW
+    vintage: '2026-09-30'
+  - dataset: fred/WRESBAL
+    vintage: '2026-09-30'
+  - dataset: fred/WCURCIR
+    vintage: '2026-09-30'
+  - dataset: the result of C11-e-episodes-checked, for the variant's start only
+period: 2020-02 to 2026-08 (the last month both the CPI and currency reach in these vintages)
+sample: >-
+  Not a sample: every month of the period, the whole of each stock as the statistics define it. The start
+  is the door's (February 2020), told, not chosen from the tax; the rule's start is the variant.
+out_of_sample: >-
+  Not applicable: a measurement with nothing fitted and no threshold. Its checks are internal: the
+  reclassification test before the households' range; the range's two bounds; the whole stock against
+  households' own; the variants on the CPI, the start and the currency measure.
+failure: >-
+  If the upper bound per household is more than twice the lower, the post gives the range and says why
+  (the 2020Q4 reclassification, or the interest deducted), never one number. If the reclassification test
+  finds one, the study says so beside the range. If the Board's remittance releases are not read, (5c)
+  gives the deferred asset alone and says so.
+not: >-
+  Not the loss on deposits that paid interest below inflation (LL-121's). Not what any one household paid:
+  an average over households of what households held. Not a welfare cost, not a verdict on the policy.
+  Not investment advice.
+created: '2026-09-30'

@@ -1,0 +1,92 @@
+id: C21-a4-1870-named
+label: regression
+title: A4's extension, 1870-1950, with the database's real GDP per capita column named from its label - C04 otherwise unchanged
+parent:
+  id: C04-a4-1870
+  hash: 87fd844beafa68c8d59368e841f61d2db88e6fcc9e90882595760b55ef61c2bf
+question: >-
+  As C04 - before the IMF's statistics begin, from 1870 to 1950, does inflation follow money growth one
+  for one over ten-year averages once real output growth is taken out, and does the fit on 1950-2020
+  predict those earlier decades?
+method: >-
+  C04's method in every part but one: the database's column for "Real GDP per capita (index, 2005=100)"
+  is named here, `rgdpbarro`, from what the file and its documentation say, read before this card and
+  before any value of 1870-1950 (plan/e1-production.md, Decisions, "The two results put to Sami: both
+  taken"). C04 stopped because the documentation's code for that label, `rgdbarro`, is not in the file's
+  header and C04 forbids a guess (its result, results/runs/C04-a4-1870.json; notes/data.md, "C04's
+  database, read before its run"). What was read, 2026-09-30:
+  (a) the file - JSTdatasetR6.dta (jst/macrohistory, vintage 2026-09-30, sha256 b0ebb74a...): 59
+  variables; the seventh is `rgdpbarro`, between `rgdpmad` and `rconsbarro`, and its Stata variable label
+  is "rgdpbarro" - the label repeats the code, as it does for all 59; JSTdatasetR6.xlsx has one sheet whose
+  first row holds the same codes. The file's own label names nothing more.
+  (b) the codebook - JST_documentationR6.pdf (jst/documentation, vintage 2026-09-30, sha256 36b42872...),
+  the table "Variable names and descriptive labels in Stata" (heading p. 5, table p. 6): `rgdbarro` "Real
+  GDP per capita (index, 2005=100)", the seventh row, between `rgdpmad` and `rconsbarro`. The table's 59
+  codes and the file's 59 are the same one for one except this pair, which differs by the letter p, in the
+  same place. The country sections give the series' source: for 16 of the 18 economies, 1870-2004 "from R.
+  Barro & and J. Ursúa (2010), Macroeconomic Data Set" (Australia, p. 21, and the same line in each
+  section); Ireland's from other historians (p. 98) and Spain's from Prados de la Escosura (p. 155).
+  (c) the database page's "Variables overview" (database-page.html, same freeze) names "Real GDP per capita
+  (index, 2005=100)".
+  (d) a units check on that column alone, its 2005 row only: it equals 100 in 2005 in all 18 economies,
+  as an index with 2005=100 does. No other value of the column, and no value of any other column, was read.
+  So `rgdpbarro` is the codebook's `rgdbarro`: the column is named, not guessed. C04's rule stands for
+  every other label (a label with no matching column stops the run). C04's method, with the column named:
+  C02's model, verdict rule and prior line (Teles and Uhlig's 12%, applied to pi and to mu), on the
+  Jorda-Schularick-Taylor Macrohistory Database, release 6 (18 advanced economies, annual, from 1870):
+  its narrow money (headline; the database's own "narrow money" - base money or M1 according to the
+  country, as its documentation says, read and noted per country before the run: notes/data.md) and its
+  broad money (variant), its consumer price index, and real GDP = its real GDP per capita index
+  (`rgdpbarro`) times its population (`pop`). Windows: non-overlapping ten-year windows between the
+  year-ends 1870, 1880, ..., 1950 (eight windows). The other column codes are those notes/data.md gives
+  from the documentation (`narrowm`, `money`, `cpi`, `pop`), each present in the header. Overlap check: on
+  1950-2020, the same model run on the database's series for its 18 economies beside C02's run on the
+  panel's series for the same economies, so a difference of source is seen apart from a difference of era.
+parameters:
+  window_years: 10
+  window_ends: [1870, 1880, 1890, 1900, 1910, 1920, 1930, 1940, 1950]
+  interval: 0.95
+  prior_line_teles_uhlig_pct: 12
+  world_war_years: [1914, 1915, 1916, 1917, 1918, 1939, 1940, 1941, 1942, 1943, 1944, 1945]
+  held_out_moneys: five folds, fold = position of the economy's code in the sorted list of codes, modulo 5
+  variants:
+    - broad money in place of narrow money
+    - windows holding a world-war year (1910-1920, 1940-1950; and 1930-1940 for 1939) apart
+    - five-year windows
+  real_gdp_per_capita_column: rgdpbarro (the codebook's rgdbarro, "Real GDP per capita (index, 2005=100)")
+  seen_before_writing: >-
+    C04's stopped result (no value read); C02's run in full; the file's header and variable labels, the
+    xlsx's first row, the documentation's table and country sections, the database page; the column's 2005
+    row (the units check above). No value of 1870-1950 of any column.
+data:
+  - dataset: jst/macrohistory
+    vintage: '2026-09-30'
+  - dataset: jst/documentation
+    vintage: '2026-09-30'
+  - dataset: the panel of C02 (code/panel.py at 2445181, C02's datasets and vintages), for the overlap
+      check and the out-of-sample fit
+period: 1870 to 1950 (eight decade windows); 1950 to 2020 for the overlap check
+sample: >-
+  The 18 economies the database covers, every window where money, prices and real output are present at
+  both ends; no economy or window chosen by what happened in it. The database covers advanced economies
+  only: this is a selection by the compilers (the economies with long records are those that became
+  rich), said, and the result is never generalised to every money of 1870-1950.
+out_of_sample: >-
+  By era: C02's headline fit (1950-2020, every money) predicts the 1870-1950 windows, none of which it
+  saw; reported: the out-of-sample R2 against the 1870-1950 mean and beta re-estimated on 1870-1950 with
+  the verdict rule. By economies: five folds by code position within 1870-1950. The 12% line is applied
+  as Teles and Uhlig drew it on other data, never refitted.
+failure: >-
+  If beta on 1870-1950 tells another verdict than C02's, the long-run relation is said to depend on the
+  era, and the world-war variant says whether the wars alone make the difference. If the overlap check
+  shows the database and the panel giving different betas on the same economies and decades, the
+  source is named as a cause before the era is.
+not: >-
+  Not a new question: C04's, a child of C02, with one column named from the file and its documentation
+  instead of left unmatched; nothing else of C04 changes, and its data are the freeze C04's stop read
+  (the first after C04's commit, as C04's data line asked), named here. Not every country: 18 advanced
+  economies. Not causal. The database's licence is CC BY-NC-SA 4.0, used on Sami's decision (plan C2,
+  Decisions, "Sami's answers to the night's summary", point 4); its data is never republished raw, and the
+  published charts are built from the underlying public sources wherever the compilation only gathers
+  them.
+created: '2026-09-30'

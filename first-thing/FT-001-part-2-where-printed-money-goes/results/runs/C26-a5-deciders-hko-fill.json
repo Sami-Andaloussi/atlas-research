@@ -1,0 +1,6523 @@
+{
+ "card": "C26-a5-deciders-hko-fill",
+ "card_hash": "6ca4e17782b1460c8eb169db1f4526b46e4ad3bb90c0f62195743f6ab9ba1047",
+ "run_at": "2026-10-02T01:34:36+00:00",
+ "result": {
+  "void": false,
+  "reproduces": {
+   "annotation_equals_C15": {
+    "headline": true,
+    "X2.5_Y1": true,
+    "X2.5_Y2": true,
+    "X2.5_Y3": true,
+    "X5_Y1": true,
+    "X5_Y3": true,
+    "X10_Y1": true,
+    "X10_Y2": true,
+    "X10_Y3": true,
+    "q0": true,
+    "H24": true,
+    "H60": true,
+    "units_factor3": true,
+    "smoothing": true,
+    "not_keeping_place": true,
+    "gamma_not_floored": true
+   },
+   "headline_equals_C18": true,
+   "extended_equals_C24": true
+  },
+  "n_tested": {
+   "c24_headline": {
+    "m0": 353,
+    "design": 287
+   },
+   "filled_headline": {
+    "m0": 362,
+    "design": 294
+   },
+   "filled_extended": {
+    "m0": 348,
+    "design": 286
+   }
+  },
+  "tested_set_movement": {
+   "m0": {
+    "n_unfilled": 353,
+    "n_filled": 362,
+    "enter": [
+     {
+      "area": "BT",
+      "m0": "2016-07",
+      "side": "enters",
+      "acc_before": "cannot be read",
+      "acc_after": false,
+      "months_filled_in_window": 49
+     },
+     {
+      "area": "BT",
+      "m0": "2019-08",
+      "side": "enters",
+      "acc_before": "cannot be read",
+      "acc_after": false,
+      "months_filled_in_window": 49
+     },
+     {
+      "area": "BZ",
+      "m0": "2011-05",
+      "side": "enters",
+      "acc_before": "cannot be read",
+      "acc_after": false,
+      "months_filled_in_window": 44
+     },
+     {
+      "area": "BZ",
+      "m0": "2014-07",
+      "side": "enters",
+      "acc_before": "cannot be read",
+      "acc_after": false,
+      "months_filled_in_window": 49
+     },
+     {
+      "area": "BZ",
+      "m0": "2020-04",
+      "side": "enters",
+      "acc_before": "cannot be read",
+      "acc_after": false,
+      "months_filled_in_window": 49
+     },
+     {
+      "area": "NP",
+      "m0": "2008-01",
+      "side": "enters",
+      "acc_before": "cannot be read",
+      "acc_after": false,
+      "months_filled_in_window": 49
+     },
+     {
+      "area": "NP",
+      "m0": "2015-02",
+      "side": "enters",
+      "acc_before": "cannot be read",
+      "acc_after": false,
+      "months_filled_in_window": 49
+     },
+     {
+      "area": "NP",
+      "m0": "2020-05",
+      "side": "enters",
+      "acc_before": "cannot be read",
+      "acc_after": false,
+      "months_filled_in_window": 49
+     },
+     {
+      "area": "TJ",
+      "m0": "2020-06",
+      "side": "enters",
+      "acc_before": "cannot be read",
+      "acc_after": false,
+      "months_filled_in_window": 49
+     }
+    ],
+    "leave": []
+   },
+   "design": {
+    "n_unfilled": 287,
+    "n_filled": 294,
+    "enter": [
+     {
+      "area": "BT",
+      "m0": "2016-07",
+      "side": "enters",
+      "acc_before": "cannot be read",
+      "acc_after": false,
+      "months_filled_in_window": 49
+     },
+     {
+      "area": "BT",
+      "m0": "2019-08",
+      "side": "enters",
+      "acc_before": "cannot be read",
+      "acc_after": false,
+      "months_filled_in_window": 49
+     },
+     {
+      "area": "BZ",
+      "m0": "2011-05",
+      "side": "enters",
+      "acc_before": "cannot be read",
+      "acc_after": false,
+      "months_filled_in_window": 44
+     },
+     {
+      "area": "BZ",
+      "m0": "2014-07",
+      "side": "enters",
+      "acc_before": "cannot be read",
+      "acc_after": false,
+      "months_filled_in_window": 49
+     },
+     {
+      "area": "BZ",
+      "m0": "2020-04",
+      "side": "enters",
+      "acc_before": "cannot be read",
+      "acc_after": false,
+      "months_filled_in_window": 49
+     },
+     {
+      "area": "NP",
+      "m0": "2020-05",
+      "side": "enters",
+      "acc_before": "cannot be read",
+      "acc_after": false,
+      "months_filled_in_window": 49
+     },
+     {
+      "area": "TJ",
+      "m0": "2020-06",
+      "side": "enters",
+      "acc_before": "cannot be read",
+      "acc_after": false,
+      "months_filled_in_window": 49
+     }
+    ],
+    "leave": []
+   }
+  },
+  "fill": {
+   "months_added": 891,
+   "by_economy": {
+    "AR": {
+     "months": 98,
+     "first": "2016-12",
+     "last": "2025-01"
+    },
+    "BT": {
+     "months": 145,
+     "first": "2012-12",
+     "last": "2024-12"
+    },
+    "BZ": {
+     "months": 251,
+     "first": "1990-11",
+     "last": "2025-02"
+    },
+    "IE": {
+     "months": 47,
+     "first": "1970-01",
+     "last": "1975-10"
+    },
+    "KN": {
+     "months": 3,
+     "first": "2024-10",
+     "last": "2024-12"
+    },
+    "NP": {
+     "months": 228,
+     "first": "2005-08",
+     "last": "2024-07"
+    },
+    "TJ": {
+     "months": 90,
+     "first": "2017-06",
+     "last": "2024-11"
+    },
+    "VG": {
+     "months": 29,
+     "first": "2015-01",
+     "last": "2017-05"
+    }
+   },
+   "refused_by_the_guard": [
+    {
+     "area": "BF",
+     "note": "ratio spread 1.242 over 180 months"
+    },
+    {
+     "area": "DJ",
+     "note": "ratio spread 1.349 over 311 months"
+    },
+    {
+     "area": "GA",
+     "note": "ratio spread 1.713 over 648 months"
+    }
+   ],
+   "annual_panel_years_added": 1338
+  },
+  "cells": [
+   {
+    "outcome": "O1",
+    "decider": "D1",
+    "filled": "does not separate",
+    "filled_sign": null,
+    "c18": "does not separate",
+    "c18_sign": null,
+    "filled_war_out": "does not separate",
+    "filled_war_out_sign": null,
+    "c24_war_out": "does not separate",
+    "c24_war_out_sign": null,
+    "differs_from_c18": false,
+    "war_out_differs_from_filled_headline": false,
+    "war_out_differs_from_c24": false,
+    "readings": {
+     "m0": {
+      "tested": true,
+      "n_coded": 361,
+      "p_holm": 0.5004499550044995,
+      "diff": -0.18514253465699904,
+      "verdict": "does not separate",
+      "c18_n_coded": 352,
+      "c18_p_holm": 0.5693430656934306,
+      "c18_diff": -0.13615896799471106,
+      "c18_verdict": "does not separate"
+     },
+     "design": {
+      "tested": true,
+      "n_coded": 291,
+      "p_holm": 1.0,
+      "diff": -0.5307954895165528,
+      "verdict": "does not separate",
+      "c18_n_coded": 284,
+      "c18_p_holm": 0.9011098890110989,
+      "c18_diff": -0.4166763580875399,
+      "c18_verdict": "does not separate"
+     }
+    }
+   },
+   {
+    "outcome": "O1",
+    "decider": "D2",
+    "filled": "we cannot conclude",
+    "filled_sign": null,
+    "c18": "we cannot conclude",
+    "c18_sign": null,
+    "filled_war_out": "we cannot conclude",
+    "filled_war_out_sign": null,
+    "c24_war_out": "we cannot conclude",
+    "c24_war_out_sign": null,
+    "differs_from_c18": false,
+    "war_out_differs_from_filled_headline": false,
+    "war_out_differs_from_c24": false,
+    "readings": {
+     "m0": {
+      "tested": true,
+      "n_coded": 225,
+      "p_holm": 0.3674632536746325,
+      "diff": 1.097928274719542,
+      "verdict": "we cannot conclude",
+      "c18_n_coded": 218,
+      "c18_p_holm": 0.23847615238476155,
+      "c18_diff": 1.1608887123666574,
+      "c18_verdict": "we cannot conclude"
+     },
+     "design": {
+      "tested": true,
+      "n_coded": 189,
+      "p_holm": 1.0,
+      "diff": 0.5463479281238866,
+      "verdict": "we cannot conclude",
+      "c18_n_coded": 184,
+      "c18_p_holm": 0.9011098890110989,
+      "c18_diff": 0.7417404888615209,
+      "c18_verdict": "we cannot conclude"
+     }
+    }
+   },
+   {
+    "outcome": "O1",
+    "decider": "D4",
+    "filled": "does not separate",
+    "filled_sign": null,
+    "c18": "does not separate",
+    "c18_sign": null,
+    "filled_war_out": "does not separate",
+    "filled_war_out_sign": null,
+    "c24_war_out": "does not separate",
+    "c24_war_out_sign": null,
+    "differs_from_c18": false,
+    "war_out_differs_from_filled_headline": false,
+    "war_out_differs_from_c24": false,
+    "readings": {
+     "m0": {
+      "tested": true,
+      "n_coded": 173,
+      "p_holm": 0.0983901609839016,
+      "diff": 2.8787720062998226,
+      "verdict": "does not separate",
+      "c18_n_coded": 164,
+      "c18_p_holm": 0.0999900009999,
+      "c18_diff": 2.822517732377996,
+      "c18_verdict": "does not separate"
+     },
+     "design": {
+      "tested": true,
+      "n_coded": 138,
+      "p_holm": 1.0,
+      "diff": 0.4766806047299845,
+      "verdict": "does not separate",
+      "c18_n_coded": 131,
+      "c18_p_holm": 0.9011098890110989,
+      "c18_diff": 0.376266714037931,
+      "c18_verdict": "does not separate"
+     }
+    }
+   },
+   {
+    "outcome": "O1",
+    "decider": "D5",
+    "filled": "does not separate",
+    "filled_sign": null,
+    "c18": "does not separate",
+    "c18_sign": null,
+    "filled_war_out": "does not separate",
+    "filled_war_out_sign": null,
+    "c24_war_out": "does not separate",
+    "c24_war_out_sign": null,
+    "differs_from_c18": false,
+    "war_out_differs_from_filled_headline": false,
+    "war_out_differs_from_c24": false,
+    "readings": {
+     "m0": {
+      "tested": true,
+      "n_coded": 288,
+      "p_holm": 0.3674632536746325,
+      "diff": -0.8146107569978672,
+      "verdict": "does not separate",
+      "c18_n_coded": 279,
+      "c18_p_holm": 0.23847615238476155,
+      "c18_diff": -0.9418734186181462,
+      "c18_verdict": "does not separate"
+     },
+     "design": {
+      "tested": true,
+      "n_coded": 249,
+      "p_holm": 0.24477552244775522,
+      "diff": -1.0665467667609516,
+      "verdict": "does not separate",
+      "c18_n_coded": 242,
+      "c18_p_holm": 0.20317968203179682,
+      "c18_diff": -1.0860108236421175,
+      "c18_verdict": "does not separate"
+     }
+    }
+   },
+   {
+    "outcome": "O2_net",
+    "decider": "D1",
+    "filled": "does not separate",
+    "filled_sign": null,
+    "c18": "does not separate",
+    "c18_sign": null,
+    "filled_war_out": "does not separate",
+    "filled_war_out_sign": null,
+    "c24_war_out": "does not separate",
+    "c24_war_out_sign": null,
+    "differs_from_c18": false,
+    "war_out_differs_from_filled_headline": false,
+    "war_out_differs_from_c24": false,
+    "readings": {
+     "m0": {
+      "tested": true,
+      "n_coded": 176,
+      "p_holm": 0.23517648235176483,
+      "diff": 3.0774614177053436,
+      "verdict": "does not separate",
+      "c18_n_coded": 167,
+      "c18_p_holm": 0.41455854414558546,
+      "c18_diff": 2.2157705243136876,
+      "c18_verdict": "does not separate"
+     },
+     "design": {
+      "tested": true,
+      "n_coded": 142,
+      "p_holm": 1.0,
+      "diff": 0.9775132255277725,
+      "verdict": "does not separate",
+      "c18_n_coded": 135,
+      "c18_p_holm": 1.0,
+      "c18_diff": 0.5031548606542238,
+      "c18_verdict": "does not separate"
+     }
+    }
+   },
+   {
+    "outcome": "O2_net",
+    "decider": "D2",
+    "filled": "we cannot conclude",
+    "filled_sign": null,
+    "c18": "we cannot conclude",
+    "c18_sign": null,
+    "filled_war_out": "we cannot conclude",
+    "filled_war_out_sign": null,
+    "c24_war_out": "we cannot conclude",
+    "c24_war_out_sign": null,
+    "differs_from_c18": false,
+    "war_out_differs_from_filled_headline": false,
+    "war_out_differs_from_c24": false,
+    "readings": {
+     "m0": {
+      "tested": true,
+      "n_coded": 128,
+      "p_holm": 0.23517648235176483,
+      "diff": 5.999349083138054,
+      "verdict": "we cannot conclude",
+      "c18_n_coded": 121,
+      "c18_p_holm": 0.19918008199180082,
+      "c18_diff": 6.048602358493622,
+      "c18_verdict": "we cannot conclude"
+     },
+     "design": {
+      "tested": true,
+      "n_coded": 103,
+      "p_holm": 0.15278472152784722,
+      "diff": 5.3641544436334,
+      "verdict": "we cannot conclude",
+      "c18_n_coded": 98,
+      "c18_p_holm": 0.147985201479852,
+      "c18_diff": 5.461043469927401,
+      "c18_verdict": "we cannot conclude"
+     }
+    }
+   },
+   {
+    "outcome": "O2_net",
+    "decider": "D4",
+    "filled": "does not separate",
+    "filled_sign": null,
+    "c18": "does not separate",
+    "c18_sign": null,
+    "filled_war_out": "does not separate",
+    "filled_war_out_sign": null,
+    "c24_war_out": "does not separate",
+    "c24_war_out_sign": null,
+    "differs_from_c18": false,
+    "war_out_differs_from_filled_headline": false,
+    "war_out_differs_from_c24": false,
+    "readings": {
+     "m0": {
+      "tested": true,
+      "n_coded": 151,
+      "p_holm": 0.39376062393760625,
+      "diff": 4.292746726403462,
+      "verdict": "does not separate",
+      "c18_n_coded": 142,
+      "c18_p_holm": 0.41455854414558546,
+      "c18_diff": 4.307705503852565,
+      "c18_verdict": "does not separate"
+     },
+     "design": {
+      "tested": true,
+      "n_coded": 121,
+      "p_holm": 1.0,
+      "diff": 0.6677158568108519,
+      "verdict": "does not separate",
+      "c18_n_coded": 114,
+      "c18_p_holm": 1.0,
+      "c18_diff": 0.6456577379282855,
+      "c18_verdict": "does not separate"
+     }
+    }
+   },
+   {
+    "outcome": "O2_net",
+    "decider": "D5",
+    "filled": "we cannot conclude",
+    "filled_sign": null,
+    "c18": "we cannot conclude",
+    "c18_sign": null,
+    "filled_war_out": "we cannot conclude",
+    "filled_war_out_sign": null,
+    "c24_war_out": "we cannot conclude",
+    "c24_war_out_sign": null,
+    "differs_from_c18": false,
+    "war_out_differs_from_filled_headline": false,
+    "war_out_differs_from_c24": false,
+    "readings": {
+     "m0": {
+      "tested": true,
+      "n_coded": 159,
+      "p_holm": 0.8766123387661234,
+      "diff": -0.3604232340399989,
+      "verdict": "does not separate",
+      "c18_n_coded": 150,
+      "c18_p_holm": 0.9137086291370863,
+      "c18_diff": -0.18341849333530558,
+      "c18_verdict": "does not separate"
+     },
+     "design": {
+      "tested": true,
+      "n_coded": 134,
+      "p_holm": 1.0,
+      "diff": -0.3270357277935281,
+      "verdict": "we cannot conclude",
+      "c18_n_coded": 127,
+      "c18_p_holm": 1.0,
+      "c18_diff": -0.3717362143747769,
+      "c18_verdict": "we cannot conclude"
+     }
+    }
+   },
+   {
+    "outcome": "O2_gross",
+    "decider": "D1",
+    "filled": "depends on how accommodation is dated",
+    "filled_sign": null,
+    "c18": "does not separate",
+    "c18_sign": null,
+    "filled_war_out": "does not separate",
+    "filled_war_out_sign": null,
+    "c24_war_out": "does not separate",
+    "c24_war_out_sign": null,
+    "differs_from_c18": true,
+    "war_out_differs_from_filled_headline": true,
+    "war_out_differs_from_c24": false,
+    "readings": {
+     "m0": {
+      "tested": true,
+      "n_coded": 341,
+      "p_holm": 0.14608539146085392,
+      "diff": 3.2160840922140412,
+      "verdict": "does not separate",
+      "c18_n_coded": 332,
+      "c18_p_holm": 0.3431656834316568,
+      "c18_diff": 2.636559784215015,
+      "c18_verdict": "does not separate"
+     },
+     "design": {
+      "tested": true,
+      "n_coded": 276,
+      "p_holm": 0.0353964603539646,
+      "diff": 4.311991684592105,
+      "verdict": "separates",
+      "c18_n_coded": 269,
+      "c18_p_holm": 0.1295870412958704,
+      "c18_diff": 3.610197537049558,
+      "c18_verdict": "does not separate"
+     }
+    }
+   },
+   {
+    "outcome": "O2_gross",
+    "decider": "D2",
+    "filled": "we cannot conclude",
+    "filled_sign": null,
+    "c18": "we cannot conclude",
+    "c18_sign": null,
+    "filled_war_out": "we cannot conclude",
+    "filled_war_out_sign": null,
+    "c24_war_out": "we cannot conclude",
+    "c24_war_out_sign": null,
+    "differs_from_c18": false,
+    "war_out_differs_from_filled_headline": false,
+    "war_out_differs_from_c24": false,
+    "readings": {
+     "m0": {
+      "tested": true,
+      "n_coded": 214,
+      "p_holm": 0.0007999200079992001,
+      "diff": 10.67561911453731,
+      "verdict": "we cannot conclude",
+      "c18_n_coded": 207,
+      "c18_p_holm": 0.0011998800119988001,
+      "c18_diff": 10.606515935822292,
+      "c18_verdict": "we cannot conclude"
+     },
+     "design": {
+      "tested": true,
+      "n_coded": 179,
+      "p_holm": 0.0007999200079992001,
+      "diff": 8.88182280587912,
+      "verdict": "we cannot conclude",
+      "c18_n_coded": 174,
+      "c18_p_holm": 0.0015998400159984002,
+      "c18_diff": 9.067958037348438,
+      "c18_verdict": "we cannot conclude"
+     }
+    }
+   },
+   {
+    "outcome": "O2_gross",
+    "decider": "D4",
+    "filled": "does not separate",
+    "filled_sign": null,
+    "c18": "does not separate",
+    "c18_sign": null,
+    "filled_war_out": "does not separate",
+    "filled_war_out_sign": null,
+    "c24_war_out": "does not separate",
+    "c24_war_out_sign": null,
+    "differs_from_c18": false,
+    "war_out_differs_from_filled_headline": false,
+    "war_out_differs_from_c24": false,
+    "readings": {
+     "m0": {
+      "tested": true,
+      "n_coded": 159,
+      "p_holm": 0.8827117288271172,
+      "diff": 0.760209050474117,
+      "verdict": "does not separate",
+      "c18_n_coded": 150,
+      "c18_p_holm": 0.8412158784121588,
+      "c18_diff": 0.8530587787681156,
+      "c18_verdict": "does not separate"
+     },
+     "design": {
+      "tested": true,
+      "n_coded": 126,
+      "p_holm": 0.7387261273872613,
+      "diff": -2.8001282478885887,
+      "verdict": "does not separate",
+      "c18_n_coded": 119,
+      "c18_p_holm": 0.801919808019198,
+      "c18_diff": -2.491984665438375,
+      "c18_verdict": "does not separate"
+     }
+    }
+   },
+   {
+    "outcome": "O2_gross",
+    "decider": "D5",
+    "filled": "does not separate",
+    "filled_sign": null,
+    "c18": "does not separate",
+    "c18_sign": null,
+    "filled_war_out": "does not separate",
+    "filled_war_out_sign": null,
+    "c24_war_out": "does not separate",
+    "c24_war_out_sign": null,
+    "differs_from_c18": false,
+    "war_out_differs_from_filled_headline": false,
+    "war_out_differs_from_c24": false,
+    "readings": {
+     "m0": {
+      "tested": true,
+      "n_coded": 269,
+      "p_holm": 0.5381461853814619,
+      "diff": -2.5249380115228046,
+      "verdict": "does not separate",
+      "c18_n_coded": 260,
+      "c18_p_holm": 0.6879312068793121,
+      "c18_diff": -2.213116869071108,
+      "c18_verdict": "does not separate"
+     },
+     "design": {
+      "tested": true,
+      "n_coded": 235,
+      "p_holm": 0.7387261273872613,
+      "diff": -1.3563026155390787,
+      "verdict": "does not separate",
+      "c18_n_coded": 228,
+      "c18_p_holm": 0.801919808019198,
+      "c18_diff": -1.3264300031656013,
+      "c18_verdict": "does not separate"
+     }
+    }
+   }
+  ],
+  "cells_differing_from_c18": 1,
+  "war_out_cells_differing_from_filled_headline": 1,
+  "war_out_cells_differing_from_c24": 0,
+  "two_thirds": {
+   "O1": {
+    "D1": {
+     "filled": {
+      "k": 24,
+      "n": 24,
+      "k_all": 29,
+      "n_all": 29,
+      "holds": true,
+      "stated": "does not separate"
+     },
+     "c18": {
+      "k": 24,
+      "n": 24,
+      "k_all": 29,
+      "n_all": 29,
+      "holds": true,
+      "stated": "does not separate"
+     },
+     "c24": {
+      "k": 24,
+      "n": 24,
+      "k_all": 29,
+      "n_all": 29,
+      "holds": true,
+      "stated": "does not separate"
+     },
+     "stated_differs_from_c18": false,
+     "stated_differs_from_c24": false
+    },
+    "D2": {
+     "filled": {
+      "k": 23,
+      "n": 24,
+      "k_all": 28,
+      "n_all": 29,
+      "holds": null,
+      "stated": "we cannot conclude"
+     },
+     "c18": {
+      "k": 23,
+      "n": 24,
+      "k_all": 28,
+      "n_all": 29,
+      "holds": null,
+      "stated": "we cannot conclude"
+     },
+     "c24": {
+      "k": 23,
+      "n": 24,
+      "k_all": 28,
+      "n_all": 29,
+      "holds": null,
+      "stated": "we cannot conclude"
+     },
+     "stated_differs_from_c18": false,
+     "stated_differs_from_c24": false
+    },
+    "D4": {
+     "filled": {
+      "k": 12,
+      "n": 23,
+      "k_all": 18,
+      "n_all": 29,
+      "holds": false,
+      "stated": "fragile: 12 of 23"
+     },
+     "c18": {
+      "k": 11,
+      "n": 23,
+      "k_all": 17,
+      "n_all": 29,
+      "holds": false,
+      "stated": "fragile: 11 of 23"
+     },
+     "c24": {
+      "k": 11,
+      "n": 23,
+      "k_all": 17,
+      "n_all": 29,
+      "holds": false,
+      "stated": "fragile: 11 of 23"
+     },
+     "stated_differs_from_c18": true,
+     "stated_differs_from_c24": true
+    },
+    "D5": {
+     "filled": {
+      "k": 17,
+      "n": 24,
+      "k_all": 22,
+      "n_all": 29,
+      "holds": true,
+      "stated": "does not separate"
+     },
+     "c18": {
+      "k": 17,
+      "n": 24,
+      "k_all": 22,
+      "n_all": 29,
+      "holds": true,
+      "stated": "does not separate"
+     },
+     "c24": {
+      "k": 17,
+      "n": 24,
+      "k_all": 22,
+      "n_all": 29,
+      "holds": true,
+      "stated": "does not separate"
+     },
+     "stated_differs_from_c18": false,
+     "stated_differs_from_c24": false
+    }
+   },
+   "O2_net": {
+    "D1": {
+     "filled": {
+      "k": 20,
+      "n": 24,
+      "k_all": 25,
+      "n_all": 29,
+      "holds": true,
+      "stated": "does not separate"
+     },
+     "c18": {
+      "k": 20,
+      "n": 24,
+      "k_all": 25,
+      "n_all": 29,
+      "holds": true,
+      "stated": "does not separate"
+     },
+     "c24": {
+      "k": 20,
+      "n": 24,
+      "k_all": 25,
+      "n_all": 29,
+      "holds": true,
+      "stated": "does not separate"
+     },
+     "stated_differs_from_c18": false,
+     "stated_differs_from_c24": false
+    },
+    "D2": {
+     "filled": {
+      "k": 24,
+      "n": 24,
+      "k_all": 29,
+      "n_all": 29,
+      "holds": null,
+      "stated": "we cannot conclude"
+     },
+     "c18": {
+      "k": 24,
+      "n": 24,
+      "k_all": 29,
+      "n_all": 29,
+      "holds": null,
+      "stated": "we cannot conclude"
+     },
+     "c24": {
+      "k": 24,
+      "n": 24,
+      "k_all": 29,
+      "n_all": 29,
+      "holds": null,
+      "stated": "we cannot conclude"
+     },
+     "stated_differs_from_c18": false,
+     "stated_differs_from_c24": false
+    },
+    "D4": {
+     "filled": {
+      "k": 16,
+      "n": 23,
+      "k_all": 22,
+      "n_all": 29,
+      "holds": true,
+      "stated": "does not separate"
+     },
+     "c18": {
+      "k": 16,
+      "n": 23,
+      "k_all": 22,
+      "n_all": 29,
+      "holds": true,
+      "stated": "does not separate"
+     },
+     "c24": {
+      "k": 16,
+      "n": 23,
+      "k_all": 22,
+      "n_all": 29,
+      "holds": true,
+      "stated": "does not separate"
+     },
+     "stated_differs_from_c18": false,
+     "stated_differs_from_c24": false
+    },
+    "D5": {
+     "filled": {
+      "k": 18,
+      "n": 24,
+      "k_all": 23,
+      "n_all": 29,
+      "holds": null,
+      "stated": "we cannot conclude"
+     },
+     "c18": {
+      "k": 18,
+      "n": 24,
+      "k_all": 23,
+      "n_all": 29,
+      "holds": null,
+      "stated": "we cannot conclude"
+     },
+     "c24": {
+      "k": 18,
+      "n": 24,
+      "k_all": 23,
+      "n_all": 29,
+      "holds": null,
+      "stated": "we cannot conclude"
+     },
+     "stated_differs_from_c18": false,
+     "stated_differs_from_c24": false
+    }
+   },
+   "O2_gross": {
+    "D1": {
+     "filled": {
+      "k": 6,
+      "n": 24,
+      "k_all": 10,
+      "n_all": 29,
+      "holds": null,
+      "stated": "depends on how accommodation is dated"
+     },
+     "c18": {
+      "k": 23,
+      "n": 24,
+      "k_all": 28,
+      "n_all": 29,
+      "holds": true,
+      "stated": "does not separate"
+     },
+     "c24": {
+      "k": 23,
+      "n": 24,
+      "k_all": 28,
+      "n_all": 29,
+      "holds": true,
+      "stated": "does not separate"
+     },
+     "stated_differs_from_c18": true,
+     "stated_differs_from_c24": true
+    },
+    "D2": {
+     "filled": {
+      "k": 23,
+      "n": 24,
+      "k_all": 28,
+      "n_all": 29,
+      "holds": null,
+      "stated": "we cannot conclude"
+     },
+     "c18": {
+      "k": 23,
+      "n": 24,
+      "k_all": 28,
+      "n_all": 29,
+      "holds": null,
+      "stated": "we cannot conclude"
+     },
+     "c24": {
+      "k": 23,
+      "n": 24,
+      "k_all": 28,
+      "n_all": 29,
+      "holds": null,
+      "stated": "we cannot conclude"
+     },
+     "stated_differs_from_c18": false,
+     "stated_differs_from_c24": false
+    },
+    "D4": {
+     "filled": {
+      "k": 18,
+      "n": 23,
+      "k_all": 24,
+      "n_all": 29,
+      "holds": true,
+      "stated": "does not separate"
+     },
+     "c18": {
+      "k": 18,
+      "n": 23,
+      "k_all": 24,
+      "n_all": 29,
+      "holds": true,
+      "stated": "does not separate"
+     },
+     "c24": {
+      "k": 18,
+      "n": 23,
+      "k_all": 24,
+      "n_all": 29,
+      "holds": true,
+      "stated": "does not separate"
+     },
+     "stated_differs_from_c18": false,
+     "stated_differs_from_c24": false
+    },
+    "D5": {
+     "filled": {
+      "k": 21,
+      "n": 24,
+      "k_all": 26,
+      "n_all": 29,
+      "holds": true,
+      "stated": "does not separate"
+     },
+     "c18": {
+      "k": 21,
+      "n": 24,
+      "k_all": 26,
+      "n_all": 29,
+      "holds": true,
+      "stated": "does not separate"
+     },
+     "c24": {
+      "k": 21,
+      "n": 24,
+      "k_all": 26,
+      "n_all": 29,
+      "holds": true,
+      "stated": "does not separate"
+     },
+     "stated_differs_from_c18": false,
+     "stated_differs_from_c24": false
+    }
+   }
+  },
+  "two_thirds_stated_differs_from_c18": [
+   "O1 / D4",
+   "O2_gross / D1"
+  ],
+  "two_thirds_stated_differs_from_c24": [
+   "O1 / D4",
+   "O2_gross / D1"
+  ],
+  "coincidence": {
+   "m0": {
+    "D1-D2": {
+     "n": 226,
+     "same": 0.42,
+     "opposite": 0.58,
+     "cannot_tell_apart": false
+    },
+    "D1-D4": {
+     "n": 173,
+     "same": 0.566,
+     "opposite": 0.434,
+     "cannot_tell_apart": false
+    },
+    "D1-D5": {
+     "n": 289,
+     "same": 0.588,
+     "opposite": 0.412,
+     "cannot_tell_apart": false
+    },
+    "D2-D4": {
+     "n": 123,
+     "same": 0.228,
+     "opposite": 0.772,
+     "cannot_tell_apart": false
+    },
+    "D2-D5": {
+     "n": 203,
+     "same": 0.365,
+     "opposite": 0.635,
+     "cannot_tell_apart": false
+    },
+    "D4-D5": {
+     "n": 157,
+     "same": 0.707,
+     "opposite": 0.293,
+     "cannot_tell_apart": false
+    }
+   },
+   "design": {
+    "D1-D2": {
+     "n": 190,
+     "same": 0.405,
+     "opposite": 0.595,
+     "cannot_tell_apart": false
+    },
+    "D1-D4": {
+     "n": 138,
+     "same": 0.565,
+     "opposite": 0.435,
+     "cannot_tell_apart": false
+    },
+    "D1-D5": {
+     "n": 252,
+     "same": 0.575,
+     "opposite": 0.425,
+     "cannot_tell_apart": false
+    },
+    "D2-D4": {
+     "n": 98,
+     "same": 0.214,
+     "opposite": 0.786,
+     "cannot_tell_apart": false
+    },
+    "D2-D5": {
+     "n": 174,
+     "same": 0.368,
+     "opposite": 0.632,
+     "cannot_tell_apart": false
+    },
+    "D4-D5": {
+     "n": 130,
+     "same": 0.715,
+     "opposite": 0.285,
+     "cannot_tell_apart": false
+    }
+   }
+  },
+  "coincidence_c18": {
+   "m0": {
+    "D1-D2": {
+     "n": 219,
+     "same": 0.416,
+     "opposite": 0.584,
+     "cannot_tell_apart": false
+    },
+    "D1-D4": {
+     "n": 164,
+     "same": 0.579,
+     "opposite": 0.421,
+     "cannot_tell_apart": false
+    },
+    "D1-D5": {
+     "n": 280,
+     "same": 0.596,
+     "opposite": 0.404,
+     "cannot_tell_apart": false
+    },
+    "D2-D4": {
+     "n": 116,
+     "same": 0.241,
+     "opposite": 0.759,
+     "cannot_tell_apart": false
+    },
+    "D2-D5": {
+     "n": 196,
+     "same": 0.378,
+     "opposite": 0.622,
+     "cannot_tell_apart": false
+    },
+    "D4-D5": {
+     "n": 148,
+     "same": 0.689,
+     "opposite": 0.311,
+     "cannot_tell_apart": false
+    }
+   },
+   "design": {
+    "D1-D2": {
+     "n": 185,
+     "same": 0.405,
+     "opposite": 0.595,
+     "cannot_tell_apart": false
+    },
+    "D1-D4": {
+     "n": 131,
+     "same": 0.573,
+     "opposite": 0.427,
+     "cannot_tell_apart": false
+    },
+    "D1-D5": {
+     "n": 245,
+     "same": 0.58,
+     "opposite": 0.42,
+     "cannot_tell_apart": false
+    },
+    "D2-D4": {
+     "n": 93,
+     "same": 0.226,
+     "opposite": 0.774,
+     "cannot_tell_apart": false
+    },
+    "D2-D5": {
+     "n": 169,
+     "same": 0.379,
+     "opposite": 0.621,
+     "cannot_tell_apart": false
+    },
+    "D4-D5": {
+     "n": 123,
+     "same": 0.699,
+     "opposite": 0.301,
+     "cannot_tell_apart": false
+    }
+   }
+  },
+  "what_happened": {
+   "m0": {
+    "O1": {
+     "n": 361,
+     "median": 1.4962663606861941,
+     "p25": -1.0410938670362535,
+     "p75": 4.494832424454376,
+     "share_above_zero": 0.6620498614958449
+    },
+    "O1pp": {
+     "n": 361,
+     "median": 4.458438017260253,
+     "p25": 2.057768818933999,
+     "p75": 8.159891174336714,
+     "share_above_zero": 0.9556786703601108
+    },
+    "O2_gross": {
+     "n": 341,
+     "median": 16.323566141543346,
+     "p25": 8.749460615304427,
+     "p75": 26.62379465341255,
+     "share_above_zero": 0.9853372434017595
+    },
+    "O2_net": {
+     "n": 176,
+     "median": 7.152495334401857,
+     "p25": 4.101104614458936,
+     "p75": 14.934825227478308,
+     "share_above_zero": 0.875
+    },
+    "O3": {
+     "n": 348,
+     "median": 0.11008821684997007,
+     "p25": 0.005365177052072228,
+     "p75": 0.2778146538491559,
+     "share_above_zero": 0.7758620689655172
+    },
+    "O1_stopped_early": 12
+   },
+   "design": {
+    "O1": {
+     "n": 291,
+     "median": 1.063478865037783,
+     "p25": -1.0920435452226134,
+     "p75": 3.145205227888309,
+     "share_above_zero": 0.6219931271477663
+    },
+    "O1pp": {
+     "n": 292,
+     "median": 3.454061025529998,
+     "p25": 1.6346963357160138,
+     "p75": 6.181961266302123,
+     "share_above_zero": 0.9486301369863014
+    },
+    "O2_gross": {
+     "n": 276,
+     "median": 13.021374872235107,
+     "p25": 6.9863912326218465,
+     "p75": 21.850537747457178,
+     "share_above_zero": 0.9818840579710145
+    },
+    "O2_net": {
+     "n": 142,
+     "median": 6.632016153624786,
+     "p25": 3.836776556745346,
+     "p75": 13.72661529596566,
+     "share_above_zero": 0.8873239436619719
+    },
+    "O3": {
+     "n": 282,
+     "median": 0.12179864482748216,
+     "p25": 0.014386451874316511,
+     "p75": 0.3109556962960212,
+     "share_above_zero": 0.7943262411347518
+    },
+    "O1_stopped_early": 11
+   }
+  },
+  "what_happened_c18": {
+   "m0": {
+    "O1": {
+     "n": 352,
+     "median": 1.5184766872526994,
+     "p25": -1.0413397576490162,
+     "p75": 4.621303458057628,
+     "share_above_zero": 0.6647727272727273
+    },
+    "O1pp": {
+     "n": 352,
+     "median": 4.451989900203925,
+     "p25": 2.057323497522155,
+     "p75": 8.260611465934346,
+     "share_above_zero": 0.9545454545454546
+    },
+    "O2_gross": {
+     "n": 332,
+     "median": 16.320812915041778,
+     "p25": 8.723373801107382,
+     "p75": 26.913632992206693,
+     "share_above_zero": 0.9849397590361446
+    },
+    "O2_net": {
+     "n": 167,
+     "median": 7.1262486231811435,
+     "p25": 4.059708488339876,
+     "p75": 14.800204590165592,
+     "share_above_zero": 0.874251497005988
+    },
+    "O3": {
+     "n": 339,
+     "median": 0.10738596804102572,
+     "p25": 0.003430809998590651,
+     "p75": 0.2764982972854894,
+     "share_above_zero": 0.7699115044247787
+    },
+    "O1_stopped_early": 13
+   },
+   "design": {
+    "O1": {
+     "n": 284,
+     "median": 1.111959937504655,
+     "p25": -1.0848912579378942,
+     "p75": 3.118117475478383,
+     "share_above_zero": 0.6232394366197183
+    },
+    "O1pp": {
+     "n": 285,
+     "median": 3.412516828382679,
+     "p25": 1.635740423478735,
+     "p75": 6.323403808438982,
+     "share_above_zero": 0.9473684210526315
+    },
+    "O2_gross": {
+     "n": 269,
+     "median": 13.021277141272869,
+     "p25": 6.996695409717561,
+     "p75": 21.94046382736429,
+     "share_above_zero": 0.9814126394052045
+    },
+    "O2_net": {
+     "n": 135,
+     "median": 6.641314070877879,
+     "p25": 3.883489783197483,
+     "p75": 13.479360617115365,
+     "share_above_zero": 0.8888888888888888
+    },
+    "O3": {
+     "n": 275,
+     "median": 0.11983192163172818,
+     "p25": 0.01221649151564457,
+     "p75": 0.2994375056961812,
+     "share_above_zero": 0.7890909090909091
+    },
+    "O1_stopped_early": 12
+   }
+  },
+  "beside_the_headline": {
+   "jump share 0.5": {
+    "O1": {
+     "D1": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     },
+     "D2": {
+      "verdict": "we cannot conclude",
+      "sign": null,
+      "thin_readings": [
+       "at m0",
+       "the design's way"
+      ],
+      "tested_both": true
+     },
+     "D4": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     },
+     "D5": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     }
+    },
+    "O2_net": {
+     "D1": {
+      "verdict": "we cannot conclude",
+      "sign": null,
+      "thin_readings": [
+       "the design's way"
+      ],
+      "tested_both": true
+     },
+     "D2": {
+      "verdict": "we cannot conclude",
+      "sign": null,
+      "thin_readings": [
+       "at m0",
+       "the design's way"
+      ],
+      "tested_both": true
+     },
+     "D4": {
+      "verdict": "we cannot conclude",
+      "sign": null,
+      "thin_readings": [
+       "the design's way"
+      ],
+      "tested_both": true
+     },
+     "D5": {
+      "verdict": "we cannot conclude",
+      "sign": null,
+      "thin_readings": [
+       "the design's way"
+      ],
+      "tested_both": true
+     }
+    },
+    "O2_gross": {
+     "D1": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     },
+     "D2": {
+      "verdict": "we cannot conclude",
+      "sign": null,
+      "thin_readings": [
+       "at m0",
+       "the design's way"
+      ],
+      "tested_both": true
+     },
+     "D4": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     },
+     "D5": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     }
+    }
+   },
+   "jump share 0.67": {
+    "O1": {
+     "D1": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     },
+     "D2": {
+      "verdict": "we cannot conclude",
+      "sign": null,
+      "thin_readings": [
+       "at m0",
+       "the design's way"
+      ],
+      "tested_both": true
+     },
+     "D4": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     },
+     "D5": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     }
+    },
+    "O2_net": {
+     "D1": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     },
+     "D2": {
+      "verdict": "we cannot conclude",
+      "sign": null,
+      "thin_readings": [
+       "at m0",
+       "the design's way"
+      ],
+      "tested_both": true
+     },
+     "D4": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     },
+     "D5": {
+      "verdict": "we cannot conclude",
+      "sign": null,
+      "thin_readings": [
+       "the design's way"
+      ],
+      "tested_both": true
+     }
+    },
+    "O2_gross": {
+     "D1": {
+      "verdict": "depends on how accommodation is dated",
+      "sign": null,
+      "tested_both": true
+     },
+     "D2": {
+      "verdict": "we cannot conclude",
+      "sign": null,
+      "thin_readings": [
+       "at m0",
+       "the design's way"
+      ],
+      "tested_both": true
+     },
+     "D4": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     },
+     "D5": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     }
+    }
+   },
+   "jump share 0.9": {
+    "O1": {
+     "D1": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     },
+     "D2": {
+      "verdict": "we cannot conclude",
+      "sign": null,
+      "thin_readings": [
+       "at m0",
+       "the design's way"
+      ],
+      "tested_both": true
+     },
+     "D4": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     },
+     "D5": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     }
+    },
+    "O2_net": {
+     "D1": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     },
+     "D2": {
+      "verdict": "we cannot conclude",
+      "sign": null,
+      "thin_readings": [
+       "at m0",
+       "the design's way"
+      ],
+      "tested_both": true
+     },
+     "D4": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     },
+     "D5": {
+      "verdict": "we cannot conclude",
+      "sign": null,
+      "thin_readings": [
+       "the design's way"
+      ],
+      "tested_both": true
+     }
+    },
+    "O2_gross": {
+     "D1": {
+      "verdict": "depends on how accommodation is dated",
+      "sign": null,
+      "tested_both": true
+     },
+     "D2": {
+      "verdict": "we cannot conclude",
+      "sign": null,
+      "thin_readings": [
+       "at m0",
+       "the design's way"
+      ],
+      "tested_both": true
+     },
+     "D4": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     },
+     "D5": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     }
+    }
+   }
+  },
+  "beside_the_headline_c18": {
+   "jump share 0.5": {
+    "O1": {
+     "D1": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     },
+     "D2": {
+      "verdict": "we cannot conclude",
+      "sign": null,
+      "thin_readings": [
+       "at m0",
+       "the design's way"
+      ],
+      "tested_both": true
+     },
+     "D4": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     },
+     "D5": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     }
+    },
+    "O2_net": {
+     "D1": {
+      "verdict": "we cannot conclude",
+      "sign": null,
+      "thin_readings": [
+       "the design's way"
+      ],
+      "tested_both": true
+     },
+     "D2": {
+      "verdict": "we cannot conclude",
+      "sign": null,
+      "thin_readings": [
+       "at m0",
+       "the design's way"
+      ],
+      "tested_both": true
+     },
+     "D4": {
+      "verdict": "we cannot conclude",
+      "sign": null,
+      "thin_readings": [
+       "the design's way"
+      ],
+      "tested_both": true
+     },
+     "D5": {
+      "verdict": "we cannot conclude",
+      "sign": null,
+      "thin_readings": [
+       "the design's way"
+      ],
+      "tested_both": true
+     }
+    },
+    "O2_gross": {
+     "D1": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     },
+     "D2": {
+      "verdict": "we cannot conclude",
+      "sign": null,
+      "thin_readings": [
+       "at m0",
+       "the design's way"
+      ],
+      "tested_both": true
+     },
+     "D4": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     },
+     "D5": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     }
+    }
+   },
+   "jump share 0.67": {
+    "O1": {
+     "D1": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     },
+     "D2": {
+      "verdict": "we cannot conclude",
+      "sign": null,
+      "thin_readings": [
+       "at m0",
+       "the design's way"
+      ],
+      "tested_both": true
+     },
+     "D4": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     },
+     "D5": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     }
+    },
+    "O2_net": {
+     "D1": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     },
+     "D2": {
+      "verdict": "we cannot conclude",
+      "sign": null,
+      "thin_readings": [
+       "at m0",
+       "the design's way"
+      ],
+      "tested_both": true
+     },
+     "D4": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     },
+     "D5": {
+      "verdict": "we cannot conclude",
+      "sign": null,
+      "thin_readings": [
+       "the design's way"
+      ],
+      "tested_both": true
+     }
+    },
+    "O2_gross": {
+     "D1": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     },
+     "D2": {
+      "verdict": "we cannot conclude",
+      "sign": null,
+      "thin_readings": [
+       "at m0",
+       "the design's way"
+      ],
+      "tested_both": true
+     },
+     "D4": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     },
+     "D5": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     }
+    }
+   },
+   "jump share 0.9": {
+    "O1": {
+     "D1": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     },
+     "D2": {
+      "verdict": "we cannot conclude",
+      "sign": null,
+      "thin_readings": [
+       "at m0",
+       "the design's way"
+      ],
+      "tested_both": true
+     },
+     "D4": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     },
+     "D5": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     }
+    },
+    "O2_net": {
+     "D1": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     },
+     "D2": {
+      "verdict": "we cannot conclude",
+      "sign": null,
+      "thin_readings": [
+       "at m0",
+       "the design's way"
+      ],
+      "tested_both": true
+     },
+     "D4": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     },
+     "D5": {
+      "verdict": "we cannot conclude",
+      "sign": null,
+      "thin_readings": [
+       "the design's way"
+      ],
+      "tested_both": true
+     }
+    },
+    "O2_gross": {
+     "D1": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     },
+     "D2": {
+      "verdict": "we cannot conclude",
+      "sign": null,
+      "thin_readings": [
+       "at m0",
+       "the design's way"
+      ],
+      "tested_both": true
+     },
+     "D4": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     },
+     "D5": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     }
+    }
+   }
+  },
+  "headline": {
+   "readings": {
+    "m0": {
+     "n_tested": 362,
+     "tests": {
+      "O1": {
+       "D1": {
+        "tested": true,
+        "n_coded": 361,
+        "diff": -0.18514253465699904,
+        "p": 0.5004499550044995,
+        "strata": [
+         {
+          "stratum": 0,
+          "n1": 1,
+          "n0": 13,
+          "diff": 4.643911930784743,
+          "qualifies": false
+         },
+         {
+          "stratum": 1,
+          "n1": 35,
+          "n0": 48,
+          "diff": -3.0716404806237527,
+          "qualifies": true
+         },
+         {
+          "stratum": 2,
+          "n1": 106,
+          "n0": 158,
+          "diff": -0.12300371074721661,
+          "qualifies": true
+         }
+        ],
+        "n1": 142,
+        "n0": 219,
+        "median1": 1.405207401622095,
+        "median0": 1.590349936279094,
+        "p_holm": 0.5004499550044995,
+        "verdict": "does not separate",
+        "sign": null,
+        "thin": false,
+        "qualifying_strata": 2,
+        "pooled_sign_agrees": null
+       },
+       "D2": {
+        "tested": true,
+        "n_coded": 225,
+        "diff": 1.097928274719542,
+        "p": 0.13388661133886612,
+        "strata": [
+         {
+          "stratum": 0,
+          "n1": 2,
+          "n0": 0,
+          "diff": null,
+          "qualifies": false
+         },
+         {
+          "stratum": 1,
+          "n1": 35,
+          "n0": 0,
+          "diff": null,
+          "qualifies": false
+         },
+         {
+          "stratum": 2,
+          "n1": 157,
+          "n0": 31,
+          "diff": 0.9125330777271945,
+          "qualifies": true
+         }
+        ],
+        "n1": 194,
+        "n0": 31,
+        "median1": 1.22979575295189,
+        "median0": 0.13186747823234787,
+        "p_holm": 0.3674632536746325,
+        "verdict": "we cannot conclude",
+        "sign": null,
+        "thin": true,
+        "qualifying_strata": 1,
+        "pooled_sign_agrees": null
+       },
+       "D4": {
+        "tested": true,
+        "n_coded": 173,
+        "diff": 2.8787720062998226,
+        "p": 0.0245975402459754,
+        "strata": [
+         {
+          "stratum": 0,
+          "n1": 1,
+          "n0": 0,
+          "diff": null,
+          "qualifies": false
+         },
+         {
+          "stratum": 1,
+          "n1": 9,
+          "n0": 14,
+          "diff": 4.319862819486243,
+          "qualifies": true
+         },
+         {
+          "stratum": 2,
+          "n1": 21,
+          "n0": 128,
+          "diff": 1.9633362168704083,
+          "qualifies": true
+         }
+        ],
+        "n1": 31,
+        "n0": 142,
+        "median1": 4.067911804689226,
+        "median0": 1.1891397983894034,
+        "p_holm": 0.0983901609839016,
+        "verdict": "does not separate",
+        "sign": null,
+        "thin": false,
+        "qualifying_strata": 2,
+        "pooled_sign_agrees": null
+       },
+       "D5": {
+        "tested": true,
+        "n_coded": 288,
+        "diff": -0.8146107569978672,
+        "p": 0.12248775122487751,
+        "strata": [
+         {
+          "stratum": 1,
+          "n1": 10,
+          "n0": 20,
+          "diff": 3.381927471632215,
+          "qualifies": true
+         },
+         {
+          "stratum": 2,
+          "n1": 69,
+          "n0": 189,
+          "diff": -1.230072217760208,
+          "qualifies": true
+         }
+        ],
+        "n1": 79,
+        "n0": 209,
+        "median1": 0.4353456104077823,
+        "median0": 1.2499563674056495,
+        "p_holm": 0.3674632536746325,
+        "verdict": "does not separate",
+        "sign": null,
+        "thin": false,
+        "qualifying_strata": 2,
+        "pooled_sign_agrees": null
+       }
+      },
+      "O2_net": {
+       "D1": {
+        "tested": true,
+        "n_coded": 176,
+        "diff": 3.0774614177053436,
+        "p": 0.05879412058794121,
+        "strata": [
+         {
+          "stratum": 0,
+          "n1": 0,
+          "n0": 2,
+          "diff": null,
+          "qualifies": false
+         },
+         {
+          "stratum": 1,
+          "n1": 12,
+          "n0": 12,
+          "diff": 7.856871333097445,
+          "qualifies": true
+         },
+         {
+          "stratum": 2,
+          "n1": 70,
+          "n0": 80,
+          "diff": 2.121259167262215,
+          "qualifies": true
+         }
+        ],
+        "n1": 82,
+        "n0": 94,
+        "median1": 8.984638006683966,
+        "median0": 5.907176588978622,
+        "p_holm": 0.23517648235176483,
+        "verdict": "does not separate",
+        "sign": null,
+        "thin": false,
+        "qualifying_strata": 2,
+        "pooled_sign_agrees": null
+       },
+       "D2": {
+        "tested": true,
+        "n_coded": 128,
+        "diff": 5.999349083138054,
+        "p": 0.059494050594940506,
+        "strata": [
+         {
+          "stratum": 0,
+          "n1": 1,
+          "n0": 0,
+          "diff": null,
+          "qualifies": false
+         },
+         {
+          "stratum": 1,
+          "n1": 12,
+          "n0": 0,
+          "diff": null,
+          "qualifies": false
+         },
+         {
+          "stratum": 2,
+          "n1": 105,
+          "n0": 10,
+          "diff": 5.50941910681701,
+          "qualifies": true
+         }
+        ],
+        "n1": 118,
+        "n0": 10,
+        "median1": 7.22799532097814,
+        "median0": 1.2286462378400858,
+        "p_holm": 0.23517648235176483,
+        "verdict": "we cannot conclude",
+        "sign": null,
+        "thin": true,
+        "qualifying_strata": 1,
+        "pooled_sign_agrees": null
+       },
+       "D4": {
+        "tested": true,
+        "n_coded": 151,
+        "diff": 4.292746726403462,
+        "p": 0.19688031196880312,
+        "strata": [
+         {
+          "stratum": 0,
+          "n1": 1,
+          "n0": 0,
+          "diff": null,
+          "qualifies": false
+         },
+         {
+          "stratum": 1,
+          "n1": 7,
+          "n0": 14,
+          "diff": 10.540264139473742,
+          "qualifies": true
+         },
+         {
+          "stratum": 2,
+          "n1": 16,
+          "n0": 113,
+          "diff": -0.7694292499617754,
+          "qualifies": true
+         }
+        ],
+        "n1": 24,
+        "n0": 127,
+        "median1": 10.915464962775154,
+        "median0": 6.622718236371692,
+        "p_holm": 0.39376062393760625,
+        "verdict": "does not separate",
+        "sign": null,
+        "thin": false,
+        "qualifying_strata": 2,
+        "pooled_sign_agrees": null
+       },
+       "D5": {
+        "tested": true,
+        "n_coded": 159,
+        "diff": -0.3604232340399989,
+        "p": 0.8766123387661234,
+        "strata": [
+         {
+          "stratum": 1,
+          "n1": 4,
+          "n0": 7,
+          "diff": -2.6821553046971083,
+          "qualifies": true
+         },
+         {
+          "stratum": 2,
+          "n1": 37,
+          "n0": 111,
+          "diff": -0.09675127377921644,
+          "qualifies": true
+         }
+        ],
+        "n1": 41,
+        "n0": 118,
+        "median1": 6.641314070877879,
+        "median0": 7.001737304917878,
+        "p_holm": 0.8766123387661234,
+        "verdict": "does not separate",
+        "sign": null,
+        "thin": false,
+        "qualifying_strata": 2,
+        "pooled_sign_agrees": null
+       }
+      },
+      "O2_gross": {
+       "D1": {
+        "tested": true,
+        "n_coded": 341,
+        "diff": 3.2160840922140412,
+        "p": 0.0486951304869513,
+        "strata": [
+         {
+          "stratum": 0,
+          "n1": 1,
+          "n0": 13,
+          "diff": -12.028628221553722,
+          "qualifies": false
+         },
+         {
+          "stratum": 1,
+          "n1": 34,
+          "n0": 48,
+          "diff": 0.22670983550070645,
+          "qualifies": true
+         },
+         {
+          "stratum": 2,
+          "n1": 97,
+          "n0": 148,
+          "diff": 5.902106634234261,
+          "qualifies": true
+         }
+        ],
+        "n1": 132,
+        "n0": 209,
+        "median1": 18.031622755908927,
+        "median0": 14.815538663694886,
+        "p_holm": 0.14608539146085392,
+        "verdict": "does not separate",
+        "sign": null,
+        "thin": false,
+        "qualifying_strata": 2,
+        "pooled_sign_agrees": null
+       },
+       "D2": {
+        "tested": true,
+        "n_coded": 214,
+        "diff": 10.67561911453731,
+        "p": 0.00019998000199980003,
+        "strata": [
+         {
+          "stratum": 0,
+          "n1": 2,
+          "n0": 0,
+          "diff": null,
+          "qualifies": false
+         },
+         {
+          "stratum": 1,
+          "n1": 35,
+          "n0": 0,
+          "diff": null,
+          "qualifies": false
+         },
+         {
+          "stratum": 2,
+          "n1": 151,
+          "n0": 26,
+          "diff": 9.645714824091346,
+          "qualifies": true
+         }
+        ],
+        "n1": 188,
+        "n0": 26,
+        "median1": 16.392669320258364,
+        "median0": 5.717050205721053,
+        "p_holm": 0.0007999200079992001,
+        "verdict": "we cannot conclude",
+        "sign": null,
+        "thin": true,
+        "qualifying_strata": 1,
+        "pooled_sign_agrees": null
+       },
+       "D4": {
+        "tested": true,
+        "n_coded": 159,
+        "diff": 0.760209050474117,
+        "p": 0.8827117288271172,
+        "strata": [
+         {
+          "stratum": 0,
+          "n1": 1,
+          "n0": 0,
+          "diff": null,
+          "qualifies": false
+         },
+         {
+          "stratum": 1,
+          "n1": 9,
+          "n0": 14,
+          "diff": -1.2712299978446353,
+          "qualifies": true
+         },
+         {
+          "stratum": 2,
+          "n1": 16,
+          "n0": 119,
+          "diff": -2.5047805451494316,
+          "qualifies": true
+         }
+        ],
+        "n1": 26,
+        "n0": 133,
+        "median1": 17.26947464860546,
+        "median0": 16.509265598131343,
+        "p_holm": 0.8827117288271172,
+        "verdict": "does not separate",
+        "sign": null,
+        "thin": false,
+        "qualifying_strata": 2,
+        "pooled_sign_agrees": null
+       },
+       "D5": {
+        "tested": true,
+        "n_coded": 269,
+        "diff": -2.5249380115228046,
+        "p": 0.26907309269073093,
+        "strata": [
+         {
+          "stratum": 1,
+          "n1": 10,
+          "n0": 20,
+          "diff": 5.218225509300257,
+          "qualifies": true
+         },
+         {
+          "stratum": 2,
+          "n1": 61,
+          "n0": 178,
+          "diff": -2.479238291539552,
+          "qualifies": true
+         }
+        ],
+        "n1": 71,
+        "n0": 198,
+        "median1": 12.385756142529065,
+        "median0": 14.91069415405187,
+        "p_holm": 0.5381461853814619,
+        "verdict": "does not separate",
+        "sign": null,
+        "thin": false,
+        "qualifying_strata": 2,
+        "pooled_sign_agrees": null
+       }
+      }
+     }
+    },
+    "design": {
+     "n_tested": 294,
+     "tests": {
+      "O1": {
+       "D1": {
+        "tested": true,
+        "n_coded": 291,
+        "diff": -0.5307954895165528,
+        "p": 0.34466553344665535,
+        "strata": [
+         {
+          "stratum": 0,
+          "n1": 1,
+          "n0": 7,
+          "diff": 6.321966453009752,
+          "qualifies": false
+         },
+         {
+          "stratum": 1,
+          "n1": 22,
+          "n0": 29,
+          "diff": 0.19502314729820003,
+          "qualifies": true
+         },
+         {
+          "stratum": 2,
+          "n1": 88,
+          "n0": 144,
+          "diff": -0.61329483689305,
+          "qualifies": true
+         }
+        ],
+        "n1": 111,
+        "n0": 180,
+        "median1": 0.6071671471642937,
+        "median0": 1.1379626366808464,
+        "p_holm": 1.0,
+        "verdict": "does not separate",
+        "sign": null,
+        "thin": false,
+        "qualifying_strata": 2,
+        "pooled_sign_agrees": null
+       },
+       "D2": {
+        "tested": true,
+        "n_coded": 189,
+        "diff": 0.5463479281238866,
+        "p": 0.47435256474352566,
+        "strata": [
+         {
+          "stratum": 0,
+          "n1": 1,
+          "n0": 0,
+          "diff": null,
+          "qualifies": false
+         },
+         {
+          "stratum": 1,
+          "n1": 24,
+          "n0": 0,
+          "diff": null,
+          "qualifies": false
+         },
+         {
+          "stratum": 2,
+          "n1": 133,
+          "n0": 31,
+          "diff": 0.5999607158673057,
+          "qualifies": true
+         }
+        ],
+        "n1": 158,
+        "n0": 31,
+        "median1": 0.6782154063562345,
+        "median0": 0.13186747823234787,
+        "p_holm": 1.0,
+        "verdict": "we cannot conclude",
+        "sign": null,
+        "thin": true,
+        "qualifying_strata": 1,
+        "pooled_sign_agrees": null
+       },
+       "D4": {
+        "tested": true,
+        "n_coded": 138,
+        "diff": 0.4766806047299845,
+        "p": 0.5616438356164384,
+        "strata": [
+         {
+          "stratum": 0,
+          "n1": 1,
+          "n0": 0,
+          "diff": null,
+          "qualifies": false
+         },
+         {
+          "stratum": 1,
+          "n1": 4,
+          "n0": 8,
+          "diff": 3.454811933835419,
+          "qualifies": true
+         },
+         {
+          "stratum": 2,
+          "n1": 15,
+          "n0": 110,
+          "diff": 0.9008278238551484,
+          "qualifies": true
+         }
+        ],
+        "n1": 20,
+        "n0": 118,
+        "median1": 1.1080949081375846,
+        "median0": 0.6314143034076001,
+        "p_holm": 1.0,
+        "verdict": "does not separate",
+        "sign": null,
+        "thin": false,
+        "qualifying_strata": 2,
+        "pooled_sign_agrees": null
+       },
+       "D5": {
+        "tested": true,
+        "n_coded": 249,
+        "diff": -1.0665467667609516,
+        "p": 0.061193880611938804,
+        "strata": [
+         {
+          "stratum": 1,
+          "n1": 6,
+          "n0": 17,
+          "diff": 2.102836039386049,
+          "qualifies": true
+         },
+         {
+          "stratum": 2,
+          "n1": 60,
+          "n0": 166,
+          "diff": -1.2391985673410284,
+          "qualifies": true
+         }
+        ],
+        "n1": 66,
+        "n0": 183,
+        "median1": 0.08195778542624182,
+        "median0": 1.1485045521871935,
+        "p_holm": 0.24477552244775522,
+        "verdict": "does not separate",
+        "sign": null,
+        "thin": false,
+        "qualifying_strata": 2,
+        "pooled_sign_agrees": null
+       }
+      },
+      "O2_net": {
+       "D1": {
+        "tested": true,
+        "n_coded": 142,
+        "diff": 0.9775132255277725,
+        "p": 0.34226577342265774,
+        "strata": [
+         {
+          "stratum": 0,
+          "n1": 0,
+          "n0": 1,
+          "diff": null,
+          "qualifies": false
+         },
+         {
+          "stratum": 1,
+          "n1": 8,
+          "n0": 6,
+          "diff": 0.8406727219101029,
+          "qualifies": true
+         },
+         {
+          "stratum": 2,
+          "n1": 56,
+          "n0": 71,
+          "diff": 0.8129466953932303,
+          "qualifies": true
+         }
+        ],
+        "n1": 64,
+        "n0": 78,
+        "median1": 7.103665987974307,
+        "median0": 6.126152762446535,
+        "p_holm": 1.0,
+        "verdict": "does not separate",
+        "sign": null,
+        "thin": false,
+        "qualifying_strata": 2,
+        "pooled_sign_agrees": null
+       },
+       "D2": {
+        "tested": true,
+        "n_coded": 103,
+        "diff": 5.3641544436334,
+        "p": 0.038196180381961806,
+        "strata": [
+         {
+          "stratum": 0,
+          "n1": 1,
+          "n0": 0,
+          "diff": null,
+          "qualifies": false
+         },
+         {
+          "stratum": 1,
+          "n1": 6,
+          "n0": 0,
+          "diff": null,
+          "qualifies": false
+         },
+         {
+          "stratum": 2,
+          "n1": 86,
+          "n0": 10,
+          "diff": 4.8426077451870215,
+          "qualifies": true
+         }
+        ],
+        "n1": 93,
+        "n0": 10,
+        "median1": 6.592800681473486,
+        "median0": 1.2286462378400858,
+        "p_holm": 0.15278472152784722,
+        "verdict": "we cannot conclude",
+        "sign": null,
+        "thin": true,
+        "qualifying_strata": 1,
+        "pooled_sign_agrees": null
+       },
+       "D4": {
+        "tested": true,
+        "n_coded": 121,
+        "diff": 0.6677158568108519,
+        "p": 0.7515248475152485,
+        "strata": [
+         {
+          "stratum": 0,
+          "n1": 1,
+          "n0": 0,
+          "diff": null,
+          "qualifies": false
+         },
+         {
+          "stratum": 1,
+          "n1": 3,
+          "n0": 8,
+          "diff": 1.64446835240145,
+          "qualifies": true
+         },
+         {
+          "stratum": 2,
+          "n1": 11,
+          "n0": 98,
+          "diff": -2.071841252936297,
+          "qualifies": true
+         }
+        ],
+        "n1": 15,
+        "n0": 106,
+        "median1": 7.1262486231811435,
+        "median0": 6.458532766370292,
+        "p_holm": 1.0,
+        "verdict": "does not separate",
+        "sign": null,
+        "thin": false,
+        "qualifying_strata": 2,
+        "pooled_sign_agrees": null
+       },
+       "D5": {
+        "tested": true,
+        "n_coded": 134,
+        "diff": -0.3270357277935281,
+        "p": 0.7093290670932907,
+        "strata": [
+         {
+          "stratum": 1,
+          "n1": 2,
+          "n0": 7,
+          "diff": -2.646974453840034,
+          "qualifies": false
+         },
+         {
+          "stratum": 2,
+          "n1": 31,
+          "n0": 94,
+          "diff": -0.2863508440986333,
+          "qualifies": true
+         }
+        ],
+        "n1": 33,
+        "n0": 101,
+        "median1": 6.265764953679958,
+        "median0": 6.592800681473486,
+        "p_holm": 1.0,
+        "verdict": "we cannot conclude",
+        "sign": null,
+        "thin": true,
+        "qualifying_strata": 1,
+        "pooled_sign_agrees": null
+       }
+      },
+      "O2_gross": {
+       "D1": {
+        "tested": true,
+        "n_coded": 276,
+        "diff": 4.311991684592105,
+        "p": 0.0117988201179882,
+        "strata": [
+         {
+          "stratum": 0,
+          "n1": 1,
+          "n0": 7,
+          "diff": -7.944360083567792,
+          "qualifies": false
+         },
+         {
+          "stratum": 1,
+          "n1": 22,
+          "n0": 29,
+          "diff": 2.1878667070881086,
+          "qualifies": true
+         },
+         {
+          "stratum": 2,
+          "n1": 80,
+          "n0": 137,
+          "diff": 4.248502308820983,
+          "qualifies": true
+         }
+        ],
+        "n1": 103,
+        "n0": 173,
+        "median1": 15.799394672162954,
+        "median0": 11.48740298757085,
+        "p_holm": 0.0353964603539646,
+        "verdict": "separates",
+        "sign": 1,
+        "thin": false,
+        "qualifying_strata": 2,
+        "pooled_sign_agrees": true
+       },
+       "D2": {
+        "tested": true,
+        "n_coded": 179,
+        "diff": 8.88182280587912,
+        "p": 0.00019998000199980003,
+        "strata": [
+         {
+          "stratum": 0,
+          "n1": 1,
+          "n0": 0,
+          "diff": null,
+          "qualifies": false
+         },
+         {
+          "stratum": 1,
+          "n1": 24,
+          "n0": 0,
+          "diff": null,
+          "qualifies": false
+         },
+         {
+          "stratum": 2,
+          "n1": 128,
+          "n0": 26,
+          "diff": 8.369047830957514,
+          "qualifies": true
+         }
+        ],
+        "n1": 153,
+        "n0": 26,
+        "median1": 14.598873011600173,
+        "median0": 5.717050205721053,
+        "p_holm": 0.0007999200079992001,
+        "verdict": "we cannot conclude",
+        "sign": null,
+        "thin": true,
+        "qualifying_strata": 1,
+        "pooled_sign_agrees": null
+       },
+       "D4": {
+        "tested": true,
+        "n_coded": 126,
+        "diff": -2.8001282478885887,
+        "p": 0.36936306369363064,
+        "strata": [
+         {
+          "stratum": 0,
+          "n1": 1,
+          "n0": 0,
+          "diff": null,
+          "qualifies": false
+         },
+         {
+          "stratum": 1,
+          "n1": 4,
+          "n0": 8,
+          "diff": 4.25300659635576,
+          "qualifies": true
+         },
+         {
+          "stratum": 2,
+          "n1": 11,
+          "n0": 102,
+          "diff": -7.038324984712072,
+          "qualifies": true
+         }
+        ],
+        "n1": 16,
+        "n0": 110,
+        "median1": 12.106888346161798,
+        "median0": 14.907016594050386,
+        "p_holm": 0.7387261273872613,
+        "verdict": "does not separate",
+        "sign": null,
+        "thin": false,
+        "qualifying_strata": 2,
+        "pooled_sign_agrees": null
+       },
+       "D5": {
+        "tested": true,
+        "n_coded": 235,
+        "diff": -1.3563026155390787,
+        "p": 0.44225577442255776,
+        "strata": [
+         {
+          "stratum": 1,
+          "n1": 6,
+          "n0": 18,
+          "diff": 1.0434472388584286,
+          "qualifies": true
+         },
+         {
+          "stratum": 2,
+          "n1": 53,
+          "n0": 158,
+          "diff": -1.5261782845256668,
+          "qualifies": true
+         }
+        ],
+        "n1": 59,
+        "n0": 176,
+        "median1": 11.695042600031744,
+        "median0": 13.051345215570823,
+        "p_holm": 0.7387261273872613,
+        "verdict": "does not separate",
+        "sign": null,
+        "thin": false,
+        "qualifying_strata": 2,
+        "pooled_sign_agrees": null
+       }
+      }
+     }
+    }
+   },
+   "combined": {
+    "O1": {
+     "D1": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     },
+     "D2": {
+      "verdict": "we cannot conclude",
+      "sign": null,
+      "thin_readings": [
+       "at m0",
+       "the design's way"
+      ],
+      "tested_both": true
+     },
+     "D4": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     },
+     "D5": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     }
+    },
+    "O2_net": {
+     "D1": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     },
+     "D2": {
+      "verdict": "we cannot conclude",
+      "sign": null,
+      "thin_readings": [
+       "at m0",
+       "the design's way"
+      ],
+      "tested_both": true
+     },
+     "D4": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     },
+     "D5": {
+      "verdict": "we cannot conclude",
+      "sign": null,
+      "thin_readings": [
+       "the design's way"
+      ],
+      "tested_both": true
+     }
+    },
+    "O2_gross": {
+     "D1": {
+      "verdict": "depends on how accommodation is dated",
+      "sign": null,
+      "tested_both": true
+     },
+     "D2": {
+      "verdict": "we cannot conclude",
+      "sign": null,
+      "thin_readings": [
+       "at m0",
+       "the design's way"
+      ],
+      "tested_both": true
+     },
+     "D4": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     },
+     "D5": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     }
+    }
+   }
+  },
+  "extended": {
+   "readings": {
+    "m0": {
+     "n_tested": 348,
+     "tests": {
+      "O1": {
+       "D1": {
+        "tested": true,
+        "n_coded": 347,
+        "diff": -0.30601794852859343,
+        "p": 0.40415958404159585,
+        "strata": [
+         {
+          "stratum": 0,
+          "n1": 1,
+          "n0": 11,
+          "diff": 4.643911930784743,
+          "qualifies": false
+         },
+         {
+          "stratum": 1,
+          "n1": 31,
+          "n0": 47,
+          "diff": -3.576907508363612,
+          "qualifies": true
+         },
+         {
+          "stratum": 2,
+          "n1": 104,
+          "n0": 153,
+          "diff": -0.24549109148728776,
+          "qualifies": true
+         }
+        ],
+        "n1": 136,
+        "n0": 211,
+        "median1": 1.2711259445360505,
+        "median0": 1.577143893064644,
+        "p_holm": 0.46615338466153383,
+        "verdict": "does not separate",
+        "sign": null,
+        "thin": false,
+        "qualifying_strata": 2,
+        "pooled_sign_agrees": null
+       },
+       "D2": {
+        "tested": true,
+        "n_coded": 216,
+        "diff": 0.9945135251466066,
+        "p": 0.16328367163283672,
+        "strata": [
+         {
+          "stratum": 0,
+          "n1": 1,
+          "n0": 0,
+          "diff": null,
+          "qualifies": false
+         },
+         {
+          "stratum": 1,
+          "n1": 32,
+          "n0": 0,
+          "diff": null,
+          "qualifies": false
+         },
+         {
+          "stratum": 2,
+          "n1": 152,
+          "n0": 31,
+          "diff": 0.7999620602691462,
+          "qualifies": true
+         }
+        ],
+        "n1": 185,
+        "n0": 31,
+        "median1": 1.1263810033789545,
+        "median0": 0.13186747823234787,
+        "p_holm": 0.46615338466153383,
+        "verdict": "we cannot conclude",
+        "sign": null,
+        "thin": true,
+        "qualifying_strata": 1,
+        "pooled_sign_agrees": null
+       },
+       "D4": {
+        "tested": true,
+        "n_coded": 167,
+        "diff": 1.9812096137099404,
+        "p": 0.1553844615538446,
+        "strata": [
+         {
+          "stratum": 1,
+          "n1": 9,
+          "n0": 14,
+          "diff": 4.319862819486243,
+          "qualifies": true
+         },
+         {
+          "stratum": 2,
+          "n1": 18,
+          "n0": 126,
+          "diff": 1.2709360603809499,
+          "qualifies": true
+         }
+        ],
+        "n1": 27,
+        "n0": 140,
+        "median1": 3.078226510144909,
+        "median0": 1.0970168964349685,
+        "p_holm": 0.46615338466153383,
+        "verdict": "does not separate",
+        "sign": null,
+        "thin": false,
+        "qualifying_strata": 2,
+        "pooled_sign_agrees": null
+       },
+       "D5": {
+        "tested": true,
+        "n_coded": 279,
+        "diff": -1.0335154313493575,
+        "p": 0.0670932906709329,
+        "strata": [
+         {
+          "stratum": 1,
+          "n1": 10,
+          "n0": 18,
+          "diff": 3.381927471632215,
+          "qualifies": true
+         },
+         {
+          "stratum": 2,
+          "n1": 67,
+          "n0": 184,
+          "diff": -1.1785150758036598,
+          "qualifies": true
+         }
+        ],
+        "n1": 77,
+        "n0": 202,
+        "median1": 0.1962803216025324,
+        "median0": 1.22979575295189,
+        "p_holm": 0.2683731626837316,
+        "verdict": "does not separate",
+        "sign": null,
+        "thin": false,
+        "qualifying_strata": 2,
+        "pooled_sign_agrees": null
+       }
+      },
+      "O2_net": {
+       "D1": {
+        "tested": true,
+        "n_coded": 170,
+        "diff": 2.967016538614179,
+        "p": 0.0730926907309269,
+        "strata": [
+         {
+          "stratum": 1,
+          "n1": 12,
+          "n0": 12,
+          "diff": 7.856871333097445,
+          "qualifies": true
+         },
+         {
+          "stratum": 2,
+          "n1": 69,
+          "n0": 77,
+          "diff": 1.9306127966856703,
+          "qualifies": true
+         }
+        ],
+        "n1": 81,
+        "n0": 89,
+        "median1": 8.904626704197167,
+        "median0": 5.937610165582988,
+        "p_holm": 0.22357764223577642,
+        "verdict": "does not separate",
+        "sign": null,
+        "thin": false,
+        "qualifying_strata": 2,
+        "pooled_sign_agrees": null
+       },
+       "D2": {
+        "tested": true,
+        "n_coded": 124,
+        "diff": 5.999349083138054,
+        "p": 0.055894410558944105,
+        "strata": [
+         {
+          "stratum": 1,
+          "n1": 12,
+          "n0": 0,
+          "diff": null,
+          "qualifies": false
+         },
+         {
+          "stratum": 2,
+          "n1": 102,
+          "n0": 10,
+          "diff": 5.552752716595054,
+          "qualifies": true
+         }
+        ],
+        "n1": 114,
+        "n0": 10,
+        "median1": 7.22799532097814,
+        "median0": 1.2286462378400858,
+        "p_holm": 0.22357764223577642,
+        "verdict": "we cannot conclude",
+        "sign": null,
+        "thin": true,
+        "qualifying_strata": 1,
+        "pooled_sign_agrees": null
+       },
+       "D4": {
+        "tested": true,
+        "n_coded": 146,
+        "diff": 4.161970198423429,
+        "p": 0.2176782321767823,
+        "strata": [
+         {
+          "stratum": 1,
+          "n1": 7,
+          "n0": 14,
+          "diff": 10.540264139473742,
+          "qualifies": true
+         },
+         {
+          "stratum": 2,
+          "n1": 13,
+          "n0": 112,
+          "diff": -2.0516868039860974,
+          "qualifies": true
+         }
+        ],
+        "n1": 20,
+        "n0": 126,
+        "median1": 10.793986352048215,
+        "median0": 6.632016153624786,
+        "p_holm": 0.4353564643535646,
+        "verdict": "does not separate",
+        "sign": null,
+        "thin": false,
+        "qualifying_strata": 2,
+        "pooled_sign_agrees": null
+       },
+       "D5": {
+        "tested": true,
+        "n_coded": 155,
+        "diff": -0.3604232340399989,
+        "p": 0.8793120687931207,
+        "strata": [
+         {
+          "stratum": 1,
+          "n1": 4,
+          "n0": 7,
+          "diff": -2.6821553046971083,
+          "qualifies": true
+         },
+         {
+          "stratum": 2,
+          "n1": 37,
+          "n0": 107,
+          "diff": -0.09675127377921644,
+          "qualifies": true
+         }
+        ],
+        "n1": 41,
+        "n0": 114,
+        "median1": 6.641314070877879,
+        "median0": 7.001737304917878,
+        "p_holm": 0.8793120687931207,
+        "verdict": "does not separate",
+        "sign": null,
+        "thin": false,
+        "qualifying_strata": 2,
+        "pooled_sign_agrees": null
+       }
+      },
+      "O2_gross": {
+       "D1": {
+        "tested": true,
+        "n_coded": 328,
+        "diff": 3.0155330689315925,
+        "p": 0.0862913708629137,
+        "strata": [
+         {
+          "stratum": 0,
+          "n1": 1,
+          "n0": 11,
+          "diff": -12.028628221553722,
+          "qualifies": false
+         },
+         {
+          "stratum": 1,
+          "n1": 31,
+          "n0": 47,
+          "diff": -0.3081739414392928,
+          "qualifies": true
+         },
+         {
+          "stratum": 2,
+          "n1": 95,
+          "n0": 143,
+          "diff": 5.537147560852896,
+          "qualifies": true
+         }
+        ],
+        "n1": 127,
+        "n0": 201,
+        "median1": 17.59765804539043,
+        "median0": 14.582124976458836,
+        "p_holm": 0.2588741125887411,
+        "verdict": "does not separate",
+        "sign": null,
+        "thin": false,
+        "qualifying_strata": 2,
+        "pooled_sign_agrees": null
+       },
+       "D2": {
+        "tested": true,
+        "n_coded": 205,
+        "diff": 10.606515935822292,
+        "p": 9.999000099990002e-05,
+        "strata": [
+         {
+          "stratum": 0,
+          "n1": 1,
+          "n0": 0,
+          "diff": null,
+          "qualifies": false
+         },
+         {
+          "stratum": 1,
+          "n1": 32,
+          "n0": 0,
+          "diff": null,
+          "qualifies": false
+         },
+         {
+          "stratum": 2,
+          "n1": 146,
+          "n0": 26,
+          "diff": 9.571912397435446,
+          "qualifies": true
+         }
+        ],
+        "n1": 179,
+        "n0": 26,
+        "median1": 16.323566141543346,
+        "median0": 5.717050205721053,
+        "p_holm": 0.00039996000399960006,
+        "verdict": "we cannot conclude",
+        "sign": null,
+        "thin": true,
+        "qualifying_strata": 1,
+        "pooled_sign_agrees": null
+       },
+       "D4": {
+        "tested": true,
+        "n_coded": 153,
+        "diff": 0.760209050474117,
+        "p": 0.8975102489751025,
+        "strata": [
+         {
+          "stratum": 1,
+          "n1": 9,
+          "n0": 14,
+          "diff": -1.2712299978446353,
+          "qualifies": true
+         },
+         {
+          "stratum": 2,
+          "n1": 13,
+          "n0": 117,
+          "diff": -4.054926383135385,
+          "qualifies": true
+         }
+        ],
+        "n1": 22,
+        "n0": 131,
+        "median1": 17.26947464860546,
+        "median0": 16.509265598131343,
+        "p_holm": 0.8975102489751025,
+        "verdict": "does not separate",
+        "sign": null,
+        "thin": false,
+        "qualifying_strata": 2,
+        "pooled_sign_agrees": null
+       },
+       "D5": {
+        "tested": true,
+        "n_coded": 260,
+        "diff": -2.3498437945995807,
+        "p": 0.39866013398660133,
+        "strata": [
+         {
+          "stratum": 1,
+          "n1": 10,
+          "n0": 18,
+          "diff": 5.558444784169076,
+          "qualifies": true
+         },
+         {
+          "stratum": 2,
+          "n1": 59,
+          "n0": 173,
+          "diff": -2.5227937178119557,
+          "qualifies": true
+         }
+        ],
+        "n1": 69,
+        "n0": 191,
+        "median1": 12.249029217000592,
+        "median0": 14.598873011600173,
+        "p_holm": 0.7973202679732027,
+        "verdict": "does not separate",
+        "sign": null,
+        "thin": false,
+        "qualifying_strata": 2,
+        "pooled_sign_agrees": null
+       }
+      }
+     }
+    },
+    "design": {
+     "n_tested": 286,
+     "tests": {
+      "O1": {
+       "D1": {
+        "tested": true,
+        "n_coded": 283,
+        "diff": -0.5562084943440704,
+        "p": 0.3558644135586441,
+        "strata": [
+         {
+          "stratum": 0,
+          "n1": 1,
+          "n0": 6,
+          "diff": 4.44580977681352,
+          "qualifies": false
+         },
+         {
+          "stratum": 1,
+          "n1": 19,
+          "n0": 29,
+          "diff": -0.1869442824012193,
+          "qualifies": true
+         },
+         {
+          "stratum": 2,
+          "n1": 87,
+          "n0": 141,
+          "diff": -0.5007546330114827,
+          "qualifies": true
+         }
+        ],
+        "n1": 107,
+        "n0": 176,
+        "median1": 0.5812342834390036,
+        "median0": 1.137442777783074,
+        "p_holm": 1.0,
+        "verdict": "does not separate",
+        "sign": null,
+        "thin": false,
+        "qualifying_strata": 2,
+        "pooled_sign_agrees": null
+       },
+       "D2": {
+        "tested": true,
+        "n_coded": 184,
+        "diff": 0.4927351403804674,
+        "p": 0.48825117488251174,
+        "strata": [
+         {
+          "stratum": 1,
+          "n1": 23,
+          "n0": 0,
+          "diff": null,
+          "qualifies": false
+         },
+         {
+          "stratum": 2,
+          "n1": 130,
+          "n0": 31,
+          "diff": 0.48284636393037494,
+          "qualifies": true
+         }
+        ],
+        "n1": 153,
+        "n0": 31,
+        "median1": 0.6246026186128153,
+        "median0": 0.13186747823234787,
+        "p_holm": 1.0,
+        "verdict": "we cannot conclude",
+        "sign": null,
+        "thin": true,
+        "qualifying_strata": 1,
+        "pooled_sign_agrees": null
+       },
+       "D4": {
+        "tested": true,
+        "n_coded": 135,
+        "diff": 0.8878613919925034,
+        "p": 0.3407659234076592,
+        "strata": [
+         {
+          "stratum": 1,
+          "n1": 4,
+          "n0": 8,
+          "diff": 3.454811933835419,
+          "qualifies": true
+         },
+         {
+          "stratum": 2,
+          "n1": 15,
+          "n0": 108,
+          "diff": 0.9222480613037498,
+          "qualifies": true
+         }
+        ],
+        "n1": 19,
+        "n0": 116,
+        "median1": 1.4938574984309654,
+        "median0": 0.605996106438462,
+        "p_holm": 1.0,
+        "verdict": "does not separate",
+        "sign": null,
+        "thin": false,
+        "qualifying_strata": 2,
+        "pooled_sign_agrees": null
+       },
+       "D5": {
+        "tested": true,
+        "n_coded": 244,
+        "diff": -1.1656961720758638,
+        "p": 0.040495950404959506,
+        "strata": [
+         {
+          "stratum": 1,
+          "n1": 6,
+          "n0": 16,
+          "diff": 2.0805105697751562,
+          "qualifies": true
+         },
+         {
+          "stratum": 2,
+          "n1": 58,
+          "n0": 164,
+          "diff": -1.5055671866144258,
+          "qualifies": true
+         }
+        ],
+        "n1": 64,
+        "n0": 180,
+        "median1": -0.00940281438913848,
+        "median0": 1.1562933576867254,
+        "p_holm": 0.16198380161983802,
+        "verdict": "does not separate",
+        "sign": null,
+        "thin": false,
+        "qualifying_strata": 2,
+        "pooled_sign_agrees": null
+       }
+      },
+      "O2_net": {
+       "D1": {
+        "tested": true,
+        "n_coded": 140,
+        "diff": 0.9775132255277725,
+        "p": 0.35276472352764726,
+        "strata": [
+         {
+          "stratum": 1,
+          "n1": 8,
+          "n0": 6,
+          "diff": 0.8406727219101029,
+          "qualifies": true
+         },
+         {
+          "stratum": 2,
+          "n1": 56,
+          "n0": 70,
+          "diff": 0.7580479159738029,
+          "qualifies": true
+         }
+        ],
+        "n1": 64,
+        "n0": 76,
+        "median1": 7.103665987974307,
+        "median0": 6.126152762446535,
+        "p_holm": 1.0,
+        "verdict": "does not separate",
+        "sign": null,
+        "thin": false,
+        "qualifying_strata": 2,
+        "pooled_sign_agrees": null
+       },
+       "D2": {
+        "tested": true,
+        "n_coded": 101,
+        "diff": 5.3641544436334,
+        "p": 0.0415958404159584,
+        "strata": [
+         {
+          "stratum": 1,
+          "n1": 6,
+          "n0": 0,
+          "diff": null,
+          "qualifies": false
+         },
+         {
+          "stratum": 2,
+          "n1": 85,
+          "n0": 10,
+          "diff": 5.037118715839872,
+          "qualifies": true
+         }
+        ],
+        "n1": 91,
+        "n0": 10,
+        "median1": 6.592800681473486,
+        "median0": 1.2286462378400858,
+        "p_holm": 0.1663833616638336,
+        "verdict": "we cannot conclude",
+        "sign": null,
+        "thin": true,
+        "qualifying_strata": 1,
+        "pooled_sign_agrees": null
+       },
+       "D4": {
+        "tested": true,
+        "n_coded": 119,
+        "diff": -0.6273018988429415,
+        "p": 0.7398260173982601,
+        "strata": [
+         {
+          "stratum": 1,
+          "n1": 3,
+          "n0": 8,
+          "diff": 1.64446835240145,
+          "qualifies": true
+         },
+         {
+          "stratum": 2,
+          "n1": 11,
+          "n0": 97,
+          "diff": -2.1509565297897018,
+          "qualifies": true
+         }
+        ],
+        "n1": 14,
+        "n0": 105,
+        "median1": 5.8532889864099165,
+        "median0": 6.480590885252858,
+        "p_holm": 1.0,
+        "verdict": "does not separate",
+        "sign": null,
+        "thin": false,
+        "qualifying_strata": 2,
+        "pooled_sign_agrees": null
+       },
+       "D5": {
+        "tested": true,
+        "n_coded": 133,
+        "diff": -0.3717362143747769,
+        "p": 0.6308369163083691,
+        "strata": [
+         {
+          "stratum": 1,
+          "n1": 2,
+          "n0": 7,
+          "diff": -2.646974453840034,
+          "qualifies": false
+         },
+         {
+          "stratum": 2,
+          "n1": 31,
+          "n0": 93,
+          "diff": -0.3270357277935281,
+          "qualifies": true
+         }
+        ],
+        "n1": 33,
+        "n0": 100,
+        "median1": 6.265764953679958,
+        "median0": 6.637501168054735,
+        "p_holm": 1.0,
+        "verdict": "we cannot conclude",
+        "sign": null,
+        "thin": true,
+        "qualifying_strata": 1,
+        "pooled_sign_agrees": null
+       }
+      },
+      "O2_gross": {
+       "D1": {
+        "tested": true,
+        "n_coded": 269,
+        "diff": 4.024358670272379,
+        "p": 0.027797220277972202,
+        "strata": [
+         {
+          "stratum": 0,
+          "n1": 1,
+          "n0": 6,
+          "diff": -9.986494152560757,
+          "qualifies": false
+         },
+         {
+          "stratum": 1,
+          "n1": 20,
+          "n0": 29,
+          "diff": 2.1878667070881086,
+          "qualifies": true
+         },
+         {
+          "stratum": 2,
+          "n1": 79,
+          "n0": 134,
+          "diff": 4.340617302058952,
+          "qualifies": true
+         }
+        ],
+        "n1": 100,
+        "n0": 169,
+        "median1": 15.415660491834796,
+        "median0": 11.391301821562417,
+        "p_holm": 0.08339166083391661,
+        "verdict": "does not separate",
+        "sign": null,
+        "thin": false,
+        "qualifying_strata": 2,
+        "pooled_sign_agrees": null
+       },
+       "D2": {
+        "tested": true,
+        "n_coded": 174,
+        "diff": 8.873448788308451,
+        "p": 0.0004999500049995,
+        "strata": [
+         {
+          "stratum": 1,
+          "n1": 23,
+          "n0": 0,
+          "diff": null,
+          "qualifies": false
+         },
+         {
+          "stratum": 2,
+          "n1": 125,
+          "n0": 26,
+          "diff": 7.364167622223249,
+          "qualifies": true
+         }
+        ],
+        "n1": 148,
+        "n0": 26,
+        "median1": 14.590498994029504,
+        "median0": 5.717050205721053,
+        "p_holm": 0.001999800019998,
+        "verdict": "we cannot conclude",
+        "sign": null,
+        "thin": true,
+        "qualifying_strata": 1,
+        "pooled_sign_agrees": null
+       },
+       "D4": {
+        "tested": true,
+        "n_coded": 123,
+        "diff": -2.9191066440781803,
+        "p": 0.5795420457954205,
+        "strata": [
+         {
+          "stratum": 1,
+          "n1": 4,
+          "n0": 8,
+          "diff": 4.25300659635576,
+          "qualifies": true
+         },
+         {
+          "stratum": 2,
+          "n1": 11,
+          "n0": 100,
+          "diff": -7.038324984712072,
+          "qualifies": true
+         }
+        ],
+        "n1": 15,
+        "n0": 108,
+        "median1": 11.987909949972206,
+        "median0": 14.907016594050386,
+        "p_holm": 0.6723327667233276,
+        "verdict": "does not separate",
+        "sign": null,
+        "thin": false,
+        "qualifying_strata": 2,
+        "pooled_sign_agrees": null
+       },
+       "D5": {
+        "tested": true,
+        "n_coded": 230,
+        "diff": -1.5410178278518476,
+        "p": 0.3361663833616638,
+        "strata": [
+         {
+          "stratum": 1,
+          "n1": 6,
+          "n0": 17,
+          "diff": 1.383666513727249,
+          "qualifies": true
+         },
+         {
+          "stratum": 2,
+          "n1": 51,
+          "n0": 156,
+          "diff": -1.7556788992234047,
+          "qualifies": true
+         }
+        ],
+        "n1": 57,
+        "n0": 173,
+        "median1": 11.480454775345498,
+        "median0": 13.021472603197346,
+        "p_holm": 0.6723327667233276,
+        "verdict": "does not separate",
+        "sign": null,
+        "thin": false,
+        "qualifying_strata": 2,
+        "pooled_sign_agrees": null
+       }
+      }
+     }
+    }
+   },
+   "combined": {
+    "O1": {
+     "D1": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     },
+     "D2": {
+      "verdict": "we cannot conclude",
+      "sign": null,
+      "thin_readings": [
+       "at m0",
+       "the design's way"
+      ],
+      "tested_both": true
+     },
+     "D4": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     },
+     "D5": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     }
+    },
+    "O2_net": {
+     "D1": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     },
+     "D2": {
+      "verdict": "we cannot conclude",
+      "sign": null,
+      "thin_readings": [
+       "at m0",
+       "the design's way"
+      ],
+      "tested_both": true
+     },
+     "D4": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     },
+     "D5": {
+      "verdict": "we cannot conclude",
+      "sign": null,
+      "thin_readings": [
+       "the design's way"
+      ],
+      "tested_both": true
+     }
+    },
+    "O2_gross": {
+     "D1": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     },
+     "D2": {
+      "verdict": "we cannot conclude",
+      "sign": null,
+      "thin_readings": [
+       "at m0",
+       "the design's way"
+      ],
+      "tested_both": true
+     },
+     "D4": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     },
+     "D5": {
+      "verdict": "does not separate",
+      "sign": null,
+      "tested_both": true
+     }
+    }
+   }
+  },
+  "frame": {
+   "filled": {
+    "summary": {
+     "moneys": 145,
+     "monthly": 664,
+     "annual": 3,
+     "set_apart": 79,
+     "set_apart_by_kind": {
+      "annual": 3,
+      "definition change": 5,
+      "jump cannot be read": 15,
+      "one-month jump": 56
+     },
+     "censored_at_H": 7,
+     "accommodation_design": 205,
+     "accommodation_design_cannot_be_read": 122,
+     "accommodation_m0": 125,
+     "accommodation_m0_cannot_be_read": 133,
+     "tested_design": 294,
+     "tested_m0": 362,
+     "tested_both": 292,
+     "top_money": "BT",
+     "top_money_episodes": 12,
+     "top_money_share": 0.018,
+     "tested_design_by_era": [
+      8,
+      52,
+      234
+     ],
+     "tested_design_2020_2021": 29,
+     "tested_m0_by_era": [
+      14,
+      83,
+      265
+     ],
+     "tested_m0_2020_2021": 31,
+     "neither_acc_nor_censored": 335,
+     "set_apart_in_that_pool": 41,
+     "one_month_jumps_in_that_pool": 34,
+     "seam_in_window_tested_design": 17,
+     "flagged_tested_design": 9
+    },
+    "sizes_tested_design": {
+     "smoothing": 219,
+     "X2.5_Y2": 599,
+     "X10_Y2": 87,
+     "H24": 351,
+     "H60": 229
+    },
+    "kept": 588,
+    "acc_kept": 188,
+    "acc_apart": 17,
+    "unread_kept": 102,
+    "censored_rest": 4
+   },
+   "unfilled": {
+    "summary": {
+     "moneys": 145,
+     "monthly": 664,
+     "annual": 3,
+     "set_apart": 79,
+     "set_apart_by_kind": {
+      "annual": 3,
+      "definition change": 5,
+      "jump cannot be read": 15,
+      "one-month jump": 56
+     },
+     "censored_at_H": 7,
+     "accommodation_design": 202,
+     "accommodation_design_cannot_be_read": 133,
+     "accommodation_m0": 124,
+     "accommodation_m0_cannot_be_read": 144,
+     "tested_design": 287,
+     "tested_m0": 353,
+     "tested_both": 285,
+     "top_money": "BT",
+     "top_money_episodes": 12,
+     "top_money_share": 0.018,
+     "tested_design_by_era": [
+      8,
+      52,
+      227
+     ],
+     "tested_design_2020_2021": 26,
+     "tested_m0_by_era": [
+      14,
+      83,
+      256
+     ],
+     "tested_m0_2020_2021": 28,
+     "neither_acc_nor_censored": 328,
+     "set_apart_in_that_pool": 41,
+     "one_month_jumps_in_that_pool": 34,
+     "seam_in_window_tested_design": 17,
+     "flagged_tested_design": 9
+    },
+    "sizes_tested_design": {
+     "smoothing": 214,
+     "X2.5_Y2": 587,
+     "X10_Y2": 83,
+     "H24": 341,
+     "H60": 223
+    },
+    "kept": 588,
+    "acc_kept": 185,
+    "acc_apart": 17,
+    "unread_kept": 113,
+    "censored_rest": 3
+   }
+  },
+  "accommodation_apart": {
+   "n": 187,
+   "O1_n": 182,
+   "O1_median": 4.217243340138815
+  },
+  "episodes_out": {
+   "m0": {
+    "tested": 362,
+    "out": 14,
+    "from_1989": 9,
+    "before_1989": 5
+   },
+   "design": {
+    "tested": 294,
+    "out": 8,
+    "from_1989": 5,
+    "before_1989": 3
+   }
+  },
+  "list_episodes_before_1989": 206,
+  "list_episodes_before_1989_war_coded": 20,
+  "counted": {
+   "list X2.5_Y1": {
+    "kind": "list",
+    "combined": {
+     "O1": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "separates",
+       "sign": 1,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "depends on how accommodation is dated",
+       "sign": null,
+       "tested_both": true
+      }
+     },
+     "O2_net": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     },
+     "O2_gross": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     }
+    }
+   },
+   "list X2.5_Y2": {
+    "kind": "list",
+    "combined": {
+     "O1": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "separates",
+       "sign": 1,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     },
+     "O2_net": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "the design's way"
+       ],
+       "tested_both": true
+      }
+     },
+     "O2_gross": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     }
+    }
+   },
+   "list X2.5_Y3": {
+    "kind": "list",
+    "combined": {
+     "O1": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "separates",
+       "sign": 1,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     },
+     "O2_net": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     },
+     "O2_gross": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     }
+    }
+   },
+   "list X5_Y1": {
+    "kind": "list",
+    "combined": {
+     "O1": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     },
+     "O2_net": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "the design's way"
+       ],
+       "tested_both": true
+      }
+     },
+     "O2_gross": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     }
+    }
+   },
+   "list X5_Y3": {
+    "kind": "list",
+    "combined": {
+     "O1": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "depends on how accommodation is dated",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     },
+     "O2_net": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     },
+     "O2_gross": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     }
+    }
+   },
+   "list X10_Y1": {
+    "kind": "list",
+    "combined": {
+     "O1": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      }
+     },
+     "O2_net": {
+      "D1": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      }
+     },
+     "O2_gross": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      }
+     }
+    }
+   },
+   "list X10_Y2": {
+    "kind": "list",
+    "combined": {
+     "O1": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      }
+     },
+     "O2_net": {
+      "D1": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      }
+     },
+     "O2_gross": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      }
+     }
+    }
+   },
+   "list X10_Y3": {
+    "kind": "list",
+    "combined": {
+     "O1": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "the design's way"
+       ],
+       "tested_both": true
+      }
+     },
+     "O2_net": {
+      "D1": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      }
+     },
+     "O2_gross": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "the design's way"
+       ],
+       "tested_both": true
+      }
+     }
+    }
+   },
+   "T 10": {
+    "kind": "list",
+    "combined": {
+     "O1": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     },
+     "O2_net": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "the design's way"
+       ],
+       "tested_both": true
+      }
+     },
+     "O2_gross": {
+      "D1": {
+       "verdict": "depends on how accommodation is dated",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     }
+    }
+   },
+   "T 20": {
+    "kind": "list",
+    "combined": {
+     "O1": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     },
+     "O2_net": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "the design's way"
+       ],
+       "tested_both": true
+      }
+     },
+     "O2_gross": {
+      "D1": {
+       "verdict": "depends on how accommodation is dated",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     }
+    }
+   },
+   "q 0": {
+    "kind": "list",
+    "combined": {
+     "O1": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     },
+     "O2_net": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "the design's way"
+       ],
+       "tested_both": true
+      }
+     },
+     "O2_gross": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     }
+    }
+   },
+   "units factor 3": {
+    "kind": "list",
+    "combined": {
+     "O1": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     },
+     "O2_net": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "the design's way"
+       ],
+       "tested_both": true
+      }
+     },
+     "O2_gross": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     }
+    }
+   },
+   "smoothing": {
+    "kind": "list",
+    "combined": {
+     "O1": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     },
+     "O2_net": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "the design's way"
+       ],
+       "tested_both": true
+      }
+     },
+     "O2_gross": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     }
+    }
+   },
+   "set apart not keeping their place": {
+    "kind": "list",
+    "combined": {
+     "O1": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     },
+     "O2_net": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "the design's way"
+       ],
+       "tested_both": true
+      }
+     },
+     "O2_gross": {
+      "D1": {
+       "verdict": "depends on how accommodation is dated",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     }
+    }
+   },
+   "seam episodes out": {
+    "kind": "list",
+    "combined": {
+     "O1": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     },
+     "O2_net": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "the design's way"
+       ],
+       "tested_both": true
+      }
+     },
+     "O2_gross": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     }
+    }
+   },
+   "every set-apart jump put back": {
+    "kind": "list",
+    "combined": {
+     "O1": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "depends on how accommodation is dated",
+       "sign": null,
+       "tested_both": true
+      }
+     },
+     "O2_net": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     },
+     "O2_gross": {
+      "D1": {
+       "verdict": "depends on how accommodation is dated",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     }
+    }
+   },
+   "H 24": {
+    "kind": "list",
+    "combined": {
+     "O1": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "depends on how accommodation is dated",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     },
+     "O2_net": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "the design's way"
+       ],
+       "tested_both": true
+      }
+     },
+     "O2_gross": {
+      "D1": {
+       "verdict": "depends on how accommodation is dated",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     }
+    }
+   },
+   "H 60": {
+    "kind": "list",
+    "combined": {
+     "O1": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     },
+     "O2_net": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "the design's way"
+       ],
+       "tested_both": true
+      }
+     },
+     "O2_gross": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     }
+    }
+   },
+   "peg band 1%": {
+    "kind": "peg",
+    "combined": {
+     "O1": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     },
+     "O2_net": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "the design's way"
+       ],
+       "tested_both": true
+      }
+     },
+     "O2_gross": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     }
+    }
+   },
+   "peg band 5%": {
+    "kind": "peg",
+    "combined": {
+     "O1": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     },
+     "O2_net": {
+      "D1": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "the design's way"
+       ],
+       "tested_both": true
+      }
+     },
+     "O2_gross": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     }
+    }
+   },
+   "floor 0.25%": {
+    "kind": "floor",
+    "combined": {
+     "O1": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     },
+     "O2_net": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "the design's way"
+       ],
+       "tested_both": true
+      }
+     },
+     "O2_gross": {
+      "D1": {
+       "verdict": "depends on how accommodation is dated",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     }
+    }
+   },
+   "floor 1%": {
+    "kind": "floor",
+    "combined": {
+     "O1": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     },
+     "O2_net": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "the design's way"
+       ],
+       "tested_both": true
+      }
+     },
+     "O2_gross": {
+      "D1": {
+       "verdict": "depends on how accommodation is dated",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     }
+    }
+   },
+   "deficit -3%": {
+    "kind": "deficit",
+    "combined": {
+     "O1": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     },
+     "O2_net": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     },
+     "O2_gross": {
+      "D1": {
+       "verdict": "depends on how accommodation is dated",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     }
+    }
+   },
+   "deficit -7%": {
+    "kind": "deficit",
+    "combined": {
+     "O1": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "depends on how accommodation is dated",
+       "sign": null,
+       "tested_both": true
+      }
+     },
+     "O2_net": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      }
+     },
+     "O2_gross": {
+      "D1": {
+       "verdict": "depends on how accommodation is dated",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     }
+    }
+   },
+   "war episodes out": {
+    "kind": "list",
+    "combined": {
+     "O1": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     },
+     "O2_net": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "the design's way"
+       ],
+       "tested_both": true
+      }
+     },
+     "O2_gross": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     }
+    }
+   },
+   "episodes starting in 2020-2021 apart": {
+    "kind": "list",
+    "combined": {
+     "O1": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "depends on how accommodation is dated",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "depends on how accommodation is dated",
+       "sign": null,
+       "tested_both": true
+      }
+     },
+     "O2_net": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "the design's way"
+       ],
+       "tested_both": true
+      }
+     },
+     "O2_gross": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     }
+    }
+   },
+   "the money giving most episodes out (BT)": {
+    "kind": "list",
+    "combined": {
+     "O1": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     },
+     "O2_net": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "the design's way"
+       ],
+       "tested_both": true
+      }
+     },
+     "O2_gross": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     }
+    }
+   },
+   "D4's read-past-c episodes out": {
+    "kind": "past_c",
+    "combined": {
+     "O1": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     },
+     "O2_net": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "the design's way"
+       ],
+       "tested_both": true
+      }
+     },
+     "O2_gross": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     }
+    }
+   },
+   "five-year strata": {
+    "kind": "list",
+    "combined": {
+     "O1": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     },
+     "O2_net": {
+      "D1": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "we cannot conclude",
+       "sign": null,
+       "thin_readings": [
+        "at m0",
+        "the design's way"
+       ],
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     },
+     "O2_gross": {
+      "D1": {
+       "verdict": "depends on how accommodation is dated",
+       "sign": null,
+       "tested_both": true
+      },
+      "D2": {
+       "verdict": "separates",
+       "sign": 1,
+       "tested_both": true
+      },
+      "D4": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      },
+      "D5": {
+       "verdict": "does not separate",
+       "sign": null,
+       "tested_both": true
+      }
+     }
+    }
+   }
+  },
+  "any_verdict_differs": true
+ }
+}

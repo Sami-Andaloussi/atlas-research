@@ -1,0 +1,98 @@
+id: C15-e-episodes-closed
+label: measurement
+title: Frame e, the rule closed - every one-month jump set apart, guards read on the raw base in every variant
+parent:
+  id: C11-e-episodes-checked
+  hash: 02727a1588bc6f107bb6d481f406be8003b1de32bf4e81cbf8219aa24a0d23f9
+question: >-
+  As C11 - which moneys, since 1950, raised their reported base money by at least X% of a year's GDP
+  within Y years, beyond the economy's prior growth, one episode per horizon - with no case let in or kept
+  out on evidence the card does not fix.
+method: >-
+  C11's rule in every part (the prior pace floored at zero, the window, the take-off, the scale, the annual
+  fallback, one episode per horizon, the units check, accommodation, censoring, per-episode seams, the
+  one-line record), with these changes answering the narrow check of 2026-09-30
+  (check/2026-09-30-opus-cards-narrow.md: B1, O1, O2, O3, m1):
+  (1) No exception by document. Every episode whose jump share (the largest one-month rise of the raw
+  base in (low, c] over B(c) - B(low)) is 0.8 or more is set apart, documented or not: as a change of
+  definition if the jump month is December 2001 or the money's own seam month, as "a one-month jump"
+  otherwise. C11's route by which a cited document kept a jump in is removed; no notes file bears on the
+  list. A counted variant puts back every episode the jump rule set apart, all of them, never a chosen few.
+  (2) Guards on the raw base in every variant. The jump share and the seam flag are always read on the
+  raw base, the smoothing variant included: that variant smooths the base the rule scans for crossings,
+  never the base the guards read.
+  (3) What an entry is, said as it is: a rise of reported base money, not a fall of GDP (the prior pace is
+  floored at zero). A change on the central bank's liability side that the jump rule does not catch - a
+  reclassification spread over months, or a jump share below 0.8 - still enters; the lines below are
+  flagged for it.
+  (4) Flagged "likely reclassification, unread", on their lines, kept in the list and in the tests (a
+  label, never an entry or exit): the episodes of BJ, NE and SN whose window [low, c] holds 2003-12; of
+  DM, KN and VC whose window holds 1984-03; of DK whose window holds 2012-07, and whose window holds
+  2021-03; of GT whose window holds 2001-12. These are the nine the narrow check named from the first
+  check's list of likely reclassifications, each below the 0.8 share. (An episode whose window holds
+  December 2001 or its money's seam month already carries seam_in_window.)
+  (5) Reported beside the headline, with their sizes and not only as counted runs: the seam variant
+  (episodes with seam_in_window out), the smoothing variant, and the jump shares 0.5, 0.67 and 0.9 in
+  place of 0.8.
+  For comparison later, not as a target: the narrow check's own rerun of this rule gave 667 episodes, 64
+  set apart (56 one-month jumps, 5 changes of definition, 3 annual), 289 tested the design's way and 356
+  with accommodation dated at m0.
+parameters:
+  X_pct_of_gdp: 5
+  Y_years: 2
+  q_takeoff: 0.1
+  T_inflation_pct: 12
+  H_months: 36
+  gamma_floor: 0
+  resume_at: m0 + H
+  units_factor: 2
+  jump_share: 0.8
+  jump_exception: none
+  guards_read_on: the raw base, in every variant
+  definition_change_months: [2001-12, the money's own seam month]
+  likely_reclassification_unread:
+    - BJ, window holds 2003-12
+    - NE, window holds 2003-12
+    - SN, window holds 2003-12
+    - DM, window holds 1984-03
+    - KN, window holds 1984-03
+    - VC, window holds 1984-03
+    - DK, window holds 2012-07
+    - DK, window holds 2021-03
+    - GT, window holds 2001-12
+  beside_the_headline: [seam variant, smoothing variant, jump share 0.5, jump share 0.67, jump share 0.9]
+  grid:
+    X_pct_of_gdp: [2.5, 5, 10]
+    Y_years: [1, 2, 3]
+    T_inflation_pct: [10, 20]
+    H_months: [24, 60]
+    q_takeoff: [0]
+    units_factor: [3]
+    variants: [smoothing (3-month trailing mean, guards raw), set-apart episodes not keeping their place, seam episodes out, every set-apart jump put back, gamma not floored (C09)]
+  changes_from_parent: [the document exception removed, guards read raw in every variant, the entry named as a rise of reported base money, nine lines flagged likely reclassification, seam and smoothing variants and jump shares reported beside]
+  seen_before_writing: >-
+    C05's and C09's runs, entry side only; the first check and the narrow check of 2026-09-30, both entry
+    side only, with the narrow check's counts for this rule (above) and the moneys and months it names. No
+    price, broad money or outcome after a crossing. C11 was never run.
+data:
+  - dataset: the datasets of C11-e-episodes-checked, at the same vintages
+period: 1950-01 to the panel's last month of base money (2026)
+sample: >-
+  As C11, less the document route: entry by rule, never by name, and no exit by name. Set apart,
+  reported with their lines and never tested: accommodation, censored episodes, changes of definition and
+  every one-month jump. The nine flagged lines stay in, labelled.
+out_of_sample: >-
+  None for the rule itself, said as the dossier says it for frame d: revised on the whole sample three
+  times (C05, C09, C11, C15), each after reading only the lists' entry side, with nothing held out, by a
+  producer and checkers who saw money names whose histories are public knowledge. The checks outside
+  the cases are the tests' (C16's eras and counted variants, C07's and C17's cutoff); every list, variant
+  and jump share is reported with its size.
+failure: >-
+  As C11: too thin for C16 below ten tested episodes; every count with and without a money giving more
+  than a quarter; if the set-apart jumps outnumber a third of the episodes neither accommodation nor
+  censored, C16's verdicts carry that sentence. If the headline list differs from the narrow check's
+  rerun (667, 64, 289, 356), the difference is explained before any outcome is read.
+not: >-
+  Not a list of printings that caused anything. Not base money actually added in every line: a rise of
+  base money as reported, with the flagged lines likely reclassifications. Not corrected on outcomes.
+created: '2026-09-30'

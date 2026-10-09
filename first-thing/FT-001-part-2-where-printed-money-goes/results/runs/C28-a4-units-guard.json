@@ -1,0 +1,697 @@
+{
+ "card": "C28-a4-units-guard",
+ "card_hash": "99c1880e37bc40362d6e384ccdee22527df703e34cada520b83763c989e1e497",
+ "run_at": "2026-10-06T23:19:20+00:00",
+ "result": {
+  "void": false,
+  "reproduces_stored": {
+   "C02_grid": true,
+   "C22_grid": true,
+   "broad": true
+  },
+  "switched": {
+   "rgdp": [
+    {
+     "area": "BF",
+     "spread": 1071935287.9014224,
+     "overlap_years": 66
+    },
+    {
+     "area": "SR",
+     "spread": 2654.1442042139965,
+     "overlap_years": 66
+    }
+   ],
+   "cpi": [],
+   "gdp": []
+  },
+  "switches_as_counted": {
+   "rgdp": true,
+   "cpi": true,
+   "gdp": true
+  },
+  "C02_grid": {
+   "guarded": {
+    "windows": 635,
+    "moneys": 155,
+    "beta": 0.9995327225939519,
+    "lo": 0.9394551733762019,
+    "hi": 1.0596102718117018,
+    "verdict": "one for one",
+    "r2": 0.9166565288338927,
+    "gamma": -0.7252480457930158,
+    "gamma_lo": -0.9331701713407122,
+    "gamma_hi": -0.5173259202453194,
+    "gamma_verdict": "partly (above one)",
+    "line_pi": {
+     "beta_below": 0.2893759476630504,
+     "beta_below_lo": 0.23807044778273317,
+     "beta_below_hi": 0.34068144754336765,
+     "verdict_below": "partly (between zero and one)",
+     "beta_above": 1.0481504996065063,
+     "beta_above_lo": 0.9810064108977905,
+     "beta_above_hi": 1.115294588315222,
+     "verdict_above": "one for one",
+     "theta": 0.7587745519434559,
+     "p_theta": 9.585405369459497e-69,
+     "separates": true,
+     "windows_above": 124,
+     "windows_below": 511
+    },
+    "line_mu": {
+     "beta_below": 0.25320369044632346,
+     "beta_below_lo": 0.1431619701518837,
+     "beta_below_hi": 0.3632454107407632,
+     "verdict_below": "partly (between zero and one)",
+     "beta_above": 1.0659077673397646,
+     "beta_above_lo": 1.007397968723999,
+     "beta_above_hi": 1.1244175659555302,
+     "verdict_above": "partly (above one)",
+     "theta": 0.812704076893441,
+     "p_theta": 6.407153147112604e-39,
+     "separates": true,
+     "windows_above": 326,
+     "windows_below": 309
+    },
+    "held_out": {
+     "train_windows": 224,
+     "test_windows": 411,
+     "moneys_in_both": 102,
+     "oos_r2": 0.8761687068497123,
+     "beta": 0.9357272526865952,
+     "lo": 0.8287057130280642,
+     "hi": 1.0427487923451262,
+     "verdict": "one for one",
+     "same_verdict": true,
+     "fit_train_beta": 1.032001989251786
+    },
+    "folds": [
+     {
+      "fold": 0,
+      "windows": 114,
+      "moneys": 31,
+      "oos_r2": 0.8581555705294264,
+      "beta": 0.995863756832879,
+      "beta_lo": 0.9125022539714354,
+      "beta_hi": 1.0792252596943226,
+      "verdict": "one for one"
+     },
+     {
+      "fold": 1,
+      "windows": 131,
+      "moneys": 31,
+      "oos_r2": 0.9277398306954646,
+      "beta": 1.0374457281581464,
+      "beta_lo": 0.8902160348983759,
+      "beta_hi": 1.184675421417917,
+      "verdict": "one for one"
+     },
+     {
+      "fold": 2,
+      "windows": 143,
+      "moneys": 31,
+      "oos_r2": 0.9350731562361048,
+      "beta": 1.0173909325221593,
+      "beta_lo": 0.9656634336432574,
+      "beta_hi": 1.0691184314010613,
+      "verdict": "one for one"
+     },
+     {
+      "fold": 3,
+      "windows": 129,
+      "moneys": 31,
+      "oos_r2": 0.951109547505468,
+      "beta": 0.979037961817719,
+      "beta_lo": 0.8986108561605533,
+      "beta_hi": 1.0594650674748847,
+      "verdict": "one for one"
+     },
+     {
+      "fold": 4,
+      "windows": 118,
+      "moneys": 31,
+      "oos_r2": 0.6583527143851327,
+      "beta": 0.8507708579243087,
+      "beta_lo": 0.5629612448631883,
+      "beta_hi": 1.138580470985429,
+      "verdict": "one for one"
+     }
+    ],
+    "folds_differing": 0,
+    "holds": true
+   },
+   "unguarded": {
+    "windows": 635,
+    "moneys": 155,
+    "beta": 1.0072840760664692,
+    "lo": 0.940309153969016,
+    "hi": 1.0742589981639223,
+    "verdict": "one for one",
+    "r2": 0.9077210886640632,
+    "gamma": -0.07067005130922765,
+    "gamma_lo": -0.20317062030491165,
+    "gamma_hi": 0.06183051768645634,
+    "gamma_verdict": "no relation",
+    "line_pi": {
+     "beta_below": 0.25419922376926257,
+     "beta_below_lo": 0.20799238936749379,
+     "beta_below_hi": 0.3004060581710314,
+     "verdict_below": "partly (between zero and one)",
+     "beta_above": 1.0559299517569485,
+     "beta_above_lo": 0.9885280367952722,
+     "beta_above_hi": 1.1233318667186247,
+     "verdict_above": "one for one",
+     "theta": 0.8017307279876859,
+     "p_theta": 1.5284885086760815e-82,
+     "separates": true,
+     "windows_above": 124,
+     "windows_below": 511
+    },
+    "line_mu": {
+     "beta_below": 0.22194389472962123,
+     "beta_below_lo": 0.11935636071939493,
+     "beta_below_hi": 0.3245314287398475,
+     "verdict_below": "partly (between zero and one)",
+     "beta_above": 1.080507255372911,
+     "beta_above_lo": 1.0214346066205777,
+     "beta_above_hi": 1.1395799041252441,
+     "verdict_above": "partly (above one)",
+     "theta": 0.8585633606432896,
+     "p_theta": 6.501600699275674e-49,
+     "separates": true,
+     "windows_above": 326,
+     "windows_below": 309
+    },
+    "held_out": {
+     "train_windows": 224,
+     "test_windows": 411,
+     "moneys_in_both": 102,
+     "oos_r2": 0.8653474321945261,
+     "beta": 0.9359147193933457,
+     "lo": 0.8291912050662715,
+     "hi": 1.0426382337204199,
+     "verdict": "one for one",
+     "same_verdict": true,
+     "fit_train_beta": 1.0479236841940722
+    },
+    "folds": [
+     {
+      "fold": 0,
+      "windows": 114,
+      "moneys": 31,
+      "oos_r2": 0.828811791072271,
+      "beta": 0.997135736353875,
+      "beta_lo": 0.9138588113280903,
+      "beta_hi": 1.0804126613796596,
+      "verdict": "one for one"
+     },
+     {
+      "fold": 1,
+      "windows": 131,
+      "moneys": 31,
+      "oos_r2": 0.9271518665200796,
+      "beta": 1.0374457281581464,
+      "beta_lo": 0.8902160348983759,
+      "beta_hi": 1.184675421417917,
+      "verdict": "one for one"
+     },
+     {
+      "fold": 2,
+      "windows": 143,
+      "moneys": 31,
+      "oos_r2": 0.9259873656094063,
+      "beta": 1.0173909325221593,
+      "beta_lo": 0.9656634336432574,
+      "beta_hi": 1.0691184314010613,
+      "verdict": "one for one"
+     },
+     {
+      "fold": 3,
+      "windows": 129,
+      "moneys": 31,
+      "oos_r2": 0.9491101267713956,
+      "beta": 0.979037961817719,
+      "beta_lo": 0.8986108561605533,
+      "beta_hi": 1.0594650674748847,
+      "verdict": "one for one"
+     },
+     {
+      "fold": 4,
+      "windows": 118,
+      "moneys": 31,
+      "oos_r2": -1.001315983976026,
+      "beta": 0.8448760297964888,
+      "beta_lo": 0.5335370431418236,
+      "beta_hi": 1.156215016451154,
+      "verdict": "one for one"
+     }
+    ],
+    "folds_differing": 0,
+    "holds": true
+   },
+   "differs": []
+  },
+  "C22_grid": {
+   "guarded": {
+    "windows": 573,
+    "moneys": 156,
+    "beta": 0.9516166940620513,
+    "lo": 0.8856739377201704,
+    "hi": 1.0175594504039323,
+    "verdict": "one for one",
+    "r2": 0.8991806481022867,
+    "gamma": -0.8827880088485436,
+    "gamma_lo": -1.1161326068291877,
+    "gamma_hi": -0.6494434108678996,
+    "gamma_verdict": "one for one",
+    "line_pi": {
+     "beta_below": 0.30598932266063716,
+     "beta_below_lo": 0.24053896446988163,
+     "beta_below_hi": 0.3714396808513927,
+     "verdict_below": "partly (between zero and one)",
+     "beta_above": 0.9802219991628689,
+     "beta_above_lo": 0.887447622698831,
+     "beta_above_hi": 1.0729963756269068,
+     "verdict_above": "one for one",
+     "theta": 0.6742326765022317,
+     "p_theta": 2.7091050951778464e-35,
+     "separates": true,
+     "windows_above": 106,
+     "windows_below": 467
+    },
+    "line_mu": {
+     "beta_below": 0.2874945929316507,
+     "beta_below_lo": 0.1649452878555303,
+     "beta_below_hi": 0.4100438980077711,
+     "verdict_below": "partly (between zero and one)",
+     "beta_above": 1.0113867424330103,
+     "beta_above_lo": 0.9220594679377411,
+     "beta_above_hi": 1.1007140169282796,
+     "verdict_above": "one for one",
+     "theta": 0.7238921495013596,
+     "p_theta": 1.0596853929528039e-21,
+     "separates": true,
+     "windows_above": 281,
+     "windows_below": 292
+    },
+    "held_out": {
+     "train_windows": 165,
+     "test_windows": 291,
+     "moneys_in_both": 93,
+     "oos_r2": 0.7631737089687168,
+     "beta": 0.5572206598110825,
+     "lo": 0.3984375008464507,
+     "hi": 0.7160038187757143,
+     "verdict": "partly (between zero and one)",
+     "same_verdict": false,
+     "fit_train_beta": 1.0353230500318509
+    },
+    "folds": [
+     {
+      "fold": 0,
+      "windows": 102,
+      "moneys": 32,
+      "oos_r2": 0.8622560895217157,
+      "beta": 0.9600794458178064,
+      "beta_lo": 0.8626474190319728,
+      "beta_hi": 1.0575114726036399,
+      "verdict": "one for one"
+     },
+     {
+      "fold": 1,
+      "windows": 113,
+      "moneys": 31,
+      "oos_r2": 0.9256833076741365,
+      "beta": 0.9673419091214086,
+      "beta_lo": 0.9230029337505622,
+      "beta_hi": 1.0116808844922551,
+      "verdict": "one for one"
+     },
+     {
+      "fold": 2,
+      "windows": 122,
+      "moneys": 31,
+      "oos_r2": 0.8649477172154247,
+      "beta": 1.0221009551489342,
+      "beta_lo": 0.8636507939829979,
+      "beta_hi": 1.1805511163148703,
+      "verdict": "one for one"
+     },
+     {
+      "fold": 3,
+      "windows": 122,
+      "moneys": 31,
+      "oos_r2": 0.9431381515261879,
+      "beta": 0.9174437556397825,
+      "beta_lo": 0.857646769751705,
+      "beta_hi": 0.9772407415278601,
+      "verdict": "partly (between zero and one)"
+     },
+     {
+      "fold": 4,
+      "windows": 114,
+      "moneys": 31,
+      "oos_r2": 0.6128917590703652,
+      "beta": 0.656178655787333,
+      "beta_lo": 0.33890465039186124,
+      "beta_hi": 0.9734526611828048,
+      "verdict": "partly (between zero and one)"
+     }
+    ],
+    "folds_differing": 2,
+    "holds": false
+   },
+   "unguarded": {
+    "windows": 573,
+    "moneys": 156,
+    "beta": 0.9594691538081779,
+    "lo": 0.8934001327186247,
+    "hi": 1.025538174897731,
+    "verdict": "one for one",
+    "r2": 0.8870670117718549,
+    "gamma": -0.0869973897838184,
+    "gamma_lo": -0.2092054550461297,
+    "gamma_hi": 0.03521067547849292,
+    "gamma_verdict": "no relation",
+    "line_pi": {
+     "beta_below": 0.25425768298677875,
+     "beta_below_lo": 0.2032454344127488,
+     "beta_below_hi": 0.3052699315608087,
+     "verdict_below": "partly (between zero and one)",
+     "beta_above": 0.9893404794429459,
+     "beta_above_lo": 0.8969381388322683,
+     "beta_above_hi": 1.0817428200536237,
+     "verdict_above": "one for one",
+     "theta": 0.7350827964561671,
+     "p_theta": 1.388982427474324e-42,
+     "separates": true,
+     "windows_above": 106,
+     "windows_below": 467
+    },
+    "line_mu": {
+     "beta_below": 0.21441664312400566,
+     "beta_below_lo": 0.11859816952956853,
+     "beta_below_hi": 0.3102351167184428,
+     "verdict_below": "partly (between zero and one)",
+     "beta_above": 1.0290370072111918,
+     "beta_above_lo": 0.9414361885391008,
+     "beta_above_hi": 1.1166378258832828,
+     "verdict_above": "one for one",
+     "theta": 0.8146203640871863,
+     "p_theta": 1.3155639368706448e-35,
+     "separates": true,
+     "windows_above": 281,
+     "windows_below": 292
+    },
+    "held_out": {
+     "train_windows": 165,
+     "test_windows": 291,
+     "moneys_in_both": 93,
+     "oos_r2": 0.7141077654404675,
+     "beta": 0.5564864256223593,
+     "lo": 0.3988192752388845,
+     "hi": 0.7141535760058341,
+     "verdict": "partly (between zero and one)",
+     "same_verdict": false,
+     "fit_train_beta": 1.0510485777718075
+    },
+    "folds": [
+     {
+      "fold": 0,
+      "windows": 102,
+      "moneys": 32,
+      "oos_r2": 0.8212480987539015,
+      "beta": 0.9600794458178064,
+      "beta_lo": 0.8626474190319728,
+      "beta_hi": 1.0575114726036399,
+      "verdict": "one for one"
+     },
+     {
+      "fold": 1,
+      "windows": 113,
+      "moneys": 31,
+      "oos_r2": 0.9208038799776956,
+      "beta": 0.9665480546622001,
+      "beta_lo": 0.9215077664603836,
+      "beta_hi": 1.0115883428640167,
+      "verdict": "one for one"
+     },
+     {
+      "fold": 2,
+      "windows": 122,
+      "moneys": 31,
+      "oos_r2": 0.854731760351596,
+      "beta": 1.0221009551489342,
+      "beta_lo": 0.8636507939829979,
+      "beta_hi": 1.1805511163148703,
+      "verdict": "one for one"
+     },
+     {
+      "fold": 3,
+      "windows": 122,
+      "moneys": 31,
+      "oos_r2": 0.9447053963407916,
+      "beta": 0.9174437556397825,
+      "beta_lo": 0.857646769751705,
+      "beta_hi": 0.9772407415278601,
+      "verdict": "partly (between zero and one)"
+     },
+     {
+      "fold": 4,
+      "windows": 114,
+      "moneys": 31,
+      "oos_r2": -4.319568890183563,
+      "beta": 0.6123076917571042,
+      "beta_lo": 0.3310709252790517,
+      "beta_hi": 0.8935444582351567,
+      "verdict": "partly (between zero and one)"
+     }
+    ],
+    "folds_differing": 2,
+    "holds": false
+   },
+   "differs": []
+  },
+  "broad": {
+   "guarded": {
+    "windows": 625,
+    "moneys": 155,
+    "beta": 1.0069510342848056,
+    "lo": 0.948814839076547,
+    "hi": 1.0650872294930642,
+    "verdict": "one for one",
+    "r2": 0.949024077538063,
+    "gamma": -1.0109897094282487,
+    "gamma_lo": -1.2020923027318555,
+    "gamma_hi": -0.8198871161246419,
+    "gamma_verdict": "one for one",
+    "line_pi": {
+     "beta_below": 0.5136676539737939,
+     "beta_below_lo": 0.46047386845337895,
+     "beta_below_hi": 0.5668614394942089,
+     "verdict_below": "partly (between zero and one)",
+     "beta_above": 1.0303098467732121,
+     "beta_above_lo": 0.9509629511125667,
+     "beta_above_hi": 1.1096567424338577,
+     "verdict_above": "one for one",
+     "theta": 0.5166421927994183,
+     "p_theta": 3.2993265144499276e-27,
+     "separates": true,
+     "windows_above": 126,
+     "windows_below": 499
+    },
+    "line_mu": {
+     "beta_below": 0.6171510499630104,
+     "beta_below_lo": 0.48482956904496166,
+     "beta_below_hi": 0.7494725308810591,
+     "verdict_below": "partly (between zero and one)",
+     "beta_above": 1.042642417131753,
+     "beta_above_lo": 0.9741432894885128,
+     "beta_above_hi": 1.111141544774993,
+     "verdict_above": "one for one",
+     "theta": 0.42549136716874253,
+     "p_theta": 1.8228911597216278e-08,
+     "separates": true,
+     "windows_above": 340,
+     "windows_below": 285
+    },
+    "held_out": {
+     "train_windows": 223,
+     "test_windows": 402,
+     "moneys_in_both": 103,
+     "oos_r2": 0.9342008840589215,
+     "beta": 0.9459973566282953,
+     "lo": 0.8914102153076479,
+     "hi": 1.0005844979489429,
+     "verdict": "one for one",
+     "same_verdict": true,
+     "fit_train_beta": 1.0475047815211842
+    },
+    "folds": [
+     {
+      "fold": 0,
+      "windows": 113,
+      "moneys": 31,
+      "oos_r2": 0.9224524107275791,
+      "beta": 0.9674804145535771,
+      "beta_lo": 0.9101446460134185,
+      "beta_hi": 1.0248161830937357,
+      "verdict": "one for one"
+     },
+     {
+      "fold": 1,
+      "windows": 128,
+      "moneys": 31,
+      "oos_r2": 0.9428372587979438,
+      "beta": 1.0569206502215929,
+      "beta_lo": 0.9047520031559972,
+      "beta_hi": 1.2090892972871885,
+      "verdict": "one for one"
+     },
+     {
+      "fold": 2,
+      "windows": 139,
+      "moneys": 31,
+      "oos_r2": 0.9682845045467602,
+      "beta": 1.0380047515743298,
+      "beta_lo": 1.006429214752201,
+      "beta_hi": 1.0695802883964587,
+      "verdict": "partly (above one)"
+     },
+     {
+      "fold": 3,
+      "windows": 127,
+      "moneys": 31,
+      "oos_r2": 0.9648193455746941,
+      "beta": 0.9605475888066237,
+      "beta_lo": 0.9127465385857478,
+      "beta_hi": 1.0083486390274996,
+      "verdict": "one for one"
+     },
+     {
+      "fold": 4,
+      "windows": 118,
+      "moneys": 31,
+      "oos_r2": 0.8253864032195998,
+      "beta": 0.9448689514194222,
+      "beta_lo": 0.7790059187059948,
+      "beta_hi": 1.1107319841328496,
+      "verdict": "one for one"
+     }
+    ],
+    "folds_differing": 1,
+    "holds": true
+   },
+   "unguarded": {
+    "windows": 625,
+    "moneys": 155,
+    "beta": 1.012495705917125,
+    "lo": 0.9479430933061164,
+    "hi": 1.0770483185281334,
+    "verdict": "one for one",
+    "r2": 0.9321688090060537,
+    "gamma": -0.11433737217020379,
+    "gamma_lo": -0.2913543331669399,
+    "gamma_hi": 0.06267958882653238,
+    "gamma_verdict": "no relation",
+    "line_pi": {
+     "beta_below": 0.3837097560742677,
+     "beta_below_lo": 0.33910320529139987,
+     "beta_below_hi": 0.42831630685713556,
+     "verdict_below": "partly (between zero and one)",
+     "beta_above": 1.0459881124972767,
+     "beta_above_lo": 0.9663035517380519,
+     "beta_above_hi": 1.1256726732565014,
+     "verdict_above": "one for one",
+     "theta": 0.6622783564230089,
+     "p_theta": 1.586920496530822e-45,
+     "separates": true,
+     "windows_above": 126,
+     "windows_below": 499
+    },
+    "line_mu": {
+     "beta_below": 0.4012108274333114,
+     "beta_below_lo": 0.2927034398362105,
+     "beta_below_hi": 0.5097182150304123,
+     "verdict_below": "partly (between zero and one)",
+     "beta_above": 1.0667844240359465,
+     "beta_above_lo": 0.9978444856669764,
+     "beta_above_hi": 1.1357243624049167,
+     "verdict_above": "one for one",
+     "theta": 0.6655735966026352,
+     "p_theta": 1.4529807507024872e-24,
+     "separates": true,
+     "windows_above": 340,
+     "windows_below": 285
+    },
+    "held_out": {
+     "train_windows": 223,
+     "test_windows": 402,
+     "moneys_in_both": 103,
+     "oos_r2": 0.9088140300868319,
+     "beta": 0.9454335028248191,
+     "lo": 0.8898775545633174,
+     "hi": 1.0009894510863209,
+     "verdict": "one for one",
+     "same_verdict": true,
+     "fit_train_beta": 1.0651717907089115
+    },
+    "folds": [
+     {
+      "fold": 0,
+      "windows": 113,
+      "moneys": 31,
+      "oos_r2": 0.8801147940542888,
+      "beta": 0.9649571982768683,
+      "beta_lo": 0.9077977550712271,
+      "beta_hi": 1.0221166414825096,
+      "verdict": "one for one"
+     },
+     {
+      "fold": 1,
+      "windows": 128,
+      "moneys": 31,
+      "oos_r2": 0.9373722345663088,
+      "beta": 1.0569206502215929,
+      "beta_lo": 0.9047520031559972,
+      "beta_hi": 1.2090892972871885,
+      "verdict": "one for one"
+     },
+     {
+      "fold": 2,
+      "windows": 139,
+      "moneys": 31,
+      "oos_r2": 0.9510247590216805,
+      "beta": 1.0380047515743298,
+      "beta_lo": 1.006429214752201,
+      "beta_hi": 1.0695802883964587,
+      "verdict": "partly (above one)"
+     },
+     {
+      "fold": 3,
+      "windows": 127,
+      "moneys": 31,
+      "oos_r2": 0.9577160929351307,
+      "beta": 0.9605475888066237,
+      "beta_lo": 0.9127465385857478,
+      "beta_hi": 1.0083486390274996,
+      "verdict": "one for one"
+     },
+     {
+      "fold": 4,
+      "windows": 118,
+      "moneys": 31,
+      "oos_r2": -2.2252105880381987,
+      "beta": 0.9117639155075045,
+      "beta_lo": 0.688286168268149,
+      "beta_hi": 1.1352416627468598,
+      "verdict": "one for one"
+     }
+    ],
+    "folds_differing": 1,
+    "holds": true
+   },
+   "differs": []
+  }
+ }
+}

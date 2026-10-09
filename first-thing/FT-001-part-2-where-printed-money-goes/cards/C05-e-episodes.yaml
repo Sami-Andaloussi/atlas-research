@@ -1,0 +1,119 @@
+id: C05-e-episodes
+label: measurement
+title: Frame e - every episode in which a central bank added base money worth X% of GDP within Y years, 1950-2026, by rule
+question: >-
+  By one rule fixed before any list is seen, which moneys, since 1950, added base money worth at least
+  X% of a year's GDP within Y years, when did each start and cross, and which of them had inflation at or
+  above the threshold before they crossed (accommodation, set apart)?
+method: >-
+  Panel: code/panel.py as committed in 2445181, monthly() for the months and panel() for GDP and the
+  flags. For a money, B(t) is its base money in month t (IFS: end of month; the United States:
+  BOGMBASE, the month's average of daily figures; the euro area: the average over the maintenance
+  period), and GDP(y) its nominal GDP in year y (panel(), local currency).
+  The rule, month by month in order: w(t) = the later of t - 12Y months and the month after the
+  previous episode's crossing (the money's first month for its first episode); L(t) = the lowest B over
+  [w(t), t]; the take-off m(t) = the last month in [w(t), t) at which B was at or below
+  L(t) + q * (B(t) - L(t)); t is a crossing if B(t) - L(t) >= (X/100) * GDP(year of m(t)) (the start
+  year's GDP, as the door; if that year's GDP is missing, the year before, flagged gdp_year_before; if
+  both are missing, the month cannot be tested and is counted). The first crossing c opens an episode
+  with start m0 = m(c); the search resumes at c + 1, so a later episode's rise starts after the
+  previous crossing. The take-off rather than the lowest month: a base that drifts up before a jump
+  would otherwise date the start at the window's first month.
+  Annual fallback, for the years of a money before its first month of monthly base money (the United
+  States before 1959 among them): the same rule on end-of-year stocks, windows of Y years, m0 and c the
+  Decembers of the take-off and crossing years, flagged annual.
+  Accommodation (the map's O4 guard): the twelve-month change of the CPI at or above T at m0 or at any
+  month from m0 to the month before c; variant: the crossing month included. An episode with no CPI at
+  those months is "accommodation cannot be read", apart as well. Annual episodes: the year-average
+  inflation of m0's year and of each year to c's.
+  Censoring (conf-N3): the panel's common end is the last month in which at least half of the moneys that
+  had a CPI value twelve months earlier still have one; an episode whose m0 + H passes it is censored
+  for that H, for H = 24, 36 and 60 months. A money whose CPI stops before m0 + H but before the common
+  end is not censored: it is coded by what happened (C06).
+  Written per episode, on one line: money, rule (monthly or annual), w, the lowest month, m0, c, B at
+  each, the rise B(c) - L as a share of GDP, the GDP year used, inflation at m0 and its highest from m0
+  to c, the accommodation flags (headline, variant, each T of the grid), the censoring flags, the seam
+  flag (base_break), the CPI and GDP sources, and for the United States which door window's first month
+  lies in [m0, c]. The line's outcome and response dates are C06's: this card reads only what is known
+  at the crossing.
+parameters:
+  X_pct_of_gdp: 5
+  Y_years: 2
+  q_takeoff: 0.1
+  T_inflation_pct: 12
+  H_months: 36
+  grid:
+    X_pct_of_gdp: [2.5, 5, 10]
+    Y_years: [1, 2, 3]
+    T_inflation_pct: [10, 20]
+    H_months: [24, 60]
+    q_takeoff: [0]
+  why_these: >-
+    X = 5 and Y = 2: the door's first printing added 3.5% of 2008's GDP a year for six years, the
+    second 7.5% of 2020's a year for under two (part 2's map); an X of 5 within 2 years is met by a
+    printing of the door's speed, not by the base's ordinary growth with GDP. T = 12: Teles and Uhlig's
+    line (notes/sources.md, pp. 3 and 11), a threshold from published work, not from these episodes.
+    H = 36 months: within the dossier's "about five years" (Minor 4), so the 2020 episode is not
+    censored by construction; 24 and 60 as the grid. q = 0.1: the take-off, fixed before any list
+    (q = 0, the lowest month itself, as the variant). All nine X-Y lists are reported, with their sizes.
+data:
+  - dataset: dbnomics/IMF/IFS/M~~14____XDC
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/M~~FASMB_XDC
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/M~~PCPI_IX
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/M~~ENDE_XDC_USD_RATE
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/A~~14____XDC
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/A~~FASMB_XDC
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/A~~14____USD
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/A~~NGDP_XDC
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/A~~PCPI_IX
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/A~~ENDE_XDC_USD_RATE
+    vintage: '2026-09-30'
+  - dataset: worldbank/NY.GDP.MKTP.CN
+    vintage: '2026-09-30'
+  - dataset: worldbank/FP.CPI.TOTL
+    vintage: '2026-09-30'
+  - dataset: fred/BOGMBASE
+    vintage: '2026-09-30'
+  - dataset: fred/GDP
+    vintage: '2026-09-30'
+  - dataset: fred/CPIAUCSL
+    vintage: '2026-09-27'
+  - dataset: dbnomics/ECB/ILM/M~U2~C~LT00001MP~Z5~EUR
+    vintage: '2026-09-30'
+  - dataset: dbnomics/ECB/ICP/M~U2~N~000000~4~INX
+    vintage: '2026-09-30'
+  - dataset: dbnomics/ECB/MNA/Q~Y~I9~W2~S1~S1~B~B1GQ~_Z~_Z~_Z~EUR~V~N
+    vintage: '2026-09-30'
+period: 1950-01 to the panel's last month of base money (2026)
+sample: >-
+  Entry by rule, never by name (the guards' first row): every money of the panel with base money and
+  GDP is scanned, whatever happened to it. Dropped by the panel's rules only: IMF groups; the six
+  units_break moneys; money-months using the euro outside the area (the euro area is one money from
+  1999, its founding members have no base money before 1999 here - a hole). Accommodation episodes stay
+  on the list, apart; failures and the dead are in by construction (a money whose series stops is
+  scanned to its last month). The doors are told, not entered: whether the rule enters the US printings
+  is reported, never forced.
+out_of_sample: >-
+  Not applicable: a list made by a rule, with nothing fitted. X, Y, T, H and q are fixed here, before
+  any list exists, from the door's own scale and from published work; the grid of nine X-Y lists and the
+  T, H and q variants show how much the list moves, and every list's size is reported (FRAMING F63,
+  variants counted).
+failure: >-
+  The list is too thin for C06 if fewer than ten episodes are neither accommodation nor censored at H =
+  36; C06 then says "we cannot conclude" for want of cases, and the list is still reported. If one money
+  gives more than a quarter of the headline episodes, every count is given with it and without it.
+not: >-
+  Not a list of "printings that caused inflation" or of any outcome: episodes are entered on base money
+  and GDP alone. Not a list of named cases. Base money here is the IMF's reserve money or monetary base
+  as each central bank reports it; a change of definition inside an episode is flagged (base_break),
+  not corrected.
+created: '2026-09-30'

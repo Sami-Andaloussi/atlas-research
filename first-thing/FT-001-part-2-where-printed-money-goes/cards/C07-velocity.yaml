@@ -1,0 +1,72 @@
+id: C07-velocity
+label: test
+title: '"No one spends"? - US broad money velocity against the interest rate, fitted before the printings, tested after'
+question: >-
+  When the US printed, did broad money's velocity fall further than the interest rate alone predicts
+  (money held rather than spent, beyond what cheaper holding explains), or did it move as a money-demand
+  curve fitted before the printing says it should?
+method: >-
+  Quarterly, United States. V = M2's velocity (FRED M2V: nominal GDP over M2); r = the three-month
+  Treasury bill rate (TB3MS), the quarter's mean, percent a year. Three forms (Benati, Lucas, Nicolini and
+  Weber, working paper pp. 7-9, notes/sources.md), each fitted by OLS in levels: log-log, ln V = a + b *
+  ln(r + 1) (the one-point correction the paper takes from Alvarez and Lippi); semi-log, ln V = a + b * r;
+  Selden-Latane, V = a + b * r.
+  The cutoff (frame e's): the fit runs from 1959Q1 to the quarter before the one holding m0 of the first
+  US episode on C05's headline list that leaves at least 40 quarters of fit. The test runs from that
+  quarter to the last quarter with both series, and is also split at each later US episode's m0 on
+  C05's list. Per form and test period: z = the mean out-of-sample error (actual minus predicted, in the
+  form's own units: ln V for the first two, V for the third) divided by the standard deviation of the
+  in-sample residuals. Verdict per form: |z| <= 1, "velocity moved as the rate predicts"; z <= -2,
+  "velocity fell below what the rate predicts" (money held beyond what the rate explains); z >= 2,
+  "velocity stayed above what the rate predicts"; otherwise "between: we cannot conclude". The three
+  forms are counted: the headline says how many of three tell each verdict, never picks one after the
+  test. Reported beside: each form's a and b, its in-sample residual standard deviation, the path of
+  actual and predicted V.
+parameters:
+  forms: [log-log with r + 1, semi-log, Selden-Latane]
+  fit_start: 1959Q1
+  cutoff_rule: the quarter before the one holding m0 of C05's first US headline episode leaving at least 40 quarters of fit
+  min_fit_quarters: 40
+  z_moved: 1
+  z_beyond: 2
+  min_in_sample_r2: 0.3
+  variants:
+    - M1 and its velocity (M1V) in place of M2, the test ending in 2020Q1 (M1's definition changed in May
+      2020, notes/data.md)
+    - the opportunity cost r minus M2's own rate (M2OWN), fit and test ending in 2019Q2 where M2OWN ends
+    - the cutoff at C05's first US episode on each of the other eight X-Y lists
+    - across moneys, annual - every money with at least 20 years of broad money, nominal GDP and a short
+      rate before m0 of its first C05 headline episode that is not accommodation; V = nominal GDP over the
+      mean of broad money at the year's two ends; the three forms fitted before m0's year and tested
+      after, to the money's last year; counted - how many moneys fall in each verdict, per form
+data:
+  - dataset: fred/M2V
+    vintage: '2026-09-30'
+  - dataset: fred/TB3MS
+    vintage: '2026-09-30'
+  - dataset: fred/M1V
+    vintage: '2026-09-30'
+  - dataset: fred/M2OWN
+    vintage: '2026-09-30'
+  - dataset: the result of C05-e-episodes (its run, naming C05's hash)
+  - dataset: the panel (code/panel.py at 2445181) - broad money, nominal GDP, the short rate, for the cross-money variant
+period: 1959Q1 to 2026Q2 (M2V's span in this vintage); the cutoff by C05's rule
+sample: >-
+  Every quarter of the US series from the first both series share; nothing chosen. The cutoff is set
+  by C05's list (a rule on base money and GDP, not on velocity or prices), never by a look at velocity.
+  The cross-money variant takes every money meeting the coverage condition, whatever happened to it.
+out_of_sample: >-
+  The test is out of sample by construction: each form is fitted only on the quarters before the cutoff
+  and judged only on the quarters after it (the dossier's frame e, "Outside"). No parameter is re-fitted on
+  the test period. The cross-money variant repeats the same split money by money.
+failure: >-
+  If the forms disagree (one says "fell below", another "moved as predicted"), the study says the
+  answer depends on the form and reports the count, not a winner. A form whose in-sample R2 is below 0.3
+  explains too little of velocity for its test to mean anything: its verdict is "the fit cannot tell",
+  whatever z says.
+not: >-
+  Not a structural estimate of money demand: no cointegration test, no dynamics, OLS in levels, as a
+  descriptive check of the dossier's "no one spends". M2 pays interest on part of it, so the bill rate is
+  only part of its opportunity cost (the M2OWN variant, to 2019). Excess reserves are never used. The
+  United States only in the headline; other moneys in the counted variant.
+created: '2026-09-30'

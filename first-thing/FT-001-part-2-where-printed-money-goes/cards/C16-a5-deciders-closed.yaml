@@ -1,0 +1,86 @@
+id: C16-a5-deciders-closed
+label: test
+title: A5 on the closed list - after a big addition of base money, what decided whether it reached prices and broad money?
+parent:
+  id: C12-a5-deciders-checked
+  hash: a7e08f4520c1a1fb37ff91c808cc91b199be8aafdf6000c9e47b2d42fe1bbc24
+question: >-
+  Among frame e's episodes (C15), did prices and broad money rise more after the addition when the money
+  was floating rather than pegged, when the interest rate was above its floor, when the central bank
+  bought from the government rather than lending to banks or buying foreign assets (the channel of the
+  addition itself, read from the start to the crossing), or when the deficit at the start was large -
+  whichever way accommodation is dated? Interest on reserves and expectations are described, not tested.
+method: >-
+  C12's method in every part (both accommodation readings, the permutation test within eras, Holm's
+  adjustment, D4 by c at the start's exchange rate, D3 and D6 described only, the five-year-strata
+  variant, H = 24, 36 and 60 side by side), on C15's list, with these changes answering the narrow check
+  of 2026-09-30 (check/2026-09-30-opus-cards-narrow.md: O4, O5, O6, m2, m3, m4):
+  (1) Episodes: C15's headline list, less accommodation, censored and set-apart episodes.
+  (2) The era rule, worded as what it tests: significance comes from the pooled test, where 2000-2026
+  holds most episodes; the other qualifying stratum adds only a sign. A decider "separates" if its
+  Holm-adjusted p < 0.05 and at least two strata each hold 3 or more episodes per category with the
+  difference of medians of the same sign in each; the verdict is written "significant overall, same sign
+  in 1972-1999 (n = ..., not tested alone)", and each stratum's difference and n are reported, qualifying
+  or not. C12's sentence "a pattern carried by one era cannot separate" is withdrawn.
+  (3) A thin stratum said as such. Where one accommodation reading gives a verdict and the other ends
+  "we cannot conclude" for want of cases (fewer than two qualifying strata), the result is written
+  "[verdict] when accommodation is dated [that way]; too few episodes to conclude when dated [the other
+  way]", with the strata's n - never "depends on how accommodation is dated". "Depends" is kept for two
+  readings that both qualify and give different verdicts.
+  (4) Two thirds, its denominator fixed now: for a decider, n counts the counted runs in which that
+  decider is coded for at least 10 tested episodes under each accommodation reading; k counts those
+  giving the headline's verdict with its sign; "we cannot conclude", "depends" and a thin-stratum result
+  count against. The verdict holds if k/n >= 2/3, else "fragile: k of n". k of n is reported twice: with
+  every run, and without the runs that change only another decider's threshold (for D1: floor, deficit,
+  D4's read-past-c; for D2: peg band, deficit, D4's read-past-c; for D4: peg band, floor, deficit; for
+  D5: peg band, floor, D4's read-past-c). The verdict is judged on the second.
+  (5) The counted runs: C15's other eight X-Y lists; T 10 and 20; q 0; units factor 3; the smoothing
+  variant; set-apart episodes not keeping their place; seam episodes out; every set-apart jump put back;
+  H 24 and 60; peg band 1% and 5%; floor 0.25% and 1%; deficit -3% and -7% of GDP; war episodes out;
+  episodes starting in 2020-2021 apart; the money giving most episodes out; D4's read-past-c episodes
+  out; five-year strata. C12's method on C05's and C09's lists (the lists the study calls faulty) is
+  reported beside, never counted.
+  (6) Beside the headline, verdict by verdict: the seam variant, the smoothing variant, D4's read-past-c
+  variant, H = 24 and 60, and C15's jump shares 0.5, 0.67 and 0.9.
+  (7) Five-year strata: "two qualifying strata" means two five-year blocks of m0's year each holding 3 or
+  more episodes per category, with the same sign in every qualifying block; the p-value from
+  permutations within blocks.
+  (8) D4 is not dated at the start: it is the channel of the addition, read from the last year-end at or
+  before m0 to the last year-end at or before c (C12), after the start and never past the crossing
+  except where flagged.
+parameters:
+  episodes: C15 headline (X 5, Y 2, T 12, H 36, q 0.1, units factor 2, gamma floored at 0, jump share 0.8, no exception)
+  accommodation_readings: [at m0, m0 to the month before c]
+  H_side_by_side: [24, 36, 60]
+  permutations: 10000
+  seed: 20260930
+  strata: [[1950, 1971], [1972, 1999], [2000, 2026]]
+  strata_variant: five-year blocks of m0's year
+  min_per_category_per_stratum: 3
+  min_qualifying_strata: 2
+  alpha_after_holm: 0.05
+  tested_deciders: [D1 regime, D2 floor, D4 channel, D5 deficit]
+  described_only: [D3 interest on reserves, D6 expectations]
+  variants_must_agree: 2/3 of the counted runs with at least 10 coded episodes for the decider under each reading, judged without the runs that change only another decider's threshold
+  beside_not_counted: [C12's method on C05's list, C12's method on C09's list]
+  beside_the_headline: [seam variant, smoothing variant, D4 read-past-c out, H 24, H 60, jump share 0.5, jump share 0.67, jump share 0.9]
+data:
+  - dataset: the result of C15-e-episodes-closed (its run, naming C15's hash)
+  - dataset: the results of C09-e-episodes-excess and C05-e-episodes, for the lists reported beside
+  - dataset: the datasets of C06-a5-deciders, at the same vintages
+period: C15's episodes starting 1950-2026 whose horizon ends by the panel's common end (August 2026)
+sample: >-
+  C15's list, made by rule before any outcome is read, with no document route; the tested set under each
+  accommodation reading; accommodation, censored and set-apart episodes reported apart with their lines.
+out_of_sample: >-
+  Nothing is fitted. The era rule is a check of sign, not a test within each era: the pooled test gives
+  significance, the other stratum a sign with its n, said. The counted variants must agree in two thirds
+  of the runs that can test the decider, with the denominator fixed here before any run.
+failure: >-
+  As C12. A verdict that holds only in the pooled test and one sign, that differs between the headline
+  and the seam or smoothing variants, or that is fragile, is said as such, never as a finding.
+not: >-
+  As C12: not causal; excess reserves never an outcome; asset prices never tested; interest on reserves
+  and expectations never tested; the fiscal theory not tested; the money-demand side is C07's, C14's and
+  C17's.
+created: '2026-09-30'

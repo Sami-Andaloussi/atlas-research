@@ -1,0 +1,101 @@
+id: C33-cs-f-reclassification
+label: measurement
+title: CS-F's correction — C13's households' range with the savings moved into checkable deposits measured against
+  other deposits' own path, the baseline fixed before the run
+parent:
+  id: C13-a6-checked
+  hash: 6ea438d07533cdcbf5301ef0e49e777d94c045d1b3ea734b96ff41ef0d79997f
+kind: correction
+seen:
+- 'C13-a6-checked (every result: the households'' range per household, its reclassification test against zero, the
+  whole stock as a share of GDP, seigniorage and the base created)'
+- 'bank/checks/FT-001-map-2026-10-08-audit-v9-p2v5.md and -p2v6.md (the audits'' recomputations: the upper bound near
+  $7,500 per household; R about $720bn against the four surrounding quarters, about $616-630bn against 2019''s; the
+  bound about 17-18% lower with it)'
+- 'bank/checks/FT-001-2026-10-08-card-check-c32-c33.md (this card''s check, before any run: R recomputed, 720.4bn and
+  626.7bn; the four surrounding quarters'' changes, 77, 511, 511 and -207bn, R from 290 to 1,009bn on each alone;
+  SAVINGSL ends at April 2020; M1SL 4,857bn in April and 16,312bn in May 2020)'
+question: 'Part 2''s map v15, P2-8 and K7: since February 2020, how much purchasing power did inflation take from US
+  households'' own cash and checking deposits, per household, as a range, once the savings deposits reclassified as
+  checkable after the change to Regulation D (the Federal Reserve''s release of 24 April 2020) are measured against
+  other deposits'' own path rather than against zero — and who gained (§7.7)?'
+method: 'C13''s method in every part (its formula, price base, quarterly stock mapping, interest deduction from April
+  2021, households from TTLHH, the whole stock as a share of GDP only, seigniorage and the base created, the base''s
+  place now), with one change and nothing else. (1) The reclassification R, fixed before the run: households'' other
+  deposits (Z.1, BOGZ1FL193030205Q, quarterly) change in each quarter; R is the shortfall of that change in 2020Q4,
+  the quarter in which the Z.1 households'' checkable deposits and currency (BOGZ1FL193020005Q) took the move, against
+  the mean change of the four surrounding quarters (2020Q2, 2020Q3, 2021Q1, 2021Q2): R = mean(surrounding) -
+  change(2020Q4), floored at 0 and capped at the rise of checkable deposits and currency in 2020Q4. Beside it, not in
+  the range: the same shortfall against the mean change of 2019''s four quarters. (2) The range per household: upper
+  bound, what inflation took from the stock as published, as if none of it paid interest (C13''s); lower bound, what
+  it took from the stock less R from 2020Q4 on, minus the interest the national interest-checking rate (ICNDR) would pay from April 2021
+  (C13''s). The range carries R: printed as a range, never a midpoint. (3) The timing beside, never in the range,
+  all holders: M1 (M1SL, H.6, monthly) and M2 (M2SL) from January to August 2020, M1''s jump showing the month (when, never how much: H.6''s all holders against Z.1''s households) H.6
+  moved savings deposits into M1, and savings deposits (SAVINGSL) to April 2020, where the frozen series stops (said).
+  The households'' quarterly Z.1 series is the one the range uses. If H.6 dates the move in May 2020 and Z.1''s
+  households in 2020Q4, both dates are printed as each source''s, never reconciled by us: the range uses Z.1''s
+  quarter. Beside R, its spread: R computed against each surrounding quarter alone. (4) Words, fixed here: "tax" only for what the state collected (seigniorage on currency, C13''s 5a); the
+  rest is "what inflation took", with who gained beside it as §7.7''s balance-sheet reasoning, never a
+  measurement here (debtors at fixed rates below inflation: the state as the largest, households and firms with
+  fixed-rate debt; banks through their spread; on reserves paid at the Fed''s rate in 2022-23, the Fed paid the wider
+  spread, so on that leg the state lost); R is said as "a shortfall read as the reclassification", never "$X moved". (5) Reproduction: with R = 0, the run must reproduce C13''s stored
+  four stored values per household (upper and lower, in current and in constant dollars) to the dollar (C13 found no reclassification, so its lower bound used R = 0);
+  otherwise it is void. (6) The parts of C13 that never touch R (the whole stock as a share of GDP, seigniorage, the
+  base created, the deferred asset, the base''s place now) are carried unchanged from C13''s stored run, named as
+  carried; the reproduction of item 5 is what licenses it.'
+parameters:
+  start: 2020-02
+  regulation_d_release: 2020-04-24
+  reclassification_quarter: 2020Q4
+  baseline_quarters: [2020Q2, 2020Q3, 2021Q1, 2021Q2]
+  baseline_beside_quarters: [2019Q1, 2019Q2, 2019Q3, 2019Q4]
+  monthly_timing_window: [2020-01, 2020-08]
+  per_household: range only, from households' own holdings
+matters:
+  cs_f: 'none: a measurement printed as a range, read against no size (P2-8: descriptive, context)'
+data:
+- dataset: fred/CPIAUCSL
+  vintage: '2026-09-27'
+- dataset: fred/BOGZ1FL193020005Q
+  vintage: '2026-09-30'
+- dataset: fred/BOGZ1FL193030205Q
+  vintage: '2026-09-30'
+- dataset: fred/ICNDR
+  vintage: '2026-09-30'
+- dataset: fred/TTLHH
+  vintage: '2026-09-30'
+- dataset: fred/SAVINGSL
+  vintage: '2026-10-08'
+- dataset: fred/M1SL
+  vintage: '2026-09-30'
+- dataset: fred/M2SL
+  vintage: '2026-09-30'
+- dataset: fred/CURRSL
+  vintage: '2026-09-30'
+- dataset: fred/MBCURRCIR
+  vintage: '2026-09-30'
+- dataset: fred/GDP
+  vintage: '2026-09-30'
+- dataset: fred/BOGMBASE
+  vintage: '2026-09-30'
+- dataset: fred/RESPPLLOPNWW
+  vintage: '2026-09-30'
+- dataset: fred/WRESBAL
+  vintage: '2026-09-30'
+- dataset: fred/WCURCIR
+  vintage: '2026-09-30'
+- dataset: study/results/runs/C13-a6-checked.json
+  vintage: 'C13''s run as committed at 3c47ac8a, card_hash 6ea438d0 (the path inside the study''s folder)'
+period: 2020-02 to the last month the CPI and the stocks reach in these vintages (C13's)
+failure: 'If the reproduction with R = 0 fails, the run is void. If the upper bound is more than twice the lower, the
+  post gives the range and says why (R, or the interest deducted), never one number.'
+not: 'Not the loss on deposits that paid interest below inflation (LL-121''s). Not what any one household paid: an
+  average over households of what households held. Not an observed reclassification: R is a shortfall of other deposits'' change read as the reclassification, and it would
+  also count any other move out of those deposits in 2020Q4. Not a welfare cost, not a verdict on the policy. Not "a tax" for
+  what the state did not collect. Not investment advice.'
+created: '2026-10-08'
+sample: 'Not a sample: every month of the period, the whole of each stock as the statistics define it; the start is
+  the door''s (February 2020), told. The baseline quarters are fixed here, before the run, by their position around
+  the move, never by the size of R they give (both baselines were seen as totals by the audits: said, P12).'
+out_of_sample: 'Not applicable: a measurement with nothing fitted. Its checks are internal: the reproduction of C13
+  with R = 0; the baseline beside (2019''s quarters); the monthly timing in H.6.'

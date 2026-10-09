@@ -1,0 +1,94 @@
+id: C09-e-episodes-excess
+label: measurement
+title: Frame e, the rule corrected - base money added beyond the economy's own prior growth, one episode per horizon, units checked
+parent:
+  id: C05-e-episodes
+  hash: 21f049890684b70f28ab58c608d5f4ba8341e6ad7ad1c67a2ab30d3322a453d2
+question: >-
+  As C05 - which moneys, since 1950, added base money worth at least X% of a year's GDP within Y years -
+  counting only what was added beyond the pace at which nominal GDP had been growing before, one episode
+  per horizon, on moneys whose monetary and GDP series are shown to share a unit.
+method: >-
+  C05's rule in every part (the window of 12Y months, the take-off with q, the start year's GDP as the
+  scale, the annual fallback, accommodation with T, censoring with H at the panel's common end, the
+  one-line record), with three changes found by reading C05's run on its entry side only - its list's
+  size (2,433 episodes at the headline), the moneys that gave most episodes, their base-to-GDP levels,
+  and the US dates; no outcome (nothing after a crossing) was read:
+  (1) Excess over the prior pace. C05 counts a base that merely grows with the economy: where base money
+  is a large share of GDP, ordinary growth adds X% of GDP within Y years, again and again (the moneys
+  with the most C05 episodes had base money of 15% to 80% of GDP). Here, for a window starting in month
+  w, gamma = the annual log growth of nominal GDP over the Y years ending with the year before w's year
+  (known before the window opens; a money-window without those two GDP values is not tested, counted);
+  the base is read net of that pace, D(s) = B(s) * exp(-gamma * (s - w) / 12); the low L and the take-off
+  are read on D; the rise at t is B(t) minus the path the base would have followed from its low at pace
+  gamma, (D(t) - L) * exp(gamma * (t - w) / 12); t crosses when that rise is at least X% of GDP in the
+  take-off's year. With gamma = 0 this is C05's rule. The prior pace carries the inflation before the
+  window, a condition dated before the start, never the outcome after it.
+  (2) One episode per horizon. C05 resumes at the month after a crossing, so a printing that goes on
+  yields a chain of episodes whose outcome windows overlap, the same price path counted several times in
+  C06's test. Here the search resumes at m0 + H (H = 36 months at the headline; with each H of the grid,
+  its own list); further crossings within the horizon are counted per episode (a description of the
+  base's path, never an entry and never a price).
+  (3) Units checked. C05's list held moneys whose monetary lines and GDP are not in one unit (Estonia:
+  IFS line 14 in millions of kroons against GDP in millions of euros, the IMF having restated its
+  national accounts in euros). Here a money is scanned only if its broad money to GDP ratio in the panel
+  agrees with the World Bank's broad money as a share of GDP (FM.LBL.BMNY.GD.ZS, a ratio, so free of
+  units) within a factor of 2 in the median over their common years; a money with no common year cannot
+  be checked and is not scanned; the euro area is exempt (its base, broad money and GDP are all the ECB's,
+  in euros). The moneys set aside are listed. Growth rates (C02, C03, C07) are unaffected: a unit that
+  stays the same within a series cancels in its growth.
+  C05's run stays reported beside this one, as the rule before correction (FRAMING F63: variants
+  counted).
+parameters:
+  X_pct_of_gdp: 5
+  Y_years: 2
+  q_takeoff: 0.1
+  T_inflation_pct: 12
+  H_months: 36
+  excess_over: nominal GDP's annual log growth over the Y years ending the year before the window's first year
+  resume_at: m0 + H
+  units_factor: 2
+  grid:
+    X_pct_of_gdp: [2.5, 5, 10]
+    Y_years: [1, 2, 3]
+    T_inflation_pct: [10, 20]
+    H_months: [24, 60]
+    q_takeoff: [0]
+    units_factor: [3]
+  changes_from_parent: [excess over the prior pace of nominal GDP, one episode per horizon, units checked]
+  seen_before_writing: >-
+    C05's run, entry side only: its sizes (2,433 episodes; 1,075 neither accommodation nor censored), the
+    moneys giving most episodes and their base-to-GDP levels, the five US episodes' dates; the IFS units
+    of Estonia's series; which moneys the World Bank check can reach. No price, broad money or any
+    outcome after a crossing.
+data:
+  - dataset: the datasets of C05-e-episodes, at the same vintages
+  - dataset: worldbank/FM.LBL.BMNY.GD.ZS
+    vintage: '2026-09-30'
+  - dataset: worldbank/_economies
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/A~~35L___XDC
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/A~~FMB_XDC
+    vintage: '2026-09-30'
+period: 1950-01 to the panel's last month of base money (2026)
+sample: >-
+  As C05: entry by rule, never by name; every money of the panel scanned whatever happened to it, less
+  the moneys the units check cannot confirm (a condition of the data's units, not of any outcome) and
+  the months without the two GDP values the prior pace needs. Accommodation stays on the list, apart;
+  censored episodes stay, apart. The deciders' test on this list is C10 (C06's child); C06 itself, on
+  C05's list, is its counted variant. C07 is unchanged: its cutoff reads C05's list, as its card says.
+out_of_sample: >-
+  Not applicable: a list made by a rule, with nothing fitted. X, Y, T, H and q are C05's, unchanged; the
+  three changes are fixed here from C05's entry side, before any outcome is read; the X-Y grid, the T, H,
+  q and units-factor variants, and C05's own list are all reported with their sizes.
+failure: >-
+  As C05: too thin for C06 if fewer than ten episodes are neither accommodation nor censored at H = 36
+  ("we cannot conclude" for want of cases, the list still reported); every count with and without the
+  money giving most episodes if it gives more than a quarter. If the units check sets aside a money that
+  holds a door window (the United States), the check is wrong and is said so.
+not: >-
+  Not a list of printings that caused anything. Not a correction made on outcomes: the three changes
+  answer what C05's list is (ordinary growth, repeated counts, mixed units), read before any price. A
+  money set aside by the units check is not judged; it is out for want of a common unit.
+created: '2026-09-30'

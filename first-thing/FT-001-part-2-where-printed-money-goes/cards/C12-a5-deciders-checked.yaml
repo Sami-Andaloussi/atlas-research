@@ -1,0 +1,99 @@
+id: C12-a5-deciders-checked
+label: test
+title: A5 on the checked list - after a big addition of base money, what decided whether it reached prices and broad money?
+parent:
+  id: C10-a5-deciders-excess
+  hash: cb0375a48dc8aed75315a85bc17a52c1e167c1d608c3c9dafa8c9a63aeb8a6df
+question: >-
+  Among frame e's checked episodes (C11), did prices and broad money rise more after the addition when the
+  money was floating rather than pegged, when the interest rate was above its floor, when the central bank
+  bought from the government rather than lending to banks or buying foreign assets, or when the deficit at
+  the start was large - each dated at or before the start - in more than one era, whichever way
+  accommodation is dated? Interest on reserves and expectations are described, not tested.
+method: >-
+  C10's method (C06's outcomes, deciders, permutation test and Holm's adjustment), on C11's list, with
+  these changes answering the check of 2026-09-30 (check/2026-09-30-opus-cards.md: B2, B3, O1, O2, O6 and
+  the minor points on the grid and on H):
+  (1) Episodes: C11's headline list, less accommodation, censored and set-apart episodes (C11).
+  (2) Accommodation dated two ways, each giving its own tested set: (a) at m0, like the deciders - the
+  twelve-month inflation at m0 below T (an episode without it "cannot be read"); (b) the design's way -
+  no month from m0 to the month before c at or above T. The test runs on each. A decider's verdict is the
+  one both readings give (with the same sign); if they differ, its verdict is "depends on how
+  accommodation is dated", both readings given. Reading (a) departs from the map's wording, which reads
+  accommodation up to the crossing; the departure is said in the study, and the map's change log is its
+  owner's to write (bank/maps/FT-001/, E2).
+  (3) The era rule: a decider "separates" only if its Holm-adjusted p < 0.05 and at least two era strata
+  (1950-1971, 1972-1999, 2000-2026) each hold 3 or more episodes in each category, with the difference of
+  medians of the same sign in every such stratum; "does not separate" if its adjusted p >= 0.05 with at
+  least two such strata; otherwise "we cannot conclude". A pattern carried by one era cannot separate.
+  (4) D4, the channel, dated by c: the central bank's asset lines from the last year-end at or before m0
+  to the last year-end at or before c; foreign assets valued at the start's exchange rate (the end stock
+  converted to dollars at the end year's rate and back at the start year's, IFS end-of-year rates); where
+  no year-end lies after the start and at or before c, the channel is read to the first year-end after c
+  and flagged "read past c" (a variant drops the flagged episodes). The same revaluation of foreign
+  assets enters O2's net bound.
+  (5) D6, expectations, described only (announcements, Michigan's survey, bond yields labelled), never
+  tested, whatever its count. D3, interest on reserves, described only (C06's count rule already leaves it
+  under ten coded episodes).
+  (6) Verdicts at H = 24, 36 and 60 shown side by side, each on C11's list for that H; H = 36 stays the
+  headline.
+  (7) A counted variant with the permutations within five-year blocks of m0's year (1950-1954, ...,
+  2025-2026) in place of the three eras, for common calendar shocks (the floors of 2009-2015 and 2020, the
+  commodity turns of 2008 and 2014, the price surge of 2021-2022): the permutations move labels only
+  between episodes that started within the same five years. C10's sentence on "independent price paths"
+  is withdrawn: episodes of different moneys in the same months share shocks.
+  (8) How many variants must agree, fixed before any run: a decider's headline verdict holds if at least
+  two thirds of the counted variant runs in which that decider can be tested give the same verdict with
+  the same sign; otherwise it is reported as "fragile: k of n variants agree", never as the headline's
+  verdict alone. The counted variants: C11's other eight X-Y lists; T 10 and 20; q 0; units factor 3; the
+  smoothing variant; set-apart episodes not keeping their place; seam episodes out; H 24 and 60; peg
+  band 1% and 5%; floor 0.25% and 1%; deficit -3% and -7% of GDP; war episodes out; episodes starting in
+  2020-2021 apart; the money giving most episodes out; D4's "read past c" out; five-year strata; C12's
+  method on C09's list and on C05's list (C10's and C06's lists). Each variant is
+  run with both accommodation readings, its verdict as in (2).
+  T = 12% is Teles and Uhlig's line, drawn on countries' long-run average inflation and borrowed here for
+  another use (a twelve-month rate), said.
+parameters:
+  episodes: C11 headline (X 5, Y 2, T 12, H 36, q 0.1, units factor 2, gamma floored at 0, jump share 0.8)
+  accommodation_readings: [at m0, m0 to the month before c]
+  H_months: 36
+  H_side_by_side: [24, 36, 60]
+  permutations: 10000
+  seed: 20260930
+  strata: [[1950, 1971], [1972, 1999], [2000, 2026]]
+  strata_variant: five-year blocks of m0's year
+  min_per_category_per_stratum: 3
+  min_qualifying_strata: 2
+  alpha_after_holm: 0.05
+  tested_deciders: [D1 regime, D2 floor, D4 channel, D5 deficit]
+  described_only: [D3 interest on reserves, D6 expectations]
+  variants_must_agree: two thirds of the runs where the decider can be tested
+  peg_band_pct: 2
+  floor_rate_pct: 0.5
+  deficit_pct_of_gdp: -5
+  war_battle_deaths: 1000
+data:
+  - dataset: the result of C11-e-episodes-checked (its run, naming C11's hash)
+  - dataset: the results of C09-e-episodes-excess and C05-e-episodes, for the variants C10 and C06
+  - dataset: the datasets of C06-a5-deciders, at the same vintages
+period: C11's episodes starting 1950-2026 whose horizon ends by the panel's common end (August 2026)
+sample: >-
+  C11's list, made by rule before any outcome is read; the tested set under each accommodation reading;
+  accommodation, censored and set-apart episodes reported apart with their lines. Nothing matched or
+  dropped on anything measured after m0, except reading (b) of accommodation, which is the design's own and
+  is answered by reading (a).
+out_of_sample: >-
+  Nothing is fitted. A decider separates only if its sign holds in at least two eras, so no single era can
+  carry it; the five-year strata and the other counted variants must agree in two thirds of their runs for
+  the verdict to hold. The thresholds come from outside the episodes (T borrowed from Teles and Uhlig; the
+  band, the floor and the deficit round values fixed before any episode was listed).
+failure: >-
+  If no decider separates, part 2 says "we cannot conclude" on what decides, keeps A4, and reports every
+  episode's measured outcomes. A verdict that depends on how accommodation is dated, on H, or that holds in
+  fewer than two thirds of the variants is said as such, never as a finding. If D1, D2, D4 and D5 move
+  together so that the categories of two deciders coincide in more than 80% of the tested episodes, the
+  study says it cannot tell those two apart.
+not: >-
+  Not causal; excess reserves never an outcome; asset prices never tested; interest on reserves and
+  expectations never tested; the fiscal theory not tested; the money-demand side is C07's and C14's.
+created: '2026-09-30'

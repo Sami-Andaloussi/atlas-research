@@ -1,0 +1,78 @@
+id: C19-velocity-bare
+label: test
+title: '"No one spends"? worded by its bias - US broad money velocity with and without the Fed''s purchases, and across moneys from the closed list, additions removed'
+parent:
+  id: C17-velocity-worded
+  hash: eaff95765d29d010cd0bdc01d34d4686d2fb5928dc9e096b0d13e97fe34fab93
+question: >-
+  As C14 - did broad money's velocity fall further than the interest rate predicts when the US printed,
+  and does the fall remain once M2 is taken net of the Federal Reserve's purchases - with each outcome
+  worded only as far as the net series can carry it.
+method: >-
+  C17's method in every part except (2), whose cross-money cutoffs are no longer filtered by
+  accommodation or censoring, read after m0, and its failure clause, which states its own sentences instead of pointing to C14's (the
+  small check of 2026-09-30, check/2026-09-30-sonnet-child-cards.md, 2g and the loose end on O7;
+  plan/e1-production.md, Decisions, "Children answer, they do not add"). Nothing is added. C17's
+  method, with (2) as it now reads:
+  C14's method in every part (C07's three forms, fit and cutoff for the United States - the fit to
+  2008Q2 -, z and its bands, the R2 floor; M2net and Vnet), with these changes answering the narrow check
+  of 2026-09-30 (check/2026-09-30-opus-cards-narrow.md: O7, m6):
+  (1) The wording follows the net series' bias. M2net subtracts every purchase, including those from
+  banks, which create reserves and no deposit: Vnet is at or above velocity net of the deposits the
+  purchases created. So, per form and test period:
+  - below the prediction on M2 and on Vnet: "velocity fell beyond what the rate predicts, even net of all
+  the Fed's purchases - money held rather than spent" (robust to the bias);
+  - below on M2, not below on Vnet (|z| <= 1 on Vnet): "the fall was no larger than the Fed's purchases;
+  how much was deposits created and how much money held cannot be told from these series";
+  - below on M2, above the prediction on Vnet (z >= 2 on Vnet): "the Fed's purchases exceed the fall;
+  since subtracting them all overstates the deposits created, velocity net of created deposits lies
+  between the two readings, and these series cannot place it";
+  - below on M2, Vnet between the bands (1 < |z| < 2): "velocity fell beyond what the rate predicts on
+  M2; net of the Fed's purchases, we cannot conclude";
+  - not below on M2: C07's verdict on M2, unchanged; Vnet is reported but adds nothing to it.
+  The count over the three forms is kept for each series, and the sentence is chosen by the counts
+  (two forms of three or more), never by one form picked after the test.
+  (2) The cross-money variant (C07's, counted): its cutoffs are dated at m0 from C15's list - every
+  money with at least 20 years of broad money, nominal GDP and a short rate before m0 of its first C15
+  headline episode that is not set apart (C15's jump rule, which reads base money only); nothing else
+  filters these episodes - not accommodation, not censoring, both read after m0; the three forms fitted
+  before m0's year and tested after; counted by verdict and form. The US cutoff is
+  the one this rule gives: the quarter before the one holding m0 of C15's first US episode not set apart,
+  leaving at least 40 quarters of fit - expected 2008Q2, as C07's (m0 September 2008); if C15's run
+  dates it otherwise, the study says so.
+parameters:
+  change_from_parent: [cross-money cutoffs dated at m0 from every C15 episode not set apart, the failure clause's own sentences in place of C14's]
+  forms: [log-log with r + 1, semi-log, Selden-Latane]
+  z_moved: 1
+  z_beyond: 2
+  min_in_sample_r2: 0.3
+  forms_for_a_sentence: 2 of 3
+  seen_before_writing: >-
+    Entry-side facts only. m0 September 2008 for the first US episode: from C09's committed list
+    (results/runs/C09-e-episodes-excess.json, commit 52e3be0) and the narrow check's rerun of C11's rule,
+    which kept every US episode (check/2026-09-30-opus-cards-narrow.md, section 4); C15 has not run. The
+    cutoff 2008Q2: C07's, from C05's list (m0 August 2008). The three checks of 2026-09-30 (first, narrow,
+    small), all entry side. No velocity, price or other outcome.
+  cross_money_cutoff_list: C15 headline, first episode not set apart per money, dated at m0
+data:
+  - dataset: the datasets of C14-velocity-net, at the same vintages
+  - dataset: the result of C15-e-episodes-closed (its run, naming C15's hash), for the cross-money cutoffs
+  - dataset: the panel (code/panel.py at 2445181) - broad money, nominal GDP, the short rate, for the cross-money variant
+period: 1959Q1 to 2026Q2; the net variant from 2008Q3; the cross-money variant each money's own span
+sample: >-
+  Every quarter of the US series from the first both series share; the cutoff set by C15's list, a rule
+  on base money and GDP, never by a look at velocity. The cross-money variant takes every money meeting
+  the coverage condition before m0 of its first C15 episode not set apart, whatever happened to it after
+  m0.
+out_of_sample: >-
+  As C14: fitted only before the cutoff, judged only after it; no parameter refitted on the test period.
+failure: >-
+  If the forms split with no two agreeing on a series, that series' sentence is "the forms disagree",
+  with the count, and no form is named the winner. A form whose in-sample R2 is below 0.3 explains too
+  little of velocity for its test to mean anything: its verdict is "the fit cannot tell", whatever z
+  says. If M2 and M2net tell different verdicts, the study gives both, each with the sentence (1) names
+  for that pair, and does not call either "the" answer.
+not: >-
+  As C14: not a structural estimate of money demand; not an estimate of which purchases were from
+  non-banks; M2net an upper reading of velocity net of created deposits.
+created: '2026-09-30'

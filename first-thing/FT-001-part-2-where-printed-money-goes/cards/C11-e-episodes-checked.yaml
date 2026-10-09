@@ -1,0 +1,89 @@
+id: C11-e-episodes-checked
+label: measurement
+title: Frame e, the rule checked - no addition without money added, jumps and seams read per episode
+parent:
+  id: C09-e-episodes-excess
+  hash: 91c0455ba899bb36d6a841b673a296d2a5fc4eb036561c9fea9c3faf472b4f43
+question: >-
+  As C09 - which moneys, since 1950, added base money worth at least X% of a year's GDP within Y years,
+  beyond the economy's prior growth, one episode per horizon - with every entry a real addition of base
+  money, not a fall of GDP, a change of definition or a one-month spike.
+method: >-
+  C09's rule in every part (the window, the take-off, the start year's GDP as the scale, the annual
+  fallback, one episode per horizon, the units check, accommodation, censoring, the one-line record),
+  with four changes answering the check of 2026-09-30 (check/2026-09-30-opus-cards.md, B1):
+  (1) The prior pace floored at zero: gamma = max(0, the annual log growth of nominal GDP over the Y years
+  ending the year before the window's first year). Where nominal GDP had been falling, C09 counted a
+  flat base as "excess"; here the rise at t can never exceed B(t) minus the base's lowest value in the
+  window, so every entry is base money actually added, as the map's rule says ("base money up X% of the
+  start year's GDP").
+  (2) Jumps, read per episode. For a monthly episode, the jump share is the largest one-month rise of B in
+  (low, c] over B(c) - B(low). An episode with a jump share of 0.8 or more is set apart: as a change of
+  definition, never an addition, if the jump month is December 2001 (IFS's switch to the central bank
+  survey, back-filled into line 14 from that month) or the money's own seam month (the first month its
+  old and new IFS series overlap); otherwise as "a one-month jump", unless a document read and cited in
+  notes/a5-coding.md shows that month's rise was the central bank buying assets or lending - then it
+  stays in, the document named on its line. December 2001 is read first. An annual episode cannot be
+  checked for a jump and is set apart as such. Set-apart episodes keep their place in the scan (the
+  search still resumes at m0 + H); variant: they do not (the search resumes at c + 1 after them).
+  (3) Seams per episode, not per money: seam_in_window is true when December 2001 (IFS moneys) or the
+  money's own seam month lies in [w, c]. The seam variant drops those episodes only (C05's and C09's
+  variant dropped every episode of a money with any flagged seam, 37% of C09's tested list).
+  (4) A smoothing variant for seasonal and one-month spikes of the unadjusted base: the rule run on the
+  base's three-month trailing mean in place of the month's value.
+  The tested list (C12) is the episodes neither accommodation, nor censored at H, nor set apart by (2).
+  Two parameters said as they are: T = 12% is Teles and Uhlig's line, drawn by them on countries'
+  long-run average inflation and borrowed here for another use, a twelve-month rate at the start; q = 0.1
+  was chosen, with no source, before any list existed (q = 0 its variant). The units check's limits:
+  its factor of 2 catches differences of definition as well as of unit and would pass a unit ratio below
+  2 (Latvia's 0.70 lats to the euro); a median over years misses a unit error confined to a few years;
+  moneys without a World Bank broad-money share are not scanned (none had a C05 episode).
+parameters:
+  X_pct_of_gdp: 5
+  Y_years: 2
+  q_takeoff: 0.1
+  T_inflation_pct: 12
+  H_months: 36
+  gamma_floor: 0
+  resume_at: m0 + H
+  units_factor: 2
+  jump_share: 0.8
+  definition_change_months: [2001-12, the money's own seam month]
+  smoothing_months: 3
+  grid:
+    X_pct_of_gdp: [2.5, 5, 10]
+    Y_years: [1, 2, 3]
+    T_inflation_pct: [10, 20]
+    H_months: [24, 60]
+    q_takeoff: [0]
+    units_factor: [3]
+    variants: [smoothing (3-month trailing mean), set-apart episodes not keeping their place, seam episodes out, gamma not floored (C09)]
+  changes_from_parent: [gamma floored at zero, jumps read per episode and set apart, seams flagged per episode, a smoothing variant]
+  seen_before_writing: >-
+    C05's and C09's runs, entry side only (sizes, moneys, dates, base-to-GDP levels), and the check of
+    2026-09-30, itself entry side only: its counts of negative-pace entries, one-month jumps, December-2001
+    seams and December-January crossings, and the moneys it names. No price, broad money or outcome after
+    a crossing.
+data:
+  - dataset: the datasets of C09-e-episodes-excess, at the same vintages
+period: 1950-01 to the panel's last month of base money (2026)
+sample: >-
+  As C09: entry by rule, never by name; every money scanned whatever happened to it, less the moneys the
+  units check cannot confirm. Set apart, reported with their lines and never tested: accommodation,
+  censored episodes, changes of definition, and one-month jumps not documented as purchases. A jump is
+  kept in only on a cited document; no jump is dropped by name.
+out_of_sample: >-
+  None for the rule itself, said as the dossier says it for frame d: the rule has been revised on the
+  whole sample, twice (C05 to C09 to C11), each time after reading the lists' entry side - with nothing
+  held out, and by a producer who saw money names whose histories are public knowledge (Lebanon,
+  Suriname). No outcome was read. The checks outside the cases are those of the tests that use the list
+  (C12's era rule and counted variants, C07's cutoff), and the grid, the variants and C05's, C09's and
+  C11's lists are all reported with their sizes.
+failure: >-
+  As C09 (too thin for C12 below ten tested episodes; every count with and without a money giving more than
+  a quarter). If the set-apart jumps outnumber a third of the episodes that are neither accommodation nor
+  censored, the list is said to rest on data the rule cannot read, and C12's verdicts carry that sentence.
+not: >-
+  Not a list of printings that caused anything. Not corrected on outcomes. A set-apart jump is not judged a
+  definition change unless it falls on a seam month; it is out for want of a document.
+created: '2026-09-30'

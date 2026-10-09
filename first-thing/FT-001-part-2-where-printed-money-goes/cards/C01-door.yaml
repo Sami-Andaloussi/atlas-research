@@ -1,0 +1,55 @@
+id: C01-door
+label: measurement
+title: The door - how much base money the US added in its two printings, per year and in total, and how much prices rose
+question: >-
+  Over the door's two US windows, August 2008 to October 2014 and February 2020 to December 2021,
+  and over the same 22 months from each start, how fast did base money grow, how much did it add as a
+  share of the start year's GDP (per year and in total), and how much did consumer prices rise (per
+  year and in total)?
+method: >-
+  Windows are the door's dates (the dossier's section 4 and part 2's map; the doors' fact-check,
+  bank/checks/doors-facts-2026-09-30.md), never the base's trough and peak. For a window from month s
+  to month e, n = the number of months from s to e (August 2008 to October 2014: 74; February 2020 to
+  December 2021: 22). B = BOGMBASE's monthly value; P = CPIAUCSL's monthly value; G = the mean of the
+  four quarters of GDP (seasonally adjusted annual rate) in s's calendar year. Measures: base growth per
+  year = (B(e)/B(s))^(12/n) - 1; base added = B(e) - B(s), in dollars and as a share of G in total, and
+  per year as that share times 12/n; prices in total = P(e)/P(s) - 1, and per year = (P(e)/P(s))^(12/n)
+  - 1; the price rise per unit of printing = prices per year divided by the base added per year as a
+  share of G; the ratio of the second window's to the first's for each measure. The three windows:
+  W1 = 2008-08 to 2014-10; W2 = 2020-02 to 2021-12; W1-22 = 2008-08 to 2010-06 (the first window's
+  first 22 months, the same length as W2). Each level read is written to the registry with its month.
+parameters:
+  windows:
+    W1: [2008-08, 2014-10]
+    W2: [2020-02, 2021-12]
+    W1-22: [2008-08, 2010-06]
+  gdp_year: the calendar year of the window's first month (2008 for W1 and W1-22, 2020 for W2)
+  rounding: base growth and prices to 0.1 point; shares of GDP to 0.1 point; levels to 0.1 billion
+data:
+  - dataset: fred/BOGMBASE
+    vintage: '2026-09-30'
+  - dataset: fred/GDP
+    vintage: '2026-09-30'
+  - dataset: fred/CPIAUCSL
+    vintage: '2026-09-27'
+period: 2008-08 to 2021-12 (the door's windows)
+sample: >-
+  Two windows, told by the door and fixed in the dossier before this card; nothing is selected by the
+  run. The door is told, never entered into frame e by name: frame e's episodes come from card C05's
+  rule, which may or may not start where the door starts.
+out_of_sample: >-
+  Not applicable: a measurement of two told windows; nothing is fitted, no threshold chosen. The check
+  is reproduction: the levels must match those the doors' fact-check read (847.6, 4,001.5, 3,454.5 and
+  6,413.1 billion dollars; GDP 14,769.9 and 21,375.3 billion).
+failure: >-
+  If the frozen series do not reproduce the fact-check's levels to 0.1 billion, or if any rate differs
+  from the dossier's (29% and about 40% a year; 3.5% and 7.5% of GDP a year; 21.4% and 13.8% in total;
+  prices 1.3% and 4.5% a year, 8.6% and 8.3% in total; -0.4% a year over W1-22) by more than 0.1 point,
+  the door's sentence is rewritten from this run, not the run from the sentence. The fact-check's
+  "+13.8%" for W2's prices (row 2) against the dossier's 8.3% is settled by this run.
+not: >-
+  Not a cause, not a test: two windows chosen because they are the two big US printings, described.
+  Not a comparison across countries. The per-year rates over windows of different lengths are told
+  beside the totals, since either alone misleads. The values are today's revised series (what was
+  known then differed).
+created: '2026-09-30'

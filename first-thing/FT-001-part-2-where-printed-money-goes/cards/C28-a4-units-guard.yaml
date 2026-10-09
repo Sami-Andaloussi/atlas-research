@@ -1,0 +1,166 @@
+id: C28-a4-units-guard
+label: regression
+title: A4 on base and broad money, C25's and C27's runs with a units guard on the World Bank fills of real GDP,
+  the CPI and nominal GDP
+parent:
+  id: C25-a4-base-hko-fill
+  hash: f53710a65d62718375e664083ebfa605f7dc0206151efe63aeb6de2040b5db99
+kind: correction
+seen:
+- check/2026-10-07-opus-grid-check-a.md finding 1 (Burkina Faso 1970-80 real growth 205.7% a year, gamma -0.07 becomes
+  about -0.73 without that window, the slope below the line 0.22 about 0.25, broad below 0.40 about 0.61)
+- check/2026-10-07-opus-grid-check-b.md (findings F1-F6)
+- C25-a4-base-hko-fill (every result)
+- C27-a4-broad-hko-fill (every result)
+- C22-a4-base-2019-narrowed (every result)
+question: 'The grid check of 2026-10-07 found that panel rule 3 (a World Bank series filling the years IFS lacks,
+  scaled by the median IFS/World Bank ratio) splices series that are not in one unit: Burkina Faso''s IFS real GDP
+  before 1980 is about a billionth of the World Bank''s level, the median ratio is one, and the 1970-80 window reads
+  real growth of 206% a year. C25''s and C27''s readings (and C22''s grid read by C25) take that window. With a
+  guard that refuses such a splice, by the rule below and nothing else, what do C25''s and C27''s readings give?'
+method: 'C25''s method in every part for base money (its fill of the CPI, its windows on C02''s grid and C22''s
+  grid beside, its model pi = alpha + beta * mu + gamma * g + e, pooled OLS with errors clustered by money, its
+  verdicts, Teles and Uhlig''s 12% line on pi and on mu with C02''s rule for ''the line separates'', its held-out
+  checks by years and by five folds), and C27''s for broad money on C02''s grid, with one change and nothing else.
+  (1) The units guard, applied to the annual panel after C25''s fill and before any window: for real GDP (rgdp),
+  the CPI and nominal GDP, money by money (the United States and the euro area excepted: their own series, rules
+  4 and 5), the panel''s series is set against the World Bank''s raw series (NY.GDP.MKTP.KN, FP.CPI.TOTL, NY.GDP.MKTP.CN,
+  vintage 2026-09-30) over the years both exist; where the ratio''s maximum over its minimum is 100 or more, the
+  two are not in one unit (the panel''s rule 6 reads a factor of 100 as a unit change), and the money''s variable
+  is read from the World Bank''s series alone, as it is, in the years it has (growth and inflation are unit-free);
+  the other years of that variable are missing. (2) Everything else is C25''s and C27''s: the same panels, rules,
+  windows, model, lines, held-out checks and readings. (3) The reproduction: the run first rebuilds C25''s filled
+  readings (both grids) and C27''s with the guard switched off and must reproduce their stored results (every coefficient,
+  interval and verdict, to 1e-9); if not, the run is void and says so. (4) Reported: for each of C02''s grid on
+  base money, C22''s grid on base money and C02''s grid on broad money, the summary C25 and C27 report (n windows
+  and moneys; beta, its interval and verdict; gamma and its verdict; the line on pi and on mu, each side''s slope,
+  interval and verdict, theta and its p, ''separates''; the held-out windows by years and the five folds), beside
+  C25''s or C27''s stored value; the windows whose mu, pi or g change under the guard, one line each; and the points.'
+parameters:
+  window_years: 10
+  window_ends:
+  - 1950
+  - 1960
+  - 1970
+  - 1980
+  - 1990
+  - 2000
+  - 2010
+  - 2020
+  window_ends_beside_C22:
+  - 1949
+  - 1959
+  - 1969
+  - 1979
+  - 1989
+  - 1999
+  - 2009
+  - 2019
+  interval: 0.95
+  prior_line_teles_uhlig_pct: 12
+  line_significance: 0.05
+  units_guard_max_over_min: 100
+  guarded_variables:
+  - rgdp
+  - cpi
+  - gdp
+  guard_switches_before_the_run:
+    rgdp:
+    - BF
+    - SR
+    cpi: []
+    gdp: []
+  world_bank:
+    rgdp: NY.GDP.MKTP.KN
+    cpi: FP.CPI.TOTL
+    gdp: NY.GDP.MKTP.CN
+    vintage: '2026-09-30'
+matters:
+  lr_base_mu_below: 0.1
+  lr_base_mu_above: 0.1
+  lr_base_beta: 0.1
+  lr_base_pi_below: 0.1
+  lr_base_pi_above: 0.1
+  lr_base_ho_beta: 0.1
+  lr_c22_beta: 0.1
+  lr_c22_ho_beta: 0.1
+  lr_c22_mu_below: 0.1
+  lr_c22_mu_above: 0.1
+  lr_broad_beta: 0.1
+  lr_broad_ho_beta: 0.1
+  lr_broad_mu_below: 0.1
+  lr_broad_mu_above: 0.1
+  lr_base_gamma: 0.25
+  lr_broad_gamma: 0.25
+  lr_c22_gamma: 0.25
+data:
+- dataset: worldbank-inflation/ha-kose-ohnsorge
+  vintage: '2026-10-02'
+- dataset: dbnomics/IMF/IFS/A~~14____XDC
+  vintage: '2026-09-30'
+- dataset: dbnomics/IMF/IFS/A~~FASMB_XDC
+  vintage: '2026-09-30'
+- dataset: dbnomics/IMF/IFS/A~~14____USD
+  vintage: '2026-09-30'
+- dataset: dbnomics/IMF/IFS/A~~NGDP_XDC
+  vintage: '2026-09-30'
+- dataset: dbnomics/IMF/IFS/A~~NGDP_R_XDC
+  vintage: '2026-09-30'
+- dataset: dbnomics/IMF/IFS/A~~PCPI_IX
+  vintage: '2026-09-30'
+- dataset: dbnomics/IMF/IFS/A~~ENDE_XDC_USD_RATE
+  vintage: '2026-09-30'
+- dataset: dbnomics/IMF/IFS/A~~FPOLM_PA
+  vintage: '2026-09-30'
+- dataset: dbnomics/IMF/IFS/A~~FIMM_PA
+  vintage: '2026-09-30'
+- dataset: dbnomics/IMF/IFS/A~~FITB_PA
+  vintage: '2026-09-30'
+- dataset: worldbank/NY.GDP.MKTP.CN
+  vintage: '2026-09-30'
+- dataset: worldbank/NY.GDP.MKTP.KN
+  vintage: '2026-09-30'
+- dataset: worldbank/FP.CPI.TOTL
+  vintage: '2026-09-30'
+- dataset: fred/BOGMBASE
+  vintage: '2026-09-30'
+- dataset: fred/GDPC1
+  vintage: '2026-09-30'
+- dataset: fred/CPIAUCSL
+  vintage: '2026-09-27'
+- dataset: fred/FEDFUNDS
+  vintage: '2026-09-30'
+- dataset: dbnomics/ECB/ILM/M~U2~C~LT00001MP~Z5~EUR
+  vintage: '2026-09-30'
+- dataset: dbnomics/ECB/ICP/M~U2~N~000000~4~INX
+  vintage: '2026-09-30'
+- dataset: dbnomics/ECB/MNA/Q~Y~I9~W2~S1~S1~B~B1GQ~_Z~_Z~_Z~EUR~LR~N
+  vintage: '2026-09-30'
+- dataset: dbnomics/ECB/FM/D~U2~EUR~4F~KR~DFR~LEV
+  vintage: '2026-09-30'
+- dataset: dbnomics/IMF/IFS/A~~35L___XDC
+  vintage: '2026-09-30'
+- dataset: dbnomics/IMF/IFS/A~~FMB_XDC
+  vintage: '2026-09-30'
+- dataset: fred/M2SL
+  vintage: '2026-09-30'
+- dataset: dbnomics/ECB/BSI/M~U2~Y~V~M30~X~1~U2~2300~Z01~E
+  vintage: '2026-09-30'
+period: 1950 to 2020 (seven decade windows); C22's grid, 1959 to 2019, beside; broad money on C02's grid
+sample: 'C25''s and C27''s rules, unchanged: every money of the panel with the money, the CPI and real GDP at both
+  ends of a window, set by data coverage only. The guard changes which source is read for a variable of a money
+  whose two sources are not in one unit; it never selects a window by its inflation or its money growth. The guard''s
+  switches were counted before the run from the sources'' levels only (the ratio of the panel''s series to the World
+  Bank''s): real GDP of Burkina Faso (a spread of about 1e9) and of Suriname (about 2.7e3); no CPI and no nominal
+  GDP.'
+out_of_sample: 'C25''s checks, in its words: the model fitted on windows ending in or before 1990 predicts those
+  starting in or after 1990, and five folds by code position; the same on C22''s grid (held out from 1999 by its
+  own rule) and on broad money.'
+failure: 'C25''s failure clause on each grid: the verdict fails to hold if the held-out windows by years, or two
+  or more of the five folds, give a beta whose interval tells another verdict. And this card''s own: if the reproduction
+  with the guard off fails, nothing is read.'
+not: 'Not a new question: C25''s and C27''s readings with a units fault corrected. Not a check of every series against
+  the World Bank (25 windows differ from the World Bank''s real growth by more than two points a year without a
+  unit change; they are not touched, and are read beside in C29). Not causal. Not 1870-1950, not De Grauwe and Polan''s
+  line, not C02''s variants.'
+created: '2026-10-07'

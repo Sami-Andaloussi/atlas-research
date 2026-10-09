@@ -1,0 +1,68 @@
+id: C03-a4-broad
+label: regression
+title: A4's variant - broad money growth and inflation over the long run, every money with data, 1950-2020
+parent:
+  id: C02-a4-base
+  hash: 2fef33fe9a6f10f0bf09c0969dae963c82a531270e647eb5edf622f48454f483
+question: >-
+  As C02, with broad money in place of base money: over ten-year averages from 1950 to 2020, does
+  inflation follow broad money growth one for one once real output growth is taken out, out of the
+  sample that fits it, and across the prior lines?
+method: >-
+  C02's method in every part (windows, the model, the verdict rule, the prior lines applied to pi and
+  to mu, the held-out years and moneys, the variants), with one change: mu is the growth of broad money.
+  Headline: the panel's broad money - IFS line 35L "money plus quasi-money" chained to the central bank
+  survey's broad money (FMB) by the panel's rule 2 (the same source and seam rule as base money, so the
+  base-against-broad comparison differs only in the aggregate); the United States: M2SL in December; the
+  euro area: M3 in December. Sub-variant: the World Bank's broad money (FM.LBL.BMNY.CN) as it is, for
+  the moneys and years it covers. The report sets C02's and C03's beta side by side, on the money-windows
+  both cover and on each one's own.
+parameters:
+  change_from_parent: mu is broad money's growth (panel column broad); sub-variant broad_wb
+  window_years: 10
+  window_ends: [1950, 1960, 1970, 1980, 1990, 2000, 2010, 2020]
+  interval: 0.95
+  prior_line_teles_uhlig_pct: 12
+data:
+  - dataset: dbnomics/IMF/IFS/A~~35L___XDC
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/A~~FMB_XDC
+    vintage: '2026-09-30'
+  - dataset: worldbank/FM.LBL.BMNY.CN
+    vintage: '2026-09-30'
+  - dataset: fred/M2SL
+    vintage: '2026-09-30'
+  - dataset: dbnomics/ECB/BSI/M~U2~Y~V~M30~X~1~U2~2300~Z01~E
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/A~~NGDP_R_XDC
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/A~~PCPI_IX
+    vintage: '2026-09-30'
+  - dataset: worldbank/NY.GDP.MKTP.KN
+    vintage: '2026-09-30'
+  - dataset: worldbank/FP.CPI.TOTL
+    vintage: '2026-09-30'
+  - dataset: fred/GDPC1
+    vintage: '2026-09-30'
+  - dataset: fred/CPIAUCSL
+    vintage: '2026-09-27'
+  - dataset: dbnomics/ECB/ICP/M~U2~N~000000~4~INX
+    vintage: '2026-09-30'
+  - dataset: dbnomics/ECB/MNA/Q~Y~I9~W2~S1~S1~B~B1GQ~_Z~_Z~_Z~EUR~LR~N
+    vintage: '2026-09-30'
+period: 1950 to 2020 (seven decade windows); 2020 to the panel's last common year apart
+sample: >-
+  As C02, by coverage only: every money with broad money, the CPI and real GDP at both ends of a
+  window; the same drops (IMF groups, units_break moneys, euro use outside the area, members' euro
+  years). The broad-money seam flag (broad_break) replaces base money's in the seam variant. A
+  money-window in C03 but not in C02 (or the reverse) is counted, so the two samples' difference is seen.
+out_of_sample: >-
+  As C02: fitted on the windows ending in or before 1990, tested on those starting in or after 1990;
+  five folds of moneys by code position; the prior line applied as drawn by others, never refitted.
+failure: >-
+  As C02. In addition: if C02 and C03 tell different verdicts on the money-windows both cover, part 2
+  says the answer depends on the aggregate, and does not pick one.
+not: >-
+  Not a separate question: a variant of A4 (the dossier's "base money, broad money a variant"). Broad
+  money includes deposits that pay interest, whose demand moves with rates; not M1. Not causal.
+created: '2026-09-30'

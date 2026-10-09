@@ -1,0 +1,170 @@
+id: C26-a5-deciders-hko-fill
+label: test
+title: A5 on the closed list with the missing consumer prices filled from the World Bank's Cross-Country Database of Inflation - C24's run (C18's test, wars coded from UCDP before 1989), the monthly CPI gaps filled
+parent:
+  id: C24-a5-deciders-war-coded
+  hash: e38e22b6c9ed663b206e2a70d059cf94b41d78f10116155f22eb4d1476f34658
+question: >-
+  The margin check of 2026-10-02 (notes/gap5-margins-2026-10-02.md) found that the deciders' verdicts are
+  not shown robust to the prices the study cannot read: 11 of the 12 cells have a margin (the swaps of
+  episodes between a decider's two categories that would flip the verdict) at or below the number of
+  episodes whose consumer prices touch a gap (3 to 21), and two cells, O1 / D4 and O1 / D5, flip if only
+  those uncertain episodes change side. The World Bank's Cross-Country Database of Inflation (Ha, Kose and
+  Ohnsorge) carries a monthly headline CPI for 183 economies. When the monthly CPI the study cannot read is
+  filled from it, by the rule below and nothing else, does any of the twelve cells (four deciders, three
+  outcomes) change its verdict - or does the finding that no decider separates, with D2 "we cannot
+  conclude", stand as C18's headline and C24 give it?
+method: >-
+  C24's method in every part (C18's, with the war coding of C24 for the counted run "war episodes out"; both
+  accommodation readings; the permutation test within eras; Holm's adjustment; the verdicts of C18 (3); the
+  two-thirds count of C18 (4) with its denominator; D4 by c at the start's exchange rate; D3 and D6
+  described only; C15's lists as C18 reads them), with one change and nothing else.
+  (1) The fill. Where the monthly consumer price index the study reads for an economy-month is missing, it is
+  filled from the monthly headline CPI of the database (worksheet hcpi_m), by these rules, fixed here before
+  any run:
+  (a) Never replace a value the study already reads: a fill touches only a month the study's CPI lacks (the
+  study's CPI being the panel's monthly CPI: IFS, the United States from FRED, the euro area from the ECB's
+  HICP), and only a month the database holds (January 1970 to March 2025). Where the study's series is
+  absent for the economy altogether, the database's is taken as it is.
+  (b) Only the monthly sheet: the quarterly and annual sheets are not read, because the rule of the test
+  needs a twelve-month change at a month (accommodation and O1 are read month by month), and a quarterly or
+  annual value gives none without an interpolation that nothing here fixes. The annual panel's CPI, which
+  the three annual episodes read (set apart in the headline), is filled by C25's rule for the annual panel
+  (the database's monthly, then quarterly, then annual chain, as C25 (1) fixes it).
+  (c) Scaling, as the panel's rule 3 scales the World Bank's CPI: the database's level times the median
+  ratio (study / database) over the months both exist; where both exist but never in the same month, no fill.
+  (d) The guard, the panel's own tolerance for a seam (rule 2, BREAK_TOL): if over the months both exist the
+  ratio's maximum over its minimum exceeds 1.10, the two are not one series and the economy is not filled;
+  it is listed with its ratio's spread.
+  (e) Only the database's economies the panel carries (by the World Bank's table of economies, as the panel's
+  rule 3 maps its series); nothing is interpolated.
+  (2) The lists. C15's lists, as C15 stored them (the headline, the other X-Y lists, q 0, H 24 and 60, units
+  factor 3, smoothing, set-apart episodes not keeping their place), are the same episodes: the fill changes
+  no base money, GDP or episode. What the fill changes is read from the CPI and re-read by C15's own
+  readings: each episode's twelve-month inflation at m0, its largest in m0 to the month before c, the two
+  accommodation readings (at m0; the design's, at T 10, 12 and 20), the annual episodes' year-average
+  inflation, and the outcome O1 (C18: the change in inflation over the horizon, from the CPI). The censoring
+  stays C15's (the panel's common end, August 2026, which the run asserts is unchanged: the database ends in
+  March 2025, so it adds no month the common end reads); the set-apart flags, the seams and the nine flagged
+  lines stay C15's.
+  (3) The reproduction. The run first re-reads every list's accommodation columns on the UNFILLED CPI and must
+  find them equal to the ones C15 stored, and rebuilds C18's headline and C24's extended war-out run on the
+  unfilled data and must reproduce C18's and C24's stored results (every p, difference, verdict and the
+  two-thirds counts), the way C24 (4) reproduces C18's. If any differs the run is void and says so, and
+  nothing is read from it.
+  (4) The filled run. Everything C18 runs, on the filled CPI: the headline (both accommodation readings, the
+  twelve cells and their combined verdicts), the 29 counted runs of C18 (5) - with "war episodes out" as
+  C24 codes it (the World Bank from 1989, UCDP/PRIO from 1946 to 1988) - the beside-the-headline runs (jump
+  shares 0.5, 0.67, 0.9), the two-thirds count recomputed (k of n, with and without the runs that change only
+  another decider's threshold), the coincidence of the deciders' categories, and what happened (O1, O2
+  medians). C05's and C09's lists, reported beside by C18, are not rerun (the lists the study calls faulty:
+  their accommodation reads the list's own column).
+  (5) Reported, with no selection: for each of the four deciders and three outcomes, the filled headline's
+  verdict beside C18's stored headline and beside C24's extended run; the tested sets' sizes under each
+  reading (C24: 287 the design's way and 353 at m0 at the headline) before and after; the episodes that enter
+  or leave the tested set because of the fill, one line each, with the months filled; the months and
+  economies filled, and the economies refused by the guard with the ratio's spread; the cells' margins and
+  uncertain counts are not recomputed here (the margin check stands as written, on the unfilled data).
+  (6) If a verdict of a cell differs from C18's headline (including "separates" where the headline's does not,
+  a verdict that depends on how accommodation is dated, or a changed sign), or a two-thirds count moves a
+  verdict between "holds" and "fragile", the producer says exactly what differs and stops after registering:
+  the long version's conclusions are not rewritten, and the engine decides with Sami. If none differs, the
+  long version's statement of its limits on missing prices says so, with the episodes added.
+parameters:
+  episodes: C18's, C15 headline (X 5, Y 2, T 12, H 36, q 0.1, units factor 2, gamma floored at 0, jump share 0.8, no exception)
+  accommodation_readings: [at m0, m0 to the month before c]
+  permutations: 10000
+  seed: 20260930
+  strata: [[1950, 1971], [1972, 1999], [2000, 2026]]
+  min_per_category_per_stratum: 3
+  min_qualifying_strata: 2
+  alpha_after_holm: 0.05
+  tested_deciders: [D1 regime, D2 floor, D4 channel, D5 deficit]
+  war_threshold_battle_deaths: 1000
+  war_1989_2024: World Bank VC.BTL.DETH, as C18
+  war_1946_1988: UCDP/PRIO ACD v26.1, intensity_level 2, the economy in the conflict's location (gwno_loc), as C24
+  war_year_read: the year of m0, as C18 and C24
+  fill:
+    database: worldbank-inflation/ha-kose-ohnsorge, vintage 2026-10-02 (workbook version April 2025)
+    sheet_monthly: hcpi_m
+    months: January 1970 to March 2025
+    scale: median study / database over the months both exist; no study CPI - the database as it is; never the same month - no fill
+    guard_max_over_min: 1.10
+    never_replaces: a value the study already reads
+    annual_panel: C25's rule (monthly, quarterly, annual chain), for the annual episodes only
+  common_end_kept: C15's (August 2026), asserted
+  expected_before_the_run: >-
+    Counted from availability only (which months the study's CPI lacks and the database holds; no
+    inflation, accommodation reading or outcome computed): the monthly fill adds 891 months in 8 economies
+    (AR 98, BT 145, BZ 251, IE 47, KN 3, NP 228, TJ 90, VG 29; the guard refuses BF, DJ and GA, whose ratio's spread is above
+    1.10); AR, BT, BZ, NP and VG have no monthly CPI in the study at all. Of C15's headline list of 667
+    episodes, of the 582 that are neither set apart nor censored (set apart at 0.8 and censored at H 36), the
+    months m0 - 12 to m0 + 36 (to the common end) have no gap for 443 and for 452 with the fill (9 more);
+    the design's accommodation reading, a twelve-month change in at least one month from m0 to the month
+    before c, becomes readable for 472 of the 582 and 481 with the fill (9 more); the reading at m0, for 465
+    and 474 (9 more). In all, 12 episodes of the list gain a readable month or reading, in NP, BZ, TJ, BT and
+    AR (NP 2008-01, BZ 2011-05, BZ 2014-07, NP 2015-02, TJ 2015-03, BT 2016-07, BT 2019-08, BZ 2020-04, NP
+    2020-05, TJ 2020-06, AR 2023-09, BT 2024-08). The 101 episodes (of the 582) whose prices stay unreadable the
+    design's way (110 of the 582 now: they leave the test, as in C18) lie where the database's monthly
+    sheet does not reach: 19 in economies it does not carry monthly, 82 in economies it carries but not in the
+    months from m0 to the month before c; the guard refuses none of them. How many of the added episodes enter the tested set (287 the design's way, 353 at m0 at the
+    headline) cannot be said before the run: it depends on whether they pass the accommodation floor, a
+    reading of the filled CPI that is not computed here.
+  seen_before_writing: >-
+    C18's result in full and C24's (their headlines, counted runs, two-thirds counts, the war-out runs:
+    no decider separates on any outcome; D2 "we cannot conclude" on every outcome, thin under both readings;
+    D1 and D5 "does not separate" on O1; D4 "does not separate" on O1, fragile 11 of 23; the tested sets 287
+    and 353), every result of the study as told, C02 through C25's card (C25, this card's sibling, is not
+    run when this is written), and the margin check of 2026-10-02 (the cells' margins, 1 to 21 swaps against
+    3 to 21 uncertain episodes; O1 / D4 and O1 / D5 flip when only the uncertain episodes change side; the
+    check's greedy swaps moved existing episodes and added none). The database: its workbook was opened for
+    its sheet names, headers, the economies' codes, the Intro sheet and the first rows of each sheet (the
+    first economies' values in 1970-1974, in passing, none used); the ratio of the database's monthly CPI to
+    the study's monthly CPI was read for the economies both have, to see whether they are one series (169 of
+    178 within 10%; the guard's 1.10 is the panel's tolerance, fixed before the annual ratios were seen). The
+    counts above are of availability. Not seen, and not computed: any twelve-month inflation, accommodation
+    reading, O1 or other outcome of an episode using a filled month, any verdict on the filled data, any
+    two-thirds count on it. An expectation, fixed here so that it steers nothing: the verdicts do not
+    change, since at most 12 of 667 episodes are touched.
+data:
+  - dataset: the result of C24-a5-deciders-war-coded (its run, naming C24's hash)
+  - dataset: worldbank-inflation/ha-kose-ohnsorge
+    vintage: '2026-10-02'
+  - dataset: the result of C18-a5-deciders-bare (its run, naming C18's hash)
+  - dataset: the result of C15-e-episodes-closed (through C18)
+  - dataset: ucdp/conflict-dyadic-v26.1
+    vintage: '2026-10-01'
+  - dataset: cow/inter-state-wars
+    vintage: '2026-09-30'
+  - dataset: cow/intra-state-wars
+    vintage: '2026-09-30'
+  - dataset: cow/extra-state-wars
+    vintage: '2026-09-30'
+  - dataset: worldbank/VC.BTL.DETH
+    vintage: '2026-09-30'
+  - dataset: the datasets of C18, at the same vintages
+period: C18's, episodes starting 1950-2026 whose horizon ends by the panel's common end (August 2026); the filled months lie in 1970 to March 2025
+sample: >-
+  C18's: C15's list, made by rule before any outcome is read; the tested set under each accommodation
+  reading. The fill widens or narrows the tested set only by the availability of a monthly CPI and by what
+  the CPI then says of accommodation, which is the rule C15 fixed (an episode with accommodation leaves the
+  set, one whose prices could not be read enters if it has none): no episode is added or removed by an
+  outcome. The episodes entering or leaving are listed with the result.
+out_of_sample: >-
+  Nothing is fitted. The database is another source of the same quantity, and where it overlaps the study's
+  CPI the guard has tested that it is one series; the run checks whether C18's verdicts hold when the
+  episodes the CPI gaps left uncertain are read. It is not new data: the episodes are C18's.
+failure: >-
+  If no decider separates, part 2 says "we cannot conclude" on what decides, keeps A4, and reports every episode's measured outcomes. A verdict that depends on how accommodation is dated, on H, or that holds in fewer than two thirds of the variants is said as such, never as a finding. If D1, D2, D4 and D5 move together so that the categories of two deciders coincide in more than 80% of the tested episodes, the study says it cannot tell those two apart.
+  And C24's, in its words: If any of the twelve verdict cells of the extended run differs from the
+  headline's, or any decider "separates" on an outcome where the headline's does not, the study says so,
+  naming the decider and the outcome. If the headline rerun does not reproduce C18's stored result, the run
+  is void and says so.
+not: >-
+  Not a new test and not a change to C18's headline: C18's test on the same episodes with the monthly CPI gaps
+  filled; reported beside C18 and C24, never instead, until the engine decides with Sami what the long
+  version says. Not a repair of the base money, GDP, rate, exchange-rate or broad-money gaps (only the CPI is
+  filled; the margin check's uncertain episodes whose gap is another series are not touched). Not quarterly
+  or annual prices for the monthly rule (no interpolation). Not war as a decider (C24). Not causal (C18).
+  Not a rerun of C05's and C09's lists. Not a recomputation of the margin check.
+created: '2026-10-02'

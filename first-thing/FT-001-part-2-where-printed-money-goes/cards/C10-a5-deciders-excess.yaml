@@ -1,0 +1,46 @@
+id: C10-a5-deciders-excess
+label: test
+title: A5 on the corrected list - after a big addition of base money, what decided whether it reached prices and broad money?
+parent:
+  id: C06-a5-deciders
+  hash: d853b04d2560e62a55c86b7b2e4a58708c23809569e3a376379240aec2684c5f
+question: >-
+  C06's question, asked of C09's episodes: base money added beyond the economy's prior growth, one
+  episode per horizon, on moneys whose units are checked.
+method: >-
+  C06's method in every part - the outcomes O1 to O4, the deciders D1 to D6 and war, the permutation test
+  within era strata, Holm's adjustment, the verdict rules, the descriptive regression and cross-tabulation
+  - with one change: the episodes are C09's run at its headline (X = 5, Y = 2, T = 12, H = 36, q = 0.1,
+  units factor 2), those neither accommodation (nor "cannot be read") nor censored at H. The variants are
+  C06's, each on C09's corresponding list (its X-Y grid, T, H, q and units-factor variants), plus one
+  more: C06 itself, on C05's list. O1' divides by C09's rise (the addition beyond the prior pace, as a
+  share of GDP). Because C09 keeps one episode per horizon, no two episodes of a money share outcome
+  months, so each permutation moves independent price paths.
+parameters:
+  change_from_parent: episodes from C09-e-episodes-excess (headline) in place of C05-e-episodes
+  episodes: C09 headline (X 5, Y 2, T 12, H 36, q 0.1, units factor 2); neither accommodation nor censored
+  H_months: 36
+  permutations: 10000
+  seed: 20260930
+  strata: [[1950, 1971], [1972, 1999], [2000, 2026]]
+  min_per_category_per_stratum: 3
+  alpha_after_holm: 0.05
+  extra_variant: C06 on C05's list
+data:
+  - dataset: the result of C09-e-episodes-excess (its run, naming C09's hash)
+  - dataset: the datasets of C06-a5-deciders, at the same vintages
+period: C09's episodes starting 1950-2026 whose 36-month horizon ends by the panel's common end
+sample: >-
+  C09's list, made by rule before any outcome is read; as C06 otherwise - accommodation reported apart
+  with its outcomes, censored episodes with what happened so far, counted neither way, nothing matched or
+  dropped on anything measured after m0.
+out_of_sample: >-
+  As C06: nothing fitted; thresholds from outside the episodes; a decider separates only if its sign
+  holds in every era stratum with enough cases; the variants, C06 on C05's list among them, are counted.
+failure: >-
+  As C06. In addition: if C10 and C06 (on C05's list) tell different verdicts for a decider, the study
+  says the verdict depends on how an episode is counted, and gives both.
+not: >-
+  As C06: not causal; excess reserves never an outcome; asset prices never tested; the fiscal theory not
+  tested; the money-demand side is C07's.
+created: '2026-09-30'

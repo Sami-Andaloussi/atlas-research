@@ -1,0 +1,192 @@
+id: C31-cs-e-pandemic-cross-section
+label: regression
+title: CS-E — across economies, did faster 2020–21 growth of the public's money go with more 2022–23 inflation?
+kind: extension
+seen:
+- 'bank/checks/FT-001-map-2026-10-07-audit-v9-p2v4.md to bank/checks/FT-001-map-2026-10-08-audit-p2v14.md (the map''s
+  audits'' calibrations on past cross-sections, money t0 to t0+2 against inflation t0+2 to t0+4, t0 from 2001 to 2015
+  without 2007: the slopes'' half-widths by OLS and by Huber''s cluster bootstrap, their leave-one-out moves, the
+  Huber-direction simulation; the spread of 2019-21 broad-money growth and base growth''s concentration, about half its
+  2019-21 variance from five economies; coverage counts. No 2022-23 inflation, no 2009-11 inflation)'
+- 'bank/checks/FT-001-2026-10-08-card-check-c30-c31.md (this card''s check, before any run: the calibration repeated,
+  Huber bootstrap half-widths 0.084-0.152 with the control and 0.071-0.125 without; coverage 134 economies with money
+  for 2019-21, 125 with both CPI dates, 111 calm-start; those lacking the 2023 CPI named; 2019-21 broad growth SD 5.75,
+  range -6.7 to 21.3; the 2019 energy-import share present for 75 of 111; the non-standardized IFS series 14 and 12A
+  ending about 2008; no outcome)'
+question: 'Part 2''s map v15, P2-5 and K5: across economies whose inflation was calm before the pandemic, did faster
+  growth of broad money (the public''s money) from December 2019 to December 2021 go with more inflation from December
+  2021 to December 2023? An association ("went with"), context to K5, whose agreed core and dispute rest on Blanchard
+  & Bernanke, BIS 67 and Barro & Bianchi. The cross-section cannot separate the money from the fiscal demand that
+  carried it (BIS 67 p. 5): said beside every reading.'
+method: '(1) Frame PX. An economy enters when IFS gives its broad money at the end of 2019, 2020 and 2021 and its
+  consumer prices for December 2021 and December 2023 (or, where no monthly CPI exists, annual averages for 2021 and
+  2023, said, with a variant on annual averages for all). Broad money: IFS FMB_XDC (broad money), else 35L___XDC
+  (money plus quasi-money, non-standardized presentation), the same series at both ends. Base money: IFS FASMB_XDC
+  (central bank survey, monetary base), else 14____XDC (reserve money, non-standardized) where FASMB is missing, the
+  same series at both ends. The central bank''s claims on central government: IFS FASAG_XDC (central bank survey),
+  else 12A___XDC, the same rule. IFS aggregates (codes that are not an economy''s two letters, such as 5X, 5Y, 7A) never
+  enter. The euro area enters once (ECB M3 at end-year, HICP, frozen ECB series), never its members one by one; its
+  members are those of December 2019 for the main window (AT, BE, CY, DE, EE, ES, FI, FR, GR, IE, IT, LT, LU, LV, MT,
+  NL, PT, SI, SK). In Q6 the euro area is left out, said: the frozen M3 is of changing composition and takes in Cyprus
+  and Malta (January 2008) and Slovakia (January 2009) inside Q6''s money window; the members of December 2007 (AT,
+  BE, DE, ES, FI, FR, GR, IE, IT, LU, NL, PT, SI) and those that joined inside the money window (CY, MT, SK) do not
+  enter Q6 one by one either. One that joined inside an inflation window only (HR in January 2023; EE in January
+  2011, for Q6) enters alone, its own money and its price index (Croatia''s 2023 prices also sit in the chained
+  euro-area HICP: negligible, said). The euro area is left out of variants (d) and (h), said (no frozen euro-area series for the
+  Eurosystem''s claims on governments or its monetary base in IFS). WAEMU, CEMAC and the ECCU''s eight members
+  (Anguilla, Antigua and Barbuda, Dominica, Grenada, Montserrat, St Kitts and Nevis, St Lucia, St Vincent and the
+  Grenadines) enter one by one and are clustered by union. Units guard: a money stock that moves by a factor of 10 or
+  more between two consecutive year-ends is dropped and the economy listed (no register of redenominations is in hand,
+  so none is excused). The economies entering on money but lacking the 2023 CPI are listed by the run before any
+  outcome is read, from coverage alone. (2) The main set: calm start, the arithmetic mean of the five yearly
+  inflation rates 2015-19 (simple percent changes; an economy lacking any of the six annual values 2014-19 is "calm
+  start unknown", listed for the main window and for Q6, and enters only variant g) (from annual-average CPI, IFS A PCPI_IX; HICP annual averages for the euro area) below 10%
+  (De Grauwe & Polan''s low-inflation line, a 30-year average in theirs, adapted to five years and named); all
+  economies beside. (3) The variables, in percent a year: m = 100 * ln(M_Dec2021 / M_Dec2019) / 2; p = 100 *
+  ln(CPI_Dec2023 / CPI_Dec2021) / 2. (4) The estimator, fixed before the run: the robust slope leads — Huber''s
+  M-estimator (statsmodels RLM, HuberT norm, its default tuning t = 1.345) of p on m and the controls — and the OLS
+  slope is printed beside it. The interval read against the size that matters is a cluster bootstrap''s (2,000 draws
+  by cluster, the unions and the euro area each one cluster, every other economy its own; seed 20261008; its 2.5 and
+  97.5 percentiles), never the model standard error. (5) Control in the main run: the energy-import share of 2019
+  (WDI EG.IMP.CONS.ZS, frozen 2026-10-08, WDI''s euro-area aggregate EMU for the euro area; negative values, net
+  exporters, as they are). An economy without it leaves the main run and is listed with why; the same run without
+  the control, on every economy of the main set, is printed beside, never instead. No currency control in the main
+  run. (6) Variants, each named and read by the same rule, never as votes: (a) the currency''s 2019-21 change (IFS
+  ENDE end-of-period rate against the dollar, 100 * ln(E2021 / E2019) / 2; for the euro area, IFS''s euro-area (U2)
+  ENDE series, the one aggregate code admitted, for this variant only), read "beyond the currency channel" (it is partly a mediator); (b) led by money December 2019 to
+  December 2020, m_led = 100 * ln(M_Dec2020 / M_Dec2019) (BIS 67''s dating, clean of 2021); (c) the main run with
+  inflation December 2020 to December 2021 as a control (annual averages 2020 to 2021 where the economy''s outcome is
+  annual or its December 2020 or December 2021 price is missing), partly a mediator — read both ways before the run: survives, the association is not only inflation
+  already under way; vanishes, momentum or reverse timing, or the money''s effect arriving within 2021 and persisting;
+  (d) net of the central bank''s claims on government: m_net = 100 * ln((M_Dec2021 - (C_2021 - C_2019)) / M_Dec2019) /
+  2, C the claims of (1), a non-positive argument dropped and listed; read both ways before the run: survives, the
+  association is not only purchase-created deposits; vanishes, it is carried by purchase-financed money, as K5 says;
+  (e) without the economies whose AREAER 2019 class (Table 2, as of 30 April 2019, the 2019 report''s PDF p. 19) is no
+  separate legal tender (Ecuador, El Salvador, the Marshall Islands, Micronesia, Palau, Panama, Timor-Leste, Kosovo,
+  Montenegro, San Marino, Kiribati, Nauru, Tuvalu) or a currency board (Djibouti, Hong Kong SAR, the ECCU''s Antigua and
+  Barbuda, Dominica, Grenada, St Kitts and Nevis, St Lucia and St Vincent and the Grenadines, Bosnia and Herzegovina,
+  Bulgaria, Brunei Darussalam); Anguilla and Montserrat, not IMF members and unclassed, leave with the ECCU, whose
+  board they share (full dollarisation: no revaluation of the money arises; partly dollarised economies''
+  revaluation of foreign-currency deposits is absorbed by variant a, said); (f) annual-average inflation for all
+  (2021 to 2023); (g) all economies (no calm-start rule); (h) base money, a described variant, never a claim: its
+  slope and the difference of correlations (broad minus base) printed in the methods as what they rule out, with the
+  spread of base growth and its concentration (the share of its 2019-21 variance from its five largest contributors)
+  and C15''s reclassification flags carried (Denmark''s March 2021). (7) Leave-one-out: each economy (each union as
+  one) dropped in turn; a reading that "moves" — the slope''s interval crossing 0.1, or its reading changing among
+  effect, bounded and too small to matter — is printed with the economy that moves it named, the robust reading
+  leading. Huber leads, OLS beside, and no direction is stated in advance: where the two differ, the ten economies
+  Huber down-weights most are listed with the sign of their residual and their money growth against the mean. (8)
+  The null (OT15): the main Huber slope recomputed on the main run''s economies, on 2,000 permutations of m across
+  economies (seed 20261008), the controls and the cluster labels kept with their economies; printed as the one-sided permutation p-value (the share of permuted slopes at
+  or above the observed one) and, beside it, the false-confirmation rate of rule (10): the share of permutations
+  whose slope, read with its own cluster bootstrap of 200 draws, reads "effect". (9) Out of the build (Q6): money
+  December 2007 to December 2009 against inflation December 2009 to December 2011 (or annual averages for 2009 and
+  2011), the same frame and estimator, the calm start on 2003-07 and the energy-import share of 2007; the prediction
+  written here before the run: a positive Huber slope whose bootstrap interval''s lower end is above 0; the same
+  permutation null run on Q6 (each permutation''s bootstrap of 200 draws, as in (8)), its rate of meeting the
+  prediction under the null printed beside the Q6 line; a failed prediction is printed as failed, beside the main
+  reading, never in its place; in the main window, where the main run and the run without the control read differently, the main leads,
+  both printed. (10) The
+  reading, P03, on the Huber slope''s bootstrap interval against 0.1 a point: effect if the lower end is above 0.1; an
+  effect of the other sign if the upper end is below -0.1; too small to matter if the interval lies within -0.1 to
+  0.1; bounded otherwise, written as what it rules out (a null most likely reads bounded: said before the run). The
+  refutation of P2-5: the interval lies wholly below 0.1. BIS 67''s 0.29 is named beside with its differences
+  (excess broad money, Q4 2019 to Q4 2020, 30 economies, inflation to Q3 2022). (11) Reported: the economies in and
+  out with why; each slope (Huber, OLS) with its interval and reading; each variant; the leave-one-out moves; the
+  down-weighted list; the null''s p-value and false-confirmation rate; Q6''s window and its null rate; the expected
+  precision restated on the calibration (Huber about ±0.075 to 0.15 on past cross-sections, model SE understated; OLS
+  up to ±1.2 with one crisis economy). Named beside the reading as what else moves 2022-23 inflation and the
+  cross-section cannot hold: the war in Ukraine''s spillovers to energy and food prices (the energy control catches
+  part); 2020''s draws on credit lines, which raised deposits without new spending (BIS 67 p. 5); and that 2022''s
+  energy importers may supply many of the residuals Huber down-weights.'
+parameters:
+  money_start: 2019-12
+  money_end: 2021-12
+  inflation_start: 2021-12
+  inflation_end: 2023-12
+  led_money_end: 2020-12
+  momentum_inflation: [2020-12, 2021-12]
+  calm_start_years: [2015, 2019]
+  calm_start_line_pct: 10
+  control_year: 2019
+  units_guard_factor: 10
+  bootstrap_draws: 2000
+  permutation_draws: 2000
+  permutation_bootstrap_draws: 200
+  seed: 20261008
+  huber_norm: HuberT
+  interval: 0.95
+  leave_one_out_downweighted_listed: 10
+  q6_money: [2007-12, 2009-12]
+  q6_inflation: [2009-12, 2011-12]
+  q6_calm_start_years: [2003, 2007]
+  q6_control_year: 2007
+  euro_members_main: [AT, BE, CY, DE, EE, ES, FI, FR, GR, IE, IT, LT, LU, LV, MT, NL, PT, SI, SK]
+  euro_members_q6: [AT, BE, DE, ES, FI, FR, GR, IE, IT, LU, NL, PT, SI]
+  euro_joined_inside_q6_money: [CY, MT, SK]
+  hard_pegs_areaer_2019: [EC, SV, MH, FM, PW, PA, TL, XK, ME, SM, KI, NR, TV, DJ, HK, AG, DM, GD, KN, LC, VC, BA, BG,
+    BN, AI, MS]
+  unions:
+    WAEMU: [BJ, BF, CI, GW, ML, NE, SN, TG]
+    CEMAC: [CM, CF, TD, CG, GQ, GA]
+    ECCU: [AI, AG, DM, GD, MS, KN, LC, VC]
+matters:
+  cs_e_broad_huber: 0.1
+  cs_e_broad_ols: 0.1
+  cs_e_broad_huber_no_control: 0.1
+  cs_e_var_currency: 0.1
+  cs_e_var_led: 0.1
+  cs_e_var_momentum: 0.1
+  cs_e_var_net_claims: 0.1
+  cs_e_var_no_dollarised: 0.1
+  cs_e_var_annual: 0.1
+  cs_e_var_all: 0.1
+  cs_e_q6_broad_huber: 0.1
+data:
+- dataset: dbnomics/IMF/IFS/A~~FMB_XDC
+  vintage: '2026-09-30'
+- dataset: dbnomics/IMF/IFS/A~~35L___XDC
+  vintage: '2026-09-30'
+- dataset: dbnomics/IMF/IFS/A~~FASMB_XDC
+  vintage: '2026-09-30'
+- dataset: dbnomics/IMF/IFS/A~~14____XDC
+  vintage: '2026-09-30'
+- dataset: dbnomics/IMF/IFS/A~~FASAG_XDC
+  vintage: '2026-09-30'
+- dataset: dbnomics/IMF/IFS/A~~12A___XDC
+  vintage: '2026-09-30'
+- dataset: dbnomics/IMF/IFS/A~~ENDE_XDC_USD_RATE
+  vintage: '2026-09-30'
+- dataset: dbnomics/IMF/IFS/M~~PCPI_IX
+  vintage: '2026-09-30'
+- dataset: dbnomics/IMF/IFS/A~~PCPI_IX
+  vintage: '2026-09-30'
+- dataset: dbnomics/ECB/BSI/M~U2~Y~V~M30~X~1~U2~2300~Z01~E
+  vintage: '2026-09-30'
+- dataset: dbnomics/ECB/ICP/M~U2~N~000000~4~INX
+  vintage: '2026-09-30'
+- dataset: worldbank/EG.IMP.CONS.ZS
+  vintage: '2026-10-08'
+- dataset: frame-a/areaer-2011-2023
+  vintage: '2026-10-01'
+- dataset: results/runs/C15-e-episodes-closed.json
+  vintage: 'C15''s run as committed (in the study''s folder): the reclassification flags only'
+period: money December 2019 to December 2021; inflation December 2021 to December 2023; Q6, money 2007-09 and
+  inflation 2009-11
+failure: 'The reading fails to hold if the leave-one-out check moves it (then the robust reading leads and the moving
+  economy is named), or if the Huber and OLS slopes give different readings (both printed, the robust leading, the
+  down-weighted economies listed). A null reading bounded is not a failure: it is printed with what it rules out.'
+not: 'Not causal: "went with". Not a separation of the money from the fiscal demand that carried it (BIS 67 p. 5).
+  Not a test of base money: base money is a described variant, never a claim. Not BIS 67''s regression (excess money,
+  other dates, 30 economies). No dated-crisis variant: no list of 2021-23 currency or sovereign crises is in hand
+  (Laeven & Valencia''s 2026 file holds banking crises only), and dropping economies for a crisis inside the outcome
+  window would remove the currency channel, a mediator.'
+created: '2026-10-08'
+sample: 'Every economy IFS covers at both money dates and both price dates, by coverage only; the main set by a rule
+  on inflation before the money window (2015-19 below 10%), never on the outcome, and on the control''s coverage
+  (said, the run without the control beside). Designed before any 2022-23 inflation was read for this card; the
+  calibration on past cross-sections (2001-15, without 2007) by the map''s audits and this card''s check used pre-2020
+  outcomes only, never Q6''s.'
+out_of_sample: 'Money 2007-09 against inflation 2009-11, its prediction written above before the run, with its rate
+  under the permutation null; and the past cross-sections of the calibration, which built none of this card''s
+  readings.'

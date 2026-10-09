@@ -1,0 +1,129 @@
+id: C32-cs-c-door-timeline
+label: measurement
+title: CS-C — the two American printings month by month, on one balance-sheet item, beside the cited decomposition
+parent:
+  id: C01-door
+  hash: 5c6df9817ec0663cabdf86b8b094c572ca2f0c82552118d0b8d1b6bc4a040778
+kind: correction
+seen:
+- 'C01-door (every result: base growth, base added as a share of GDP, and the price totals and rates over each
+  window, which the map has dropped since v9 as window totals across a change of state)'
+- 'bank/checks/FT-001-map-2026-10-08-audit-p2v7.md and -p2v8.md (prices over the splits of the second window: CPI
+  1.30% and 7.17% a year, M2 28.7% and 12.5% a year, by December 2020 and by May 2020; the dates of item 6''s facts
+  were chosen after these were seen: P12, said)'
+- 'bank/checks/FT-001-2026-10-08-card-check-c32-c33.md (this card''s check, before any run: the reproduction figures
+  recomputed on both purchase-share bases and on three monthly bases of the H.4.1 series; CPI over 2008-14 and over
+  October 2014 to October 2016, 1.34% and 0.90% a year, now printed by no card)'
+- 'bank/checks/FT-001-map-2026-10-08-audit-p2v11.md and -p2v12.md (the door figures recomputed by the audits: base
+  added, reserves added, the Fed''s total assets and securities, M2 added and its pace in the seven years before each
+  window, the reverse repo, the Treasury purchases as shares of the deficits, M2 from February to May 2020, velocity
+  and nominal GDP in 2021, unemployment)'
+question: 'Part 2''s map v15, P2-4 (the door, context, never in the headline): over the two US printings, August 2008
+  to October 2014 and February 2020 to December 2021, how much central-bank money was added, and on what balance-sheet
+  item did it end; and, month by month, how did the base (reserves and currency apart), the public''s money, its
+  velocity and prices move, beside the state of the economy and the acts K5''s sources name — never a cause drawn by
+  what is set beside what?'
+method: '(0) Every H.4.1 series (WRESBAL, WCURCIR, WALCL, TREAST, WSHOMCB, WLRRAL) by month as the mean of the
+  month''s weekly values; FRED''s units (millions for WRESBAL, WCURCIR, WALCL, TREAST, WSHOMCB, WLRRAL and FYFSD; billions for BOGMBASE,
+  M2SL and GDP)
+  printed in billions. (1) One balance-sheet item for both printings: over each window, base money added (BOGMBASE,
+  monthly, its value at the window''s last month less its first), reserves added and their share of the base added;
+  currency beside. "About $3 trillion" is base money; the Fed''s total assets (WALCL) and its Treasuries plus
+  mortgage-backed securities (TREAST plus WSHOMCB; agency debt not in it, said) added are printed beside, and the
+  Fed''s reverse repurchase agreements (WLRRAL, the H.4.1 total, not the overnight facility alone) added over the
+  second window. (2) The Treasury purchases as a share of deficits, on the fiscal years'' basis the map prints: the
+  change in TREAST over each window divided by the sum of the federal deficits (-FYFSD) of whole fiscal years, FY2009
+  to FY2014 for the first window and FY2020 to FY2021 for the second; beside it, never instead, the months-weighted
+  share (each fiscal year weighted by the share of its twelve months among the window''s months, the month after the
+  first to the last, C01''s n; fiscal year Y runs October Y-1 to September Y). Said as "the Fed''s Treasury purchases
+  equal to X% of the fiscal years'' deficits", never as "financed". (3) The monthly timeline, August 2008 to December
+  2021, panels on separate axes, no window total of prices across a change of state: (a) base money with reserves
+  and currency apart, dollars; (b) the public''s money (M2SL) in its own panel, as growth over twelve months, never on
+  the base''s dollar axis and never as a ratio to it; (c) velocity (M2V, quarterly, as published), a level, in its own
+  panel; (d) nominal GDP growth over four quarters in its own panel, with the identity said beside (c) and (d): M2V is
+  GDP over M2, so velocity, nominal GDP and M2 are one fact, never three corroborations; (e) consumer prices
+  (CPIAUCSL) as twelve-month inflation; (f) the state line over the whole timeline, Blanchard & Bernanke''s v/u
+  (InfoData.xlsx, sheet VOVERU, quarterly, JOLTS from 2001, Barnichon 2010 before), the unemployment rate (UNRATE)
+  beside; (g) from 2020Q1 only (the door''s second window opens in February 2020; the authors'' own figure starts at
+  2019Q4, said), Blanchard & Bernanke''s Figure 12 decomposition whole, as theirs, from their frozen output
+  (all_data_decompositions.xls: each shock''s contr_gcpi from wo_residuals_vu, _grpe, _grpf and _shortage; initial
+  conditions, wo_residuals_grpe_grpf_vu_shor''s gcpi_simul; their actual line, wo_residuals_no_shocks_removed''s gcpi;
+  CPI as annualised quarterly log change, in its own panel), under this caption, printed wherever it is drawn:
+  "Blanchard & Bernanke''s decomposition, as theirs: their model has no money variable; demand from fiscal and
+  monetary policy enters through v/u and, in their reading, through the price shocks themselves (p. 39). BIS 67 weighs
+  the money more; Barro & Bianchi find the fiscal surge a key driver of inflation across OECD countries, an estimated
+  four-fifths of it paid for by inflation eroding the public debt (K5)." (4) Annotations, the acts K5''s sources name
+  inside the window shown and nothing else: the lockdown orders and the CARES Act, March 2020; the American Rescue
+  Plan, March 2021 (these acts stand for the transfers P2-4 names); none on 2008-14 (no case row names a purchase
+  programme). The stretch January 2022 to March 2023 is drawn, fixed here before the run, on the web study''s door
+  figure only, with the decomposition and v/u to 2023Q1 and two annotations: Russia''s invasion of Ukraine, 24
+  February 2022; the Fed''s first rise, FOMC statement of 16 March 2022. (5) The lag named beside every price reading,
+  with its scope: in moderate inflations, monetary policy''s peak effect on prices has come more than a year later
+  (Batini & Nelson 2002, pp. 1-2; p. 7, no stand on money''s special role). (6) The facts K2 and K4 print, each with
+  its month: M2''s rise from February to May 2020 (in dollars and percent) and its velocity from 2020Q1 to 2020Q2;
+  M2''s growth in 2021, December 2020 to December 2021, with velocity 2020Q4 to 2021Q4 and nominal GDP growth 2021Q4
+  over 2020Q4; M2''s pace over each window (compound annual rate over the window''s months) and over the 84 months before its first
+  month, printed as rates, never credited to the purchases; unemployment at February 2009, October 2009, August 2012,
+  September 2012, April 2020, June 2020, December 2020, January 2021 and December 2021, and the months of the first
+  window above 8%. No price rate over a window is computed (K2''s former 1.3% and 0.9% a year were removed from the
+  map: the twelve-month inflation panel carries the point). (7) Reproduction: the base added (+3,154bn, +2,959bn), the
+  reserves'' share (86%, 87%), the Fed''s total assets (+3,563bn, +4,554bn) and the purchase shares on the fiscal
+  years'' basis (32%, 54%) must match the audits'' recomputations to the rounding printed; a difference is reported
+  and the map''s number is rewritten from the run, never the run from the map.'
+parameters:
+  windows:
+    W1: [2008-08, 2014-10]
+    W2: [2020-02, 2021-12]
+  timeline: [2008-08, 2021-12]
+  stretch: [2022-01, 2023-03]
+  fiscal_years:
+    W1: [2009, 2014]
+    W2: [2020, 2021]
+  m2_before_months: 84
+  decomposition_from: 2020Q1
+  inflation_over_months: 12
+  rounding: dollars to the nearest billion; shares to the percent; rates to 0.1 point
+matters:
+  cs_c: 'none: a measurement of two told windows, read against no size (P2-4: descriptive, context)'
+data:
+- dataset: fred/BOGMBASE
+  vintage: '2026-09-30'
+- dataset: fred/WRESBAL
+  vintage: '2026-09-30'
+- dataset: fred/WCURCIR
+  vintage: '2026-09-30'
+- dataset: fred/WALCL
+  vintage: '2026-09-30'
+- dataset: fred/TREAST
+  vintage: '2026-09-30'
+- dataset: fred/WSHOMCB
+  vintage: '2026-09-30'
+- dataset: fred/WLRRAL
+  vintage: '2026-10-08'
+- dataset: fred/FYFSD
+  vintage: '2026-09-30'
+- dataset: fred/M2SL
+  vintage: '2026-09-30'
+- dataset: fred/M2V
+  vintage: '2026-09-30'
+- dataset: fred/GDP
+  vintage: '2026-09-30'
+- dataset: fred/CPIAUCSL
+  vintage: '2026-09-27'
+- dataset: fred/UNRATE
+  vintage: '2026-10-08'
+- dataset: brookings/blanchard-bernanke-2023-replication
+  vintage: '2026-10-08'
+period: August 2008 to December 2021 (the door's windows and between them); the decomposition from 2020Q1
+failure: 'If the reproduction of item 7 fails, the map''s numbers are rewritten from this run. If any panel would set
+  two quantities on one axis in different units or bases, or carry a window total of prices across a change of state,
+  the figure is refused by the card, not drawn.'
+not: 'Not evidence: an illustration (frame e''s count guards it). Not a cause: no price reading of the door anywhere
+  in the headline, and no money credited to the purchases. Not a decomposition of ours: Blanchard & Bernanke''s, as
+  theirs, under its caption (their model has no money variable). Not a selection of shock series by us.'
+created: '2026-10-08'
+sample: 'Two windows told by the door, fixed by the map before this card (C01''s dates); nothing selected by the run.
+  The cut dates of item 6''s facts (February to May 2020; calendar 2021) were chosen after the v7 and v8 audits had
+  shown prices by those splits (P12, said here and in the methods).'
+out_of_sample: 'Not applicable: a measurement of two told windows; the check is reproduction against the audits''
+  independent recomputations (item 7).'

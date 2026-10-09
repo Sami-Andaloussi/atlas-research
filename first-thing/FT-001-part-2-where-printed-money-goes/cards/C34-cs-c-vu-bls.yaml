@@ -1,0 +1,53 @@
+id: C34-cs-c-vu-bls
+label: measurement
+title: CS-C's correction — job openings per unemployed person built from BLS's own
+  series (JOLTS openings over unemployed persons, public domain), replacing Blanchard
+  and Bernanke's v/u in the door's timeline
+parent:
+  id: C32-cs-c-door-timeline
+  hash: 50ce4d529c9c92243a85761250fd44712b32ef40fea6b6c84d1173fee3a6c0a3
+kind: correction
+seen:
+- 'C32-cs-c-door-timeline (every result: the timeline''s and the stretch''s quarterly
+  v/u read from Blanchard and Bernanke''s replication files, 2008Q3 to 2023Q1, drawn
+  in panel f of door-timeline)'
+- 'revisions/2026-10-07/reviews: the workshop''s pre-publication check of 2026-10-09
+  (their files are cited, never redistributed, so the drawn v/u cannot ship)'
+question: 'Part 2''s CS-C (the door, context): over the timeline of C32, 2008Q3 to
+  2023Q1, how many job openings were there per unemployed person, quarter by quarter,
+  built from the Bureau of Labor Statistics'' own series, so that the timeline''s
+  v/u panel and its data hold only public-domain values?'
+method: 'v/u in a month = JOLTS total nonfarm job openings (FRED JTSJOL, thousands,
+  seasonally adjusted) divided by unemployed persons (FRED UNEMPLOY, thousands, seasonally
+  adjusted); a quarter''s v/u = the mean of its three months'' ratios; over C32''s
+  quarters, 2008Q3 to 2023Q1. Beside, never in place of it: the largest absolute difference
+  and the correlation against C32''s v/u from Blanchard and Bernanke''s files, quarter
+  by quarter (no value of theirs is written). The timeline figure''s panel f draws
+  this series, labelled as BLS''s.'
+parameters:
+  first_quarter: 2008Q3
+  last_quarter: 2023Q1
+  openings: fred/JTSJOL
+  unemployed: fred/UNEMPLOY
+  quarter_rule: mean of the three monthly ratios
+matters:
+  cs_c_vu: 'none: a measurement drawn as context, read against no size (CS-C is descriptive)'
+data:
+- dataset: fred/JTSJOL
+  vintage: '2026-10-09'
+- dataset: fred/UNEMPLOY
+  vintage: '2026-10-09'
+- dataset: the result of C32-cs-c-door-timeline (its run, naming C32's hash), for
+    the comparison beside only
+period: 2008Q3 to 2023Q1 (C32's timeline and stretch quarters)
+failure: If a quarter of C32's lacks any of its three months in either series, the
+  run is void. If the largest difference against C32's v/u passes 0.1, the run says
+  so and the figure's label says the series is BLS's, not theirs; the series is drawn
+  either way.
+not: 'Not Blanchard and Bernanke''s v/u: built from the same kind of BLS series as
+  theirs, not from their file. Not a test: nothing is fitted.'
+sample: 'Not a sample: every month of the period, the whole of each series as BLS
+  defines it.'
+out_of_sample: 'Not applicable: a measurement with nothing fitted; its check is the
+  comparison beside against C32.'
+created: '2026-10-09'

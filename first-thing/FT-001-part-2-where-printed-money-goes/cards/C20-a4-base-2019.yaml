@@ -1,0 +1,144 @@
+id: C20-a4-base-2019
+label: regression
+title: A4 on decades ending in December 2019 - C02's model beside its own windows, with no year-end after 2019
+parent:
+  id: C02-a4-base
+  hash: 2fef33fe9a6f10f0bf09c0969dae963c82a531270e647eb5edf622f48454f483
+question: >-
+  As C02, on decade windows that end in December 2019 instead of December 2020, reported beside C02's
+  own windows and never instead of them. It answers grid checker A's blocking finding (G1 in
+  check/2026-09-30-grid-answers.md) with a number where the long version now says "not measured here":
+  the rich currencies' decade ending in 2020 read their base money at December 2020, after the pandemic
+  printing, and none of the inflation after it. Does their exception - base money growing faster than the
+  12% line with inflation below it - hold without 2020's printing, and does C02's reading of the long run
+  change when no decade holds it?
+method: >-
+  C02's method in every part, on other windows; nothing is added, and C02's variants and its window from
+  2020 are not rerun here (plan/e1-production.md, Decisions, "The two results put to Sami: both taken";
+  "a fix answers, it does not add"). As it reads here:
+  Panel: code/panel.py as committed in 2445181 (its seven rules, written at its top, are part of this
+  card), with the readings code/longrun.py fixed for C02 before C02's run (fccce91), unchanged: the sample,
+  the clustered interval, "above the line", the out-of-sample R2, the five folds, the failure clause.
+  Windows: non-overlapping ten-year windows between the year-ends 1949, 1959, 1969, 1979, 1989, 1999, 2009
+  and 2019 (seven windows) - C02's grid moved one year earlier, so that every window keeps C02's ten years
+  and none holds a year-end after 2019. A single window 2010-2019 would be nine years, and a window
+  2009-2019 beside C02's 2000-2010 would overlap it: C02's design (non-overlapping, ten years) allows
+  neither, and allows the whole grid moved. For a money i and a window from year a to year b:
+  mu = 100 * ln(B(b)/B(a)) / (b - a), with B base money at the year's end; pi = 100 * ln(P(b)/P(a)) /
+  (b - a), with P the CPI's yearly average; g = 100 * ln(Y(b)/Y(a)) / (b - a), with Y real GDP. So the
+  last window reads base money from December 2009 to December 2019 and prices from 2009's average to
+  2019's. The model: pi = alpha + beta * mu + gamma * g + e, pooled OLS, standard errors clustered by
+  money. Verdict on beta's 95% interval: "prices followed base money one for one" if it holds 1 and
+  excludes 0; "no relation" if it holds 0 and excludes 1; "partly" if it excludes both; "cannot tell" if
+  it holds both. The same rule is read on gamma against -1 and 0, reported beside. Prior line, tested and
+  never refitted: Teles and Uhlig's 12% (notes/sources.md: the working paper, pp. 3 and 11), applied two
+  ways as in C02 - on the window's inflation pi and on money growth mu. Each way: pi = alpha + beta * mu +
+  delta * A + theta * mu * A + gamma * g + e, A = 1 above the line; beta below the line and beta + theta
+  above, each with its interval and the verdict rule above. "The line separates" if theta > 0 with
+  p < 0.05 and beta below the line excludes 1.
+  The points the text names: the euro area, Britain, Sweden, Japan and the United States - the five
+  whose 2010-2020 points from C02 the long version names (code/registry.py, the list it reads from C02's
+  points). For each, its 2009-2019 mu and pi, read beside its 2010-2020 point. Each point is placed by
+  C02's line as C02 draws it (above = more than 12, on mu and on pi), a reading fixed here before any
+  number: "above the line on money growth, below it on inflation" (mu above 12, pi not above 12 - the
+  exception as the text states it for 2010-2020); "above the line on both"; or "below the line on money
+  growth" (mu 12 or less). Said per currency, by name, never counted into a share.
+  Reported beside, never instead: the long version's paragraph "Where those decades end" and the
+  edition's paragraph on the decades give each of the five 2009-2019 points beside its 2010-2020 point,
+  and C20's beta and the line's two readings beside C02's, each with its interval and verdict. C02's
+  table, scatter, hooks and signposts keep C02's windows; C20 draws no figure. If a verdict differs, the
+  text says so where it gives C02's (the failure clause below).
+parameters:
+  window_years: 10
+  window_ends: [1949, 1959, 1969, 1979, 1989, 1999, 2009, 2019]
+  interval: 0.95
+  prior_line_teles_uhlig_pct: 12
+  line_significance: 0.05
+  held_out_years: >-
+    C02's, in its words: fit on windows ending in or before 1990; test on windows starting in or after
+    1990 (Teles and Uhlig's split year, taken, not moved). On this grid the fit reads 1949-1989 and the
+    test 1999-2019; the window 1989-1999 holds the split year and sits in neither half, said.
+  held_out_moneys: five folds, fold = position of the money's code in the sorted list of codes, modulo 5
+  points_named: [U2, GB, SE, JP, US]
+  variants: none - C02's seven variants and its window from 2020 stand on C02's windows
+  seen_before_writing: >-
+    C02's run in full (its points, headline, lines, held-out checks, variants and window from 2020), by
+    the producer who told the study; checker A's grid report (check/2026-09-30-opus-grid-a.md), whose
+    finding B1 gives its own scratch growth rates of base money over 2010-2019 for four currencies - read,
+    not used, not written here. The windows are set by C02's design (ten years, non-overlapping), the rule
+    the session's brief gave before this card, not by those rates. No 2009-2019 point, and no window of
+    this grid, has been computed.
+data:
+  - dataset: dbnomics/IMF/IFS/A~~14____XDC
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/A~~FASMB_XDC
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/A~~14____USD
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/A~~NGDP_XDC
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/A~~NGDP_R_XDC
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/A~~PCPI_IX
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/A~~ENDE_XDC_USD_RATE
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/A~~FPOLM_PA
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/A~~FIMM_PA
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/A~~FITB_PA
+    vintage: '2026-09-30'
+  - dataset: worldbank/NY.GDP.MKTP.CN
+    vintage: '2026-09-30'
+  - dataset: worldbank/NY.GDP.MKTP.KN
+    vintage: '2026-09-30'
+  - dataset: worldbank/FP.CPI.TOTL
+    vintage: '2026-09-30'
+  - dataset: fred/BOGMBASE
+    vintage: '2026-09-30'
+  - dataset: fred/GDPC1
+    vintage: '2026-09-30'
+  - dataset: fred/CPIAUCSL
+    vintage: '2026-09-27'
+  - dataset: fred/FEDFUNDS
+    vintage: '2026-09-30'
+  - dataset: dbnomics/ECB/ILM/M~U2~C~LT00001MP~Z5~EUR
+    vintage: '2026-09-30'
+  - dataset: dbnomics/ECB/ICP/M~U2~N~000000~4~INX
+    vintage: '2026-09-30'
+  - dataset: dbnomics/ECB/MNA/Q~Y~I9~W2~S1~S1~B~B1GQ~_Z~_Z~_Z~EUR~LR~N
+    vintage: '2026-09-30'
+  - dataset: dbnomics/ECB/FM/D~U2~EUR~4F~KR~DFR~LEV
+    vintage: '2026-09-30'
+period: 1949 to 2019 (seven decade windows, the last from December 2009 to December 2019)
+sample: >-
+  C02's rule, unchanged: every money of the panel with base money, the CPI and real GDP at both ends of a
+  window, whatever its inflation, its size or its history - set by data coverage only, with C02's drops
+  (IMF groups; the six moneys flagged units_break; money-years using the euro outside the euro area; a
+  euro member's windows once it uses the euro, the euro area one money from 1999). The first window,
+  1949-1959, holds only the moneys the panel has at the end of 1949, by the same rule. The five named
+  points are the text's, fixed above, not picked from this grid. The list of moneys and windows used is
+  written with the result.
+out_of_sample: >-
+  C02's checks, in its words, on this grid: by years, the model fitted on the windows ending in or before
+  1990 predicts those starting in or after 1990 (the out-of-sample R2 against the training mean, and beta
+  re-estimated on the held-out windows with the verdict rule); by moneys, the five folds by code position.
+  Beside C02 this grid is not new data: it shares nine years in ten with C02's windows, so it checks
+  whether the reading depends on where the decades end, not whether it holds on other records.
+failure: >-
+  C02's, in its words: the verdict fails to hold if the held-out windows (by years) or two or more of the
+  five folds give a beta whose interval tells another verdict; the study then says the long-run relation
+  depends on the period or the moneys, and names which. If fewer than 30 moneys reach both halves of the
+  year split, the split cannot judge and says so. Beside C02: if C20's verdict on beta, or whether the
+  line on money growth separates, differs from C02's, the study says that the long-run reading depends on
+  whether the decades end before or after 2020's printing, and names which. A named currency whose
+  2009-2019 point is not "above the line on money growth, below it on inflation" is said, by name, not to
+  show the exception without 2020's printing.
+not: >-
+  Not a new question and not a replacement: C02's question on windows moved one year, reported beside
+  C02's windows, never instead. Not 2020's share of any decade: a currency's two windows differ by 2020
+  out and 2010 in, so their gap is not the effect of 2020's printing alone, and is not told as such. Not
+  causal (C02). Not C02's variants, nor its window from 2020, nor a figure. Not checker A's figures,
+  which were a checker's scratch on other windows.
+created: '2026-09-30'

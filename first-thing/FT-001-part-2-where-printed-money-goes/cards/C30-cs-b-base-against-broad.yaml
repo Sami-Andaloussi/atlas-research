@@ -1,0 +1,119 @@
+id: C30-cs-b-base-against-broad
+label: regression
+title: CS-B — in calm decades, did each point of central-bank money growth go with less inflation than each point of
+  the public's money, on the same windows?
+parent:
+  id: C28-a4-units-guard
+  hash: 99c1880e37bc40362d6e384ccdee22527df703e34cada520b83763c989e1e497
+kind: extension
+seen:
+- 'C28-a4-units-guard (every result, including the slopes on base and broad money over all windows and the gap between
+  them that motivated this design; P12, said on the card and in the methods)'
+- 'bank/checks/FT-001-map-2026-10-08-audit-v9-p2v5.md (counts and half-widths only on C28''s points for this design,
+  243 windows, 113 moneys, the gap''s half-width 0.106; no slope of this card)'
+- 'bank/checks/FT-001-map-2026-10-08-audit-p2v7.md (the era split''s counts and half-widths only; with the map''s
+  audits, the count that the base rule alone drops 35 of the 280 common windows holding 2008 or later, 153 in all)'
+- 'bank/checks/FT-001-2026-10-08-card-check-c30-c31.md (this card''s check, before any run: counts and half-widths
+  only, by area and by union: the gap ±0.106 by area and ±0.130 by union; from 1990 ±0.134, before 1990 ±0.236,
+  ending by 2000 ±0.138, holding 2008 or later ±0.171, by union; 243 calm windows in 113 moneys, 74% from 1990; JST
+  99 calm windows in 17 countries, 25 of them world-war windows; no slope or gap)'
+question: 'Part 2''s map v15, P2-2 and K2: on the same calm decades — ten-year windows in which both the growth of
+  central-bank money (base money) and the growth of the money the public holds (broad money) were at or below 12% a
+  year — did each point of base-money growth go with less inflation than each point of broad-money growth? The
+  answer illustrates K2 (in calm times the link is loose because money demand moves), read by the slopes'' gap; it is
+  never read causally and never as the illustration of interest on reserves.'
+method: '(1) The points: C28''s stored points (results/runs/C28-a4-units-guard.json, result.C02_grid.points for base
+  money and result.broad.points for broad money; each point a money ''area'', a window y0 to y1 of ten years, mu the
+  money growth, pi the inflation and g the real growth, all in percent a year, as C28 computed them under its units
+  guard). C28 must not be void; the run refuses otherwise. (2) The common windows: base and broad points merged on
+  (area, y0, y1); the merge must give identical pi and g on both sides (to 1e-9), else the run is void. (3) The calm
+  rule (D2), on money growth only, never on inflation: a window enters when mu_base <= 12 and mu_broad <= 12 (Teles
+  and Uhlig''s 12% is a cut on average inflation using M1; ours is on money growth, our adaptation, named). (4) The
+  slopes: on the calm windows, for each measure m separately, pi = a_m + b_m * mu_m + c_m * g + e, OLS, errors
+  clustered by money: one cluster per currency union (WAEMU, CEMAC and the ECCU, their members listed in parameters),
+  one per area otherwise. (5) The gap and its precision: the stacked regression on the calm windows (each window
+  once per measure), pi = a + d_broad + b_base * mu + (b_broad - b_base) * mu * d_broad + c * g + c2 * g * d_broad +
+  e, errors clustered by money as in (4); the gap is b_broad - b_base with its 95% interval (the clustered standard
+  error times 1.96), the interval the reading uses; beside it, a paired cluster bootstrap over the same clusters
+  (3,000 draws, seed 20261008), its 2.5 and 97.5 percentiles. (6) Beside the slopes, never instead
+  of them: the correlations of pi with mu_base and with mu_broad on the calm windows, and their difference (broad -
+  base) with a paired cluster bootstrap interval (same draws). (7) The reading, by P03, on the gap against the size
+  that matters (0.1 a point): effect if the interval''s lower end is above 0.1; an effect of the other sign if its upper end is
+  below -0.1; too small to matter if the interval lies within -0.1 to 0.1; bounded otherwise, written as what it
+  rules out. The refutation of P2-2: the gap''s point
+  estimate below 0.1. (8) The checks, fixed before the run, each with the same model and reading: (a) by period —
+  windows starting in or after 1990, and windows ending in or before 1990 (named weak beforehand, its half-width
+  about 0.24); (b) by era — windows ending by 2000 against windows holding 2008 or later (both weak, about 0.14 and
+  0.17 by union; their difference about 0.21 by area), with no prediction from K3, since base growth and inflation fell together in
+  the same decades and QE answered low inflation at zero rates; the windows holding 2008 or later that the base rule
+  alone drops are counted and listed by money; no unrestricted-base variant; (c) out of the build — JST R6
+  1870-1950 (the frozen frame of C21), ten-year windows, narrow money (JST narrowm: base, notes or M1 by country) and
+  broad money (JST money), the same calm rule on both, the same model and gap; named for what it compares (JST''s
+  narrow money as each country defines it, notes/data.md from the documentation''s country sections: base money for
+  the United States and Sweden, notes and coin for the United Kingdom, M1 or currency plus deposits for eight, a
+  national series the documentation does not name for seven; against broad money, where K3 predicts M1 and broad
+  money track alike), world-war windows (any window holding 1914-18 or
+  1939-45) reported with and without. (9) Attenuation: base growth is noisier than broad growth, which lowers its
+  slope by measurement error alone; the run reports each measure''s variance of mu on the calm windows and the
+  reliability ratio this would need to close the gap, said as a limit, never a correction; and the calm rule
+  cuts on both growths, so the cut on broad growth enters the base regression''s error and the reverse, said beside
+  attenuation as a second reason the slopes are not a clean comparison. (10) Reported: n windows
+  and moneys; each slope with its interval; the gap with both intervals and its reading; the correlations and their
+  difference; each check; the share of calm windows starting in or after 1990; the list of moneys.'
+parameters:
+  calm_line_pct: 12
+  window_years: 10
+  interval: 0.95
+  bootstrap_draws: 3000
+  bootstrap_seed: 20261008
+  period_split_year: 1990
+  era_ends_by: 2000
+  era_holds_from: 2008
+  clusters: one per currency union, one per area otherwise
+  unions:
+    WAEMU: [BJ, BF, CI, GW, ML, NE, SN, TG]
+    CEMAC: [CM, CF, TD, CG, GQ, GA]
+    ECCU: [AI, AG, DM, GD, MS, KN, LC, VC]
+  world_war_years:
+  - [1914, 1918]
+  - [1939, 1945]
+  jst_window_ends:
+  - 1870
+  - 1880
+  - 1890
+  - 1900
+  - 1910
+  - 1920
+  - 1930
+  - 1940
+  - 1950
+matters:
+  cs_b_gap: 0.1
+  cs_b_gap_from_1990: 0.1
+  cs_b_gap_to_1990: 0.1
+  cs_b_gap_era_to_2000: 0.1
+  cs_b_gap_era_from_2008: 0.1
+  cs_b_gap_jst: 0.1
+data:
+- dataset: results/runs/C28-a4-units-guard.json
+  vintage: 'C28''s run as committed at fa9eb235, card_hash 99c1880e (in the study''s folder)'
+- dataset: jst/macrohistory
+  vintage: '2026-09-30'
+period: windows of ten years ending 1970 to 2020 on C02's grid (broad money's points start there), as C28's points carry them; JST 1870-1950 out of the
+  build
+failure: 'The run is void if C28 is void, or if the merged base and broad points disagree on inflation or real growth.
+  The reading fails to hold if the period check from 1990 gives a gap whose interval tells another reading, unless
+  the change comes only from an interval end within 0.01 of a threshold (then reported, P01: immaterial); the
+  weak checks (before 1990, the eras, JST) are reported and never overturn the reading alone.'
+not: 'Not causal: "went with". Not the illustration of interest on reserves: about half the calm windows end by 2000,
+  before reserves earned interest in most economies. Not "over seven decades and 155 economies": the scope printed is
+  the calm windows'' (n windows, n moneys, mostly since 1990). Not a test of K3: no prediction from K3 is read off the
+  era split. Not De Grauwe and Polan''s line (CS-E''s calm start), not C29''s pace bands.'
+created: '2026-10-08'
+sample: 'Every money of C28''s panel with base money, broad money, the CPI and real GDP at both ends of a ten-year
+  window on C02''s grid (by coverage only, C28''s rules), then the calm rule on money growth alone (both at or below
+  12% a year), never on inflation. Designed after C28''s gap over all windows was seen (P12): said here, on the card''s
+  result and in the methods.'
+out_of_sample: 'JST R6, 1870-1950: 18 rich economies'' narrow and broad money, a period and a source that built none of
+  C28''s points; the gap read by the same rule, its world-war windows apart. Within the build, the period and era
+  splits (weak, said).'

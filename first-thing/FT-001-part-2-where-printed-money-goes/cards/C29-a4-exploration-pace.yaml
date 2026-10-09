@@ -1,0 +1,89 @@
+id: C29-a4-exploration-pace
+label: regression
+title: 'Exploration of C28''s long-run reading: where the slope of inflation on money growth changes, its influential
+  decades, and a null simulation of the line'
+parent:
+  id: C28-a4-units-guard
+  hash: 99c1880e37bc40362d6e384ccdee22527df703e34cada520b83763c989e1e497
+kind: exploration
+seen:
+- 'check/2026-10-07-opus-grid-check-a.md (findings 2, 3, 4, 8: slopes by band, near the line, from 2000, without
+  the fast tail, a null with noise)'
+- 'check/2026-10-07-opus-grid-check-b.md (F1, F3, F4: bands, from 2000, currency unions, shrinking base money, a
+  wild-cluster null at 3.7%)'
+- C25-a4-base-hko-fill and C22 (every result)
+- 'C28''s design (not its run: this card is committed before C28 runs)'
+question: 'Written after the grid checks reported where the slope above the 12% line comes from: on C28''s windows,
+  how does the slope of inflation on money growth change with the pace of money growth, which decades carry the
+  slope above the line, and how often would C02''s rule call the line ''separating'' if there were one slope everywhere?
+  Every slice tried is listed here, before the run, and every one is reported, whatever it gives.'
+method: On C28's windows (C02's grid on base money, the units guard applied) and C28's model and clustering unless
+  a slice says otherwise, the slices below, each read with the slope, its 95% interval (normal critical value, as
+  C02) and the windows and moneys it rests on. Nothing else is tried; a slice that cannot be estimated (fewer than
+  20 windows on a side) says so.
+parameters:
+  slices:
+    S1_band_le12: 'windows with mu at or below 12: pi on mu and g'
+    S2_band_12_20: mu above 12 and at or below 20
+    S3_band_20_30: mu above 20 and at or below 30
+    S4_band_30_50: mu above 30 and at or below 50
+    S5_band_gt50: mu above 50
+    S6_above_line_without_gt30: the line on mu with the windows above 30 removed (the slope below and above)
+    S7_from_2000: the line on mu on windows starting in or after 2000
+    S8_outside_1970_2000: the pooled beta and the line on mu on windows ending in or before 1970 or starting in
+      or after 2000
+    S9_held_out_1999: C28's C22 grid held out from 1999 (C22's own rule), read beside the 1990 split
+    S10_without_unions: 'the line on mu without the members of the currency unions the panel does not read as one
+      money (WAEMU: BJ BF CI GW ML NE SN TG; CEMAC: CM CF TD CG GQ GA; ECCU: AG DM GD KN LC VC) and the windows
+      of economies using another country''s money as legal tender (PA; EC and SV for windows starting in or after
+      2000)'
+    S11_cluster_by_union: the line on mu with the errors clustered by currency (the union members as one cluster
+      per union)
+    S12_without_shrinking_base: the line on mu without the windows whose base money shrank (mu below zero)
+    S13_g_from_world_bank: pooled beta, gamma and the line on mu with g read from the World Bank's real GDP (NY.GDP.MKTP.KN)
+      wherever it has both ends of the window, else the panel's
+    S14_levels: 'descriptive: the median of pi over mu above and below the line; the share of windows above the
+      line with pi within three points of mu or above it'
+    S15_null: 'the null simulation: one slope everywhere (pi on mu and g fitted pooled), wild-cluster bootstrap
+      by money with Rademacher weights, 1000 draws, seed 20261007; per draw C02''s line rule on mu; reported: the
+      share of draws in which ''the line separates'', and the share whose theta (above minus below) is at least
+      the observed theta'
+  bootstrap_draws: 1000
+  seed: 20261007
+  interval: 0.95
+  line: 12
+  min_side: 20
+matters:
+  lr_x_s1: 0.1
+  lr_x_s2: 0.1
+  lr_x_s3: 0.1
+  lr_x_s4: 0.1
+  lr_x_s5: 0.1
+  lr_x_s6: 0.1
+  lr_x_s7: 0.1
+  lr_x_s8: 0.1
+  lr_x_s9: 0.1
+  lr_x_s10: 0.1
+  lr_x_s11: 0.1
+  lr_x_s12: 0.1
+  lr_x_s13: 0.1
+  lr_x_s14: 0.1
+  lr_x_s15: 0.1
+data:
+- dataset: results/runs/C28-a4-units-guard.json (C28's windows)
+  vintage: '2026-10-07'
+- dataset: worldbank/NY.GDP.MKTP.KN
+  vintage: '2026-09-30'
+period: C28's windows, 1950 to 2020
+sample: 'C28''s windows; the slices cut them by money growth, by period or by the kind of money, each named here
+  before the run. The bands'' edges (12, 20, 30, 50) were chosen after the checkers reported bands of 12-20, 20-30,
+  30-50 and above 50: they are the checkers'' cuts, read once each, and labelled exploration.'
+out_of_sample: 'None: an exploration of the windows that built C28''s reading. The slope by band is not checked
+  outside; the null simulation is the check of the line''s rule.'
+failure: The qualification 'the pull rises with the pace' is printed only if the slopes by band rise across the
+  bands with intervals that separate the lowest band from the highest, and the null simulation's share of draws
+  with a theta at least the observed one is below 5%; otherwise the forms say only what C28 gives, with these slices
+  as limits.
+not: 'Not a new headline: C28 gives the headline; these slices qualify it. Not a fitted break point: no line is
+  searched for. Not causal. Not a test of the bands'' edges.'
+created: '2026-10-07'

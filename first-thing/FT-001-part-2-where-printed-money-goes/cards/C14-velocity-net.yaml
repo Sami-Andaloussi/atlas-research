@@ -1,0 +1,58 @@
+id: C14-velocity-net
+label: test
+title: '"No one spends"? checked - US broad money velocity with and without the deposits the Fed''s purchases created'
+parent:
+  id: C07-velocity
+  hash: d0fc47a227725afdcc442ad110a992965672f55086b202ed1f05ec9e489bd057
+question: >-
+  When the US printed, did broad money's velocity fall further than the interest rate alone predicts - and
+  does that fall remain once the deposits the Federal Reserve's own purchases created by accounting are
+  taken out of M2?
+method: >-
+  C07's method in every part (the three forms, the cutoff from C05's first US episode leaving 40 quarters
+  of fit - 2008Q3, so the fit runs to 2008Q2 -, z and its bands, the R2 floor, the verdict counted over
+  the forms), with one addition answering the check of 2026-09-30 (check/2026-09-30-opus-cards.md, O5):
+  a variant on M2 net of the Federal Reserve's cumulative securities purchases since the cutoff. A
+  purchase from a non-bank creates a deposit one for one (McLeay, Radia and Thomas, 2014, p. 24), so
+  velocity measured on M2 falls by accounting when the Fed buys; "fell below what the rate predicts" on M2
+  alone cannot tell a higher demand for money from created deposits that were not spent.
+  For each test quarter q, M2net(q) = M2(q) - [S(q) - S(f)], with S the Fed's holdings of Treasury
+  securities (TREAST) and mortgage-backed securities (WSHOMCB), quarterly means of the weekly levels, and
+  f the fit's last quarter (2008Q2); M2 the quarterly mean of M2SL. Vnet(q) = M2V(q) * M2(q) / M2net(q) (nominal GDP
+  over M2net). The fit is unchanged (M2net is M2 up to f); the test is rerun on Vnet with
+  the three forms and counted. Since not every purchase was from a non-bank, subtracting them all
+  overstates the deposits created: Vnet is an upper reading of velocity net of created deposits.
+  The verdict is worded on both: if velocity fell below the prediction on M2 and not on M2net, the study
+  says the fall is no larger than the deposits the purchases created; if it fell below on both, that the
+  fall went beyond those deposits - money held rather than spent; if on neither, that velocity moved as
+  the rate predicts. Agency debt securities (not frozen) are left out of S, said.
+parameters:
+  change_from_parent: a variant on M2 net of the Fed's cumulative securities purchases since the cutoff
+  net_of: [TREAST, WSHOMCB]
+  purchases_counted_from: the fit's last quarter f, by C07's cutoff rule (C05's first US episode leaving 40 quarters of fit)
+  forms: [log-log with r + 1, semi-log, Selden-Latane]
+  z_moved: 1
+  z_beyond: 2
+  min_in_sample_r2: 0.3
+data:
+  - dataset: the datasets of C07-velocity, at the same vintages
+  - dataset: fred/M2SL
+    vintage: '2026-09-30'
+  - dataset: fred/TREAST
+    vintage: '2026-09-30'
+  - dataset: fred/WSHOMCB
+    vintage: '2026-09-30'
+period: 1959Q1 to 2026Q2; the net variant from the cutoff on
+sample: >-
+  As C07: every quarter of the US series; the cutoff set by C05's list, a rule on base money and GDP, never
+  by a look at velocity.
+out_of_sample: >-
+  As C07: fitted only before the cutoff, judged only after it; the net variant changes the judged series,
+  never the fit.
+failure: >-
+  As C07. In addition: if M2 and M2net tell different verdicts, the study gives both with the sentence
+  above, and does not call either "the" answer.
+not: >-
+  As C07. Not an estimate of which purchases were from non-banks: M2net subtracts them all, an upper
+  reading.
+created: '2026-09-30'

@@ -1,0 +1,63 @@
+id: C04-a4-1870
+label: regression
+title: A4's extension - money growth and inflation over the long run in 18 advanced economies, 1870-1950
+parent:
+  id: C02-a4-base
+  hash: 2fef33fe9a6f10f0bf09c0969dae963c82a531270e647eb5edf622f48454f483
+question: >-
+  Before the IMF's statistics begin, from 1870 to 1950, does inflation follow money growth one for one
+  over ten-year averages once real output growth is taken out - and does the fit on 1950-2020 predict
+  those earlier decades?
+method: >-
+  C02's model, verdict rule and prior line (Teles and Uhlig's 12%, applied to pi and to mu), on the
+  Jorda-Schularick-Taylor Macrohistory Database, release 6 (18 advanced economies, annual, from 1870):
+  its narrow money (headline; the database's own "narrow money" - base money or M1 according to the
+  country, as its documentation says, read and noted per country before the run) and its broad money
+  (variant), its consumer price index, and real GDP = its real GDP per capita index times its
+  population. Windows: non-overlapping ten-year windows between the year-ends 1870, 1880, ..., 1950
+  (eight windows). The column codes are read from the file's header at freeze and written in
+  notes/data.md; a label on the database's page with no matching column stops the run (never guessed).
+  Overlap check: on 1950-2020, the same model run on the database's series for its 18 economies beside
+  C02's run on the panel's series for the same economies, so a difference of source is seen apart from
+  a difference of era.
+parameters:
+  window_years: 10
+  window_ends: [1870, 1880, 1890, 1900, 1910, 1920, 1930, 1940, 1950]
+  interval: 0.95
+  prior_line_teles_uhlig_pct: 12
+  world_war_years: [1914, 1915, 1916, 1917, 1918, 1939, 1940, 1941, 1942, 1943, 1944, 1945]
+  held_out_moneys: five folds, fold = position of the economy's code in the sorted list of codes, modulo 5
+  variants:
+    - broad money in place of narrow money
+    - windows holding a world-war year (1910-1920, 1940-1950; and 1930-1940 for 1939) apart
+    - five-year windows
+data:
+  - dataset: macrohistory/JST-R6
+    vintage: the first freeze after this card's commit, named in the result (the files wait for request
+      273069c2437d - the database's download host is refused today)
+  - dataset: the panel of C02 (code/panel.py at 2445181, C02's datasets and vintages), for the overlap
+      check and the out-of-sample fit
+period: 1870 to 1950 (eight decade windows); 1950 to 2020 for the overlap check
+sample: >-
+  The 18 economies the database covers, every window where money, prices and real output are present at
+  both ends; no economy or window chosen by what happened in it. The database covers advanced economies
+  only: this is a selection by the compilers (the economies with long records are those that became
+  rich), said, and the result is never generalised to every money of 1870-1950.
+out_of_sample: >-
+  By era: C02's headline fit (1950-2020, every money) predicts the 1870-1950 windows, none of which it
+  saw; reported: the out-of-sample R2 against the 1870-1950 mean and beta re-estimated on 1870-1950 with
+  the verdict rule. By economies: five folds by code position within 1870-1950. The 12% line is applied
+  as Teles and Uhlig drew it on other data, never refitted.
+failure: >-
+  If beta on 1870-1950 tells another verdict than C02's, the long-run relation is said to depend on the
+  era, and the world-war variant says whether the wars alone make the difference. If the overlap check
+  shows the database and the panel giving different betas on the same economies and decades, the
+  source is named as a cause before the era is.
+not: >-
+  Not a new question: A4's 1870-1950 extension, a child of C02 (the Jorda-Schularick-Taylor files were
+  refused when C02 was written; the dossier asks 1870-2025). Not every country: 18 advanced economies.
+  Not causal. The database's licence is CC BY-NC-SA 4.0, used on Sami's decision (plan C2, Decisions,
+  "Sami's answers to the night's summary", point 4); its data is never republished raw, and the
+  published charts are built from the underlying public sources wherever the compilation only gathers
+  them.
+created: '2026-09-30'

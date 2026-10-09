@@ -1,0 +1,166 @@
+id: C27-a4-broad-hko-fill
+label: regression
+title: A4 on broad money with the missing consumer prices filled from the World Bank's Cross-Country Database of Inflation - C03 on the same windows, the same model, the same lines, the CPI gaps filled by C25's rule unchanged
+parent:
+  id: C03-a4-broad
+  hash: d322a2564a411501a1e9e30d56b6057ae38bca5841a1680ebbf3fc0c36ae8d2b
+question: >-
+  The margin check of 2026-10-02 (notes/gap5-margins-2026-10-02.md) found that C03's headline slope turns
+  from "one for one" to "partly" with one window removed, while 77 windows of C03's grid are uncertain (73
+  have broad money and real GDP at both ends and no CPI at an end, 4 have a gap inside); and C03's verdict
+  "the long-run reading depends on the period" rests on a held-out interval whose top is 0.997. C25 and C26
+  have filled the CPI the same gap loses, by a rule fixed before their runs, and the pilot now reads the
+  filled prices (the ruling of 2026-10-02, plan/e1-production.md). The filled prices were never applied to
+  broad money. When the CPI the study cannot read is filled by C25's rule, unchanged, does C03's reading
+  stand: one for one over the long run, the held-out decades from 1990 and the five folds, and Teles and
+  Uhlig's 12% line separating - or does the broad-money reading change?
+method: >-
+  C03's method in every part (its panel, code/panel.py as committed in 2445181 with its seven rules; the
+  broad money of C03's headline, IFS line 35L chained to the central bank survey's FMB by the panel's rule 2,
+  the United States M2SL in December, the euro area M3 in December; its windows, the year-ends 1950, 1960,
+  ..., 2020; the model pi = alpha + beta * mu + gamma * g + e, pooled OLS, standard errors clustered by
+  money; the verdict on beta's 95% interval; Teles and Uhlig's 12% line applied on pi and on mu with C02's
+  rule for "the line separates"; the held-out checks by years and by five folds fixed by the position of the
+  money's code in the sorted list of codes; the readings of code/longrun.py fixed for C02 and C03), with one
+  change and nothing else.
+  (1) The fill is C25's rule (1)(a) to (e), word for word and unchanged, applied by the same code
+  (code/fill_cpi.py and code/hko.py as committed in 297d624): where the consumer price index the annual panel
+  reads for a money-year is missing, it is filled from the headline CPI of the database (worksheets hcpi_m,
+  hcpi_q, hcpi_a), only for the years 1970 to 2024, never replacing a value the panel already reads, in the
+  order monthly, quarterly, annual chain, scaled to the panel's CPI by the median ratio over the years both
+  exist (the database as it is where the panel has none; no fill where both exist but never in the same
+  year), and guarded by the panel's own tolerance for a seam (the ratio's maximum over its minimum above 1.10:
+  the economy is not filled). Nothing is interpolated and the guard is not changed. The economies filled and
+  refused are therefore the ones C25 reported: the rule reads the CPI, not the money, so the fill is the same
+  fill; only the windows it completes differ, because C03's windows need broad money at both ends.
+  (2) Everything else is C03's: the sample rule (a window needs broad money, the CPI and real GDP positive at
+  both ends, neither end inside the euro; the IMF groups and the six moneys flagged units_break out), the
+  windows, the model, the readings. A money added by the fill is a money like any other; the folds are
+  assigned by C03's rule on the sample's sorted codes (so some economies may change fold, said).
+  (3) The reproduction. The run first rebuilds C03's headline, its line readings and its held-out checks on
+  the unfilled panel and must reproduce C03's stored result (every coefficient, interval and verdict, to
+  1e-9); if it does not, the run is void and says so, and nothing is read from it. It then checks that no
+  window of C03's own list has another mu, pi or g under the fill.
+  (4) Reported. For the filled panel on C03's windows: n windows and moneys; beta, its interval and the
+  verdict; gamma and its verdict; the line at 12% on pi and on mu (the slope below and above, each with its
+  interval and verdict, theta and its p, and "the line separates"); the held-out windows by years (n, beta,
+  verdict, the out-of-sample R2); the five folds (n, beta, verdict, the out-of-sample R2) and how many
+  differ; each beside C03's stored value. The windows added, one line each, with the source frequency of
+  each end's CPI. Then C03's failure clause on the filled panels: broad money (this card) against base money
+  (C25's filled run) on the windows both cover, the two betas side by side and whether their verdicts differ.
+  C03's variants (five-year, twenty-year, one window per money, seam, without g, window dummies, the yield
+  correction), its sub-variant on the World Bank's broad money and its window from 2020 are not rerun (as C25,
+  C22 and C23 did not rerun C02's: a fix answers, it does not add); they stay C03's, on the unfilled panel,
+  and the long version says so. C22's grid is not read for broad money (C03 never had it).
+  (5) What differs, and what the text then does. "Differs" is read on: the headline's verdict; the held-out
+  windows' verdict (whether it equals the headline's); the number of folds that differ, and whether fewer than
+  two differ; whether the 12% line separates on inflation and on money growth; whether the broad-money and
+  base-money verdicts differ on the windows both cover. As for C25 and C26 (the ruling of 2026-10-02), the
+  filled run is the reading the long version and the edition tell for broad money, C03's values stated beside
+  it. If any of the five differs from C03's stored one, the producer says exactly which, in the long version's
+  paragraph on broad money, in the edition's, and in Limits; if none differs, Limits says so, with the windows
+  added. Nothing else of the long version's conclusions is rewritten by this card.
+parameters:
+  window_years: 10
+  window_ends: [1950, 1960, 1970, 1980, 1990, 2000, 2010, 2020]
+  interval: 0.95
+  prior_line_teles_uhlig_pct: 12
+  line_significance: 0.05
+  held_out_years: fit on windows ending in or before 1990; test on windows starting in or after 1990
+  held_out_moneys: five folds, fold = position of the money's code in the sorted list of codes, modulo 5
+  change_from_parent: the CPI gaps filled by C25's rule (parent C03 reads the panel's CPI as it is)
+  fill:
+    rule: C25-a4-base-hko-fill, method (1)(a) to (e), unchanged
+    database: worldbank-inflation/ha-kose-ohnsorge, vintage 2026-10-02 (workbook version April 2025)
+    sheets: [hcpi_m, hcpi_q, hcpi_a]
+    years: 1970 to 2024
+    preference: monthly (twelve months), quarterly (four quarters), annual chain
+    scale: median panel / database over the years both exist; no panel CPI - the database as it is; never the same year - no fill
+    guard_max_over_min: 1.10
+    never_replaces: a value the panel already reads
+  expected_before_the_run: >-
+    Counted from availability only (which windows have broad money, the CPI and real GDP at both ends with
+    and without the fill; no mu, pi or slope computed, and the same counting for base money reproduced the
+    card C25's 590 and 635): C03's panel has 580 windows in 152 moneys; with the fill, 625 in 155 (45 added,
+    in 25 economies, none removed; by start year 1970: 10, 1980: 11, 1990: 12, 2000: 8, 2010: 4). Of the 73
+    windows C03's grid loses for a missing CPI at an end, 45 are restored and 28 stay lost, 13 of them
+    starting in 1960, before the database's span.
+  seen_before_writing: >-
+    C03's run in full (580 windows in 152 moneys; beta 0.96, interval 0.91 to 1.01, one for one; Teles and
+    Uhlig's 12% separating both ways; held out by years beta 0.96, interval 0.926 to 0.997, "partly", so the
+    held-out verdict differs from the headline's; the five folds: one "partly", four "one for one"; its
+    variants, its sub-variant on the World Bank's broad money and its window from 2020 (92 moneys, 0.83, 0.61
+    to 1.05); its comparison with C02: 579 common windows, 0.965 for broad and 0.969 for base, no dependence on
+    the aggregate), and C25's run in full (635 windows in 155 moneys; beta 1.01, interval 0.94 to 1.07, one for
+    one; held out by years 0.94, 0.83 to 1.04, the same verdict; the five folds the same; the 12% line
+    separating both ways; on C22's grid "partly" becomes "one for one"), C26's twelve verdicts as the ruling
+    states them (the deciders; no broad-money slope), and the margin check of
+    2026-10-02 (notes/gap5-margins-2026-10-02.md): C03's headline needs one window removed to turn "partly",
+    more than forty to put its bottom above one. The availability counts above were made by the producer of
+    this card. Not seen, and not computed: any broad-money window's mu, pi or g with the fill, any slope,
+    interval or verdict on the filled broad-money panel, the line's readings on it, the folds. An expectation,
+    fixed here so that it steers nothing: the headline and the line stand, since the windows added are 45 of
+    625 and C25's did not move the base-money headline; the held-out reading is the one that could move, since
+    its top is 0.997, three thousandths below one.
+data:
+  - dataset: worldbank-inflation/ha-kose-ohnsorge
+    vintage: '2026-10-02'
+  - dataset: dbnomics/IMF/IFS/A~~35L___XDC
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/A~~FMB_XDC
+    vintage: '2026-09-30'
+  - dataset: fred/M2SL
+    vintage: '2026-09-30'
+  - dataset: dbnomics/ECB/BSI/M~U2~Y~V~M30~X~1~U2~2300~Z01~E
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/A~~NGDP_R_XDC
+    vintage: '2026-09-30'
+  - dataset: dbnomics/IMF/IFS/A~~PCPI_IX
+    vintage: '2026-09-30'
+  - dataset: worldbank/NY.GDP.MKTP.KN
+    vintage: '2026-09-30'
+  - dataset: worldbank/FP.CPI.TOTL
+    vintage: '2026-09-30'
+  - dataset: fred/GDPC1
+    vintage: '2026-09-30'
+  - dataset: fred/CPIAUCSL
+    vintage: '2026-09-27'
+  - dataset: dbnomics/ECB/ICP/M~U2~N~000000~4~INX
+    vintage: '2026-09-30'
+  - dataset: dbnomics/ECB/MNA/Q~Y~I9~W2~S1~S1~B~B1GQ~_Z~_Z~_Z~EUR~LR~N
+    vintage: '2026-09-30'
+period: 1950 to 2020 (seven decade windows), the CPI filled from the database where the panel lacks it
+sample: >-
+  C03's rule, unchanged: every money of the panel with broad money, the CPI and real GDP at both ends of a
+  window, whatever its inflation, its size or its history - set by data coverage only, with C03's drops (IMF
+  groups; the six moneys flagged units_break; money-years using the euro outside the euro area; a euro
+  member's windows once it uses the euro, the euro area one money from 1999). The fill widens the set of
+  windows by the availability of a CPI, never by an outcome: a window enters because both its ends now have
+  a CPI, not because of its inflation or its money growth; high-inflation moneys stay in. The list of moneys
+  and windows used, and the added ones, is written with the result.
+out_of_sample: >-
+  C03's checks, in its words, on the filled panel: by years, the model fitted on the windows ending in or
+  before 1990 predicts those starting in or after 1990 (the out-of-sample R2 against the training mean, and
+  beta re-estimated on the held-out windows with the verdict rule); by moneys, the five folds by code
+  position. The windows the fill adds are new records for the economies that lacked prices (not new data for
+  the others), so the card checks whether C03's reading holds when the loss of those windows is repaired;
+  the database is another source of the same quantity, and where it overlaps the panel's own CPI the guard
+  (C25's) has tested that it is one series.
+failure: >-
+  As C03 and C25. The verdict fails to hold if the held-out windows (by years) or two or more of the five
+  folds give a beta whose interval tells another verdict than the headline's; the study then says the
+  long-run relation for broad money depends on the period or the moneys, and names which (as C03's held-out
+  reading already does on the unfilled panel: it is one of the five readings of (5), not a new failure). If
+  fewer than 30 moneys reach both halves of the year split, the split cannot judge and says so. If broad
+  money and base money (C25's filled run) tell different verdicts on the windows both cover, part 2 says the
+  answer depends on the aggregate, and does not pick one.
+not: >-
+  Not a new question and not a replacement: C03's windows, model and lines on a panel whose CPI gaps are
+  filled, read as the ruling of 2026-10-02 reads C25 and C26 (the filled run is the pilot's reading, the
+  unfilled one said beside it). Not causal (C02). Not C03's variants, its World Bank broad-money sub-variant
+  nor its window from 2020, not 1870-1950 (C21), not De Grauwe and Polan's 10% line (C23), not C22's grid.
+  Not a repair of the broad money, base money or GDP series the panel lacks. Not a new fill rule and not a
+  claim that the database's CPI is the truth where the panel has none: the fill is C25's stated rule, and an
+  economy whose database series disagrees with the panel's (the guard) is left unfilled. No interpolation,
+  and no value replaced.
+created: '2026-10-02'
