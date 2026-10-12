@@ -14,9 +14,7 @@ and its calculators, lives on the site. This folder holds what stands behind it,
   with sources), *measured* (an analysis of ours) or *judgement* (our reading, said as ours). Each number names the
   script that computed it or the source it is cited from.
 - **`cards/`**, the protocol of each analysis of ours, committed before any result on its data existed. A result
-  in `results/runs/` names the hash of the card it ran under. Cards are published as they were locked (a private
-  path replaced, as `REDACTIONS.md` lists); where one says "the project", it means the project that produces the
-  studies and its rules.
+  in `results/runs/` names the hash of the card it ran under. Cards are published as they were locked, apart from a private path replaced and the wording of the project's internal process removed or neutralised, with no change to any rule, number or source; `REDACTIONS.md` lists the hash of every card and protocol as first published and as it stands now.
 - **`code/`**, the scripts that compute every number and draw every figure.
 - **`data/`**, a manifest for each dataset: where it was fetched, when, and its hash. Fetched data is not
   republished. A dataset we built ships its values only when they are ours to share, such as our own coding of
@@ -48,5 +46,5 @@ the earlier version stays in this repository's history.
 | **FT-001** | *published part by part* |
 | part 1 — [FT-001-part-1-what-gives-a-money-its-value](FT-001-part-1-what-gives-a-money-its-value/) | What gives a money its value? — methods and proof |
 | part 1 — [FT-001-part-1-what-trust-rests-on](FT-001-part-1-what-trust-rests-on/) | Does a money lose its value when its backing goes? — methods and proof — *superseded by [FT-001-part-1-what-gives-a-money-its-value](FT-001-part-1-what-gives-a-money-its-value/)* |
-| part 2 — [FT-001-part-2-where-printed-money-goes](FT-001-part-2-where-printed-money-goes/) | Does printing money really cause inflation? — methods and proof |
+| part 2 — [FT-001-part-2-where-printed-money-goes](FT-001-part-2-where-printed-money-goes/) | Does printing money really cause inflation? — methods and proof — *an earlier version; a new version will be published with part 2* |
 <!-- index:end -->

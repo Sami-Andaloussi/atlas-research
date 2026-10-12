@@ -4,9 +4,10 @@
 
 *Competing theories. The same data. A dated verdict.*
 
-> **Status, 2026-09-24.** The data chain works end to end on a small corpus. The theory map and the
+> **Status, 2026-10-12.** The data chain works end to end on a small corpus. The theory map and the
 > rules for a valid scenario are written. No economic analysis is produced yet, and there is no track
 > record. Details in [Where it stands](#where-it-stands).
+> First Thing's Weekly Studies, which preview this approach, publish their methods and proof in [`first-thing/`](first-thing/).
 
 ---
 
@@ -161,6 +162,7 @@ This is the public window on the project. The implementation is in a private rep
 | [`docs/PROGRESS.md`](docs/PROGRESS.md) | Measured state, quoted from the project's own counters. |
 | [`docs/ROADMAP.md`](docs/ROADMAP.md) | The 14 arcs, and what is deliberately deferred. |
 | [`examples/`](examples/) | A real captured document and a script that re-reads its byte ranges: the provenance claim, checkable in one command. |
+| [`first-thing/`](first-thing/) | Methods and proof of First Thing's Weekly Studies: each study's protocols, code, data manifests and results. |
 
 ---
 

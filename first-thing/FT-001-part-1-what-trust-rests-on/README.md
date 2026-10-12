@@ -1,5 +1,7 @@
 # Does a money lose its value when its backing goes? — methods and proof
 
+> **Superseded.** See [`SUPERSEDED.md`](SUPERSEDED.md).
+
 *A First Thing Weekly Study · FT-001, part 1 of "The life of a money" · as of 2026-10-08*
 
 This folder is the proof behind the study published on First Thing's site, for the sceptic and the specialist: what
