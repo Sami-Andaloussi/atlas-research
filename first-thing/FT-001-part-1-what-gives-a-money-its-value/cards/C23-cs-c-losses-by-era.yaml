@@ -1,0 +1,140 @@
+id: C23-cs-c-losses-by-era
+label: measurement
+title: CS-C — how often prices rose a fifth (20%) or more in a year, 1800–2025, per 100 money-years with a price
+  reading, before 1914, from 1914 to July 1971 and from August 1971, from frame b's breaks (M3, M0 v4.2), the euro and
+  each union counted once
+question: 'Part 1''s map v22 (K5, the reading''s part 3; claims H1c and A3, context): how often did a money''s price
+  index rise a fifth (20%) or more in a year (a loss of a sixth of what a unit buys), per 100 money-years with a price reading, before 1914, from 1914 to July 1971 and
+  from August 1971, and what share of monies had at least one such crossing in each span? A description of how common
+  losses were: never why.'
+kind: extension
+seen:
+- 'The counts and rates by era were seen before this card: the M3 mission audit (an internal note)
+  and the part map''s deep audits v17-v22 (internal notes) recomputed
+  them (counted 166, 101, 178; about 4.3, 2.7 and 2.0 per 100 money-years, on a denominator from the first to the last
+  year of each money''s price items). The eras'' boundaries, the counting of unions once and the setting apart of
+  foreign-money crossings were in the map before v17; the 12-month union window, the 1993-12 to 1994-12 window and the
+  first-to-last denominator first appeared on this card''s first version, after those rates were seen.'
+- 'This card''s check (an internal note) recomputed the rates of its first
+  version (4.30, 2.74, 2.04 per 100 money-years; 2.08 under another reading of the union window), the fiat rate with
+  the euro counted once (2.16) and with the years of economies using another state''s money also taken out (2.25), and
+  a lower bound on the years with no reading inside each money''s span (about 240, 139 and 22 money-years by era). This
+  version changes the denominator, the union rule and the era names on that check''s findings: the euro counted once
+  and the unions dated (the map''s rule, "each monetary union counted once in the numerator and the denominator
+  alike"), years with no reading left out (the card''s own question, "per 100 money-years with a price reading"), the
+  eras named by their dates (the card''s own "not"). None of the rules below was chosen by the rate it gives.'
+- 'The second check of this card (an internal note), on its version of
+  commit 54ee6b40, computed its rates (4.63, 2.93 and 2.23 per 100 money-years by span; 2.25 with Timor-Leste, Kosovo,
+  Nauru and Tuvalu out; 2.26 with all nine economies with no IRR column out; 2.91 for the second span with the colonial
+  shared monies counted once; 2.22 under R12''s lagged class; the consumer-price-only variant 3.68, 2.93, 2.23). This
+  version applies that check''s findings: the four economies sourced and taken out, the shared-money years named, the
+  set-apart reason made true, the gap rule made determinate, the title''s quantity named; none was chosen by its rate.'
+- 'results/runs/C18, C19 and C20 existed (the earlier design''s runs, reused as CS-F and CS-D); this card reads none of
+  them'
+method: '(1) The events: the rows of frame b''s headline list (data/reconstructed/ft001-b/series.csv, M0 v4.2, pair hash
+  1160cab0...e58d4) whose status is "counted": a crossing of 20% a year in a price index (three successive 12-month
+  readings at 20% or more, the map''s named adaptation of the 20% line, or a year read annually), consumer prices where
+  kept, a commodity or wholesale index before (as Reinhart and Rogoff''s files hold them). The rows whose status is
+  "apart" (the frame''s own rule: the record beginning at or above the line, the crossing following a gap, a euro member
+  after its changeover) are not counted; each is named beside the count, with its money and date. (2) The span of an
+  event is set by its entry date: "before 1914" (before 1914-01), "1914 to July 1971" (1914-01 to 1971-07), "from
+  August 1971" (from 1971-08); an annual entry date (a year, no month) goes to the span holding the whole year, and an
+  annual 1914 or 1971 to "1914 to July 1971" (so Poland''s annual 1914 is in the second span, Fiji''s monthly 1971-11 in
+  the third). A money-year goes to the span of its calendar year, 1971 to the second. The names are dates, not regimes:
+  paper money with no convertibility ran inside the first span and floating rates inside the second, and the printed
+  text says so beside the rates with the cases the study tells (Britain 1797-1821 and the greenbacks, 1862-79; the
+  exits from gold, 1931-36). (3) The unit a year
+  belongs to: each economy-year of frame b''s panel belongs to one unit of money. (a) The euro: an economy''s years from
+  its entry year in euro_entry (frame a''s list, the ECB''s "Our money" page) belong to the euro, whose own readings
+  (the panel''s EMU, from 1999) stand for it; the member''s own readings in those years are not counted again. (b) The
+  unions XOF, XAF and XCD (members as in unions, frame a''s lists): a member''s year is the union''s when Ilzetzki,
+  Reinhart and Rogoff''s fine class for that year is 1, "no separate legal tender or currency union" (the panel''s IRR
+  annual file, 1946-2016: the class of the calendar year itself, not R12''s lag; a year outside the column''s start and
+  end years has no class; 2016''s class carried to later years as frame b''s R12 carries it), and Montserrat''s (no IRR
+  column) from its first reading; so Mali 1963-1983 (classes 2 and 4), Guinea-Bissau to 1996 (classes 2, 5 and 15),
+  Equatorial Guinea 1970-1984 (classes 2 and 8) and Mauritania (never class 1) are their own. (c) Another state''s money or a
+  shared money: any other economy-year of class 1 (2016''s carried; a year outside the column''s start and end years has
+  no class here too; the class applied as coded, so the years IRR codes 1 for Greece in 1999-2000 and for Serbia are
+  dropped too), except Zimbabwe from 2018 (Ilzetzki, Reinhart and Rogoff''s country
+  chronology, 2021-08-27, p. 132, ends its "no separate legal tender" row in February 2018); and, with no IRR column,
+  Timor-Leste, Kosovo, Nauru and Tuvalu over their reading spans (foreign_without_irr): the IMF''s AREAER lists them in
+  its row "No separate legal tender" (AREAER 2011, the de facto classification table, PDF p. 15: Timor-Leste, Kosovo,
+  Tuvalu; AREAER 2023, the same table, PDF p. 25: the four, Nauru an IMF member from 12 April 2016, PDF p. 28; AREAER 2023, PDF p. 22:
+  Kiribati, Nauru and Tuvalu "use the Australian dollar as their legal tender"), their years before 2011 read on the
+  2011 row, and Nauru''s 2011-2013 on the rows from 2016, said. Such a year is no money-year: its number is printed per span with the economy-years named. Where it
+  is a shared money with no unit in the panel (the East African shilling in Kenya, 1948-1966; Ghana, 1949-1958), it is thus counted nowhere: those economy-years are among the named ones, said. A counted
+  crossing whose entry year is such a year is set apart and named with its reason, "a year Ilzetzki, Reinhart and
+  Rogoff (or the AREAER) class as no separate legal tender: another state''s or a shared money" (this holds the map''s
+  Kiribati 2008-08 and Palestine 2024-02, for those two "the money not having lost at home", and any other the run
+  lists). (d)
+  Otherwise the economy''s own money; every year before 1946 (no class exists) is the economy''s own, and so are the
+  years of the economies with readings, no IRR column and no AREAER row of (c) (no_irr_own). (4) Union events: a union''s counted crossings (members'' rows whose entry year
+  is the union''s by (3b)) sorted by entry date; a crossing outside any current window opens a window of twelve months
+  from its entry month (an annual entry dated at its June for this rule only) and starts an event; a crossing whose
+  entry month is no more than twelve months after the opening joins that event; every XOF or XAF row with an entry date
+  from 1993-12 to 1994-12 is one event (the devaluation of both CFA francs on 12 January 1994, one decision); rows and
+  events printed side by side (OT09). (5) The denominator: a money-year is a calendar year from 1800 to 2025, within
+  the frame''s common ends, in which frame b''s timeline for the economy (the panel rebuilt from the frozen sources by
+  frame b''s own code, its digest checked against the manifest''s) holds a price reading: an annual reading of the year,
+  or at least one monthly 12-month reading in it; a unit''s year is counted once whichever of its economies read it.
+  Years with no reading inside a unit''s span are not counted and their number is printed per span; a year inside a
+  unit''s span that its economy read but that belongs to another unit, or to none, by (3) is not a year with no
+  reading. An event after 2025 is outside the count (frame b reads to 2026-08). (6) Printed per
+  span: counted events, rows, apart rows named, set-apart rows named, money-years, years with no reading inside the
+  units'' spans, the rate per 100 money-years to two decimals, the number of units with a reading and the share with at
+  least one counted event; the unit of each span''s readings said beside (annual and often commodity indices before
+  1900, monthly consumer prices after). (7) Beside, the frame''s consumer-price-only variant (variant-rr-cpi-only.csv)
+  through the same rules, its money-years from the same panel with Reinhart and Rogoff''s non-CPI years not read. No
+  restoration is counted (the new-unit list is incomplete: missions/FT-001-M3-new-units-2026-10-10.md).'
+parameters:
+  events: data/reconstructed/ft001-b/series.csv, status counted
+  panel: panel.py (frame b's panel, rebuilt; digest d5debead680cb9d113ef0e3d8da10bf7c66e871e4136a350b896d76915b35d75)
+  variant_beside: data/reconstructed/ft001-b/variant-rr-cpi-only.csv
+  eras:
+    before_1914: [null, '1913-12']
+    1914_to_1971_07: ['1914-01', '1971-07']
+    from_1971_08: ['1971-08', null]
+  annual_1914_and_1971: 1914_to_1971_07
+  euro_entry: {AUT: 1999, BEL: 1999, FIN: 1999, FRA: 1999, DEU: 1999, IRL: 1999, ITA: 1999, LUX: 1999, NLD: 1999,
+    PRT: 1999, ESP: 1999, GRC: 2001, SVN: 2007, CYP: 2008, MLT: 2008, SVK: 2009, EST: 2011, LVA: 2014, LTU: 2015,
+    HRV: 2023, BGR: 2026}
+  euro_unit: EMU
+  unions:
+    XOF: [BEN, BFA, CIV, GNB, MLI, MRT, NER, SEN, TGO]
+    XAF: [CMR, CAF, TCD, COG, GNQ, GAB]
+    XCD: [AIA, ATG, DMA, GRD, KNA, LCA, MSR, VCT]
+  irr_class_shared: 1
+  irr_carry_after: 2016
+  union_without_irr: {MSR: XCD}
+  own_despite_class_1: {ZWE: 2018}
+  foreign_without_irr: [TLS, XKX, NRU, TUV]
+  no_irr_own: [CYM, NCL, SSD, SXM, TWN]
+  set_apart_reason: 'a year Ilzetzki, Reinhart and Rogoff (or the AREAER) class as no separate legal tender: another
+    state''s or a shared money'
+  union_window_months: 12
+  annual_entry_month_for_window: 6
+  cfa_1994_decision: ['1993-12', '1994-12']
+  years: [1800, 2025]
+  per: 100
+  decimals: 2
+matters:
+  cs_c: 'none: a description of how common losses were, read against no size (part 1''s map, H1c and A3: descriptive,
+    context)'
+data:
+- dataset: reconstructed/ft001-b
+  vintage: second build (manifest data/reconstructed/ft001-b/MANIFEST.md)
+- dataset: irr/classification-annual-1946-2016
+  vintage: '2026-09-30'
+- dataset: frame-a/areaer-2011-2023
+  vintage: '2026-10-01'
+period: 1800-2025
+sample: 'Every money with a readable price index in frame b''s panel, counted as units by method (3) (the euro and each
+  union once), every crossing its locked rules found; nothing selected by outcome.'
+out_of_sample: 'The spans themselves (three populations) and the consumer-price-only variant beside; no estimate to
+  check out of sample.'
+failure: 'The card fails if the rebuilt panel''s digest differs from the manifest''s (the run stops), or if a counted
+  row''s entry year cannot be assigned to a unit by method (3) (it is then listed as unassigned and the rates printed
+  with and without it).'
+not: 'It does not say why monies lost value, nor compare regimes: a span is a calendar span, not a regime; it does not
+  count recoveries; the rates are not chances for today.'
+created: '2026-10-10'

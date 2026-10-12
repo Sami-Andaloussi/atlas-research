@@ -1,0 +1,54 @@
+id: C24-cs-c-years-in-crisis
+label: measurement
+title: 'CS-C, its years: the share of money-years in which prices rose a fifth or more, in the three spans of C23, beside
+  C23''s crises begun (frame b''s panel)'
+parent:
+  id: C23-cs-c-losses-by-era
+  hash: 3a5e95ea2f864a10aa38acc97865cc45874c45133eb12eacce77812f0c1f566f  # the card as C23's run records it
+kind: extension
+seen:
+- 'C23''s run (its crises begun, money-years and rates per span) was seen and printed in the study.'
+- 'The years this card counts were seen in part before it, each by an isolated checker''s own code on frame b''s rows, not by
+  this session: grid check 3 (crisis spells from start to restoration, about 18%, 21% and 29% of money-years by span); grid
+  check 4 (about 22%, 23% and 32%); grid check 5 (spells to restoration 17.7%, 20.7% and 29.5%; money-years with prices up
+  a fifth or more, 6.9%, 10.6% and 12.4% on the yearly mean of the 12-month changes, 6.9%, 11.6% and 15.1% on three
+  months at 20% or more). The definition below was chosen after these were seen, for the reason said in method (1): it
+  is Reinhart and Rogoff''s own measure and the one the study''s text defines (an inflation crisis is a year when prices
+  rose by a fifth or more).'
+question: 'Part 1''s map v22 (H1c / A3, context) and grid check 5''s finding 1 (the third return of the same defect, a
+  reshape): in each of C23''s three spans, what share of the money-years with a price reading were years in which prices
+  rose by a fifth or more? Printed beside C23''s crises begun, so that the count of crises begun is never read as a count
+  of crisis years.'
+method: '(1) The definition: a money-year is a crisis year when its price rise in the year is 20% or more: Reinhart and
+  Rogoff''s inflation-crisis line, applied to years, as they apply it and as the study''s text defines a crisis. (2) The
+  year''s rise: where frame b''s timeline (panel.timeline, frame b''s common ends, as C23 reads it) holds an annual reading
+  for the year, that reading; where it holds monthly readings, the mean of the year''s monthly 12-month changes (every
+  readable month of the year). (3) The money-years and their units: exactly C23''s denominator (its function reading_years
+  and its Units, read from code/p1_cs_c.py, never changed): each unit-year counted once; a unit-year read by several
+  economies (a union''s members, the euro''s) takes the mean of their year rises. (4) Per span (C23''s: before 1914, 1914
+  to July 1971, from August 1971, by the year): the money-years, the crisis years, and their share in percent with one
+  decimal; beside, C23''s crises begun per 100 money-years as C23 printed them. (5) The consumer-price-only variant beside,
+  as C23 reads it (rr_cpi_only). Nothing else is computed; no cause is read.'
+parameters:
+  line_percent: 20
+  year_rise: annual reading, else the mean of the year's monthly 12-month changes
+  denominator: C23's (code/p1_cs_c.py reading_years and Units)
+  spans: [before_1914, 1914_to_1971_07, from_1971_08]
+  decimals: 1
+matters:
+  cs_c_years: 'none: a description beside C23''s count, read against no size'
+data:
+- dataset: reconstructed/ft001-b
+  vintage: second build (manifest data/reconstructed/ft001-b/MANIFEST.md)
+- dataset: irr/classification-annual-1946-2016
+  vintage: '2026-09-30'
+- dataset: frame-a/areaer-2011-2023
+  vintage: '2026-10-01'
+period: 1800-2025
+sample: 'C23''s: every money with a readable price index in frame b''s panel, counted as units by C23''s method (3).'
+out_of_sample: 'The consumer-price-only variant beside; the spans themselves.'
+failure: 'The card fails if the rebuilt panel''s digest differs from C23''s (the run stops) or if its money-years differ from
+  C23''s printed money-years in any span.'
+not: 'It does not say why crises lasted longer, compare regimes, or replace C23''s count; it does not read a trend as a
+  cause.'
+created: '2026-10-10'

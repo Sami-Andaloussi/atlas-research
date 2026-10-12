@@ -1,0 +1,953 @@
+- key: cite_argentina_prices-2002
+  as_of: '2008-04-01'
+  locator: '2002'
+  source: IMF WEO via DBnomics (WEO:2008-04 ARG.PCPIEPCH)
+  unit: percent, end-of-period (December to December) consumer prices, 2002
+  value: 40.95
+  fmt: '{:.0f}%'
+  measure: rise in consumer prices, December to December
+  period: '2002'
+  population: Argentina
+- key: cite_austria_claims-1914
+  as_of: '1994-01-01'
+  locator: p. 6
+  source: Garber and Spencer 1994, Table 2
+  unit: million gold crowns (Debts of the Austrian Government in the Bank's accounts, 23 July 1914)
+  url: https://ies.princeton.edu/pdf/E191.pdf
+  value: 60.0
+  fmt: '{:.0f}'
+  measure: the Austrian government's debts to the Austro-Hungarian Bank
+  period: July 1914
+  population: Austria
+- key: cite_austria_claims-1918
+  as_of: '1994-01-01'
+  locator: p. 6
+  source: Garber and Spencer 1994, Table 2
+  unit: million gold crowns (same line, 26 October 1918)
+  url: https://ies.princeton.edu/pdf/E191.pdf
+  value: 19694.0
+  fmt: '{:,.0f}'
+  measure: the Austrian government's debts to the Austro-Hungarian Bank
+  period: October 1918
+  population: Austria
+- key: cite_rome_denarius-augustus-g
+  value: 3.8
+  unit: grams of silver
+  source: Butcher and Ponting 2014, The Metallurgy of Roman Silver Coinage
+  locator: Table 19.4
+  as_of: '2014-01-01'
+  fmt: '{:.1f}'
+  measure: silver in the denarius
+  period: Augustus
+  population: Rome
+- key: cite_rome_denarius-nero-g
+  value: 2.76
+  unit: grams of silver
+  source: Butcher and Ponting 2014, The Metallurgy of Roman Silver Coinage
+  locator: Table 19.4 (Nero, post-reform, First Neronian Standard)
+  as_of: '2014-01-01'
+  fmt: '{:.2f}'
+  measure: silver in the denarius
+  period: after Nero's reform of 64
+  population: Rome
+- key: cite_rome_antoninianus-250-g
+  value: 1.5
+  unit: grams of silver
+  source: Harper 2016, JEH 76(3)
+  locator: p. 810, footnote 14 ("ca. 1.5 g in AD 250")
+  as_of: '2016-01-01'
+  fmt: '{:.1f}'
+  measure: silver in the antoninianus
+  period: AD 250
+  population: Rome
+- key: cite_baochao_share-of-face
+  value: 2
+  unit: percent of face value
+  source: von Glahn 1996, Fountain of Fortune
+  locator: p. 74, n. 85
+  as_of: '1996-01-01'
+  fmt: '{:.0f}%'
+  measure: the baochao's value as a share of its face value
+  period: '1425'
+  population: Ming China
+- key: cite_bitcoin_supply-cap
+  as_of: '2012-10-01'
+  locator: PDF pp. 24-25
+  source: ECB, Virtual Currency Schemes, 2012
+  unit: million bitcoins
+  url: https://www.ecb.europa.eu/pub/pdf/other/virtualcurrencyschemes201210en.pdf
+  value: 21
+  fmt: '{:.0f} million'
+  measure: bitcoin's supply limit, by design
+  period: '2012'
+  population: bitcoin
+- key: cite_bolivia_feb-1985
+  as_of: '1986-11-01'
+  locator: Table 1(c)
+  source: Sachs 1986, Table 1(c)
+  unit: percent, monthly inflation, February 1985
+  url: https://www.nber.org/system/files/working_papers/w2073/w2073.pdf
+  value: 182.8
+  fmt: '{:.0f}%'
+  measure: rise in prices in one month
+  period: February 1985
+  population: Bolivia
+- key: cite_britain-1925_overvalued
+  value: 10
+  unit: percent, at least
+  source: Moggridge 1972, British Monetary Policy 1924-1931
+  locator: p. 100
+  as_of: '1972-01-01'
+  fmt: '{:.0f}%'
+  measure: sterling's overvaluation at the pre-war parity, at least
+  period: '1925'
+  population: Britain
+- key: cite_britain-1925_parity
+  value: 4.86
+  unit: dollars per pound
+  source: Moggridge 1972, British Monetary Policy 1924-1931
+  locator: p. 1
+  as_of: '1972-01-01'
+  fmt: ${:.2f}
+  measure: the pre-war gold parity of the pound
+  period: April 1925
+  population: Britain
+- key: cite_britain_1800
+  as_of: '2010-10-01'
+  locator: sheet UK, 1800
+  source: Reinhart and Rogoff inflation files
+  unit: percent, annual change in consumer prices (Reinhart and Rogoff's UK sheet, 'CPI, London')
+  value: 31.8273
+  fmt: '{:.0f}%'
+  measure: rise in consumer prices (Reinhart and Rogoff's files)
+  period: '1800'
+  population: Britain
+- key: cite_britain_1800-bis
+  as_of: '2026-09-30'
+  locator: GB, annual, 1800
+  source: BIS WS_LONG_CPI
+  unit: percent, year-on-year change, BIS long CPI series
+  value: 34.2466
+  fmt: '{:.0f}%'
+  measure: rise in consumer prices (BIS long series)
+  period: '1800'
+  population: Britain
+- key: cite_britain_1975-bis
+  as_of: '2026-09-30'
+  locator: GB, 1975
+  source: BIS WS_LONG_CPI
+  unit: percent, year-on-year change, BIS long consumer-price series
+  value: 22.7
+  fmt: '{:.1f}%'
+  measure: rise in consumer prices (BIS long series)
+  period: '1975'
+  population: Britain
+- key: cite_britain_1975-rpi
+  as_of: '2026-09-30'
+  locator: RPI based index, 1974 and 1975
+  source: Bank of England millennium dataset, sheet A47
+  unit: percent, retail prices index (RPI-based), 1975 over 1974, annual averages
+  value: 24.2
+  fmt: '{:.0f}%'
+  measure: rise in retail prices (Bank of England)
+  period: '1975'
+  population: Britain
+- key: cite_britain_prices-1918-over-1914
+  as_of: '2026-09-30'
+  locator: United Kingdom cpi (4.633 / 2.283 = 2.029, recomputed from the frozen file)
+  source: JST R6
+  unit: ratio of the consumer price index, 1918 to 1914
+  value: 2.03
+  fmt: '{:.1f}'
+  measure: consumer prices in 1918 over 1914
+  period: 1914 to 1918
+  population: Britain
+- key: cite_degrauwe_line
+  as_of: '2005-06-01'
+  locator: p. 256
+  source: De Grauwe and Polan 2005, Scandinavian Journal of Economics 107(2)
+  unit: percent a year, on average over thirty years
+  value: 10
+  fmt: '{:.0f}%'
+  url: https://doi.org/10.1111/j.1467-9442.2005.00406.x
+  measure: De Grauwe and Polan's line of low inflation, a yearly average
+  period: thirty years to the 1990s
+  population: their sample
+- key: cite_dollar_prices-1920-over-1914
+  as_of: '2026-09-30'
+  locator: annual averages of the monthly series, 1920 (20.04) over 1914 (10.02)
+  source: FRED CPIAUCNS
+  unit: ratio of annual-average CPI, 1920 to 1914 (recomputed 2.0008; June to June 2.11)
+  value: 2.0008
+  fmt: '{:.1f}'
+  measure: consumer prices in 1920 over 1914
+  period: 1914 to 1920
+  population: the United States
+- key: cite_dollar_prices-aug-1917-over-1914
+  as_of: '2026-09-30'
+  locator: August 1917 (13.0) over the 1914 annual average (10.02)
+  source: FRED CPIAUCNS
+  unit: ratio of the August 1917 CPI to the 1914 annual average (recomputed 1.298)
+  value: 1.2978
+  fmt: '{:.1f}'
+  measure: consumer prices in August 1917, before the gold embargo, over 1914
+  period: 1914 to August 1917
+  population: the United States
+- key: cite_us_prices-1878-over-1870
+  as_of: '2026-09-30'
+  locator: Macrohistory Database R6, USA, cpi, 1878 (8.084) over 1870 (10.577)
+  source: Jordà-Schularick-Taylor Macrohistory Database R6
+  unit: percent fall of the yearly consumer price index, 1870 to 1878 (recomputed 23.6)
+  value: 23.57
+  fmt: '{:.0f}%'
+  measure: the fall in US consumer prices from 1870 to 1878
+  period: 1870 to 1878
+  population: the United States
+- key: cite_ecb_inflation-aim
+  as_of: '2021-01-01'
+  locator: statement text
+  source: ECB strategy statement 2021 (carried forward in the 2025 overview)
+  unit: percent over the medium term
+  value: 2
+  fmt: '{:.0f}%'
+  measure: the ECB's inflation target
+  period: over the medium term
+  population: the euro area
+- key: cite_ecuador_base-money-1999
+  as_of: '2002-06-01'
+  locator: p. 57
+  source: Beckerman and Solimano (eds.) 2002, ch. 2 by Beckerman
+  unit: percent (growth of the monetary base over 1999)
+  value: 136
+  fmt: '{:.0f}%'
+  measure: growth of the monetary base
+  period: '1999'
+  population: Ecuador
+- key: cite_ecuador_bonds-bn
+  as_of: '2002-06-01'
+  locator: p. 57 (also pp. 40-41)
+  source: Beckerman and Solimano (eds.) 2002, ch. 2 by Beckerman
+  unit: billion US dollars (bonds issued by the Treasury Dec 1998 to 1999)
+  url: https://openknowledge.worldbank.org/handle/10986/14256
+  value: 1.6
+  fmt: US${:.1f} billion
+  measure: Treasury bonds issued to recapitalise banks and pay deposits
+  period: 1998 to 1999
+  population: Ecuador
+- key: cite_ecuador_cb-acquired-bn
+  as_of: '2002-06-01'
+  locator: p. 57
+  source: Beckerman and Solimano (eds.) 2002, ch. 2 by Beckerman
+  unit: billion US dollars (of the bonds, acquired by the Central Bank)
+  url: https://openknowledge.worldbank.org/handle/10986/14256
+  value: 1.2
+  fmt: US${:.1f} billion
+  measure: of those bonds, acquired by the central bank
+  period: 1998 to 1999
+  population: Ecuador
+- key: cite_ecuador_prices-2000
+  as_of: '2026-09-30'
+  locator: data/dbnomics/IMF/IFS/A~~PCPI_IX/2026-09-30/page-001.json, series A.EC.PCPI_IX
+  source: IMF, International Financial Statistics, Ecuador annual CPI (index 23.305 in 1999, 45.701 in 2000), frozen
+  unit: percent (annual CPI change, 2000)
+  value: 96.1
+  fmt: '{:.0f}%'
+  measure: rise in consumer prices
+  period: '2000'
+  population: Ecuador
+- key: cite_fomc_inflation-goal
+  as_of: '2026-01-27'
+  locator: p. 1
+  source: FOMC Statement on Longer-Run Goals, reaffirmed 27 January 2026
+  unit: percent per year (PCE price index)
+  url: https://www.federalreserve.gov/monetarypolicy/files/FOMC_LongerRunGoals.pdf
+  value: 2
+  fmt: '{:.0f}%'
+  measure: the Fed's inflation goal (PCE prices)
+  period: longer run
+  population: the United States
+- key: cite_hongkong_strong-side
+  as_of: '2025-10-22'
+  locator: web pages
+  source: HKMA, how the LERS works / milestones
+  unit: HK dollars per US dollar (strong-side convertibility undertaking, since May 2005)
+  url: https://www.hkma.gov.hk/eng/key-functions/money/linked-exchange-rate-system/how-does-the-lers-work/
+  value: 7.75
+  fmt: '{:.2f}'
+  measure: the strong side of the Hong Kong dollar's band
+  period: since May 2005
+  population: Hong Kong
+- key: cite_hongkong_weak-side
+  as_of: '2025-10-22'
+  locator: web pages
+  source: HKMA, how the LERS works / milestones
+  unit: HK dollars per US dollar (weak-side convertibility undertaking; moved from 7.80 in May 2005)
+  url: https://www.hkma.gov.hk/eng/key-functions/money/linked-exchange-rate-system/how-does-the-lers-work/
+  value: 7.85
+  fmt: '{:.2f}'
+  measure: the weak side of the Hong Kong dollar's band
+  period: since May 2005
+  population: Hong Kong
+- key: cite_invoicing_dollar-ex-commodities
+  as_of: '2020-07-01'
+  locator: section 2.6.1, Figure 4 right panel (p. 15)
+  source: Boz et al. 2020, IMF WP/20/126
+  unit: percent (dollar share of global export invoicing, commodities removed)
+  value: 23
+  fmt: '{:.0f}%'
+  measure: dollar share of export invoicing, commodities removed
+  period: around 2019
+  population: world exports
+- key: cite_invoicing_us-destination-ex-commodities
+  as_of: '2020-07-01'
+  locator: section 2.6.1
+  source: Boz et al. 2020
+  unit: percent (share of global exports destined for the US, commodities removed)
+  value: 10
+  fmt: '{:.0f}%'
+  measure: share of exports sent to the US, commodities removed
+  period: around 2019
+  population: world exports
+- key: cite_italy_deficit
+  as_of: '1974-01-01'
+  locator: p. 62
+  source: BIS 44th Annual Report
+  unit: Lit. milliard (the deficit, 1973)
+  url: https://www.bis.org/publications/annual-report-1974.pdf
+  value: 7540
+  fmt: '{:,.0f}'
+  measure: the public deficit
+  period: '1973'
+  population: Italy
+- key: cite_italy_financed
+  as_of: '1974-01-01'
+  locator: p. 62
+  source: BIS 44th Annual Report
+  unit: Lit. milliard (financed by the Bank of Italy, 1973)
+  url: https://www.bis.org/publications/annual-report-1974.pdf
+  value: 5100
+  fmt: '{:,.0f}'
+  measure: of the deficit, financed by the Bank of Italy
+  period: '1973'
+  population: Italy
+- key: cite_japan_1932-36-high
+  as_of: '2006-01-01'
+  locator: p. 35
+  source: Eggertsson (2006), Table 4
+  unit: percent a year, CPI change, 1933
+  url: https://www.newyorkfed.org/medialibrary/media/research/staff_reports/sr241.pdf
+  value: 3.1
+  fmt: '{:.1f}%'
+  measure: highest yearly rise in consumer prices
+  period: 1932 to 1936
+  population: Japan
+- key: cite_japan_1932-36-low
+  as_of: '2006-01-01'
+  locator: p. 35
+  source: Eggertsson (2006), Table 4
+  unit: percent a year, CPI change, 1932 (the lowest of 1932-36 is 1.1 in 1932; 1934's 1.4 is the next)
+  url: https://www.newyorkfed.org/medialibrary/media/research/staff_reports/sr241.pdf
+  value: 1.1
+  fmt: '{:.1f}%'
+  measure: lowest yearly rise in consumer prices
+  period: 1932 to 1936
+  population: Japan
+- key: cite_japan_1965-74-share-resold
+  as_of: '2001-01-01'
+  locator: p. 225
+  source: Hoshi and Kashyap (2001), ch. 7 (citing Mabuchi 1994, p. 327)
+  unit: percent of the government bonds bought by financial institutions 1965-74 that were subsequently bought by the Bank
+    of Japan
+  value: 95
+  fmt: '{:.0f}%'
+  measure: share of government bonds bought by banks later bought by the Bank of Japan
+  period: 1965 to 1974
+  population: Japan
+- key: cite_japan_1974-inflation-floor
+  as_of: '2001-01-01'
+  locator: pp. 220-221
+  source: Hoshi and Kashyap (2001), ch. 7
+  unit: percent a year ('more than 20%'), consumer prices 1974 — a floor, not a point value
+  value: 20
+  fmt: '{:.0f}%'
+  measure: rise in consumer prices, at least
+  period: '1974'
+  population: Japan
+- key: cite_japan_bonds-1935
+  as_of: '2001-01-01'
+  locator: p. 64
+  source: Hoshi and Kashyap (2001)
+  unit: billion yen, central government bond issues, 1935
+  value: 1
+  fmt: ¥{:.0f} billion
+  measure: central-government bond issues
+  period: '1935'
+  population: Japan
+- key: cite_japan_bonds-1945
+  as_of: '2001-01-01'
+  locator: p. 64
+  source: Hoshi and Kashyap (2001)
+  unit: billion yen, central government bond issues, 1945
+  value: 33
+  fmt: ¥{:.0f} billion
+  measure: central-government bond issues
+  period: '1945'
+  population: Japan
+- key: cite_japan_bonds-share-1935
+  as_of: '2001-01-01'
+  locator: p. 64
+  source: Hoshi and Kashyap (2001)
+  unit: percent of all bonds issued, 1935
+  value: 39
+  fmt: '{:.0f}%'
+  measure: central-government issues as a share of all bonds issued
+  period: '1935'
+  population: Japan
+- key: cite_japan_bonds-share-1945
+  as_of: '2001-01-01'
+  locator: p. 64
+  source: Hoshi and Kashyap (2001)
+  unit: percent of all bonds issued, 1945
+  value: 81
+  fmt: '{:.0f}%'
+  measure: central-government issues as a share of all bonds issued
+  period: '1945'
+  population: Japan
+- key: cite_japan_prices-1944
+  as_of: '2026-09-30'
+  locator: Japan 1944 (recomputed from the frozen file)
+  source: JST R6
+  unit: percent, annual change of the consumer price index (JST cpi)
+  value: 35.29
+  fmt: '{:.0f}%'
+  measure: rise in consumer prices
+  period: '1944'
+  population: Japan
+- key: cite_japan_prices-1945
+  as_of: '2026-09-30'
+  locator: Japan 1945
+  source: JST R6
+  unit: percent
+  value: 975.64
+  fmt: '{:.0f}%'
+  measure: rise in consumer prices
+  period: '1945'
+  population: Japan
+- key: cite_japan_prices-1946
+  as_of: '2026-09-30'
+  locator: Japan 1946
+  source: JST R6
+  unit: percent
+  value: 90.7
+  fmt: '{:.0f}%'
+  measure: rise in consumer prices
+  period: '1946'
+  population: Japan
+- key: cite_japan_prices-1947
+  as_of: '2026-09-30'
+  locator: Japan 1947
+  source: JST R6
+  unit: percent
+  value: 125.33
+  fmt: '{:.0f}%'
+  measure: rise in consumer prices
+  period: '1947'
+  population: Japan
+- key: cite_japan_prices-1948
+  as_of: '2026-09-30'
+  locator: Japan 1948
+  source: JST R6
+  unit: percent
+  value: 75.93
+  fmt: '{:.0f}%'
+  measure: rise in consumer prices
+  period: '1948'
+  population: Japan
+- key: cite_japan_prices-1949
+  as_of: '2026-09-30'
+  locator: Japan 1949
+  source: JST R6
+  unit: percent
+  value: 31.89
+  fmt: '{:.0f}%'
+  measure: rise in consumer prices
+  period: '1949'
+  population: Japan
+- key: cite_mandat_cap-m
+  as_of: '1995-01-01'
+  locator: S&V p. 510; White p. 247
+  source: Sargent and Velde 1995; White 1995
+  unit: millions of mandats issued (the ceiling; the record does not name the unit of account)
+  value: 2400
+  fmt: '{:,.0f}'
+  measure: the ceiling on mandats issued
+  period: '1796'
+  population: France
+- key: cite_mandat_march
+  as_of: '1995-01-01'
+  locator: p. 510
+  source: Sargent and Velde 1995
+  unit: percent of face value, March 1796
+  value: 35
+  fmt: '{:.0f}%'
+  measure: the mandat's value as a share of face value
+  period: March 1796
+  population: France
+- key: cite_mandat_summer
+  as_of: '1995-01-01'
+  locator: p. 510
+  source: Sargent and Velde 1995
+  unit: percent of face value, early summer 1796
+  value: 6
+  fmt: '{:.0f}%'
+  measure: the mandat's value as a share of face value
+  period: early summer 1796
+  population: France
+- key: cite_new-franc_old-per-new
+  as_of: '1960-01-01'
+  locator: p. 157
+  source: BIS 30th Annual Report
+  unit: old francs per new franc
+  url: https://www.bis.org/publications/annual-report-1960.pdf
+  value: 100
+  fmt: '{:.0f}'
+  measure: old francs per new franc
+  period: January 1960
+  population: France
+- key: cite_rentenmark_cap-bn
+  as_of: '1982-01-01'
+  locator: p. 83
+  source: Sargent 1982
+  unit: billion Rentenmarks (total issue limit)
+  url: https://www.nber.org/system/files/chapters/c11452/c11452.pdf
+  value: 3.2
+  fmt: '{:.1f}'
+  measure: the limit on Rentenmarks issued
+  period: '1923'
+  population: Germany
+- key: cite_rentenmark_to-government-bn
+  as_of: '1982-01-01'
+  locator: p. 83
+  source: Sargent 1982
+  unit: billion Rentenmarks (maximum to the government)
+  url: https://www.nber.org/system/files/chapters/c11452/c11452.pdf
+  value: 1.2
+  fmt: '{:.1f}'
+  measure: the limit on Rentenmarks lent to the government
+  period: '1923'
+  population: Germany
+- key: cite_reserve-primary_cents
+  value: 97
+  unit: cents per share
+  source: McCabe 2010, FEDS 2010-51
+  locator: section on weekly risks and outflows
+  as_of: '2010-01-01'
+  fmt: '{:.0f}'
+  measure: the Reserve Primary Fund's share price after repricing
+  period: September 2008
+  population: the Reserve Primary Fund
+- key: cite_reserves_dollar-2024
+  as_of: '2024-12-31'
+  locator: section 1.1
+  source: ECB, The international role of the euro, June 2025, drawing on IMF COFER
+  unit: percent (dollar share of allocated official foreign-exchange reserves, constant exchange rates)
+  url: https://www.ecb.europa.eu/press/other-publications/ire/html/ecb.ire202506.en.html
+  value: 57.8
+  fmt: '{:.1f}%'
+  measure: dollar share of official foreign-exchange reserves
+  period: end of 2024
+  population: the world's central banks
+- key: cite_snb_floor
+  as_of: '2015-01-15'
+  locator: introductory remarks
+  source: Jordan, 15 January 2015
+  unit: CHF per euro (minimum exchange rate)
+  url: https://www.bis.org/review/r150116a.htm
+  value: 1.2
+  fmt: '{:.2f}'
+  measure: the SNB's minimum exchange rate
+  period: September 2011 to January 2015
+  population: Switzerland
+- key: cite_snb_range-high
+  value: 2
+  unit: percent a year (consumer prices)
+  source: Jordan, speech of 27 April 2023 (BIS); Schlegel, speech of 25 April 2025 (BIS)
+  locator: speech text
+  as_of: '2025-04-25'
+  fmt: '{:.0f}%'
+  measure: the top of the SNB's price-stability range
+  period: today
+  population: Switzerland
+- key: cite_snb_range-low
+  value: 0
+  unit: percent a year (consumer prices)
+  source: Jordan, speech of 27 April 2023 (BIS); Schlegel, speech of 25 April 2025 (BIS)
+  locator: speech text
+  as_of: '2025-04-25'
+  fmt: '{:.0f}%'
+  measure: the bottom of the SNB's price-stability range
+  period: today
+  population: Switzerland
+- key: cite_somali_per-dollar-1992
+  as_of: '1992-03-31'
+  locator: s. 2.2
+  source: Luther and White 2011, citing Fitzgerald 2002, p. 18
+  unit: Somali shillings per US dollar, 31 March 1992
+  value: 3800
+  fmt: '{:,.0f}'
+  measure: Somali shillings per US dollar
+  period: March 1992
+  population: Somalia
+- key: cite_somali_unofficial-notes-bn
+  as_of: '2006-01-01'
+  locator: s. 2.2
+  source: Luther and White 2011, citing Symes 2006a, p. 29
+  unit: billion shillings (estimate, notes printed since 1991)
+  value: 481
+  fmt: '{:.0f}'
+  measure: unofficial shilling notes printed, an estimate
+  period: 1991 to about 2010
+  population: Somalia
+- key: cite_swiss-2015_border-eur-q4
+  as_of: '2021-01-01'
+  locator: p. 11
+  source: Auer, Burstein and Lein 2021, Table 3
+  unit: percent fall
+  value: 11.0
+  fmt: '{:.1f}%'
+  measure: fall in euro-invoiced import prices at the border
+  period: by the end of 2015
+  population: Switzerland
+- key: cite_swiss-2015_gdp-q1
+  as_of: '2015-11-01'
+  locator: p. 18
+  source: OECD Economic Survey of Switzerland 2015
+  unit: percent fall
+  value: 0.2
+  fmt: '{:.1f}%'
+  measure: fall in GDP
+  period: first quarter of 2015
+  population: Switzerland
+- key: cite_swiss-2015_retail-import-q4
+  as_of: '2021-01-01'
+  locator: p. 11, p. 19
+  source: Auer, Burstein and Lein 2021, Table 3 (and p. 19)
+  unit: percent fall
+  value: 3.9
+  fmt: '{:.1f}%'
+  measure: fall in retail prices of imports
+  period: by the end of 2015
+  population: Switzerland
+- key: cite_swiss-dinar_conversion
+  as_of: '2004-01-01'
+  locator: p. 61
+  source: Foote et al. 2004
+  unit: Saddam (new) dinars per Swiss dinar
+  value: 150
+  fmt: '{:.0f}'
+  measure: new dinars per Swiss dinar at the exchange
+  period: 2003 to 2004
+  population: northern Iraq
+- key: cite_swiss-dinar_fixed-years
+  value: 13
+  unit: years
+  source: Foote, Block, Crane and Gray 2004
+  locator: p. 61
+  as_of: '2004-01-01'
+  fmt: '{:.0f}'
+  measure: years the Swiss dinar's supply stayed fixed
+  period: to 2003
+  population: northern Iraq
+- key: cite_turkey-2005_old-per-new
+  as_of: '2005-01-01'
+  locator: page text
+  source: ECB page 'Turkish lira (TRL)'
+  unit: old lira (TRL) per new lira (TRY)
+  url: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/eurofxref-graph-trl.en.html
+  value: 1000000
+  fmt: '{:,.0f}'
+  measure: old lira per new lira
+  period: January 2005
+  population: Turkey
+- key: cite_turkey_policy-rate-nov-2022
+  as_of: '2023-03-28'
+  locator: web page
+  source: Kavcıoğlu, 28 March 2023
+  unit: percent, policy rate after 500 basis points of cuts (Kavcıoğlu's 'down to 9%'); the BIS policy-rate file shows 9 for
+    November and December 2022
+  url: https://www.bis.org/review/r230718p.htm
+  value: 9
+  fmt: '{:.0f}%'
+  measure: the central bank's policy rate
+  period: November 2022
+  population: Turkey
+- key: cite_turkey_policy-rate-may-2023
+  as_of: '2026-10-10'
+  locator: Türkiye, monthly, May 2023
+  source: BIS, central bank policy rates (WS_CBPOL)
+  unit: percent, policy rate (monthly value 8.5 for April and May 2023, 15 for June)
+  url: https://data.bis.org/topics/CBPOL
+  value: 8.5
+  fmt: '{:.1f}%'
+  measure: the central bank's policy rate
+  period: May 2023
+  population: Turkey
+  note: frozen data/bis/WS_CBPOL/2026-10-10
+- key: cite_turkey_policy-rate-mar-2024
+  as_of: '2026-10-10'
+  locator: Türkiye, monthly, March 2024
+  source: BIS, central bank policy rates (WS_CBPOL)
+  unit: percent, policy rate (50 from March to November 2024)
+  url: https://data.bis.org/topics/CBPOL
+  value: 50
+  fmt: '{:.0f}%'
+  measure: the central bank's policy rate
+  period: March 2024
+  population: Turkey
+  note: frozen data/bis/WS_CBPOL/2026-10-10
+- key: cite_turkey_prices-2024
+  as_of: '2026-09-30'
+  locator: TR, annual, 2024
+  source: BIS WS_LONG_CPI
+  unit: percent, year-on-year change, BIS long CPI series
+  value: 58.5064507302
+  fmt: '{:.0f}%'
+  measure: rise in consumer prices (BIS long series)
+  period: '2024'
+  population: Turkey
+- key: cite_turkey_prices-2025
+  as_of: '2026-09-30'
+  locator: TR, annual, 2025
+  source: BIS WS_LONG_CPI
+  unit: percent, year-on-year change, BIS long CPI series
+  value: 34.8811629786
+  fmt: '{:.0f}%'
+  measure: rise in consumer prices (BIS long series)
+  period: '2025'
+  population: Turkey
+- key: cite_turkey_prices-2022
+  as_of: '2023-02-01'
+  locator: main findings, PDF p. 12
+  source: 'OECD Economic Surveys: Türkiye 2023'
+  unit: percent, consumer prices
+  url: https://www.oecd.org/content/dam/oecd/en/publications/reports/2023/02/oecd-economic-surveys-turkiye-2023_816ce823/864ab2ba-en.pdf
+  value: 72.3
+  fmt: '{:.0f}%'
+  measure: rise in consumer prices
+  period: '2022'
+  population: Turkey
+  note: percent, CPI in 2022 (the OECD does not say annual average or December on December; the BIS series gives 72.3088 as
+    the annual change, frozen data/bis/WS_LONG_CPI/2026-09-30)
+- key: cite_usdc_low-cents
+  as_of: '2023-05-08'
+  locator: p. 55
+  source: Federal Reserve FSR, May 2023
+  unit: cents (USDC's low against its $1 target, March 2023)
+  url: https://www.federalreserve.gov/publications/files/financial-stability-report-20230508.pdf
+  value: 87
+  fmt: '{:.0f}'
+  measure: USDC's low against its one-dollar target
+  period: March 2023
+  population: USDC
+- key: cite_us_cpi_1946-12
+  as_of: '2026-09-30'
+  locator: CPIAUCNS, December 1946 over December 1945
+  source: FRED CPIAUCNS (consumer prices, all urban consumers, not seasonally adjusted; the BLS's)
+  unit: percent, twelve-month change
+  url: https://fred.stlouisfed.org/series/CPIAUCNS
+  value: 18.13
+  fmt: '{:.0f}%'
+  measure: rise in US consumer prices over twelve months
+  period: December 1945 to December 1946
+  population: the United States
+  note: frozen data/fred/CPIAUCNS/2026-09-30
+- key: cite_us_cpi_1947-03
+  as_of: '2026-09-30'
+  locator: CPIAUCNS, March 1947 over March 1946
+  source: FRED CPIAUCNS (consumer prices, all urban consumers, not seasonally adjusted; the BLS's)
+  unit: percent, twelve-month change (the highest of the period)
+  url: https://fred.stlouisfed.org/series/CPIAUCNS
+  value: 19.67
+  fmt: '{:.1f}%'
+  measure: rise in US consumer prices over twelve months
+  period: March 1946 to March 1947
+  population: the United States
+  note: frozen data/fred/CPIAUCNS/2026-09-30
+- key: cite_us_wholesale_1946-47
+  as_of: '1991-01-01'
+  locator: p. 183
+  source: Eichengreen and Garber 1991, 'Before the Accord'
+  unit: percent, rise over the twelve months from July 1946
+  url: https://www.nber.org/system/files/chapters/c11485/c11485.pdf
+  value: 25
+  fmt: '{:.0f}%'
+  measure: rise in US wholesale prices after price control ended
+  period: July 1946 to July 1947
+  population: the United States
+- key: cite_zimbabwe_qf-losses-2006
+  as_of: '2021-06-01'
+  locator: Box 1, p. 11 (citing Munoz 2007)
+  source: World Bank, Zimbabwe Economic Update, Issue 3 (June 2021)
+  unit: percent of GDP
+  url: https://openknowledge.worldbank.org/server/api/core/bitstreams/b530bddd-1580-5a02-b525-44dc36828ac4/content
+  value: 75
+  fmt: '{:.0f}%'
+  measure: the central bank's realized quasi-fiscal losses, as a share of GDP
+  period: '2006'
+  population: Zimbabwe
+- key: cite_turkey_policy-rate-aug-2021
+  as_of: '2026-10-10'
+  locator: Türkiye, monthly, August 2021
+  source: BIS, central bank policy rates (WS_CBPOL)
+  unit: percent, policy rate
+  url: https://data.bis.org/topics/CBPOL
+  value: 19
+  fmt: '{:.0f}%'
+  measure: the central bank's policy rate
+  period: August 2021
+  population: Turkey
+  note: frozen data/bis/WS_CBPOL/2026-10-10
+- key: cite_turkey_policy-rate-dec-2021
+  as_of: '2026-10-10'
+  locator: Türkiye, monthly, December 2021
+  source: BIS, central bank policy rates (WS_CBPOL)
+  unit: percent, policy rate
+  url: https://data.bis.org/topics/CBPOL
+  value: 14
+  fmt: '{:.0f}%'
+  measure: the central bank's policy rate
+  period: December 2021
+  population: Turkey
+  note: frozen data/bis/WS_CBPOL/2026-10-10
+- key: cite_turkey_prices-2021-09
+  as_of: '2026-09-30'
+  locator: TR, monthly, September 2021, year-on-year change
+  source: BIS WS_LONG_CPI
+  unit: percent, year-on-year change
+  url: https://data.bis.org/topics/CPI
+  value: 19.58
+  fmt: '{:.1f}%'
+  measure: rise in consumer prices over twelve months
+  period: September 2020 to September 2021
+  population: Turkey
+  note: frozen data/bis/WS_LONG_CPI/2026-09-30
+- key: cite_italy_1974-08
+  as_of: '2026-09-30'
+  locator: frame b (data/reconstructed/ft001-b/series.csv), ITA, 1974-08, from IMF IFS's consumer price index
+  source: IMF International Financial Statistics (PCPI_IX, Italy), through DBnomics
+  unit: percent, twelve-month change of the consumer price index
+  value: 20.2572
+  fmt: '{:.0f}%'
+  measure: rise in Italy's consumer prices over twelve months
+  period: August 1973 to August 1974
+  population: Italy
+- key: cite_terra_lfg-btc
+  as_of: '2023-05-01'
+  locator: p. 12
+  source: Liu, Makarov and Schoar 2023, NBER w31160
+  unit: bitcoin held by the Luna Foundation Guard on 6 May 2022
+  url: https://www.nber.org/papers/w31160
+  value: 80300
+  fmt: '{:,.0f}'
+  measure: bitcoin held in reserve by TerraUSD's backers
+  period: 6 May 2022
+  population: TerraUSD
+- key: cite_terra_defence-bn
+  as_of: '2023-05-01'
+  locator: p. 28
+  source: Liu, Makarov and Schoar 2023, NBER w31160
+  unit: billions of dollars spent defending the peg, 7 to 9 May 2022
+  url: https://www.nber.org/papers/w31160
+  value: 2.5
+  fmt: '${:.1f} billion'
+  measure: what TerraUSD's backers spent defending the peg
+  period: May 2022
+  population: TerraUSD
+- key: cite_boj_jgb-share-2026
+  value: 46.70
+  fmt: '{:.0f}%'
+  unit: '% of Japan''s central government securities and FILP bonds'
+  as_of: '2026-09-17'
+  source: Bank of Japan, Basic Figures, Flow of Funds for the Second Quarter of 2026 (Preliminary)
+  locator: Chart 6-2 (2), p. 11, 'Central bank', end of June 2026
+  url: https://www.boj.or.jp/en/statistics/sj/sjexp.pdf
+  measure: the Bank of Japan's share of Japan's central government securities and FILP bonds
+  period: end of June 2026
+  population: Japan
+- key: cite_boj_jgb-share-peak
+  value: 53.86
+  fmt: '{:.0f}%'
+  unit: '% of Japan''s central government securities and FILP bonds'
+  as_of: '2026-09-17'
+  source: Bank of Japan, Basic Figures, Flow of Funds for the Second Quarter of 2026 (Preliminary)
+  locator: Chart 6-2 (2), p. 11, 'Central bank', end of September 2023
+  url: https://www.boj.or.jp/en/statistics/sj/sjexp.pdf
+  measure: Bank of Japan's share of state bonds and FILP bonds, peak
+  period: end of September 2023
+  population: Japan
+- key: cite_ecb_loss-2024
+  value: 7.944
+  fmt: '€{:.1f} billion'
+  unit: billions of euros
+  as_of: '2026-02-26'
+  source: ECB, press release of 26 February 2026 on its 2025 financial statements
+  locator: first paragraph
+  url: https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260226~15dbe4febc.en.html
+  measure: the ECB's loss for the year
+  period: '2024'
+  population: the European Central Bank
+- key: cite_ecb_loss-2025
+  value: 1.254
+  fmt: '€{:.1f} billion'
+  unit: billions of euros
+  as_of: '2026-02-26'
+  source: ECB, press release of 26 February 2026 on its 2025 financial statements
+  locator: first paragraph
+  url: https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260226~15dbe4febc.en.html
+  measure: the ECB's loss for the year
+  period: '2025'
+  population: the European Central Bank
+- key: cite_shed_crypto-invest
+  value: 7
+  fmt: '{:.0f}%'
+  unit: '% of US adults'
+  as_of: '2025-05-01'
+  source: Federal Reserve, Economic Well-Being of U.S. Households in 2024 (May 2025)
+  locator: p. 53
+  url: https://www.federalreserve.gov/publications/files/2024-report-economic-well-being-us-households-202505.pdf
+  measure: share of adults who bought or held cryptocurrency as an investment
+  period: '2024'
+  population: US adults
+- key: cite_shed_crypto-pay
+  value: 2
+  fmt: '{:.0f}%'
+  unit: '% of US adults'
+  as_of: '2025-05-01'
+  source: Federal Reserve, Economic Well-Being of U.S. Households in 2024 (May 2025)
+  locator: p. 54
+  url: https://www.federalreserve.gov/publications/files/2024-report-economic-well-being-us-households-202505.pdf
+  measure: share of adults who used cryptocurrency to buy something or make a payment
+  period: '2024'
+  population: US adults
+- key: cite_boj_purchases-2026
+  value: 3
+  fmt: '¥{:.0f} trillion'
+  unit: trillions of yen a month
+  as_of: '2024-07-31'
+  source: Bank of Japan, Statement on Monetary Policy, 31 July 2024
+  locator: p. 1
+  url: https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2024/k240731a.pdf
+  measure: the Bank of Japan's planned monthly outright purchases of government bonds
+  period: January-March 2026
+  population: Japan
+- key: cite_bolivia_1986
+  value: 25
+  fmt: '{:.0f}%'
+  unit: percent a year
+  as_of: '1986-11-01'
+  source: Sachs, 'The Bolivian Hyperinflation and Stabilization', NBER WP 2073 (November 1986)
+  locator: abstract (PDF p. 2)
+  url: https://www.nber.org/system/files/working_papers/w2073/w2073.pdf
+  measure: Bolivia's inflation at an annual rate, after the stabilisation
+  period: February to October 1986
+  population: Bolivia

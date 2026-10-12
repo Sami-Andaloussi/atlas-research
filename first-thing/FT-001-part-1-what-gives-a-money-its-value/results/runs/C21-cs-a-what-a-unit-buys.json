@@ -1,0 +1,2767 @@
+{
+  "card": "C21-cs-a-what-a-unit-buys",
+  "card_hash": "3f8540426f0bb90b4da1dc32691b923eb27fd01bc69afeded0b0e9399e2e5249",
+  "run_at": "2026-10-10T17:41:53+00:00",
+  "result": {
+    "monies": {
+      "USD": {
+        "area": "US",
+        "first_reading": 1913,
+        "last_reading": 2025,
+        "periods": [
+          {
+            "period": [
+              1914,
+              1945
+            ],
+            "base": 1913,
+            "end": 1945,
+            "yearly_loss_pct": 1.9,
+            "direction": "loss",
+            "computable": true,
+            "price_ratio": 1.8204049213621225,
+            "value_2025_of_one_base_unit": 32.574335491457774
+          },
+          {
+            "period": [
+              1946,
+              1971
+            ],
+            "base": 1945,
+            "end": 1971,
+            "yearly_loss_pct": 3.1,
+            "direction": "loss",
+            "computable": true,
+            "price_ratio": 2.250578781276065,
+            "value_2025_of_one_base_unit": 17.89400539913062
+          },
+          {
+            "period": [
+              1972,
+              1991
+            ],
+            "base": 1971,
+            "end": 1991,
+            "yearly_loss_pct": 5.9,
+            "direction": "loss",
+            "computable": true,
+            "price_ratio": 3.363449370096477,
+            "value_2025_of_one_base_unit": 7.950846043694068
+          },
+          {
+            "period": [
+              1992,
+              2025
+            ],
+            "base": 1991,
+            "end": 2025,
+            "yearly_loss_pct": 2.5,
+            "direction": "loss",
+            "computable": true,
+            "price_ratio": 2.363896455342215,
+            "value_2025_of_one_base_unit": 2.363896455342215
+          }
+        ],
+        "grid": [
+          {
+            "year": 1913,
+            "today_units": 32.574335491457774
+          },
+          {
+            "year": 1914,
+            "today_units": 32.14073025440435
+          },
+          {
+            "year": 1915,
+            "today_units": 31.84926601764146
+          },
+          {
+            "year": 1916,
+            "today_units": 29.58128675053355
+          },
+          {
+            "year": 1917,
+            "today_units": 25.102768667336562
+          },
+          {
+            "year": 1918,
+            "today_units": 21.40341248035145
+          },
+          {
+            "year": 1919,
+            "today_units": 18.573633669545544
+          },
+          {
+            "year": 1920,
+            "today_units": 16.063684211385272
+          },
+          {
+            "year": 1921,
+            "today_units": 18.03602313660573
+          },
+          {
+            "year": 1922,
+            "today_units": 19.22047662113191
+          },
+          {
+            "year": 1923,
+            "today_units": 18.8822880097607
+          },
+          {
+            "year": 1924,
+            "today_units": 18.799591647296335
+          },
+          {
+            "year": 1925,
+            "today_units": 18.35304517770208
+          },
+          {
+            "year": 1926,
+            "today_units": 18.188868944956386
+          },
+          {
+            "year": 1927,
+            "today_units": 18.546883290924
+          },
+          {
+            "year": 1928,
+            "today_units": 18.763068969163246
+          },
+          {
+            "year": 1929,
+            "today_units": 18.763068969163246
+          },
+          {
+            "year": 1930,
+            "today_units": 19.278023101085957
+          },
+          {
+            "year": 1931,
+            "today_units": 21.16885496415239
+          },
+          {
+            "year": 1932,
+            "today_units": 23.599973817357366
+          },
+          {
+            "year": 1933,
+            "today_units": 24.892498700097043
+          },
+          {
+            "year": 1934,
+            "today_units": 24.055517475044322
+          },
+          {
+            "year": 1935,
+            "today_units": 23.45668527989509
+          },
+          {
+            "year": 1936,
+            "today_units": 23.217044277481715
+          },
+          {
+            "year": 1937,
+            "today_units": 22.383059134226173
+          },
+          {
+            "year": 1938,
+            "today_units": 22.84633949933941
+          },
+          {
+            "year": 1939,
+            "today_units": 23.147487922417504
+          },
+          {
+            "year": 1940,
+            "today_units": 22.98225025508993
+          },
+          {
+            "year": 1941,
+            "today_units": 21.86370102303199
+          },
+          {
+            "year": 1942,
+            "today_units": 19.71079526885441
+          },
+          {
+            "year": 1943,
+            "today_units": 18.60046132436805
+          },
+          {
+            "year": 1944,
+            "today_units": 18.300881014458227
+          },
+          {
+            "year": 1945,
+            "today_units": 17.89400539913062
+          },
+          {
+            "year": 1946,
+            "today_units": 16.495797971938657
+          },
+          {
+            "year": 1947,
+            "today_units": 14.420739290691085
+          },
+          {
+            "year": 1948,
+            "today_units": 13.391042712785048
+          },
+          {
+            "year": 1949,
+            "today_units": 13.522282234678583
+          },
+          {
+            "year": 1950,
+            "today_units": 13.377133527438978
+          },
+          {
+            "year": 1951,
+            "today_units": 12.40229814669491
+          },
+          {
+            "year": 1952,
+            "today_units": 12.125913625873752
+          },
+          {
+            "year": 1953,
+            "today_units": 12.027758737522161
+          },
+          {
+            "year": 1954,
+            "today_units": 11.99042821633282
+          },
+          {
+            "year": 1955,
+            "today_units": 12.024014934786136
+          },
+          {
+            "year": 1956,
+            "today_units": 11.84339686890479
+          },
+          {
+            "year": 1957,
+            "today_units": 11.460444797507623
+          },
+          {
+            "year": 1958,
+            "today_units": 11.15598057425808
+          },
+          {
+            "year": 1959,
+            "today_units": 11.044356977880868
+          },
+          {
+            "year": 1960,
+            "today_units": 10.885646462844928
+          },
+          {
+            "year": 1961,
+            "today_units": 10.770325957647215
+          },
+          {
+            "year": 1962,
+            "today_units": 10.642743779741599
+          },
+          {
+            "year": 1963,
+            "today_units": 10.51242414338902
+          },
+          {
+            "year": 1964,
+            "today_units": 10.379677896982235
+          },
+          {
+            "year": 1965,
+            "today_units": 10.217709728620381
+          },
+          {
+            "year": 1966,
+            "today_units": 9.918654739417013
+          },
+          {
+            "year": 1967,
+            "today_units": 9.651051735664046
+          },
+          {
+            "year": 1968,
+            "today_units": 9.255668649080631
+          },
+          {
+            "year": 1969,
+            "today_units": 8.776274519058328
+          },
+          {
+            "year": 1970,
+            "today_units": 8.292157134753525
+          },
+          {
+            "year": 1971,
+            "today_units": 7.950846043694068
+          },
+          {
+            "year": 1972,
+            "today_units": 7.6989158669922295
+          },
+          {
+            "year": 1973,
+            "today_units": 7.250968321103808
+          },
+          {
+            "year": 1974,
+            "today_units": 6.529180203464904
+          },
+          {
+            "year": 1975,
+            "today_units": 5.982217408478784
+          },
+          {
+            "year": 1976,
+            "today_units": 5.6572206263629345
+          },
+          {
+            "year": 1977,
+            "today_units": 5.311860206645014
+          },
+          {
+            "year": 1978,
+            "today_units": 4.935252959368037
+          },
+          {
+            "year": 1979,
+            "today_units": 4.436004128377257
+          },
+          {
+            "year": 1980,
+            "today_units": 3.9066801745093174
+          },
+          {
+            "year": 1981,
+            "today_units": 3.54075334367753
+          },
+          {
+            "year": 1982,
+            "today_units": 3.336196910490228
+          },
+          {
+            "year": 1983,
+            "today_units": 3.2323594141356664
+          },
+          {
+            "year": 1984,
+            "today_units": 3.0990823281300033
+          },
+          {
+            "year": 1985,
+            "today_units": 2.99296249019029
+          },
+          {
+            "year": 1986,
+            "today_units": 2.937212788181654
+          },
+          {
+            "year": 1987,
+            "today_units": 2.8333817069505285
+          },
+          {
+            "year": 1988,
+            "today_units": 2.72237050283005
+          },
+          {
+            "year": 1989,
+            "today_units": 2.597012627928776
+          },
+          {
+            "year": 1990,
+            "today_units": 2.4640066482242253
+          },
+          {
+            "year": 1991,
+            "today_units": 2.363896455342215
+          },
+          {
+            "year": 1992,
+            "today_units": 2.2944031304512738
+          },
+          {
+            "year": 1993,
+            "today_units": 2.228621842707959
+          },
+          {
+            "year": 1994,
+            "today_units": 2.1719885424540637
+          },
+          {
+            "year": 1995,
+            "today_units": 2.112717932676443
+          },
+          {
+            "year": 1996,
+            "today_units": 2.0525533770596356
+          },
+          {
+            "year": 1997,
+            "today_units": 2.005667101890137
+          },
+          {
+            "year": 1998,
+            "today_units": 1.9750094551656199
+          },
+          {
+            "year": 1999,
+            "today_units": 1.9327209993645593
+          },
+          {
+            "year": 2000,
+            "today_units": 1.8695876792108812
+          },
+          {
+            "year": 2001,
+            "today_units": 1.818202190354374
+          },
+          {
+            "year": 2002,
+            "today_units": 1.7898151431243565
+          },
+          {
+            "year": 2003,
+            "today_units": 1.7500865159271866
+          },
+          {
+            "year": 2004,
+            "today_units": 1.7044542475845363
+          },
+          {
+            "year": 2005,
+            "today_units": 1.6485240060878603
+          },
+          {
+            "year": 2006,
+            "today_units": 1.597005496123541
+          },
+          {
+            "year": 2007,
+            "today_units": 1.5527117210732673
+          },
+          {
+            "year": 2008,
+            "today_units": 1.4953054451654664
+          },
+          {
+            "year": 2009,
+            "today_units": 1.500640911621746
+          },
+          {
+            "year": 2010,
+            "today_units": 1.47642687
+          },
+          {
+            "year": 2011,
+            "today_units": 1.4312447350801996
+          },
+          {
+            "year": 2012,
+            "today_units": 1.4022279100293988
+          },
+          {
+            "year": 2013,
+            "today_units": 1.3819841593463509
+          },
+          {
+            "year": 2014,
+            "today_units": 1.359923176239336
+          },
+          {
+            "year": 2015,
+            "today_units": 1.3583118478204688
+          },
+          {
+            "year": 2016,
+            "today_units": 1.341389107793417
+          },
+          {
+            "year": 2017,
+            "today_units": 1.3134119919716083
+          },
+          {
+            "year": 2018,
+            "today_units": 1.2820957347359898
+          },
+          {
+            "year": 2019,
+            "today_units": 1.2592750284992786
+          },
+          {
+            "year": 2020,
+            "today_units": 1.2439300913901266
+          },
+          {
+            "year": 2021,
+            "today_units": 1.1881141673565956
+          },
+          {
+            "year": 2022,
+            "today_units": 1.1000771947463164
+          },
+          {
+            "year": 2023,
+            "today_units": 1.0565845927779964
+          },
+          {
+            "year": 2024,
+            "today_units": 1.0263132288227552
+          },
+          {
+            "year": 2025,
+            "today_units": 1.0
+          }
+        ]
+      },
+      "GBP": {
+        "area": "GB",
+        "first_reading": 1913,
+        "last_reading": 2025,
+        "periods": [
+          {
+            "period": [
+              1914,
+              1945
+            ],
+            "base": 1913,
+            "end": 1945,
+            "yearly_loss_pct": 3.1,
+            "direction": "loss",
+            "computable": true,
+            "price_ratio": 2.7365310865357637,
+            "value_2025_of_one_base_unit": 111.31927717778433
+          },
+          {
+            "period": [
+              1946,
+              1971
+            ],
+            "base": 1945,
+            "end": 1971,
+            "yearly_loss_pct": 4.3,
+            "direction": "loss",
+            "computable": true,
+            "price_ratio": 3.1148666964827765,
+            "value_2025_of_one_base_unit": 40.678974094427666
+          },
+          {
+            "period": [
+              1972,
+              1991
+            ],
+            "base": 1971,
+            "end": 1991,
+            "yearly_loss_pct": 8.3,
+            "direction": "loss",
+            "computable": true,
+            "price_ratio": 5.668554488029819,
+            "value_2025_of_one_base_unit": 13.059619578700195
+          },
+          {
+            "period": [
+              1992,
+              2025
+            ],
+            "base": 1991,
+            "end": 2025,
+            "yearly_loss_pct": 2.4,
+            "direction": "loss",
+            "computable": true,
+            "price_ratio": 2.3038712261261582,
+            "value_2025_of_one_base_unit": 2.3038712261261582
+          }
+        ],
+        "grid": [
+          {
+            "year": 1913,
+            "today_units": 111.31927717778433
+          },
+          {
+            "year": 1914,
+            "today_units": 108.55599393211376
+          },
+          {
+            "year": 1915,
+            "today_units": 96.49427701112289
+          },
+          {
+            "year": 1916,
+            "today_units": 81.68873564116589
+          },
+          {
+            "year": 1917,
+            "today_units": 65.26208666748218
+          },
+          {
+            "year": 1918,
+            "today_units": 53.49734994000712
+          },
+          {
+            "year": 1919,
+            "today_units": 48.56684173534274
+          },
+          {
+            "year": 1920,
+            "today_units": 42.099158614763326
+          },
+          {
+            "year": 1921,
+            "today_units": 46.02342328406692
+          },
+          {
+            "year": 1922,
+            "today_units": 53.5333719253276
+          },
+          {
+            "year": 1923,
+            "today_units": 56.94635337281774
+          },
+          {
+            "year": 1924,
+            "today_units": 57.35038197169232
+          },
+          {
+            "year": 1925,
+            "today_units": 57.17354475533959
+          },
+          {
+            "year": 1926,
+            "today_units": 57.6477116952499
+          },
+          {
+            "year": 1927,
+            "today_units": 59.05291999499224
+          },
+          {
+            "year": 1928,
+            "today_units": 59.24608504116957
+          },
+          {
+            "year": 1929,
+            "today_units": 59.774682697259706
+          },
+          {
+            "year": 1930,
+            "today_units": 61.49589225460747
+          },
+          {
+            "year": 1931,
+            "today_units": 64.25545838561115
+          },
+          {
+            "year": 1932,
+            "today_units": 65.97469024299551
+          },
+          {
+            "year": 1933,
+            "today_units": 67.39802878625508
+          },
+          {
+            "year": 1934,
+            "today_units": 67.39990790581126
+          },
+          {
+            "year": 1935,
+            "today_units": 66.93177422236603
+          },
+          {
+            "year": 1936,
+            "today_units": 66.4636738120062
+          },
+          {
+            "year": 1937,
+            "today_units": 64.28333094423427
+          },
+          {
+            "year": 1938,
+            "today_units": 63.264248626271396
+          },
+          {
+            "year": 1939,
+            "today_units": 61.55363264805965
+          },
+          {
+            "year": 1940,
+            "today_units": 52.70055744132218
+          },
+          {
+            "year": 1941,
+            "today_units": 47.56076125563096
+          },
+          {
+            "year": 1942,
+            "today_units": 44.40956060001969
+          },
+          {
+            "year": 1943,
+            "today_units": 42.94687479788178
+          },
+          {
+            "year": 1944,
+            "today_units": 41.81467178232298
+          },
+          {
+            "year": 1945,
+            "today_units": 40.678974094427666
+          },
+          {
+            "year": 1946,
+            "today_units": 39.45762105401145
+          },
+          {
+            "year": 1947,
+            "today_units": 36.876903047856
+          },
+          {
+            "year": 1948,
+            "today_units": 34.23405857422102
+          },
+          {
+            "year": 1949,
+            "today_units": 33.30408029408099
+          },
+          {
+            "year": 1950,
+            "today_units": 32.04826767487827
+          },
+          {
+            "year": 1951,
+            "today_units": 29.38866082837665
+          },
+          {
+            "year": 1952,
+            "today_units": 26.560000432610003
+          },
+          {
+            "year": 1953,
+            "today_units": 25.630881697101586
+          },
+          {
+            "year": 1954,
+            "today_units": 25.05660612954915
+          },
+          {
+            "year": 1955,
+            "today_units": 23.84736303110772
+          },
+          {
+            "year": 1956,
+            "today_units": 22.67663038021697
+          },
+          {
+            "year": 1957,
+            "today_units": 21.837617842286576
+          },
+          {
+            "year": 1958,
+            "today_units": 21.226774693750542
+          },
+          {
+            "year": 1959,
+            "today_units": 21.100300258279947
+          },
+          {
+            "year": 1960,
+            "today_units": 20.93398985144114
+          },
+          {
+            "year": 1961,
+            "today_units": 20.274810765872555
+          },
+          {
+            "year": 1962,
+            "today_units": 19.457876802604662
+          },
+          {
+            "year": 1963,
+            "today_units": 19.056503198031617
+          },
+          {
+            "year": 1964,
+            "today_units": 18.46046975530237
+          },
+          {
+            "year": 1965,
+            "today_units": 17.706666955073334
+          },
+          {
+            "year": 1966,
+            "today_units": 17.02564220227908
+          },
+          {
+            "year": 1967,
+            "today_units": 16.652038354773147
+          },
+          {
+            "year": 1968,
+            "today_units": 16.012057358846118
+          },
+          {
+            "year": 1969,
+            "today_units": 15.22063130920362
+          },
+          {
+            "year": 1970,
+            "today_units": 14.289173717208135
+          },
+          {
+            "year": 1971,
+            "today_units": 13.059619578700195
+          },
+          {
+            "year": 1972,
+            "today_units": 12.183486859124157
+          },
+          {
+            "year": 1973,
+            "today_units": 11.14210836102809
+          },
+          {
+            "year": 1974,
+            "today_units": 9.627549281842656
+          },
+          {
+            "year": 1975,
+            "today_units": 7.846381451659119
+          },
+          {
+            "year": 1976,
+            "today_units": 6.784163828254462
+          },
+          {
+            "year": 1977,
+            "today_units": 5.902222543521845
+          },
+          {
+            "year": 1978,
+            "today_units": 5.491858560927751
+          },
+          {
+            "year": 1979,
+            "today_units": 4.93107472722256
+          },
+          {
+            "year": 1980,
+            "today_units": 4.282144528774255
+          },
+          {
+            "year": 1981,
+            "today_units": 3.8298487493775233
+          },
+          {
+            "year": 1982,
+            "today_units": 3.54251432886018
+          },
+          {
+            "year": 1983,
+            "today_units": 3.3759137111241
+          },
+          {
+            "year": 1984,
+            "today_units": 3.238037329370317
+          },
+          {
+            "year": 1985,
+            "today_units": 3.0861294229787903
+          },
+          {
+            "year": 1986,
+            "today_units": 2.986786775563158
+          },
+          {
+            "year": 1987,
+            "today_units": 2.8940344606157056
+          },
+          {
+            "year": 1988,
+            "today_units": 2.789181895301832
+          },
+          {
+            "year": 1989,
+            "today_units": 2.6498563571642477
+          },
+          {
+            "year": 1990,
+            "today_units": 2.4774694212859436
+          },
+          {
+            "year": 1991,
+            "today_units": 2.3038712261261582
+          },
+          {
+            "year": 1992,
+            "today_units": 2.210330127148341
+          },
+          {
+            "year": 1993,
+            "today_units": 2.1552440217055535
+          },
+          {
+            "year": 1994,
+            "today_units": 2.1132747778003393
+          },
+          {
+            "year": 1995,
+            "today_units": 2.0595385721884676
+          },
+          {
+            "year": 1996,
+            "today_units": 2.0106563249590335
+          },
+          {
+            "year": 1997,
+            "today_units": 1.9747859139589725
+          },
+          {
+            "year": 1998,
+            "today_units": 1.9444899714117063
+          },
+          {
+            "year": 1999,
+            "today_units": 1.9186503360366052
+          },
+          {
+            "year": 2000,
+            "today_units": 1.9034735767344706
+          },
+          {
+            "year": 2001,
+            "today_units": 1.8801947738307243
+          },
+          {
+            "year": 2002,
+            "today_units": 1.8572706790693372
+          },
+          {
+            "year": 2003,
+            "today_units": 1.832064426008698
+          },
+          {
+            "year": 2004,
+            "today_units": 1.8077299867596213
+          },
+          {
+            "year": 2005,
+            "today_units": 1.771660266744021
+          },
+          {
+            "year": 2006,
+            "today_units": 1.73102585859301
+          },
+          {
+            "year": 2007,
+            "today_units": 1.6918687613961887
+          },
+          {
+            "year": 2008,
+            "today_units": 1.6331267758480619
+          },
+          {
+            "year": 2009,
+            "today_units": 1.5982288884055982
+          },
+          {
+            "year": 2010,
+            "today_units": 1.5471487099999999
+          },
+          {
+            "year": 2011,
+            "today_units": 1.4810454030610773
+          },
+          {
+            "year": 2012,
+            "today_units": 1.440694134769727
+          },
+          {
+            "year": 2013,
+            "today_units": 1.404618898108761
+          },
+          {
+            "year": 2014,
+            "today_units": 1.3842434270615838
+          },
+          {
+            "year": 2015,
+            "today_units": 1.383551370026859
+          },
+          {
+            "year": 2016,
+            "today_units": 1.3747309080737204
+          },
+          {
+            "year": 2017,
+            "today_units": 1.3387083754603055
+          },
+          {
+            "year": 2018,
+            "today_units": 1.3063729309542045
+          },
+          {
+            "year": 2019,
+            "today_units": 1.283549776241202
+          },
+          {
+            "year": 2020,
+            "today_units": 1.2723371654605322
+          },
+          {
+            "year": 2021,
+            "today_units": 1.2403077581978346
+          },
+          {
+            "year": 2022,
+            "today_units": 1.1373381740615285
+          },
+          {
+            "year": 2023,
+            "today_units": 1.0599425464965013
+          },
+          {
+            "year": 2024,
+            "today_units": 1.033679879453644
+          },
+          {
+            "year": 2025,
+            "today_units": 1.0
+          }
+        ]
+      },
+      "CHF": {
+        "area": "CH",
+        "first_reading": 1921,
+        "last_reading": 2025,
+        "periods": [
+          {
+            "period": [
+              1914,
+              1945
+            ],
+            "base": 1921,
+            "end": 1945,
+            "yearly_loss_pct": 0.2,
+            "direction": "loss",
+            "computable": true,
+            "price_ratio": 1.0433213846643983,
+            "value_2025_of_one_base_unit": 5.1634666841270995
+          },
+          {
+            "period": [
+              1946,
+              1971
+            ],
+            "base": 1945,
+            "end": 1971,
+            "yearly_loss_pct": 1.9,
+            "direction": "loss",
+            "computable": true,
+            "price_ratio": 1.6660187151442123,
+            "value_2025_of_one_base_unit": 4.949066280078228
+          },
+          {
+            "period": [
+              1972,
+              1991
+            ],
+            "base": 1971,
+            "end": 1991,
+            "yearly_loss_pct": 4.0,
+            "direction": "loss",
+            "computable": true,
+            "price_ratio": 2.2529468756566664,
+            "value_2025_of_one_base_unit": 2.970594648842124
+          },
+          {
+            "period": [
+              1992,
+              2025
+            ],
+            "base": 1991,
+            "end": 2025,
+            "yearly_loss_pct": 0.8,
+            "direction": "loss",
+            "computable": true,
+            "price_ratio": 1.3185373702947545,
+            "value_2025_of_one_base_unit": 1.3185373702947545
+          }
+        ],
+        "grid": [
+          {
+            "year": 1921,
+            "today_units": 5.1634666841270995
+          },
+          {
+            "year": 1922,
+            "today_units": 6.3073559976437545
+          },
+          {
+            "year": 1923,
+            "today_units": 6.311835827278657
+          },
+          {
+            "year": 1924,
+            "today_units": 6.12671241911046
+          },
+          {
+            "year": 1925,
+            "today_units": 6.146742724213718
+          },
+          {
+            "year": 1926,
+            "today_units": 6.376709850101575
+          },
+          {
+            "year": 1927,
+            "today_units": 6.450639621903338
+          },
+          {
+            "year": 1928,
+            "today_units": 6.421587770300011
+          },
+          {
+            "year": 1929,
+            "today_units": 6.414299848735374
+          },
+          {
+            "year": 1930,
+            "today_units": 6.526639916204642
+          },
+          {
+            "year": 1931,
+            "today_units": 6.8859618438780545
+          },
+          {
+            "year": 1932,
+            "today_units": 7.467825284884339
+          },
+          {
+            "year": 1933,
+            "today_units": 7.866489870643466
+          },
+          {
+            "year": 1934,
+            "today_units": 7.985978890419584
+          },
+          {
+            "year": 1935,
+            "today_units": 8.06855969960817
+          },
+          {
+            "year": 1936,
+            "today_units": 7.928821731238659
+          },
+          {
+            "year": 1937,
+            "today_units": 7.562523683877744
+          },
+          {
+            "year": 1938,
+            "today_units": 7.549616553601979
+          },
+          {
+            "year": 1939,
+            "today_units": 7.492193185884484
+          },
+          {
+            "year": 1940,
+            "today_units": 6.857796444176146
+          },
+          {
+            "year": 1941,
+            "today_units": 5.945293196939811
+          },
+          {
+            "year": 1942,
+            "today_units": 5.346355960904695
+          },
+          {
+            "year": 1943,
+            "today_units": 5.087463676018029
+          },
+          {
+            "year": 1944,
+            "today_units": 4.982848611501048
+          },
+          {
+            "year": 1945,
+            "today_units": 4.949066280078228
+          },
+          {
+            "year": 1946,
+            "today_units": 4.976463051060927
+          },
+          {
+            "year": 1947,
+            "today_units": 4.762527911211969
+          },
+          {
+            "year": 1948,
+            "today_units": 4.626150173281443
+          },
+          {
+            "year": 1949,
+            "today_units": 4.664314234739414
+          },
+          {
+            "year": 1950,
+            "today_units": 5.06525887695359
+          },
+          {
+            "year": 1951,
+            "today_units": 4.834132861618964
+          },
+          {
+            "year": 1952,
+            "today_units": 4.715134344653339
+          },
+          {
+            "year": 1953,
+            "today_units": 4.748461362693221
+          },
+          {
+            "year": 1954,
+            "today_units": 4.713752898031146
+          },
+          {
+            "year": 1955,
+            "today_units": 4.670515360211161
+          },
+          {
+            "year": 1956,
+            "today_units": 4.600966467700145
+          },
+          {
+            "year": 1957,
+            "today_units": 4.512327597927657
+          },
+          {
+            "year": 1958,
+            "today_units": 4.430886253161721
+          },
+          {
+            "year": 1959,
+            "today_units": 4.459689444865468
+          },
+          {
+            "year": 1960,
+            "today_units": 4.396449938999215
+          },
+          {
+            "year": 1961,
+            "today_units": 4.316785613982412
+          },
+          {
+            "year": 1962,
+            "today_units": 4.138197681572277
+          },
+          {
+            "year": 1963,
+            "today_units": 4.000589609203507
+          },
+          {
+            "year": 1964,
+            "today_units": 3.880999785698821
+          },
+          {
+            "year": 1965,
+            "today_units": 3.752861134049367
+          },
+          {
+            "year": 1966,
+            "today_units": 3.581917310153328
+          },
+          {
+            "year": 1967,
+            "today_units": 3.443079305223389
+          },
+          {
+            "year": 1968,
+            "today_units": 3.3619774633098176
+          },
+          {
+            "year": 1969,
+            "today_units": 3.2803324984221827
+          },
+          {
+            "year": 1970,
+            "today_units": 3.1658571918320093
+          },
+          {
+            "year": 1971,
+            "today_units": 2.970594648842124
+          },
+          {
+            "year": 1972,
+            "today_units": 2.7851019393399556
+          },
+          {
+            "year": 1973,
+            "today_units": 2.560896864524986
+          },
+          {
+            "year": 1974,
+            "today_units": 2.333034447694067
+          },
+          {
+            "year": 1975,
+            "today_units": 2.186607747389441
+          },
+          {
+            "year": 1976,
+            "today_units": 2.149720316848991
+          },
+          {
+            "year": 1977,
+            "today_units": 2.122219752895308
+          },
+          {
+            "year": 1978,
+            "today_units": 2.1004296884666687
+          },
+          {
+            "year": 1979,
+            "today_units": 2.026921504724161
+          },
+          {
+            "year": 1980,
+            "today_units": 1.9483908728970862
+          },
+          {
+            "year": 1981,
+            "today_units": 1.8297047846974954
+          },
+          {
+            "year": 1982,
+            "today_units": 1.731738250164272
+          },
+          {
+            "year": 1983,
+            "today_units": 1.6822945484291476
+          },
+          {
+            "year": 1984,
+            "today_units": 1.6343838978723482
+          },
+          {
+            "year": 1985,
+            "today_units": 1.5801006068581112
+          },
+          {
+            "year": 1986,
+            "today_units": 1.5683332681543165
+          },
+          {
+            "year": 1987,
+            "today_units": 1.5460655395032465
+          },
+          {
+            "year": 1988,
+            "today_units": 1.5176475577718094
+          },
+          {
+            "year": 1989,
+            "today_units": 1.4712262503679563
+          },
+          {
+            "year": 1990,
+            "today_units": 1.3957979338090183
+          },
+          {
+            "year": 1991,
+            "today_units": 1.3185373702947545
+          },
+          {
+            "year": 1992,
+            "today_units": 1.267373029571738
+          },
+          {
+            "year": 1993,
+            "today_units": 1.2269736398284252
+          },
+          {
+            "year": 1994,
+            "today_units": 1.2166063220079715
+          },
+          {
+            "year": 1995,
+            "today_units": 1.195096728567405
+          },
+          {
+            "year": 1996,
+            "today_units": 1.1854748943164122
+          },
+          {
+            "year": 1997,
+            "today_units": 1.1793399265376743
+          },
+          {
+            "year": 1998,
+            "today_units": 1.1791283871906342
+          },
+          {
+            "year": 1999,
+            "today_units": 1.1696949814835373
+          },
+          {
+            "year": 2000,
+            "today_units": 1.1517450760586427
+          },
+          {
+            "year": 2001,
+            "today_units": 1.140465723852007
+          },
+          {
+            "year": 2002,
+            "today_units": 1.133182354590022
+          },
+          {
+            "year": 2003,
+            "today_units": 1.125995526066522
+          },
+          {
+            "year": 2004,
+            "today_units": 1.1170268641097028
+          },
+          {
+            "year": 2005,
+            "today_units": 1.1040874053749057
+          },
+          {
+            "year": 2006,
+            "today_units": 1.0925121530244888
+          },
+          {
+            "year": 2007,
+            "today_units": 1.084569568218408
+          },
+          {
+            "year": 2008,
+            "today_units": 1.0588803712662798
+          },
+          {
+            "year": 2009,
+            "today_units": 1.0639927320813045
+          },
+          {
+            "year": 2010,
+            "today_units": 1.05671998
+          },
+          {
+            "year": 2011,
+            "today_units": 1.054280880098275
+          },
+          {
+            "year": 2012,
+            "today_units": 1.061633047884321
+          },
+          {
+            "year": 2013,
+            "today_units": 1.0639452856319913
+          },
+          {
+            "year": 2014,
+            "today_units": 1.064085837548109
+          },
+          {
+            "year": 2015,
+            "today_units": 1.0763990190214658
+          },
+          {
+            "year": 2016,
+            "today_units": 1.0810976398704626
+          },
+          {
+            "year": 2017,
+            "today_units": 1.0753574188148738
+          },
+          {
+            "year": 2018,
+            "today_units": 1.0653820044643774
+          },
+          {
+            "year": 2019,
+            "today_units": 1.0615298886939601
+          },
+          {
+            "year": 2020,
+            "today_units": 1.0692915011713766
+          },
+          {
+            "year": 2021,
+            "today_units": 1.0631061971299653
+          },
+          {
+            "year": 2022,
+            "today_units": 1.0337978187386072
+          },
+          {
+            "year": 2023,
+            "today_units": 1.0121836174220182
+          },
+          {
+            "year": 2024,
+            "today_units": 1.0015439996393867
+          },
+          {
+            "year": 2025,
+            "today_units": 1.0
+          }
+        ]
+      },
+      "JPY": {
+        "area": "JP",
+        "first_reading": 1947,
+        "last_reading": 2025,
+        "periods": [
+          {
+            "period": [
+              1914,
+              1945
+            ],
+            "outside_span": true
+          },
+          {
+            "period": [
+              1946,
+              1971
+            ],
+            "base": 1947,
+            "end": 1971,
+            "yearly_loss_pct": 7.4,
+            "direction": "loss",
+            "computable": true,
+            "price_ratio": 6.2633986447414145,
+            "value_2025_of_one_base_unit": 21.2817232247021
+          },
+          {
+            "period": [
+              1972,
+              1991
+            ],
+            "base": 1971,
+            "end": 1991,
+            "yearly_loss_pct": 5.0,
+            "direction": "loss",
+            "computable": true,
+            "price_ratio": 2.8088901155448522,
+            "value_2025_of_one_base_unit": 3.397791587570381
+          },
+          {
+            "period": [
+              1992,
+              2025
+            ],
+            "base": 1991,
+            "end": 2025,
+            "yearly_loss_pct": 0.6,
+            "direction": "loss",
+            "computable": true,
+            "price_ratio": 1.2096562869321419,
+            "value_2025_of_one_base_unit": 1.2096562869321419
+          }
+        ],
+        "grid": [
+          {
+            "year": 1947,
+            "today_units": 21.2817232247021
+          },
+          {
+            "year": 1948,
+            "today_units": 11.633872132425658
+          },
+          {
+            "year": 1949,
+            "today_units": 8.814677678333712
+          },
+          {
+            "year": 1950,
+            "today_units": 9.453756203673386
+          },
+          {
+            "year": 1951,
+            "today_units": 8.027565583928983
+          },
+          {
+            "year": 1952,
+            "today_units": 7.641869455028487
+          },
+          {
+            "year": 1953,
+            "today_units": 7.186544561978131
+          },
+          {
+            "year": 1954,
+            "today_units": 6.7256973735241425
+          },
+          {
+            "year": 1955,
+            "today_units": 6.8015511033007305
+          },
+          {
+            "year": 1956,
+            "today_units": 6.782427716880954
+          },
+          {
+            "year": 1957,
+            "today_units": 6.587938437789692
+          },
+          {
+            "year": 1958,
+            "today_units": 6.618061613088227
+          },
+          {
+            "year": 1959,
+            "today_units": 6.546223766541816
+          },
+          {
+            "year": 1960,
+            "today_units": 6.314878162226856
+          },
+          {
+            "year": 1961,
+            "today_units": 5.988291579571351
+          },
+          {
+            "year": 1962,
+            "today_units": 5.609961530164323
+          },
+          {
+            "year": 1963,
+            "today_units": 5.211991626872148
+          },
+          {
+            "year": 1964,
+            "today_units": 5.025590537438873
+          },
+          {
+            "year": 1965,
+            "today_units": 4.711491128848944
+          },
+          {
+            "year": 1966,
+            "today_units": 4.487969224131459
+          },
+          {
+            "year": 1967,
+            "today_units": 4.315355023203326
+          },
+          {
+            "year": 1968,
+            "today_units": 4.09324116171492
+          },
+          {
+            "year": 1969,
+            "today_units": 3.888689077867801
+          },
+          {
+            "year": 1970,
+            "today_units": 3.6158481692617377
+          },
+          {
+            "year": 1971,
+            "today_units": 3.397791587570381
+          },
+          {
+            "year": 1972,
+            "today_units": 3.239136303678951
+          },
+          {
+            "year": 1973,
+            "today_units": 2.9022974374858648
+          },
+          {
+            "year": 1974,
+            "today_units": 2.3577602874542154
+          },
+          {
+            "year": 1975,
+            "today_units": 2.1087682333013795
+          },
+          {
+            "year": 1976,
+            "today_units": 1.9278714945425706
+          },
+          {
+            "year": 1977,
+            "today_units": 1.7832095043505216
+          },
+          {
+            "year": 1978,
+            "today_units": 1.7112505286510231
+          },
+          {
+            "year": 1979,
+            "today_units": 1.6491686093010238
+          },
+          {
+            "year": 1980,
+            "today_units": 1.5299591926569305
+          },
+          {
+            "year": 1981,
+            "today_units": 1.4585561472386661
+          },
+          {
+            "year": 1982,
+            "today_units": 1.419732630317302
+          },
+          {
+            "year": 1983,
+            "today_units": 1.3935206576476409
+          },
+          {
+            "year": 1984,
+            "today_units": 1.3626660545429177
+          },
+          {
+            "year": 1985,
+            "today_units": 1.3352247343175159
+          },
+          {
+            "year": 1986,
+            "today_units": 1.3272506079579494
+          },
+          {
+            "year": 1987,
+            "today_units": 1.3257843535001603
+          },
+          {
+            "year": 1988,
+            "today_units": 1.3170544257547543
+          },
+          {
+            "year": 1989,
+            "today_units": 1.2875227870050274
+          },
+          {
+            "year": 1990,
+            "today_units": 1.2493233333267726
+          },
+          {
+            "year": 1991,
+            "today_units": 1.2096562869321419
+          },
+          {
+            "year": 1992,
+            "today_units": 1.1890419084127355
+          },
+          {
+            "year": 1993,
+            "today_units": 1.1742661446856266
+          },
+          {
+            "year": 1994,
+            "today_units": 1.1662779336224514
+          },
+          {
+            "year": 1995,
+            "today_units": 1.1675260240169512
+          },
+          {
+            "year": 1996,
+            "today_units": 1.16593801040721
+          },
+          {
+            "year": 1997,
+            "today_units": 1.146446303683918
+          },
+          {
+            "year": 1998,
+            "today_units": 1.1388308941995584
+          },
+          {
+            "year": 1999,
+            "today_units": 1.142734709045702
+          },
+          {
+            "year": 2000,
+            "today_units": 1.1505128954393071
+          },
+          {
+            "year": 2001,
+            "today_units": 1.1588451052379325
+          },
+          {
+            "year": 2002,
+            "today_units": 1.1694601381586145
+          },
+          {
+            "year": 2003,
+            "today_units": 1.172545189980077
+          },
+          {
+            "year": 2004,
+            "today_units": 1.1727743552178476
+          },
+          {
+            "year": 2005,
+            "today_units": 1.175646549964341
+          },
+          {
+            "year": 2006,
+            "today_units": 1.173118276909485
+          },
+          {
+            "year": 2007,
+            "today_units": 1.172545189980077
+          },
+          {
+            "year": 2008,
+            "today_units": 1.1564999459081335
+          },
+          {
+            "year": 2009,
+            "today_units": 1.17231610264388
+          },
+          {
+            "year": 2010,
+            "today_units": 1.18061977
+          },
+          {
+            "year": 2011,
+            "today_units": 1.1839976323653039
+          },
+          {
+            "year": 2012,
+            "today_units": 1.1845819716245094
+          },
+          {
+            "year": 2013,
+            "today_units": 1.18061977
+          },
+          {
+            "year": 2014,
+            "today_units": 1.148750837089747
+          },
+          {
+            "year": 2015,
+            "today_units": 1.1398043452309723
+          },
+          {
+            "year": 2016,
+            "today_units": 1.1411048716098258
+          },
+          {
+            "year": 2017,
+            "today_units": 1.135705491159533
+          },
+          {
+            "year": 2018,
+            "today_units": 1.1248476845875486
+          },
+          {
+            "year": 2019,
+            "today_units": 1.1192874408960285
+          },
+          {
+            "year": 2020,
+            "today_units": 1.119496270009179
+          },
+          {
+            "year": 2021,
+            "today_units": 1.122218060788715
+          },
+          {
+            "year": 2022,
+            "today_units": 1.094781966685469
+          },
+          {
+            "year": 2023,
+            "today_units": 1.0602526669295012
+          },
+          {
+            "year": 2024,
+            "today_units": 1.0319002521750325
+          },
+          {
+            "year": 2025,
+            "today_units": 1.0
+          }
+        ]
+      },
+      "FRF_then_euro_in_France": {
+        "area": "FR",
+        "first_reading": 1951,
+        "last_reading": 2025,
+        "periods": [
+          {
+            "period": [
+              1914,
+              1945
+            ],
+            "outside_span": true
+          },
+          {
+            "period": [
+              1946,
+              1971
+            ],
+            "base": 1951,
+            "end": 1971,
+            "yearly_loss_pct": 4.2,
+            "direction": "loss",
+            "computable": true,
+            "price_ratio": 2.339227652941139,
+            "value_2025_of_one_base_unit": 0.028062117251410137
+          },
+          {
+            "period": [
+              1972,
+              1991
+            ],
+            "base": 1971,
+            "end": 1991,
+            "yearly_loss_pct": 7.3,
+            "direction": "loss",
+            "computable": true,
+            "price_ratio": 4.527735410477568,
+            "value_2025_of_one_base_unit": 1.1996317338386155
+          },
+          {
+            "period": [
+              1992,
+              2025
+            ],
+            "base": 1991,
+            "end": 2025,
+            "yearly_loss_pct": 1.6,
+            "direction": "loss",
+            "computable": true,
+            "price_ratio": 1.7379700046354445,
+            "value_2025_of_one_base_unit": 0.26495181919477107
+          }
+        ],
+        "grid": [
+          {
+            "year": 1951,
+            "today_units": 0.028062117251410137
+          },
+          {
+            "year": 1952,
+            "today_units": 0.02512728674030261
+          },
+          {
+            "year": 1953,
+            "today_units": 0.025391783943478047
+          },
+          {
+            "year": 1954,
+            "today_units": 0.02546684449154437
+          },
+          {
+            "year": 1955,
+            "today_units": 0.025190263178585966
+          },
+          {
+            "year": 1956,
+            "today_units": 0.024695123105946647
+          },
+          {
+            "year": 1957,
+            "today_units": 0.024006962406421445
+          },
+          {
+            "year": 1958,
+            "today_units": 0.02086695107531717
+          },
+          {
+            "year": 1959,
+            "today_units": 0.019739930596691848
+          },
+          {
+            "year": 1960,
+            "today_units": 1.8958028213158398
+          },
+          {
+            "year": 1961,
+            "today_units": 1.8492943428533515
+          },
+          {
+            "year": 1962,
+            "today_units": 1.7592033062809174
+          },
+          {
+            "year": 1963,
+            "today_units": 1.6590229783898374
+          },
+          {
+            "year": 1964,
+            "today_units": 1.6068607804572241
+          },
+          {
+            "year": 1965,
+            "today_units": 1.565563026706794
+          },
+          {
+            "year": 1966,
+            "today_units": 1.5255625302803975
+          },
+          {
+            "year": 1967,
+            "today_units": 1.483894860600203
+          },
+          {
+            "year": 1968,
+            "today_units": 1.4192866341577395
+          },
+          {
+            "year": 1969,
+            "today_units": 1.3389317524539315
+          },
+          {
+            "year": 1970,
+            "today_units": 1.2663899392905755
+          },
+          {
+            "year": 1971,
+            "today_units": 1.1996317338386155
+          },
+          {
+            "year": 1972,
+            "today_units": 1.1312227646514055
+          },
+          {
+            "year": 1973,
+            "today_units": 1.0533709250213785
+          },
+          {
+            "year": 1974,
+            "today_units": 0.9267786374271739
+          },
+          {
+            "year": 1975,
+            "today_units": 0.8296256363809137
+          },
+          {
+            "year": 1976,
+            "today_units": 0.7569409588482054
+          },
+          {
+            "year": 1977,
+            "today_units": 0.6911011536080928
+          },
+          {
+            "year": 1978,
+            "today_units": 0.6326635226047694
+          },
+          {
+            "year": 1979,
+            "today_units": 0.5718870331460749
+          },
+          {
+            "year": 1980,
+            "today_units": 0.5037210768768836
+          },
+          {
+            "year": 1981,
+            "today_units": 0.4445340357909823
+          },
+          {
+            "year": 1982,
+            "today_units": 0.3969816811580602
+          },
+          {
+            "year": 1983,
+            "today_units": 0.3626743281989426
+          },
+          {
+            "year": 1984,
+            "today_units": 0.3368268932437854
+          },
+          {
+            "year": 1985,
+            "today_units": 0.3182683516449089
+          },
+          {
+            "year": 1986,
+            "today_units": 0.3103890432941578
+          },
+          {
+            "year": 1987,
+            "today_units": 0.3005057165446492
+          },
+          {
+            "year": 1988,
+            "today_units": 0.29260304176488017
+          },
+          {
+            "year": 1989,
+            "today_units": 0.28271289314482373
+          },
+          {
+            "year": 1990,
+            "today_units": 0.2734658014265846
+          },
+          {
+            "year": 1991,
+            "today_units": 0.26495181919477107
+          },
+          {
+            "year": 1992,
+            "today_units": 0.2588336112763513
+          },
+          {
+            "year": 1993,
+            "today_units": 0.2534988231415409
+          },
+          {
+            "year": 1994,
+            "today_units": 0.24937045905355887
+          },
+          {
+            "year": 1995,
+            "today_units": 0.24496962436455527
+          },
+          {
+            "year": 1996,
+            "today_units": 0.24020643625543792
+          },
+          {
+            "year": 1997,
+            "today_units": 0.23735169740638185
+          },
+          {
+            "year": 1998,
+            "today_units": 0.23581883537958256
+          },
+          {
+            "year": 1999,
+            "today_units": 1.5385601653396348
+          },
+          {
+            "year": 2000,
+            "today_units": 1.5132790288667226
+          },
+          {
+            "year": 2001,
+            "today_units": 1.4888891637937778
+          },
+          {
+            "year": 2002,
+            "today_units": 1.4608136781390921
+          },
+          {
+            "year": 2003,
+            "today_units": 1.4307857449707921
+          },
+          {
+            "year": 2004,
+            "today_units": 1.4007236995715506
+          },
+          {
+            "year": 2005,
+            "today_units": 1.3767467396609805
+          },
+          {
+            "year": 2006,
+            "today_units": 1.3540503015660017
+          },
+          {
+            "year": 2007,
+            "today_units": 1.334193139550885
+          },
+          {
+            "year": 2008,
+            "today_units": 1.2976901090588189
+          },
+          {
+            "year": 2009,
+            "today_units": 1.2965544026531188
+          },
+          {
+            "year": 2010,
+            "today_units": 1.27697612
+          },
+          {
+            "year": 2011,
+            "today_units": 1.2506122752779347
+          },
+          {
+            "year": 2012,
+            "today_units": 1.226630140773858
+          },
+          {
+            "year": 2013,
+            "today_units": 1.216138152220564
+          },
+          {
+            "year": 2014,
+            "today_units": 1.2099945600394089
+          },
+          {
+            "year": 2015,
+            "today_units": 1.2095067263707528
+          },
+          {
+            "year": 2016,
+            "today_units": 1.2072798996825238
+          },
+          {
+            "year": 2017,
+            "today_units": 1.1949810829179097
+          },
+          {
+            "year": 2018,
+            "today_units": 1.1732499054055319
+          },
+          {
+            "year": 2019,
+            "today_units": 1.1604069206072813
+          },
+          {
+            "year": 2020,
+            "today_units": 1.1548899960725771
+          },
+          {
+            "year": 2021,
+            "today_units": 1.1362452792441282
+          },
+          {
+            "year": 2022,
+            "today_units": 1.0798455797017978
+          },
+          {
+            "year": 2023,
+            "today_units": 1.0296010267370215
+          },
+          {
+            "year": 2024,
+            "today_units": 1.0094382502308885
+          },
+          {
+            "year": 2025,
+            "today_units": 1.0
+          }
+        ]
+      },
+      "Reichsmark": {
+        "area": "DE",
+        "first_reading": 1924,
+        "last_reading": 1947,
+        "periods": [
+          {
+            "period": [
+              1914,
+              1945
+            ],
+            "base": 1924,
+            "end": 1945,
+            "yearly_loss_pct": 0.5,
+            "direction": "loss",
+            "computable": true,
+            "price_ratio": 1.1125827848509406
+          },
+          {
+            "period": [
+              1946,
+              1971
+            ],
+            "outside_span": true
+          },
+          {
+            "period": [
+              1972,
+              1991
+            ],
+            "outside_span": true
+          },
+          {
+            "period": [
+              1992,
+              2025
+            ],
+            "outside_span": true
+          }
+        ],
+        "grid": [
+          {
+            "year": 1924,
+            "units_of_1947": 1.298013236790573
+          },
+          {
+            "year": 1925,
+            "units_of_1947": 1.1951219265574398
+          },
+          {
+            "year": 1926,
+            "units_of_1947": 1.1878787866605858
+          },
+          {
+            "year": 1927,
+            "units_of_1947": 1.146198810371574
+          },
+          {
+            "year": 1928,
+            "units_of_1947": 1.1136363764845907
+          },
+          {
+            "year": 1929,
+            "units_of_1947": 1.1011235794552925
+          },
+          {
+            "year": 1930,
+            "units_of_1947": 1.1395348852156821
+          },
+          {
+            "year": 1931,
+            "units_of_1947": 1.240506324685473
+          },
+          {
+            "year": 1932,
+            "units_of_1947": 1.3999999684137572
+          },
+          {
+            "year": 1933,
+            "units_of_1947": 1.4306569160471663
+          },
+          {
+            "year": 1934,
+            "units_of_1947": 1.3999999684137572
+          },
+          {
+            "year": 1935,
+            "units_of_1947": 1.3706293268389662
+          },
+          {
+            "year": 1936,
+            "units_of_1947": 1.361111098315758
+          },
+          {
+            "year": 1937,
+            "units_of_1947": 1.351724155282812
+          },
+          {
+            "year": 1938,
+            "units_of_1947": 1.3424656984495407
+          },
+          {
+            "year": 1939,
+            "units_of_1947": 1.3424656984495407
+          },
+          {
+            "year": 1940,
+            "units_of_1947": 1.298013236790573
+          },
+          {
+            "year": 1941,
+            "units_of_1947": 1.2727272531490228
+          },
+          {
+            "year": 1942,
+            "units_of_1947": 1.240506324685473
+          },
+          {
+            "year": 1943,
+            "units_of_1947": 1.21739128942049
+          },
+          {
+            "year": 1944,
+            "units_of_1947": 1.1951219265574398
+          },
+          {
+            "year": 1945,
+            "units_of_1947": 1.1666666556992211
+          },
+          {
+            "year": 1946,
+            "units_of_1947": 1.0710382655610193
+          },
+          {
+            "year": 1947,
+            "units_of_1947": 1.0
+          }
+        ]
+      },
+      "DEM_then_euro_in_Germany": {
+        "area": "DE",
+        "first_reading": 1949,
+        "last_reading": 2025,
+        "periods": [
+          {
+            "period": [
+              1914,
+              1945
+            ],
+            "outside_span": true
+          },
+          {
+            "period": [
+              1946,
+              1971
+            ],
+            "base": 1949,
+            "end": 1971,
+            "yearly_loss_pct": 1.9,
+            "direction": "loss",
+            "computable": true,
+            "price_ratio": 1.534740758881802,
+            "value_2025_of_one_base_unit": 3.230956057977098
+          },
+          {
+            "period": [
+              1972,
+              1991
+            ],
+            "base": 1971,
+            "end": 1991,
+            "yearly_loss_pct": 3.6,
+            "direction": "loss",
+            "computable": true,
+            "price_ratio": 2.0892532160240607,
+            "value_2025_of_one_base_unit": 2.1052129092675838
+          },
+          {
+            "period": [
+              1992,
+              2025
+            ],
+            "base": 1991,
+            "end": 2025,
+            "yearly_loss_pct": 2.0,
+            "direction": "loss",
+            "computable": true,
+            "price_ratio": 1.970770480453529,
+            "value_2025_of_one_base_unit": 1.0076389463570603
+          }
+        ],
+        "grid": [
+          {
+            "year": 1949,
+            "today_units": 3.230956057977098
+          },
+          {
+            "year": 1950,
+            "today_units": 3.444512157673361
+          },
+          {
+            "year": 1951,
+            "today_units": 3.2010160573592854
+          },
+          {
+            "year": 1952,
+            "today_units": 3.134622140453269
+          },
+          {
+            "year": 1953,
+            "today_units": 3.190878287536996
+          },
+          {
+            "year": 1954,
+            "today_units": 3.1866730240810206
+          },
+          {
+            "year": 1955,
+            "today_units": 3.133809621933906
+          },
+          {
+            "year": 1956,
+            "today_units": 3.0538614595374582
+          },
+          {
+            "year": 1957,
+            "today_units": 2.991152342651281
+          },
+          {
+            "year": 1958,
+            "today_units": 2.928836676587692
+          },
+          {
+            "year": 1959,
+            "today_units": 2.902818183317435
+          },
+          {
+            "year": 1960,
+            "today_units": 2.85888810389323
+          },
+          {
+            "year": 1961,
+            "today_units": 2.7947844590190334
+          },
+          {
+            "year": 1962,
+            "today_units": 2.717517991011737
+          },
+          {
+            "year": 1963,
+            "today_units": 2.639213677156439
+          },
+          {
+            "year": 1964,
+            "today_units": 2.5789756652855544
+          },
+          {
+            "year": 1965,
+            "today_units": 2.497983031601413
+          },
+          {
+            "year": 1966,
+            "today_units": 2.4127394865009215
+          },
+          {
+            "year": 1967,
+            "today_units": 2.370170118901082
+          },
+          {
+            "year": 1968,
+            "today_units": 2.335826432170289
+          },
+          {
+            "year": 1969,
+            "today_units": 2.291988192895771
+          },
+          {
+            "year": 1970,
+            "today_units": 2.215546567833897
+          },
+          {
+            "year": 1971,
+            "today_units": 2.1052129092675838
+          },
+          {
+            "year": 1972,
+            "today_units": 1.9957474141910394
+          },
+          {
+            "year": 1973,
+            "today_units": 1.8646264328749993
+          },
+          {
+            "year": 1974,
+            "today_units": 1.7428625958127406
+          },
+          {
+            "year": 1975,
+            "today_units": 1.645601994097228
+          },
+          {
+            "year": 1976,
+            "today_units": 1.578566100725703
+          },
+          {
+            "year": 1977,
+            "today_units": 1.5217417048461508
+          },
+          {
+            "year": 1978,
+            "today_units": 1.4814652119845615
+          },
+          {
+            "year": 1979,
+            "today_units": 1.4238885467040152
+          },
+          {
+            "year": 1980,
+            "today_units": 1.3504118874106914
+          },
+          {
+            "year": 1981,
+            "today_units": 1.2698495612206855
+          },
+          {
+            "year": 1982,
+            "today_units": 1.2066105413244899
+          },
+          {
+            "year": 1983,
+            "today_units": 1.168138905151046
+          },
+          {
+            "year": 1984,
+            "today_units": 1.1406960804413817
+          },
+          {
+            "year": 1985,
+            "today_units": 1.1176037790045628
+          },
+          {
+            "year": 1986,
+            "today_units": 1.119051987252174
+          },
+          {
+            "year": 1987,
+            "today_units": 1.1162623690073805
+          },
+          {
+            "year": 1988,
+            "today_units": 1.1022187702115198
+          },
+          {
+            "year": 1989,
+            "today_units": 1.0724000028167007
+          },
+          {
+            "year": 1990,
+            "today_units": 1.0442423371410405
+          },
+          {
+            "year": 1991,
+            "today_units": 1.0076389463570603
+          },
+          {
+            "year": 1992,
+            "today_units": 0.9591885515518718
+          },
+          {
+            "year": 1993,
+            "today_units": 0.9179913485639255
+          },
+          {
+            "year": 1994,
+            "today_units": 0.8942870887360245
+          },
+          {
+            "year": 1995,
+            "today_units": 0.8784301897903927
+          },
+          {
+            "year": 1996,
+            "today_units": 0.8664247764370261
+          },
+          {
+            "year": 1997,
+            "today_units": 0.8497911587641851
+          },
+          {
+            "year": 1998,
+            "today_units": 0.8425173444771541
+          },
+          {
+            "year": 1999,
+            "today_units": 1.6374930158950116
+          },
+          {
+            "year": 2000,
+            "today_units": 1.6149006651006714
+          },
+          {
+            "year": 2001,
+            "today_units": 1.5829276280074476
+          },
+          {
+            "year": 2002,
+            "today_units": 1.5606400056392618
+          },
+          {
+            "year": 2003,
+            "today_units": 1.5449841710224286
+          },
+          {
+            "year": 2004,
+            "today_units": 1.5197881035876246
+          },
+          {
+            "year": 2005,
+            "today_units": 1.4966243941540698
+          },
+          {
+            "year": 2006,
+            "today_units": 1.4732655381465987
+          },
+          {
+            "year": 2007,
+            "today_units": 1.4400590633839532
+          },
+          {
+            "year": 2008,
+            "today_units": 1.4033186316482549
+          },
+          {
+            "year": 2009,
+            "today_units": 1.3987571782286996
+          },
+          {
+            "year": 2010,
+            "today_units": 1.38328449
+          },
+          {
+            "year": 2011,
+            "today_units": 1.3553497025643744
+          },
+          {
+            "year": 2012,
+            "today_units": 1.3290035462973708
+          },
+          {
+            "year": 2013,
+            "today_units": 1.3091445944034725
+          },
+          {
+            "year": 2014,
+            "today_units": 1.2971894672660793
+          },
+          {
+            "year": 2015,
+            "today_units": 1.2899841303035666
+          },
+          {
+            "year": 2016,
+            "today_units": 1.2839842072905614
+          },
+          {
+            "year": 2017,
+            "today_units": 1.265000874207435
+          },
+          {
+            "year": 2018,
+            "today_units": 1.2431812456174067
+          },
+          {
+            "year": 2019,
+            "today_units": 1.2257875358952064
+          },
+          {
+            "year": 2020,
+            "today_units": 1.2192500078446085
+          },
+          {
+            "year": 2021,
+            "today_units": 1.1829721879632782
+          },
+          {
+            "year": 2022,
+            "today_units": 1.1068996856531286
+          },
+          {
+            "year": 2023,
+            "today_units": 1.044772922747145
+          },
+          {
+            "year": 2024,
+            "today_units": 1.021717882662455
+          },
+          {
+            "year": 2025,
+            "today_units": 1.0
+          }
+        ]
+      },
+      "euro_area_beside": {
+        "area": "XM",
+        "first_reading": 1990,
+        "last_reading": 2025,
+        "periods": [
+          {
+            "period": [
+              1992,
+              2025
+            ],
+            "base": 1991,
+            "end": 2025,
+            "yearly_loss_pct": 2.1,
+            "direction": "loss",
+            "computable": true,
+            "price_ratio": 2.060554508039423
+          }
+        ],
+        "grid": []
+      }
+    },
+    "euro_area_gap_points": {
+      "FRF_then_euro_in_France": -0.5,
+      "DEM_then_euro_in_Germany": -0.1
+    }
+  }
+}

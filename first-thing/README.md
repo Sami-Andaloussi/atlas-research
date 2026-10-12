@@ -24,9 +24,10 @@ and its calculators, lives on the site. This folder holds what stands behind it,
   `results/datasets.yaml` lists every dataset the study reads.
 - **`WITHHELD.md`**, what the public copy leaves out and why: a file or a value that another publisher's licence
   keeps from republication, or a table transcribed from a printed work. **`REDACTIONS.md`**, where a path on our
-  machines or a link to our private project was replaced.
-- **`sources.md`**, the works cited, each with the passage it was read for.
-- **`figures/`** and **`carousel.pdf`**, as published, unless `WITHHELD.md` says otherwise.
+  machines or a link to our private project was replaced, and where a quoted passage was shortened.
+- **`sources.md`**, the works cited. The register's claims give the page or section each was read at, with the
+  passage quoted as a short excerpt.
+- **`figures/`**, where a study's folder has them, as published, unless `WITHHELD.md` says otherwise.
 
 ## How far a study can be reproduced
 
@@ -45,6 +46,7 @@ the earlier version stays in this repository's history.
 | Study | Title |
 |---|---|
 | **FT-001** | *published part by part* |
-| part 1 — [FT-001-part-1-what-trust-rests-on](FT-001-part-1-what-trust-rests-on/) | Does a money lose its value when its backing goes? — methods and proof |
+| part 1 — [FT-001-part-1-what-gives-a-money-its-value](FT-001-part-1-what-gives-a-money-its-value/) | What gives a money its value? — methods and proof |
+| part 1 — [FT-001-part-1-what-trust-rests-on](FT-001-part-1-what-trust-rests-on/) | Does a money lose its value when its backing goes? — methods and proof — *superseded by [FT-001-part-1-what-gives-a-money-its-value](FT-001-part-1-what-gives-a-money-its-value/)* |
 | part 2 — [FT-001-part-2-where-printed-money-goes](FT-001-part-2-where-printed-money-goes/) | Does printing money really cause inflation? — methods and proof |
 <!-- index:end -->

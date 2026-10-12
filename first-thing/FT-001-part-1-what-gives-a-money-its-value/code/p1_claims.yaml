@@ -1,0 +1,2221 @@
+- id: k1-vehicle
+  component: K1
+  type: established
+  text: 'A paper money yields nothing in itself: it is held to buy the goods and services that do, and holding it costs the
+    interest it does not earn.'
+  sources:
+  - source: Walsh, Monetary Theory and Policy, 3rd ed. (MIT Press, 2010), ch. 2 (money in the utility function), opportunity
+      cost of money
+    locator: ch. 2, after eq. (2.12); no page recorded (library chunk has none)
+    passage: '... opportunity cost, of holding money. The opportunity cost of holding money is directly related to the nominal
+      rate of interest. ... Since money is assumed ...'
+    copy: held
+    read: passage
+  - source: Walsh 2010, ch. 2, on why money is held
+    locator: ch. 2, after eq. (2.1); no page recorded
+    passage: '... goods and services that actually yield utility. All this is just a reminder that the money-in-the-utility
+      function may be a useful shortcut for ensuring that ...'
+    copy: held
+    read: passage
+- id: k1-two-percent
+  component: K1
+  type: established
+  text: The ECB aims at {{cite_ecb_inflation-aim}} rather than zero to keep a margin against deflation, because "there are
+    limits to how far interest rates can be cut", and for wages that rarely fall and a price index that may overstate inflation.
+  sources:
+  - source: ECB, 'Two per cent inflation target', section 'Reasons for our inflation target of 2%' (page undated)
+    locator: section 'Reasons for our inflation target of 2%'; no page number
+    passage: Having a margin against deflation is important because there are limits to how far interest rates can be cut.
+      ... (2) downward wage rigidities ... ...
+    copy: open
+    read: passage
+    url: https://www.ecb.europa.eu/mopo/strategy/pricestab/html/index.en.html
+- id: k1-new-franc
+  component: K1
+  type: cases
+  text: France's new franc, introduced on 1 January 1960, was worth {{cite_new-franc_old-per-new}} old francs.
+  sources:
+  - source: BIS, 30th Annual Report (1 April 1959 - 31 March 1960)
+    locator: printed p. 157 (PDF p. 163)
+    passage: '... France a new monetary unit, called the new franc, was introduced on 1st January 1960. One new franc is equal
+      to one hundred old francs ...'
+    copy: open
+    read: passage
+    url: https://www.bis.org/publications/annual-report-1960.pdf
+- id: k1-turkey-2005
+  component: K1
+  type: cases
+  text: Turkey's new lira of 1 January 2005 was worth {{cite_turkey-2005_old-per-new}} old lira.
+  sources:
+  - source: ECB, page 'Turkish lira (TRL)' (euro reference exchange rates)
+    locator: page text; no page number; page undated
+    passage: As of 1 January 2005 the currency of the Republic of Turkey is the new Turkish lira (TRY). 1 TRY equals 1,000,000
+      Turkish liras (TRL).
+    copy: open
+    read: passage
+    url: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/eurofxref-graph-trl.en.html
+  - source: De Santis, ECB Working Paper 1785
+    locator: p. 5
+    passage: Turkey replaced the lira with the 'New Turkish Lira' in January 2005, 'removing one of the zeros' as a general
+      pattern.
+    copy: open
+    read: passage
+- id: k1-rising-not-better
+  component: K1
+  type: established
+  text: 'When prices fall, the real weight of debts rises: in Fisher''s words, "the more the debtors pay, the more they owe".'
+  sources:
+  - source: 'Fisher, ''The Debt-Deflation Theory of Great Depressions'' (held copy: the 1934 reprint in Revue de l''Institut
+      International de Statistique 1(4), pp. 48-65, not the 1933 Econometrica text)'
+    locator: p. 54, para 32 (reprint's pagination)
+    passage: '... may not do so as fast as it increases the value of each dollar owed. ... The more the debtors pay, the more
+      they owe.'
+    copy: held
+    read: passage
+  - source: Fisher, same reprint
+    locator: p. 55, para 36
+    passage: by March 1933 liquidation had cut debts about 20% but raised the dollar about 75%, so 'the real debt... was increased
+      about 40 per cent'
+    copy: held
+    read: passage
+- id: k1-britain-1925
+  component: K1
+  type: cases
+  text: Britain returned to gold at the pre-war parity of {{cite_britain-1925_parity}} on 28 April 1925, a rate at which most
+    observers since Keynes judge sterling overvalued by at least {{cite_britain-1925_overvalued}}.
+  sources:
+  - source: 'Moggridge, British Monetary Policy 1924-1931: The Norman Conquest of $4.86 (CUP, 1972)'
+    locator: p. 1 (printed page = PDF page minus 14)
+    passage: '... April 1925, just before 4 p.m., Winston Churchill... began to tell the House of Commons of the decision,
+      effective immediately, to return to the gold ...'
+    copy: held
+    read: passage
+  - source: Moggridge 1972, section 'Was Sterling Overvalued at $4.86?'
+    locator: p. 100
+    passage: Most observers since Keynes have accepted that in 1925 sterling was overvalued by at least 10 per cent at the
+      pre-war parity of $4.86.
+    copy: held
+    read: passage
+- id: k1-gold-bloc
+  component: K1
+  type: cases
+  text: The countries that stayed on gold kept deflating, more slowly, until the last of them left gold in 1936, and by 1935
+    the gold bloc had not recovered its 1929 industrial production.
+  sources:
+  - source: Bernanke and James (1991), 'The Gold Standard, Deflation, and Financial Crisis in the Great Depression', in Hubbard
+      (ed.), Financial Markets and Financial Crises, pp. 33-68 (NBER c11482)
+    locator: p. 42
+    passage: the gold standard countries continue to deflate, although at a slower rate, until the gold standard's dissolution
+      in 1936.
+    copy: open
+    read: chapter
+  - source: Bernanke and James 1991, Table 2.1 (month of first act) and Table 2.2 (wholesale prices, as printed)
+    locator: Table 2.1 p. 37; Table 2.2 p. 43
+    passage: '... 1936. Table 2.2 ''On gold in 1936'' (France, Netherlands, Poland): -.12, -.13, -.15, -.07, -.04, -.06, +.08
+      (France +.19 in 1936); grand averages 1932/33/34/35: gold ...'
+    copy: open
+    read: chapter
+  - source: Eichengreen and Sachs (1985), NBER WP 1498
+    locator: p. 9
+    passage: '... Gold Bloc ''had by 1935 failed to recover to 1929 levels of industrial production. Countries which devalued
+      at an early date ... grew much more ...'
+    copy: open
+    read: full
+    url: https://www.nber.org/system/files/working_papers/w1498/w1498.pdf
+- id: k2-woodford-bubble
+  component: K2
+  type: established
+  text: In Woodford's model, where every household is alike, a money paid out only as more money and never redeemed is "a
+    pure 'bubble'" that cannot hold its value; once some of it is "accepted as payment for taxes", it "ceases to be a pure
+    bubble".
+  sources:
+  - source: Woodford, Interest and Prices (Princeton UP, 2003), ch. 2, discussion of Proposition 2.3
+    locator: ch. 2, in the argument ending 'Hence no equilibrium is possible' (text refers to (A.2)); no page recorded
+    passage: '... money is a pure "bubble"-an asset the exchange value of which would have to be sustained purely by the expectation
+      of a future exchange value, ...'
+    copy: held
+    read: passage
+  - source: Woodford 2003, same passage (continued)
+    locator: same; no page recorded
+    passage: '... money received as interest payments is eventually redeemed by the government (accepted as payment for taxes),
+      so that money ceases to be a pure bubble.'
+    copy: held
+    read: passage
+- id: k2-convention
+  component: K2
+  type: established
+  text: In Samuelson's model of generations handing money on, and in Kiyotaki and Wright's of strangers trading, an unbacked
+    money can keep its value because each holder expects the next to take it, and the same models also allow the outcome in
+    which nobody takes it and it is worthless.
+  sources:
+  - source: Ljungqvist and Sargent, Recursive Macroeconomic Theory, 3rd ed. (MIT Press, 2012), section 9.4
+    locator: section 9.4, 'Money'; no page recorded (library chunk has none)
+    passage: '... today if people expect it to be valued tomorrow. Samuelson thus envisioned a situation in which currency
+      is backed by expectations without promises. ... we ...'
+    copy: held
+    read: passage
+  - source: Luther and White (2011), 'Positively Valued Fiat Money after the Sovereign Disappears', Mercatus Center
+    locator: pp. 18-19
+    passage: Under the search-theoretic, random matching models of Kiyotaki and Wright ... whether fiat money attains a positive
+      value and circulates depends crucially on the beliefs ...
+    copy: held
+    read: passage
+  - source: Samuelson, 'An Exact Consumption-Loan Model of Interest with or without the Social Contrivance of Money', Journal
+      of Political Economy 66(6), 1958
+    locator: pp. 481-482, and note 22
+    passage: '... of money can itself be regarded as a social compact. [note 22:] the existing productive workers should perhaps
+      unilaterally repudiate the money upon which the ...'
+    copy: held
+    read: passage
+  - source: Kiyotaki and Wright, 'A Search-Theoretic Approach to Monetary Economics', American Economic Review 83(1), 1993
+    locator: p. 68, read on the page image
+    passage: '... the pure-monetary equilibrium. In this case, agents expect that money will be universally acceptable, and
+      so they always take it, and this expectation is self-fulfilling.'
+    copy: held
+    read: passage
+- id: k2-fiscal-theory
+  component: K2
+  type: established
+  text: If a government requires its money for taxes, people value it even if nobody needed it to trade; Cochrane calls this
+    view equivalent to the fiscal theory of the price level, which extends it over time, a state's money and debt being worth
+    what its future surpluses can pay.
+  sources:
+  - source: Cochrane, 'Money as Stock, Price Level Determination with no Money Demand', NBER w7498 (January 2000)
+    locator: p. 1, Introduction, equation (2)
+    passage: '... debt, is a residual claimant to government surpluses ... nominal government debt / price level = Expected
+      present value of future surpluses. An equivalent view ...'
+    copy: open
+    read: passage
+    url: https://www.nber.org/system/files/working_papers/w7498/w7498.pdf
+- id: k2-starr
+  component: K2
+  type: established
+  text: Starr proved it in a model of many traders; if taxes payable in money are exacting enough, every equilibrium gives
+    money a positive price, and if they are not, money may be worth nothing.
+  sources:
+  - source: Starr, 'The Price of Money in a Pure Exchange Monetary Economy with Taxation', Econometrica 42(1), 1974, pp. 45-54
+      (JSTOR copy, Starr-PriceMoneyPure-1974.pdf)
+    locator: p. 46; p. 54 (Summary)
+    passage: '... price of money consistent with equilibrium (Theorem 2). (iii) If taxes are sufficiently exacting, there
+      are equilibria and they all have positive price of money ...'
+    copy: held
+    read: full
+- id: k2-obstfeld-rogoff
+  component: K2
+  type: established
+  text: 'In Obstfeld and Rogoff''s model, a guarantee works like a partial backing: once a government guarantees even a minimal
+    real value for which its money can be redeemed, prices cannot explode on expectations alone, with no growth of money behind
+    them.'
+  sources:
+  - source: 'Obstfeld and Rogoff, ''Speculative Hyperinflations in Maximizing Models: Can We Rule Them Out?'', Journal of
+      Political Economy 91(4), 1983, pp. 675-687 (JSTOR copy, Obstfeld-SpeculativeHyperinflationsMaximizing-1983.pdf)'
+    locator: p. 675 (abstract)
+    passage: '... restrictions on individual preferences; but when the government fractionally backs the currency by guaranteeing
+      a minimal real redemption value for money, speculative hyperinflations are impossible'
+    copy: held
+    read: passage
+- id: k2-ftpl-critics
+  component: K2
+  type: established
+  text: Critics read the fiscal theory as a device for picking one outcome among the many a monetary model allows.
+  sources:
+  - source: Ljungqvist and Sargent, Recursive Macroeconomic Theory, 3rd ed. (MIT Press, 2012), section 26.4.2
+    locator: section 26.4.2, 'Fiscal theory of the price level'; no page recorded (library chunk has none)
+    passage: '... ''the fiscal theory of the price level is, at its core, a device for selecting equilibria from the continuum
+      which can exist in monetary models.'''
+    copy: held
+    read: passage
+- id: k2-massachusetts
+  component: K2
+  type: cases
+  text: Paper money began in Massachusetts in 1690; its war emissions of 1690-91 were "primarily linked to redemption via
+    future tax payment obligations legislated concurrently", New England's early bills could be paid in taxes and redeemed
+    at the treasury, and an act of 15 December 1692 made Massachusetts bills legal tender.
+  sources:
+  - source: Grubb (2012), 'Is Paper Money Just Paper Money?', NBER WP 17997
+    locator: p. 7
+    passage: Paper money emissions began in 1690 in Massachusetts ... Most emissions, however, linked future redemptions to
+      explicit taxes or land-backed loans that could be paid ...
+    copy: open
+    read: passage
+    url: https://www.nber.org/system/files/working_papers/w17997/w17997.pdf
+  - source: Grubb 2012
+    locator: p. 9
+    passage: '... emissions ''concentrated in war periods, i.e. 1690-1 for King William''s War'', ''primarily linked to redemption
+      via future tax payment obligations legislated concurrently with the paper ...'
+    copy: open
+    read: passage
+  - source: Grubb 2012
+    locator: p. 10
+    passage: '... or ''fund'' in the treasury; colonies allowed subjects to pay their tax and loan payment obligations either
+      in the colony''s paper money or in some ...'
+    copy: open
+    read: passage
+  - source: Grubb 2012, Appendix Table A1 (first page printed p. 59) and note b
+    locator: Table A1, p. 59; note b
+    passage: 'Massachusetts, 1690 Dec. 10, 7,000 pounds, no interest, legal tender ''yes''; note b: the act of 15 December
+      1692 made all Massachusetts bills legal tender ...'
+    copy: open
+    read: passage
+  - source: Grubb 2012
+    locator: p. 3
+    passage: Redemption mechanisms included accepting paper money in payment of future taxes imposed
+    copy: open
+    read: passage
+- id: k2-legal-tender-us
+  component: K2
+  type: established
+  text: In the United States, notes are "legal tender for all debts, public charges, taxes, and dues", yet no federal statute
+    obliges a private business to accept cash.
+  sources:
+  - source: 'Board of Governors of the Federal Reserve System, FAQ ''Is it legal for a business in the United States to refuse
+      cash as a form of payment?'' (title as the study''s checks abbreviate it: ''Is it legal for a business ... to refuse
+      cash'')'
+    locator: web FAQ; no page
+    passage: '... accept currency or coins ... unless there is a state law that says otherwise. [the legal-tender statute:]
+      legal tender for all debts, public charges, taxes, ...'
+    copy: open
+    read: passage
+- id: k2-legal-tender-euro
+  component: K2
+  type: established
+  text: In the euro area, notes and coins are legal tender, and shops "are generally obliged to accept cash".
+  sources:
+  - source: ECB, 'Access to and acceptance of cash' (section 'Acceptance of cash'; page opened October 2026)
+    locator: section 'Acceptance of cash'; no page number
+    passage: Euro banknotes and coins are legal tender in the euro area. This means that shops and businesses are generally
+      obliged to accept cash if people ...
+    copy: open
+    read: passage
+    url: https://www.ecb.europa.eu/euro/cash_strategy/acceptance-cash/html/index.en.html
+  - source: ECB, same page
+    locator: section 'Acceptance of cash'
+    passage: '... ''defines the few cases where cash payments may be refused''; FAQ page citing Commission Recommendation
+      2010/191/EU: ''Retailers cannot refuse cash payments unless both parties have ...'
+    copy: open
+    read: passage
+    url: https://www.ecb.europa.eu/euro/cash_strategy/faqs/html/index.en.html
+- id: k2-swiss-dinar
+  component: K2
+  type: cases
+  text: In northern Iraq, the supply of Swiss dinars "had remained essentially fixed for {{cite_swiss-dinar_fixed-years}}
+    years", with no issuer adding to it, and the Swiss dinar rose against the printed Saddam dinar; it was exchanged for the
+    new dinar at {{cite_swiss-dinar_conversion}} new dinars for each Swiss dinar.
+  sources:
+  - source: Foote, Block, Crane and Gray (2004), 'Economic Policy and Prospects in Iraq', Journal of Economic Perspectives
+      18(3), 47-70 (published JEP version)
+    locator: p. 61
+    passage: the supply of Swiss dinars 'had remained essentially fixed for 13 years', letting the north 'escape Iraq's ruinous
+      inflation rates of the early 1990s'
+    copy: held
+    read: passage
+  - source: Foote et al. 2004
+    locator: p. 61 (the held copy's page)
+    passage: '... of a Swiss dinar in terms of the Saddam dinar hovered at about 100:1 from July 1998 to January 2002. But
+      the Swiss dinar appreciated ...'
+    copy: held
+    read: passage
+  - source: Foote et al. 2004 (library chunk, same article)
+    locator: figure 4 passage; no page recorded
+    passage: the new dinars would also be printed in different colors ... [new dinar] one-to-one rate with the Saddam dinar
+    copy: held
+    read: passage
+- id: k2-somaliland
+  component: K2
+  type: cases
+  text: Somaliland took the old Somali shilling in taxes from May 1991 to January 1995, a support Luther and White doubt was
+    needed; its own notes began circulating in November 1994, and it stripped the old shilling of legal tender on 31 January
+    1995.
+  sources:
+  - source: 'Luther and White (2011), ''Positively Valued Fiat Money after the Sovereign Disappears: The Case of Somalia''
+      (held manuscript with page markers)'
+    locator: s. 2.3 (manuscript pp. 16-17)
+    passage: '... with the Somali shilling. Nearly three months later, on January 31, 1995, the Somaliland government stripped
+      the Somali shilling of its legal tender status [...] ...'
+    copy: held
+    read: passage
+- id: k2-somali
+  component: K2
+  type: cases
+  text: After the Somali state collapsed in 1991, its shilling kept circulating with nothing like sovereign support, floating
+    daily against the dollar ({{cite_somali_per-dollar-1992}} to the dollar on 31 March 1992); private printers added an estimated
+    {{cite_somali_unofficial-notes-bn}} billion shillings of notes, which Luther and White read as evidence that it held a
+    positive value.
+  sources:
+  - source: 'Luther and White (2011), ''Positively Valued Fiat Money after the Sovereign Disappears: The Case of Somalia''
+      (held manuscript with page markers)'
+    locator: s. 2.2 (about pp. 14-15, unconfirmed; manuscript pp. 15-16 per hC:124)
+    passage: an estimated 481 billion in unofficial Somali shilling notes have been printed since 1991 (Symes 2006a, p. 29)
+    copy: held
+    read: passage
+  - source: Luther and White, s. 2.2
+    locator: s. 2.2 (about pp. 14-15, unconfirmed)
+    passage: On March 31, 1992, for example, US$1 equaled 3,800 Somali shillings (Fitzgerald 2002, p. 18)', with the shilling
+      floating 'at daily transaction rates' (Drysdale 2001)
+    copy: held
+    read: passage
+  - source: Luther and White, s. 2.2 and s. 2
+    locator: manuscript p. 15-16; s. 2 (possibly p. 12, unconfirmed)
+    passage: '... convincing evidence'' that the shilling ''held a positive value'', since counterfeiting was profitable.
+      Individuals ''continued to accept Somali shillings without anything resembling sovereign support from ...'
+    copy: held
+    read: passage
+  - source: Luther and White, s. 2.2
+    locator: s. 2.2 (about p. 14 of the held copy)
+    passage: '... begun to circulate before the state collapsed; "Following state collapse, those conducting large transactions
+      with foreign currencies used the Somali shilling for making change. Others, ...'
+    copy: held
+    read: passage
+- id: k2-ecuador
+  component: K2
+  type: cases
+  text: Ecuador's monetary base grew {{cite_ecuador_base-money-1999}} in 1999 and the sucre lost two-thirds of its dollar
+    value that year; on 9 January 2000 the government fixed the rate and announced it would dollarise, and consumer prices
+    rose {{cite_ecuador_prices-2000}} in 2000.
+  sources:
+  - source: Beckerman and Solimano (eds.), Crisis and Dollarization in Ecuador (World Bank, June 2002), ch. 2 by Beckerman
+    locator: p. 57
+    passage: The monetary base grew 136 percent over 1999
+    copy: open
+    read: passage
+  - source: Beckerman and Solimano (eds.) 2002, ch. 2 by Beckerman
+    locator: p. 17; p. 18
+    passage: On January 9, 2000, Ecuador's government fixed its exchange rate ... and announced that it would submit legislation
+      to the Congress to fully dollarize the ...
+    copy: open
+    read: passage
+  - source: Beckerman and Solimano (eds.) 2002, ch. 2 by Beckerman, p. 45
+    locator: p. 45
+    passage: The 1992 Law of the Monetary Regime 'prohibited Central Bank direct lending to the public sector'.
+    copy: open
+    read: passage
+- id: k3-quantity
+  component: K3
+  type: established
+  text: The strong link between money growth and inflation "is almost wholly due to the presence of high-inflation or hyper-inflation
+    countries"; for countries whose inflation averaged less than {{cite_degrauwe_line}} a year over thirty years they call
+    it "weak, if not absent", though their own estimates for those countries stay above zero; where inflation is low, the
+    link is much weaker but does not disappear.
+  sources:
+  - source: De Grauwe and Polan (2005), 'Is Inflation Always and Everywhere a Monetary Phenomenon?', Scandinavian Journal
+      of Economics 107(2)
+    locator: p. 256 (conclusion); p. 239 (abstract); held copy Scandinavian J Economics - 2005
+      - Grauwe - Is Inflation Always and Everywhere a Monetary Phenomenon.pdf
+    passage: '... strong link between inflation and money growth is almost wholly due to the presence of high-inflation or
+      hyper-inflation countries in the sample. The relation between ...'
+    copy: held
+    read: passage
+    url: https://doi.org/10.1111/j.1467-9442.2005.00406.x
+- id: k3-expectations
+  component: K3
+  type: established
+  text: 'What people expect of the issuer moves a money''s value: four big inflations ended with a change in the government''s
+    policy for deficits "sufficiently binding as to be widely believed", and expectations of resumption set the greenback''s
+    exchange rate and price level.'
+  sources:
+  - source: 'Sargent (1982), ''The Ends of Four Big Inflations'', in Hall (ed.), Inflation: Causes and Effects, pp. 41-98
+      (NBER c11452)'
+    locator: p. 42 (the passage ends at the foot of p. 42; the running header '43' follows)
+    passage: '... change in the continuing government policy, or strategy, for setting deficits now and in the future that
+      is sufficiently binding as to be widely believed. ...'
+    copy: held
+    read: chapter
+    url: https://www.nber.org/system/files/chapters/c11452/c11452.pdf
+  - source: Sargent 1982
+    locator: p. 45
+    passage: In effect, the notes were backed by the government's pursuit of an appropriate budget policy.
+    copy: open
+    read: chapter
+  - source: Calomiris (1988), Oxford Economic Papers 40(4)
+    locator: p. 720
+    passage: resumption expectations play a central role in determining the current exchange rate and price level
+    copy: library
+    read: full
+- id: k3-greenback-news
+  component: K3
+  type: cases
+  text: 'The greenback''s price in gold moved with the war''s news: speculators understood that redemption depended on the
+    Union''s military fortunes, and the largest single shift of the war came on 12 July 1864, when Early''s raid on Washington
+    ended.'
+  sources:
+  - source: 'Calomiris (1988), ''Price and Exchange Rate Determination during the Greenback Suspension'', Oxford Economic
+      Papers 40(4): 719-750'
+    locator: p. 719
+    passage: expectations regarding government fiscal policy and fiscal shocks (e.g., battle reports) ... affected the probability
+      and expected timing of resumption
+    copy: library
+    read: full
+  - source: 'Willard, Guinnane and Rosen (1995), ''Turning Points in the Civil War: Views from the Greenback Market'', NBER
+      WP 5381'
+    locator: abstract; p. 17
+    passage: '... redemption depended on Union Army military fortunes and political developments. [p. 17:] 12 July 1864, when
+      Early''s raid on Washington ended, is ''the largest shift ...'
+    copy: open
+    read: full
+    url: https://www.nber.org/system/files/working_papers/w5381/w5381.pdf
+  - source: Calomiris 1988, p. 719
+    locator: p. 719
+    passage: the greenback price of the gold dollar ranged from par to 2.5 (see Fig. 1)
+    copy: library
+    read: full
+- id: k6-ppp-slow
+  component: K6
+  type: established
+  text: 'Real exchange rates return toward parity only slowly: consensus estimates give deviations a half-life of three to
+    five years.'
+  sources:
+  - source: 'Rogoff (1996), ''The Purchasing Power Parity Puzzle'', Journal of Economic Literature 34(2): 647-668'
+    locator: p. 648 (intro); p. 647
+    passage: Consensus estimates for the rate at which PPP deviations damp ... suggest a half-life of three to five years
+      [p. 648]; p. 647 gives a ...
+    copy: held
+    read: passage
+- id: k6-balassa
+  component: K6
+  type: established
+  text: Rich countries tend to have higher price levels than poor ones when prices are converted at market exchange rates
+    (a regularity Rogoff discusses with the Balassa-Samuelson hypothesis, which seeks to explain it).
+  sources:
+  - source: Rogoff 1996, section on long-run modifications, 'A. The Balassa-Samuelson Hypothesis'
+    locator: p. 658
+    passage: rich countries tend to have higher price levels than poor countries, when price levels are translated to dollars
+      at prevailing nominal rates
+    copy: held
+    read: passage
+- id: k6-invoicing
+  component: K6
+  type: established
+  text: 'The dollar invoices far more of world trade than the US takes: once commodities are removed, {{cite_invoicing_dollar-ex-commodities}}
+    of global exports are invoiced in dollars against {{cite_invoicing_us-destination-ex-commodities}} destined for the US,
+    global exports meaning those of the more than 100 countries in the authors'' data, about three-quarters of the world''s.'
+  sources:
+  - source: Boz et al. 2020, IMF WP/20/126, section 2.5 (coverage) and abstract
+    locator: the paragraph before section 2.6; abstract
+    passage: '... imports invoiced in US dollars, euros, and other currencies for more than 100 countries since 1990 [abstract]
+      ... After this interpolation and extrapolation, our data ...'
+    copy: held
+    read: passage
+  - source: Boz, Casas, Georgiadis, Gopinath, Le Mezo, Mehl, Nguyen (2020), 'Patterns in Invoicing Currency in Global Trade',
+      IMF WP/20/126, section 2.6.1 'The US dollar's dominant role in global trade'
+    locator: section 2.6.1; p. 15 and Figure 4 (page per hA:125)
+    passage: '... the invoicing of global exports ... once exports of commodities are removed from both the invoicing and
+      export shares, the dollar share of invoicing (23%) ...'
+    copy: held
+    read: passage
+  - source: Boz et al. 2020, abstract and Figure 4
+    locator: abstract; Figure 4, p. 15
+    passage: '... global trade''; the euro''s share in global export invoicing is ''an impressive 46%'', against 37% of exports
+      destined for the euro area. The total dollar-invoiced ...'
+    copy: held
+    read: passage
+- id: k6-reserve-share
+  component: K6
+  type: cases
+  text: The dollar's share of the world's official foreign-exchange reserves was {{cite_reserves_dollar-2024}} at the end
+    of 2024, at constant exchange rates.
+  sources:
+  - source: ECB, 'The international role of the euro, June 2025', section 1.1
+    locator: section 1.1 (HTML; no page number)
+    passage: the dollar's share 'declined by 2.0 percentage points at constant exchange rates, to 57.8%' in 2024; over the
+      last decade, net of exchange-rate valuation, 'declined ...
+    copy: open
+    read: passage
+    url: https://www.ecb.europa.eu/press/other-publications/ire/html/ecb.ire202506.en.html
+  - source: ECB, 'The international role of the euro, June 2026', section 1.1 and Chart 4
+    locator: section 1.1, Chart 4
+    passage: 'the US dollar''s share remained similarly stable, at about 57%'' (2025, at constant exchange rates); sources:
+      IMF, LSEG and ECB staff calculations. The euro stays ...'
+    copy: open
+    read: passage
+    url: https://www.ecb.europa.eu/press/other-publications/ire/html/ecb.ire202606.en.html
+- id: k6-reserve-why
+  component: K6
+  type: established
+  text: Since Bretton Woods ended, Eichengreen, Chiţu and Mehl find, inertia and the credibility of a currency's policy have
+    weighed more in central banks' choice of reserve currency, and the size of the issuer's economy, their measure of network
+    effects, less.
+  sources:
+  - source: Eichengreen, Chiţu and Mehl, 'Stability or Upheaval? The Currency Composition of International Reserves in the
+      Long Run', IMF Economic Review 64(2), 2016
+    locator: abstract, p. 354; p. 362 (relative size, their network measure, as the issuer's share of world GDP)
+    passage: It finds that inertia and policy-credibility effects in international reserve currency choice have become stronger
+      post-Bretton Woods, while network effects appear to have weakened.
+    copy: held
+    read: passage
+- id: k6-sterling-1920s
+  component: K6
+  type: established
+  text: The dollar first overtook sterling as the leading reserve currency in the mid-1920s.
+  sources:
+  - source: 'Eichengreen and Flandreau (2009), ''The rise and fall of the dollar (or when did the dollar replace sterling
+      as the leading reserve currency?)'', European Review of Economic History 13(3): 377-411'
+    locator: p. 379
+    passage: the dollar first overtook sterling as the leading reserve currency not in 1928, 1938 or 1948 but in ... the mid
+      1920s, and that it ...
+    copy: held
+    read: passage
+    url: https://doi.org/10.1017/S1361491609990153
+  - source: Eichengreen and Flandreau 2009
+    locator: p. 394; p. 396
+    passage: '... dollar overtook sterling as the leading reserve currency in 1924-6''. Precise dating is ''problematic''.
+      [p. 396:] ''the dollar overtook sterling as the leading reserve currency ...'
+    copy: held
+    read: passage
+- id: k6-floor
+  component: K6
+  type: cases
+  text: From 6 September 2011 to 15 January 2015 the SNB would not tolerate a rate below {{cite_snb_floor}} francs per euro.
+  sources:
+  - source: BIS Quarterly Review, September 2011
+    locator: p. 13
+    passage: 'The SNB on 6 Sep: ''With immediate effect, it will no longer tolerate a EUR/CHF exchange rate below the minimum
+      rate of CHF 1.20.'''
+    copy: open
+    read: passage
+  - source: Jordan, 'The rationale for discontinuing the minimum exchange rate and lowering interest rates', SNB press conference,
+      15 January 2015 (BIS Review)
+    locator: introductory remarks; no page
+    passage: decided to discontinue the minimum exchange rate of CHF 1.20 per euro with immediate effect
+    copy: open
+    read: passage
+    url: https://www.bis.org/review/r150116a.htm
+  - source: Jordan, speech at the 107th SNB General Meeting of Shareholders, Berne, 24 April 2015 (BIS Review)
+    locator: speech text; no page
+    passage: on 6 September 2011, we decided to introduce the minimum exchange rate as an exceptional and temporary measure
+      ... the SNB's key monetary policy instrument ...
+    copy: open
+    read: passage
+    url: https://www.bis.org/review/r150427b.htm
+- id: k6-after-2015
+  component: K6
+  type: established
+  text: After the floor ended, euro-invoiced import prices at the border were {{cite_swiss-2015_border-eur-q4}} lower by the
+    end of 2015 but retail import prices only {{cite_swiss-2015_retail-import-q4}} lower; GDP fell {{cite_swiss-2015_gdp-q1}}
+    in the first quarter, firms cut prices to compete with imports, and they doubled their recourse to short-time work.
+  sources:
+  - source: 'Auer, Burstein and Lein (2021), ''Exchange Rates and Prices: Evidence from the 2015 Swiss Franc Appreciation'',
+      NBER WP 28404 / AER 111(2)'
+    locator: p. 10 and Table 3, p. 11 (changes by quarter 15Q1 / Q2 / Q3 / Q4)
+    passage: '... -11.0; CHF-invoiced border prices: -3.4 / -4.5 / -5.2 / -5.5; retail import prices: -1.3 / -2.9 / -2.7 /
+      -3.9; retail prices of Swiss-produced ...'
+    copy: open
+    read: passage
+    url: https://www.nber.org/system/files/working_papers/w28404/w28404.pdf
+  - source: Auer, Burstein and Lein 2021
+    locator: p. 2
+    passage: '... in average import prices - more so at the border than at the consumer level [p. 2]; the response of domestic
+      goods prices is ''muted''.'
+    copy: open
+    read: passage
+  - source: 'OECD, Economic Surveys: Switzerland 2015 (November 2015)'
+    locator: p. 18
+    passage: '... May), Swiss companies have had to cut their prices: the GDP deflator dropped 0.9% in the first quarter.''
+      Firms ''doubled their recourse'' to short-time work.'
+    copy: open
+    read: passage
+    url: https://www.oecd.org/content/dam/oecd/en/publications/reports/2015/12/oecd-economic-surveys-switzerland-2015_g1g5f46a/eco_surveys-che-2015-en.pdf
+- id: k7-shiller
+  component: K7
+  type: established
+  text: Asked why they dislike inflation, non-economists most often say it lowers their standard of living, as if wages did
+    not respond to it.
+  sources:
+  - source: Shiller, 'Why Do People Dislike Inflation?', NBER WP 5539 (April 1996), the version of the chapter in Romer and
+      Romer (eds.), Reducing Inflation (1997); the held copy is the working paper
+    locator: abstract; p. 5; p. 12 (working-paper pagination)
+    passage: '... inflation appears to be that it lowers people''s standard of living. Non-economists appear often to believe
+      in a sort of sticky-wage model, by which wages ...'
+    copy: held
+    read: passage
+    url: https://www.nber.org/system/files/working_papers/w5539/w5539.pdf
+  - source: Shiller, WP 5539
+    locator: p. 12
+    passage: of 105 free-text answers, 33% said inflation hurts their standard of living and 23% said it lowers the dollar's
+      buying power
+    copy: held
+    read: passage
+- id: k7-stantcheva
+  component: K7
+  type: established
+  text: People dislike inflation mainly because they believe it diminishes their buying power, wages not seeming to keep pace
+    with prices.
+  sources:
+  - source: Stantcheva (2024), 'Why Do We Dislike Inflation?', NBER WP 32300 (April 2024)
+    locator: abstract; p. 2
+    passage: '... that it diminishes their buying power, as neither personal nor general wage increases seem to match the
+      pace of rising prices. ... Inflation also provokes ...'
+    copy: held
+    read: passage
+    url: https://www.nber.org/system/files/working_papers/w32300/w32300.pdf
+- id: k7-dollarisation
+  component: K7
+  type: established
+  text: Successful disinflations generally have not been accompanied by large declines in the use of the dollar at home.
+  sources:
+  - source: Reinhart, Rogoff and Savastano (2003), 'Addicted to Dollars', NBER WP 10015
+    locator: p. 30; p. 32; p. 23
+    passage: successful disinflations generally have not been accompanied by large declines in the degree of dollarization'
+      (p. 30); the degree at the end of disinflation was ...
+    copy: open
+    read: passage
+    url: https://www.nber.org/system/files/working_papers/w10015/w10015.pdf
+- id: k8-holmstrom
+  component: K8
+  type: established
+  text: Money-market instruments work best in a state of "no questions asked", and crises end by getting back to it.
+  sources:
+  - source: Holmstrom (2015), 'Understanding the role of debt in the financial system', BIS Working Paper 479 (January 2015;
+      paper presented 27 June 2014)
+    locator: p. 1; p. 8; p. 22
+    passage: '... information-insensitive both ex ante and ex post. [p. 22:] The quiet, liquid state is hugely valuable. Crises
+      end by ''getting back to the no-questions-asked state''.'
+    copy: open
+    read: passage
+    url: https://www.bis.org/publications/working-paper-479-understanding-role-debt-financial-system.pdf
+- id: k8-reserve-primary
+  component: K8
+  type: cases
+  text: On 16 September 2008, the Reserve Primary Fund, holding Lehman debt, repriced its shares at {{cite_reserve-primary_cents}}
+    cents.
+  sources:
+  - source: McCabe (2010), 'The Cross Section of Money Market Fund Risks and Financial Crises', Federal Reserve Board FEDS
+      2010-51, section on weekly risks and outflows
+    locator: section on weekly risks and outflows; no page recorded
+    passage: '... Tuesday, September 16 that the Primary Fund had repriced its shares at 97 cents [McCabe]; Lehman debt of
+      $785 million ''caused the Primary Fund to ...'
+    copy: open
+    read: passage
+    url: https://www.federalreserve.gov/pubs/feds/2010/201051/index.html
+- id: k8-terra
+  component: K8
+  type: cases
+  text: Unlike stablecoins backed by Treasury bills and other assets held outside the blockchain, TerraUSD rested on a contract
+    exchanging one token for a dollar's worth of its twin, LUNA; to support that mechanism its backers built a reserve, about
+    {{cite_terra_lfg-btc}} bitcoin by May 2022, and spent about {{cite_terra_defence-bn}} trying to defend the peg, and it
+    collapsed in three days in May 2022.
+  sources:
+  - source: 'Liu, Makarov and Schoar (2023), ''Anatomy of a Run: The Terra Luna Crash'', NBER WP 31160'
+    locator: abstract; pp. 1-3, 12, 28
+    passage: '... face value of $1 backed by LUNA. [abstract:] it collapsed ''in three days in May 2022'', a run beginning
+      7 May 2022; p. 1: value ...'
+    copy: open
+    read: passage
+- id: k8-usdc
+  component: K8
+  type: cases
+  text: In March 2023, when USDC's issuer disclosed reserves held at the failing Silicon Valley Bank, USDC fell temporarily
+    to {{cite_usdc_low-cents}} cents.
+  sources:
+  - source: Board of Governors of the Federal Reserve System, Financial Stability Report, May 2023
+    locator: 'printed p. 55 (confirmed by me on the frozen PDF: running footer ''Funding Risks 55'', PDF page 63)'
+    passage: '... disclosed that it had $3.3 billion in dollar reserves held at SVB. This disclosure triggered large redemptions
+      of USDC and caused it to drop temporarily ...'
+    copy: open
+    read: passage
+    url: https://www.federalreserve.gov/publications/files/financial-stability-report-20230508.pdf
+- id: k9-dollar-law
+  component: K9
+  type: established
+  text: The Fed's mandate in law is maximum employment, stable prices and moderate long-term interest rates; it may buy Treasury
+    securities "only in the open market" and "does not purchase new Treasury securities directly from the U.S. Treasury";
+    its framework aims at {{cite_fomc_inflation-goal}} inflation and says it "is prepared to act forcefully" to keep expectations
+    anchored.
+  sources:
+  - source: Federal Reserve, 'Section 2A. Monetary policy objectives' (12 USC 225a, added 1977, amended 2000); page last updated
+      13 Feb 2017
+    locator: web page; no page number
+    passage: '...promote effectively the goals of maximum employment, stable prices, and moderate long-term interest rates.'
+    copy: open
+    read: passage
+    url: https://www.federalreserve.gov/aboutthefed/section2a.htm
+  - source: Federal Reserve, 'Section 14. Open-Market Operations', para (b) = 12 USC 355 (updated 13 Mar 2017)
+    locator: para (b)
+    passage: Treasury obligations 'may be bought and sold without regard to maturities but only in the open market.'
+    copy: open
+    read: passage
+    url: https://www.federalreserve.gov/aboutthefed/section14.htm
+  - source: Federal Reserve FAQ on its securities purchases and the Treasury's borrowing decisions (updated 19 Jul 2024)
+    locator: FAQ text
+    passage: The Fed does not purchase new Treasury securities directly from the U.S. Treasury.
+    copy: open
+    read: passage
+    url: https://www.federalreserve.gov/faqs/how-does-the-federal-reserve-buying-and-selling-of-securities-relate-to-the-borrowing-decisions-of-the-federal-government.htm
+  - source: FOMC, 'Statement on Longer-Run Goals and Monetary Policy Strategy' (adopted effective January 24, 2012; as reaffirmed
+      effective January 27, 2026)
+    locator: pp. 1-2
+    passage: '... 1]; the Committee ''is prepared to act forcefully to ensure that longer-term inflation expectations remain
+      well anchored.'' [p. 2]; ''The inflation rate over the longer ...'
+    copy: open
+    read: full
+    url: https://www.federalreserve.gov/monetarypolicy/files/FOMC_LongerRunGoals.pdf
+  - source: Federal Reserve FAQ on cash acceptance, as quoted by the study's checks
+    locator: web FAQ; no page
+    passage: legal tender for all debts, public charges, taxes, and dues; 'There is no federal statute mandating that a private
+      business ... must accept currency or ...
+    copy: open
+    read: passage
+- id: k9-euro-law
+  component: K9
+  type: established
+  text: The ECB's primary objective under the Treaty is price stability; credit to governments, and buying debt "directly
+    from them", are prohibited (Article 123, as the Statute's Article 21.1 restates it); its strategy aims at {{cite_ecb_inflation-aim}}
+    inflation over the medium term; and in 2012 Draghi said it was "ready to do whatever it takes to preserve the euro".
+  sources:
+  - source: ECB, The Monetary Policy of the ECB (2011), reprint of the Treaty, Art. 127
+    locator: PDF p. 24
+    passage: The primary objective of the ESCB shall be to maintain price stability. Without prejudice to the objective of
+      price stability, the ESCB shall support the ...
+    copy: open
+    read: passage
+    url: https://www.ecb.europa.eu/pub/pdf/other/monetarypolicy2011en.pdf
+  - source: Statute of the ESCB and of the ECB, Art. 21.1 'Operations with public entities' (ECB institutional provisions,
+      2011)
+    locator: PDF p. 17
+    passage: '... of ... central governments ... shall be prohibited, as shall the purchase directly from them by the ECB
+      or national central banks of debt instruments.'
+    copy: open
+    read: passage
+    url: https://www.ecb.europa.eu/pub/pdf/other/ecbinstitutionalprovisions2011en.pdf
+  - source: ECB, 'The ECB's monetary policy strategy statement' (2021)
+    locator: statement text
+    passage: price stability is best maintained by aiming for two per cent inflation over the medium term.
+    copy: open
+    read: passage
+    url: https://www.ecb.europa.eu/home/search/review/html/ecb.strategyreview_monpol_strategy_statement.en.html
+  - source: Draghi, speech at the Global Investment Conference, London, 26 July 2012 (ECB)
+    locator: speech text; no page
+    passage: Within our mandate, the ECB is ready to do whatever it takes to preserve the euro. And believe me, it will be
+      enough.
+    copy: open
+    read: passage
+    url: https://www.ecb.europa.eu/press/key/date/2012/html/sp120726.en.html
+- id: k9-franc-tender
+  component: K9
+  type: established
+  text: In Switzerland, coins, banknotes and Swiss franc sight deposits at the Swiss National Bank are legal tender, under
+    the Federal Act on Currency and Payment Instruments.
+  sources:
+  - source: Swiss National Bank, 'Legal framework' page, section 'Federal Act on Currency and Payment Instruments (CPIA)'
+      (page opened 11 October 2026)
+    locator: section 'Federal Act on Currency and Payment Instruments (CPIA)'; no page number
+    passage: '... currency and money (legal tender). In addition to coins and banknotes, Swiss franc sight deposits at the
+      SNB are also deemed to be legal tender.'
+    copy: open
+    read: passage
+    url: https://www.snb.ch/en/the-snb/organisation/legal-framework
+- id: k9-franc-law
+  component: K9
+  type: established
+  text: The Swiss National Bank must ensure price stability, which it defines as consumer prices rising between {{cite_snb_range-low}}
+    and {{cite_snb_range-high}} a year, and the National Bank Act bars it from lending to the Confederation or buying government
+    bonds at issue, as its chairmen quote the Act.
+  sources:
+  - source: Schlegel (SNB Chairman), speech of 25 April 2025 (BIS Review)
+    locator: speech text; no page
+    passage: '... the National Bank Act... The SNB shall ensure price stability. In so doing, it shall take due account of
+      economic developments. [the strategy] defines what ...'
+    copy: open
+    read: passage
+    url: https://www.bis.org/review/r250429k.htm
+  - source: Hildebrand (SNB Chairman), speech of 21 June 2011 (BIS)
+    locator: p. 3
+    passage: '... of the National Bank Act, we are not permitted to grant the Confederation any loans. Neither are we allowed
+      to acquire government bonds from new ...'
+    copy: open
+    read: passage
+    url: https://www.bis.org/speeches/20110623-independence-swiss-national-bank.pdf
+  - source: Danthine (SNB Vice Chairman), speech of 19 May 2015 (BIS), footnote 5
+    locator: footnote 5
+    passage: '... to the Confederation, thereby barring the state from using the banknote press [Danthine]; quotes Art. 99:
+      the SNB ''shall follow monetary policy which serves the ...'
+    copy: open
+    read: passage
+    url: https://www.bis.org/review/r150521a.htm
+  - source: Jordan (SNB), speech of 27 April 2023 (BIS)
+    locator: speech text
+    passage: 'price stability: a rise in consumer prices of between 0% and 2% per year. Inflation was 3.2% in Q1 2023, above
+      the range.'
+    copy: open
+    read: passage
+    url: https://www.bis.org/review/r230427i.htm
+- id: k9-stablecoins
+  component: K9
+  type: established
+  text: The GENIUS Act of July 2025 requires a US payment-stablecoin issuer to hold identifiable reserves at least equal to
+    its coins, in cash, deposits and short Treasury bills, and to redeem on request; the BIS finds stablecoins fall short
+    of the tests of singleness, elasticity and integrity a monetary system needs.
+  sources:
+  - source: GENIUS Act, S. 1582 enrolled bill (govinfo.gov), Sec. 4(a)(1)(A)-(C) and Sec. 2(22)
+    locator: Sec. 4(a)(1)(A); Sec. 4(a)(1)(B)
+    passage: issuer shall 'maintain identifiable reserves backing the outstanding payment stablecoins... on an at least 1
+      to 1 basis'; reserve assets include US coins and currency ...
+    copy: open
+    read: passage
+    url: https://www.govinfo.gov/content/pkg/BILLS-119s1582enr/html/BILLS-119s1582enr.htm
+  - source: BIS Annual Economic Report 2025, ch. III 'The next-generation monetary and financial system' (29 June 2025), subsection
+      'Stablecoins and the integrity imperative'
+    locator: chapter III (HTML; the PDF is 38 pages; no page number)
+    passage: '... but fall short of requirements to be the mainstay of the monetary system when set against the three key
+      tests of singleness, elasticity and integrity. ...'
+    copy: open
+    read: passage
+    url: https://www.bis.org/publ/arpdf/ar2025e3.htm
+  - source: Federal Reserve Board staff memo to the Board on the GENIUS proposed rule (3 September 2026), p. 2
+    locator: p. 2
+    passage: The GENIUS Act was enacted in July 2025
+    copy: open
+    read: passage
+    url: https://www.federalreserve.gov/newsevents/pressreleases/files/bcreg20260924a1.pdf
+- id: k9-bitcoin
+  component: K9
+  type: established
+  text: Bitcoin's supply grows by design to a limit of {{cite_bitcoin_supply-cap}} coins.
+  sources:
+  - source: ECB, 'Virtual Currency Schemes' (October 2012), section 3.1.3 'Monetary aspects'
+    locator: PDF pp. 24-25
+    passage: '... 21 million in around 2040. ... The total supply of Bitcoins is expected to grow geometrically until it reaches
+      a finite limit of 21 million.'
+    copy: open
+    read: passage
+    url: https://www.ecb.europa.eu/pub/pdf/other/virtualcurrencyschemes201210en.pdf
+- id: k9-today-us
+  component: K9
+  type: cases
+  text: US federal debt held by the public was {{k9_us_debt_2026}} of GDP in early 2026, against {{k9_us_debt_2019}} at the
+    end of 2019, and interest took {{k9_us_interest_2025}} of GDP in fiscal 2025.
+  sources:
+  - source: FRED FYGFGDQ188S and FYOIGDA188S (frozen data/fred/*/2026-10-11)
+    locator: 2019 Q4 and 2026 Q1; fiscal year 2025
+    passage: 78.36 (2019 Q4), 98.71 (2026 Q1); interest outlays 3.15 (FY2025), percent of GDP
+    copy: data
+    read: full
+- id: k9-today-japan
+  component: K9
+  type: established
+  text: The Bank of Japan held {{cite_boj_jgb-share-2026}} of Japan's government bonds in June 2026, down from {{cite_boj_jgb-share-peak}}
+    in September 2023, and in July 2024 it planned to cut its monthly purchases to about {{cite_boj_purchases-2026}} by early
+    2026.
+  sources:
+  - source: Bank of Japan, Basic Figures, Flow of Funds for the Second Quarter of 2026 (Preliminary), 17 September 2026
+    locator: Chart 6-2 (2), p. 11
+    passage: '(2) For "central government securities and FILP bonds" (Share, %) ... Central bank ... 2023 9: 53.86 ... 2026
+      6: 46.70'
+    copy: open
+    read: passage
+    url: https://www.boj.or.jp/en/statistics/sj/sjexp.pdf
+  - source: Bank of Japan, Statement on Monetary Policy, 31 July 2024
+    locator: p. 1
+    passage: '... a plan to reduce the amount of its monthly outright purchases of JGBs so that it will be about 3 trillion
+      yen in January-March 2026'
+    copy: open
+    read: passage
+    url: https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2024/k240731a.pdf
+- id: k9-today-euro
+  component: K9
+  type: established
+  text: Since 2022 the ECB can buy, with no limit set in advance, the bonds of a member state whose borrowing costs rise in
+    ways "not warranted by country-specific fundamentals", if the state meets fiscal and economic criteria; it lost {{cite_ecb_loss-2024}}
+    in 2024 and {{cite_ecb_loss-2025}} in 2025, and says it can fulfil its mandate "regardless of any losses".
+  sources:
+  - source: ECB, press release of 21 July 2022, The Transmission Protection Instrument
+    locator: the paragraphs on purchases and eligibility
+    passage: '... issued in jurisdictions experiencing a deterioration in financing conditions not warranted by country-specific
+      fundamentals ... Purchases are not restricted ex ante. ... (3) fiscal sustainability'
+    copy: open
+    read: passage
+    url: https://www.ecb.europa.eu/press/pr/date/2022/html/ecb.pr220721~973e6e7273.en.html
+  - source: ECB, press release of 26 February 2026
+    locator: first and third paragraphs
+    passage: '... (2024, loss of EUR 7.9 billion) ... the ECB can operate effectively and fulfil its primary mandate of maintaining
+      price stability regardless of any losses.'
+    copy: open
+    read: passage
+    url: https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260226~15dbe4febc.en.html
+- id: k9-bitcoin-value
+  component: K9
+  type: established
+  text: Bitcoin is no one's liability and cannot be redeemed; its value rests only on the expectation that others will accept
+    it, and since its supply is set in advance by its protocol, every swing in demand moves its price.
+  sources:
+  - source: BIS, Annual Economic Report 2018, ch. V, 'Cryptocurrencies, looking beyond the hype'
+    locator: the sections on the money flower and on scaling
+    passage: '... liability, ie they cannot be redeemed, and their value derives only from the expectation that they will
+      continue to be accepted by others ... supply ...'
+    copy: open
+    read: passage
+    url: https://www.bis.org/publ/arpdf/ar2018e5.htm
+- id: k9-bitcoin-swings
+  component: K9
+  type: cases
+  text: Bitcoin lost {{k9_btc_drawdown}} of its dollar price from November 2021 to November 2022, then passed its 2021 high
+    in March 2024.
+  sources:
+  - source: FRED CBBTCUSD, Coinbase bitcoin price (frozen data/fred/CBBTCUSD/2026-10-11)
+    locator: daily, November 2021 and November 2022
+    passage: 67,510.06 on 8 November 2021; 15,755.75 on 21 November 2022; 68,277.61 on 4 March 2024, the first close above
+      the 2021 high (US dollars)
+    copy: data
+    read: full
+- id: k9-bitcoin-use
+  component: K9
+  type: established
+  text: In the Fed's 2024 survey, {{cite_shed_crypto-invest}} of US adults held a cryptocurrency as an investment and {{cite_shed_crypto-pay}}
+    used one to pay for something.
+  sources:
+  - source: Federal Reserve, Economic Well-Being of U.S. Households in 2024 (May 2025)
+    locator: pp. 53-54
+    passage: Seven percent of adults bought or held cryptocurrency as an investment ... 2 percent used cryptocurrency to buy
+      something or make a payment
+    copy: open
+    read: passage
+    url: https://www.federalreserve.gov/publications/files/2024-report-economic-well-being-us-households-202505.pdf
+- id: k9-gold
+  component: K9
+  type: established
+  text: Gold's real price "has fluctuated wildly" since the 1970s, and over practical horizons gold is "an unreliable inflation
+    hedge".
+  sources:
+  - source: Erb and Harvey (2013), 'The Golden Dilemma', NBER WP 18706
+    locator: abstract (p. 1); p. 14; p. 7
+    passage: '... Over practical investment horizons, gold is an unreliable inflation hedge.'' [p. 14:] since the 1970s ''the
+      real gold price has fluctuated wildly''; the real price ...'
+    copy: open
+    read: passage
+    url: https://www.nber.org/system/files/working_papers/w18706/w18706.pdf
+- id: k9-digital-euro
+  component: K9
+  type: established
+  text: 'A digital euro is proposed, not decided: its regulation is in negotiation, and the ECB will decide whether to issue
+    it only once the regulation is adopted.'
+  sources:
+  - source: ECB, 'Digital euro' FAQ (updated 17 Aug 2026), Q15-Q18
+    locator: Q15-Q18; no page
+    passage: '... will not make a decision on whether to issue the digital euro until the Regulation on the establishment
+      of the digital euro has been adopted.'
+    copy: open
+    read: passage
+    url: https://www.ecb.europa.eu/euro/digital_euro/faqs/html/ecb.faq_digital_euro.en.html
+  - source: ECB, 'Digital euro' page
+    locator: page text
+    passage: '... be ready for a potential first issuance of the digital euro during 2029, assuming the necessary EU legislation
+      is adopted in the course of 2026.'
+    copy: open
+    read: passage
+    url: https://www.ecb.europa.eu/euro/digital_euro/html/index.en.html
+- id: k4-romer
+  component: K4
+  type: established
+  text: '"The underlying cause of most, if not all, episodes of high inflation and hyperinflation is government''s need to
+    obtain seignorage—that is, revenue from printing money."'
+  sources:
+  - source: Romer, Advanced Macroeconomics (McGraw-Hill, 1996; ISBN 9780070536678, first edition), §9.7 'Seignorage and Inflation'
+    locator: §9.7 (the printed contents list gives the section at p. 420); no page recorded for the sentence itself
+    passage: The underlying cause of most, if not all, episodes of high inflation and hyperinflation is government's need
+      to obtain seignorage—that is, revenue from printing money ...
+    copy: held
+    read: passage
+- id: k4-seignorage-limit
+  component: K4
+  type: established
+  text: In theory a state can raise only so much for long by printing money, the most sustainable seignorage, and hyperinflations
+    arise when its seignorage needs exceed it (Romer, after Cagan 1956).
+  sources:
+  - source: Romer, Advanced Macroeconomics (McGraw-Hill, 1996; ISBN 9780070536678, first edition), §9.7, the subsection 'Seignorage
+      and Hyperinflation'
+    locator: §9.7, 'Seignorage and Hyperinflation', within pp. 420-428 by the printed contents; no page recorded for the sentence
+      (the library chunk has none)
+    passage: '... and the government can obtain more seignorage than the maximum sustainable amount, S*. Thus hyperinflations
+      arise when the government''s seignorage needs exceed S* (Cagan, 1956).'
+    copy: held
+    read: passage
+- id: k4-romer-next
+  component: K4
+  type: established
+  text: Wars, falls in export prices, tax evasion and political stalemate "frequently leave governments with large budget
+    deficits", and when investors will not buy the government's bonds, its "only choice" is seigniorage.
+  sources:
+  - source: Romer, Advanced Macroeconomics (1996), §9.7
+    locator: §9.7, the sentences after the turning-point sentence; no page recorded
+    passage: Wars, falls in export prices, tax evasion, and political stalemate frequently leave governments with large budget
+      deficits. And often investors do not have enough confidence ...
+    copy: held
+    read: passage
+- id: k4-cagan
+  component: K4
+  type: established
+  text: Behind the hyperinflations he studied, Cagan found that printing money "was a convenient way to provide the government
+    with real resources" for governments "too weak to enact adequate tax programs".
+  sources:
+  - source: Cagan, 'The Monetary Dynamics of Hyperinflation', in Friedman (ed.), Studies in the Quantity Theory of Money (Chicago,
+      1956), section VII 'The tax on cash balances'
+    locator: p. 77
+    passage: Why did money grow so much? "(1) printing money was a convenient way to provide the government with real resources…
+      (2) the effectiveness of this ...
+    copy: held
+    read: passage
+  - source: Cagan 1956, same section
+    locator: p. 78
+    passage: Governments "too weak to enact adequate tax programs"; issuing money was "a tax on cash balances"; revenue is
+      the tax base (real balances) times the ...
+    copy: held
+    read: passage
+- id: k4-catao-terrones
+  component: K4
+  type: established
+  text: Catão and Terrones, scaling deficits by the money the inflation tax falls on and separating the short run from the
+    long, find a long-run link between deficits and inflation across more than a hundred countries from 1960 to 2001, strong
+    among developing and high-inflation countries, not found among low-inflation advanced ones.
+  sources:
+  - source: Catão and Terrones, 'Fiscal Deficits and Inflation', Journal of Monetary Economics 52 (2005), pp. 529-554 (Catao
+      Terrones 2005 - Fiscal Deficits and Inflation (JME 52-3).pdf)
+    locator: p. 529 (abstract); pp. 530-532
+    passage: '... 107 countries over 1960-2001 show a strong positive association between deficits and inflation among high-inflation
+      and developing country groups, but not among low-inflation advanced economies.'
+    copy: held
+    read: passage
+- id: k4-fsv
+  component: K4
+  type: established
+  text: Fiscal deficits explain high inflation, but there is "no obvious long- or short-run relationship" at low inflation,
+    and no significant long-run relationship across countries.
+  sources:
+  - source: Fischer, Sahay and Végh, 'Modern Hyper- and High Inflations', NBER WP 8930 (May 2002)
+    locator: p. 17
+    passage: 'The deficit–inflation panel relationship is significant for the high-inflation countries (24 of 94) but not
+      for the low-inflation ones: "No obvious long- or short-run relationship ...'
+    copy: open
+    read: passage
+    url: https://www.nber.org/system/files/working_papers/w8930/w8930.pdf
+  - source: Fischer, Sahay and Végh (2002)
+    locator: p. 34 (stylized fact 7)
+    passage: We find no significant long-run (cross-section) relationship between fiscal deficits and inflation.
+    copy: open
+    read: passage
+    url: https://www.nber.org/system/files/working_papers/w8930/w8930.pdf
+  - source: Fischer, Sahay and Végh (2002)
+    locator: p. 10
+    passage: By and large, we find that fiscal deficits indeed explain high inflation using standard regression techniques.
+    copy: open
+    read: passage
+    url: https://www.nber.org/system/files/working_papers/w8930/w8930.pdf
+- id: k4-germany-1923
+  component: K4
+  type: cases
+  text: Germany paid striking workers in the occupied Ruhr by discounting treasury bills with the Reichsbank, until a decree
+    of 15 November 1923 discontinued the discounting.
+  sources:
+  - source: 'Sargent, ''The Ends of Four Big Inflations'', in Hall (ed.), Inflation: Causes and Effects (1982), section 2.6
+      Germany'
+    locator: p. 73
+    passage: '... the French occupation "by a policy of passive resistance, making direct payments to striking workers which
+      were financed by discounting treasury bills with the Reichsbank."'
+    copy: open
+    read: passage
+    url: https://www.nber.org/system/files/chapters/c11452/c11452.pdf
+  - source: Sargent 1982
+    locator: p. 82 (Table G4, note 3)
+    passage: A decree of 15 November 1923 discontinued the discounting of treasury bills by the Reichsbank.
+    copy: open
+    read: passage
+    url: https://www.nber.org/system/files/chapters/c11452/c11452.pdf
+  - source: Sargent 1982
+    locator: p. 75
+    passage: '... November 1923." And "Table G4 reveals the extent to which the Reichsbank note circulation was backed by
+      discounted treasury bills." Also "During 1923, the Reichsbank ...'
+    copy: open
+    read: passage
+    url: https://www.nber.org/system/files/chapters/c11452/c11452.pdf
+- id: k4-rentenmark
+  component: K4
+  type: cases
+  text: The Rentenbank decree capped Rentenmarks at {{cite_rentenmark_cap-bn}} billion, {{cite_rentenmark_to-government-bn}}
+    billion of it for the government; government borrowing stopped, the budget balanced and inflation stopped.
+  sources:
+  - source: Sargent 1982, 'The Ends of Four Big Inflations' (the Rentenbank decree)
+    locator: p. 83
+    passage: '... total volume of Rentenmarks that could be issued, 3.2 billion marks, and the maximum amount that could be
+      issued to the government, 1.2 billion marks."'
+    copy: open
+    read: chapter
+    url: https://www.nber.org/system/files/chapters/c11452/c11452.pdf
+  - source: Sargent 1982
+    locator: p. 83
+    passage: The change of unit was "only a cosmetic measure"; then government borrowing stopped, the budget balanced and
+      "inflation stopped".
+    copy: open
+    read: chapter
+    url: https://www.nber.org/system/files/chapters/c11452/c11452.pdf
+- id: k4-rentenmark-outside
+  component: K5
+  type: established
+  text: 'Germany also obtained relief from its reparations: payments were "temporarily suspended", and the Dawes plan set
+    "a much more manageable schedule of payments".'
+  sources:
+  - source: Sargent 1982, 'The Ends of Four Big Inflations', after Table G5
+    locator: p. 84
+    passage: '... also obtained relief from her reparation obligations. Reparations payments were temporarily suspended, and
+      the Dawes plan assigned Germany a much more manageable schedule of payments.'
+    copy: open
+    read: chapter
+    url: https://www.nber.org/system/files/chapters/c11452/c11452.pdf
+- id: k4-austria
+  component: K4
+  type: cases
+  text: On 4 August 1914 Austria-Hungary suspended its bank's gold cover and its ban on lending to the government; the Austrian
+    government's debts to the bank rose from {{cite_austria_claims-1914}} to {{cite_austria_claims-1918}} million crowns at
+    face value (Garber and Spencer's table heads its unit "gold crowns") between July 1914 and October 1918, and Austria went
+    on monetising its deficits after the war.
+  sources:
+  - source: 'Garber and Spencer, ''The Dissolution of the Austro-Hungarian Empire: Lessons for Currency Reform'', Essays in
+      International Finance 191 (Princeton, 1994)'
+    locator: p. 5
+    passage: On August 4, 1914, the Austro-Hungarian government suspended the 40 percent gold-cover requirement... and the
+      statutory prohibition against lending to the government.
+    copy: open
+    read: full
+    url: https://ies.princeton.edu/pdf/E191.pdf
+  - source: 'Garber and Spencer 1994, Table 2 (source line: Rasin 1923, pp. 8-10)'
+    locator: p. 6
+    passage: 'Bank accounts in millions of gold crowns, 23 July 1914 vs 26 Oct 1918: Notes in circulation 2,129.8 to 30,679.7.
+      Debts of the Austrian Government ...'
+    copy: open
+    read: full
+    url: https://ies.princeton.edu/pdf/E191.pdf
+  - source: Garber and Spencer 1994
+    locator: p. 7 (the passage begins at the foot of p. 6)
+    passage: The Austrian government... continued to maintain the wartime policy of monetizing government budget deficits.
+    copy: open
+    read: full
+    url: https://ies.princeton.edu/pdf/E191.pdf
+  - source: Sargent 1982, section 2.3 Austria
+    locator: p. 49
+    passage: The government financed these deficits by selling treasury bills to the Austrian section of the Austro-Hungarian
+      bank.
+    copy: open
+    read: chapter
+    url: https://www.nber.org/system/files/chapters/c11452/c11452.pdf
+- id: k4-austria-end
+  component: K4
+  type: established
+  text: Austria's inflation ended in 1922, when the League of Nations stepped in and, under three protocols signed in October,
+    Austria's government bound itself to new fiscal and monetary policies.
+  sources:
+  - source: Sargent 1982, 'The Ends of Four Big Inflations', section 2.3, Austria
+    locator: section 2.3, p. 52 (NBER chapter c11452)
+    passage: '... government of Austria to reorder Austrian fiscal and monetary strategies dramatically. ... These negotiations
+      led to the signing of three protocols on 2 October 1922'
+    copy: held
+    read: passage
+- id: k5-goodfriend-king
+  component: K5
+  type: established
+  text: Goodfriend and King set out two readings of the Fed's change of 1979, a new method to control money or a new willingness
+    to keep interest rates high, the method giving the Fed the leeway to raise rates as needed to break the inflation.
+  sources:
+  - source: Goodfriend and King, 'The Incredible Volcker Disinflation', NBER w11562 (2005)
+    locator: p. 27
+    passage: '... the Fed to ascribe interest rate movements to market forces and thereby create the leeway to raise interest
+      rates as needed to break the inflation.'
+    copy: open
+    read: passage
+    url: https://www.nber.org/system/files/working_papers/w11562/w11562.pdf
+- id: k4-rentenmark-backing
+  component: K4
+  type: cases
+  text: The Rentenmark was based on the annuities paid on a mortgage on the assets of the "productive classes" and was not
+    made legal tender, though by law it was accepted in all offices handling money in the Reich; Sargent calls the change
+    of unit, one Rentenmark for a trillion paper marks, "only a cosmetic measure".
+  sources:
+  - source: Feldman, The Great Disorder (Oxford University Press, 1993)
+    locator: p. 752 (the held copy)
+    passage: '... offices handling money in the Reich ... the new money was based on the annuities paid on the mortgage of
+      the assets of the productive ...'
+    copy: library
+    read: passage
+  - source: Sargent 1982, 'The Ends of Four Big Inflations'
+    locator: pp. 82-83
+    passage: to attribute any substantial effects to what was in itself only a cosmetic measure
+    copy: open
+    read: chapter
+    url: https://www.nber.org/system/files/chapters/c11452/c11452.pdf
+- id: k9-yen-law
+  component: K9
+  type: established
+  text: Bank of Japan notes are legal tender, to be used for payment without limit; the Bank's monetary control aims at price
+    stability; apart from the state's temporary borrowing and its financing bills, it may lend to the state, or underwrite
+    its bonds, only within a limit the Diet decides under Article 5 of the Fiscal Act (that Act not read).
+  sources:
+  - source: Bank of Japan Act (Act No. 89 of 1997), in the Bank of Japan's Functions and Operations, Appendix 1
+    locator: Articles 2, 34 and 46
+    passage: '... financing bills and other financing securities ... Art. 46(2): Bank of Japan notes ... shall be legal tender
+      and hence shall be used for payment ...'
+    copy: open
+    read: passage
+    url: https://www.boj.or.jp/en/about/outline/data/foboj12.pdf
+- id: k5-fed-1979-after
+  component: K5
+  type: cases
+  text: US consumer prices, up {{k5_us_cpi_1980-03}} on the year in March 1980, were up {{k5_us_cpi_1983-12}} in December
+    1983.
+  sources:
+  - source: FRED CPIAUCNS (frozen data/fred/CPIAUCNS/2026-09-30)
+    locator: twelve-month changes, March 1980 (the highest from 1979 to 1984) and December 1983
+    passage: 14.76% (March 1980); 3.79% (December 1983)
+    copy: data
+    read: full
+- id: k4-bolivia
+  component: K4
+  type: cases
+  text: In Bolivia, fiscal credit from the central bank became "the only domestic source of budget financing", the central
+    bank also repaying foreign debts on the Treasury's behalf, and prices rose {{cite_bolivia_feb-1985}} in February 1985
+    alone; after a stabilisation programme introduced in August 1985 the hyperinflation quickly ended, and from February to
+    October 1986 inflation ran at an annual rate of about {{cite_bolivia_1986}}.
+  sources:
+  - source: Sachs, 'The Bolivian Hyperinflation and Stabilization', NBER WP 2073 (November 1986)
+    locator: p. 17
+    passage: '... 6.9 percent in the first nine months of 1985". p. 17: "fiscal credit from the central bank is the only domestic
+      source of budget financing"'
+    copy: open
+    read: passage
+    url: https://www.nber.org/system/files/working_papers/w2073/w2073.pdf
+  - source: Sachs 1986, Table 1(c) (monthly inflation)
+    locator: Table 1(c)
+    passage: 'Peak monthly inflation: February 1985 182.8 percent (March 24.9; April 11.8; 1984 high 63.0 in April; July 1985
+      66.3, June 78.5; January 1985 68.9).'
+    copy: open
+    read: passage
+    url: https://www.nber.org/system/files/working_papers/w2073/w2073.pdf
+  - source: Sachs 1986
+    locator: pp. 14-15
+    passage: 'p. 14: the paper says central-bank data are patchy; "the central bank repaid foreign debts on behalf of the
+      TGN". p. 15: "Most or all ...'
+    copy: open
+    read: passage
+    url: https://www.nber.org/system/files/working_papers/w2073/w2073.pdf
+  - source: Sachs 1986, abstract
+    locator: abstract (PDF p. 2), read on the page image
+    passage: '... program introduced in August 1985, the hyperinflation was quickly ended, with inflation during February
+      1986 to October 1986 held to an annual rate of about ...'
+    copy: open
+    read: passage
+    url: https://www.nber.org/system/files/working_papers/w2073/w2073.pdf
+- id: k4-ecuador-1999
+  component: K4
+  type: cases
+  text: In Ecuador, where a 1992 law barred the central bank from lending directly to the public sector, the Treasury issued
+    some {{cite_ecuador_bonds-bn}} of bonds in 1998-99 to recapitalise banks and pay guaranteed deposits; the banks used much
+    of them in rediscount or repurchase operations, and the central bank acquired some {{cite_ecuador_cb-acquired-bn}}.
+  sources:
+  - source: Beckerman, 'Longer-Term Origins of Ecuador's Predollarization Crisis' (ch. 2), in Beckerman and Solimano (eds.),
+      Crisis and Dollarization in Ecuador (World Bank, June 2002)
+    locator: p. 45
+    passage: The 1992 Law of the Monetary Regime "prohibited Central Bank direct lending to the public sector" (and moved
+      debt stocks to the Treasury).
+    copy: open
+    read: passage
+    url: https://openknowledge.worldbank.org/handle/10986/14256
+  - source: Beckerman and Solimano (eds.) 2002, ch. 2 by Beckerman
+    locator: p. 57
+    passage: '... the bonds for rediscount or repurchase operations with the Central Bank. As a consequence, the Central Bank
+      acquired some US$1.2 billion of these bonds." Also ...'
+    copy: open
+    read: passage
+    url: https://openknowledge.worldbank.org/handle/10986/14256
+- id: k4-zimbabwe-end
+  component: K4
+  type: cases
+  text: Zimbabwe's budget figures leave the central bank's quasi-fiscal activities out; when Zimbabwe adopted a regime of
+    foreign currencies in early 2009, prices stabilised, and under it "it is not possible to finance expenditure by monetary
+    expansion".
+  sources:
+  - source: World Bank, Zimbabwe Public Expenditure Notes (Report No. 72004, 11 August 2010)
+    locator: p. 3, note 2 (to Table 2, Major Budgetary Trends); p. 4, para. 8; p. 25
+    passage: '... the multicurrency regime in early 2009, prices have stabilized [p. 25:] under the multicurrency regime it
+      is not possible to finance expenditure by monetary expansion'
+    copy: open
+    read: passage
+    url: https://openknowledge.worldbank.org/server/api/core/bitstreams/622452da-342c-5f6f-8dec-a2da3df7b284/content
+- id: k4-zimbabwe-dating
+  component: K4
+  type: cases
+  text: Hanke and Krus date Zimbabwe's hyperinflation from March 2007 to mid-November 2008.
+  sources:
+  - source: Hanke and Krus 2013, "World Hyperinflations" (library copy, typescript), "The Hyperinflation Table"
+    locator: the table, the row for Zimbabwe (printed "Hanke-Krus 12")
+    passage: 'Zimbabwe2 Mar. 2007 Mid-Nov. 2008 Mid-Nov. 2008 7.96 × 10^10% 98.0% 24.7 hours Dollar Implied Exchange Rate
+      (columns: start, end, month of highest inflation, rate, ...'
+    copy: library
+    read: passage
+- id: k4-zimbabwe
+  component: K4
+  type: cases
+  text: The World Bank attributes Zimbabwe's soaring inflation in its hyperinflation period (2004-2007) to the central bank's
+    quasi-fiscal activity, "rather than conventional government budget deficits"; it estimates the central bank's realized
+    quasi-fiscal losses at about {{cite_zimbabwe_qf-losses-2006}} of GDP in 2006.
+  sources:
+  - source: World Bank, Zimbabwe Economic Update, Issue 3 (June 2021), Box 1 'Quasi-fiscal activities'
+    locator: 'Box 1, pp. 11-12; the quoted sentence on p. 11 (the dossier check read it on the World Bank''s copy: the page
+      ends with ''11'')'
+    passage: Zimbabwe's soaring inflation was due to the RBZ's substantial quasi-fiscal activity, rather than conventional
+      government budget deficits. [The box covers "the hyperinflation period (2004-2007)"; also ...
+    copy: open
+    read: passage
+    url: https://openknowledge.worldbank.org/server/api/core/bitstreams/b530bddd-1580-5a02-b525-44dc36828ac4/content
+- id: k4-britain-1797
+  component: K4
+  type: cases
+  text: In 1797 the Bank of England, which lent to the government in its own notes, was instructed to suspend gold payments;
+    Parliament mandated the return in 1819, and convertibility resumed in 1821.
+  sources:
+  - source: 'Calomiris and Haber, Fragile by Design (Princeton, 2014), section ''Let Them Eat Inflation: The Bank of England
+      and the Napoleonic Wars'''
+    locator: ch. 4, section named; the library excerpt carries no page
+    passage: '... of notes issued by the bank". "in 1797 the Privy Council instructed the Bank of England to suspend convertibility",
+      and "the limit that the gold ...'
+    copy: held
+    read: passage
+  - source: Calomiris and Haber, Fragile by Design, ch. 4
+    locator: ch. 4 and its n. 6 (Neal 1998, 55); no page
+    passage: '... resumed "converting its notes to gold only in response to a parliamentary mandate in 1819, with the actual
+      resumption of convertibility taking place in 1821—six ...'
+    copy: held
+    read: passage
+- id: k4-greenbacks
+  component: K4
+  type: cases
+  text: The greenbacks, the Union's inconvertible paper of the Civil War, fell to {{a3_greenback_low}} of their value in gold
+    in July 1864 and were back at par by December 1878, convertibility resuming on 1 January 1879; over the last years of
+    that return, US consumer prices fell, by {{cite_us_prices-1878-over-1870}} from 1870 to 1878.
+  sources:
+  - source: Jordà-Schularick-Taylor Macrohistory Database R6, consumer prices (frozen data/jst/macrohistory/2026-09-30)
+    locator: USA, cpi, 1870-1878
+    passage: 10.58 in 1870, falling in every year but 1872 to 8.08 in 1878 (-23.6%).
+    copy: data
+    read: full
+  - source: Mitchell, Gold, Prices and Wages under the Greenback Standard (1908), Table 2 (monthly gold price of the greenback)
+      and p. 13
+    locator: Table 2 (archive.org goldpriceswages0000unse, leaves 30 and 37); p. 13
+    passage: 'Low July 1864: 258.1 (P = 0.387); December 1878 averages 100.1 (P = 0.999); 51 of 51 averages checked on the
+      page images. p. 13 ...'
+    copy: archive
+    read: passage
+  - source: Bordo and Schwartz, 'The Specie Standard as a Contingent Rule', NBER WP 4860 (1994), Table 1A and text p. 12
+    locator: Table 1A, pp. 57-58; text p. 12
+    passage: 'United States: gold convertibility 1875/1879 to 1893; the text (p. 12) gives de jure 1 January 1879 for the
+      US.'
+    copy: open
+    read: chapter
+    url: https://www.nber.org/system/files/working_papers/w4860/w4860.pdf
+- id: k4-us-1942-51
+  component: K4
+  type: cases
+  text: From 1942 the Fed held Treasury rates down, buying all bills offered at the pegged price, and by the end of the war
+    it "held virtually the entire supply of Treasury bills"; in the autumn 1950 refunding it "was forced to purchase the majority
+    of it", and the Accord of March 1951 ended the peg.
+  sources:
+  - source: 'Eichengreen and Garber, ''Before the Accord: U.S. Monetary-Financial Policy, 1945-51'', in Hubbard (ed.), Financial
+      Markets and Financial Crises (1991), pp. 175-206'
+    locator: p. 181
+    passage: '... end of the war, the Federal Reserve System held virtually the entire supply of Treasury bills"; it held
+      negligible bonds until the end of 1947.'
+    copy: open
+    read: passage
+    url: https://www.nber.org/system/files/chapters/c11485/c11485.pdf
+  - source: Eichengreen and Garber 1991
+    locator: p. 180 (and notes 7-8)
+    passage: '... March 1942 the Fed agreed to support bill prices once rates reached 3/8 per cent, and "Reserve banks were
+      ordered… to purchase all Treasury bills ...'
+    copy: open
+    read: passage
+    url: https://www.nber.org/system/files/chapters/c11485/c11485.pdf
+  - source: Eichengreen and Garber 1991
+    locator: p. 184
+    passage: '... System was forced to purchase the majority of it". The Accord followed (Snyder gave in on the last day of
+      February; Accord dated March 1951).'
+    copy: open
+    read: passage
+    url: https://www.nber.org/system/files/chapters/c11485/c11485.pdf
+- id: k4-japan-ycc
+  component: K4
+  type: cases
+  text: From 21 September 2016 the Bank of Japan bought government bonds to hold ten-year yields around zero; on 19 March
+    2024 it judged that this yield-curve control had fulfilled its role, and ended it.
+  sources:
+  - source: 'Bank of Japan, ''New Framework for Strengthening Monetary Easing: Quantitative and Qualitative Monetary Easing
+      with Yield Curve Control'', statement of 21 September 2016'
+    locator: pp. 1-2
+    passage: the Bank will purchase Japanese government bonds (JGBs) so that 10-year JGB yields will remain more or less at
+      the current level (around zero percent).
+    copy: open
+    read: passage
+    url: https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2016/k160921a.pdf
+  - source: Bank of Japan, 'Changes in the Monetary Policy Framework', statement of 19 March 2024
+    locator: p. 1
+    passage: '... that the policy framework of Quantitative and Qualitative Monetary Easing (QQE) with Yield Curve Control
+      and the negative interest rate policy to date have fulfilled ...'
+    copy: open
+    read: passage
+    url: https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2024/k240319a.pdf
+- id: k4-japan-1932
+  component: K4
+  type: cases
+  text: From November 1932 the Bank of Japan underwrote the government's bonds, consumer prices rising between {{cite_japan_1932-36-low}}
+    and {{cite_japan_1932-36-high}} a year to 1936; by 1935 the finance minister, Takahashi, tried to stop the underwriting,
+    and he was assassinated on 26 February 1936.
+  sources:
+  - source: Eggertsson, 'Fiscal Multipliers and Policy Coordination', Federal Reserve Bank of New York Staff Report 241 (2006)
+    locator: p. 34
+    passage: Takahashi, appointed December 1931, abolished the gold standard and "subordinated monetary policy to fiscal policy
+      by having the BOJ underwrite government bonds".
+    copy: open
+    read: passage
+    url: https://www.newyorkfed.org/medialibrary/media/research/staff_reports/sr241.pdf
+  - source: Eggertsson, Staff Report 241, Table 4
+    locator: p. 35
+    passage: 'Japan''s annual changes: CPI 1932 +1.1%, 1933 +3.1%, 1934 +1.4%, 1935 +2.5%, 1936 +2.3%. WPI +11.0%, +14.6%,
+      +2.0%, +2.5%, +4.2%.'
+    copy: open
+    read: passage
+    url: https://www.newyorkfed.org/medialibrary/media/research/staff_reports/sr241.pdf
+  - source: Hirayama and Noda, 'Evaluating the Financial Market Function in Prewar Japan…', arXiv:2008.00860v2 (2021)
+    locator: about p. 10
+    passage: 'In November 1932, the Bank of Japan began underwriting government bonds. [Its table of events: "November 1932:
+      The Bank of Japan started underwriting government bonds."]'
+    copy: open
+    read: passage
+    url: https://arxiv.org/pdf/2008.00860
+  - source: Iwata, remarks in Tokyo, 27 October 2013 (BIS central bankers' speeches r131028c)
+    locator: web page, no page
+    passage: '... 1935 Takahashi "tried to stop the Bank from underwriting government securities; otherwise, this would lead
+      to hyperinflation"; he was "assassinated … on February 26, 1936". ...'
+    copy: open
+    read: passage
+    url: https://www.bis.org/review/r131028c.htm
+- id: k4-iwata
+  component: K4
+  type: established
+  text: In the Bank of Japan's Deputy Governor Iwata's words, after Takahashi's death "the Bank's underwriting of government
+    securities was mismanaged, which led to hyperinflation after World War II", "not the Takahashi Economic Policy itself".
+  sources:
+  - source: Iwata (Deputy Governor, Bank of Japan), remarks at a symposium in Tokyo, 27 October 2013 (BIS central bankers'
+      speeches r131028c; the BIS page reads 'Date delivered 28 October 2013', the remarks' own dateline is Tokyo, 27 October
+      2013)
+    locator: web page, no page
+    passage: After his death, the Bank's underwriting of government securities was mismanaged, which led to hyperinflation
+      after World War II … not the Takahashi Economic Policy ...
+    copy: open
+    read: passage
+    url: https://www.bis.org/review/r131028c.htm
+- id: k4-shirakawa
+  component: K4
+  type: established
+  text: 'Governor Shirakawa read the same years otherwise: at first the Bank sold most of the underwritten bonds promptly
+    and the monetary base did not grow much, yet the scheme "itself paved the way for eventual ballooning of fiscal spending".'
+  sources:
+  - source: Shirakawa (Governor, Bank of Japan), speech of 16 June 2011, section 'Underwriting of Government Securities by
+      the Bank of Japan'
+    locator: web page, no page
+    passage: '... grow significantly, hence the monetary base did not, either; … the introduction of the scheme … itself paved
+      the way for eventual ballooning of fiscal ...'
+    copy: open
+    read: passage
+    url: https://www.boj.or.jp/en/announcements/press/koen_2011/ko110616a.htm
+  - source: Shirakawa, same speech
+    locator: web page, no page
+    passage: The Bank's underwriting of government bonds started as a 'temporary measure'; Takahashi stated in the Diet that
+      it was temporary; outstanding government securities were 47.6 ...
+    copy: open
+    read: passage
+    url: https://www.boj.or.jp/en/announcements/press/koen_2011/ko110616a.htm
+- id: k4-japan-war
+  component: K4
+  type: cases
+  text: Central-government bond issues rose from {{cite_japan_bonds-1935}} ({{cite_japan_bonds-share-1935}} of all bonds issued)
+    in 1935 to {{cite_japan_bonds-1945}} ({{cite_japan_bonds-share-1945}}) in 1945; after the war the Reconstruction Finance
+    Bank, "funded mainly by selling bonds to the Bank of Japan", was suspended as part of the Dodge plan.
+  sources:
+  - source: 'Hoshi and Kashyap, Corporate Financing and Governance in Japan: The Road to the Future (MIT Press, 2001), ch.
+      3, section 3.2 (before 3.3 ''War''s End'')'
+    locator: 'p. 64 (printed; source cited by the book: Koshasai Hikiuke Kyokai 1980, p. 82, table III-1-1)'
+    passage: central government bond issues increased from ¥1 billion (39% of all bonds issued) in 1935 to ¥33 billion (81%)
+      in 1945.
+    copy: held
+    read: passage
+  - source: Hoshi and Kashyap (2001), ch. 3
+    locator: p. 74 (the passage sits before the footer '75' / the running head 'Wartime Transformation 75')
+    passage: '... a part of the Dodge plan, financing through the Reconstruction Finance Bank (RFB), which was funded mainly
+      by selling bonds to the Bank of Japan, ...'
+    copy: held
+    read: passage
+- id: k4-us-controls
+  component: K4
+  type: cases
+  text: Under price controls, measured US prices rose little until June 1946; when they ended, consumer prices rose {{cite_us_cpi_1946-12}}
+    in the year to December 1946 and {{cite_us_cpi_1947-03}} in the year to March 1947, just short of a fifth, and wholesale
+    prices rose {{cite_us_wholesale_1946-47}} in a year.
+  sources:
+  - source: Rockoff, 'Price and Wage Controls in Four Wartime Periods', Journal of Economic History 41(2), 1981
+    locator: p. 382, Table 1
+    passage: 'World War II (4/42-6/46): annual rate of inflation 10.3 in the six months before controls, 3.5 during, 28.0
+      in the six months after.'
+    copy: held
+    read: passage
+  - source: Eichengreen and Garber 1991, 'Before the Accord'
+    locator: p. 183
+    passage: '... 1946, the price level began to rise. The end of price control, in conjunction with European demands for
+      American exports, pushed up U.S. wholesale prices ...'
+    copy: open
+    read: passage
+    url: https://www.nber.org/system/files/chapters/c11485/c11485.pdf
+  - source: FRED CPIAUCNS, frozen data/fred/CPIAUCNS/2026-09-30
+    locator: monthly, 1945-1947
+    passage: 'twelve-month change: June 1946 3.3%, July 1946 9.4%, December 1946 18.1%, March 1947 19.7% (the peak), July
+      1947 12.1%.'
+    copy: data
+    read: full
+- id: k4-japan-tokyo
+  component: K4
+  type: cases
+  text: Japan's yearly figure for 1945 is van Leeuwen's long series, as the Macrohistory Database carries it; on the Bank
+    of Japan's official retail price index for Tokyo, prices doubled from November to the end of December 1945 and doubled
+    again by the end of March 1946; the two series do not place the rise in the same months; the first doubling, within two
+    months at most, means a rise of at least two-fifths a month on average, near Cagan's line of half; the second, over three
+    months, about a quarter a month; the source gives no single month.
+  sources:
+  - source: Jordà, Schularick and Taylor, Macrohistory Database documentation (R6)
+    locator: p. 114, Japan, consumer prices
+    passage: 1870 - 2000 from Wage differentials and economic growth in India, Indonesia, and Japan, 1800-2001, Bas van Leeuwen.
+      CPI series for Japan.
+    copy: data
+    read: passage
+  - source: Hoshi and Kashyap, Corporate Financing and Governance in Japan (MIT Press, 2001)
+    locator: p. 64
+    passage: '... December (according to the official retail price index for Tokyo compiled by Bank of Japan (1948)). By the
+      end of March 1946 it had doubled ...'
+    copy: held
+    read: passage
+- id: k5-gold-swings
+  component: K5
+  type: established
+  text: In Britain and the United States, prices and real output were less stable from year to year under the gold standard
+    than after 1945; it gave long-run price stability "at the expense of both short-run real output and price stability".
+  sources:
+  - source: 'Bordo, ''The Classical Gold Standard: Some Lessons for Today'', Federal Reserve Bank of St. Louis Review, May
+      1981'
+    locator: p. 14, Table 1; p. 15
+    passage: '... such a comparison, the gold standard provided us with greater long-run price stability, but at the expense
+      of both short-run real output and price stability.'
+    copy: open
+    read: passage
+    url: https://fraser.stlouisfed.org/title/review-federal-reserve-bank-st-louis-820/may-1981-23799
+- id: k4-japan-prices
+  component: K4
+  type: cases
+  text: Japan's consumer prices rose {{cite_japan_prices-1944}} in 1944, {{cite_japan_prices-1945}} in 1945, {{cite_japan_prices-1946}}
+    in 1946, {{cite_japan_prices-1947}} in 1947, {{cite_japan_prices-1948}} in 1948 and {{cite_japan_prices-1949}} in 1949.
+  sources:
+  - source: Jordà-Schularick-Taylor Macrohistory Database R6 (consumer prices), frozen data/jst/macrohistory/2026-09-30/JSTdatasetR6.dta
+    locator: Japan, cpi, annual change, 1944-1949
+    passage: 'Japan 1944-49: +35.3, 975.6, 90.7, 125.3, 75.9, 31.9% (the study''s checks give them rounded: +35, 976, 91,
+      125, 76, 32%).'
+    copy: data
+    read: full
+- id: k4-mandat
+  component: K4
+  type: cases
+  text: The mandat of 1796, legal tender at par with coin and redeemable in national land at fixed prices, capped at {{cite_mandat_cap-m}}
+    million, fell from {{cite_mandat_march}} of its face value in March to {{cite_mandat_summer}} by early summer, though
+    no note went beyond the ceiling; from August it was no longer taken at par for taxes or land, and on the 4th of February
+    1797 it was withdrawn.
+  sources:
+  - source: Sargent and Velde, 'Macroeconomic Features of the French Revolution', JPE 103(3), 1995
+    locator: p. 510
+    passage: '... of face value in March and was at 6% by early summer. It "failed even though" no note went beyond the ceiling.
+      In August it ...'
+    copy: held
+    read: chapter
+  - source: White, 'The French Revolution and the Politics of Government Finance, 1770-1815', JEH, 1995
+    locator: p. 247
+    passage: The mandat was legal tender, to be received at par with specie; 2,400 million; 22 times the 1790 lease; underpriced
+      land claimed; cuts and tax ...
+    copy: held
+    read: passage
+- id: k4-assignats
+  component: K4
+  type: cases
+  text: By June 1793 the assignats' value against gold had fallen to about half their face value; by Cagan's definition, Sargent
+    and Velde note, they went through a hyperinflation from May to December 1795.
+  sources:
+  - source: Velde and Weir, 'The Financial Market and Government Debt Policy in France, 1746-1793', JEH 52(1), 1992
+    locator: p. 17, fn 49
+    passage: By June 1793 their value against gold had fallen to about 50 percent of face value.
+    copy: held
+    read: passage
+  - source: Sargent and Velde 1995
+    locator: pp. 500, 503, 504
+    passage: 'December 1792: the assignat at a 30% discount to gold; June 1793 policy moved from "real bills" to "inflationary
+      finance"; value fell with the 1793 ...'
+    copy: held
+    read: chapter
+  - source: Sargent and Velde 1995, 'Macroeconomic Features of the French Revolution', JPE 103(3)
+    locator: p. 501, note 37
+    passage: '... the month before inflation drops below 50 percent per month for at least a year, the assignat experienced
+      a hyperinflation from May to December 1795.'
+    copy: held
+    read: passage
+- id: k5-bordo-rockoff
+  component: K5
+  type: established
+  text: Under the gold standard a country kept its gold price "except in the event of a well understood emergency such as
+    a major war", when it might suspend convertibility and issue paper to pay for the war.
+  sources:
+  - source: Bordo and Rockoff, 'The Gold Standard as a Good Housekeeping Seal of Approval', NBER WP 5340 (November 1995)
+    locator: p. 4
+    passage: '... standard kept "except in the event of a well understood emergency such as a major war. In wartime it may
+      suspend gold convertibility and issue ...'
+    copy: open
+    read: passage
+    url: https://www.nber.org/system/files/working_papers/w5340/w5340.pdf
+  - source: Bordo and Rockoff 1995
+    locator: p. 5
+    passage: '... the US "the monetary authorities adhered faithfully to the fixed price of gold except during major wars.
+      During the Napoleonic War and World War I ...'
+    copy: open
+    read: passage
+    url: https://www.nber.org/system/files/working_papers/w5340/w5340.pdf
+- id: k5-war-embargo
+  component: K5
+  type: established
+  text: In the First World War, "money creation and inflation were made possible by the suspension of gold convertibility
+    or at least the temporary imposition of a de jure or de facto embargo on gold exports".
+  sources:
+  - source: Eichengreen and Flandreau, 'The Rise and Fall of the Dollar, or When Did the Dollar Replace Sterling as the Leading
+      International Currency?', NBER WP 14154 (July 2008); journal version European Review of Economic History 13(3), 2009
+    locator: printed p. 7 (PDF p. 8), the paragraph after 'The backdrop to these efforts was the rise in price levels in the
+      period surrounding World War I.'
+    passage: '... defense. Money creation and inflation were made possible by the suspension of gold convertibility or at
+      least the temporary imposition of a de jure or ...'
+    copy: held
+    read: passage
+    url: https://www.nber.org/system/files/working_papers/w14154/w14154.pdf
+- id: k5-britain-1914
+  component: K5
+  type: cases
+  text: Britain "settled down for the duration with the gold standard legally intact", behind a pegged exchange rate, while
+    its consumer prices rose {{cite_britain_prices-1918-over-1914}} times from 1914 to 1918.
+  sources:
+  - source: 'Moggridge, British Monetary Policy 1924-1931: The Norman Conquest of $4.86 (Cambridge University Press, 1972)'
+    locator: p. 17
+    passage: settled down for the duration with the gold standard legally intact
+    copy: held
+    read: passage
+  - source: Moggridge 1972 (as a check of an earlier draft reports it)
+    locator: p. 17
+    passage: For Britain, the peg rested on $2,021 million of official support, "behind this facade of normalcy".
+    copy: held
+    read: passage
+  - source: Jordà-Schularick-Taylor Macrohistory Database R6, consumer prices (frozen data/jst/macrohistory/2026-09-30)
+    locator: United Kingdom, cpi, 1918 over 1914
+    passage: 'Britain: prices x2.03 by 1918.'
+    copy: data
+    read: full
+- id: k5-dollar-1914
+  component: K5
+  type: cases
+  text: 'The United States did not leave gold in 1917: gold "continued to circulate freely" at home while exports were "permitted
+    under license" (an embargo on gold exports proclaimed on 7 September 1917 under an act of Congress of June 1917, and lifted
+    on 7 June 1919), and consumer prices rose {{cite_dollar_prices-1920-over-1914}} times from 1914 to 1920; by August 1917,
+    before the embargo, they were already {{cite_dollar_prices-aug-1917-over-1914}} times their 1914 level; gold had flowed
+    in from early 1915 until the flow slackened in late 1916, and the country''s gold holdings grew by more than a billion
+    dollars in the three years to 1917.'
+  sources:
+  - source: Federal Reserve Board, Fourth Annual Report (1917)
+    locator: pp. 8, 20
+    passage: '... country''s gold holdings in three years have increased more than a billion dollars [p. 8] ... an almost
+      complete cessation of the movement of gold ...'
+    copy: open
+    read: passage
+    url: https://fraser.stlouisfed.org/files/docs/publications/arfr/1910s/arfr_1917.pdf
+  - source: Silber, When Washington Shut Down Wall Street (Princeton, 2007), ch. 9, asterisked note
+    locator: p. 168 (running head '168 • Chapter Nine'), on the sentence about the embargo 'imposed when the United States
+      entered the war in 1917'
+    passage: '... United States did not leave the gold standard in 1917. Gold continued to circulate freely within the country.
+      Under the gold embargo, exports were permitted ...'
+    copy: held
+    read: passage
+  - source: Bordo and Rockoff 1995, NBER WP 5340, Table 1
+    locator: printed p. 33
+    passage: Gold Embargo 1917-1919, Standard not suspended.
+    copy: open
+    read: passage
+    url: https://www.nber.org/system/files/working_papers/w5340/w5340.pdf
+  - source: Federal Reserve Board, Fourth Annual Report (1917)
+    locator: p. 21; pp. 184-185 (the proclamation's text)
+    passage: '... 10th day of September, in the year 1917, be exported [pp. 184-185, under the Act "approved ... on the fifteenth
+      day of June, one thousand ...'
+    copy: open
+    read: passage
+    url: https://fraser.stlouisfed.org/title/annual-report-board-governors-federal-reserve-system-117/fourth-annual-report-board-governors-federal-reserve-system-1917-2496
+  - source: FRED CPIAUCNS (consumer prices, not seasonally adjusted, frozen data/fred/CPIAUCNS/2026-09-30)
+    locator: June 1914 and June 1920; annual averages 1914 and 1920; August 1917
+    passage: 9.9 in June 1914 and 20.9 in June 1920 (x2.0 by 1920, annual averages); 13.0 in August 1917, against the 1914
+      average of 10.02 (x1.3).
+    copy: data
+    read: full
+  - source: Federal Reserve Bulletin, 1 October 1919
+    locator: p. 918
+    passage: Since the removal of the gold embargo on June 7
+    copy: open
+    read: passage
+- id: k5-1971
+  component: K5
+  type: established
+  text: The end of the dollar's link to gold in August 1971 ended a key part of the Bretton Woods system, whose adjustable
+    peg was gone by 1973; its collapse "was triggered by an acceleration in world inflation, in large part the consequence
+    of an earlier acceleration of inflation in the United States", where money growth had ratcheted up from the early 1960s,
+    partly to finance the Vietnam war and social programmes.
+  sources:
+  - source: 'Bordo, ''The Bretton Woods International Monetary System: An Historical Overview'', NBER WP 4033 (March 1992)'
+    locator: p. 51 (section 6, 'The Collapse of Bretton Woods'); read on the page images
+    passage: was triggered by an acceleration in world inflation, in large part the consequence of an earlier acceleration
+      of inflation in the United States
+    copy: open
+    read: passage
+    url: https://www.nber.org/system/files/working_papers/w4033/w4033.pdf
+  - source: Bordo 1992
+    locator: p. 52
+    passage: money growth "ratcheted upwards beginning in the early 1960's"; from the mid-1960s, "to help finance budget deficits
+      associated with both the Vietnam war and increased ...
+    copy: open
+    read: passage
+    url: https://www.nber.org/system/files/working_papers/w4033/w4033.pdf
+  - source: Bordo 1992
+    locator: pp. 53, 55; read on the page images
+    passage: '... U.S. decision to suspend gold convertibility ended a key aspect of the Bretton Woods system. The remaining
+      part of the system--the adjustable peg--disappeared 19 months ...'
+    copy: open
+    read: passage
+    url: https://www.nber.org/system/files/working_papers/w4033/w4033.pdf
+  - source: Bordo 1992
+    locator: p. 1 (Introduction); read on the page images
+    passage: That regime ended with the closing by Richard Nixon of the gold window on August 15, 1971.
+    copy: open
+    read: passage
+    url: https://www.nber.org/system/files/working_papers/w4033/w4033.pdf
+- id: k5-argentina
+  component: K5
+  type: cases
+  text: Argentina's currency board, whose law let up to a third of its reserves be the state's own dollar bonds, lost its
+    issue rule in April 2001, when changes to the law let the central bank lend to banks without limit against the state's
+    bonds, and collapsed in January 2002; consumer prices rose {{cite_argentina_prices-2002}} over 2002.
+  sources:
+  - source: 'de la Torre, Levy Yeyati and Schmukler, ''Living and Dying with Hard Pegs: The Rise and Fall of Argentina''s
+      Currency Board'', World Bank Policy Research Working Paper 2980 (2003)'
+    locator: p. 3 and n. 5
+    passage: '... dollars"; footnote 5: the law allowed up to one-third of disposable international reserves to be internationally
+      traded, dollar-denominated Argentine sovereign bonds valued at market prices.'
+    copy: open
+    read: full
+    url: https://openknowledge.worldbank.org/server/api/core/bitstreams/d960c9e5-37e2-54df-bf49-7931f0dd76ee/content
+  - source: de la Torre et al. 2003
+    locator: p. 10, n. 26 (harvest B gives the amendments' section as 'pp. 17-18 range; exact page not recorded')
+    passage: the April 2001 amendments enabled "unlimited injection of lender of last [resort] liquidity with the backing
+      of government paper", "effectively eliminating the money issuance rule"
+    copy: open
+    read: full
+    url: https://openknowledge.worldbank.org/server/api/core/bitstreams/d960c9e5-37e2-54df-bf49-7931f0dd76ee/content
+  - source: de la Torre et al. 2003
+    locator: p. 4; p. 11; p. 16
+    passage: 'p. 4: convertibility "collapsed in January 2002". p. 11: corralito, default, float, pesification. p. 16: lecop
+      "redeemable for federal tax payments" and the patacón: "money ...'
+    copy: open
+    read: full
+    url: https://openknowledge.worldbank.org/server/api/core/bitstreams/d960c9e5-37e2-54df-bf49-7931f0dd76ee/content
+  - source: IMF World Economic Outlook, Argentina, end-of-period consumer prices (PCPIEPCH), annual percent change, via DBnomics
+    locator: 2002; same value in four WEO vintages (2008-04, 2010-04, 2012-04, 2013-10)
+    passage: 'December to December: 1999 −1.81; 2000 −0.73; 2001 −1.54; 2002 +40.95; 2003 +3.66; 2004 +6.10. Average: 2002
+      +25.87.'
+    copy: data
+    read: passage
+- id: k5-exits-1931
+  component: K5
+  type: established
+  text: Price levels in the countries that left gold stabilised by 1933, with mild inflation after, and the earlier a country
+    devalued, the faster its industrial production recovered.
+  sources:
+  - source: 'Bernanke and James, ''The Gold Standard, Deflation, and Financial Crisis in the Great Depression: An International
+      Comparison'', in Hubbard (ed.), Financial Markets and Financial Crises (NBER/Chicago, 1991), pp. 33-68'
+    locator: p. 42
+    passage: '"Price levels in countries off the gold standard have stabilized by 1933 (with one or two exceptions), and these
+      countries experience mild inflations in 1934-36." ...'
+    copy: open
+    read: chapter
+    url: https://www.nber.org/system/files/chapters/c11482/c11482.pdf
+  - source: Eichengreen and Sachs, 'Exchange Rates and Economic Recovery in the 1930s', NBER WP 1498 (1984; JEH 1985)
+    locator: pp. 7, 9
+    passage: '... recovery". p. 9: the Gold Bloc "had by 1935 failed to recover to 1929 levels of industrial production. Countries
+      which devalued at an early date ...'
+    copy: open
+    read: full
+    url: https://www.nber.org/system/files/working_papers/w1498/w1498.pdf
+- id: k5-britain-1800
+  component: K5
+  type: cases
+  text: Britain's consumer prices rose {{cite_britain_1800}} in 1800 by Reinhart and Rogoff's files ({{cite_britain_1800-bis}}
+    on the BIS's long series), a year of failed harvests, while the paper pound was still at par in gold; it stood at a discount
+    from 1801 and came back to par in 1821.
+  sources:
+  - source: Reinhart and Rogoff inflation files (October 2010), as frozen in frame b (data/reconstructed/ft001-b/series.csv)
+    locator: Inflation_Country_T-Z.xls, sheet UK, column 'Reinhart and Rogoff', 1800 ('CPI, London'); status apart (the record
+      begins at or above the line)
+    passage: '1800: 31.8273 (percent, change of the year''s average consumer price index).'
+    copy: data
+    read: passage
+  - source: BIS long consumer price series (WS_LONG_CPI, annual, year-on-year change), frozen data/bis/WS_LONG_CPI/2026-09-30
+    locator: United Kingdom, 1800
+    passage: 'Britain 1800: +34.2%.'
+    copy: data
+    read: full
+  - source: Tooke, A History of Prices, vol. 1 (1838), frozen archive OCR data/archive-a3/historyofpriceso01tookuoft/2026-10-02
+    locator: pp. 216-217; p. 229 and its note
+    passage: '... in", the crop "greatly deficient in yield"; on the prices of 1800, "this was before any material difference
+      between paper and gold had become observable".'
+    copy: archive
+    read: passage
+    url: https://archive.org/details/historyofpriceso01tookuoft
+  - source: Tooke, A History of Prices, vol. 2 (1838), p. 379, 'Account of the Average Market Price of Bullion', as transcribed
+      in data/reconstructed/ft001-a3 (series.csv, GBR)
+    locator: p. 379; 1800 and 1801
+    passage: '1800: gold at the mint price, the currency at 100, depreciation "Nil"; 1801: the currency at 91.6.'
+    copy: data
+    read: full
+- id: k5-italy-1973
+  component: K5
+  type: cases
+  text: In 1973 the Bank of Italy financed Lit. {{cite_italy_financed}} milliard of a Lit. {{cite_italy_deficit}} milliard
+    deficit; in August 1974 Italy's consumer prices were up {{cite_italy_1974-08}} on the year, an inflation crisis by the
+    count's line.
+  sources:
+  - source: BIS, 44th Annual Report (1974), Italy, 1973
+    locator: p. 62
+    passage: '... 5,100 milliard was financed by the Bank of Italy and most of the remainder by the banks and the postal savings
+      system. [The deficit was ...'
+    copy: open
+    read: passage
+    url: https://www.bis.org/publications/annual-report-1974.pdf
+- id: k5-japan-1974
+  component: K5
+  type: cases
+  text: In 1974 Japan's inflation rose to more than {{cite_japan_1974-inflation-floor}}, and {{cite_japan_1965-74-share-resold}}
+    of the government bonds financial institutions bought from 1965 to 1974 were later bought by the Bank of Japan.
+  sources:
+  - source: Hoshi and Kashyap, Corporate Financing and Governance in Japan (MIT Press, 2001), ch. 7
+    locator: printed pp. 220-221 (the 20% sentence); p. 225 (the syndicate and the 95%)
+    passage: '... of all the government bonds bought by financial institutions between 1965 ... and 1974 were subsequently
+      bought by the Bank of Japan." (cited to Mabuchi ...'
+    copy: held
+    read: passage
+- id: k5-britain-1975
+  component: K5
+  type: cases
+  text: Britain's retail prices rose {{cite_britain_1975-rpi}} in 1975 ({{cite_britain_1975-bis}} on the consumer-price index).
+  sources:
+  - source: Bank of England, A Millennium of Macroeconomic Data for the UK, sheet A47 'Wages and prices', RPI-based index
+      (frozen data/bankofengland/millennium/2026-09-30)
+    locator: sheet A47, 'RPI based index' (spliced, 2015=100), annual averages
+    passage: '1973 9.175, 1974 10.642, 1975 13.218; 13.218/10.642 is a rise of 24.2%. Same sheet, ''CPI inflation'' column:
+      1975 = 22.7%.'
+    copy: data
+    read: passage
+  - source: BIS long consumer price series (WS_LONG_CPI), frozen data/bis/WS_LONG_CPI/2026-09-30
+    locator: United Kingdom, 1975, year-on-year change
+    passage: 'Britain 1975: +22.7%.'
+    copy: data
+    read: full
+- id: k5-turkey
+  component: K5
+  type: cases
+  text: Turkey adopted formal inflation targeting at the beginning of 2006. From September 2021, with consumer prices up {{cite_turkey_prices-2021-09}}
+    on the year, its central bank cut the policy rate from {{cite_turkey_policy-rate-aug-2021}} to {{cite_turkey_policy-rate-dec-2021}}
+    by December; in 2022, with consumer prices up {{cite_turkey_prices-2022}} on the year's average, its central bank "initiated
+    a rate-cut cycle in August", bringing the policy rate down to {{cite_turkey_policy-rate-nov-2022}} by November, "to sustain
+    the structural gains in industrial production and employment". It reversed course in June 2023, and by March 2024 the
+    rate had gone from {{cite_turkey_policy-rate-may-2023}} to {{cite_turkey_policy-rate-mar-2024}}. Consumer prices rose
+    {{cite_turkey_prices-2024}} in 2024 and {{cite_turkey_prices-2025}} in 2025.
+  sources:
+  - source: Yilmaz (Governor, Central Bank of Turkey), 'Economic outlook for Turkey', speech of 7 September 2006, BIS Review
+      89/2006
+    locator: pp. 1-2
+    passage: '... Bank of Turkey adopted the formal inflation-targeting regime as the monetary policy strategy at the beginning
+      of 2006. [Also: "As of 2002, the ''implicit inflation ...'
+    copy: open
+    read: passage
+    url: https://www.bis.org/speeches/20061002-economic-outlook-turkey.pdf
+  - source: Yilmaz, 'Inflation in Turkey - an overview', speech of 28 April 2006, BIS Review
+    locator: p. 1
+    passage: the Inflation Report of the Inflation Targeting regime, which was put into effect as of January 2006
+    copy: open
+    read: passage
+    url: https://www.bis.org/speeches/20060719-inflation-turkey-overview.pdf
+  - source: Kavcıoğlu (Governor), 'Recent economic and financial developments in Turkey', the Bank's 91st Ordinary General
+      Assembly, Ankara, 28 March 2023 (BIS central bankers' speeches r230718p, posted 18 July 2023)
+    locator: web page, no page
+    passage: '... to sustain the structural gains in industrial production and employment, we initiated a rate-cut cycle in
+      August. As of November, we had delivered a rate ...'
+    copy: open
+    read: passage
+    url: https://www.bis.org/review/r230718p.htm
+  - source: 'OECD, Economic Surveys: Türkiye 2023 (February 2023), main-findings box'
+    locator: PDF p. 12
+    passage: In 2022, the CPI stood at 72.3% and inflation expectations far exceed the 5% policy target.
+    copy: open
+    read: passage
+    url: https://www.oecd.org/content/dam/oecd/en/publications/reports/2023/02/oecd-economic-surveys-turkiye-2023_816ce823/864ab2ba-en.pdf
+  - source: BIS, central bank policy rates (WS_CBPOL), frozen data/bis/WS_CBPOL/2026-10-10/WS_CBPOL_csv_flat.zip
+    locator: Türkiye, monthly, 2023-04 to 2024-12
+    passage: 'Türkiye policy rate: 8.5 in April and May 2023; 15 in June 2023; 17.5, 25, 30, 35, 40, 42.5 to December 2023;
+      45 in January 2024; 50 from March to November 2024.'
+    copy: data
+    read: full
+    url: https://data.bis.org/topics/CBPOL
+  - source: BIS long consumer-price series (WS_LONG_CPI), frozen data/bis/WS_LONG_CPI/2026-09-30/WS_LONG_CPI_csv_flat.zip
+    locator: TR, annual, year-on-year changes, 2024 and 2025
+    passage: 'Türkiye, year-on-year changes, annual: 2024 58.5064507302; 2025 34.8811629786.'
+    copy: data
+    read: full
+    url: https://data.bis.org/topics/CPI
+- id: k5-ball-sheridan
+  component: K5
+  type: established
+  text: Ball and Sheridan found no evidence that inflation targeting improved economic performance in OECD economies once
+    regression to the mean is allowed for.
+  sources:
+  - source: Ball and Sheridan (2003), 'Does Inflation Targeting Matter?', NBER Working Paper 9577
+    locator: p. 2; abstract
+    passage: '... behavior of inflation, output, or interest rates. [Abstract:] Once one controls for regression to the mean,
+      there is no evidence that inflation targeting improves performance.'
+    copy: open
+    read: passage
+    url: https://www.nber.org/papers/w9577
+- id: k5-independence
+  component: K5
+  type: established
+  text: Across rich economies, more independent central banks go with lower inflation, a relationship Romer finds "striking"
+    while "its ultimate implications remain to be determined"; Blanchard warns that it shows "correlation, not necessarily
+    causality".
+  sources:
+  - source: Romer, Advanced Macroeconomics (1996), ch. 9 (the section before 'Limitations of Dynamic-Inconsistency Theories
+      of Inflation'), beside Figure 9.6
+    locator: ch. 9, after footnote 16, before footnote 17 and 'FIGURE 9.6 Central-bank independence and inflation'; section
+      number and page not recorded
+    passage: In short, although the relationship between central-bank independence and inflation is striking, its ultimate
+      implications remain to be determined.
+    copy: held
+    read: passage
+  - source: Blanchard, Macroeconomics (2017), Figure 21-3 'Inflation and Central Bank Independence'
+    locator: the Figure 21-3 caption and the note after it; no page shown in the library passage
+    passage: '... central bank independence, the lower the rate of inflation. … A warning: Figure 21-3 shows correlation,
+      not necessarily causality. It may be that countries that ...'
+    copy: held
+    read: passage
+- id: k5-unpleasant
+  component: K5
+  type: established
+  text: In Sargent and Wallace's "unpleasant monetarist arithmetic", as Walsh sets it out, if public finances do not back
+    the central bank, a central bank that lowers inflation today is forced to allow more later, since the state's debts must
+    be paid either by its surpluses or by money.
+  sources:
+  - source: Walsh, Monetary Theory and Policy, 3rd ed. (MIT Press, 2010), ch. 4
+    locator: ch. 4, the passage on equation 4.13; no page recorded (library chunk has none)
+    passage: '... Sargent and Wallace (1981) described as ''unpleasant monetarist arithmetic'' in a regime of fiscal dominance.
+      ... an attempt by the monetary authority to reduce inflation ...'
+    copy: held
+    read: passage
+- id: k5-taylor-principle
+  component: K5
+  type: established
+  text: 'In the standard model Woodford sets out, a central bank that raises its rate by more than inflation rises above its
+    target rules out self-fulfilling inflation near that target (the model''s determinacy is local): Woodford calls the condition
+    the "Taylor principle".'
+  sources:
+  - source: Woodford, Interest and Prices (Princeton, 2003), ch. 1 (Taylor's rule; the note is ch. 1, note 31 per the harvest)
+    locator: ch. 1, about p. 40
+    passage: '... to inflation above the target rate by raising the nominal interest-rate operating target by more than the
+      amount by which inflation exceeds the target; the ...'
+    copy: held
+    read: passage
+  - source: Woodford 2003, ch. 4
+    locator: ch. 4 (no page)
+    passage: '... for determinacy that is of most practical interest thus remains the Taylor principle … The condition then
+      corresponds once more to the Taylor principle: At ...'
+    copy: held
+    read: passage
+- id: k5-post-1979
+  component: K5
+  type: established
+  text: 'By Clarida and co-authors'' estimates, as Woodford reports them, the Taylor principle "has been satisfied by post-1979
+    policy but not by previous policy": their rule for 1960-1979 responds too little to inflation, their rule for 1982-1996
+    satisfies it; Taylor argued that the failure before 1979 "may well have been responsible for the greater U.S. macroeconomic
+    instability during the 1960s and 1970s".'
+  sources:
+  - source: Woodford, Interest and Prices (2003), ch. 1, note 39
+    locator: ch. 1 n. 39; no page
+    passage: '... may have been increased by self-fulfilling expectations, given that their estimates (see Table 1.1) imply
+      that the Taylor principle has been satisfied by post-1979 policy ...'
+    copy: held
+    read: passage
+  - source: Woodford 2003, ch. 4
+    locator: ch. 4; no page
+    passage: '... period 1960-1979 involves an insufficient response to inflation to be consistent with determinacy, whereas
+      their estimated rule for the period 1982-1996 satisfies the Taylor principle".'
+    copy: held
+    read: passage
+  - source: Woodford 2003, ch. 1 (Taylor's account as Woodford reports it)
+    locator: ch. 1; no page
+    passage: '... instituted a radical shift in policy), and this failure may well have been responsible for the greater U.S.
+      macroeconomic instability during the 1960s and 1970s."'
+    copy: held
+    read: passage
+- id: k5-orphanides
+  component: K5
+  type: established
+  text: In Orphanides's analysis, as Woodford reports it, the Fed of the 1970s followed a rule much like its later one but
+    systematically overestimated potential output, which gave policy an inflationary bias.
+  sources:
+  - source: Woodford, Interest and Prices (2003), ch. 2, note 29
+    locator: ch. 2 n. 29; no page
+    passage: In Orphanides's analysis, systematic overestimation of potential output during the 1970s gave policy an inflationary
+      bias, even though the Fed followed a rule similar to ...
+    copy: held
+    read: passage
+- id: k5-rome-denarius
+  component: K5
+  type: cases
+  text: Augustus's denarius held about {{cite_rome_denarius-augustus-g}} grams of silver, and Nero's reform of 64 cut it to
+    about {{cite_rome_denarius-nero-g}}; the antoninianus held about {{cite_rome_antoninianus-250-g}} grams in 250.
+  sources:
+  - source: Butcher and Ponting, The Metallurgy of Roman Silver Coinage (2014)
+    locator: Table 19.4; no page
+    passage: 'Weight of silver in denarius: Augustus 3.8; Tiberius-Claudius 3.75; Claudius-Nero, AD 50/1-64, 3.65; Nero, post-reform,
+      First Neronian Standard 2.76.'
+    copy: held
+    read: passage
+  - source: Harper 2016
+    locator: p. 810, footnote 14 (held copy people_plagues_and_prices_in_the_roman_world_the_evidence_from_egypt.pdf,
+      read by OCR)
+    passage: the silver content of the antoninianus "declined from ca. 1.5 g in AD 250 to virtually nil by AD 270"
+    copy: held
+    read: passage
+- id: k5-fed-1979
+  component: K5
+  type: established
+  text: In October 1979 the Fed changed its method to contain the growth of money, "placing greater emphasis in day-to-day
+    operations on the supply of bank reserves", and the funds rate was "clearly both higher and more volatile after the switch".
+  sources:
+  - source: Federal Reserve Bulletin, October 1979, 'Monetary Policy Actions'
+    locator: p. 830
+    passage: '... involves placing greater emphasis in day-to-day operations on the supply of bank reserves and less emphasis
+      on confining short-term fluctuations in the federal funds rate.'
+    copy: open
+    read: passage
+    url: https://fraser.stlouisfed.org/title/federal-reserve-bulletin-62/october-1979-20718
+  - source: Walsh, Monetary Theory and Policy, 3rd ed. (MIT Press, 2010), the section on operating procedures
+    locator: no page (library passage)
+    passage: '... a nonborrowed reserves procedure after October 1979 has often been questioned. The funds rate was clearly
+      both higher and more volatile after the switch in ...'
+    copy: held
+    read: passage
+- id: k5-hong-kong
+  component: K5
+  type: cases
+  text: Hong Kong has run a currency board since 17 October 1983, its monetary base fully backed by US dollar assets at a
+    fixed rate; since May 2005 the HKMA stands ready to trade US dollars at {{cite_hongkong_strong-side}} and {{cite_hongkong_weak-side}}
+    Hong Kong dollars.
+  sources:
+  - source: HKMA, 'Milestones of Monetary Reform' (Linked Exchange Rate System)
+    locator: web page, no page
+    passage: '... Hong Kong started implementing a Currency Board System, under which the Hong Kong dollar is pegged to the
+      US dollar at a fixed exchange rate ...'
+    copy: open
+    read: passage
+    url: https://www.hkma.gov.hk/eng/key-functions/money/linked-exchange-rate-system/milestones-of-monetary-reform/
+  - source: 'HKMA, ''How does the LERS work?'' (last revision on the page: 22 Oct 2025)'
+    locator: web page, no page
+    passage: '... Exchange Rate System is a Currency Board system. The Monetary Base is fully backed by US dollar assets,
+      and all changes in the Monetary Base ...'
+    copy: open
+    read: passage
+    url: https://www.hkma.gov.hk/eng/key-functions/money/linked-exchange-rate-system/how-does-the-lers-work/
+- id: k5-britain-after-1980
+  component: K5
+  type: cases
+  text: Britain made monetary targets the centrepiece of its Medium-Term Financial Strategy in 1980; the Bank of England has
+    set interest rates independently since May 1997, under an Act in force from 1 June 1998.
+  sources:
+  - source: Bordo, Bush and Thomas, 'Muddling through or tunnelling through? UK monetary and fiscal exceptionalism and the
+      Great Inflation', Bank of England Staff Working Paper No. 1,135 (July 2025)
+    locator: PDF p. 29 and PDF p. 59
+    passage: '... Medium-term Financial Strategy (MTFS)" in 1980 (PDF p. 29). "The Thatcher government had entered office
+      in 1979 with a programme called the Medium-Term Financial Strategy ...'
+    copy: open
+    read: passage
+    url: https://www.bankofengland.co.uk/-/media/boe/files/working-paper/2025/muddling-through-or-tunnelling-through-uk-monetary-and-fiscal-exceptionalism-and-the-great-inflation.pdf
+  - source: Rodgers, 'The Bank of England Act', Bank of England Quarterly Bulletin 1998 Q2
+    locator: p. 1
+    passage: the Act "received Royal Assent on 23 April 1998 and will come into force on 1 June 1998." The MPC "was established
+      as an interim ...
+    copy: open
+    read: passage
+    url: https://www.bankofengland.co.uk/-/media/boe/files/quarterly-bulletin/1998/the-boe-act.pdf
+  - source: Bank of England explainer, 'How is the Bank of England independent of the government?'
+    locator: web page
+    passage: Independence for monetary policy – which we've had since May 1997 – means that we set interest rates… at what
+      we think to be the ...
+    copy: open
+    read: passage
+    url: https://www.bankofengland.co.uk/explainers/how-is-the-bank-of-england-independent-of-the-government
+- id: k5-rome
+  component: K5
+  type: cases
+  text: In third-century Rome the silver in the antoninianus fell to virtually nothing within two decades, and prices in Egypt,
+    whose papyri are Harper's evidence, leapt ten-fold when Aurelian's currency reform failed.
+  sources:
+  - source: 'Harper, ''People, Plagues, and Prices in the Roman World: The Evidence from Egypt'', Journal of Economic History
+      76(3), 2016, pp. 803-842'
+    locator: p. 816 (held copy people_plagues_and_prices_in_the_roman_world_the_evidence_from_egypt.pdf,
+      read by OCR)
+    passage: there is no doubt that ~AD 274 prices were marked by a ten-fold increase [after Aurelian's currency reform]
+    copy: held
+    read: passage
+  - source: Harper 2016
+    locator: p. 810, footnote 14 (held copy people_plagues_and_prices_in_the_roman_world_the_evidence_from_egypt.pdf,
+      read by OCR)
+    passage: '... to virtually nil by AD 270"; "a major effort at reforming the currency by Aurelian in AD 274 failed and
+      prices leapt ten-fold when the ...'
+    copy: held
+    read: passage
+  - source: Harper 2016
+    locator: p. 817, footnote 25
+    passage: one late-3rd-century datum (240 drachmai per artaba) is "consistent with a general ten-fold increase"
+    copy: held
+    read: passage
+- id: k5-baochao
+  component: K5
+  type: cases
+  text: By 1425, around the end of the Yongle emperor's reign (von Glahn dates it by his death), the Ming's paper baochao,
+    inconvertible into metal, circulated at less than {{cite_baochao_share-of-face}} of its face value.
+  sources:
+  - source: 'von Glahn, Fountain of Fortune: Money and Monetary Policy in China, 1000-1700 (University of California Press,
+      1996), chapter ''Transition to the Silver Economy'''
+    locator: p. 74, footnote 85 (the passage sits before the running head 'Transition to the Silver Economy / 75' in the library
+      chunk; library, page from the running header)
+    passage: '... the time of Yongle''s death in 1425 the baochao circulated at less than 2 percent of their face value. [Next
+      sentences: "Paper currency remained a ...'
+    copy: held
+    read: passage
+  - source: von Glahn 1996, Huizhou land contracts
+    locator: p. 77; p. 78 Table 2
+    passage: '"The great majority of the sales were contracted in paper currency"; Huizhou land contracts: baochao in 9 of
+      10 (1406-15) and 11 of 15 (1416-25), ...'
+    copy: held
+    read: passage

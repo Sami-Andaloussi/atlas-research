@@ -1,0 +1,112 @@
+id: C25-k9-crises-by-debt
+label: measurement
+title: 'K9, a base rate: in the eighteen economies of the Jordà-Schularick-Taylor database, 1870-2020, how often an
+  inflation crisis began within three years, by the state''s debt against GDP, years near the world wars and three other wars apart; counts and
+  shares with their denominators'
+kind: exploration
+seen:
+- 'The study''s text and its levels reading (K9), which say that the sources read give no level of debt that matters for
+  the dollar, the euro or the yen ("None gives a level of debt…"), and that no source read places a limit on what a
+  state can print before the fact.'
+- 'C23''s and C24''s crisis counts on frame b (another panel, every money with a price record), printed in the study.'
+- 'JST R6''s consumer prices, read by C18 to C20 (CS-A, CS-B) and printed through their results.'
+- 'Before this card, on 2026-10-12, the analyst read JST R6''s coverage only: 2,489 economy-years with both the debt ratio
+  and the CPI, from 1870; the debt ratio''s summary (mean 0.543, quartiles 0.253, 0.448 and 0.708, range 0.019 to 2.698);
+  the eighteen economies. The card check of 2026-10-12 counted the debt-band rows and the years where the debt ratio is
+  missing, by calendar war and peace, on the debt ratio only. No crisis was counted against any debt level.'
+- 'The card check of 2026-10-12, round 2, which counted the same coverage and the missing debt years again, and
+  proposed step (8), taken with its reasons widened and each beginning''s year added, and a list of other wars; no
+  outcome was counted.'
+- 'The author''s general knowledge of these economies'' great inflations (Germany 1919 to 1923, Japan 1945 to 1949,
+  France 1946 to 1948, the 1970s) was in hand when the war years of (4) were fixed; the treatment was declared on
+  purpose, with all rows printed beside.'
+- 'The substance panel of 2026-10-11 (usefulness 5.8), whose readers asked for base rates and thresholds.'
+question: 'The project''s ruling of 2026-10-12: in JST''s eighteen economies, 1870-2020, how often did an inflation crisis
+  begin within the next three years, by the state''s debt against GDP in the year, with the years near the world wars and three other wars set apart?
+  A past frequency with its denominators, printed in part 1''s levels reading (K9) in plain words beside the text''s
+  statement that the sources give no line; never a forecast or a threshold.'
+method: '(1) Data: JST R6 (frozen 2026-09-30), columns country, year, debtgdp (the public debt-to-GDP ratio) and cpi
+  (consumer prices, index). (2) The yearly rise: r(t) = cpi(t) / cpi(t-1) - 1, where both years have a reading. A crisis
+  year: r(t) of 20% or more, Reinhart and Rogoff''s inflation-crisis line, as the study defines a crisis. A crisis begins
+  in year t when t is a crisis year and t-1 has a reading below the line; a crisis that resumes after a year below the
+  line counts as a new beginning; a crisis year whose year before has no reading is neither a beginning nor missed
+  (in these data, 1871 for the seventeen economies whose prices start in 1870, and 1923 for
+  Ireland). (3) The rows: every economy-year t with debtgdp(t), a rise reading for t and for each
+  of t+1, t+2 and t+3, and t not itself a crisis year. The outcome: a crisis begins in t+1, t+2 or t+3. Rows overlap,
+  so one beginning can follow up to three rows; the text says "of the years in this band, x were followed within three
+  years by the start or restart of a crisis". (4) War, fixed here: the years 1914 to 1918 and 1939 to 1945 for all eighteen,
+  neutral economies included; and, for one economy each, Spain 1936 to 1939 (its civil war), Japan 1937 to 1938 (its
+  war in China), France and Germany 1870 to 1871. A row is a near-war row when any year from t-3 to t+3 is a war year
+  for its economy (a debt ratio within three years after a war was set by it, and a crisis within three years of t
+  could fall in a war). Every other row is an away row. Other wars do not make a row near-war: their years sit among the away rows, unless a war of
+  the first list falls within three years (France 1946 to 1948, the Netherlands 1945 to 1948, Italy 1911, 1912 and
+  1936, Spain 1921); among
+  them, named in the methods: Portugal 1961 to 1974 (its colonial wars); France 1946 to 1962 (Indochina, Algeria); the United States 1898,
+  1950 to 1953 and 1965 to 1973; the United Kingdom 1899 to 1902 and 1950 to 1953; Spain 1895 to 1898 and 1921 to 1926; the Netherlands 1945 to 1949
+  (Indonesia); Ireland 1919 to 1923; Australia 1962 to 1972; Italy
+  1911 to 1912 and 1935 to 1936; Japan 1894 to 1895, 1904 to 1905 and 1931 to 1933. The run''s setting "peace" is
+  printed as "away from the two world wars, Spain''s civil war, Japan''s war in China and the war of 1870 to 1871",
+  with "other wars, such as Portugal''s in Africa, France''s in Indochina and Algeria, Korea and Vietnam, are inside it"
+  beside it; never as "peace". Peace rows and near-war rows are printed apart; all rows together beside, never alone. (5)
+  The bands, on debtgdp(t): below 0.60; 0.60 to 1.00, both included; above 1.00. (6) The merge rule, applied before any
+  outcome is counted: within each of the three settings (peace, near-war, all rows together), from the top band down, a band holding fewer than 20 rows is merged into the
+  band below it, and again until every band holds 20 or more; a bottom band under 20 merges into the band above. A
+  merged band is printed with its new edges. (7) For each band and setting: the rows, the economies (their number and names), the rows followed by
+  a crisis within three years, their share in percent (to one decimal, by the registry''s format {:.1f}, which rounds the stored binary value, a tie
+  to even; not by the run), and its 95% interval by a cluster bootstrap on
+  economies (within the band and setting, its economies drawn with replacement, all their rows kept together; 2,000
+  draws; percentiles 2.5 and 97.5, linear; a generator numpy.random.default_rng(20261012) made fresh for each band,
+  setting and line, the economies sorted by name, each draw m indices by rng.integers(0, m, size=m)). A band whose count is 0 (or all
+  its rows) prints the count and, in place of the bootstrap''s interval, a one-sided 95% bound on its economies: at most
+  100 * (1 - 0.05 ** (1 / m)) (or at least 100 * 0.05 ** (1 / m)), m the band''s economies, named as a bound. With few
+  economies in a band, the interval is too narrow; the economies are printed beside it. (8) Missed beginnings: a crisis beginning in year s, as in (2), is missed when no row of (3) has t from s-3
+  to s-1, whatever the reason (a missing debt ratio, a missing rise reading, the start of the data). A missed
+  beginning takes the setting the row t = s-1 would have had: near-war when any year from s-4 to s+2 is a war year for
+  its economy, else the away setting (''peace'' in the run). For each setting, the run prints the number of missed beginnings and
+  each one''s economy and year. (9) The 10% variant redoes (2) to (8) at 10%: the crisis years,
+  the rows, the beginnings, the merge. Only counts, shares, bounds, intervals, economy names, the years of missed beginnings and numpy''s and pandas'' versions are written; no economy''s debt ratio or price is written to the run, which is withheld from the public copy as C23''s is (JST,
+  CC BY-NC-SA). Nothing else is computed: no slope, no cause.'
+parameters:
+  data: data/jst/macrohistory/2026-09-30/JSTdatasetR6.dta
+  crisis_line: {main: 0.20, variant: 0.10}
+  horizon_years: 3
+  war_years_all: [[1914, 1918], [1939, 1945]]
+  war_years_extra: {Spain: [[1936, 1939]], Japan: [[1937, 1938]], France: [[1870, 1871]], Germany: [[1870, 1871]]}
+  near_war_row: any year from t-3 to t+3 is a war year for the row's economy
+  bands_debtgdp: [[null, 0.60], [0.60, 1.00], [1.00, null]]
+  band_edges: first band below 0.60; second 0.60 to 1.00 both included; third above 1.00
+  merge_below_rows: 20
+  merge_direction: from the top band down, into the band below, within each setting; a bottom band under 20 into the band above
+  war_years_counted_as_away: {Portugal: [[1961, 1974]], France: [[1946, 1962]], USA: [[1898, 1898], [1950, 1953], [1965, 1973]], UK: [[1899, 1902], [1950, 1953]], Spain: [[1895, 1898], [1921, 1926]], Netherlands: [[1945, 1949]], Ireland: [[1919, 1923]], Australia: [[1962, 1972]], Italy: [[1911, 1912], [1935, 1936]], Japan: [[1894, 1895], [1904, 1905], [1931, 1933]]}
+  settings: peace (printed as away from the two world wars, Spain's civil war, Japan's war in China and the war of 1870 to 1871, other wars inside it), near_war, all
+  missed_beginning: no row with t in s-3..s-1; setting of the row t = s-1 (a war year from s-4 to s+2)
+  interval: cluster bootstrap on economies within the band and setting, 2000 draws, numpy.random.default_rng(20261012) made fresh for each band, setting and line, economies sorted by name, rng.integers(0, m, size=m) per draw, percentiles 2.5 and 97.5 (linear)
+  bound_at_zero_or_all: one-sided 95%, 100 * (1 - 0.05 ** (1 / m)), m the band's economies
+  decimals: 1, by the registry's {:.1f} format on the share, the interval and the bound; the run writes unrounded values and numpy's and pandas' versions
+matters:
+  k9_debt_base_rate: 'none: a past frequency with its denominators, read against no size'
+data:
+- dataset: jst/macrohistory
+  vintage: '2026-09-30'
+period: 1870-2020 (rows for t from 1871 to 2017)
+sample: 'Every economy-year of JST R6 with the debt ratio and the four rise readings the rule needs, set by data coverage
+  only: eighteen rich economies, today''s survivors, named so in the text. The debt ratio is missing for years that
+  cluster on the outcome, so they can never be rows: Germany 1914 to 1926 and 1944 to 1949; France 1914 to 1919 and 1939
+  to 1948; Belgium 1914 to 1919 and 1940 to 1945; Norway 1940 to 1946; the Netherlands 1940 to 1945; Spain 1936 to 1939;
+  Japan 1870 to 1874 and 1945; Denmark 1947 to 1952, 1957 to 1959 and 1997; Belgium 1980 to 1981; Germany 1870;
+  the 1870s for Denmark, France, Norway, Spain and Switzerland; Finland before 1914. Ireland has no CPI before 1922. Step (8) names each crisis beginning that no row reaches, with its
+  economy and year, and the text says beside the frequencies what it names (Germany''s inflation after 1918 among them
+  if it began then).'
+out_of_sample: 'The 10% variant, and near-war rows beside peace rows; nothing else, since the card describes and tests no rule.'
+failure: 'The card fails if the frozen file''s sha256 is not b0ebb74a8d1b5b1bc9033fc46a6dcc578736afff8ce1e1086b7840f2649e79b3,
+  if its columns country, year, debtgdp or cpi are absent, or if it does not hold 18 economies and 2,489 economy-years
+  with both the debt ratio and the CPI.'
+not: 'It does not say that debt causes inflation or that low debt prevents it, set a threshold, forecast any money, or
+  speak for economies outside the eighteen; the debt ratio''s denominator is nominal GDP, which rises with prices, so a
+  year of rising inflation sits in a lower band than its debt alone would put it; the high-debt peace rows come from
+  particular economies and eras: the economies, which the run names, and the eras, which the debt coverage shows (the decades of each band''s debt-ratio years, read from the debt
+  ratio alone, outside the run),
+  named beside the number; rows of one economy are not independent, which the clustering says, and a shock common to
+  many economies in the same years (the 1970s) is not independent across economies, so the interval is too narrow there
+  too.'
+created: '2026-10-12'

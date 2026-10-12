@@ -1,0 +1,81 @@
+id: C22-cs-b-the-franc
+label: measurement
+title: CS-B — the Swiss franc at home and abroad since 1971, its rise split in logs into the inflation gap and the real
+  rise; Switzerland's price level against its neighbours'; exports beside the real rate (BIS, World Bank)
+kind: extension
+seen:
+- 'results/runs/C18-cs-a-consumer-prices-off-gold.json, C19-cs-b-inflation-by-convertibility.json and
+  C20-cs-b-without-hyperinflation-years.json existed (the earlier design''s runs, reused by the rebuild as CS-F and CS-D);
+  this card reads none of them and its rules were fixed by the part map before any of its own values were read'
+- 'None of WS_XRU, WS_EER or the World Bank series named here was read by this arc before this card; its check
+  (an internal note) read their coverage only. The earlier designs'' runs, moved to
+  _archive (W28), are not read, and what they printed of these series is not known to this card.'
+question: 'Part 1''s map v22 (K6; claim A4, context): since 1971, how much did the franc rise against the dollar and
+  against its trading partners'' monies, and how much of each rise was Switzerland''s lower inflation (the inflation gap)
+  and how much a franc that truly got dearer (the real rise)? How far above its neighbours'' is Switzerland''s price
+  level, and how did exports move beside the real rate? A description: no cause is estimated.'
+method: '(1) The franc against the dollar: the BIS''s annual average rate (bis/WS_XRU 2026-10-10, FREQ A, CH, CHF per
+  USD, collection A), turned into dollars per franc, X_t; the BIS long consumer-price index (bis/WS_LONG_CPI
+  2026-09-30, FREQ A, unit 628) for CH and US. The real rate R_t = X_t * P_CH,t / P_US,t. Over 1971-2025 (base 1970
+  for every change): ln(X_2025/X_1970) = ln[(P_US,2025/P_US,1970)/(P_CH,2025/P_CH,1970)] + ln(R_2025/R_1970), the first
+  term the inflation gap, the second the real rise, each printed in log points, and as a share of the total only when
+  the total exceeds one log point in size and both parts have its sign (otherwise "no share", the parts alone); the
+  same split for each stretch 1971-1980, 1981-1990, 1991-2000, 2001-2010 and 2011-2025 (fifteen years: the floor and
+  after), fixed here, each from its own base, the year before its first year (1970, 1980, 1990, 2000, 2010), never
+  chained or cumulative. (2) The franc
+  against its partners: the BIS''s effective rates (bis/WS_EER 2026-10-10), monthly, narrow basket (27 economies, from
+  1964) as the main series and broad (64 economies, from 1994) beside, nominal and real, each averaged to calendar years
+  by the mean of its months; ln(NEER_2025/NEER_1970) split into the inflation gap ln(NEER/REER) change and the real rise
+  ln(REER) change, the same stretches and the same share rule; a basket''s first full year (twelve monthly readings)
+  floors every base: the broad basket''s 1971-2025 split and its 1991-2000 stretch run from 1994, its two earlier
+  stretches are not computed, said. (3) Switzerland''s price level against its
+  neighbours'': the World Bank''s PPP conversion factor for GDP over the market rate (worldbank/PA.NUS.PPP and
+  PA.NUS.FCRF, 2026-10-10) for CHE, DEU, FRA, ITA and AUT, every year both exist, each country''s ratio printed and
+  Switzerland''s over each neighbour''s; the latest year with all five printed in the text. It is named "the GDP price
+  level" (the prices of everything the economy produces), never "consumer prices" or "what a shopper pays". (4) Exports beside the real rate: exports of goods
+  and services, % of GDP (worldbank/NE.EXP.GNFS.ZS 2026-10-10), CHE, every year from 1971, drawn on one chart beside the
+  real narrow effective rate (index), with no fitted line and no correlation printed. (5) Marked on the charts: the
+  floor of 6 September 2011 to 15 January 2015 (the SNB''s minimum rate against the euro; dates from the BIS''s Quarterly
+  Review, September 2011, and Jordan''s remarks of 15 January 2015, read). (6) Nothing is estimated; every figure is a
+  ratio of published series.'
+parameters:
+  base_year: 1970
+  end_year: 2025
+  stretches: [[1971, 1980], [1981, 1990], [1991, 2000], [2001, 2010], [2011, 2025]]
+  stretch_base: the year before each stretch's first year, floored at the series' first full year
+  share_rule: printed only when the total exceeds 1 log point in size and both parts have its sign
+  xru: {dataset: bis/WS_XRU 2026-10-10, freq: A, area: CH, collection: A}
+  cpi: {dataset: bis/WS_LONG_CPI 2026-09-30, freq: A, unit_measure: '628', areas: [CH, US]}
+  eer: {dataset: bis/WS_EER 2026-10-10, freq: M, area: CH, main_basket: N, beside_basket: B, types: [N, R],
+    to_year: mean of months}
+  price_level: {ppp: worldbank/PA.NUS.PPP 2026-10-10, market: worldbank/PA.NUS.FCRF 2026-10-10,
+    countries: [CHE, DEU, FRA, ITA, AUT]}
+  exports: {dataset: worldbank/NE.EXP.GNFS.ZS 2026-10-10, country: CHE}
+  floor: ['2011-09-06', '2015-01-15']
+matters:
+  cs_b: 'none: a description, read against no size (part 1''s map, A4: descriptive, context)'
+data:
+- dataset: bis/WS_XRU
+  vintage: '2026-10-10'
+- dataset: bis/WS_LONG_CPI
+  vintage: '2026-09-30'
+- dataset: bis/WS_EER
+  vintage: '2026-10-10'
+- dataset: worldbank/PA.NUS.PPP
+  vintage: '2026-10-10'
+- dataset: worldbank/PA.NUS.FCRF
+  vintage: '2026-10-10'
+- dataset: worldbank/NE.EXP.GNFS.ZS
+  vintage: '2026-10-10'
+period: 1970-2025
+sample: 'By the brief: the Swiss franc (the author''s words), since 1971, when the dollar''s link to gold ended (the first full
+  year of floating rates is later; 1971 is the brief''s and the readers'' marker, said); the neighbours by geography
+  (Germany, France, Italy, Austria), fixed here, not by their price levels.'
+out_of_sample: 'None needed for a description. Beside the narrow basket, the broad (from 1994); beside the BIS''s
+  consumer prices, nothing else (one source, said).'
+failure: 'The card fails if a base or end year has no reading in a series (then that line is printed as not computable,
+  never filled), or if the effective rates'' monthly series has a gap inside a year (that year left out of the split and
+  named).'
+not: 'It does not say that a dearer franc helped or hurt Switzerland (the 2015 studies, read, carry that, A7), nor
+  estimate any elasticity; it does not compare the franc''s path with another money''s.'
+created: '2026-10-10'

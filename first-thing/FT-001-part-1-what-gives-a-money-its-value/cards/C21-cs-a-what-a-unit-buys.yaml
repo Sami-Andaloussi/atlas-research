@@ -1,0 +1,103 @@
+id: C21-cs-a-what-a-unit-buys
+label: measurement
+title: CS-A — what one unit of the dollar, the pound, the franc, the yen and the euro's monies bought each year since 1914,
+  and its yearly loss in four periods fixed here (BIS long consumer-price series)
+kind: extension
+seen:
+- 'results/runs/C18-cs-a-consumer-prices-off-gold.json, C19-cs-b-inflation-by-convertibility.json and
+  C20-cs-b-without-hyperinflation-years.json existed (the earlier design''s runs, reused by the rebuild as CS-F and CS-D);
+  this card reads none of them'
+- 'Part of what this card prints was seen before it: the part map''s v8 audit (an internal note)
+  computed the euro''s carriers against the euro-area index over 1992-2025, magnitudes only (the French index''s yearly
+  loss differs from the euro area''s by about 0.5 points a year, the German by about 0.13), and the choice of carriers
+  printed as "the euro''s prices in France / in Germany" with the euro-area index beside was fixed after it; the v13 and
+  v17 audits printed year-on-year changes of the series for the years the map tells; the v13-v22 audits and this card''s
+  check (an internal note) read the series'' coverage, and the check found the
+  BIS''s US index to be FRED''s CPIAUCNS rebased. This arc read no yearly loss of these periods and no grid value
+  before this card; the earlier designs'' runs, set aside as superseded, are not read, and what they printed of these
+  series is not known to this card. Also seen: the v8 audit''s gap between annual averages and December-to-December
+  changes over 1992-2025 (at most 0.07 points a year), and the arc''s computation at map v21 of CPIAUCNS''s 12-month
+  changes, 1980-2023 (the BIS''s US index rebased); the second check (an internal note)
+  printed no CS-A value.'
+question: 'Part 1''s map v22 (K1, K5, the reading''s part 4; headline claim A1): what did one unit of each of the
+  reader''s own monies — the US dollar, the pound sterling, the Swiss franc, the Japanese yen, and the French franc and
+  the Deutsche Mark carried into the euro — buy in each year its series runs, from 1914 (or its first year) to 2025, and
+  how much of that did it lose a year on average in each of four periods fixed here before any value is read? A
+  description per money: no regime is named in the claim, none is compared, and no yardstick is set.'
+method: '(1) The series: the BIS long consumer-price series (bis/WS_LONG_CPI, vintage 2026-09-30), FREQ A, unit 628
+  (index, 2010 = 100), the annual average as the BIS publishes it, for REF_AREA US, GB, CH, JP, FR, DE, and XM (the euro
+  area) beside. A reading is a row with a number in OBS_VALUE; a row holding "NaN" is none. One source for every money;
+  no series is spliced, filled or rebased by us. (2) What a unit bought: the purchasing power of one unit in year t
+  relative to a base year b is P_b / P_t, P the index; a unit''s yearly loss over a period from b to e is
+  1 - (P_b / P_e)^(1/(e - b)), printed in percent with one decimal; a negative loss (prices lower at e than at b) is
+  printed as a gain of that size a year, never as a loss. (3) The periods, fixed here, with their reasons in the
+  reader''s terms (the map''s): 1914-1945 (the wars and the slump), 1946-1971 (the postwar fixed rates), 1972-1991
+  (after gold), 1992-2025 (the last third of a century, about a working life, the span most readers know); the reasons
+  name the years, and the headline implies no cause. Each period''s loss runs from the year before it (b = 1913, 1945,
+  1971, 1991) to its last year, except where the money''s span starts later: the Swiss franc''s 1914-1945 from 1921; the
+  Reichsmark''s 1914-1945 from 1924 (the German annual index''s first number; its 1923 row holds none); the Deutsche
+  Mark''s 1946-1971 from 1949 (its first whole year; the annual 1948 spans the reform of June 1948 and is shown for
+  neither money); the yen''s 1946-1971 from 1947 (its 1946 resting on a few months, monthly from 1946-08); the French
+  franc''s 1946-1971 from 1951 (its series starts in 1951). A period that ends before a money''s span begins, or after
+  it ends, is not computed and is printed as outside the money''s span: the yen''s, the French franc''s and the Deutsche
+  Mark''s 1914-1945; the Reichsmark''s three later periods (it has 1914-1945 only); the euro area''s three earlier
+  periods. (4) The monies: the Reichsmark (DE, 1924-1947) and the Deutsche Mark (DE, 1949-1998) are two monies, never
+  chained across the reform of 1948, which converted money at several rates (first allotments 1 to 1, later
+  conversions "debited with nine times" the allotted amounts: Mendershausen 1949, the note on p. 658) while the BIS
+  index runs through 1948 with no break; we read the Reichsmark''s index as official prices under the price stop Hitler
+  imposed in 1936 and the occupation kept (the stop: Mendershausen 1949, p. 649; the reading is ours), said beside its
+  row and its grid. The old and
+  new French franc are one money chained by the official factor (100 old francs = 1 new franc, 1 January 1960: the
+  BIS''s 30th Annual Report, p. 157); from 1999 the French franc''s and the Mark''s carriers are printed as "the euro''s
+  prices in France" and "the euro''s prices in Germany" (FR and DE indices), never as "the euro"; the euro area''s own
+  index (XM, from 1990; before 1999 an aggregate of the later members'' prices, not a money''s index, said) beside, with
+  the gap between it and each national index printed for 1992-2025, in points a year. (5) The slider''s grid (the web
+  study): for each money and each year t of its span, what one unit of year t buys in 2025 in today''s unit:
+  (P_2025 / P_t) divided by the official factor of each change of unit between t and 2025 (one old franc is 1/100 of
+  a new franc; one French franc is 1/6.55957 of a euro, one Mark 1/1.95583: the ECB, 31 December 1998). The slider
+  offers the Deutsche Mark from 1949; the Reichsmark is offered apart, 1924-1947, as what one Reichsmark of year t
+  bought in 1947, in 1947 Reichsmarks (not carried to 2025: the reform is not chained). (6) Printed per money: the
+  index''s first year, each period''s base and end year, the yearly loss (or gain) per period, and the 2025 value of one
+  unit of each period''s base year in today''s unit as in (5), divided by the official factors (for the Reichsmark, its
+  1947 value in 1947 Reichsmarks); the dollar''s 2025 annual rests on eleven months (2025-10 has no reading), said.
+  Nothing is averaged across monies; no regime label is attached. The era beside 1992-2025 is named at step d from the
+  dossier''s sources, with no role claimed for a target or a mandate (the map''s §9: left to the literature).'
+parameters:
+  dataset: bis/WS_LONG_CPI 2026-09-30
+  freq: A
+  unit_measure: '628'
+  monies:
+    USD: {area: US, from: 1913, to: 2025}
+    GBP: {area: GB, from: 1913, to: 2025}
+    CHF: {area: CH, from: 1921, to: 2025}
+    JPY: {area: JP, from: 1947, to: 2025}
+    FRF_then_euro_in_France: {area: FR, from: 1951, to: 2025}
+    Reichsmark: {area: DE, from: 1924, to: 1947}
+    DEM_then_euro_in_Germany: {area: DE, from: 1949, to: 2025}
+    euro_area_beside: {area: XM, from: 1990, to: 2025}
+  periods: [[1914, 1945], [1946, 1971], [1972, 1991], [1992, 2025]]
+  base: the year before each period, or the money's first year here when later
+  excluded: [DE 1948]
+  conversion_factors:
+    FRF_old_to_new_1960: 100
+    FRF_per_euro_1999: 6.55957
+    DEM_per_euro_1999: 1.95583
+  decimals: 1
+matters:
+  cs_a: 'none: a description per money, read against no size (part 1''s map, A1: descriptive, no yardstick)'
+data:
+- dataset: bis/WS_LONG_CPI
+  vintage: '2026-09-30'
+period: 1913-2025
+sample: 'By the reader''s question, not by any outcome: the monies the brief and the curious readers name (the dollar,
+  the euro, the franc, the yen in "a yen below a cent", the pound), each as far back as the one source runs; every
+  year of each series inside its span is used.'
+out_of_sample: 'None needed for a description: nothing is estimated. Beside the euro''s carriers, the euro area''s own
+  index (from 1990). No second source for the dollar: the BIS''s US index is FRED''s CPIAUCNS rebased (the card check
+  found their ratio constant in every month, 1913-2026), so a comparison would be hollow; one source, said.'
+failure: 'The card fails if a period''s base or end year inside the money''s span has no reading in the series (then
+  that money''s period is printed as not computable, never filled), or if a conversion factor cannot be traced to its
+  official text. A period outside a money''s span (method (3)) is not a failure.'
+not: 'It does not say why any money lost what it lost, compare regimes or eras, or say that a target or a mandate did
+  anything; it does not average monies; it does not treat the euro area''s index as the French or German one.'
+created: '2026-10-10'

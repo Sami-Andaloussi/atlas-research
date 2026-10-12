@@ -1,0 +1,419 @@
+{
+ "card": "C19-cs-b-inflation-by-convertibility",
+ "card_hash": "9ac1b8d2d7bd94f0571fffb3988e1d06ea05e9da4dfdcb7c497a8ceb611b21f3",
+ "run_at": "2026-10-08T16:05:01+00:00",
+ "result": {
+  "economies": [
+   "AUS",
+   "BEL",
+   "CAN",
+   "CHE",
+   "DEU",
+   "DNK",
+   "ESP",
+   "FIN",
+   "FRA",
+   "GBR",
+   "ITA",
+   "JPN",
+   "NLD",
+   "NOR",
+   "PRT",
+   "SWE",
+   "USA"
+  ],
+  "economy_years": 2516,
+  "by_class": {
+   "convertible": {
+    "n": 701,
+    "mean": 1.1251431661791078,
+    "median": 0.0,
+    "share_above_10": 0.025677603423680456,
+    "above_100": 1
+   },
+   "fiat": {
+    "n": 1169,
+    "mean": 90427438.66511987,
+    "median": 2.313693839117592,
+    "share_above_10": 0.11633875106929,
+    "above_100": 3
+   },
+   "war": {
+    "n": 204,
+    "mean": 21.60818890953293,
+    "median": 10.842176870748311,
+    "share_above_10": 0.5049019607843137,
+    "above_100": 3
+   },
+   "bretton_woods": {
+    "n": 442,
+    "mean": 5.465160878727203,
+    "median": 3.2770731321111635,
+    "share_above_10": 0.09954751131221719,
+    "above_100": 1
+   }
+  },
+  "main": {
+   "convertible": {
+    "n": 701,
+    "mean": 1.1251431661791078,
+    "median": 0.0,
+    "share_above_10": 0.025677603423680456,
+    "above_100": 1
+   },
+   "fiat": {
+    "n": 1169,
+    "mean": 90427438.66511987,
+    "median": 2.313693839117592,
+    "share_above_10": 0.11633875106929,
+    "above_100": 3
+   },
+   "gap": 90427437.5399767,
+   "interval": [
+    2.0952836558897237,
+    308513834.1411423
+   ],
+   "means_interval": {
+    "convertible_mean": [
+     -0.7564993844436328,
+     4.205537618200988
+    ],
+    "fiat_mean": [
+     2.6070897529805763,
+     308513836.01577765
+    ]
+   },
+   "iid_years_interval": [
+    1.3645169945502937,
+    288305662.38825595
+   ],
+   "reading": "effect",
+   "refuted": false
+  },
+  "fiat_from_1972": {
+   "convertible": {
+    "n": 701,
+    "mean": 1.1251431661791078,
+    "median": 0.0,
+    "share_above_10": 0.025677603423680456,
+    "above_100": 1
+   },
+   "fiat": {
+    "n": 833,
+    "mean": 4.393265151360099,
+    "median": 2.579767029627722,
+    "share_above_10": 0.11524609843937575,
+    "above_100": 0
+   },
+   "gap": 3.2681219851809913,
+   "interval": [
+    -0.04302344223826838,
+    6.577958542053062
+   ],
+   "means_interval": {
+    "convertible_mean": [
+     -0.7564993844436328,
+     4.205537618200988
+    ],
+    "fiat_mean": [
+     2.398112453470316,
+     6.987910861966894
+    ]
+   },
+   "iid_years_interval": [
+    0.43946897858232187,
+    5.301124273471666
+   ],
+   "reading": "bounded",
+   "refuted": false
+  },
+  "no_transition_years": {
+   "convertible": {
+    "n": 675,
+    "mean": 0.1605213472272143,
+    "median": 0.0,
+    "share_above_10": 0.023703703703703703,
+    "above_100": 0
+   },
+   "fiat": {
+    "n": 1156,
+    "mean": 91444356.24705735,
+    "median": 2.330431412094014,
+    "share_above_10": 0.11678200692041522,
+    "above_100": 3
+   },
+   "gap": 91444356.086536,
+   "interval": [
+    2.468842602341704,
+    312442381.597874
+   ],
+   "means_interval": {
+    "convertible_mean": [
+     -0.9171183199916686,
+     0.9897212585945283
+    ],
+    "fiat_mean": [
+     2.683408169559579,
+     312442382.09774965
+    ]
+   },
+   "iid_years_interval": [
+    3.287714133168889,
+    292291547.0459931
+   ],
+   "reading": "effect",
+   "refuted": false
+  },
+  "own_block_returns_only": {
+   "convertible": {
+    "n": 701,
+    "mean": 1.1251431661791078,
+    "median": 0.0,
+    "share_above_10": 0.025677603423680456,
+    "above_100": 1
+   },
+   "fiat": {
+    "n": 1141,
+    "mean": 92646516.92188276,
+    "median": 2.328712465674254,
+    "share_above_10": 0.11831726555652936,
+    "above_100": 3
+   },
+   "gap": 92646515.7967396,
+   "interval": [
+    2.1509641056666764,
+    313113703.0226039
+   ],
+   "means_interval": {
+    "convertible_mean": [
+     -0.7564993844436328,
+     4.205537618200988
+    ],
+    "fiat_mean": [
+     2.71873660830366,
+     313113706.0889668
+    ]
+   },
+   "iid_years_interval": [
+    1.449055475560143,
+    296396132.99786663
+   ],
+   "reading": "effect",
+   "refuted": false
+  },
+  "earlier_resumption": {
+   "convertible": {
+    "n": 707,
+    "mean": 1.0658168160272241,
+    "median": 0.0,
+    "share_above_10": 0.02545968882602546,
+    "above_100": 1
+   },
+   "fiat": {
+    "n": 1163,
+    "mean": 90893960.30500259,
+    "median": 2.3279999999999967,
+    "share_above_10": 0.11693895098882201,
+    "above_100": 3
+   },
+   "gap": 90893959.23918577,
+   "interval": [
+    2.135712377625002,
+    310941399.4577793
+   ],
+   "means_interval": {
+    "convertible_mean": [
+     -0.7774268166898255,
+     4.04069406174583
+    ],
+    "fiat_mean": [
+     2.6414866636492484,
+     310941402.48991966
+    ]
+   },
+   "iid_years_interval": [
+    1.4375398627902742,
+    289893543.0355306
+   ],
+   "reading": "effect",
+   "refuted": false
+  },
+  "marked_suspensions_inconvertible": {
+   "convertible": {
+    "n": 699,
+    "mean": 1.1230482507542923,
+    "median": 0.0,
+    "share_above_10": 0.02575107296137339,
+    "above_100": 1
+   },
+   "fiat": {
+    "n": 1171,
+    "mean": 90272993.85417572,
+    "median": 2.313693839117592,
+    "share_above_10": 0.1161400512382579,
+    "above_100": 3
+   },
+   "gap": 90272992.73112747,
+   "interval": [
+    2.0937637927278123,
+    308506295.29692423
+   ],
+   "means_interval": {
+    "convertible_mean": [
+     -0.764679979157759,
+     4.205847525881921
+    ],
+    "fiat_mean": [
+     2.60246327761009,
+     308506297.17165715
+    ]
+   },
+   "iid_years_interval": [
+    1.3653428482016603,
+    288037252.16809136
+   ],
+   "reading": "effect",
+   "refuted": false
+  },
+  "fiat_from_1972_by_target": {
+   "before_adoption": {
+    "n": 151,
+    "mean": 6.404014499280517,
+    "median": 6.429124709527501,
+    "share_above_10": 0.2119205298013245,
+    "above_100": 0
+   },
+   "from_adoption": {
+    "n": 143,
+    "mean": 1.866822732671223,
+    "median": 1.849999999999996,
+    "share_above_10": 0.0,
+    "above_100": 0
+   },
+   "no_counted_adoption": {
+    "n": 539,
+    "mean": 4.500237534173691,
+    "median": 2.6112032867188217,
+    "share_above_10": 0.11873840445269017,
+    "above_100": 0
+   }
+  },
+  "eras": {
+   "1870-1913": {
+    "convertible": {
+     "n": 595,
+     "mean": 0.38273383358765173,
+     "median": 0.05327209375349806,
+     "share_above_10": 0.023529411764705882,
+     "above_100": 0
+    },
+    "fiat": {
+     "n": 109,
+     "mean": 0.3080524174701525,
+     "median": 0.0,
+     "share_above_10": 0.009174311926605505,
+     "above_100": 0
+    },
+    "bretton_woods": {
+     "n": 0,
+     "mean": null,
+     "median": null,
+     "share_above_10": null,
+     "above_100": 0
+    }
+   },
+   "1919-1938": {
+    "convertible": {
+     "n": 106,
+     "mean": 5.292440834970769,
+     "median": -1.3481369741759952,
+     "share_above_10": 0.03773584905660377,
+     "above_100": 1
+    },
+    "fiat": {
+     "n": 227,
+     "mean": 465681374.9178745,
+     "median": 1.2903225806451646,
+     "share_above_10": 0.17180616740088106,
+     "above_100": 3
+    },
+    "bretton_woods": {
+     "n": 0,
+     "mean": null,
+     "median": null,
+     "share_above_10": null,
+     "above_100": 0
+    }
+   },
+   "1946-1971": {
+    "convertible": {
+     "n": 0,
+     "mean": null,
+     "median": null,
+     "share_above_10": null,
+     "above_100": 0
+    },
+    "fiat": {
+     "n": 0,
+     "mean": null,
+     "median": null,
+     "share_above_10": null,
+     "above_100": 0
+    },
+    "bretton_woods": {
+     "n": 442,
+     "mean": 5.465160878727203,
+     "median": 3.2770731321111635,
+     "share_above_10": 0.09954751131221719,
+     "above_100": 1
+    }
+   },
+   "1972-2020": {
+    "convertible": {
+     "n": 0,
+     "mean": null,
+     "median": null,
+     "share_above_10": null,
+     "above_100": 0
+    },
+    "fiat": {
+     "n": 833,
+     "mean": 4.393265151360099,
+     "median": 2.579767029627722,
+     "share_above_10": 0.11524609843937575,
+     "above_100": 0
+    },
+    "bretton_woods": {
+     "n": 0,
+     "mean": null,
+     "median": null,
+     "share_above_10": null,
+     "above_100": 0
+    }
+   }
+  },
+  "jst_peg_beside": {
+   "peg_1": {
+    "n": 1481,
+    "mean": 2.4574113578991033,
+    "median": 2.005919609556428,
+    "share_above_10": 0.0675219446320054,
+    "above_100": 0
+   },
+   "peg_0": {
+    "n": 831,
+    "mean": 127207792.25562617,
+    "median": 2.0161702998670483,
+    "share_above_10": 0.11793020457280386,
+    "above_100": 5
+   }
+  },
+  "flags_count": {
+   "transition year": 52,
+   "footnoted suspension (rule d)": 3,
+   "return printed in another block (rule e)": 28,
+   "last printed date a convertibility date (rule g)": 84
+  },
+  "beside": "Bordo & Schwartz Table 3 (GNP deflators, log-trend rates, by period) and Rolnick & Weber pp. 13, 16 (twelve countries), theirs"
+ }
+}
