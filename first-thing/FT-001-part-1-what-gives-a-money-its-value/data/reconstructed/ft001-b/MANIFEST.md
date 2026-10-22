@@ -178,3 +178,27 @@ a period giving its reading, never filled, scaled or spliced:
 - **The acts list**: frame b reads no act. It was first built after the acts list's second build (c4a56ad);
   the acts list's third build (a8780e1) and its check (40f2c78) came after frame b's first build — `m0.py`
   checks first commits only, so the order of rebuilds rests on the commit messages (the audit's M8).
+
+## The correction of 2026-10-21 (Kazakhstan's IFS price index)
+
+The IMF's consumer price index for Kazakhstan (IFS `PCPI_IX`, monthly and annual, frozen 2026-09-30) changes units in
+January 2020: it doubles in one month, unflagged. The World Bank, World Development Indicators, `FP.CPI.TOTL` (frozen
+`data/worldbank/FP.CPI.TOTL/2026-09-30/page-001.json`) matches it through 2019 and runs 1.9427 times below it from 2020
+(within half a percent through 2024). Every reader of the index now applies `toolkit/ft/data/splices.py`: Kazakhstan's
+IFS readings from 2020-01 (2020 annual) divided by IFS's 2020 annual index over the World Bank's, computed from the
+frozen files. Before the IMF's monthly index feeds a count, the jump barrier (`toolkit/ft/quant/jumps.py`,
+`splices.require_ifs_cpi_monthly`) holds the IMF's monthly index of every money against the World Bank's annual
+index, for one-month moves of roughly a quarter or more (0.25 log points) that lie more than 8 robust deviations from the median of its previous 60 monthly changes (the BIS's monthly series, which feeds a few counts, and the US and
+euro-area indices are not screened); the jumps
+the World Bank does not confirm are named in `splices.RESOLVED` and left as the source reads them (the author, 2026-10-22:
+"Kazakhstan: go, minimal"): Myanmar 1973-01 and Congo (DR) 2010-01, flagged, each with a separate correction proposed;
+Palestine 2025-01/04 and Zimbabwe 2023-06, read as price moves. The barrier is not exhaustive: smaller moves pass unseen, and the World Bank's index often derives from the same
+IMF data, so its agreement is not an independent confirmation. This set was rebuilt by its
+own script on the code so committed; what moved, against the rebuild of the code before (the same frozen data), is
+below. Nothing else in this manifest was re-verified by this rebuild.
+
+- `series.csv` (501 lines, as before): Kazakhstan 2020-01 (counted) is gone; Kazakhstan 2022-12 (counted: 20.35% over
+  twelve months, onset 2022-03, not restored by the common end) enters. Every variant alike (`line-40` and `line-100`
+  lose Kazakhstan 2020-01 only). `panel-coverage.csv` and `panel-seams.csv` unchanged.
+- The panel's digest is now `b67955f2bf1de70d5813279628d86357586522dac4051f90bd59d0df49f051a4` (before: d5debead...).
+- Counted by era: unchanged (the third span loses Kazakhstan 2020 and gains Kazakhstan 2022).

@@ -174,9 +174,9 @@
   period: thirty years to the 1990s
   population: their sample
 - key: cite_dollar_prices-1920-over-1914
-  as_of: '2026-09-30'
-  locator: annual averages of the monthly series, 1920 (20.04) over 1914 (10.02)
-  source: FRED CPIAUCNS
+  as_of: '2026-10-21'
+  locator: CUUR0000SA0, annual averages of the monthly series, 1920 (20.04) over 1914 (10.02)
+  source: the BLS's CPI-U, all items, not seasonally adjusted (series CUUR0000SA0, retrieved from the BLS on 21 October 2026; FRED's CPIAUCNS gives the same)
   unit: ratio of annual-average CPI, 1920 to 1914 (recomputed 2.0008; June to June 2.11)
   value: 2.0008
   fmt: '{:.1f}'
@@ -184,9 +184,9 @@
   period: 1914 to 1920
   population: the United States
 - key: cite_dollar_prices-aug-1917-over-1914
-  as_of: '2026-09-30'
-  locator: August 1917 (13.0) over the 1914 annual average (10.02)
-  source: FRED CPIAUCNS
+  as_of: '2026-10-21'
+  locator: CUUR0000SA0, August 1917 (13.0) over the 1914 annual average (10.02)
+  source: the BLS's CPI-U, all items, not seasonally adjusted (series CUUR0000SA0, retrieved from the BLS on 21 October 2026; FRED's CPIAUCNS gives the same)
   unit: ratio of the August 1917 CPI to the 1914 annual average (recomputed 1.298)
   value: 1.2978
   fmt: '{:.1f}'
@@ -750,29 +750,29 @@
   period: March 2023
   population: USDC
 - key: cite_us_cpi_1946-12
-  as_of: '2026-09-30'
-  locator: CPIAUCNS, December 1946 over December 1945
-  source: FRED CPIAUCNS (consumer prices, all urban consumers, not seasonally adjusted; the BLS's)
+  as_of: '2026-10-21'
+  locator: CUUR0000SA0, December 1946 over December 1945
+  source: the BLS's CPI-U, all items, not seasonally adjusted (series CUUR0000SA0, retrieved from the BLS on 21 October 2026; FRED's CPIAUCNS gives the same)
   unit: percent, twelve-month change
-  url: https://fred.stlouisfed.org/series/CPIAUCNS
+  url: https://www.bls.gov/cpi/
   value: 18.13
   fmt: '{:.0f}%'
   measure: rise in US consumer prices over twelve months
   period: December 1945 to December 1946
   population: the United States
-  note: frozen data/fred/CPIAUCNS/2026-09-30
+  note: the BLS's CUUR0000SA0 as retrieved on 2026-10-21; FRED's CPIAUCNS of 2026-09-30 gives the same values
 - key: cite_us_cpi_1947-03
-  as_of: '2026-09-30'
-  locator: CPIAUCNS, March 1947 over March 1946
-  source: FRED CPIAUCNS (consumer prices, all urban consumers, not seasonally adjusted; the BLS's)
+  as_of: '2026-10-21'
+  locator: CUUR0000SA0, March 1947 over March 1946
+  source: the BLS's CPI-U, all items, not seasonally adjusted (series CUUR0000SA0, retrieved from the BLS on 21 October 2026; FRED's CPIAUCNS gives the same)
   unit: percent, twelve-month change (the highest of the period)
-  url: https://fred.stlouisfed.org/series/CPIAUCNS
+  url: https://www.bls.gov/cpi/
   value: 19.67
   fmt: '{:.1f}%'
   measure: rise in US consumer prices over twelve months
   period: March 1946 to March 1947
   population: the United States
-  note: frozen data/fred/CPIAUCNS/2026-09-30
+  note: the BLS's CUUR0000SA0 as retrieved on 2026-10-21; FRED's CPIAUCNS of 2026-09-30 gives the same values
 - key: cite_us_wholesale_1946-47
   as_of: '1991-01-01'
   locator: p. 183

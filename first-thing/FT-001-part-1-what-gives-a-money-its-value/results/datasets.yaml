@@ -34,6 +34,8 @@
   vintage: '2026-09-30'
 - dataset: worldbank/FP.CPI.TOTL.ZG
   vintage: '2026-09-30'
+- dataset: worldbank/FP.CPI.TOTL
+  vintage: '2026-09-30'
 - dataset: jst/macrohistory
   vintage: '2026-09-30'
 - dataset: reconstructed/ft001-cs-tables
@@ -49,6 +51,8 @@
   vintage: '2026-09-30'
 - dataset: fred/CPIAUCNS
   vintage: '2026-09-30'
+- dataset: bls/CUUR0000SA0
+  vintage: '2026-10-21'
 - dataset: dbnomics/IMF/WEO_2013-10/ARG~PCPIEPCH+PCPIE
   vintage: '2026-10-08'
 - dataset: frame-g/fed-fsr-2023-05

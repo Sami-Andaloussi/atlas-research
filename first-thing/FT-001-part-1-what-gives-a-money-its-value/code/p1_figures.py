@@ -190,12 +190,13 @@ def cs_b() -> None:
 
 
 def cs_c() -> None:
-    r = run("C23-cs-c-losses-by-era")
+    r = run("C28-cs-c-losses-by-era-kazakhstan")
     names = {"before_1914": "before 1914", "1914_to_1971_07": "1914 to July 1971", "from_1971_08": "from August 1971"}
     rows = []
     for variant, label in (("headline", "every price index"), ("rr_cpi_only", "consumer prices only")):
         for span, s in r[variant]["spans"].items():
-            rows.append({"span": names[span], "variant": label, "rate": s["rate_per_100"]})
+            # the unrounded rate (to 4 places), so the tooltip's .1f is the one rounding and agrees with the text
+            rows.append({"span": names[span], "variant": label, "rate": round(100 * s["events"] / s["money_years"], 4)})
     spec = {"mark": {"type": "bar"},
             "encoding": {"y": {"field": "span", "type": "nominal", "title": None, "sort": list(names.values())},
                          "yOffset": {"field": "variant"},

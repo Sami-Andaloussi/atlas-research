@@ -96,7 +96,7 @@ framework.
 the World Bank's consumer prices, price-level factors, market rates and exports; the Jordà-Schularick-Taylor
 Macrohistory Database (R6); Reinhart and Rogoff's inflation files; the IMF's International Financial Statistics and
 World Economic Outlook (through DBnomics); Ilzetzki, Reinhart and Rogoff's classifications; the IMF's AREAER; the Bank
-of England's Millennium of Macroeconomic Data; FRED's CPIAUCNS, FYGFGDQ188S, FYOIGDA188S and CBBTCUSD; the BIS's policy rates (WS_CBPOL); and the page images behind the A3 build. The
+of England's Millennium of Macroeconomic Data; the BLS's CPI-U (CUUR0000SA0, the original of FRED's CPIAUCNS, read over the dates of FRED's copy; the author, 2026-10-21); FRED's FYGFGDQ188S and FYOIGDA188S (FRED's ratios to GDP of the OMB's tables, which were not available to us at their source) and CBBTCUSD (Coinbase's price, which no agency publishes); the BIS's policy rates (WS_CBPOL); and the page images behind the A3 build. The
 reconstructed sets ship their manifests only, their rows carrying values from other publishers' datasets.
 
 Named as positions, through the works that report them: Knapp; Goodhart; Menger; Kocherlakota and

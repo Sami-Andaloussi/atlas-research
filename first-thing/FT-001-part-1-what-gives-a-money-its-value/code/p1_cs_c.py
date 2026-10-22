@@ -1,7 +1,7 @@
-"""Card C23 (CS-C): how often prices rose a fifth (20%) or more in a year, 1800-2025, per 100 money-years with a price reading, in
+"""Card C28 (C26 rerun, 2026-10-22: the price panel with Kazakhstan's splice alone, ft.data.splices; C23's rules unchanged) (CS-C): how often prices rose a fifth (20%) or more in a year, 1800-2025, per 100 money-years with a price reading, in
 three spans named by their dates, from frame b's breaks (M3, M0 v4.2), the euro and each union counted once.
 
-From the study's folder: ``python code/p1_cs_c.py``. Writes ``results/runs/C23-cs-c-losses-by-era.json``.
+From the study's folder: ``python code/p1_cs_c.py``. Writes ``results/runs/C28-cs-c-losses-by-era-kazakhstan.json``.
 
 The panel is frame b's, rebuilt in memory from the frozen sources by frame b's own code (``panel.py``, read, never
 changed), its digest checked against the manifest's before anything is counted. Readings of the card that its text
@@ -26,7 +26,7 @@ from ft import cards
 HERE = Path(__file__).resolve().parent
 STUDY = HERE.parent
 ROOT = STUDY.parents[1]
-CARD = STUDY / "cards" / "C23-cs-c-losses-by-era.yaml"
+CARD = STUDY / "cards" / "C28-cs-c-losses-by-era-kazakhstan.yaml"  # C26 rerun, Kazakhstan alone (2026-10-22)
 FRAME_B = ROOT / "data" / "reconstructed" / "ft001-b"
 sys.path.insert(0, str(ROOT / "bank" / "maps" / "FT-001" / "missions" / "code"))
 
@@ -179,7 +179,7 @@ def main() -> dict:
     digest = P.records(pan)[2]
     expected = p["panel"].split("digest ")[1].rstrip(")")
     if digest != expected:
-        raise SystemExit(f"C23: the rebuilt panel's digest {digest} differs from the manifest's {expected}")
+        raise SystemExit(f"C28: the rebuilt panel's digest {digest} differs from the manifest's {expected}")
     ends = (P.common_end(pan.have_monthly(), 12), P.common_end(pan.have_annual(), 1))
     units = Units(p)
     payload = {"panel_digest": digest, "common_ends": {"monthly": P.month_label(ends[0]), "annual": ends[1]},

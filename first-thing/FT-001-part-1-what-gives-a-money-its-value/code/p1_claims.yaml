@@ -1258,7 +1258,8 @@
   text: US consumer prices, up {{k5_us_cpi_1980-03}} on the year in March 1980, were up {{k5_us_cpi_1983-12}} in December
     1983.
   sources:
-  - source: FRED CPIAUCNS (frozen data/fred/CPIAUCNS/2026-09-30)
+  - source: the BLS's CPI-U, all items, not seasonally adjusted (CUUR0000SA0; FRED's CPIAUCNS, frozen data/fred/CPIAUCNS/2026-09-30,
+      the same values)
     locator: twelve-month changes, March 1980 (the highest from 1979 to 1984) and December 1983
     passage: 14.76% (March 1980); 3.79% (December 1983)
     copy: data
@@ -1567,7 +1568,8 @@
     copy: open
     read: passage
     url: https://www.nber.org/system/files/chapters/c11485/c11485.pdf
-  - source: FRED CPIAUCNS, frozen data/fred/CPIAUCNS/2026-09-30
+  - source: the BLS's CPI-U, all items, not seasonally adjusted (CUUR0000SA0; FRED's CPIAUCNS, frozen data/fred/CPIAUCNS/2026-09-30,
+      the same values)
     locator: monthly, 1945-1947
     passage: 'twelve-month change: June 1946 3.3%, July 1946 9.4%, December 1946 18.1%, March 1947 19.7% (the peak), July
       1947 12.1%.'
@@ -1756,7 +1758,8 @@
     copy: open
     read: passage
     url: https://fraser.stlouisfed.org/title/annual-report-board-governors-federal-reserve-system-117/fourth-annual-report-board-governors-federal-reserve-system-1917-2496
-  - source: FRED CPIAUCNS (consumer prices, not seasonally adjusted, frozen data/fred/CPIAUCNS/2026-09-30)
+  - source: the BLS's CPI-U, all items, not seasonally adjusted (CUUR0000SA0; FRED's CPIAUCNS, frozen data/fred/CPIAUCNS/2026-09-30,
+      the same values)
     locator: June 1914 and June 1920; annual averages 1914 and 1920; August 1917
     passage: 9.9 in June 1914 and 20.9 in June 1920 (x2.0 by 1920, annual averages); 13.0 in August 1917, against the 1914
       average of 10.02 (x1.3).

@@ -28,8 +28,8 @@ import p1_registry  # noqa: E402
 def main() -> None:
     p1_cs_a.main()      # C21
     p1_cs_b.main()      # C22
-    p1_cs_c.main()      # C23
-    p1_cs_c_years.main()  # C24
+    p1_cs_c.main()      # C28 (C23 corrected: Kazakhstan's splice, 2026-10-22)
+    p1_cs_c_years.main()  # C29 (C24 corrected)
     p1_k9_debt.main()   # C25
     p1_registry.main()
     for name in ("p1_figures", "p1_og", "p1_web"):

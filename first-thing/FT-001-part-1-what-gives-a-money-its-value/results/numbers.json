@@ -293,10 +293,10 @@
       "unit": "ratio of annual-average CPI, 1920 to 1914 (recomputed 2.0008; June to June 2.11)",
       "origin": {
         "kind": "cited",
-        "source": "FRED CPIAUCNS",
-        "locator": "annual averages of the monthly series, 1920 (20.04) over 1914 (10.02)"
+        "source": "the BLS's CPI-U, all items, not seasonally adjusted (series CUUR0000SA0, retrieved from the BLS on 21 October 2026; FRED's CPIAUCNS gives the same)",
+        "locator": "CUUR0000SA0, annual averages of the monthly series, 1920 (20.04) over 1914 (10.02)"
       },
-      "as_of": "2026-09-30",
+      "as_of": "2026-10-21",
       "fmt": "{:.1f}",
       "measure": "consumer prices in 1920 over 1914",
       "period": "1914 to 1920",
@@ -307,10 +307,10 @@
       "unit": "ratio of the August 1917 CPI to the 1914 annual average (recomputed 1.298)",
       "origin": {
         "kind": "cited",
-        "source": "FRED CPIAUCNS",
-        "locator": "August 1917 (13.0) over the 1914 annual average (10.02)"
+        "source": "the BLS's CPI-U, all items, not seasonally adjusted (series CUUR0000SA0, retrieved from the BLS on 21 October 2026; FRED's CPIAUCNS gives the same)",
+        "locator": "CUUR0000SA0, August 1917 (13.0) over the 1914 annual average (10.02)"
       },
-      "as_of": "2026-09-30",
+      "as_of": "2026-10-21",
       "fmt": "{:.1f}",
       "measure": "consumer prices in August 1917, before the gold embargo, over 1914",
       "period": "1914 to August 1917",
@@ -1245,11 +1245,11 @@
       "unit": "percent, twelve-month change",
       "origin": {
         "kind": "cited",
-        "source": "FRED CPIAUCNS (consumer prices, all urban consumers, not seasonally adjusted; the BLS's)",
-        "locator": "CPIAUCNS, December 1946 over December 1945",
-        "url": "https://fred.stlouisfed.org/series/CPIAUCNS"
+        "source": "the BLS's CPI-U, all items, not seasonally adjusted (series CUUR0000SA0, retrieved from the BLS on 21 October 2026; FRED's CPIAUCNS gives the same)",
+        "locator": "CUUR0000SA0, December 1946 over December 1945",
+        "url": "https://www.bls.gov/cpi/"
       },
-      "as_of": "2026-09-30",
+      "as_of": "2026-10-21",
       "fmt": "{:.0f}%",
       "measure": "rise in US consumer prices over twelve months",
       "period": "December 1945 to December 1946",
@@ -1260,11 +1260,11 @@
       "unit": "percent, twelve-month change (the highest of the period)",
       "origin": {
         "kind": "cited",
-        "source": "FRED CPIAUCNS (consumer prices, all urban consumers, not seasonally adjusted; the BLS's)",
-        "locator": "CPIAUCNS, March 1947 over March 1946",
-        "url": "https://fred.stlouisfed.org/series/CPIAUCNS"
+        "source": "the BLS's CPI-U, all items, not seasonally adjusted (series CUUR0000SA0, retrieved from the BLS on 21 October 2026; FRED's CPIAUCNS gives the same)",
+        "locator": "CUUR0000SA0, March 1947 over March 1946",
+        "url": "https://www.bls.gov/cpi/"
       },
-      "as_of": "2026-09-30",
+      "as_of": "2026-10-21",
       "fmt": "{:.1f}%",
       "measure": "rise in US consumer prices over twelve months",
       "period": "March 1946 to March 1947",
@@ -1328,6 +1328,84 @@
       "measure": "the central bank's realized quasi-fiscal losses, as a share of GDP",
       "period": "2006",
       "population": "Zimbabwe"
+    },
+    "corr_cd_money-years_other": {
+      "value": 7022,
+      "unit": "money-years",
+      "origin": {
+        "kind": "computed",
+        "script": "code/p1_registry.py: C28's count and money-years from August 1971, less Congo's 2009 and 2010 as C28's panel reads them"
+      },
+      "as_of": "2026-09-30",
+      "fmt": "{:,.0f}",
+      "measure": "money-years with a price reading, Congo's 2009 and 2010 read as unreadable",
+      "period": "August 1971 to 2025",
+      "population": "every money with a price reading"
+    },
+    "corr_cd_rate_other": {
+      "value": 2.2500712047849616,
+      "unit": "per 100 money-years",
+      "origin": {
+        "kind": "computed",
+        "script": "code/p1_registry.py: C28's count and money-years from August 1971, less Congo's 2009 and 2010 as C28's panel reads them"
+      },
+      "as_of": "2026-09-30",
+      "fmt": "{:.1f}",
+      "measure": "crises of a fifth or more in a year begun, Congo's 2009 and 2010 read as unreadable",
+      "period": "August 1971 to 2025",
+      "population": "every money with a price reading"
+    },
+    "corr_cd_rate_other_exact": {
+      "value": 2.2500712047849616,
+      "unit": "per 100 money-years",
+      "origin": {
+        "kind": "computed",
+        "script": "code/p1_registry.py: C28's count and money-years from August 1971, less Congo's 2009 and 2010 as C28's panel reads them"
+      },
+      "as_of": "2026-09-30",
+      "fmt": "{:.4f}",
+      "measure": "crises of a fifth or more in a year begun, Congo's 2009 and 2010 read as unreadable",
+      "period": "August 1971 to 2025",
+      "population": "every money with a price reading"
+    },
+    "corr_kaz_2022_entry": {
+      "value": 20.3508,
+      "unit": "%",
+      "origin": {
+        "kind": "computed",
+        "script": "data/reconstructed/ft001-b/series.csv, KAZ 2022-12, entry_measure"
+      },
+      "as_of": "2026-09-30",
+      "fmt": "{:.1f}%",
+      "measure": "Kazakhstan's twelve-month price rise at its December 2022 crossing",
+      "period": "2022-12",
+      "population": "Kazakhstan"
+    },
+    "corr_kaz_ratio": {
+      "value": 1.942717882588395,
+      "unit": "ratio",
+      "origin": {
+        "kind": "computed",
+        "script": "toolkit/ft/data/splices.py: IFS A.KZ.PCPI_IX 2020 over the World Bank's FP.CPI.TOTL KAZ 2020"
+      },
+      "as_of": "2026-09-30",
+      "fmt": "{:.4f}",
+      "measure": "IFS's annual price index for Kazakhstan over the World Bank's, 2020",
+      "period": "2019-2024",
+      "population": "Kazakhstan"
+    },
+    "corr_rate_exact": {
+      "value": 2.2494305239179955,
+      "unit": "per 100 money-years",
+      "origin": {
+        "kind": "computed",
+        "script": "code/p1_cs_c.py (card C28, C23 corrected)"
+      },
+      "as_of": "2026-09-30",
+      "fmt": "{:.4f}",
+      "measure": "crises of a fifth or more in a year begun",
+      "period": "August 1971 to 2025",
+      "population": "every money with a price reading"
     },
     "cs-a_1992-2025_loss-max": {
       "value": 2.5,
@@ -2842,7 +2920,7 @@
       "unit": "crises",
       "origin": {
         "kind": "computed",
-        "script": "code/p1_cs_c.py (card C23)"
+        "script": "code/p1_cs_c.py (card C28, C23 corrected)"
       },
       "as_of": "2026-09-30",
       "fmt": "{:.0f}",
@@ -2855,7 +2933,7 @@
       "unit": "events",
       "origin": {
         "kind": "computed",
-        "script": "code/p1_cs_c.py (card C23)"
+        "script": "code/p1_cs_c.py (card C28, C23 corrected)"
       },
       "as_of": "2026-09-30",
       "fmt": "{:.0f}",
@@ -2868,7 +2946,7 @@
       "unit": "money-years",
       "origin": {
         "kind": "computed",
-        "script": "code/p1_cs_c.py (card C23)"
+        "script": "code/p1_cs_c.py (card C28, C23 corrected)"
       },
       "as_of": "2026-09-30",
       "fmt": "{:,.0f}",
@@ -2877,11 +2955,11 @@
       "population": "every money with a price reading"
     },
     "cs-c_1914_to_1971_07_rate": {
-      "value": 2.93,
+      "value": 2.925840092699884,
       "unit": "per 100 money-years",
       "origin": {
         "kind": "computed",
-        "script": "code/p1_cs_c.py (card C23)"
+        "script": "code/p1_cs_c.py (card C28, C23 corrected)"
       },
       "as_of": "2026-09-30",
       "fmt": "{:.1f}",
@@ -2894,7 +2972,7 @@
       "unit": "per 100 money-years",
       "origin": {
         "kind": "computed",
-        "script": "code/p1_cs_c.py (card C23)"
+        "script": "code/p1_cs_c.py (card C28, C23 corrected)"
       },
       "as_of": "2026-09-30",
       "fmt": "{:.1f}",
@@ -2907,7 +2985,7 @@
       "unit": "% of monies",
       "origin": {
         "kind": "computed",
-        "script": "code/p1_cs_c.py (card C23)"
+        "script": "code/p1_cs_c.py (card C28, C23 corrected)"
       },
       "as_of": "2026-09-30",
       "fmt": "{:.0f}%",
@@ -2920,7 +2998,7 @@
       "unit": "monies",
       "origin": {
         "kind": "computed",
-        "script": "code/p1_cs_c.py (card C23)"
+        "script": "code/p1_cs_c.py (card C28, C23 corrected)"
       },
       "as_of": "2026-09-30",
       "fmt": "{:.0f}",
@@ -2933,7 +3011,7 @@
       "unit": "crises",
       "origin": {
         "kind": "computed",
-        "script": "code/p1_cs_c.py (card C23)"
+        "script": "code/p1_cs_c.py (card C28, C23 corrected)"
       },
       "as_of": "2026-09-30",
       "fmt": "{:.0f}",
@@ -2946,7 +3024,7 @@
       "unit": "events",
       "origin": {
         "kind": "computed",
-        "script": "code/p1_cs_c.py (card C23)"
+        "script": "code/p1_cs_c.py (card C28, C23 corrected)"
       },
       "as_of": "2026-09-30",
       "fmt": "{:.0f}",
@@ -2959,7 +3037,7 @@
       "unit": "money-years",
       "origin": {
         "kind": "computed",
-        "script": "code/p1_cs_c.py (card C23)"
+        "script": "code/p1_cs_c.py (card C28, C23 corrected)"
       },
       "as_of": "2026-09-30",
       "fmt": "{:,.0f}",
@@ -2968,11 +3046,11 @@
       "population": "every money with a price reading"
     },
     "cs-c_before_1914_rate": {
-      "value": 4.63,
+      "value": 4.625243800501533,
       "unit": "per 100 money-years",
       "origin": {
         "kind": "computed",
-        "script": "code/p1_cs_c.py (card C23)"
+        "script": "code/p1_cs_c.py (card C28, C23 corrected)"
       },
       "as_of": "2026-09-30",
       "fmt": "{:.1f}",
@@ -2985,7 +3063,7 @@
       "unit": "per 100 money-years",
       "origin": {
         "kind": "computed",
-        "script": "code/p1_cs_c.py (card C23)"
+        "script": "code/p1_cs_c.py (card C28, C23 corrected)"
       },
       "as_of": "2026-09-30",
       "fmt": "{:.1f}",
@@ -2998,7 +3076,7 @@
       "unit": "% of monies",
       "origin": {
         "kind": "computed",
-        "script": "code/p1_cs_c.py (card C23)"
+        "script": "code/p1_cs_c.py (card C28, C23 corrected)"
       },
       "as_of": "2026-09-30",
       "fmt": "{:.0f}%",
@@ -3011,7 +3089,7 @@
       "unit": "monies",
       "origin": {
         "kind": "computed",
-        "script": "code/p1_cs_c.py (card C23)"
+        "script": "code/p1_cs_c.py (card C28, C23 corrected)"
       },
       "as_of": "2026-09-30",
       "fmt": "{:.0f}",
@@ -3020,11 +3098,11 @@
       "population": "every money with a price reading"
     },
     "cs-c_cpi-only_1914_to_1971_07_rate": {
-      "value": 2.93,
+      "value": 2.925531914893617,
       "unit": "per 100 money-years",
       "origin": {
         "kind": "computed",
-        "script": "code/p1_cs_c.py (card C23)"
+        "script": "code/p1_cs_c.py (card C28, C23 corrected)"
       },
       "as_of": "2026-09-30",
       "fmt": "{:.1f}",
@@ -3033,11 +3111,11 @@
       "population": "monies with consumer prices"
     },
     "cs-c_cpi-only_before_1914_rate": {
-      "value": 3.68,
+      "value": 3.682624707063944,
       "unit": "per 100 money-years",
       "origin": {
         "kind": "computed",
-        "script": "code/p1_cs_c.py (card C23)"
+        "script": "code/p1_cs_c.py (card C28, C23 corrected)"
       },
       "as_of": "2026-09-30",
       "fmt": "{:.1f}",
@@ -3046,11 +3124,11 @@
       "population": "monies with consumer prices"
     },
     "cs-c_cpi-only_from_1971_08_rate": {
-      "value": 2.25,
+      "value": 2.2494305239179955,
       "unit": "per 100 money-years",
       "origin": {
         "kind": "computed",
-        "script": "code/p1_cs_c.py (card C23)"
+        "script": "code/p1_cs_c.py (card C28, C23 corrected)"
       },
       "as_of": "2026-09-30",
       "fmt": "{:.1f}",
@@ -3063,7 +3141,7 @@
       "unit": "crises",
       "origin": {
         "kind": "computed",
-        "script": "code/p1_cs_c.py (card C23)"
+        "script": "code/p1_cs_c.py (card C28, C23 corrected)"
       },
       "as_of": "2026-09-30",
       "fmt": "{:.0f}",
@@ -3076,7 +3154,7 @@
       "unit": "events",
       "origin": {
         "kind": "computed",
-        "script": "code/p1_cs_c.py (card C23)"
+        "script": "code/p1_cs_c.py (card C28, C23 corrected)"
       },
       "as_of": "2026-09-30",
       "fmt": "{:.0f}",
@@ -3089,7 +3167,7 @@
       "unit": "money-years",
       "origin": {
         "kind": "computed",
-        "script": "code/p1_cs_c.py (card C23)"
+        "script": "code/p1_cs_c.py (card C28, C23 corrected)"
       },
       "as_of": "2026-09-30",
       "fmt": "{:,.0f}",
@@ -3098,11 +3176,11 @@
       "population": "every money with a price reading"
     },
     "cs-c_from_1971_08_rate": {
-      "value": 2.25,
+      "value": 2.2494305239179955,
       "unit": "per 100 money-years",
       "origin": {
         "kind": "computed",
-        "script": "code/p1_cs_c.py (card C23)"
+        "script": "code/p1_cs_c.py (card C28, C23 corrected)"
       },
       "as_of": "2026-09-30",
       "fmt": "{:.1f}",
@@ -3115,7 +3193,7 @@
       "unit": "per 100 money-years",
       "origin": {
         "kind": "computed",
-        "script": "code/p1_cs_c.py (card C23)"
+        "script": "code/p1_cs_c.py (card C28, C23 corrected)"
       },
       "as_of": "2026-09-30",
       "fmt": "{:.1f}",
@@ -3128,7 +3206,7 @@
       "unit": "% of monies",
       "origin": {
         "kind": "computed",
-        "script": "code/p1_cs_c.py (card C23)"
+        "script": "code/p1_cs_c.py (card C28, C23 corrected)"
       },
       "as_of": "2026-09-30",
       "fmt": "{:.0f}%",
@@ -3141,7 +3219,7 @@
       "unit": "monies",
       "origin": {
         "kind": "computed",
-        "script": "code/p1_cs_c.py (card C23)"
+        "script": "code/p1_cs_c.py (card C28, C23 corrected)"
       },
       "as_of": "2026-09-30",
       "fmt": "{:.0f}",
@@ -3154,7 +3232,7 @@
       "unit": "% of money-years",
       "origin": {
         "kind": "computed",
-        "script": "code/p1_cs_c_years.py (card C24)"
+        "script": "code/p1_cs_c_years.py (card C29, C24 corrected)"
       },
       "as_of": "2026-09-30",
       "fmt": "{:.1f}%",
@@ -3167,7 +3245,7 @@
       "unit": "% of money-years",
       "origin": {
         "kind": "computed",
-        "script": "code/p1_cs_c_years.py (card C24)"
+        "script": "code/p1_cs_c_years.py (card C29, C24 corrected)"
       },
       "as_of": "2026-09-30",
       "fmt": "{:.1f}%",
@@ -3180,7 +3258,7 @@
       "unit": "% of money-years",
       "origin": {
         "kind": "computed",
-        "script": "code/p1_cs_c_years.py (card C24)"
+        "script": "code/p1_cs_c_years.py (card C29, C24 corrected)"
       },
       "as_of": "2026-09-30",
       "fmt": "{:.1f}%",
@@ -3193,7 +3271,7 @@
       "unit": "% of money-years",
       "origin": {
         "kind": "computed",
-        "script": "code/p1_cs_c_years.py (card C24)"
+        "script": "code/p1_cs_c_years.py (card C29, C24 corrected)"
       },
       "as_of": "2026-09-30",
       "fmt": "{:.1f}%",
@@ -3206,7 +3284,7 @@
       "unit": "% of money-years",
       "origin": {
         "kind": "computed",
-        "script": "code/p1_cs_c_years.py (card C24)"
+        "script": "code/p1_cs_c_years.py (card C29, C24 corrected)"
       },
       "as_of": "2026-09-30",
       "fmt": "{:.1f}%",
@@ -3219,7 +3297,7 @@
       "unit": "% of money-years",
       "origin": {
         "kind": "computed",
-        "script": "code/p1_cs_c_years.py (card C24)"
+        "script": "code/p1_cs_c_years.py (card C29, C24 corrected)"
       },
       "as_of": "2026-09-30",
       "fmt": "{:.1f}%",
@@ -3872,9 +3950,9 @@
       "unit": "% over twelve months",
       "origin": {
         "kind": "computed",
-        "script": "code/p1_registry.py (frozen FRED CPIAUCNS)"
+        "script": "code/p1_registry.py (the BLS's CPI-U, CUUR0000SA0: the original of FRED's CPIAUCNS)"
       },
-      "as_of": "2026-09-30",
+      "as_of": "2026-10-21",
       "fmt": "{:.1f}%",
       "measure": "US consumer prices, change over twelve months",
       "period": "1980-03",
@@ -3885,9 +3963,9 @@
       "unit": "% over twelve months",
       "origin": {
         "kind": "computed",
-        "script": "code/p1_registry.py (frozen FRED CPIAUCNS)"
+        "script": "code/p1_registry.py (the BLS's CPI-U, CUUR0000SA0: the original of FRED's CPIAUCNS)"
       },
-      "as_of": "2026-09-30",
+      "as_of": "2026-10-21",
       "fmt": "{:.1f}%",
       "measure": "US consumer prices, change over twelve months",
       "period": "1983-12",
@@ -5601,7 +5679,7 @@
         "cs-c_from_1971_08_rate",
         "cs-c_from_1971_08_share"
       ],
-      "card": "C23",
+      "card": "C28",
       "component": "K5"
     },
     "cs-c-cpi-only": {
@@ -5618,11 +5696,11 @@
         "cs-c_years_cpi-only_before_1914_share",
         "cs-c_years_cpi-only_from_1971_08_share"
       ],
-      "card": "C24",
+      "card": "C29",
       "component": "K5"
     },
     "cs-c-longer": {
-      "text": "In our reading of C23 and C24 together, fewer crises began per 100 money-years after 1971 than before 1914 while a larger share of money-years was spent in one, so, on average, later crises lasted longer (an inference from a share and a rate, across monies that differ by era, not a measure of each crisis), with or without the crises left out for want of a start date, and on consumer prices alone; the spans are dates, not monetary systems.",
+      "text": "In our reading of C28 and C29 together (C23 and C24 corrected), fewer crises began per 100 money-years after 1971 than before 1914 while a larger share of money-years was spent in one, so, on average, later crises lasted longer (an inference from a share and a rate, across monies that differ by era, not a measure of each crisis), with or without the crises left out for want of a start date, and on consumer prices alone; the spans are dates, not monetary systems.",
       "type": "judgement",
       "component": "K5"
     },
@@ -5636,7 +5714,7 @@
       "component": "K5"
     },
     "cs-c-not-new": {
-      "text": "Inflation crises are not new: in our reading of C23, a new one began in each of the three spans, before 1914 as after 1971, and most monies with a price reading had at least one.",
+      "text": "Inflation crises are not new: in our reading of C28 (C23 corrected), a new one began in each of the three spans, before 1914 as after 1971, and most monies with a price reading had at least one.",
       "type": "judgement",
       "component": "K5"
     },
@@ -5653,7 +5731,7 @@
         "cs-c_years_before_1914_share",
         "cs-c_years_from_1971_08_share"
       ],
-      "card": "C24",
+      "card": "C29",
       "component": "K5"
     },
     "cs-d": {
@@ -6989,7 +7067,7 @@
           "url": "https://www.nber.org/system/files/chapters/c11485/c11485.pdf"
         },
         {
-          "source": "FRED CPIAUCNS, frozen data/fred/CPIAUCNS/2026-09-30",
+          "source": "the BLS's CPI-U, all items, not seasonally adjusted (CUUR0000SA0; FRED's CPIAUCNS, frozen data/fred/CPIAUCNS/2026-09-30, the same values)",
           "locator": "monthly, 1945-1947",
           "passage": "twelve-month change: June 1946 3.3%, July 1946 9.4%, December 1946 18.1%, March 1947 19.7% (the peak), July 1947 12.1%.",
           "copy": "data",
@@ -7359,7 +7437,7 @@
           "url": "https://fraser.stlouisfed.org/title/annual-report-board-governors-federal-reserve-system-117/fourth-annual-report-board-governors-federal-reserve-system-1917-2496"
         },
         {
-          "source": "FRED CPIAUCNS (consumer prices, not seasonally adjusted, frozen data/fred/CPIAUCNS/2026-09-30)",
+          "source": "the BLS's CPI-U, all items, not seasonally adjusted (CUUR0000SA0; FRED's CPIAUCNS, frozen data/fred/CPIAUCNS/2026-09-30, the same values)",
           "locator": "June 1914 and June 1920; annual averages 1914 and 1920; August 1917",
           "passage": "9.9 in June 1914 and 20.9 in June 1920 (x2.0 by 1920, annual averages); 13.0 in August 1917, against the 1914 average of 10.02 (x1.3).",
           "copy": "data",
@@ -7429,7 +7507,7 @@
       ],
       "sources": [
         {
-          "source": "FRED CPIAUCNS (frozen data/fred/CPIAUCNS/2026-09-30)",
+          "source": "the BLS's CPI-U, all items, not seasonally adjusted (CUUR0000SA0; FRED's CPIAUCNS, frozen data/fred/CPIAUCNS/2026-09-30, the same values)",
           "locator": "twelve-month changes, March 1980 (the highest from 1979 to 1984) and December 1983",
           "passage": "14.76% (March 1980); 3.79% (December 1983)",
           "copy": "data",

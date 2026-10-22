@@ -1,7 +1,7 @@
-"""Card C24 (CS-C, its years): the share of money-years in which prices rose a fifth (20%) or more, in C23's three spans,
+"""Card C29 (C27 rerun, 2026-10-22, on C28) (CS-C, its years): the share of money-years in which prices rose a fifth (20%) or more, in C23's three spans,
 beside C23's crises begun.
 
-From the study's folder: ``python code/p1_cs_c_years.py``. Writes ``results/runs/C24-cs-c-years-in-crisis.json``.
+From the study's folder: ``python code/p1_cs_c_years.py``. Writes ``results/runs/C29-cs-c-years-in-crisis-kazakhstan.json``.
 
 The denominator is C23's, read from ``p1_cs_c.py`` (``reading_years``, ``Units``), never changed: each unit-year once. A
 year's rise is the timeline's annual reading for the year, else the mean of its monthly 12-month changes; a unit-year
@@ -21,8 +21,8 @@ sys.path.insert(0, str(HERE))
 import p1_cs_c as C  # noqa: E402
 
 STUDY = C.STUDY
-CARD = STUDY / "cards" / "C24-cs-c-years-in-crisis.yaml"
-C23_RUN = STUDY / "results" / "runs" / "C23-cs-c-losses-by-era.json"
+CARD = STUDY / "cards" / "C29-cs-c-years-in-crisis-kazakhstan.yaml"  # C27 rerun on C28 (2026-10-22)
+C23_RUN = STUDY / "results" / "runs" / "C28-cs-c-losses-by-era-kazakhstan.json"  # C28, C23 corrected (Kazakhstan alone)
 
 
 def year_rises(pan, money: str, ends: tuple[int, int], rr_cpi_only: bool, y0: int, y1: int) -> dict[int, float]:

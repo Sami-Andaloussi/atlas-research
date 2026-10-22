@@ -135,12 +135,15 @@ France's and 1.62 Italy's. Exports went from 38% of GDP to
 
 ## CS-C
 
-**How often a new inflation crisis began, and the years spent in one** (`cards/C23-cs-c-losses-by-era.yaml`,
-`code/p1_cs_c.py`, `results/runs/C23-cs-c-losses-by-era.json`; `cards/C24-cs-c-years-in-crisis.yaml`,
-`code/p1_cs_c_years.py`, `results/runs/C24-cs-c-years-in-crisis.json`; both withheld, since they rest on Reinhart and
-Rogoff's values, and `C23` on the Jordà–Schularick–Taylor database's too, whose values are not republished in bulk).
+**How often a new inflation crisis began, and the years spent in one** (`cards/C28-cs-c-losses-by-era-kazakhstan.yaml`,
+`code/p1_cs_c.py`, `results/runs/C28-cs-c-losses-by-era-kazakhstan.json`; `cards/C29-cs-c-years-in-crisis-kazakhstan.yaml`,
+`code/p1_cs_c_years.py`, `results/runs/C29-cs-c-years-in-crisis-kazakhstan.json`; both withheld, since they rest on
+Reinhart and Rogoff's values, and `C28` on the Jordà–Schularick–Taylor database's too, whose values are not republished
+in bulk). `C28` and `C29` are the cards `C23` and `C24` rerun, their rules unchanged, on the price panel with Kazakhstan's correction
+alone (22 October 2026, under the research log); `C23`'s and `C24`'s own runs are kept as they were, and so are `C26`'s and
+`C27`'s, an earlier rerun on a wider correction that was withdrawn.
 
-Beside the count of crises begun, card C24 counts, on C23's own money-years, the years in which prices rose a fifth or
+Beside the count of crises begun, card C24 (rerun as C29) counts, on C23's own money-years, the years in which prices rose a fifth or
 more (Reinhart and Rogoff's own measure, applied to years; for a year read monthly, the mean of its twelve-month
 changes is our adaptation, the card's "as they apply it" meaning the line, not this computation; a unit read by several
 economies takes their mean). It was added after C23's results, because the count of crises begun was being read as a
@@ -182,7 +185,7 @@ only in its second decimal. No count of recoveries is made: the list
 of new units monies took after a collapse could not be made complete from the sources in hand, so recoveries are told
 as cases. The dollar's consumer prices have not crossed the line since 1920 on the same panel.
 
-| Era | Money-years | Share of money-years in a crisis (C24) | Consumer prices only |
+| Era | Money-years | Share of money-years in a crisis (C29) | Consumer prices only |
 |---|---|---|---|
 | Before 1914 | 3,589 | 6.9% | 5.2% |
 | 1914 to July 1971 | 3,452 | 11.0% | 10.8% |
@@ -354,8 +357,22 @@ read; and the study's text.
 
 One departure from the earlier design is named: what stood behind destroyed monies moved from the headline to the
 body, as context told in the sources' words, because the sources' finding is theirs and the study's cases cannot test
-it. The runs `C23`, `C24` and `C25` are withheld from this copy, since they rest on values that are not republished
+it. The runs `C23` to `C29` are withheld from this copy, since they rest on values that are not republished
 in bulk (see `WITHHELD.md`); the code regenerates them from the frozen series.
+
+**Correction, 22 October 2026 (the error found on 21 October).** The IMF's consumer price index for Kazakhstan (International Financial Statistics,
+`PCPI_IX`, monthly and annual, frozen on 30 September 2026) changes units in January 2020: it doubles in one month, with
+no flag or note. The World Bank's index (World Bank, World Development Indicators, `FP.CPI.TOTL`, frozen on 30 September
+2026) is the same series through 2019 and runs 1.9427 times below the IMF's from 2020, a ratio that holds
+within half a percent through 2024, so it was a change of units, not of prices. Our list of breaks counted it as a
+crisis begun in January 2020. The panel now reads the IMF's index for Kazakhstan from January 2020 divided by that
+ratio, computed from the two frozen files (the toolkit's `ft.data.splices`, not in this repository), and every count was rerun by its own code
+(cards `C28` and `C29`). With the correction, Kazakhstan in 2020 is no longer a crisis, and Kazakhstan's crossing of
+December 2022 (20.4% over twelve months) is one; the printed counts do not change
+(158 crises begun from August 1971, 2.2 per hundred money-years,
+13.8% of money-years in a crisis). Before the IMF's monthly index feeds any count, a check now holds the IMF's monthly index of every money against the World Bank's annual index, for one-month moves of roughly a quarter or more, far larger than the series' usual monthly moves of the previous five years (the toolkit's `ft.quant.jumps`, not in this repository; the BIS's monthly series, which feeds a few counts, and the US and euro-area indices are not screened): a move the World Bank does not confirm stops the run unless it is named with its reason. The other moves it names are left as the IMF reads them: Myanmar's in January 1973 and Congo's (Democratic Republic) in January 2010, both flagged for a separate correction, and Palestine's in 2025 and Zimbabwe's in June 2023, read as price moves (our reading, not checked against a source). Under that reading, Myanmar's crisis of the 1970s stays dated January 1974 in our list of breaks, from the IMF's monthly index; no printed count depends on Myanmar's date, since both of its readings fall after July 1971. Congo's index is read as the IMF prints it, and the rate in the text rests on that reading: read the other way, with Congo's 2009 and 2010 left without a price reading, the money-years from August 1971 would be 7,022 instead of 7,024, and the rate of crises begun from August 1971 would round to 2.3 (2.2501) instead of 2.2 (2.2494), the count of 158 unchanged: a knife-edge. A separate correction of Congo's index is proposed. The check is not exhaustive: smaller moves pass unseen, and so do a move across a gap in a series and any move in a series' first twelve months, and the World Bank's index often derives from the same IMF data, so its agreement is not an independent confirmation. Separately, a fault of rounding,
+not of data: the chart's tooltip rounded a rate that was already rounded, and could show a tenth more than the text;
+it now rounds once, from the rate kept to four decimals.
 
 ## Sources
 
@@ -456,7 +473,7 @@ framework.
 the World Bank's consumer prices, price-level factors, market rates and exports; the Jordà-Schularick-Taylor
 Macrohistory Database (R6); Reinhart and Rogoff's inflation files; the IMF's International Financial Statistics and
 World Economic Outlook (through DBnomics); Ilzetzki, Reinhart and Rogoff's classifications; the IMF's AREAER; the Bank
-of England's Millennium of Macroeconomic Data; FRED's CPIAUCNS, FYGFGDQ188S, FYOIGDA188S and CBBTCUSD; the BIS's policy rates (WS_CBPOL); and the page images behind the A3 build. The
+of England's Millennium of Macroeconomic Data; the BLS's CPI-U (CUUR0000SA0, the original of FRED's CPIAUCNS, read over the dates of FRED's copy; the author, 2026-10-21); FRED's FYGFGDQ188S and FYOIGDA188S (FRED's ratios to GDP of the OMB's tables, which were not available to us at their source) and CBBTCUSD (Coinbase's price, which no agency publishes); the BIS's policy rates (WS_CBPOL); and the page images behind the A3 build. The
 reconstructed sets ship their manifests only, their rows carrying values from other publishers' datasets.
 
 Named as positions, through the works that report them: Knapp; Goodhart; Menger; Kocherlakota and

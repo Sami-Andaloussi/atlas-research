@@ -149,13 +149,16 @@ def _cfa_1994(x: dict) -> bool:
 
 
 def cs_c(reg: Registry) -> dict:
-    r = run("C23-cs-c-losses-by-era")
-    origin = computed("code/p1_cs_c.py (card C23)")
+    r = run("C28-cs-c-losses-by-era-kazakhstan")
+    origin = computed("code/p1_cs_c.py (card C28, C23 corrected)")
     for variant, prefix in (("headline", "cs-c"), ("rr_cpi_only", "cs-c_cpi-only")):
         for span, s in r[variant]["spans"].items():
             cpi = variant != "headline"
             pop = "monies with consumer prices" if cpi else "every money with a price reading"
-            reg.put(f"{prefix}_{span}_rate", s["rate_per_100"], unit="per 100 money-years", fmt="{:.1f}", origin=origin,
+            # one rounding, at print: the rate from its counts, never the run's two-decimal rate_per_100 (2.25 printed 2.2
+            # here and 2.3 in the figure's tooltip, 2026-10-21)
+            rate = 100 * s["events"] / s["money_years"]
+            reg.put(f"{prefix}_{span}_rate", rate, unit="per 100 money-years", fmt="{:.1f}", origin=origin,
                     as_of=FRAME_B_AS_OF,
                     measure=("consumer-price crises of a fifth or more begun" if cpi else "crises of a fifth or more in a year begun"),
                     period=SPAN_NAMES[span], population=pop)
@@ -180,8 +183,8 @@ def cs_c(reg: Registry) -> dict:
             reg.put(f"{prefix}_{span}_share", 100 * s["share_with_event"], unit="% of monies", fmt="{:.0f}%", origin=origin,
                     as_of=FRAME_B_AS_OF, measure="share of monies with a crisis begun",
                     period=SPAN_NAMES[span], population=pop)
-    y = run("C24-cs-c-years-in-crisis")
-    origin_y = computed("code/p1_cs_c_years.py (card C24)")
+    y = run("C29-cs-c-years-in-crisis-kazakhstan")
+    origin_y = computed("code/p1_cs_c_years.py (card C29, C24 corrected)")
     for span, s in y["rr_cpi_only"].items():
         reg.put(f"cs-c_years_cpi-only_{span}_share", s["share_pct"], unit="% of money-years", fmt="{:.1f}%", origin=origin_y,
                 as_of=FRAME_B_AS_OF, measure="money-years with consumer prices up a fifth or more",
@@ -387,7 +390,7 @@ def put_measured_and_judgement(reg: Registry) -> None:
     m("cs-c", "A crisis of prices rising a fifth or more in a year began {{cs-c_before_1914_rate}} times per 100 money-years before 1914, "
       "{{cs-c_1914_to_1971_07_rate}} from 1914 to July 1971 and {{cs-c_from_1971_08_rate}} from August 1971; "
       "{{cs-c_before_1914_share}}, {{cs-c_1914_to_1971_07_share}} and {{cs-c_from_1971_08_share}} of the monies with a "
-      "reading had at least one such crisis; the count is of crises begun, not of years spent in crisis.", "C23", "K5", "crises of a fifth or more in a year begun, per 100 money-years",
+      "reading had at least one such crisis; the count is of crises begun, not of years spent in crisis.", "C28", "K5", "crises of a fifth or more in a year begun, per 100 money-years",
       "1800-2025", "monies with a price reading in frame b's panel, the euro and each union once")
     m("cs-d", "In seventeen rich economies, 1870-2020, consumer prices rose {{cs-d_convertible_mean}} a year on average in "
       "convertible years and {{cs-d_paper_mean}} in paper years (the world-war years, the fixed-rate years of 1946-71 and the economy-years of inflation "
@@ -440,19 +443,19 @@ def put_measured_and_judgement(reg: Registry) -> None:
       "at hand; and are people quietly switching.", "K10")
     m("cs-c-years", "Prices rose a fifth or more in {{cs-c_years_before_1914_share}} of money-years before 1914, "
       "{{cs-c_years_1914_to_1971_07_share}} from 1914 to July 1971 and {{cs-c_years_from_1971_08_share}} from August 1971.",
-      "C24", "K5",
+      "C29", "K5",
       "share of money-years with prices up a fifth or more", "1800-2025",
       "monies with a price reading in frame b's panel, the euro and each union once")
-    j("cs-c-not-new", "Inflation crises are not new: in our reading of C23, a new one began in each of the three spans, "
+    j("cs-c-not-new", "Inflation crises are not new: in our reading of C28 (C23 corrected), a new one began in each of the three spans, "
       "before 1914 as after 1971, and most monies with a price reading had at least one.", "K5")
-    j("cs-c-longer", "In our reading of C23 and C24 together, fewer crises began per 100 money-years after 1971 than before "
+    j("cs-c-longer", "In our reading of C28 and C29 together (C23 and C24 corrected), fewer crises began per 100 money-years after 1971 than before "
       "1914 while a larger share of money-years was spent in one, so, on average, later crises lasted longer (an inference "
       "from a share and a rate, across monies that differ by era, not a measure of each crisis), with or without the "
       "crises left out for want of a start date, and on consumer prices alone; the spans are dates, not monetary systems.", "K5")
     m("cs-c-cpi-only", "On consumer prices alone, a crisis of a fifth or more in a year began {{cs-c_cpi-only_before_1914_rate}} "
       "times per 100 money-years before 1914 and {{cs-c_cpi-only_from_1971_08_rate}} from August 1971, and prices rose a "
       "fifth or more in {{cs-c_years_cpi-only_before_1914_share}} and {{cs-c_years_cpi-only_from_1971_08_share}} of "
-      "money-years.", "C24", "K5", "crises begun per 100 money-years, and share of money-years in a crisis, consumer prices only",
+      "money-years.", "C29", "K5", "crises begun per 100 money-years, and share of money-years in a crisis, consumer prices only",
       "1800-2025", "monies with consumer prices in frame b's panel, the euro and each union once")
     j("cs-f-reading", "In our reading, the central estimate of the leavers' gap in 1932-34 points the same way as "
       "Bernanke and James's wholesale prices, but with so few economies the data cannot pin it down.", "K5")
@@ -481,15 +484,16 @@ def put_measured_and_judgement(reg: Registry) -> None:
 
 
 def fed_1979(reg: Registry) -> None:
-    """US consumer prices before and after the Fed's change of 1979, from frozen FRED CPIAUCNS (reader panel)."""
+    """US consumer prices before and after the Fed's change of 1979, from the BLS's CPI-U (CUUR0000SA0) over the dates
+    of FRED's CPIAUCNS frozen 2026-09-30 (reader panel; the original agency, the author, 2026-10-21)."""
     import pandas as pd
-    from ft.data import fred
-    cpi = fred.read("CPIAUCNS", "2026-09-30")
+    from ft.data import agency
+    cpi = agency.series("CPIAUCNS", "2026-09-30")
     cpi.index = pd.to_datetime(cpi.index).strftime("%Y-%m")
     yoy = 100 * (cpi / cpi.shift(12) - 1)
-    o = computed("code/p1_registry.py (frozen FRED CPIAUCNS)")
+    o = computed("code/p1_registry.py (the BLS's CPI-U, CUUR0000SA0: the original of FRED's CPIAUCNS)")
     for key, month in (("k5_us_cpi_1980-03", "1980-03"), ("k5_us_cpi_1983-12", "1983-12")):
-        reg.put(key, float(yoy[month]), unit="% over twelve months", fmt="{:.1f}%", origin=o, as_of="2026-09-30",
+        reg.put(key, float(yoy[month]), unit="% over twelve months", fmt="{:.1f}%", origin=o, as_of="2026-10-21",
                 measure="US consumer prices, change over twelve months", period=month, population="the United States")
 
 
@@ -517,6 +521,58 @@ def today(reg: Registry) -> None:
             period="November 2021 to November 2022", population="bitcoin")
 
 
+# --- the correction of 2026-10-21 (Kazakhstan's IFS index; the methods' research log) ----------------------------------
+
+
+def correction(reg: Registry) -> None:
+    """The numbers of the correction note: the splice's ratio from the frozen files (``ft.data.splices``),
+    Kazakhstan's new crossing from frame b."""
+    from ft.data import splices
+    kw = dict(as_of=FRAME_B_AS_OF, period="2019-2024", population="Kazakhstan")
+    reg.put("corr_kaz_ratio", splices.ratio(splices.SPLICES[0]), unit="ratio", fmt="{:.4f}",
+            origin=computed("toolkit/ft/data/splices.py: IFS A.KZ.PCPI_IX 2020 over the World Bank's FP.CPI.TOTL KAZ 2020"),
+            measure="IFS's annual price index for Kazakhstan over the World Bank's, 2020", **kw)
+    row = next(r for r in csv.DictReader(open(ROOT / "data" / "reconstructed" / "ft001-b" / "series.csv"))
+               if r["money"] == "KAZ" and r["entry_date"] == "2022-12")
+    reg.put("corr_kaz_2022_entry", float(row["entry_measure"]), unit="%", fmt="{:.1f}%",
+            origin=computed("data/reconstructed/ft001-b/series.csv, KAZ 2022-12, entry_measure"), as_of=FRAME_B_AS_OF,
+            measure="Kazakhstan's twelve-month price rise at its December 2022 crossing", period="2022-12",
+            population="Kazakhstan")
+    congo_the_other_way(reg)
+
+
+def congo_the_other_way(reg: Registry) -> None:
+    """Part 1's rate from August 1971 if Congo's (DR) 2009 and 2010 had no price reading (the separate correction
+    proposed for Congo's index, 2026-10-22): C28's count over C28's money-years less the years of those two that C28's
+    panel reads for Congo, the panel rebuilt by frame b's code and its digest checked against C28's run."""
+    import sys
+    sys.path.insert(0, str(HERE))
+    from ft import cards
+    import p1_cs_c as C
+    r = run("C28-cs-c-losses-by-era-kazakhstan")
+    s = r["headline"]["spans"]["from_1971_08"]
+    pan = C.P.Panel()
+    if C.P.records(pan)[2] != r["panel_digest"]:
+        raise SystemExit("the rebuilt panel differs from C28's")
+    ends = (C.P.common_end(pan.have_monthly(), 12), C.P.common_end(pan.have_annual(), 1))
+    units = C.Units(cards.read(C.CARD)["parameters"])
+    y0, y1 = units.p["years"]
+    lost = [y for y in sorted(C.reading_years(pan, "COD", *ends, False, y0, y1))
+            if y in (2009, 2010) and units.of("COD", y) is not None]
+    my = s["money_years"] - len(lost)
+    o = computed("code/p1_registry.py: C28's count and money-years from August 1971, less Congo's 2009 and 2010 "
+                 "as C28's panel reads them")
+    kw = dict(as_of=FRAME_B_AS_OF, period="August 1971 to 2025", population="every money with a price reading")
+    reg.put("corr_cd_money-years_other", my, unit="money-years", fmt="{:,.0f}", origin=o,
+            measure="money-years with a price reading, Congo's 2009 and 2010 read as unreadable", **kw)
+    reg.put("corr_cd_rate_other", 100 * s["events"] / my, unit="per 100 money-years", fmt="{:.1f}", origin=o,
+            measure="crises of a fifth or more in a year begun, Congo's 2009 and 2010 read as unreadable", **kw)
+    reg.put("corr_cd_rate_other_exact", 100 * s["events"] / my, unit="per 100 money-years", fmt="{:.4f}", origin=o,
+            measure="crises of a fifth or more in a year begun, Congo's 2009 and 2010 read as unreadable", **kw)
+    reg.put("corr_rate_exact", 100 * s["events"] / s["money_years"], unit="per 100 money-years", fmt="{:.4f}",
+            origin=computed("code/p1_cs_c.py (card C28, C23 corrected)"),
+            measure="crises of a fifth or more in a year begun", **kw)
+
 def main() -> Registry:
     reg = Registry(STUDY / "results" / "numbers.json", {})
     cs_a(reg)
@@ -529,6 +585,7 @@ def main() -> Registry:
     fed_1979(reg)
     put_sourced(reg)
     put_measured_and_judgement(reg)
+    correction(reg)
     reg.save()
     return reg
 

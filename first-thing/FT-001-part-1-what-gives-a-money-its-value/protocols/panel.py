@@ -113,8 +113,13 @@ def area_money(area: str, source: str = "") -> str | None:
 def _dbnomics(folder: str) -> dict[str, dict[str, tuple[float, bool]]]:
     """area -> period label -> (value, flagged B), from the frozen DBnomics pages of one IFS or WEO query."""
     out: dict[str, dict[str, tuple[float, bool]]] = {}
-    for page in sorted(_v(DATA / "dbnomics" / "IMF" / folder).glob("page-*.json")):
-        for doc in json.loads(page.read_text())["series"]["docs"]:
+    from ft.data import splices
+    target = _v(DATA / "dbnomics" / "IMF" / folder)
+    for page in sorted(target.glob("page-*.json")):
+        # The documented splices (``ft.data.splices``): Kazakhstan's IFS PCPI_IX from 2020-01, divided by IFS's 2020
+        # annual index over the World Bank's (World Bank, World Development Indicators, FP.CPI.TOTL,
+        # data/worldbank/FP.CPI.TOTL/2026-09-30/page-001.json; IFS: data/dbnomics/IMF/IFS/{M,A}~~PCPI_IX/2026-09-30).
+        for doc in splices.ifs_docs(target, json.loads(page.read_text())["series"]["docs"]):
             dims = doc["dimensions"]
             area = dims.get("REF_AREA") or dims.get("weo-country")
             codes: list = []
@@ -142,6 +147,9 @@ def _by_month(series: dict[str, tuple[float, bool]]) -> dict[int, tuple[float, b
 @cache
 def ifs(code: str, freq: str) -> dict[str, dict[int, tuple[float, bool]]]:
     """IFS area -> period (month index, or year) -> (value, flagged B)."""
+    if code == "PCPI_IX" and freq == "M":
+        from ft.data import splices
+        splices.require_ifs_cpi_monthly(VINTAGE)  # the jump barrier (ft.quant.jumps through ft.data.splices.require_ifs_cpi_monthly): the monthly CPI feeds no count until every one-month jump is confirmed by the World Bank's FP.CPI.TOTL or resolved by name
     raw = _dbnomics(f"IFS/{freq}~~{code}")
     if freq == "M":
         return {a: _by_month(s) for a, s in raw.items()}
