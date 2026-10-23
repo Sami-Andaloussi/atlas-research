@@ -1,0 +1,80 @@
+id: C36-cs-e-household-real-wealth
+label: measurement
+title: 'CS-E — where the real change in US households'' net worth came from, 1952 to 2025: each group of holding gains in
+  real terms, the Fed''s net investment, inflation''s erosion of other nominal assets and its gain on liabilities, and
+  other volume changes (the Fed''s Z.1, table S1M.r)'
+kind: extension
+seen:
+- 'Seen before this card (P12): the part 2 map v3 audit printed S1M.r shares (an internal note),
+  before the grouping rule was fixed (the map says so); this session read S1M.r''s data dictionary and printed its last row
+  (2026:Q2) while checking the frozen file; the card check (an internal note) tested
+  the table''s identities as booleans only (line 17 is not lines 18-27 from 1983Q4; it is lines 18-24 plus FR153052005 plus
+  FR154000005 in every quarter) and found where each level series sits, printing no value; the second card check tested the partition''s gaps and the
+  other nominal assets'' content as booleans and counts only. No annual or real value of
+  any line was computed before this card. Fixed in place after that check, before any run.'
+question: 'Part 2''s map v4 (K7; claim P2-F, context): from 1952 to 2025, and decade by decade, how much of the real change
+  in US households'' and nonprofits'' net worth came from each group of holding gains, measured in real terms, from the
+  Fed''s net investment, from inflation''s erosion of other nominal assets and its gain on liabilities, and from other
+  volume changes? A description: no line is drawn, no "most" is printed, and K7''s answer ("a share that doubles creates
+  no money") never rests on it.'
+method: '(1) The release: federalreserve/z1-csv 2026-10-10, quarterly, millions of dollars. Flows from S1M.r (csv/S1M_r.csv):
+  line 1 (change in net worth) = line 2 (net investment, the Fed''s "transactions") + line 11 (revaluation) + line 28
+  (other changes in volume), by definition (its note 1); line 11 = line 12 + line 17. (2) The partition of line 11, fixed
+  here, each series placed once: real assets and market-priced claims: FR155035005 (line 13, real estate), FR165015205
+  (14), FR165013765 (15), FR155111005 (16), FR153064105 (19, corporate equities), FR152090205 (20, proprietors'' equity),
+  FR153094305 (21, PPIP); fund and pension claims: FR153064205 (22), FR153064705 (23), FR153064505 (24), FR153052005
+  (insurance, pension and standardized guarantee schemes, IMA; in place of lines 25 and 26, which do not add up to line 17
+  from 1999); nominal claims: FR154022005 (18, debt securities, at market value), FR154000005 (total currency and
+  deposits, IMA; in place of line 27). Line 12 = 13+14+15+16 and line 17 = 18+...+24 + FR153052005 + FR154000005 are
+  checked every quarter, a gap printed as its own row. (3) Levels: for each flow series, its level series (the FR code''s
+  LM, or FL where the release has no LM: FL153052005, FL154000005), read from whichever csv table of the release holds it
+  (S1M.b or S1M.i.q), the first found in the release''s file list; net worth, LM152090005 (line 29); total liabilities,
+  FL154190005. (4) Inflation: the CPI-U (FRED CPIAUCSL, 2026-09-27); for a quarter, pi_q = the change from the last month
+  of the previous quarter to the last month of the quarter. (5) Real terms, quarter by quarter: a series'' real holding
+  gain = its nominal revaluation - pi_q x its level at the end of the previous quarter; net nominal assets at the start =
+  net worth - the partition''s levels; other nominal assets = net nominal assets + total liabilities; inflation''s erosion
+  of other nominal assets = - pi_q x other nominal assets at the start; inflation''s gain on liabilities = + pi_q x
+  total liabilities at the start; net investment = line 2 as published; other volume changes = line 28 as published. The
+  real change in net worth = line 1 - pi_q x net worth at the start = the sum of the three groups'' real holding gains, net
+  investment, the erosion of other nominal assets, the gain on liabilities and other volume changes (exact by
+  construction). (6) Constant dollars: each quarter''s components are carried to dollars of December 2025 by the ratio of
+  CPI-U levels (the quarter''s last month to December 2025), summed over the years 1952 to 2025 and over each decade
+  (1952-59, 1960-69, ..., 2010-19, 2020-25). (7) Printed: each row in constant dollars for the span and each decade,
+  signed; as a share of the real change only where that real change is positive (else the amounts alone, said); no
+  ranking word.'
+parameters:
+  table: S1M.r
+  flows: {change: FC152090005, net_investment: FU152090005, revaluation: FR152090005, other_volume: FV152090005}
+  groups:
+    real_and_market_priced: [FR155035005, FR165015205, FR165013765, FR155111005, FR153064105, FR152090205, FR153094305]
+    fund_and_pension: [FR153064205, FR153064705, FR153064505, FR153052005]
+    nominal_claims: [FR154022005, FR154000005]
+  levels: {net_worth: LM152090005, liabilities: FL154190005, partition: 'LM of each FR code, else FL (FL153052005, FL154000005)'}
+  deflator: fred/CPIAUCSL 2026-09-27, quarter-end month to quarter-end month
+  start: 1952Q1
+  end: 2025Q4
+matters:
+  cs_e: 'none: a description; no line, no "most"'
+data:
+- dataset: federalreserve/z1-csv
+  vintage: '2026-10-10'
+- dataset: fred/CPIAUCSL
+  vintage: '2026-09-27'
+- dataset: ecb/qsa-households-revaluations
+  vintage: '2026-10-10'
+period: 1952Q1 to 2025Q4
+sample: 'Every quarter of the table from 1952Q1 (the first quarter with all its lines), by rule.'
+out_of_sample: 'The euro area''s households (ECB quarterly sector accounts, the fixed twenty members I9, frozen 2026-10-10):
+  holding gains are published only for listed and unlisted equity and investment fund shares, from 2013; each
+  in real terms by the same quarterly rule, a year''s real gain the sum of its quarters'' (the HICP, ICP.M.U2.N.000000.4.INX, the euro area of changing composition, said), as a
+  share of its own start-of-year level, set beside the US''s equity lines (19, 20, 21) and fund lines (22, 23, 24) as a
+  share of theirs, 2013 to 2025 (the ECB''s holding gains K7 against its stocks LE, from 1999Q1, for F51 and F52; F51
+  includes other equity besides listed and unlisted shares, and F52 money market fund shares, which the US''s lines 22-24
+  leave out: both said); the other groups have no euro-area counterpart in this source, said.'
+failure: 'The partition must add up to lines 12 and 17 in every quarter within 0.5 million dollars per summed series (the
+  release''s integer millions); a quarter beyond that has its gap printed as its own row, and the card fails only if a gap
+  exceeds 0.1% of line 11''s absolute value in that quarter. If a level series cannot be found in the release, the card fails
+  (no real gain is computed without it).'
+not: 'It does not say that a price rise creates money, nor rank the sources of wealth; it does not explain holding gains
+  (Greenwald, Lettau and Ludvigson do, cited apart).'
+created: '2026-10-10'

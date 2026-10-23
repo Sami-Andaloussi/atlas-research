@@ -1,0 +1,1564 @@
+- id: k1-three-moneys
+  component: K1
+  type: established
+  text: 'There are three main kinds of money: notes and coin, bank deposits, and the reserves banks hold at the central bank;
+    notes and reserves are the central bank''s promises, deposits are commercial banks'' promises.'
+  sources:
+  - source: 'McLeay, Radia and Thomas 2014, "Money in the modern economy: an introduction", Bank of England Quarterly Bulletin
+      2014 Q1'
+    locator: p. 4 (abstract); p. 7
+    passage: 'There are three main types of money: currency, bank deposits and central bank reserves. ... IOUs from the central
+      bank: this includes currency (an IOU ...'
+    copy: open
+    read: full
+    url: https://www.bankofengland.co.uk/-/media/boe/files/quarterly-bulletin/2014/money-in-the-modern-economy-an-introduction.pdf
+- id: k1-deposits-most
+  component: K1
+  type: established
+  text: In Britain, the Bank of England wrote in 2014, bank deposits made up {{cite_mcleay_deposit-share}} of the money in
+    circulation.
+  sources:
+  - source: McLeay, Radia and Thomas 2014, "Money creation in the modern economy", Bank of England Quarterly Bulletin 2014
+      Q1
+    locator: p. 15
+    passage: bank deposits make up the vast majority — 97% of the amount currently in circulation.
+    copy: open
+    read: full
+    url: https://www.bankofengland.co.uk/-/media/boe/files/quarterly-bulletin/2014/money-creation-in-the-modern-economy.pdf
+- id: k1-hierarchy
+  component: K1
+  type: established
+  text: 'Monetary systems are hierarchical: what is money at one level is a promise to pay money from the level above, so
+    a deposit is a promise to pay central-bank money, and central-bank money sits at the top at home.'
+  sources:
+  - source: Mehrling, "The Inherent Hierarchy of Money", paper of 25 January 2012 (prepared for the Duncan Foley festschrift)
+    locator: p. 1
+    passage: '... monetary systems are hierarchical. ... What looks like money at one level of the system looks like credit
+      from the standpoint of the level above.'
+    copy: held
+    read: passage
+- id: k1-near-money
+  component: K1
+  type: established
+  text: Beyond deposits sit near-monies, short-term promises to pay money (money-market fund shares and other short debts
+    payable in the means of payment), which a statistic counts as money or not by its own definition.
+  sources:
+  - source: Ricks 2016, The Money Problem (University of Chicago Press)
+    locator: p. 17
+    passage: This book uses the functional term money-claims to denote short-term debt instruments (excluding trade credit)
+      that are payable in the medium of exchange or its ...
+    copy: held
+    read: passage
+- id: k1-definitions
+  component: K1
+  type: established
+  text: 'Which promises count as money is a statistic''s choice: the Fed''s M2 adds small time deposits and retail money-market
+    fund shares to notes and checking accounts; the ECB''s M3 adds repurchase agreements, money-market fund shares and bank
+    debt of up to two years; the Bank of England''s M4 counts the private sector''s notes, deposits and bank debt of up to
+    five years; base money is notes and coin plus the reserves banks hold at the central bank.'
+  sources:
+  - source: Federal Reserve, FAQ "What is the money supply? Is it important?"
+    locator: the FAQ
+    passage: M1 plus small-denomination time deposits (those issued in amounts of less than $100,000) and retail money market
+      mutual fund shares.
+    copy: open
+    read: full
+    url: https://www.federalreserve.gov/faqs/money_12845.htm
+  - source: ECB, "Monetary aggregates", section "Definition of monetary aggregates"
+    locator: the section
+    passage: M3 includes M2 plus repurchase agreements, money market fund shares/units, and debt securities with a maturity
+      of up to two years issued by MFIs.
+    copy: open
+    read: full
+    url: https://www.ecb.europa.eu/stats/money_credit_banking/monetary_aggregates/html/index.en.html
+  - source: Bank of England, "Further details about M4 data"
+    locator: the definition
+    passage: '... sterling notes and coin; sterling deposits, including certificates of deposit; commercial paper, bonds,
+      FRNs and other instruments of up to and including five years'' original ...'
+    copy: open
+    read: passage
+    url: https://www.bankofengland.co.uk/statistics/details/further-details-about-m4-data
+  - source: Buiter 2007, "Seigniorage", NBER w12919
+    locator: p. 1
+    passage: base money (currency and commercial bank balances with the Central Bank)
+    copy: open
+    read: passage
+    url: https://www.nber.org/system/files/working_papers/w12919/w12919.pdf
+- id: k1-boe-explainer
+  component: K1
+  type: established
+  text: The Bank of England tells the public that notes and coins are about {{cite_boe_notes-share}} of the money in Britain's
+    economy, and that most money is created by banks when they lend.
+  sources:
+  - source: Bank of England, explainer "How is money created?"
+    locator: the page and its chart
+    passage: '... central bank, but by banks when they provide loans. ... There are three types of money in the UK economy:
+      3% Notes and coins, 18% ...'
+    copy: open
+    read: full
+    url: https://www.bankofengland.co.uk/explainers/how-is-money-created
+- id: k2-loans-create
+  component: K2
+  type: established
+  text: When a bank makes a loan it credits the borrower's account with a new deposit, and that deposit is new money; it does
+    not lend out savers' deposits.
+  sources:
+  - source: McLeay, Radia and Thomas 2014, "Money creation in the modern economy"
+    locator: p. 14
+    passage: '... bank makes a loan, it simultaneously creates a matching deposit in the borrower''s bank account, thereby
+      creating new money. ... Rather than banks receiving deposits ...'
+    copy: open
+    read: full
+    url: https://www.bankofengland.co.uk/-/media/boe/files/quarterly-bulletin/2014/money-creation-in-the-modern-economy.pdf
+  - source: Jakab and Kumhof 2015, Bank of England Staff Working Paper 529
+    locator: abstract
+    passage: In the real world, banks provide financing through money creation. ... they create deposits of new money through
+      lending, and in doing so are mainly ...
+    copy: open
+    read: abstract
+    url: https://www.bankofengland.co.uk/-/media/boe/files/working-paper/2015/banks-are-not-intermediaries-of-loanable-funds-and-why-this-matters.pdf
+- id: k2-repay-destroys
+  component: K2
+  type: established
+  text: Repaying a bank loan destroys the money its making created.
+  sources:
+  - source: McLeay, Radia and Thomas 2014, "Money creation in the modern economy"
+    locator: p. 16
+    passage: Just as taking out a new loan creates money, the repayment of bank loans destroys money.
+    copy: open
+    read: full
+    url: https://www.bankofengland.co.uk/-/media/boe/files/quarterly-bulletin/2014/money-creation-in-the-modern-economy.pdf
+- id: k2-buying-assets
+  component: K2
+  type: established
+  text: A bank also creates deposits when it buys an asset, such as a government bond, from someone outside the banks, and
+    destroys them when it sells one.
+  sources:
+  - source: McLeay, Radia and Thomas 2014, "Money creation in the modern economy"
+    locator: p. 17
+    passage: When banks purchase government bonds from the non-bank private sector they credit the sellers with bank deposits.
+      ... Deposit creation or destruction will also occur ...
+    copy: open
+    read: full
+    url: https://www.bankofengland.co.uk/-/media/boe/files/quarterly-bulletin/2014/money-creation-in-the-modern-economy.pdf
+- id: k2-tobin
+  component: K2
+  type: established
+  text: Tobin argued in 1963 that banks have no "widow's cruse", the public not wishing to hold all the money they create
+    rather than other assets, and some of it being soon used to repay loans and so destroyed; the Bank of England counts this
+    among its limits.
+  sources:
+  - source: McLeay, Radia and Thomas (2014), 'Money creation in the modern economy', Bank of England Quarterly Bulletin 2014
+      Q1
+    locator: p. 17, note 4; p. 20
+    passage: Tobin (1963) argued that banks do not possess a 'widow's cruse' ... Tobin was arguing that there were limits
+      to how many loans could be ...
+    copy: open
+    read: passage
+    url: https://www.bankofengland.co.uk/-/media/boe/files/quarterly-bulletin/2014/money-creation-in-the-modern-economy.pdf
+  - source: Tobin, 'Commercial Banks as Creators of "Money"', Cowles Foundation Discussion Paper 159 (24 July 1963)
+    locator: typescript pp. 7-9, section III, 'The widow's cruse' (the repayment of loans is the Bank of England's reading
+      of Tobin, below)
+    passage: '... "widow''s cruse." ... It depends on whether somewhere in the chain of transactions initiated by the borrower''s
+      outlays are found depositors who wish to hold ...'
+    copy: held
+    read: passage
+- id: k2-tobin-answer
+  component: K2
+  type: established
+  text: Jakab and Kumhof answer that the argument is not either-or; how much money banks create is settled between banks and
+    their customers, and it is finite, and Tobin's verbal analysis was static.
+  sources:
+  - source: Jakab and Kumhof (2015), 'Banks are not intermediaries of loanable funds, and why this matters', Bank of England
+      Staff Working Paper 529
+    locator: pp. 7-8
+    passage: '... of banks and their customers ... the extent of credit and money creation is finite. It is simply not useful
+      to frame this argument in ...'
+    copy: open
+    read: passage
+    url: https://www.bankofengland.co.uk/-/media/boe/files/working-paper/2015/banks-are-not-intermediaries-of-loanable-funds-and-why-this-matters.pdf
+- id: k2-limits
+  component: K2
+  type: established
+  text: 'What limits it, in the Bank of England''s account: each bank''s profit, risk and the rules it is held to; what the
+    public does with the money, repaying loans among it; and, finally, the central bank''s interest rate.'
+  sources:
+  - source: McLeay, Radia and Thomas 2014, "Money creation in the modern economy"
+    locator: p. 17
+    passage: '... three main sets of constraints that restrict the amount of money that banks can create. ... The ultimate
+      constraint on money creation is monetary policy.'
+    copy: open
+    read: full
+    url: https://www.bankofengland.co.uk/-/media/boe/files/quarterly-bulletin/2014/money-creation-in-the-modern-economy.pdf
+- id: k2-why-deposits
+  component: K2
+  type: established
+  text: Banks still want deposits because a borrower spends the new deposit, it moves to another bank with reserves, and the
+    first bank must replace them, so it competes for deposits by the rate it pays.
+  sources:
+  - source: McLeay, Radia and Thomas 2014, "Money creation in the modern economy"
+    locator: p. 18; Figure 2, p. 19
+    passage: '... that may involve increasing the rate they offer to households on their savings accounts. ... Competition
+      for loans and deposits, and the desire to make ...'
+    copy: open
+    read: full
+    url: https://www.bankofengland.co.uk/-/media/boe/files/quarterly-bulletin/2014/money-creation-in-the-modern-economy.pdf
+- id: k2-reserves-no-constraint
+  component: K2
+  type: established
+  text: Reserves are not what limits lending; in normal times the central bank supplies them on demand at its interest rate,
+    and adding reserves did not by itself loosen the constraint on lending.
+  sources:
+  - source: McLeay, Radia and Thomas 2014, "Money creation in the modern economy"
+    locator: p. 16
+    passage: reserves are, in normal times, supplied 'on demand' ... In no way does the aggregate quantity of reserves directly
+      constrain the amount of bank lending ...
+    copy: open
+    read: full
+    url: https://www.bankofengland.co.uk/-/media/boe/files/quarterly-bulletin/2014/money-creation-in-the-modern-economy.pdf
+  - source: Borio and Disyatat 2009, BIS Working Paper 292
+    locator: pp. 1-2
+    passage: changes in reserves associated with unconventional monetary policies do not in and of themselves loosen significantly
+      the constraint on bank lending
+    copy: open
+    read: passage
+    url: https://www.bis.org/publications/working-paper-292-unconventional-monetary-policies-appraisal.pdf
+  - source: Carpenter and Demiralp, FEDS 2010-41
+    locator: abstract (PDF p. 3)
+    passage: document that the mechanism does not work through the standard multiplier model or the bank lending channel.
+    copy: open
+    read: abstract
+    url: https://www.federalreserve.gov/pubs/feds/2010/201041/201041pap.pdf
+- id: k2-werner
+  component: K2
+  type: established
+  text: Werner tested it on one bank whose records he watched while it lent to him, and found that a single bank creates the
+    money it lends, "out of nothing"; Schumpeter had said the same of banks in 1911.
+  sources:
+  - source: Werner 2014, "Can banks individually create money out of nothing?", International Review of Financial Analysis
+      36
+    locator: p. 1 (abstract)
+    passage: establishes for the first time empirically that banks individually create money out of nothing
+    copy: held
+    read: abstract
+  - source: Schumpeter 1934, The Theory of Economic Development, tr. Opie (Harvard University Press)
+    locator: p. 73
+    passage: the creation of new purchasing power out of nothing ... which is added to the existing circulation. And this
+      is the source from which new ...
+    copy: held
+    read: chapter
+- id: k3-deposit-is-debt
+  component: K3
+  type: established
+  text: A deposit is a record of what the bank owes its customer; the bank holds loans, securities and reserves against all
+    its deposits, and no pile of notes carries a customer's name.
+  sources:
+  - source: McLeay, Radia and Thomas 2014, "Money creation in the modern economy"
+    locator: p. 16
+    passage: Bank deposits are simply a record of how much the bank itself owes its customers.
+    copy: open
+    read: full
+    url: https://www.bankofengland.co.uk/-/media/boe/files/quarterly-bulletin/2014/money-creation-in-the-modern-economy.pdf
+- id: k3-insurance
+  component: K3
+  type: established
+  text: A deposit is as good as cash only as far as its promise is backed; deposit insurance removes insured depositors' reason
+    to run, and in the United States it covers up to {{cite_fdic_limit}} per depositor, for each ownership category, at each
+    insured bank.
+  sources:
+  - source: Diamond and Dybvig 1983, "Bank Runs, Deposit Insurance, and Liquidity", Journal of Political Economy 91(3)
+    locator: p. 416
+    passage: The deposit insurance guarantees that type 2 agents will never participate in a run; without runs, withdrawals
+      are deterministic and this feature is never used.
+    copy: library
+    read: passage
+  - source: 12 U.S.C. §1821(a)(1)(E), 2023 edition
+    locator: §1821(a)(1)(E)
+    passage: the term 'standard maximum deposit insurance amount' means $250,000
+    copy: open
+    read: passage
+    url: https://www.govinfo.gov/content/pkg/USCODE-2023-title12/html/USCODE-2023-title12-chap16-sec1821.htm
+  - source: FDIC, 'Understanding Deposit Insurance' (fdic.gov), read 2026-10-11
+    locator: How FDIC Deposit Insurance Works
+    passage: insuring deposits to at least $250,000 per depositor, per ownership category at each FDIC-insured bank
+    copy: open
+    read: passage
+    url: https://www.fdic.gov/resources/deposit-insurance/understanding-deposit-insurance
+- id: k3-northern-rock
+  component: K3
+  type: cases
+  text: In September 2007 Northern Rock's difficulties led to a run by its depositors, and the government then guaranteed
+    all its existing deposits.
+  sources:
+  - source: Bank of England, Financial Stability Report, October 2007, Box A "The funding crisis at Northern Rock"
+    locator: p. 11
+    passage: '... also confirmed the extent of its difficulties and that led to a retail deposit run. ... the Government would
+      guarantee all Northern Rock''s existing deposits'
+    copy: open
+    read: passage
+    url: https://www.bankofengland.co.uk/-/media/boe/files/financial-stability-report/2007/october-2007.pdf
+- id: k3-svb
+  component: K3
+  type: cases
+  text: In March 2023 Silicon Valley Bank, whose group's deposits were {{cite_svb_uninsured}} uninsured ({{cite_svb_uninsured-bank}}
+    at the bank itself, as it reported them), lost more than {{cite_svb_outflow}} of them in a day, with more than {{cite_svb_expected}}
+    expected to leave the next; it was closed on 10 March, and two days later the authorities announced that all its depositors,
+    insured or not, would be protected; that protection was announced for that bank and, by a similar systemic-risk exception,
+    for Signature Bank, not set as a rule for every bank's deposits.
+  sources:
+  - source: Federal Reserve Board, Review of the Federal Reserve's Supervision and Regulation of Silicon Valley Bank (April
+      2023)
+    locator: pp. 4, 21
+    passage: On March 9, SVB lost over $40 billion in deposits, and SVBFG management expected to lose over $100 billion more
+      on March 10. ... As ...
+    copy: open
+    read: passage
+    url: https://www.federalreserve.gov/publications/files/svb-review-20230428.pdf
+  - source: Federal Reserve Board, Review of the Federal Reserve's Supervision and Regulation of Silicon Valley Bank (April
+      2023)
+    locator: p. 1; printed p. 24
+    passage: The California Department of Financial Protection and Innovation (CDFPI) closed SVB on the morning of March 10
+      and appointed the FDIC as receiver.
+    copy: open
+    read: passage
+    url: https://www.federalreserve.gov/publications/files/svb-review-20230428.pdf
+  - source: Joint statement by the Treasury, the Federal Reserve and the FDIC, 12 March 2023
+    locator: third paragraph
+    passage: '... of Silicon Valley Bank ... in a manner that fully protects all depositors. Depositors will have access to
+      all of their money starting Monday, March ...'
+    copy: open
+    read: passage
+    url: https://www.federalreserve.gov/newsevents/pressreleases/monetary20230312b.htm
+  - source: FDIC, Chairman Gruenberg's testimony to the Senate Banking Committee, 27 March 2023
+    locator: the section on Silicon Valley Bank
+    passage: At year-end 2022, SVB reported uninsured deposits at 88 percent of total deposits
+    copy: open
+    read: passage
+    url: https://www.fdic.gov/news/speeches/2023/spmar2723.html
+  - source: Joint statement by the Treasury, the Federal Reserve and the FDIC, 12 March 2023
+    locator: third paragraph
+    passage: '... announcing a similar systemic risk exception for Signature Bank, New York, New York, which was closed today
+      by its state chartering authority. All depositors of ...'
+    copy: open
+    read: passage
+    url: https://www.federalreserve.gov/newsevents/pressreleases/monetary20230312b.htm
+- id: k3-cyprus
+  component: K3
+  type: cases
+  text: In Cyprus in March 2013 deposits up to {{cite_cyprus_insured}} were kept whole while uninsured deposits paid for the
+    rescue, {{cite_cyprus_bailin}} of them at the Bank of Cyprus turned into shares, and capital controls were imposed and
+    not fully lifted until April 2015.
+  sources:
+  - source: European Commission, Ex-Post Evaluation of the Economic Adjustment Programme, Cyprus, 2013-2016 (Institutional
+      Paper 114, 2019)
+    locator: pp. 21, 27
+    passage: '... 47.5% of uninsured deposits, mostly held by non-residents, were bailed in and converted into shares ...
+      The Cypriot authorities introduce administrative restrictions and capital controls.'
+    copy: open
+    read: passage
+    url: https://economy-finance.ec.europa.eu/publications/ex-post-evaluation-economic-adjustment-programme-cyprus-2013-2016-0_en
+  - source: European Commission, Ex-Post Evaluation of the Economic Adjustment Programme, Cyprus, 2013-2016 (Institutional
+      Paper 114, 2019)
+    locator: printed p. 29
+    passage: '... one year and two months on 31 May 2014, although the temporary administrative restrictions and capital controls
+      were not fully lifted until 6 April 2015.'
+    copy: open
+    read: passage
+    url: https://economy-finance.ec.europa.eu/document/download/917d4150-6024-4743-9443-4efca7678d6a_en?filename=ip114_en%20.pdf
+  - source: European Commission, Ex-Post Evaluation of the Economic Adjustment Programme, Cyprus, 2013-2016 (Institutional
+      Paper 114, 2019)
+    locator: pp. 20, 28-29
+    passage: '... bank holidays from 16 March until 27 March 2013, temporary administrative restrictions and capital controls
+      were put in place in order to avoid excessive capital ...'
+    copy: open
+    read: passage
+    url: https://economy-finance.ec.europa.eu/document/download/917d4150-6024-4743-9443-4efca7678d6a_en?filename=ip114_en%20.pdf
+- id: k3-amsterdam
+  component: K3
+  type: cases
+  text: A bank need not create money by lending; the Bank of Amsterdam, founded in 1609, took deposits of coin and at first
+    did not expand credit; once it lent on a large scale to the Dutch East India Company and the city, it suspended payments
+    in 1791, its metal covered only {{cite_amsterdam_cover}} of its liabilities by 1795, and it ceased to count in the city's
+    commerce.
+  sources:
+  - source: Kindleberger and Aliber, Manias, Panics and Crashes (library copy)
+    locator: chapter on the Bank of Amsterdam; no page recorded (library chunk has none)
+    passage: Initially the Bank of Amsterdam did not expand credit
+    copy: library
+    read: passage
+  - source: 'Quinn and Roberds, "Responding to a Shadow Banking Crisis: The Lessons of 1763" (library copy)'
+    locator: p. 1158
+    passage: The Bank, with city approval, made limited uncollateralized loans to the Dutch East India Company and the Province
+      of Holland.
+    copy: library
+    read: passage
+  - source: de Vries and van der Woude, The First Modern Economy (library copy)
+    locator: the passage on the Bank of Amsterdam; no page recorded (library chunk has none)
+    passage: '... the East India Company and the city borrowed on a vast scale ... In 1791 the Bank suspended payments. ...
+      in 1795 ... metal stock ...'
+    copy: library
+    read: passage
+- id: k4-price-not-quantity
+  component: K4
+  type: established
+  text: Central banks today typically set the price of reserves, the interest rate, rather than their quantity, and in normal
+    times they do not fix the quantity of the public's money.
+  sources:
+  - source: McLeay, Radia and Thomas 2014, "Money creation in the modern economy"
+    locator: p. 15
+    passage: Rather than controlling the quantity of reserves, central banks today typically implement monetary policy by
+      setting the price of reserves — that is, interest rates.
+    copy: open
+    read: full
+    url: https://www.bankofengland.co.uk/-/media/boe/files/quarterly-bulletin/2014/money-creation-in-the-modern-economy.pdf
+- id: k4-ior
+  component: K4
+  type: cases
+  text: In October 2008 the Federal Reserve began paying interest on banks' reserves, to set a floor under the market rate;
+    the market rate traded below it, partly since nonbank lenders such as Fannie Mae and Freddie Mac, government-sponsored
+    enterprises, cannot by law earn it, and from September 2013 the Fed began testing overnight reverse repos, open to them
+    as well, which set a soft floor under market rates.
+  sources:
+  - source: Federal Reserve Board, press release, 6 October 2008
+    locator: the release
+    passage: The Federal Reserve Board on Monday announced that it will begin to pay interest on depository institutions'
+      required and excess reserve balances. ... Paying interest ...
+    copy: open
+    read: full
+    url: https://www.federalreserve.gov/newsevents/pressreleases/monetary20081006a.htm
+  - source: Ihrig, Meade and Weinbach, 'Monetary Policy 101', FEDS 2015-047
+    locator: p. 7 (Table 1, note); pp. 10, 13-15
+    passage: '... rate ... nonbank lenders in the federal funds market who, by law, are not eligible to earn the IOER rate
+      ... GSEs are government-sponsored enterprises ...'
+    copy: open
+    read: passage
+    url: https://www.federalreserve.gov/econresdata/feds/2015/files/2015047pap.pdf
+  - source: FOMC, minutes of the meeting of 17-18 September 2013
+    locator: the authorization of fixed-rate reverse repos
+    passage: The Federal Open Market Committee (FOMC) authorizes the Federal Reserve Bank of New York to conduct a series
+      of fixed-rate, overnight reverse repurchase operations
+    copy: open
+    read: passage
+    url: https://www.federalreserve.gov/monetarypolicy/fomcminutes20130918.htm
+- id: k4-qe-deposits
+  component: K4
+  type: established
+  text: When a central bank buys a bond from a pension fund, it pays with new reserves to the fund's bank and the fund is
+    left with a new deposit, so both kinds of money rise; bought from a bank, only reserves rise.
+  sources:
+  - source: McLeay, Radia and Thomas 2014, "Money creation in the modern economy"
+    locator: pp. 24-25
+    passage: '... of the assets will be left holding the newly created deposits in place of government bonds. ... QE boosts
+      broad money without directly leading to, ...'
+    copy: open
+    read: full
+    url: https://www.bankofengland.co.uk/-/media/boe/files/quarterly-bulletin/2014/money-creation-in-the-modern-economy.pdf
+- id: k4-us-windows
+  component: K4
+  type: cases
+  text: The US base, notes plus reserves, rose {{k4_base_2008-2014}} times from the month before the Fed's purchases began
+    in November 2008 to their end in October 2014, and {{k4_base_2020-2022}} times from February 2020 to the end of net purchases
+    in March 2022, when M2 rose {{k4_m2_2020-2022}} times; it had already risen {{k4_base_aug-nov-2008}} times from August
+    to November 2008 through emergency lending.
+  sources:
+  - source: FRED, BOGMBASE (the Board of Governors' monetary base), frozen 2026-09-30
+    locator: monthly levels, August 2008, November 2008, October 2014, February 2020, March 2022
+    passage: the monetary base, monthly, not seasonally adjusted (the series as frozen)
+    copy: data
+    read: full
+  - source: Federal Reserve Board, press release, 25 November 2008
+    locator: the release
+    passage: Purchases of up to $100 billion in GSE direct obligations ... will begin next week.
+    copy: open
+    read: full
+    url: https://www.federalreserve.gov/newsevents/pressreleases/monetary20081125b.htm
+  - source: FOMC statement, 29 October 2014
+    locator: the statement
+    passage: the Committee decided to conclude its asset purchase program this month.
+    copy: open
+    read: full
+    url: https://www.federalreserve.gov/newsevents/pressreleases/monetary20141029a.htm
+  - source: FOMC statement, 26 January 2022
+    locator: the statement
+    passage: The Committee decided to continue to reduce the monthly pace of its net asset purchases, bringing them to an
+      end in early March.
+    copy: open
+    read: full
+    url: https://www.federalreserve.gov/newsevents/pressreleases/monetary20220126a.htm
+- id: k4-zero-rates
+  component: K4
+  type: established
+  text: At interest rates near zero, adding central-bank money does little by itself, since banks and investors hold it as
+    they would a short bond.
+  sources:
+  - source: Krugman 1998, "It's Baaack", Brookings Papers on Economic Activity 1998(2)
+    locator: p. 141
+    passage: injecting monetary base into the economy has no effect, because base and bonds are viewed by the private sector
+      as perfect substitutes.
+    copy: open
+    read: full
+    url: https://www.brookings.edu/wp-content/uploads/1998/06/1998b_bpea_krugman_dominquez_rogoff.pdf
+- id: k4-japan
+  component: K4
+  type: cases
+  text: Japan made banks' balances at the Bank of Japan its target in March 2001, at about {{cite_boj_target-2001}}, set it
+    higher in steps, to {{cite_boj_target-2004-low}} to {{cite_boj_target-2004-high}} by January 2004, kept it until consumer
+    prices stopped falling, returned to an interest-rate target in March 2006, and in April 2013 planned to double the base,
+    from {{cite_boj_base-2012}} at the end of 2012 to {{cite_boj_base-2014}} at the end of 2014, where it stood at about {{cite_boj_base-2014-actual}};
+    by September 2016 the Bank judged that, despite this large-scale easing, its 2 percent target had not been achieved.
+  sources:
+  - source: Bank of Japan, 19 March 2001
+    locator: the decision, §a and §b
+    passage: '... changed from the current uncollateralized overnight call rate to the outstanding balance of the current
+      accounts at the Bank of Japan. ... until the consumer ...'
+    copy: open
+    read: full
+    url: https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2001/k010319a.htm
+  - source: Bank of Japan, 9 March 2006
+    locator: the decision
+    passage: to change the operating target of money market operations from the outstanding balance of current accounts at
+      the Bank to the uncollateralized overnight call rate
+    copy: open
+    read: full
+    url: https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2006/k060309.htm
+  - source: Bank of Japan, 4 April 2013
+    locator: p. 1 and note 1
+    passage: '... base and the amounts outstanding of Japanese government bonds (JGBs) as well as exchange-traded funds (ETFs)
+      in two years ... 138 trillion yen at end-2012 ...'
+    copy: open
+    read: full
+    url: https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2013/k130404a.pdf
+  - source: Bank of Japan, Comprehensive Assessment of the monetary easing since the introduction of QQE, 21 September 2016
+    locator: printed p. 1
+    passage: despite the Bank's large-scale monetary easing, the price stability target of 2 percent has not been achieved.
+    copy: open
+    read: passage
+    url: https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2016/k160921b.pdf
+  - source: Bank of Japan, Change in the Guideline for Money Market Operations, 20 January 2004
+    locator: the decision
+    passage: The target balance of current accounts held at the Bank was raised from 'around 27 to 32 trillion yen' to 'around
+      30 to 35 trillion ...
+    copy: open
+    read: passage
+    url: https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2004/k040120.htm
+  - source: Bank of Japan, Monetary Base, long series (mblong.xlsx)
+    locator: sheet 'Amounts Outstanding at End of Period', December 2014
+    passage: '2014-12: 2,758,740 (100 million yen)'
+    copy: data
+    read: passage
+    url: https://www.boj.or.jp/en/statistics/boj/other/mb/mblong.xlsx
+- id: k4-hikes
+  component: K4
+  type: cases
+  text: In 2022 the Fed raised its rate from March and began shrinking its holdings of bonds from June, the reverse of its
+    purchases; the ECB lifted its deposit rate from {{cite_ecb_dfr-2019}} to zero in July 2022 and to {{cite_ecb_dfr-2023}}
+    by September 2023.
+  sources:
+  - source: FOMC statement, 16 March 2022
+    locator: the statement
+    passage: the Committee decided to raise the target range for the federal funds rate to 1/4 to 1/2 percent
+    copy: open
+    read: full
+    url: https://www.federalreserve.gov/newsevents/pressreleases/monetary20220316a.htm
+  - source: FOMC statement, 4 May 2022
+    locator: the statement
+    passage: the Committee decided to begin reducing its holdings of Treasury securities and agency debt and agency mortgage-backed
+      securities on June 1
+    copy: open
+    read: full
+    url: https://www.federalreserve.gov/newsevents/pressreleases/monetary20220504a.htm
+  - source: ECB, key ECB interest rates
+    locator: the table of the deposit facility rate (-0.50% from September 2019; 0.00% from 27 July 2022; 4.00% from 20 September
+      2023)
+    passage: deposit facility ... 0.00% respectively, with effect from 27 July 2022 ... 4.50%, 4.75% and 4.00% respectively,
+      with effect from 20 September 2023
+    copy: open
+    read: full
+    url: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html
+- id: k4-m2-parts
+  component: K4
+  type: cases
+  text: Savings and other liquid deposits in M2 fell by {{k4_m2_savings_2022}}, while small time deposits and retail money-market
+    funds, which M2 also counts, rose by {{k4_m2_time-funds_2022}}, and notes, coin and demand deposits by {{k4_m2_cash-demand_2022}},
+    the time-deposit and fund series counting retirement accounts that M2 leaves out; the Treasury securities of households
+    and nonprofits, as the Fed's accounts estimate them, went from {{cite_z1_hh-treasuries-2021}} at the end of 2021 to {{cite_z1_hh-treasuries-2022}}
+    a year later.
+  sources:
+  - source: the Federal Reserve Board's H.6 (other liquid deposits, small time deposits, retail money funds; FRED's MDLM,
+      STDSL, RMFSL, frozen data/fred/*/2026-10-11, the same values)
+    locator: December 2021 and December 2022
+    passage: MDLM 13,555.5 to 12,426.8; STDSL 697.3 to 967.1; RMFSL 1,342.3 to 1,595.5 (billions of dollars, seasonally adjusted)
+    copy: data
+    read: full
+  - source: Federal Reserve, H.6 Money Stock Measures, release of 22 September 2026, Notes
+    locator: the definitions of M1 and M2
+    passage: '... consists of M1 plus (1) small-denomination time deposits ... and (2) balances in retail money market funds
+      (MMFs), less individual retirement account (IRA) and Keogh ...'
+    copy: open
+    read: passage
+    url: https://www.federalreserve.gov/releases/h6/current/default.htm
+  - source: Federal Reserve, Z.1 Financial Accounts, table L.210, release of 9 March 2023
+    locator: line 13, households and nonprofit organizations, Treasury securities
+    passage: 599.5 (2021), 1587.1 (2022), billions of dollars
+    copy: open
+    read: passage
+    url: https://www.federalreserve.gov/releases/z1/20230309/html/l210.htm
+- id: k4-m2-why
+  component: K4
+  type: established
+  text: Bank deposit rates lagged the Fed's rate rises in 2022 and deposits flowed out; Drechsler, Savov and Schnabl had found
+    that when the Fed raises its rate, deposits flow out of the banking system and into bonds.
+  sources:
+  - source: Federal Reserve Bank of New York, Open Market Operations during 2022 (April 2023)
+    locator: p. 28, Box 2
+    passage: Deposit rates at banks generally lagged increases in the target range of the federal funds rate during 2022,
+      resulting in an outflow of deposits and ...
+    copy: open
+    read: passage
+    url: https://www.newyorkfed.org/medialibrary/media/markets/omo/omo2022-pdf.pdf
+  - source: Drechsler, Savov and Schnabl, 'The Deposits Channel of Monetary Policy', NBER w22152
+    locator: p. 2
+    passage: Households respond by reducing their deposit holdings, and deposits flow out of the banking system and into bonds.
+    copy: open
+    read: passage
+    url: https://www.nber.org/system/files/working_papers/w22152/w22152.pdf
+- id: k8-signs-supply-demand
+  component: K8
+  type: established
+  text: Supply shocks push prices and quantities apart, demand shocks move them together; on that test, Fed economists find
+    that supply led US goods prices up and down in 2021-2023, with demand following with a lag.
+  sources:
+  - source: Braun, Flaaen and Hacioglu Hoke, 'Supply vs Demand Factors Influencing Prices of Manufactured Goods', FEDS Notes,
+      23 February 2024
+    locator: the identification section; the conclusion
+    passage: '... a significant role for supply factors in the run-up and retreat of goods prices, with demand factors contributing
+      to that contour, but with a lag.'
+    copy: open
+    read: passage
+    url: https://www.federalreserve.gov/econres/notes/feds-notes/supply-vs-demand-factors-influencing-prices-of-manufactured-goods-20240223.html
+- id: k8-shapiro
+  component: K8
+  type: established
+  text: Shapiro applies the same test to each category of consumer spending, month by month, to split inflation into a part
+    driven by supply and a part driven by demand, a split that, he writes, policymakers and practitioners can use to track
+    what drives inflation in real time.
+  sources:
+  - source: Shapiro, 'Decomposing Supply and Demand Driven Inflation', FRBSF Working Paper 2022-18, revised February 2024
+      (wp2022-18.pdf)
+    locator: abstract; p. 2 (printed)
+    passage: '... demand-driven contributions to personal consumption expenditures (PCE) inflation ... The decompositions
+      can be used to test theory or by policymakers and practitioners to track inflation ...'
+    copy: held
+    read: passage
+- id: k8-signs-expectations
+  component: K8
+  type: established
+  text: Blanchard and Bernanke find that in 2021-2023 long-run expectations stayed anchored and there was little wage-price
+    spiral.
+  sources:
+  - source: Blanchard and Bernanke, 'What Caused the US Pandemic-Era Inflation?', NBER w31417 (2023)
+    locator: pp. 28, 39
+    passage: '... that long-run expectations became de-anchored during the covid period. [p. 39:] inflation expectations did
+      not de-anchor and there was little evidence of a wage-price spiral'
+    copy: open
+    read: passage
+    url: https://www.nber.org/system/files/working_papers/w31417/w31417.pdf
+- id: k4-m2-fell
+  component: K4
+  type: cases
+  text: Over 2022 US M2 fell {{k4_m2_2022}}, the first fall over twelve months in its series since 1959, while banks' loans
+    and leases rose {{k4_loans_2022}}; their securities fell, and their total credit rose {{k4_credit_2022}}.
+  sources:
+  - source: FRED, M2SL (the Board's M2, seasonally adjusted), frozen 2026-09-30
+    locator: December 2021 and December 2022; every twelve-month change from 1960
+    passage: M2, monthly, seasonally adjusted (the series as frozen)
+    copy: data
+    read: full
+  - source: FRED, TOTLL (the Board's H.8, loans and leases in bank credit, all commercial banks), frozen 2026-10-10
+    locator: the weekly levels of December 2021 and December 2022, averaged by month
+    passage: loans and leases in bank credit, weekly, seasonally adjusted (the series as frozen)
+    copy: data
+    read: full
+  - source: FRED, TOTBKCR and INVEST (the Board's H.8, bank credit and securities in bank credit, all commercial banks), frozen
+      2026-10-12
+    locator: TOTBKCR's weekly levels of December 2021 and December 2022, averaged by month; INVEST's monthly values for the
+      same months
+    passage: bank credit, and securities in bank credit, weekly, seasonally adjusted (the series as frozen)
+    copy: data
+    read: full
+- id: k4-m2-def
+  component: K4
+  type: established
+  text: M2 counts currency, deposits and balances in retail money-market funds; banks' reserves at the Fed are not part of
+    it.
+  sources:
+  - source: Federal Reserve, H.6 Money Stock Measures, notes on the data
+    locator: the definition of M2
+    passage: '... plus (1) small-denomination time deposits (time deposits in amounts of less than $100,000) and (2) balances
+      in retail money market funds (MMFs), less individual retirement ...'
+    copy: open
+    read: passage
+    url: https://www.federalreserve.gov/releases/h6/current/default.htm
+- id: k4-targets
+  component: K4
+  type: cases
+  text: Money targets were tried and dropped; the Fed put the money supply first in October 1979, gave M1 much less weight
+    in October 1982, and in 1993 its chairman said M2 had been downgraded as a guide.
+  sources:
+  - source: FOMC, Record of Policy Actions, meeting of 6 October 1979
+    locator: PDF p. 5
+    passage: supported a shift in the conduct of open market operations to an approach placing emphasis on supplying the volume
+      of bank reserves estimated to be ...
+    copy: open
+    read: passage
+    url: https://www.federalreserve.gov/monetarypolicy/files/fomcropa19791006.pdf
+  - source: FOMC, Record of Policy Actions, meeting of 5 October 1982
+    locator: p. 12
+    passage: '... probable difficulties in interpretation of M1 during the period suggest much less than usual weight be placed
+      on movements in that aggregate during the current ...'
+    copy: open
+    read: passage
+    url: https://www.federalreserve.gov/monetarypolicy/files/fomcropa19821005.pdf
+  - source: Greenspan, testimony, 20 July 1993
+    locator: p. 10
+    passage: '... being, M2 has been downgraded as a reliable indicator of financial conditions in the economy, and no single
+      variable has yet been identified to take ...'
+    copy: open
+    read: full
+    url: https://fraser.stlouisfed.org/files/docs/historical/greenspan/Greenspan_19930720.pdf
+- id: k5-barter-story
+  component: K5
+  type: established
+  text: 'The familiar story says money grew out of barter: people swapped goods, found it awkward, and settled on one good
+    everyone would take.'
+  sources:
+  - source: Graeber 2011, Debt (Melville House), ch. 2 "The Myth of Barter"
+    locator: p. 29
+    passage: the form of "I'll give you twenty chickens for that cow."
+    copy: held
+    read: chapter
+  - source: Desan 2014, Making Money (Oxford University Press), ch. 1 "Creation stories"
+    locator: ch. 1, section A "The conventional creation story"
+    passage: The conventional creation story
+    copy: held
+    read: passage
+- id: k5-no-barter-economy
+  component: K5
+  type: established
+  text: The anthropologists who looked found no economy run on barter, and no money that grew out of one; barter turns up
+    between strangers, or where money has failed.
+  sources:
+  - source: Humphrey 1985, "Barter and Economic Disintegration", Man 20(1)
+    locator: p. 48
+    passage: '... of a barter economy, pure and simple, has ever been described, let alone the emergence from it of money;
+      all available ethnography suggests that there ...'
+    copy: held
+    read: passage
+  - source: Graeber 2011, Debt (Melville House)
+    locator: p. 29
+    passage: It just means that it's almost never employed, as Smith imagined, between fellow villagers. Ordinarily, it takes
+      place between strangers
+    copy: held
+    read: chapter
+- id: k5-credit-theory
+  component: K5
+  type: established
+  text: 'The other story, one school''s, put by Innes in 1913, is that money is credit: a sale swaps goods for a claim, and
+    one person''s money is another''s debt.'
+  sources:
+  - source: Innes 1913, "What Is Money?", Banking Law Journal 30(5)
+    locator: p. 391; p. 402
+    passage: '... a commodity for some intermediate commodity ... but the exchange of a commodity for a credit. ... Money,
+      then, is credit and nothing but credit.'
+    copy: archive
+    read: passage
+    url: https://archive.org/details/sim_banking-law-journal_1913-05_30_5
+- id: k5-memory
+  component: K5
+  type: established
+  text: 'Monetary theory reaches a cousin of this view by another road: Kocherlakota showed that whatever a society can achieve
+    with money it could also achieve with a full record of who gave what to whom, so that money works as a primitive form
+    of memory.'
+  sources:
+  - source: Kocherlakota 1998, "Money Is Memory", Journal of Economic Theory 81
+    locator: p. 232 (abstract) and p. 233
+    passage: '... with money is also feasible in the same environment with memory. ... Hence, from a technological point of
+      view, money is equivalent to a primitive ...'
+    copy: held
+    read: chapter
+- id: k2-tga
+  component: K2
+  type: established
+  text: The Treasury's account at the Federal Reserve, where taxes and the proceeds of its bond sales are paid in, is one
+    of the items the Fed counts as absorbing reserves.
+  sources:
+  - source: Federal Reserve, H.4.1 Factors Affecting Reserve Balances, release of 8 October 2026
+    locator: table 1 (continued), 'Total factors, other than reserve balances, absorbing reserve funds'
+    passage: U.S. Treasury, General Account [listed among the factors absorbing reserve funds]
+    copy: open
+    read: passage
+    url: https://www.federalreserve.gov/releases/h41/current/h41.htm
+  - source: Federal Reserve, The Fed Explained, 11th ed. (August 2021)
+    locator: printed pp. 87, 103
+    passage: the Reserve Banks maintain the operating cash account of the U.S. Department of the Treasury ... auction marketable
+      Treasury securities
+    copy: open
+    read: passage
+    url: https://www.federalreserve.gov/aboutthefed/files/the-fed-explained.pdf
+- id: k4-m2-qe
+  component: K4
+  type: cases
+  text: After 2008, the money the public holds rose too, but barely faster than before; from November 2008 to October 2014
+    M2 rose {{k4_m2_2008-2014}} times, about {{k4_m2_rate_2008-2014}} a year, close to its pace of {{k4_m2_rate_2000-2007}}
+    a year from 2000 to 2007.
+  sources:
+  - source: FRED M2SL (frozen data/fred/M2SL/2026-09-30)
+    locator: November 2008, October 2014; December 2000, December 2007
+    passage: M2 8,027.8 (2008-11), 11,596.5 (2014-10); 4,927.3 (2000-12), 7,482.7 (2007-12), billions of dollars
+    copy: data
+    read: full
+- id: k5-mesopotamia
+  component: K5
+  type: cases
+  text: In Mesopotamia the basic unit was the silver shekel, its weight in silver set equal to one gur of barley; temples
+    reckoned debts in silver, and peasants settled them mostly in barley.
+  sources:
+  - source: Graeber, Debt, The First 5,000 Years (2011)
+    locator: p. 39
+    passage: The basic monetary unit was the silver shekel. One shekel's weight in silver was established as the equivalent
+      of one gur, or bushel of barley. ...
+    copy: held
+    read: passage
+- id: k5-menger
+  component: K5
+  type: established
+  text: Menger's account of money growing out of barter shows how it could have happened in theory, not that it did.
+  sources:
+  - source: Graeber, Debt, The First 5,000 Years (2011)
+    locator: p. 28
+    passage: '... to demonstrate that a random assortment of people with random desires could, in theory, produce not only
+      a single commodity to use as money but ...'
+    copy: held
+    read: passage
+- id: k6-high-inflation
+  component: K6
+  type: established
+  text: Very high inflation goes with lost growth while it lasts. Fischer found high inflation not consistent with sustained
+    growth; Bruno and Easterly found growth falling sharply while inflation ran above {{cite_bruno-easterly_crisis-line}}
+    a year, then recovering so strongly after that, on average, the fall and the recovery roughly cancel.
+  sources:
+  - source: Fischer, 'The Role of Macroeconomic Factors in Growth', NBER w4565 (December 1993)
+    locator: abstract (PDF p. 2)
+    passage: while low inflation and small deficits are not necessary for high growth even over long periods, high inflation
+      is not consistent with sustained growth.
+    copy: open
+    read: passage
+    url: https://www.nber.org/system/files/working_papers/w4565/w4565.pdf
+  - source: Bruno and Easterly, 'Inflation Crises and Long-Run Growth', NBER w5209 (August 1995)
+    locator: abstract (PDF p. 2), read on the page image
+    passage: '... sharply during discrete high inflation crises, then recovers surprisingly strongly after inflation falls.
+      The fall in growth during crisis and recovery of growth after crisis ...'
+    copy: open
+    read: passage
+    url: https://www.nber.org/system/files/working_papers/w5209/w5209.pdf
+- id: cs-f-velocity
+  component: K6
+  type: cases
+  text: How often US M2 changed hands rose until 1997, fell to a low in 2020, and has partly recovered since.
+  sources:
+  - source: FRED M2V (frozen data/fred/M2V/2026-09-30)
+    locator: quarterly, 1959 to 2026
+    passage: 1.773 in 1959 Q1; the peak, 2.192, in 1997 Q3; the low, 1.126, in 2020 Q2; 1.415 in 2026 Q2.
+    copy: data
+    read: full
+- id: k1-bridge
+  component: K1
+  type: established
+  text: A banknote still calls itself a "promise to pay" the bearer, but since the pound left gold in 1931 the Bank of England
+    can repay that debt only in more of its own money, a note for a note.
+  sources:
+  - source: McLeay, Radia and Thomas (2014a), 'Money in the modern economy, an introduction', Bank of England Quarterly Bulletin
+      2014 Q1
+    locator: pp. 8-9
+    passage: '... a specified sum ... Since 1931, Bank of England money has been fiat money. ... that debt can only be repaid
+      in more fiat money.'
+    copy: open
+    read: passage
+    url: https://www.bankofengland.co.uk/-/media/boe/files/quarterly-bulletin/2014/money-in-the-modern-economy-an-introduction.pdf
+- id: k5-barter-where-money-failed
+  component: K5
+  type: cases
+  text: Where money failed, substitutes appeared; in a prisoner-of-war camp cigarettes became the currency, and when Ireland's
+    banks shut from May to November 1970, cutting off accounts that made up {{cite_ireland_m2-share}} of M2, cheques that
+    could not be cleared carried most payments until the banks reopened.
+  sources:
+  - source: Radford 1945, "The Economic Organisation of a P.O.W. Camp", Economica 12(48)
+    locator: pp. 190-191
+    passage: cigarettes rose from the status of a normal commodity to that of currency ... Cigarettes became the normal currency,
+      though, of course, barter was never ...
+    copy: held
+    read: passage
+  - source: 'Murphy 1978, "Money in an Economy Without Banks: The Case of Ireland", Manchester School 46(1)'
+    locator: pp. 41, 43
+    passage: May 1–November 17, 1970 ... 85 per cent in 1970 ... by definition, the exchange medium that was used to finance
+      most transactions
+    copy: held
+    read: passage
+- id: k5-ireland-credit
+  component: K5
+  type: cases
+  text: The banks that shut in 1970 were Ireland's four clearing banks; most of the merchant and North American banks that
+    stayed open refused new accounts by the end of May; shops and pubs, whose managers knew their customers, gave goods and
+    cash against cheques no bank could yet pay and became a substitute banking system; cheques of the state and of known firms
+    changed hands often, a third party's cheque was taken reluctantly; and {{cite_ireland_uncleared}} of cheques awaited clearing
+    when the banks reopened on 17 November 1970.
+  sources:
+  - source: 'Murphy 1978, "Money in an Economy Without Banks: The Case of Ireland", Manchester School 46(1)'
+    locator: pp. 41 (note 1), 42-45
+    passage: '... accounts ... provide commodities and currency for their customers against undated trade credit. Public houses
+      and shops emerged as a substitute banking system ... changed ...'
+    copy: held
+    read: full
+- id: k5-lydia
+  component: K5
+  type: cases
+  text: The first coins were struck in western Asia Minor, probably in Lydia, in today's Turkey, in the seventh century BC,
+    of electrum, a natural mix of gold and silver; Herodotus remembered the Lydians as the first to coin gold and silver.
+  sources:
+  - source: Head, Historia Numorum, 2nd ed. (1911), "Lydia"
+    locator: pp. 643-645
+    passage: '... Lydians, says Herodotus (i. 94), ''were the first people we know of to strike coins of gold and of silver''
+      ... to the seventh century ...'
+    copy: archive
+    read: passage
+    url: https://archive.org/stream/historianumorumm00head
+- id: k5-song
+  component: K5
+  type: cases
+  text: The Song state issued its own paper money in Sichuan from the 1020s, convertible into the region's iron coin.
+  sources:
+  - source: von Glahn 1996, Fountain of Fortune (University of California Press)
+    locator: p. 51
+    passage: The Song had issued its own paper money within the iron-currency zone of Sichuan since the 1020s ... Both the
+      Sichuan paper notes and the ...
+    copy: library
+    read: passage
+- id: k5-boe-1694
+  component: K5
+  type: cases
+  text: The Bank of England was born in 1694 of a loan to the Crown of {{cite_desan_loan}}, at {{cite_graeber_rate}} a year,
+    in its own notes; the state paid with them and took them back in taxes, and by 1696 more than {{cite_desan_notes-1696}}
+    of notes were out.
+  sources:
+  - source: Desan 2014, Making Money, ch. 8 "The mode of payment, or how to make a fiat loop"
+    locator: ch. 8, the section named
+    passage: '... £1.2 million ... felt compelled to take the notes back in payment of taxes or public fees ... more than
+      £2 million notes were outstanding'
+    copy: held
+    read: chapter
+  - source: Graeber 2011, Debt (Melville House)
+    locator: p. 49
+    passage: In 1694, a consortium of English bankers made a loan of £1,200,000 to the king. In return they received a royal
+      monopoly on the issuance ...
+    copy: held
+    read: passage
+  - source: Bank of England, "Our history"
+    locator: the 1694 entries
+    passage: The Bank of England was founded as a private bank in 1694 to act as banker to the Government.
+    copy: open
+    read: passage
+    url: https://www.bankofengland.co.uk/about/history
+- id: k5-goldsmiths
+  component: K5
+  type: established
+  text: Before it, London's goldsmiths had stored coin and given receipts that came to circulate as money.
+  sources:
+  - source: 'McLeay, Radia and Thomas 2014, "Money in the modern economy: an introduction"'
+    locator: p. 8
+    passage: '... gold coins for customers. The goldsmiths would give out receipts for the coins, and those receipts soon
+      started to circulate as a kind of money.'
+    copy: open
+    read: full
+    url: https://www.bankofengland.co.uk/-/media/boe/files/quarterly-bulletin/2014/money-in-the-modern-economy-an-introduction.pdf
+- id: law-real-economy
+  component: K6
+  type: cases
+  text: In Murphy's account, France's real economy grew considerably under Law's System, but could not keep pace with the
+    rapid growth of its notes and shares.
+  sources:
+  - source: Murphy 1997, John Law, Economic Theorist and Policy-Maker (Oxford University Press)
+    locator: p. 244
+    passage: '... with the real economy. Even though there had been a considerable growth in the real economy it could not
+      keep pace with the excessively rapid ...'
+    copy: held
+    read: chapter
+- id: law-belief
+  component: K6
+  type: established
+  text: Law held that more money would raise trade and work rather than prices where people were out of work and resources
+    unused, "A greater quantity employs more people than a lesser quantity"; in France he swapped the state's debt for shares
+    in his company, which collected the taxes, and used money creation to support the price of those shares.
+  sources:
+  - source: Murphy 1997, John Law, Economic Theorist and Policy-Maker (Oxford University Press)
+    locator: pp. 63, 88-89
+    passage: '... than a price effect ... [Law, Money and Trade, quoted:] Domestic trade depends on the money. A greater quantity
+      employs more people than a lesser ...'
+    copy: held
+    read: chapter
+  - source: 'Velde 2003, "Government Equity and Money: John Law''s System in 1720 France", Chicago Fed WP 2003-31'
+    locator: p. 1
+    passage: '... its equity ... Law used money creation to support the price of shares, and legal restrictions to support
+      the demand for money. Inflation did not ...'
+    copy: open
+    read: chapter
+    url: https://www.chicagofed.org/(private path)
+- id: k4-m2-routes
+  component: K4
+  type: cases
+  text: Most of 2022's fall in US banks' reserves came from increases in the Fed's overnight reverse repo facility, whose
+    counterparties include money-market funds and other lenders that are not banks.
+  sources:
+  - source: Federal Reserve Bank of New York, Open Market Operations during 2022 (2023)
+    locator: p. 29; the table of operations (overnight reverse repurchase agreements, counterparties)
+    passage: '... decline in reserves resulted from increases in the ON RRP facility ... [Overnight Reverse Repurchase Agreements]
+      Counterparties Primary dealers, eligible 2a-7 money market funds, government-sponsored ...'
+    copy: open
+    read: passage
+    url: https://www.newyorkfed.org/medialibrary/media/markets/omo/omo2022-pdf.pdf
+- id: law-system
+  component: K6
+  type: cases
+  text: In 1719-20 Law's bank printed notes to buy his company's shares, the share price ran from {{cite_law_share-1718}}
+    in May 1718 to {{cite_law_share-peak}} in January 1720, and the bank pegged it at {{cite_law_peg}} in March; prices in
+    Paris rose {{cite_law_prices-jan}} in January alone, catching up with the livre's devaluation of 1718, then only {{cite_law_prices-to-aug}}
+    more by August while, over the same months, the money in circulation multiplied about {{cite_law_money-factor}} times;
+    what gave way was the notes' value against silver, and by the end of 1720 the notes had ceased to be money and the shares
+    had fallen with them.
+  sources:
+  - source: 'Velde 2003, "Government Equity and Money: John Law''s System in 1720 France", Chicago Fed WP 2003-31'
+    locator: pp. 18, 25, 27, 30, 33-34, 44
+    passage: '... what brings about the catch-up [with the devaluation of 1718] ... only 19% from January 1720 to the peak
+      in August 1720. At the same ...'
+    copy: open
+    read: chapter
+    url: https://www.chicagofed.org/(private path)
+  - source: Murphy 1997, John Law (Oxford University Press)
+    locator: pp. 228, 229, 266
+    passage: '... of 5 March 1720 ... the 1.2 billion cap abandoned ... 15 August demonetisation; 15 September accounts cut
+      to a quarter; 10 October notes no ...'
+    copy: held
+    read: chapter
+- id: k6-pin
+  component: K6
+  type: cases
+  text: Smith saw ten workers in a small pin works make about {{cite_smith_pins}} pins a day by dividing the work, where each
+    alone could hardly have made twenty; value is made by producing more with the same hours.
+  sources:
+  - source: Smith, Wealth of Nations, Book I, ch. 1 (Bohn's Standard Library, G. Bell, 1921)
+    locator: pp. 6-7
+    passage: I have seen a small manufactory of this kind where ten men only were employed ... upwards of forty-eight thousand
+      pins in a day
+    copy: archive
+    read: passage
+    url: https://archive.org/stream/wealthofnations0001adam_v0b4
+- id: k6-value-added
+  component: K6
+  type: established
+  text: The national accounts count value made as value added, a firm's output less what it bought from others.
+  sources:
+  - source: BEA, glossary, "Value added"
+    locator: the entry
+    passage: The gross output of an industry or a sector less its intermediate inputs; the contribution of an industry or
+      sector to gross domestic product (GDP)
+    copy: open
+    read: passage
+    url: https://www.bea.gov/help/glossary/value-added
+- id: k6-water-diamonds
+  component: K6
+  type: established
+  text: A thing's price is not its usefulness; Smith set water, most useful and nearly free, against diamonds, and economics'
+    answer is that a price follows the value of one more unit, low where a thing is abundant.
+  sources:
+  - source: Smith, Wealth of Nations, Book I, ch. 4 (Bohn's Standard Library, 1921)
+    locator: pp. 28-29
+    passage: 'Nothing is more useful than water: but it will purchase scarce anything ... A diamond, on the contrary, has
+      scarce any value in use; but ...'
+    copy: archive
+    read: passage
+    url: https://archive.org/stream/wealthofnations0001adam_v0b4
+  - source: Jevons, The Theory of Political Economy, 2nd ed. (1879)
+    locator: p. 86
+    passage: when Smith speaks of water as being highly useful and yet devoid of purchasing power, he means water in abundance
+      ... Water, when it becomes ...
+    copy: archive
+    read: passage
+    url: https://archive.org/stream/theoryofpolitica00jevo
+- id: k6-neutrality
+  component: K6
+  type: established
+  text: Across {{cite_lucas_countries}} countries over 1960-90, money growth and inflation moved together, a correlation of
+    {{cite_lucas_corr}}, while money growth and real growth, on the IMF's data for about a hundred countries, were, in Lucas's
+    reading, unrelated; in the rich OECD economies the two growths were weakly positively related.
+  sources:
+  - source: Lucas 1996, Nobel lecture, "Monetary Neutrality" (Nobel Foundation)
+    locator: p. 249; Figures 1 and 2, p. 250; note 2
+    passage: The simple correlation between inflation and money growth is .95. ... there is no relation between these 30-year
+      averages ... more mixed than one would ...
+    copy: open
+    read: full
+    url: https://www.nobelprize.org/uploads/2018/06/lucas-lecture.pdf
+  - source: McCandless and Weber 1995, "Some Monetary Facts", FRB Minneapolis Quarterly Review 19(3)
+    locator: abstract
+    passage: '... real output are not correlated, except for a subsample of countries in the Organisation for Economic Co-operation
+      and Development, where these growth rates are positively ...'
+    copy: open
+    read: abstract
+    url: https://www.minneapolisfed.org/research/quarterly-review/some-monetary-facts
+- id: k6-schumpeter
+  component: K6
+  type: established
+  text: Credit can finance new production; in Schumpeter's account bank credit hands new purchasing power to the entrepreneur,
+    who bids resources away from their old uses, so prices rise until the new goods come to market.
+  sources:
+  - source: Schumpeter 1934, The Theory of Economic Development, tr. Opie (Harvard University Press)
+    locator: pp. 107, 109-110, 113-114 (ch. 3); p. 67 (ch. 2)
+    passage: '... of purchasing power for the purpose of transferring it to the entrepreneur ... prices rise ... This may
+      be called credit inflation ... credit inflation ...'
+    copy: held
+    read: chapter
+- id: k6-jorda
+  component: K6
+  type: established
+  text: Money can move real output for a long time when it is tightened; Jordà, Singh and Taylor find effects lasting a decade
+    or more after a tightening, and weak ones after a loosening.
+  sources:
+  - source: Jordà, Singh and Taylor, "The Long-Run Effects of Monetary Policy", NBER w26666 (rev. 2024)
+    locator: printed pp. 3, 38
+    passage: '... has long lasting effects, but loose monetary policy does not stimulate growth. ... monetary policy has real
+      effects that last for a decade or more. ...'
+    copy: open
+    read: passage
+    url: https://www.nber.org/system/files/working_papers/w26666/w26666.pdf
+- id: k6-radford
+  component: K6
+  type: cases
+  text: Exchange alone makes value; in Radford's camp, where every prisoner got the same parcels, trading them made each better
+    off.
+  sources:
+  - source: Radford 1945, "The Economic Organisation of a P.O.W. Camp", Economica 12(48)
+    locator: p. 189
+    passage: standard of material comfort is considerably enhanced
+    copy: held
+    read: passage
+- id: k6-productivity
+  component: K6
+  type: cases
+  text: US output per hour of work in nonfarm business is {{k6_output-per-hour_multiple}} times its level of 1947.
+  sources:
+  - source: FRED, OPHNFB (the BLS's nonfarm business output per hour), frozen 2026-10-10
+    locator: the first and the latest quarter
+    passage: nonfarm business sector, labor productivity (output per hour of all persons), index
+    copy: data
+    read: full
+- id: k7-gll
+  component: K7
+  type: established
+  text: Of the rise in the real value of US shares per person from 1989 to 2017, Greenwald, Lettau and Ludvigson attribute
+    {{cite_gll_shift}} to profits shifted to shareholders, chiefly from wages, {{cite_gll_growth}} to growth, {{cite_gll_risk}}
+    to a lower price of risk and {{cite_gll_rates}} to lower interest rates; from 1952 to 1988 growth accounted for more than
+    {{cite_gll_growth-1952}} of a slower rise.
+  sources:
+  - source: Greenwald, Lettau and Ludvigson, "How the Wealth Was Won", NBER w25769 (rev. 2024)
+    locator: abstract; Table 2, Panel B, p. 37
+    passage: '... accounted for just 25% of the increase, followed by a lower risk price (21%), and lower interest rates (14%).
+      ... economic growth accounted for more ...'
+    copy: open
+    read: chapter
+    url: https://www.nber.org/papers/w25769
+- id: k7-1934
+  component: K7
+  type: cases
+  text: In 1934 the United States took the Federal Reserve's gold, paid with credits at the Treasury, cut the dollar's gold
+    weight, and booked the higher value of its gold as a receipt; {{cite_gra_fund}} of it went to a fund for trading gold
+    and currencies; money appeared where these acts made a payment, not from the price itself.
+  sources:
+  - source: Gold Reserve Act of 1934, 48 Stat. 337
+    locator: sec. 2(a), p. 337; sec. 7 and sec. 10(a)-(b), pp. 341-342
+    passage: '... in the Treasury ... the resulting increase in value of the gold held by the United States ... shall be covered
+      into the Treasury as ...'
+    copy: open
+    read: passage
+    url: https://www.govinfo.gov/content/pkg/STATUTE-48/pdf/STATUTE-48-Pg337.pdf
+- id: k7-pz
+  component: K7
+  type: established
+  text: Economists split the growth of wealth into saving and price effects; for US national wealth over 1970-2010, Piketty
+    and Zucman put {{cite_pz_saving-share}} on saving and the rest on capital gains.
+  sources:
+  - source: Piketty and Zucman 2014, "Capital is Back", Quarterly Journal of Economics 129(3)
+    locator: p. 1257; pp. 1285-1286, Table V
+    passage: decompositions of wealth accumulation into volume effects (saving) and relative price effects (real capital gains
+      and losses) ... a 2.1% savings-induced wealth growth rate (72% ...
+    copy: held
+    read: passage
+- id: k7b-wealth
+  component: K7
+  type: established
+  text: A rise in shares reaches spending through people who feel richer; Chodorow-Reich, Nenov and Simsek estimate about
+    {{cite_cns_mpc}} a year of spending per dollar of stock wealth, and that a {{cite_cns_rise}} rise in stock prices, unless
+    the central bank leans against it, raises the total wage bill by at least {{cite_cns_labour}}.
+  sources:
+  - source: Chodorow-Reich, Nenov and Simsek, "Stock Market Wealth and the Real Economy", NBER w25959 (rev. 2020)
+    locator: abstract; pp. 1, 45
+    passage: '... consume out of a dollar of stock wealth of 3.2 cents per year ... A 20% increase in stock valuations, unless
+      countered by monetary policy, ...'
+    copy: open
+    read: chapter
+    url: https://www.nber.org/papers/w25959
+- id: k7b-collateral
+  component: K7b
+  type: established
+  text: It also reaches spending through loans against dearer collateral, and those loans do create money; in the US housing
+    boom existing homeowners borrowed {{cite_mian-sufi_cents-low}} to {{cite_mian-sufi_cents-high}} per dollar their home
+    equity rose, about {{cite_mian-sufi_gdp}} of GDP a year from 2002 to 2006.
+  sources:
+  - source: Mian and Sufi, "House Prices, Home Equity-Based Borrowing, and the U.S. Household Leverage Crisis", NBER w15283
+    locator: printed pp. 3, 4, 13, 24
+    passage: '... additional dollar of home equity from 2002 to 2006. ... a total of $1.45 trillion of the rise in household
+      debt from 2002 to 2006 ...'
+    copy: open
+    read: passage
+    url: https://www.nber.org/system/files/working_papers/w15283/w15283.pdf
+- id: k7b-cpi-housing
+  component: K7
+  type: established
+  text: Shop-price indices largely leave asset prices out; the US CPI does not price homes, it prices what an owner would
+    pay to rent one, {{cite_bls_oer}} of the basket.
+  sources:
+  - source: 'BLS, "Measuring Price Change in the CPI: Rent and Rental Equivalence"'
+    locator: the page, and Table A (December 2025)
+    passage: '... are not priced in the CPI Housing Survey. ... the implicit rent that owner occupants would have to pay if
+      they were renting their homes'
+    copy: open
+    read: full
+    url: https://www.bls.gov/cpi/factsheets/owners-equivalent-rent-and-rent.htm
+- id: k8-slow-side
+  component: K8
+  type: established
+  text: At low inflation Teles and Uhlig find that the fit of money growth to inflation markedly improves once output growth
+    and the cost of holding money are allowed for.
+  sources:
+  - source: Teles and Uhlig, 'Is Quantity Theory Still Alive?', NBER w16393 (revised August 2013)
+    locator: abstract
+    passage: '... average inflation and the growth rate of money is tenuous at best. Second, the fit markedly improves, when
+      correcting for variation in output growth and ...'
+    copy: open
+    read: passage
+    url: https://www.nber.org/system/files/working_papers/w16393/w16393.pdf
+- id: k8-regime
+  component: K8
+  type: established
+  text: The link between money growth and inflation depends on the regime; the BIS found it about one for one when inflation
+    is high and nearly absent when it is low, and the same with the line drawn on excess money growth.
+  sources:
+  - source: Borio, Hofmann and Zakrajšek 2023, BIS Bulletin 67
+    locator: p. 1 (key takeaways); p. 3, note 5 and Graph 2, note 1
+    passage: '... the excess money growth rate rather than of inflation. ... Excess broad money growth is defined as the difference
+      between the growth in broad money ...'
+    copy: open
+    read: full
+    url: https://www.bis.org/publications/bulletin-67-does-money-growth-help-explain-recent-inflation-surge.pdf
+  - source: Teles and Uhlig, "Is Quantity Theory Still Alive?", NBER w16393 (rev. 2013)
+    locator: p. 3
+    passage: Concentrating on the subset of countries, whose inflation rate was below 12 percent, the points no longer assemble
+      nicely around a line
+    copy: open
+    read: chapter
+    url: https://www.nber.org/papers/w16393
+- id: k8-us-2021
+  component: K8
+  type: cases
+  text: In the United States, Blanchard and Bernanke find that the inflation of 2021 largely reflected strong demand, but
+    that most of the surge came through shocks to prices given wages, commodity prices (which reflected demand and other forces,
+    the war in Ukraine among them from 2022) and price spikes in goods in short supply, with tight labour markets adding little
+    at first and more persistently later.
+  sources:
+  - source: Blanchard and Bernanke, "What Caused the US Pandemic-Era Inflation?", NBER w31417
+    locator: abstract
+    passage: '... inflation surge that began in 2021 was the result of shocks to prices given wages. These shocks included
+      sharp increases in commodity prices, reflecting strong ...'
+    copy: open
+    read: full
+    url: https://www.nber.org/papers/w31417
+  - source: Blanchard and Bernanke, "What Caused the US Pandemic-Era Inflation?", NBER w31417
+    locator: pp. 34, 38-39
+    passage: '... raising prices given wages, through its contribution to higher commodity prices (which reflected other forces
+      as well, including, from 2022 on, the war in Ukraine)'
+    copy: open
+    read: full
+    url: https://www.nber.org/papers/w31417
+- id: k8-euro-2022
+  component: K8
+  type: cases
+  text: In the euro area inflation was mostly imported, energy above all; in the first three quarters of 2022 energy weighed
+    about twice as much on Germany's inflation as on France's, a gap that, Blanchard and Bernanke write, appears to reflect
+    in large part differences in subsidies meant to cap energy prices.
+  sources:
+  - source: Blanchard and Bernanke, "An Analysis of Pandemic-Era Inflation in 11 Economies", NBER w32532
+    locator: pp. 29, 31
+    passage: '... euro area where inflation was mostly imported ... a very limited role of labor market conditions in the
+      euro area ... 5.6 points for France, ...'
+    copy: open
+    read: chapter
+    url: https://www.nber.org/papers/w32532
+  - source: Blanchard and Bernanke 2024, NBER w32532
+    locator: p. 31
+    passage: '... euro members, differences that appear to reflect in large part differences in fiscal subsidies intended
+      to cap energy prices. For example, in the first three ...'
+    copy: open
+    read: passage
+    url: https://www.nber.org/system/files/working_papers/w32532/w32532.pdf
+- id: k8-oil-1973
+  component: K8
+  type: cases
+  text: The 1973-74 oil shock is the textbook supply shock, though Blanchard and Galí find oil only part of that decade's
+    inflation, and Barsky and Kilian argue that commodity prices had already risen in a boom fed by money; one inflation can
+    have two origins at once, a supply shock landing on a boom fed by money, and the sources weigh the two differently.
+  sources:
+  - source: Blanchard and Galí, NBER w13368 (rev. 2007)
+    locator: pp. 2-3
+    passage: '... them on the large increases in the price of oil ... the price of oil explains only part of the stagflation
+      episodes of the 1970s'
+    copy: open
+    read: chapter
+    url: https://www.nber.org/papers/w13368
+  - source: Barsky and Kilian, NBER w8389
+    locator: abstract; p. 2
+    passage: '... as essential a part of the causal mechanism that generated the stagflation of the 1970s as is often thought
+      ... an economic boom fueled by ...'
+    copy: open
+    read: chapter
+    url: https://www.nber.org/papers/w8389
+- id: k8-price-revolution
+  component: K8
+  type: cases
+  text: In the sixteenth century, as American silver poured into Spain, prices rose with it, and Hamilton found the two so
+    closely matched that he held the silver to be, above all, what lay behind Spain's price revolution; whether the silver
+    was behind Europe's price revolution is argued over, the main alternative holding that a growing population pressing on
+    scarce land lay behind the rise.
+  sources:
+  - source: TePaske, A New World of Gold and Silver (library copy)
+    locator: pp. 5, 306 (ch. 7)
+    passage: '... of money ... his research seemed to show that inflation beset Spain along with the arrival of American bullion,
+      and he became a proponent of ...'
+    copy: library
+    read: passage
+  - source: von Glahn, Fountain of Fortune (1996)
+    locator: p. 234
+    passage: '... primary alternative to the monetary explanation for the "price revolution" is the "population thesis," which
+      holds that demographic pressure on an inelastic supply of land ...'
+    copy: held
+    read: passage
+  - source: Hamilton, American Treasure and the Price Revolution in Spain, 1501-1650 (Harvard University Press, 1934)
+    locator: p. 301
+    passage: '... sixteenth century, particularly from 1535 on, demonstrates beyond question that the "abundant mines of America"
+      were the principal cause of the Price Revolution in Spain.'
+    copy: held
+    read: passage
+- id: k8-argentina
+  component: K8
+  type: cases
+  text: Argentina shows that when a state stops paying its way with central-bank money, inflation can come down fast; Argentina's
+    monthly inflation was {{cite_argentina_nov-2023}} in November 2023, before a new administration took office in December,
+    and higher still in December and January, and on 13 December 2023 the official exchange rate went from {{cite_argentina_fx-12-dec-2023}}
+    to {{cite_argentina_fx-13-dec-2023}} pesos per dollar; once the state balanced its budget and the Treasury stopped drawing
+    advances from its central bank, monthly inflation fell to {{cite_argentina_may-2024}} by May 2024; the central bank also
+    credits the correction of distorted relative prices and, from July 2024, the repair of its own balance sheet with bringing
+    inflation down, and does not say which step did most; monthly inflation has stayed far lower since, {{cite_argentina_aug-2026}}
+    in August 2026, though prices still rose {{cite_argentina_yoy-aug-2026}} over the twelve months to then.
+  sources:
+  - source: BCRA, Communication A 3500, reference exchange rate (com3500.xls), read 2026-10-12
+    locator: 12 and 13 December 2023
+    passage: 2023-12-12 366.5; 2023-12-13 799.975 (pesos per dollar)
+    copy: open
+    read: full
+    url: https://www.bcra.gob.ar/Pdfs/PublicacionesEstadisticas/com3500.xls
+  - source: INDEC, consumer prices by division (serie_ipc_divisiones.csv), national level
+    locator: November 2023; December 2023; January 2024; May 2024
+    passage: 'NIVEL GENERAL, Nac., monthly change: 2023-11 12.8; 2023-12 25.5; 2024-01 20.6; 2024-05 4.2'
+    copy: open
+    read: full
+    url: https://www.indec.gob.ar/ftp/cuadros/economia/serie_ipc_divisiones.csv
+  - source: BCRA, Informe de Política Monetaria, June 2026
+    locator: pp. 43-44, Recuadro 4
+    passage: Además de abstenerse de solicitar Adelantos Transitorios desde 2024 [p. 43, Recuadro 4:] A partir del cambio
+      de gestión ocurrido en diciembre de 2023
+    copy: open
+    read: passage
+    url: https://www.bcra.gob.ar/archivos/Pdfs/PublicacionesEstadisticas/informes/informe-politica-monetaria-2026-T2.pdf
+  - source: BCRA, Informe de Política Monetaria, June 2026
+    locator: p. 3
+    passage: '... y el saneamiento del balance del Banco Central contribuyeron a reducir la inflación [p. 44, Recuadro 4:]
+      En julio de 2024 el stock de pasivos ...'
+    copy: open
+    read: passage
+    url: https://www.bcra.gob.ar/archivos/Pdfs/PublicacionesEstadisticas/informes/informe-politica-monetaria-2026-T2.pdf
+  - source: INDEC, consumer prices by division (serie_ipc_divisiones.csv), national level
+    locator: August 2026
+    passage: 'NIVEL GENERAL, Nacional, 202608: monthly change 1,7; twelve-month change 33,5'
+    copy: open
+    read: passage
+    url: https://www.indec.gob.ar/ftp/cuadros/economia/serie_ipc_divisiones.csv
+- id: k8-fiscal
+  component: K8
+  type: established
+  text: Barro and Bianchi read the 2020-23 surge in OECD economies as largely fiscal, unexpected inflation paying about four-fifths
+    of governments' extra spending by eroding their debts; the BIS found that excess money growth in 2020 went with later
+    inflation but said little about cause.
+  sources:
+  - source: Barro and Bianchi, "Fiscal Influences on Inflation in OECD Countries, 2020-2023", NBER w31838 (rev. 2025)
+    locator: abstract
+    passage: about 80% of effective government financing came from the inverse effect of unexpected inflation on the real
+      value of public debt
+    copy: open
+    read: chapter
+    url: https://www.nber.org/papers/w31838
+  - source: Borio, Hofmann and Zakrajšek 2023, BIS Bulletin 67
+    locator: pp. 4-5
+    passage: statistically and economically significant positive correlation between excess money growth in 2020 and average
+      inflation in 2021 and 2022 ... they say little about causality.
+    copy: open
+    read: full
+    url: https://www.bis.org/publications/bulletin-67-does-money-growth-help-explain-recent-inflation-surge.pdf
+- id: k9-real-balances
+  component: K9
+  type: established
+  text: In Cagan's account of hyperinflation, the faster people expect prices to rise, the less real money they hold, so prices
+    race ahead of the notes and the money's total real value shrinks.
+  sources:
+  - source: Walsh, Monetary Theory and Policy, 3rd ed. (MIT Press, 2010), ch. 4, on Cagan (1956)
+    locator: ch. 4, section on hyperinflation; no page recorded (library chunk has none)
+    passage: '... for real balances will depend on the nominal interest rate and therefore the expected rate of inflation
+      ... write the demand for the real monetary ...'
+    copy: library
+    read: passage
+  - source: Romer, Advanced Macroeconomics (McGraw-Hill)
+    locator: ch. on inflation and money growth; no page recorded (library chunk has none)
+    passage: '... rate of the nominal money stock reduces the real money stock ... there must be a period when inflation exceeds
+      the rate of money growth.'
+    copy: library
+    read: passage
+- id: k9-hungary
+  component: K9
+  type: cases
+  text: 'Hungary''s pengő in July 1946 holds the record: prices rose about {{cite_hungary_daily}} a day, doubling every {{cite_hungary_doubling}};
+    the hyperinflation ended that month, and on the 1st of August 1946 the forint replaced the pengő.'
+  sources:
+  - source: Hanke and Krus 2013, "World Hyperinflations" (library copy, typescript)
+    locator: p. 8
+    passage: during its peak month, July 1946, the equivalent daily inflation rate was roughly 207%, with prices doubling
+      every 15 hours
+    copy: library
+    read: passage
+  - source: Hanke and Krus 2013, "World Hyperinflations" (library copy, typescript), "The Hyperinflation Table"
+    locator: the table, the row for Hungary (printed "Hanke-Krus 12")
+    passage: '... 1945 Jul. 1946 Jul. 1946 4.19 × 10^16% 207% 15.0 hours Pengő Consumer (columns: start, end, month of highest
+      inflation, rate, daily rate, doubling time)'
+    copy: library
+    read: passage
+  - source: Magyar Nemzeti Bank, 'History' page
+    locator: the post-war section
+    passage: With the co-operation of the National Bank of Hungary the new national currency, the forint, was introduced on
+      August 1, 1946.
+    copy: open
+    read: passage
+    url: https://www.mnb.hu/en/the-central-bank/organisation/history
+- id: k10-asset-prices
+  component: K10
+  type: established
+  text: When a central bank's purchases raise the prices of other assets, their holders gain too; the Bank of England judged
+    that its purchases pushed up the price of equities by at least as much as the price of the government bonds it bought,
+    and that this wealth is heavily skewed, the richest {{cite_boe2012_top-households}} of households holding {{cite_boe2012_top-share}}
+    of what households hold outside pension funds.
+  sources:
+  - source: Bank of England, 'The Distributional Effects of Asset Purchases' (July 2012)
+    locator: p. 1
+    passage: '... Bank''s assessment is that asset purchases have pushed up the price of equities by at least as much as they
+      have pushed up the price ...'
+    copy: open
+    read: passage
+    url: https://www.bankofengland.co.uk/-/media/boe/files/news/2012/july/the-distributional-effects-of-asset-purchases-paper.pdf
+- id: k10-inflation-tax
+  component: K10
+  type: established
+  text: The inflation tax is what inflation takes from the real value of central-bank money, notes and reserves.
+  sources:
+  - source: Buiter 2007, "Seigniorage", NBER w12919
+    locator: p. 1; p. 4
+    passage: '... commercial bank balances with the Central Bank) ... The inflation tax is the reduction in the real value
+      of the stock of base money caused ...'
+    copy: open
+    read: passage
+    url: https://www.nber.org/system/files/working_papers/w12919/w12919.pdf
+- id: k10-remittances
+  component: K10
+  type: cases
+  text: 'A central bank earns more on its bonds than it pays on its notes and reserves, and hands the profit to the state;
+    the Federal Reserve remitted {{cite_fed_remit-2019}} in 2019; when its earnings fell short of what it had to pay, including
+    the interest on reserves, in the fall of 2022, it stopped, and booked the shortfall as a deferred asset, profits it must
+    earn back before it pays the state again, so until then the state gets nothing from it: {{cite_fed_deferred-2022}} at
+    the end of 2022 and {{cite_fed_deferred-2025}} at the end of 2025.'
+  sources:
+  - source: Federal Reserve Banks, Combined Financial Statements 2019
+    locator: Combined Statements of Operations, printed p. 4
+    passage: Earnings remittances to the Treasury ... 54,893
+    copy: open
+    read: passage
+    url: https://www.federalreserve.gov/aboutthefed/files/combinedfinstmt2019.pdf
+  - source: Federal Reserve Banks, Combined Financial Statements 2023
+    locator: Note 3 (PDF p. 25); Note 12 (printed p. 61); Statements of Condition (PDF p. 6)
+    passage: '... deferred asset represents the shortfall in earnings from the most recent point that remittances to the Treasury
+      were suspended. ... In the fall of 2022, ...'
+    copy: open
+    read: passage
+    url: https://www.federalreserve.gov/aboutthefed/files/combinedfinstmt2023.pdf
+  - source: Federal Reserve Banks, Combined Financial Statements 2025
+    locator: Statements of Condition (PDF p. 6)
+    passage: Deferred asset—remittances to the Treasury ... 243,481
+    copy: open
+    read: passage
+    url: https://www.federalreserve.gov/aboutthefed/files/combinedfinstmt2025.pdf
+- id: k10-redistribution
+  component: K10
+  type: established
+  text: Inflation that is not expected also moves wealth from lenders to borrowers, by shrinking the real value of what is
+    owed at fixed rates; in a US experiment of five points of unexpected inflation a year for ten years from 1989, rich, old
+    households, the main holders of bonds, lose most, young middle-class households with fixed-rate mortgages gain, and the
+    government gains {{cite_doepke_govt-gain-low}} to {{cite_doepke_govt-gain-high}} of GDP.
+  sources:
+  - source: Doepke and Schneider 2006, "Inflation and the Redistribution of Nominal Wealth", Journal of Political Economy
+      114(6), pp. 1069-1097
+    locator: p. 1069 (abstract) and p. 1071
+    passage: The main losers from inflation are rich, old households, the major bondholders in the economy. The main winners
+      are young, middle-class households with fixed-rate mortgage ...
+    copy: held
+    read: chapter
+  - source: Doepke and Schneider, "Inflation as a Redistribution Shock", NBER w12319
+    locator: printed p. 1
+    passage: Surprise inflation redistributes wealth from lenders to borrowers by reducing the real value of nominal assets
+      and liabilities.
+    copy: open
+    read: passage
+    url: https://www.nber.org/system/files/working_papers/w12319/w12319.pdf
+- id: k10-deposit-spread
+  component: K10
+  type: established
+  text: Banks gain too; when the policy rate rises they widen the gap between what they earn and what they pay on deposits.
+  sources:
+  - source: Drechsler, Savov and Schnabl, "The Deposits Channel of Monetary Policy", NBER w22152
+    locator: printed pp. 2, 8
+    passage: '... deposits to cash. ... For every 100 bps increase in the Fed funds rate, the spread between the Fed funds
+      rate and the deposit rate ...'
+    copy: open
+    read: passage
+    url: https://www.nber.org/system/files/working_papers/w22152/w22152.pdf

@@ -1,0 +1,82 @@
+id: C35-cs-a-currency-share
+label: measurement
+title: 'CS-A — notes and coin held by the public as a share of broad money, every month, in the United States, the euro
+  area and Britain (and every IFS economy with both lines, beside)'
+kind: extension
+seen:
+- 'Seen before this card (P12): the reconnaissance''s currency share of US M2 in August 2026 (10.2%, frozen FRED CURRSL
+  and M2SL); the part 2 dossier check''s recomputation of the same (10.24% in August 2026; minimum 6.61% in December
+  1986, maximum 11.34% in November 2018, over 812 months; no month at 25% or 50%); while probing the series to freeze,
+  this session printed the euro area''s latest M3 and currency in circulation (August 2026: 17,646,463 and 1,616,848
+  million euros), Britain''s latest IFS lines 14A and 35L (June 2025: 83,592 and 4,205,591 million pounds) and the Bank of
+  England''s latest M4 and notes and coin in circulation (August 2026: 3,306,462 and 106,202 million pounds); the card
+  check (an internal note) printed the dates of the wider IFS set''s latest common
+  months (166 economies, from 1990 to 2025, 90 of them ending in 2009, 8 after 2019) and the Bank of England''s M4 for June
+  2025 (3,152,608), no share. Fixed in place after that check, before any run, and after the second card check, which printed
+  the five euro members'' last common months (2008-12 to 2010-12) and no share.'
+question: 'Part 2''s map v4 (K1, K2; headline claim P2-A, the headline''s printed number): what share of the money the
+  public holds is notes and coin in the United States, the euro area and Britain, every month each series runs, and in
+  the latest month? A description: it observes the form of money, not who created it. Notes are the central bank''s
+  issue; coin is the Treasury''s in the United States and Britain and the member states'' in the euro area, said.'
+method: '(1) The United States: FRED CURRSL (the currency component of M1, currency held outside the Treasury, the Federal
+  Reserve Banks and the vaults of depository institutions, seasonally adjusted, billions of dollars) over FRED M2SL (M2,
+  seasonally adjusted, billions), monthly, from 1959-01 to the latest month with both. US currency includes notes held
+  abroad, said: it only raises the share. (2) The euro area: the ECB''s BSI series M.U2.Y.V.L10.X.1.U2.2300.Z01.E
+  (currency in circulation, the M1 component held by the money-holding sector) over M.U2.Y.V.M30.X.1.U2.2300.Z01.E (M3),
+  monthly stocks, seasonally and working-day adjusted, from 1980-01; U2 is the euro area of changing composition (the
+  founders before 1999 as the ECB aggregates them, each later member from its entry), said. (3) Britain: the Bank of
+  England''s LPMAVAB (the monthly average of sterling notes and coin in circulation, seasonally adjusted, which includes
+  notes and coin held by banks and, by the series'' definition, excludes the backing assets for the commercial banknote
+  issue in Scotland and Northern Ireland; whether those commercial notes are inside the series is not read, said) over LPMAUYN (M4, end-month amounts outstanding, seasonally adjusted), from 1982-06 (M4''s
+  first month in the file) to the latest month with both. The numerator includes banks'' holdings (raising the share)
+  and M4 includes intermediate financial companies'' deposits that M4ex leaves out (lowering it): both said beside the
+  share; the M4ex series and M4''s own notes-and-coin component were not identified on the Bank''s database (the arc''s
+  Decisions). Beside, IFS''s lines for Britain, 14A (the monetary authorities'' currency outside banking institutions, not 35L''s own
+  currency component, not seasonally adjusted) over 35L (money plus quasi-money, whose coverage of foreign-currency
+  deposits is not read, here and for the wider set: said), 1973-01 to 2025-06. (4) For
+  each economy: the share every month, the latest month''s share, and the span''s lowest and highest months, in percent
+  with one decimal; IFS''s series are not seasonally adjusted and its definitional breaks are not marked, so its lowest and highest
+  months are printed as read, said.
+  Currency issued and currency held are not both printed: the three statistics give the currency held (or, for Britain,
+  in circulation) only, a departure from the map''s §9 question 3, said. (5) Beside, the wider set, fixed here by coverage
+  and never by value: every IFS reporting economy with both 14A and 35L in a common month; IFS''s union aggregates (codes
+  beginning with a digit, such as 5X, 5Y and 7A) dropped, their members counted; a euro member''s months after its euro
+  entry dropped (its money ended; the second card check found no such month in these files: EE, HR, LT, LV and SK end
+  before their entries); each economy''s latest common month; printed: the distribution of those months by
+  year, and, for the economies whose latest month falls in the modal year of the latest common months (a tie: the later year), the number, the median
+  share and how many are at half or more (the line that refutes "most money is a bank''s promise" there); the same three
+  for all economies, beside. Nothing is averaged across the three economies; no cause is read.'
+parameters:
+  us: {currency: fred/CURRSL 2026-09-30, broad: fred/M2SL 2026-09-30, from: 1959-01}
+  euro_area: {currency: M.U2.Y.V.L10.X.1.U2.2300.Z01.E, broad: M.U2.Y.V.M30.X.1.U2.2300.Z01.E, dataset: ecb/bsi-m3-currency 2026-10-10}
+  britain: {currency: 'bankofengland/m4-notes LPMAVAB', broad: 'bankofengland/m4-notes LPMAUYN', vintage: '2026-10-10'}
+  britain_beside: {currency: 'IFS M..14A___XDC GB, vintage 2026-09-30', broad: 'IFS M..35L___XDC GB, vintage 2026-10-01'}
+  wider: {currency: 'IFS M..14A___XDC 2026-09-30', broad: 'IFS M..35L___XDC 2026-10-01', drop: 'codes beginning with a digit; euro members after entry', summary_year: 'the modal year of the latest common months; a tie, the later year'}
+  refutes_most: 0.5
+  decimals: 1
+matters:
+  cs_a: 'none: a description; "most money is a bank''s promise" fails in an economy where currency is half or more of broad
+    money in its latest month (the meaning of "most"); "small" is printed only beside the share'
+data:
+- dataset: fred/CURRSL
+  vintage: '2026-09-30'
+- dataset: fred/M2SL
+  vintage: '2026-09-30'
+- dataset: ecb/bsi-m3-currency
+  vintage: '2026-10-10'
+- dataset: bankofengland/m4-notes
+  vintage: '2026-10-10'
+- dataset: dbnomics/IMF/IFS/M..14A___XDC
+  vintage: '2026-09-30'
+- dataset: dbnomics/IMF/IFS/M..35L___XDC
+  vintage: '2026-10-01'
+period: 1959-01 to the latest month of each series
+sample: 'By the reader''s question: the three economies the brief''s readers live in, every month of each series; beside,
+  every IFS reporting economy with both lines, by the rule of method (5).'
+out_of_sample: 'The wider IFS set (method 5), a source and set that built none of the three economies'' own series; for
+  Britain, IFS''s pair beside the Bank of England''s.'
+failure: 'The card fails for an economy if a series'' unit differs between numerator and denominator, or if its months
+  cannot be matched; a series that stops is printed to its last month, never extended.'
+not: 'It does not say who created the deposits (the sources do, P2-B), nor count the counterparts of broad money; it does
+  not compare the three economies or read a trend as a cause.'
+created: '2026-10-10'

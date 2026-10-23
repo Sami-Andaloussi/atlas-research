@@ -1,0 +1,284 @@
+{
+  "card": "C36-cs-e-household-real-wealth",
+  "card_hash": "aecda7953a44ef93af7649717925691ac99df5cf6a54013a8c78324037bb8e4d",
+  "run_at": "2026-10-10T22:37:48+00:00",
+  "result": {
+    "unit": "trillions of December 2025 dollars",
+    "spans": {
+      "1952-2025": {
+        "real_and_market_priced": 79.881,
+        "fund_and_pension": -15.818,
+        "nominal_claims": -23.205,
+        "net_investment": 98.202,
+        "erosion_of_other_nominal_assets": -5.218,
+        "gain_on_liabilities": 23.395,
+        "other_volume": 9.264,
+        "partition_gap": 0.0,
+        "real_change": 166.501,
+        "shares_pct": {
+          "real_and_market_priced": 48.0,
+          "fund_and_pension": -9.5,
+          "nominal_claims": -13.9,
+          "net_investment": 59.0,
+          "erosion_of_other_nominal_assets": -3.1,
+          "gain_on_liabilities": 14.1,
+          "other_volume": 5.6,
+          "partition_gap": 0.0
+        }
+      },
+      "1952-59": {
+        "real_and_market_priced": 2.534,
+        "fund_and_pension": -0.364,
+        "nominal_claims": -0.293,
+        "net_investment": 4.428,
+        "erosion_of_other_nominal_assets": -0.092,
+        "gain_on_liabilities": 0.192,
+        "other_volume": 0.187,
+        "partition_gap": 0.0,
+        "real_change": 6.593,
+        "shares_pct": {
+          "real_and_market_priced": 38.4,
+          "fund_and_pension": -5.5,
+          "nominal_claims": -4.4,
+          "net_investment": 67.2,
+          "erosion_of_other_nominal_assets": -1.4,
+          "gain_on_liabilities": 2.9,
+          "other_volume": 2.8,
+          "partition_gap": 0.0
+        }
+      },
+      "1960-69": {
+        "real_and_market_priced": 3.925,
+        "fund_and_pension": -1.857,
+        "nominal_claims": -1.159,
+        "net_investment": 7.509,
+        "erosion_of_other_nominal_assets": -0.238,
+        "gain_on_liabilities": 0.877,
+        "other_volume": 0.257,
+        "partition_gap": 0.0,
+        "real_change": 9.315,
+        "shares_pct": {
+          "real_and_market_priced": 42.1,
+          "fund_and_pension": -19.9,
+          "nominal_claims": -12.4,
+          "net_investment": 80.6,
+          "erosion_of_other_nominal_assets": -2.6,
+          "gain_on_liabilities": 9.4,
+          "other_volume": 2.8,
+          "partition_gap": 0.0
+        }
+      },
+      "1970-79": {
+        "real_and_market_priced": 2.198,
+        "fund_and_pension": -5.762,
+        "nominal_claims": -4.514,
+        "net_investment": 11.981,
+        "erosion_of_other_nominal_assets": -0.619,
+        "gain_on_liabilities": 3.338,
+        "other_volume": 0.246,
+        "partition_gap": 0.0,
+        "real_change": 6.868,
+        "shares_pct": {
+          "real_and_market_priced": 32.0,
+          "fund_and_pension": -83.9,
+          "nominal_claims": -65.7,
+          "net_investment": 174.4,
+          "erosion_of_other_nominal_assets": -9.0,
+          "gain_on_liabilities": 48.6,
+          "other_volume": 3.6,
+          "partition_gap": 0.0
+        }
+      },
+      "1980-89": {
+        "real_and_market_priced": 8.511,
+        "fund_and_pension": -4.003,
+        "nominal_claims": -3.993,
+        "net_investment": 14.214,
+        "erosion_of_other_nominal_assets": -0.634,
+        "gain_on_liabilities": 3.123,
+        "other_volume": 0.958,
+        "partition_gap": 0.0,
+        "real_change": 18.176,
+        "shares_pct": {
+          "real_and_market_priced": 46.8,
+          "fund_and_pension": -22.0,
+          "nominal_claims": -22.0,
+          "net_investment": 78.2,
+          "erosion_of_other_nominal_assets": -3.5,
+          "gain_on_liabilities": 17.2,
+          "other_volume": 5.3,
+          "partition_gap": 0.0
+        }
+      },
+      "1990-99": {
+        "real_and_market_priced": 14.913,
+        "fund_and_pension": 0.584,
+        "nominal_claims": -3.072,
+        "net_investment": 11.315,
+        "erosion_of_other_nominal_assets": -0.715,
+        "gain_on_liabilities": 2.936,
+        "other_volume": 0.862,
+        "partition_gap": 0.0,
+        "real_change": 26.822,
+        "shares_pct": {
+          "real_and_market_priced": 55.6,
+          "fund_and_pension": 2.2,
+          "nominal_claims": -11.5,
+          "net_investment": 42.2,
+          "erosion_of_other_nominal_assets": -2.7,
+          "gain_on_liabilities": 10.9,
+          "other_volume": 3.2,
+          "partition_gap": 0.0
+        }
+      },
+      "2000-09": {
+        "real_and_market_priced": 0.043,
+        "fund_and_pension": -8.244,
+        "nominal_claims": -2.821,
+        "net_investment": 12.631,
+        "erosion_of_other_nominal_assets": -1.091,
+        "gain_on_liabilities": 4.569,
+        "other_volume": 3.634,
+        "partition_gap": 0.0,
+        "real_change": 8.723,
+        "shares_pct": {
+          "real_and_market_priced": 0.5,
+          "fund_and_pension": -94.5,
+          "nominal_claims": -32.3,
+          "net_investment": 144.8,
+          "erosion_of_other_nominal_assets": -12.5,
+          "gain_on_liabilities": 52.4,
+          "other_volume": 41.7,
+          "partition_gap": 0.0
+        }
+      },
+      "2010-19": {
+        "real_and_market_priced": 24.073,
+        "fund_and_pension": 4.562,
+        "nominal_claims": -2.456,
+        "net_investment": 19.257,
+        "erosion_of_other_nominal_assets": -0.681,
+        "gain_on_liabilities": 3.477,
+        "other_volume": 4.45,
+        "partition_gap": -0.0,
+        "real_change": 52.682,
+        "shares_pct": {
+          "real_and_market_priced": 45.7,
+          "fund_and_pension": 8.7,
+          "nominal_claims": -4.7,
+          "net_investment": 36.6,
+          "erosion_of_other_nominal_assets": -1.3,
+          "gain_on_liabilities": 6.6,
+          "other_volume": 8.4,
+          "partition_gap": -0.0
+        }
+      },
+      "2020-25": {
+        "real_and_market_priced": 23.685,
+        "fund_and_pension": -0.734,
+        "nominal_claims": -4.898,
+        "net_investment": 16.868,
+        "erosion_of_other_nominal_assets": -1.15,
+        "gain_on_liabilities": 4.883,
+        "other_volume": -1.332,
+        "partition_gap": -0.0,
+        "real_change": 37.323,
+        "shares_pct": {
+          "real_and_market_priced": 63.5,
+          "fund_and_pension": -2.0,
+          "nominal_claims": -13.1,
+          "net_investment": 45.2,
+          "erosion_of_other_nominal_assets": -3.1,
+          "gain_on_liabilities": 13.1,
+          "other_volume": -3.6,
+          "partition_gap": -0.0
+        }
+      }
+    },
+    "quarters": 296,
+    "levels": {
+      "FR155035005": "LM155035005",
+      "FR165015205": "LM165015205",
+      "FR165013765": "LM165013765",
+      "FR155111005": "LM155111005",
+      "FR153064105": "LM153064105",
+      "FR152090205": "LM152090205",
+      "FR153094305": "LM153094305",
+      "FR153064205": "LM153064205",
+      "FR153064705": "LM153064705",
+      "FR153064505": "LM153064505",
+      "FR153052005": "FL153052005",
+      "FR154022005": "LM154022005",
+      "FR154000005": "FL154000005"
+    },
+    "partition_gap_quarters": [],
+    "euro_area_beside": {
+      "F51": {
+        "euro_area": {
+          "2013": 4.8,
+          "2014": 3.3,
+          "2015": 4.1,
+          "2016": -1.4,
+          "2017": 6.0,
+          "2018": -4.8,
+          "2019": 9.3,
+          "2020": 4.0,
+          "2021": 9.4,
+          "2022": -9.3,
+          "2023": 6.9,
+          "2024": 0.3,
+          "2025": 7.2
+        },
+        "us_lines": "19-21",
+        "us": {
+          "2013": 19.9,
+          "2014": 9.9,
+          "2015": 0.9,
+          "2016": 5.9,
+          "2017": 11.4,
+          "2018": -5.1,
+          "2019": 13.3,
+          "2020": 14.3,
+          "2021": 14.3,
+          "2022": -18.4,
+          "2023": 7.3,
+          "2024": 9.6,
+          "2025": 9.4
+        }
+      },
+      "F52": {
+        "euro_area": {
+          "2013": 1.9,
+          "2014": 5.0,
+          "2015": 4.3,
+          "2016": 1.2,
+          "2017": 3.1,
+          "2018": -9.1,
+          "2019": 10.2,
+          "2020": 0.9,
+          "2021": 5.1,
+          "2022": -20.0,
+          "2023": 4.9,
+          "2024": 7.2,
+          "2025": 2.5
+        },
+        "us_lines": "22-24",
+        "us": {
+          "2013": 12.9,
+          "2014": 3.3,
+          "2015": -3.1,
+          "2016": 2.3,
+          "2017": 11.4,
+          "2018": -9.0,
+          "2019": 15.4,
+          "2020": 10.2,
+          "2021": 4.1,
+          "2022": -22.4,
+          "2023": 10.5,
+          "2024": 8.4,
+          "2025": 10.1
+        }
+      }
+    }
+  }
+}

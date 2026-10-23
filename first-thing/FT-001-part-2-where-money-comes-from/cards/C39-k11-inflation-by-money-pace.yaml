@@ -1,0 +1,79 @@
+id: C39-k11-inflation-by-money-pace
+label: measurement
+title: 'K11, a base rate: of C28''s ten-year windows in each band of base money growth, how many had inflation averaging
+  a fifth a year or more over the decade (a tenth, a variant); counts and shares with their denominators, no slope'
+parent:
+  id: C28-a4-units-guard
+  hash: 99c1880e37bc40362d6e384ccdee22527df703e34cada520b83763c989e1e497
+kind: exploration
+seen:
+- 'C28''s run (results/runs/C28-a4-units-guard.json) and every result read from it: C02''s and C28''s slopes on each side
+  of the 12 line, printed in the study (about one point of inflation per point of base money growth above the line,
+  about a quarter below); C29''s slices, among them its slopes by band of money growth (S1 to S5) and the windows and
+  monies in each band; C30''s use of the same points.'
+- 'The windows and areas in each band of this card (309, 203, 78, 31 and 14 windows; 131, 116, 57, 21 and 10 areas),
+  read from C29''s run by the analyst on 2026-10-12, when it listed this card as feasible: counts of the denominators,
+  no window''s inflation counted against any line.'
+- 'The study''s levels reading (K11), which names no rate of this kind; the substance panel of 2026-10-11 (usefulness
+  5.8 in both readings), whose readers asked for base rates. The card check of 2026-10-12, which counted the bands''
+  denominators only.'
+question: 'The project''s ruling of 2026-10-12: across C28''s ten-year windows, for each band of base money growth,
+  how many windows had inflation averaging 20% a year or more over the decade, and how many 10% or more? A past
+  frequency with its denominators, printed in part 2''s levels reading (K11) in plain words, never a forecast or a
+  threshold. The bands are C29''s exploratory cuts, which is why this card is an exploration.'
+method: '(1) The points: C28''s base-money points (result.C02_grid.points: area, y0, y1, mu, pi, g), as stored; none is
+  recomputed, none is left out (the same windows as the printed slopes). mu and pi are C02''s: 100 * ln(X(b)/X(a)) /
+  (b - a), in log points a year. (2) The bands, on mu as stored, as C29 cut them: at or below 12; above 12 and at or below
+  20; above 20 and at or below 30; above 30 and at or below 50; above 50. (3) The merge rule, applied before any window
+  is counted against a line: from the top band down, a band holding fewer than 20 windows is merged into the band below
+  it, and again until every band holds 20 or more; if the bottom band held fewer than 20 it would merge into the band
+  above. With the denominators seen, the band above 50 (14 windows) merges into the band above 30 to make one band above
+  30 (45 windows); the run checks this. (4) The lines: a window counts when its inflation averaged 20% a year or more
+  over the decade, exp(pi / 100) - 1 at or above 0.20, compared as pi as stored against 100 * ln(1.2) computed in double
+  precision: Reinhart and Rogoff''s yearly inflation-crisis line applied to a ten-year average, an adaptation of ours,
+  named so. The variant: 10% (100 * ln(1.1)). A decade averaging under the line can hold years above it, and the reverse;
+  the text says "averaged a fifth a year over the decade", never "an inflation crisis". (5) For each band: the windows,
+  the areas, the windows at or above each line, and their share in percent with one decimal; its 95% interval by a
+  cluster bootstrap on areas: within the band, the band''s areas drawn with replacement, all their windows in the band
+  kept together, 2,000 draws, the 2.5th and 97.5th percentiles of the share (numpy''s default, linear). The draws:
+  a generator numpy.random.default_rng(20261012) made fresh for each band and each line; the band''s areas sorted by
+  their code; each draw takes m indices by rng.integers(0, m, size=m), m the band''s areas, and the share is the hits
+  of the drawn areas over their windows. A band whose count is 0 (or all its windows) prints the count and, in place of the
+  bootstrap''s interval, a one-sided 95% bound on its areas: the share is at most 100 * (1 - 0.05 ** (1 / m)) (or at
+  least 100 * 0.05 ** (1 / m)), m the band''s areas, named as a bound. (6) The same for all windows together. Nothing
+  else is computed: no slope, no correlation, no cause. An area is an IFS area: the members of the West African,
+  Central African and Eastern Caribbean currency unions count each, Panama is in; the text says "economies".'
+parameters:
+  points: results/runs/C28-a4-units-guard.json result.C02_grid.points
+  bands_mu: [[null, 12], [12, 20], [20, 30], [30, 50], [50, null]]
+  band_edges: lower edge excluded, upper edge included; the first band has no lower edge, the last no upper edge
+  merge_below_windows: 20
+  merge_direction: from the top band down, into the band below; a bottom band under 20 into the band above
+  merge_expected: band above 50 (14 windows) into the band above 30, making 45 windows
+  lines: {main: 0.20, variant: 0.10}
+  line_compare: pi as stored against 100 * ln(1 + line), computed in double precision
+  interval: cluster bootstrap on areas within the band, 2000 draws, numpy.random.default_rng(20261012) made fresh for each band and line, areas sorted by code, rng.integers(0, m, size=m) per draw, percentiles 2.5 and 97.5 (linear)
+  bound_at_zero_or_all: one-sided 95%, 100 * (1 - 0.05 ** (1 / m)), m the band's areas
+  decimals: 1
+matters:
+  k11_base_rate: 'none: a past frequency with its denominators, read against no size'
+data:
+- dataset: results/runs/C28-a4-units-guard.json
+  vintage: 'C28''s run first committed at fa9eb235 (2026-10-07), unchanged since; card_hash 99c1880e; sha256
+    c269e3dbea445a339335370c0dd64039454787b68717d92fc685226cb25237b8'
+period: ten-year windows, 1950-2020 (C28's base-money points)
+sample: 'Every C28 base-money point: every money of C02''s grid with base money, the CPI (C02''s, its gaps filled as
+  part 2''s card C25 fills them, from the World Bank''s database of Ha, Kose and Ohnsorge) and real GDP at both ends of a
+  window, set by data coverage only, the units guard applied. Left out by C02''s rules, never by outcome: the six moneys
+  flagged units_break (Equatorial Guinea, Slovakia, Sierra Leone, Somalia, Venezuela, Zimbabwe), money-years using the
+  euro outside the euro area, a euro member''s windows once it uses the euro (the euro area counts as one money from
+  1999), and windows without real GDP at both ends. None of the euro area''s founding members is among the 155 areas on its
+  own: the euro area is one area (U2). The text names that Venezuela and Zimbabwe are not in the count.'
+out_of_sample: 'The 10% variant beside; nothing else, since the card describes the windows and reads no rule from them.'
+failure: 'The card fails if C28''s run is not the one named (card_hash 99c1880e and the sha256 above), if its base points
+  are not 635 in 155 areas, if the band denominators are not 309, 203, 78, 31 and 14 windows, if the merge does not give
+  the band named, or if a point lacks mu or pi.'
+not: 'It does not say that money growth caused the inflation, set a threshold, forecast any money, or read a slope; the
+  band and the inflation are the same decade, a description, not a prediction; a decade''s average is not a count of
+  crisis years; the windows of one area are not independent, which the clustering says and the text names.'
+created: '2026-10-12'

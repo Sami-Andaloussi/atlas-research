@@ -1,0 +1,44 @@
+id: C38-cs-g-money-and-real-growth
+label: measurement
+title: 'CS-G — broad money growth against real growth across ten-year windows, in the manner of Lucas''s Figure 2, on
+  C28''s stored points (an illustration, adapted and named; no slope read)'
+kind: extension
+seen:
+- 'C28''s stored points (results/runs/C28-a4-units-guard.json: C02_grid.points for base money, broad.points for broad money;
+  area, window, money growth mu, inflation pi, real growth g) and their results were seen (P12): C28''s run, C29''s
+  explorations, C30''s use of them, and the map''s audits'' recomputations. This card computes no slope. It draws broad
+  money, as the map''s §4 fixes, after the card check (an internal note) found the
+  first version drawing base money; fixed in place before any run, and again after the second card check (the period, 1960-2020; Lucas''s pages;
+  C27''s hash).'
+question: 'Part 2''s map v4 (K6; an illustration beside P2-F3): drawn in the manner of Lucas''s Figure 2 (1996, pp. 249–250:
+  30-year averages of money growth and real output growth for "the full 100 country IMF data set", 1960-90, after
+  McCandless and Weber), what do C28''s ten-year windows of broad money growth and real GDP growth look like, the calm
+  windows marked? An illustration with no clause: the finding is Lucas''s and McCandless and Weber''s.'
+method: '(1) Points: C28''s broad-money points (results/runs/C28-a4-units-guard.json, result.broad.points; ten-year windows,
+  1960-2020), each (mu, g) as stored; no point is recomputed. (2) Filled windows out: a window in C27''s windows_added
+  (results/runs/C27-a4-broad-hko-fill.json, result.windows_added, by area and years) entered through the fill of the
+  consumer prices from a database whose licence is not established, and is not drawn; the count left out is printed.
+  (3) Marked: the windows with mu at or below 12 as "calm" (Teles and Uhlig''s 12% line, theirs on average inflation,
+  applied here to money growth as C28 applies it, named so). (4) Printed: the number of windows and monies drawn, calm and
+  not; the figure''s data are (area, window, mu, g, calm). Axes: broad money growth (x) against real growth (y), the scale
+  named. No regression line, no slope, no correlation is computed or printed. The caption names it an illustration
+  adapted from Lucas''s Figure 2 (ten-year windows of broad money here; his, 30-year averages for the IMF''s set) and points
+  to Lucas and McCandless and Weber for the finding, the OECD exception always named (a departure from the map''s
+  conditional, since nothing is read off the picture).'
+parameters:
+  points: results/runs/C28-a4-units-guard.json result.broad.points
+  filled_out: results/runs/C27-a4-broad-hko-fill.json result.windows_added
+  calm_line_mu_at_or_below: 12
+matters:
+  cs_g: 'none: an illustration; no clause rests on it'
+data:
+- dataset: results/runs/C28-a4-units-guard.json
+  vintage: 'C28''s run as committed at 46bc1e04, card_hash 99c1880e (in the study''s folder)'
+- dataset: results/runs/C27-a4-broad-hko-fill.json
+  vintage: 'C27''s run as committed at 46bc1e04, card_hash 6ce96b10 (its windows_added only)'
+period: ten-year windows 1960-2020 (C28's broad-money points)
+sample: 'Every C28 broad-money point not added by C27''s fill.'
+out_of_sample: 'None: it carries no claim.'
+failure: 'The card fails if a point cannot be matched to C28''s stored list or C27''s added windows cannot be read.'
+not: 'It does not test neutrality, read a slope, or claim that the calm windows tilt either way.'
+created: '2026-10-10'

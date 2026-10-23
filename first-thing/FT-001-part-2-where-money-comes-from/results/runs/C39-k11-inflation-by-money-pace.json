@@ -1,0 +1,121 @@
+{
+  "card": "C39-k11-inflation-by-money-pace",
+  "card_hash": "bfe5fce1c76cd35c54a7fa73ddde83cbe5ae9748f5d9560e4954398bac505b7b",
+  "run_at": "2026-10-11T22:50:54+00:00",
+  "result": {
+    "lines_pi": {
+      "main": 18.232155679395458,
+      "variant": 9.531017980432493
+    },
+    "bands": [
+      {
+        "band": {
+          "above": null,
+          "at_or_below": 12
+        },
+        "main": {
+          "windows": 309,
+          "areas": 131,
+          "at_or_above": 0,
+          "share": 0.0,
+          "bound": {
+            "kind": "at most",
+            "value": 2.2608690169639956
+          }
+        },
+        "variant": {
+          "windows": 309,
+          "areas": 131,
+          "at_or_above": 16,
+          "share": 5.17799352750809,
+          "low": 2.912621359223301,
+          "high": 7.6673076923076895
+        }
+      },
+      {
+        "band": {
+          "above": 12,
+          "at_or_below": 20
+        },
+        "main": {
+          "windows": 203,
+          "areas": 116,
+          "at_or_above": 7,
+          "share": 3.4482758620689653,
+          "low": 1.092896174863388,
+          "high": 6.0
+        },
+        "variant": {
+          "windows": 203,
+          "areas": 116,
+          "at_or_above": 71,
+          "share": 34.97536945812808,
+          "low": 27.512896825396826,
+          "high": 42.00022831050228
+        }
+      },
+      {
+        "band": {
+          "above": 20,
+          "at_or_below": 30
+        },
+        "main": {
+          "windows": 78,
+          "areas": 57,
+          "at_or_above": 17,
+          "share": 21.794871794871796,
+          "low": 13.511496571198064,
+          "high": 30.953219315895367
+        },
+        "variant": {
+          "windows": 78,
+          "areas": 57,
+          "at_or_above": 59,
+          "share": 75.64102564102564,
+          "low": 64.78085618977019,
+          "high": 85.23073725055431
+        }
+      },
+      {
+        "band": {
+          "above": 30,
+          "at_or_below": null
+        },
+        "main": {
+          "windows": 45,
+          "areas": 26,
+          "at_or_above": 38,
+          "share": 84.44444444444444,
+          "low": 71.42857142857143,
+          "high": 93.75
+        },
+        "variant": {
+          "windows": 45,
+          "areas": 26,
+          "at_or_above": 42,
+          "share": 93.33333333333333,
+          "low": 84.0909090909091,
+          "high": 100.0
+        }
+      }
+    ],
+    "all": {
+      "main": {
+        "windows": 635,
+        "areas": 155,
+        "at_or_above": 62,
+        "share": 9.763779527559056,
+        "low": 6.738999541249331,
+        "high": 13.102781496355792
+      },
+      "variant": {
+        "windows": 635,
+        "areas": 155,
+        "at_or_above": 188,
+        "share": 29.606299212598426,
+        "low": 24.722528028183078,
+        "high": 34.88000598802395
+      }
+    }
+  }
+}

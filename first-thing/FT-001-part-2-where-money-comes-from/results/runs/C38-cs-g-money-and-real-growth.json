@@ -1,0 +1,20 @@
+{
+ "card": "C38-cs-g-money-and-real-growth",
+ "card_hash": "01bbdc8358bfea086ea7e0275cd3b456da5a01d33cc1fdee5172c91d10bcd5a6",
+ "run_at": "2026-10-10T22:36:51+00:00",
+ "result": {
+  "windows_drawn": 580,
+  "windows_left_out": 45,
+  "monies_drawn": 152,
+  "calm": 274,
+  "not_calm": 306,
+  "windows": [
+   "1960-1970",
+   "1970-1980",
+   "1980-1990",
+   "1990-2000",
+   "2000-2010",
+   "2010-2020"
+  ]
+ }
+}

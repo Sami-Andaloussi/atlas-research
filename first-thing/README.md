@@ -46,5 +46,6 @@ the earlier version stays in this repository's history.
 | **FT-001** | *published part by part* |
 | part 1 — [FT-001-part-1-what-gives-a-money-its-value](FT-001-part-1-what-gives-a-money-its-value/) | What gives a money its value? — methods and proof |
 | part 1 — [FT-001-part-1-what-trust-rests-on](FT-001-part-1-what-trust-rests-on/) | Does a money lose its value when its backing goes? — methods and proof — *superseded by [FT-001-part-1-what-gives-a-money-its-value](FT-001-part-1-what-gives-a-money-its-value/)* |
-| part 2 — [FT-001-part-2-where-printed-money-goes](FT-001-part-2-where-printed-money-goes/) | Does printing money really cause inflation? — methods and proof — *an earlier version; a new version will be published with part 2* |
+| part 2 — [FT-001-part-2-where-money-comes-from](FT-001-part-2-where-money-comes-from/) | Where money comes from — methods and proof |
+| part 2 — [FT-001-part-2-where-printed-money-goes](FT-001-part-2-where-printed-money-goes/) | Does printing money really cause inflation? — methods and proof — *superseded by [FT-001-part-2-where-money-comes-from](FT-001-part-2-where-money-comes-from/)* |
 <!-- index:end -->

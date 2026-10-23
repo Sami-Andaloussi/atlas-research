@@ -1,0 +1,742 @@
+# Part 2's numbers read in a source at its page (``cited``), each with its locator; p2_registry.py puts them.
+# The passages are in notes/ (harvest-2026-10-07, -10-10-p2a, -10-10-law-murphy, -10-10-sami-deposit, -10-11-p2b,
+# -10-11-sami-deposit-2, harvest-open-2026-10-08).
+- key: cite_mcleay_deposit-share
+  value: 97
+  fmt: '{:.0f}%'
+  unit: '% of broad money (currency plus deposits) held as bank deposits, Britain'
+  as_of: '2014-03-14'
+  source: McLeay, Radia and Thomas 2014, Bank of England Quarterly Bulletin 2014 Q1
+  locator: p. 15
+  url: https://www.bankofengland.co.uk/-/media/boe/files/quarterly-bulletin/2014/money-creation-in-the-modern-economy.pdf
+  measure: share of the money in circulation that is bank deposits
+  period: '2014'
+  population: Britain
+- key: cite_fed_remit-2019
+  value: 54.893
+  fmt: '${:.1f} billion'
+  unit: billions of dollars remitted to the Treasury
+  as_of: '2020-03-01'
+  source: Federal Reserve Banks, Combined Financial Statements 2019
+  locator: Combined Statements of Operations, printed p. 4
+  url: https://www.federalreserve.gov/aboutthefed/files/combinedfinstmt2019.pdf
+  measure: the Reserve Banks' earnings remitted to the Treasury
+  period: '2019'
+  population: the Federal Reserve Banks
+- key: cite_fed_deferred-2022
+  value: 16.585
+  fmt: '${:.1f} billion'
+  unit: billions of dollars (the deferred asset)
+  as_of: '2024-03-01'
+  source: Federal Reserve Banks, Combined Financial Statements 2023
+  locator: Combined Statements of Condition, PDF p. 6
+  url: https://www.federalreserve.gov/aboutthefed/files/combinedfinstmt2023.pdf
+  measure: the deferred asset (earnings to recover before remittances resume)
+  period: end of 2022
+  population: the Federal Reserve Banks
+- key: cite_fed_deferred-2025
+  value: 243.481
+  fmt: '${:.0f} billion'
+  unit: billions of dollars (the deferred asset)
+  as_of: '2026-03-01'
+  source: Federal Reserve Banks, Combined Financial Statements 2025
+  locator: Combined Statements of Condition, PDF p. 6
+  url: https://www.federalreserve.gov/aboutthefed/files/combinedfinstmt2025.pdf
+  measure: the deferred asset (earnings to recover before remittances resume)
+  period: end of 2025
+  population: the Federal Reserve Banks
+- key: cite_boj_base-2012
+  value: 138
+  fmt: '{:.0f} trillion yen'
+  unit: trillions of yen
+  as_of: '2013-04-04'
+  source: Bank of Japan, Introduction of the Quantitative and Qualitative Monetary Easing, 4 April 2013
+  locator: p. 1, note 1
+  url: https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2013/k130404a.pdf
+  measure: the monetary base outstanding
+  period: end of 2012
+  population: Japan
+- key: cite_boj_base-2014
+  value: 270
+  fmt: '{:.0f} trillion yen'
+  unit: trillions of yen
+  as_of: '2013-04-04'
+  source: Bank of Japan, Introduction of the Quantitative and Qualitative Monetary Easing, 4 April 2013
+  locator: p. 1, note 1
+  url: https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2013/k130404a.pdf
+  measure: the monetary base planned
+  period: end of 2014
+  population: Japan
+- key: cite_boj_target-2001
+  value: 5
+  fmt: '{:.0f} trillion yen'
+  unit: trillions of yen
+  as_of: '2001-03-19'
+  source: Bank of Japan, New Procedures for Money Market Operations and Monetary Easing, 19 March 2001
+  locator: the decision, §a
+  url: https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2001/k010319a.htm
+  measure: the target for banks' current-account balances at the Bank of Japan
+  period: March 2001
+  population: Japan
+- key: cite_ecb_dfr-2019
+  value: -0.5
+  fmt: '{:.2f}%'
+  unit: '% a year'
+  as_of: '2026-10-10'
+  source: ECB, key ECB interest rates
+  locator: the table of the deposit facility rate
+  url: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html
+  measure: the ECB's deposit facility rate
+  period: September 2019 to July 2022
+  population: the euro area
+- key: cite_ecb_dfr-2023
+  value: 4.0
+  fmt: '{:.2f}%'
+  unit: '% a year'
+  as_of: '2023-09-14'
+  source: ECB, key ECB interest rates (the decision of 14 September 2023)
+  locator: the table of the deposit facility rate, from 20 September 2023
+  url: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html
+  measure: the ECB's deposit facility rate
+  period: from September 2023
+  population: the euro area
+- key: cite_fdic_limit
+  value: 250000
+  fmt: '${:,.0f}'
+  unit: dollars per depositor, per insured bank, per ownership category
+  as_of: '2023-01-01'
+  source: 12 U.S.C. §1821(a)(1)(E), 2023 edition
+  locator: §1821(a)(1)(E)
+  url: https://www.govinfo.gov/content/pkg/USCODE-2023-title12/html/USCODE-2023-title12-chap16-sec1821.htm
+  measure: the standard maximum deposit insurance amount
+  period: from 2010
+  population: the United States
+- key: cite_ireland_m2-share
+  value: 85
+  fmt: '{:.0f}%'
+  unit: '% of M2 held as accounts at the Associated Banks'
+  as_of: '1978-03-01'
+  source: Murphy 1978, Manchester School 46(1)
+  locator: p. 41
+  measure: the closed banks' accounts as a share of M2
+  period: '1970'
+  population: Ireland
+- key: cite_ireland_uncleared
+  value: 5
+  fmt: '£{:.0f} billion'
+  unit: billions of Irish pounds of uncleared cheques
+  as_of: '1978-03-01'
+  source: Murphy 1978, Manchester School 46(1)
+  locator: p. 43 (read on the page's image)
+  measure: the uncleared cheques at the end of the bank closure
+  period: November 1970
+  population: Ireland
+- key: cite_law_share-1718
+  value: 250
+  fmt: '{:.0f} livres'
+  unit: livres per share
+  as_of: '2003-11-30'
+  source: Velde 2003, Chicago Fed WP 2003-31
+  locator: p. 18
+  url: https://www.chicagofed.org/(private path)
+  measure: the Company's share price
+  period: May 1718
+  population: John Law's Company
+- key: cite_law_share-peak
+  value: 10000
+  fmt: '{:,.0f} livres'
+  unit: livres per share
+  as_of: '2003-11-30'
+  source: Velde 2003, Chicago Fed WP 2003-31
+  locator: p. 44 (Figure 4, p. 16)
+  url: https://www.chicagofed.org/(private path)
+  measure: the Company's share price at its peak
+  period: January 1720
+  population: John Law's Company
+- key: cite_law_peg
+  value: 9000
+  fmt: '{:,.0f} livres'
+  unit: livres per share
+  as_of: '2003-11-30'
+  source: Velde 2003, Chicago Fed WP 2003-31
+  locator: p. 30
+  url: https://www.chicagofed.org/(private path)
+  measure: the price at which the bank bought shares for notes
+  period: March 1720
+  population: John Law's Company
+- key: cite_law_money-factor
+  value: 2.6
+  fmt: '{:.1f}'
+  unit: times
+  as_of: '2003-11-30'
+  source: Velde 2003, Chicago Fed WP 2003-31
+  locator: p. 27 (Table 4, p. 25)
+  url: https://www.chicagofed.org/(private path)
+  measure: the multiple of the money in circulation (Velde's estimate)
+  period: 1720
+  population: France
+- key: cite_law_prices-jan
+  value: 25
+  fmt: '{:.0f}%'
+  unit: '% in one month'
+  as_of: '2003-11-30'
+  source: Velde 2003, Chicago Fed WP 2003-31
+  locator: p. 27 (Hamilton's index, Figure 9, p. 26)
+  url: https://www.chicagofed.org/(private path)
+  measure: the rise of prices in Paris (hospital purchases)
+  period: January 1720
+  population: Paris
+- key: cite_law_prices-to-aug
+  value: 19
+  fmt: '{:.0f}%'
+  unit: '% from January to August 1720'
+  as_of: '2003-11-30'
+  source: Velde 2003, Chicago Fed WP 2003-31
+  locator: p. 27
+  url: https://www.chicagofed.org/(private path)
+  measure: the further rise of prices in Paris to their peak
+  period: January to August 1720
+  population: Paris
+- key: cite_hungary_doubling
+  value: 15
+  fmt: '{:.0f} hours'
+  unit: hours for prices to double
+  as_of: '2013-01-01'
+  source: Hanke and Krus 2013, World Hyperinflations
+  locator: p. 8 (typescript)
+  measure: the time for prices to double at the peak
+  period: July 1946
+  population: Hungary
+- key: cite_hungary_daily
+  value: 207
+  fmt: '{:.0f}%'
+  unit: '% a day'
+  as_of: '2013-01-01'
+  source: Hanke and Krus 2013, World Hyperinflations
+  locator: p. 8 (typescript)
+  measure: the equivalent daily inflation rate at the peak
+  period: July 1946
+  population: Hungary
+- key: cite_gll_shift
+  value: 40
+  fmt: '{:.0f}%'
+  unit: '% of the rise'
+  as_of: '2024-09-01'
+  source: Greenwald, Lettau and Ludvigson, NBER w25769 (rev. 2024)
+  locator: abstract; Table 2, Panel B, p. 37
+  url: https://www.nber.org/papers/w25769
+  measure: share of equity's real rise per person from profits shifted to shareholders
+  period: 1989-2017
+  population: US corporate equity
+- key: cite_gll_growth
+  value: 25
+  fmt: '{:.0f}%'
+  unit: '% of the rise'
+  as_of: '2024-09-01'
+  source: Greenwald, Lettau and Ludvigson, NBER w25769 (rev. 2024)
+  locator: abstract
+  url: https://www.nber.org/papers/w25769
+  measure: share of the rise from economic growth
+  period: 1989-2017
+  population: US corporate equity
+- key: cite_gll_risk
+  value: 21
+  fmt: '{:.0f}%'
+  unit: '% of the rise'
+  as_of: '2024-09-01'
+  source: Greenwald, Lettau and Ludvigson, NBER w25769 (rev. 2024)
+  locator: abstract
+  url: https://www.nber.org/papers/w25769
+  measure: share of the rise from a lower price of risk
+  period: 1989-2017
+  population: US corporate equity
+- key: cite_gll_rates
+  value: 14
+  fmt: '{:.0f}%'
+  unit: '% of the rise'
+  as_of: '2024-09-01'
+  source: Greenwald, Lettau and Ludvigson, NBER w25769 (rev. 2024)
+  locator: abstract
+  url: https://www.nber.org/papers/w25769
+  measure: share of the rise from lower interest rates
+  period: 1989-2017
+  population: US corporate equity
+- key: cite_gll_growth-1952
+  value: 100
+  fmt: '{:.0f}%'
+  unit: '% of the rise (the abstract''s "more than 100%")'
+  as_of: '2024-09-01'
+  source: Greenwald, Lettau and Ludvigson, NBER w25769 (rev. 2024)
+  locator: abstract
+  url: https://www.nber.org/papers/w25769
+  measure: share of the rise from economic growth, a lower bound
+  period: 1952-1988
+  population: US corporate equity
+- key: cite_cns_mpc
+  value: 3.2
+  fmt: '{:.1f} cents'
+  unit: cents a year per dollar of stock wealth
+  as_of: '2020-02-01'
+  source: Chodorow-Reich, Nenov and Simsek, NBER w25959 (rev. 2020)
+  locator: abstract; p. 1
+  url: https://www.nber.org/papers/w25959
+  measure: the marginal propensity to consume out of stock wealth
+  period: 1990s-2010s (their sample)
+  population: US local labour markets
+- key: cite_cns_rise
+  value: 20
+  fmt: '{:.0f}%'
+  unit: '% rise in stock valuations'
+  as_of: '2020-02-01'
+  source: Chodorow-Reich, Nenov and Simsek, NBER w25959 (rev. 2020)
+  locator: abstract
+  url: https://www.nber.org/papers/w25959
+  measure: the rise in stock valuations in their example
+  period: their example
+  population: the United States
+- key: cite_cns_labour
+  value: 1.7
+  fmt: '{:.1f}%'
+  unit: '% rise in the aggregate labour bill, at least'
+  as_of: '2020-02-01'
+  source: Chodorow-Reich, Nenov and Simsek, NBER w25959 (rev. 2020)
+  locator: abstract; p. 45
+  url: https://www.nber.org/papers/w25959
+  measure: rise in the total wage bill two years on, unless policy counters it
+  period: their example
+  population: the United States
+- key: cite_mian-sufi_cents-low
+  value: 25
+  fmt: '{:.0f}'
+  unit: cents per dollar of home equity gained
+  as_of: '2009-08-01'
+  source: Mian and Sufi, NBER w15283
+  locator: abstract
+  url: https://www.nber.org/papers/w15283
+  measure: what the average homeowner extracted per dollar rise in home equity, low end
+  period: 2002-2006
+  population: US homeowners
+- key: cite_mian-sufi_cents-high
+  value: 30
+  fmt: '{:.0f} cents'
+  unit: cents per dollar of home equity gained
+  as_of: '2009-08-01'
+  source: Mian and Sufi, NBER w15283
+  locator: abstract
+  url: https://www.nber.org/papers/w15283
+  measure: what the average homeowner extracted per dollar rise in home equity, high end
+  period: 2002-2006
+  population: US homeowners
+- key: cite_mian-sufi_gdp
+  value: 2.8
+  fmt: '{:.1f}%'
+  unit: '% of GDP a year'
+  as_of: '2009-08-01'
+  source: Mian and Sufi, NBER w15283
+  locator: abstract
+  url: https://www.nber.org/papers/w15283
+  measure: home equity-based borrowing
+  period: 2002-2006
+  population: the United States
+- key: cite_bls_oer
+  value: 26.204
+  fmt: '{:.0f}%'
+  unit: '% of the CPI basket (relative importance)'
+  as_of: '2026-02-13'
+  source: BLS, Measuring Price Change in the CPI - Rent and Rental Equivalence
+  locator: Table A, December 2025
+  url: https://www.bls.gov/cpi/factsheets/owners-equivalent-rent-and-rent.htm
+  measure: owners' equivalent rent's weight in the CPI
+  period: December 2025
+  population: the US CPI
+- key: cite_bb24_germany
+  value: 12.1
+  fmt: '{:.0f}'
+  unit: percentage points
+  as_of: '2024-06-01'
+  source: Blanchard and Bernanke, NBER w32532
+  locator: p. 31
+  url: https://www.nber.org/papers/w32532
+  measure: energy prices' direct and indirect contribution to inflation
+  period: first three quarters of 2022
+  population: Germany
+- key: cite_bb24_france
+  value: 5.6
+  fmt: '{:.0f}'
+  unit: percentage points
+  as_of: '2024-06-01'
+  source: Blanchard and Bernanke, NBER w32532
+  locator: p. 31
+  url: https://www.nber.org/papers/w32532
+  measure: energy prices' direct and indirect contribution to inflation
+  period: first three quarters of 2022
+  population: France
+- key: cite_argentina_fx-12-dec-2023
+  value: 366.5
+  fmt: '{:.0f}'
+  unit: pesos per dollar
+  as_of: '2026-10-12'
+  source: BCRA, Communication A 3500, reference exchange rate (com3500.xls)
+  locator: 12 December 2023
+  url: https://www.bcra.gob.ar/Pdfs/PublicacionesEstadisticas/com3500.xls
+  measure: the official reference exchange rate
+  period: 12 December 2023
+  population: Argentina
+- key: cite_argentina_fx-13-dec-2023
+  value: 799.975
+  fmt: '{:.0f}'
+  unit: pesos per dollar
+  as_of: '2026-10-12'
+  source: BCRA, Communication A 3500, reference exchange rate (com3500.xls)
+  locator: 13 December 2023
+  url: https://www.bcra.gob.ar/Pdfs/PublicacionesEstadisticas/com3500.xls
+  measure: the official reference exchange rate
+  period: 13 December 2023
+  population: Argentina
+- key: cite_argentina_nov-2023
+  value: 12.8
+  fmt: '{:.1f}%'
+  unit: '% in the month'
+  as_of: '2026-10-12'
+  source: INDEC, consumer prices by division (serie_ipc_divisiones.csv), national level
+  locator: November 2023
+  url: https://www.indec.gob.ar/ftp/cuadros/economia/serie_ipc_divisiones.csv
+  measure: the monthly rise in consumer prices
+  period: November 2023
+  population: Argentina
+- key: cite_argentina_dec-2023
+  value: 25.5
+  fmt: '{:.1f}%'
+  unit: '% in the month'
+  as_of: '2026-09-01'
+  source: INDEC, consumer prices by division (serie_ipc_divisiones.csv), national level
+  locator: December 2023
+  url: https://www.indec.gob.ar/ftp/cuadros/economia/serie_ipc_divisiones.csv
+  measure: the monthly rise in consumer prices
+  period: December 2023
+  population: Argentina
+- key: cite_argentina_may-2024
+  value: 4.2
+  fmt: '{:.1f}%'
+  unit: '% in the month'
+  as_of: '2026-09-01'
+  source: INDEC, consumer prices by division (serie_ipc_divisiones.csv), national level
+  locator: May 2024
+  url: https://www.indec.gob.ar/ftp/cuadros/economia/serie_ipc_divisiones.csv
+  measure: the monthly rise in consumer prices
+  period: May 2024
+  population: Argentina
+- key: cite_teles-uhlig_line
+  value: 12
+  fmt: '{:.0f}%'
+  unit: '% a year (their line, on average inflation)'
+  as_of: '2013-08-01'
+  source: Teles and Uhlig, NBER w16393 (rev. 2013)
+  locator: p. 3
+  url: https://www.nber.org/papers/w16393
+  measure: the inflation line below which the points no longer assemble around a line
+  period: their sample
+  population: their countries
+- key: cite_lucas_corr
+  value: 0.95
+  fmt: '{:.2f}'
+  unit: correlation
+  as_of: '1996-01-01'
+  source: Lucas 1996, Nobel lecture, Monetary Neutrality (after McCandless and Weber 1995)
+  locator: p. 249
+  url: https://www.nobelprize.org/uploads/2018/06/lucas-lecture.pdf
+  measure: the correlation of 30-year average inflation with M2 growth
+  period: 1960-1990
+  population: 110 countries
+- key: cite_lucas_countries
+  value: 110
+  fmt: '{:.0f}'
+  unit: countries
+  as_of: '1996-01-01'
+  source: Lucas 1996, Nobel lecture, Monetary Neutrality
+  locator: p. 249
+  url: https://www.nobelprize.org/uploads/2018/06/lucas-lecture.pdf
+  measure: the countries in McCandless and Weber's plot
+  period: 1960-1990
+  population: McCandless and Weber's countries
+- key: cite_pz_saving-share
+  value: 72
+  fmt: '{:.0f}%'
+  unit: '% of the real growth of national wealth'
+  as_of: '2014-08-01'
+  source: Piketty and Zucman 2014, Quarterly Journal of Economics 129(3)
+  locator: pp. 1285-1286, Table V
+  measure: the share of national wealth's real growth from saving
+  period: 1970-2010
+  population: the United States (national wealth)
+- key: cite_desan_loan
+  value: 1.2
+  fmt: '£{:.1f} million'
+  unit: millions of pounds
+  as_of: '2014-01-01'
+  source: Desan 2014, Making Money (Oxford University Press)
+  locator: ch. 8, "The mode of payment, or how to make a fiat loop"
+  measure: the Bank of England's 'perpetual fund' lent to the government
+  period: '1694'
+  population: the Bank of England
+- key: cite_desan_notes-1696
+  value: 2
+  fmt: '£{:.0f} million'
+  unit: millions of pounds (more than)
+  as_of: '2014-01-01'
+  source: Desan 2014, Making Money (Oxford University Press)
+  locator: ch. 8, "The mode of payment, or how to make a fiat loop"
+  measure: the Bank of England's notes outstanding
+  period: '1696'
+  population: the Bank of England
+- key: cite_graeber_rate
+  value: 8
+  fmt: '{:.0f}%'
+  unit: '% a year'
+  as_of: '2011-01-01'
+  source: Graeber 2011, Debt (Melville House)
+  locator: p. 49
+  measure: the interest the bankers charged the king on the loan
+  period: '1694'
+  population: the Bank of England
+- key: cite_gra_fund
+  value: 2
+  fmt: '${:.0f} billion'
+  unit: billions of dollars
+  as_of: '1934-01-30'
+  source: Gold Reserve Act of 1934, 48 Stat. 337
+  locator: sec. 10(b), pp. 341-342
+  url: https://www.govinfo.gov/content/pkg/STATUTE-48/pdf/STATUTE-48-Pg337.pdf
+  measure: the sum appropriated to the stabilization fund out of the revaluation's receipts
+  period: '1934'
+  population: the United States
+- key: cite_smith_pins
+  value: 48000
+  fmt: '{:,.0f}'
+  unit: pins a day
+  as_of: '1776-03-09'
+  source: Smith, Wealth of Nations, Book I, ch. 1 (Bohn's Standard Library, 1921)
+  locator: p. 6
+  url: https://archive.org/stream/wealthofnations0001adam_v0b4
+  measure: the pins ten workers made in a day
+  period: '1776'
+  population: the small manufactory Smith saw
+- key: cite_svb_outflow
+  value: 40
+  fmt: '${:.0f} billion'
+  unit: billions of dollars of deposits lost in a day (more than)
+  as_of: '2023-04-28'
+  source: Federal Reserve Board, Review of the Federal Reserve's Supervision and Regulation of Silicon Valley Bank (April 2023)
+  locator: p. 4
+  url: https://www.federalreserve.gov/publications/files/svb-review-20230428.pdf
+  measure: deposits withdrawn from Silicon Valley Bank
+  period: 9 March 2023
+  population: Silicon Valley Bank
+- key: cite_svb_expected
+  value: 100
+  fmt: '${:.0f} billion'
+  unit: billions of dollars expected to leave the next day (more than)
+  as_of: '2023-04-28'
+  source: Federal Reserve Board, Review of the Federal Reserve's Supervision and Regulation of Silicon Valley Bank (April 2023)
+  locator: p. 4
+  url: https://www.federalreserve.gov/publications/files/svb-review-20230428.pdf
+  measure: further withdrawals the bank's management expected
+  period: 10 March 2023
+  population: Silicon Valley Bank
+- key: cite_svb_uninsured
+  value: 94
+  fmt: '{:.0f}%'
+  unit: '% of deposits uninsured'
+  as_of: '2023-04-28'
+  source: Federal Reserve Board, Review of the Federal Reserve's Supervision and Regulation of Silicon Valley Bank (April 2023)
+  locator: p. 21
+  url: https://www.federalreserve.gov/publications/files/svb-review-20230428.pdf
+  measure: share of the group's deposits that were uninsured
+  period: end of 2022
+  population: SVB Financial Group
+- key: cite_cyprus_insured
+  value: 100000
+  fmt: '€{:,.0f}'
+  unit: euros per depositor
+  as_of: '2019-10-01'
+  source: European Commission, Ex-Post Evaluation of the Economic Adjustment Programme, Cyprus, 2013-2016 (Institutional Paper 114)
+  locator: p. 27
+  url: https://economy-finance.ec.europa.eu/publications/ex-post-evaluation-economic-adjustment-programme-cyprus-2013-2016-0_en
+  measure: the insured deposits preserved without a levy
+  period: March 2013
+  population: Cyprus's banks
+- key: cite_cyprus_bailin
+  value: 47.5
+  fmt: '{:.1f}%'
+  unit: '% of uninsured deposits converted into shares'
+  as_of: '2019-10-01'
+  source: European Commission, Ex-Post Evaluation of the Economic Adjustment Programme, Cyprus, 2013-2016 (Institutional Paper 114)
+  locator: p. 27
+  url: https://economy-finance.ec.europa.eu/publications/ex-post-evaluation-economic-adjustment-programme-cyprus-2013-2016-0_en
+  measure: the Bank of Cyprus's uninsured deposits bailed in
+  period: March 2013
+  population: the Bank of Cyprus
+- key: cite_boe_notes-share
+  value: 3
+  fmt: '{:.0f}%'
+  unit: '% of the money in the economy'
+  as_of: '2019-10-01'
+  source: Bank of England, explainer "How is money created?"
+  locator: the chart "There are three types of money in the UK economy"
+  url: https://www.bankofengland.co.uk/explainers/how-is-money-created
+  measure: notes and coins as a share of money (notes, reserves and deposits)
+  period: '2019'
+  population: Britain
+- key: cite_amsterdam_cover
+  value: 21
+  fmt: '{:.0f}%'
+  unit: '% of its liabilities'
+  as_of: '2026-10-11'
+  source: de Vries and van der Woude, The First Modern Economy (library copy)
+  locator: the passage on the Bank of Amsterdam; no page recorded
+  measure: the Bank of Amsterdam's metal stock as a share of its liabilities
+  period: '1795'
+  population: the Bank of Amsterdam
+- key: cite_doepke_govt-gain-low
+  value: 5.2
+  fmt: '{:.1f}%'
+  unit: '% of GDP, present value'
+  as_of: '2006-12-01'
+  source: Doepke and Schneider 2006, "Inflation and the Redistribution of Nominal Wealth", Journal of Political Economy 114(6)
+  locator: p. 1071
+  url: https://doi.org/10.1086/508379
+  measure: state's gain, five points a year of surprise inflation for ten years, low end
+  period: 1989 benchmark
+  population: the United States
+- key: cite_doepke_govt-gain-high
+  value: 13.0
+  fmt: '{:.0f}%'
+  unit: '% of GDP, present value'
+  as_of: '2006-12-01'
+  source: Doepke and Schneider 2006, "Inflation and the Redistribution of Nominal Wealth", Journal of Political Economy 114(6)
+  locator: p. 1071
+  url: https://doi.org/10.1086/508379
+  measure: state's gain, five points a year of surprise inflation for ten years, high end
+  period: 1989 benchmark
+  population: the United States
+- key: cite_boj_target-2004-low
+  value: 30
+  fmt: '{:.0f}'
+  unit: trillions of yen
+  as_of: '2004-01-20'
+  source: Bank of Japan, Change in the Guideline for Money Market Operations, 20 January 2004
+  locator: the decision
+  url: https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2004/k040120.htm
+  measure: the target for banks' current-account balances at the Bank of Japan, lower end
+  period: January 2004
+  population: Japan
+- key: cite_boj_target-2004-high
+  value: 35
+  fmt: '{:.0f} trillion yen'
+  unit: trillions of yen
+  as_of: '2004-01-20'
+  source: Bank of Japan, Change in the Guideline for Money Market Operations, 20 January 2004
+  locator: the decision
+  url: https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2004/k040120.htm
+  measure: the target for banks' current-account balances at the Bank of Japan, upper end
+  period: January 2004
+  population: Japan
+- key: cite_boj_base-2014-actual
+  value: 275.874
+  fmt: '{:.0f} trillion yen'
+  unit: trillions of yen (2,758,740 hundred million yen)
+  as_of: '2026-10-11'
+  source: Bank of Japan, Monetary Base, long series (mblong.xlsx), sheet 'Amounts Outstanding at End of Period'
+  locator: end of December 2014
+  url: https://www.boj.or.jp/en/statistics/boj/other/mb/mblong.xlsx
+  measure: Japan's monetary base, amount outstanding
+  period: end of 2014
+  population: Japan
+- key: cite_svb_uninsured-bank
+  value: 88
+  fmt: '{:.0f}%'
+  unit: '% of deposits uninsured'
+  as_of: '2023-03-27'
+  source: FDIC, Chairman Gruenberg's testimony to the Senate Banking Committee, 27 March 2023
+  locator: the section on Silicon Valley Bank
+  url: https://www.fdic.gov/news/speeches/2023/spmar2723.html
+  measure: share of deposits uninsured, as the bank reported them
+  period: end of 2022
+  population: Silicon Valley Bank (the bank)
+- key: cite_bruno-easterly_crisis-line
+  value: 40
+  fmt: '{:.0f}%'
+  unit: percent a year, the threshold of a high-inflation crisis
+  as_of: '1995-08-01'
+  source: Bruno and Easterly, 'Inflation Crises and Long-Run Growth', NBER w5209
+  locator: abstract (PDF p. 2)
+  url: https://www.nber.org/system/files/working_papers/w5209/w5209.pdf
+  measure: the inflation rate above which Bruno and Easterly date a crisis
+  period: their sample
+  population: their countries
+- key: cite_z1_hh-treasuries-2021
+  value: 0.5995
+  fmt: '${:.2f} trillion'
+  unit: trillions of dollars, market value
+  as_of: '2023-03-09'
+  source: Federal Reserve, Financial Accounts of the United States (Z.1), table L.210, release of 9 March 2023
+  locator: line 13, households and nonprofit organizations, Treasury securities, end of 2021 (599.5 billion)
+  url: https://www.federalreserve.gov/releases/z1/20230309/html/l210.htm
+  measure: US households' and nonprofits' holdings of Treasury securities
+  period: end of 2021
+  population: the United States
+- key: cite_z1_hh-treasuries-2022
+  value: 1.5871
+  fmt: '${:.2f} trillion'
+  unit: trillions of dollars, market value
+  as_of: '2023-03-09'
+  source: Federal Reserve, Financial Accounts of the United States (Z.1), table L.210, release of 9 March 2023
+  locator: line 13, households and nonprofit organizations, Treasury securities, end of 2022 (1,587.1 billion)
+  url: https://www.federalreserve.gov/releases/z1/20230309/html/l210.htm
+  measure: US households' and nonprofits' holdings of Treasury securities
+  period: end of 2022
+  population: the United States
+- key: cite_argentina_aug-2026
+  value: 1.7
+  fmt: '{:.1f}%'
+  unit: '% in the month'
+  as_of: '2026-10-11'
+  source: INDEC, consumer prices by division (serie_ipc_divisiones.csv), national level
+  locator: August 2026
+  url: https://www.indec.gob.ar/ftp/cuadros/economia/serie_ipc_divisiones.csv
+  measure: the monthly rise in consumer prices
+  period: August 2026
+  population: Argentina
+- key: cite_argentina_yoy-aug-2026
+  value: 33.5
+  fmt: '{:.1f}%'
+  unit: '% over twelve months'
+  as_of: '2026-10-11'
+  source: INDEC, consumer prices by division (serie_ipc_divisiones.csv), national level
+  locator: August 2026
+  url: https://www.indec.gob.ar/ftp/cuadros/economia/serie_ipc_divisiones.csv
+  measure: the rise in consumer prices over twelve months
+  period: September 2025 to August 2026
+  population: Argentina
+- key: cite_boe2012_top-households
+  value: 5
+  fmt: '{:.0f}%'
+  unit: percent
+  as_of: '2012-07-12'
+  source: Bank of England, 'The Distributional Effects of Asset Purchases' (July 2012)
+  locator: p. 1
+  url: https://www.bankofengland.co.uk/-/media/boe/files/news/2012/july/the-distributional-effects-of-asset-purchases-paper.pdf
+  measure: the share of households at the top of the distribution
+  period: '2012'
+  population: UK households, the richest
+- key: cite_boe2012_top-share
+  value: 40
+  fmt: '{:.0f}%'
+  unit: percent
+  as_of: '2012-07-12'
+  source: Bank of England, 'The Distributional Effects of Asset Purchases' (July 2012)
+  locator: p. 1
+  url: https://www.bankofengland.co.uk/-/media/boe/files/news/2012/july/the-distributional-effects-of-asset-purchases-paper.pdf
+  measure: the share of households' financial wealth outside pension funds they hold
+  period: '2012'
+  population: UK households

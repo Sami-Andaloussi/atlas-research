@@ -1,0 +1,75 @@
+{
+  "card": "C37-cs-f-money-output-prices",
+  "card_hash": "5ebd3d8958a71b44a3d7a6f0f72ec4496025e4d6dab5b085ed9a830bd17b6e3d",
+  "run_at": "2026-10-21T16:15:19+00:00",
+  "result": {
+    "spans": {
+      "1959-2025": {
+        "from": "1959Q4",
+        "to": "2025Q4",
+        "money": 6.54,
+        "real_output": 2.95,
+        "prices": 3.24,
+        "velocity": -0.35
+      },
+      "1959-1969": {
+        "from": "1959Q4",
+        "to": "1969Q4",
+        "money": 6.78,
+        "real_output": 4.34,
+        "prices": 2.41,
+        "velocity": -0.03
+      },
+      "1969-1979": {
+        "from": "1969Q4",
+        "to": "1979Q4",
+        "money": 9.18,
+        "real_output": 3.21,
+        "prices": 6.44,
+        "velocity": 0.46
+      },
+      "1979-1989": {
+        "from": "1979Q4",
+        "to": "1989Q4",
+        "money": 7.59,
+        "real_output": 3.06,
+        "prices": 4.41,
+        "velocity": -0.13
+      },
+      "1989-1999": {
+        "from": "1989Q4",
+        "to": "1999Q4",
+        "money": 3.87,
+        "real_output": 3.3,
+        "prices": 2.14,
+        "velocity": 1.57
+      },
+      "1999-2009": {
+        "from": "1999Q4",
+        "to": "2009Q4",
+        "money": 6.12,
+        "real_output": 1.77,
+        "prices": 2.15,
+        "velocity": -2.2
+      },
+      "2009-2019": {
+        "from": "2009Q4",
+        "to": "2019Q4",
+        "money": 5.86,
+        "real_output": 2.4,
+        "prices": 1.63,
+        "velocity": -1.82
+      },
+      "2019-2025": {
+        "from": "2019Q4",
+        "to": "2025Q4",
+        "money": 6.3,
+        "real_output": 2.32,
+        "prices": 3.69,
+        "velocity": -0.28
+      }
+    },
+    "quarters_checked_against_gdp": 270,
+    "latest_full_year": 2025
+  }
+}

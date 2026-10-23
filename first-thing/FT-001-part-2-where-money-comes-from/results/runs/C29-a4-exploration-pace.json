@@ -1,0 +1,221 @@
+{
+ "card": "C29-a4-exploration-pace",
+ "card_hash": "dda05d4298073e11d88c53d4decab5aace81ff10ec65f08a5c25a8f398bf3dba",
+ "run_at": "2026-10-22T11:24:43+00:00",
+ "result": {
+  "windows": 635,
+  "moneys": 155,
+  "S1_band_le12": {
+   "beta": 0.23218546371183138,
+   "lo": 0.12792391864269492,
+   "hi": 0.33644700878096784,
+   "gamma": -0.171904357808491,
+   "gamma_lo": -0.3168439191352469,
+   "gamma_hi": -0.02696479648173508,
+   "windows": 309,
+   "moneys": 131
+  },
+  "S2_band_12_20": {
+   "beta": 0.43947726671830456,
+   "lo": 0.10043226686432277,
+   "hi": 0.7785222665722864,
+   "gamma": -0.26314071729483446,
+   "gamma_lo": -0.5425456091825239,
+   "gamma_hi": 0.016264174592855007,
+   "windows": 203,
+   "moneys": 116
+  },
+  "S3_band_20_30": {
+   "beta": 0.6814172249403678,
+   "lo": 0.22705617567984376,
+   "hi": 1.135778274200892,
+   "gamma": -0.5450903157095017,
+   "gamma_lo": -1.0317329371097759,
+   "gamma_hi": -0.05844769430922764,
+   "windows": 78,
+   "moneys": 57
+  },
+  "S4_band_30_50": {
+   "beta": 1.2619912794322865,
+   "lo": 0.709067801075311,
+   "hi": 1.814914757789262,
+   "gamma": -1.756018245738634,
+   "gamma_lo": -2.861968749008528,
+   "gamma_hi": -0.6500677424687398,
+   "windows": 31,
+   "moneys": 21
+  },
+  "S5_band_gt50": {
+   "beta": 1.009287317048683,
+   "lo": 0.7872274798627875,
+   "hi": 1.2313471542345784,
+   "gamma": -2.4452945640216397,
+   "gamma_lo": -6.565498923148346,
+   "gamma_hi": 1.6749097951050667,
+   "windows": 14,
+   "moneys": 10
+  },
+  "S6_above_line_without_gt30": {
+   "windows_above": 281,
+   "windows_below": 309,
+   "beta_below": 0.2403010500636851,
+   "beta_below_lo": 0.13495625767572345,
+   "beta_below_hi": 0.34564584245164676,
+   "verdict_below": "partly (between zero and one)",
+   "beta_above": 0.6248990935218652,
+   "beta_above_lo": 0.4773334990831954,
+   "beta_above_hi": 0.772464687960535,
+   "verdict_above": "partly (between zero and one)",
+   "theta": 0.38459804345818016,
+   "p_theta": 2.3463231854525117e-05,
+   "separates": true
+  },
+  "S7_from_2000": {
+   "windows_above": 134,
+   "windows_below": 155,
+   "beta_below": 0.25625643418297644,
+   "beta_below_lo": 0.0659745768578027,
+   "beta_below_hi": 0.44653829150815016,
+   "verdict_below": "partly (between zero and one)",
+   "beta_above": 0.657035667075067,
+   "beta_above_lo": 0.46170701329182606,
+   "beta_above_hi": 0.8523643208583079,
+   "verdict_above": "partly (between zero and one)",
+   "theta": 0.4007792328920905,
+   "p_theta": 0.0003096450713394604,
+   "separates": true
+  },
+  "S8_outside_1970_2000": {
+   "pooled": {
+    "beta": 0.5159224939421954,
+    "lo": 0.3816093527779927,
+    "hi": 0.650235635106398,
+    "gamma": -0.2399150511387017,
+    "gamma_lo": -0.4667883349627593,
+    "gamma_hi": -0.013041767314644098,
+    "windows": 330,
+    "moneys": 154
+   },
+   "line": {
+    "windows_above": 145,
+    "windows_below": 185,
+    "beta_below": 0.22680970965416752,
+    "beta_below_lo": 0.0739853731630479,
+    "beta_below_hi": 0.3796340461452872,
+    "verdict_below": "partly (between zero and one)",
+    "beta_above": 0.7042914264667706,
+    "beta_above_lo": 0.5171377696983676,
+    "beta_above_hi": 0.8914450832351736,
+    "verdict_above": "partly (between zero and one)",
+    "theta": 0.4774817168126031,
+    "p_theta": 2.4859202964857185e-06,
+    "separates": true
+   }
+  },
+  "S9_held_out_1999": {
+   "C22_grid_held_out": {
+    "beta": 0.5572206598110825,
+    "lo": 0.3984375008464507,
+    "hi": 0.7160038187757143,
+    "verdict": "partly (between zero and one)",
+    "test_windows": 291
+   },
+   "C02_grid_held_out_1990": {
+    "beta": 0.9357492241362706,
+    "lo": 0.828647265351039,
+    "hi": 1.0428511829215021,
+    "verdict": "one for one",
+    "test_windows": 411
+   },
+   "C22_folds_differing": 2
+  },
+  "S10_without_unions": {
+   "line": {
+    "windows_above": 301,
+    "windows_below": 247,
+    "beta_below": 0.28560916671171604,
+    "beta_below_lo": 0.1522465919175878,
+    "beta_below_hi": 0.41897174150584426,
+    "verdict_below": "partly (between zero and one)",
+    "beta_above": 1.0645753548803716,
+    "beta_above_lo": 1.0055962864065573,
+    "beta_above_hi": 1.1235544233541859,
+    "verdict_above": "partly (above one)",
+    "theta": 0.7789661881686555,
+    "p_theta": 2.266619898410448e-26,
+    "separates": true
+   },
+   "moneys_left": 135
+  },
+  "S11_cluster_by_union": {
+   "windows_above": 326,
+   "windows_below": 309,
+   "beta_below": 0.2530720373086581,
+   "beta_below_lo": 0.13164507987704951,
+   "beta_below_hi": 0.3744989947402667,
+   "beta_above": 1.0663535111384297,
+   "beta_above_lo": 1.0078787873899575,
+   "beta_above_hi": 1.1248282348869019,
+   "theta": 0.8132814738297716,
+   "p_theta": 5.400417351989955e-33
+  },
+  "S12_without_shrinking_base": {
+   "line": {
+    "windows_above": 326,
+    "windows_below": 301,
+    "beta_below": 0.35745019686626217,
+    "beta_below_lo": 0.2305641582161063,
+    "beta_below_hi": 0.484336235516418,
+    "verdict_below": "partly (between zero and one)",
+    "beta_above": 1.0661526193387922,
+    "beta_above_lo": 1.007677831282193,
+    "beta_above_hi": 1.1246274073953915,
+    "verdict_above": "partly (above one)",
+    "theta": 0.70870242247253,
+    "p_theta": 1.0799267262450845e-23,
+    "separates": true
+   }
+  },
+  "S13_g_from_world_bank": {
+   "pooled": {
+    "beta": 0.9995124985073196,
+    "lo": 0.9401816746304902,
+    "hi": 1.0588433223841491,
+    "gamma": -0.8061282092066256,
+    "gamma_lo": -1.0247111609038368,
+    "gamma_hi": -0.5875452575094146,
+    "windows": 635,
+    "moneys": 155
+   },
+   "line": {
+    "windows_above": 326,
+    "windows_below": 309,
+    "beta_below": 0.25312870105568763,
+    "beta_below_lo": 0.14170383492520722,
+    "beta_below_hi": 0.36455356718616805,
+    "verdict_below": "partly (between zero and one)",
+    "beta_above": 1.0649897448853531,
+    "beta_above_lo": 1.006801541651743,
+    "beta_above_hi": 1.1231779481189632,
+    "verdict_above": "partly (above one)",
+    "theta": 0.8118610438296654,
+    "p_theta": 3.756861947092564e-38,
+    "separates": true
+   },
+   "windows_with_world_bank_g": 625
+  },
+  "S14_levels": {
+   "median_pi_over_mu_above": 0.5717410758939845,
+   "ratio_of_medians_below": 0.4073144542620215,
+   "share_above_within_3_or_more": 0.22699386503067484,
+   "median_gap_above": 7.29885
+  },
+  "S15_null": {
+   "draws": 1000,
+   "share_separates": 0.046,
+   "share_theta_at_least_observed": 0.0,
+   "observed_theta": 0.8132814738297716,
+   "observed_separates": true
+  }
+ }
+}

@@ -1,0 +1,45 @@
+id: C37-cs-f-money-output-prices
+label: measurement
+title: 'CS-F — money, real output and prices in the United States since 1959, as an identity (M2, real GDP, the GDP
+  deflator; velocity the residual)'
+kind: extension
+seen:
+- 'Fixed in place after the card check (an internal note), before any run, and
+  after the second (the tolerance; Britain''s reason): the second check tested the identity''s tolerance as booleans only.'
+- 'Seen before this card (P12): the reconnaissance''s explorations of the base and M2 after 2008 and 2020 on frozen FRED;
+  no growth of real GDP or the deflator by decade was computed before this card.'
+question: 'Part 2''s map v4 (K6; P2-F2, an illustration): how did money (M2), real output and prices grow side by side in
+  the United States since 1959, over the whole span and decade by decade, with velocity as the residual? An identity: it
+  attributes nothing and carries no clause.'
+method: '(1) Series: FRED M2SL (monthly, averaged to quarters), GDPC1 (real GDP, quarterly), GDPDEF (the GDP deflator,
+  quarterly), vintage 2026-09-30; nominal GDP = GDPC1 x GDPDEF / 100; velocity = nominal GDP / M2. (2) Growth: the average
+  yearly log growth (x 100) of each from the fourth quarter of the start year to the fourth quarter of the end year, for
+  1959-latest full year and for each decade (1959-69, 1969-79, ..., 2019 to the latest fourth quarter). (3) The identity:
+  money growth = real output growth + price growth - velocity growth, exact in logs; printed for each span with the four
+  terms. No variant: the map''s Britain beside (the Bank of England''s millennium workbook) is not used: its real output and
+  deflator columns were not identified within the run, so no British series stands on the same footing (a departure from
+  the map''s §9, said; a licence alone would not drop it, the project rules).'
+parameters:
+  series: {money: fred/M2SL, real_output: fred/GDPC1, prices: fred/GDPDEF}
+  vintage: '2026-09-30'
+  spans: decades from 1959Q4
+matters:
+  cs_f: 'none: an identity cannot fail; it carries no clause'
+data:
+- dataset: fred/M2SL
+  vintage: '2026-09-30'
+- dataset: fred/GDPC1
+  vintage: '2026-09-30'
+- dataset: fred/GDPDEF
+  vintage: '2026-09-30'
+- dataset: fred/GDP
+  vintage: '2026-09-30'
+period: 1959 to the latest full year
+sample: 'The whole span of the three series, by rule.'
+out_of_sample: 'None: an identity carries no claim to check.'
+failure: 'The card fails if a series cannot be read over the span, or if nominal GDP computed here differs from FRED''s
+  GDP (frozen 2026-09-30) in any quarter by more than the inputs'' rounding, GDPC1 x 0.0005 / 100 + GDPDEF x 0.0005 / 100
+  + 0.0005 billion (GDPC1 and GDP to 0.001 billion, the deflator to three decimals) (then a series is mis-read).'
+not: 'It does not say that money caused output or prices, nor that money "went into" either; "velocity" is the residual,
+  named so.'
+created: '2026-10-10'
