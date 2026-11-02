@@ -6,7 +6,7 @@
 
 Six layers turn public data and economic theory into reports that are themselves data.
 Facts (L1) and knowledge (L2, L3) feed an analysis stored as dated choices (L4), whose scenarios are scored (L5) and whose outputs are assembled from stored rows only (L6).
-Two loops keep it alive: a situation the cards do not cover, and a scenario that fails, both go back to the workshop that writes the cards.
+Two feedback loops send work back to the workshop that writes the cards: situations no card covers, and scenarios that fail.
 
 ## The system in one drawing
 
@@ -54,8 +54,9 @@ Take US inflation on a given date, the subject the build starts with.
 5. **Lenses.** The card says which lenses of the theory map read this situation and which values
    each reads: a sticky-price reading, a cost-push reading, a fiscal reading
    ([L2](L2-theory-map.md)). They are kept side by side.
-6. **Scenarios.** The card's conditional scenarios (if core PCE's three-month pace runs half a point
-   above its trend, core PCE is higher six months on, probability 0.6, unless...) are instantiated with their triggers,
+6. **Scenarios.** The card's conditional scenarios (if core PCE's last-3-month pace runs more than
+   half a point above its 12-month rate, core PCE inflation is higher six months on, probability 0.6,
+   invalidated if the unemployment rate rises half a point first) are instantiated with their triggers,
    invalidations, outcome definitions and targeted releases, and registered by the run
    ([L5](L5-scenarios-score.md)).
 7. **Report.** The page is assembled from stored rows and pre-written text bricks only. Every
@@ -78,7 +79,7 @@ Take US inflation on a given date, the subject the build starts with.
 | Scenario registry | L5 | Every registered scenario set, its judgement date and, later, its states. Append-only. |
 | Workshop queue | L3 | Uncovered situations and failed scenarios waiting for a card to be written or revised. |
 
-## Where to find
+## Where to find what
 
 | Topic | Start here |
 |---|---|

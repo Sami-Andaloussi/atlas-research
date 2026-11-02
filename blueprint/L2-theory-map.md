@@ -22,6 +22,14 @@ rival positions next to it.
 
 ## The 23 families
 
+**The breadth is a long-run map; the depth follows the build.** Many families serve subjects far
+from the first economies, and the families the first subject needs are deepened first: for US
+inflation and rates, labour-market tightness (vacancies against unemployment), relative-price and
+supply shocks, money growth, de-anchoring expectations, and the term premium. The Swiss and
+euro-area cards will need lenses the map does not yet hold, such as the franc as a safe haven and
+exchange-rate intervention. The workshop adds each, with every field, before the cards that cite it
+are written ([build sequence](build-sequence.md)).
+
 Most lenses are rivals. Some are meant to be used together: the three accounting lenses are
 identities that must hold at once, and crisis mechanisms often fire together.
 
@@ -61,14 +69,6 @@ differentials (interest parity, purchasing-power parity).
 the map is itself a choice; publishing the counts lets a reader see where the map is thin. A
 question is not confined to one family: a question about the Fed can also draw on the business
 cycle, inflation and fiscal lenses.
-
-**The breadth is a long-run map; the depth follows the build.** Many families serve subjects far
-from the first economies, and the families the first subject needs are deepened first: for US
-inflation and rates, labour-market tightness (vacancies against unemployment), relative-price and
-supply shocks, money growth, de-anchoring expectations, and the term premium. The Swiss and
-euro-area cards will need lenses the map does not yet hold, such as the franc as a safe haven and
-exchange-rate intervention. The workshop adds each, with every field, before the cards that cite it
-are written ([build sequence](build-sequence.md)).
 
 ## What a family declares
 
@@ -143,13 +143,13 @@ date ([L5](L5-scenarios-score.md#keeping-score)).
 - **Inputs:** the policy rate less expected or core inflation; published estimates of the neutral
   rate with their bands; long real forward rates from inflation-indexed bonds; the output gap.
 - **Why it reads an estimate, not a constant:** from 2009 to 2016 the US real policy rate, measured
-  with core PCE, stayed below zero while core inflation stayed under 2 % in almost every month. A
-  constant 2 % neutral rate reads that as loose policy; a collapsed neutral rate reads it as
+  with core PCE, stayed below zero while core inflation stayed under 2% in almost every month. A
+  constant 2% neutral rate reads that as loose policy; a collapsed neutral rate reads it as
   roughly neutral, which is what inflation suggests.
 - **Hard case:** 2023–2024. The real policy rate stood well above published neutral-rate estimates,
   a clearly restrictive reading, yet US growth stayed solid. Either the stance was less restrictive
   than read, or the estimates were too low; the lens alone cannot tell which.
-- **Baseline:** the real policy rate against a constant 2 % neutral rate.
+- **Baseline:** the real policy rate against a constant 2% neutral rate.
 - **Disconfirming outcomes:** a restrictive reading persistently followed by demand and inflation
   stronger than the benchmark forecast as of the reading date, or the reverse, across the estimation
   methods.

@@ -42,10 +42,10 @@ never edit it.
 | Housing | Permits, starts, prices, mortgage rates | Real-estate prices, mortgage rates | House prices |
 
 **Policy frameworks are facts with dates.** A target, its measure, its framework and even the
-meaning of "the policy rate" change. The Fed adopted an explicit 2 % target in January 2012 and
-revised its framework statement in 2020 and again in 2025; the ECB moved to a symmetric 2 % target
+meaning of "the policy rate" change. The Fed adopted an explicit 2% target in January 2012 and
+revised its framework statement in 2020 and again in 2025; the ECB moved to a symmetric 2% target
 in 2021 and reviewed its strategy in 2025, and steers through its deposit facility rate; the SNB
-equates price stability with CPI inflation below 2 %, deflation excluded, and has set an SNB policy
+equates price stability with CPI inflation below 2%, deflation excluded, and has set an SNB policy
 rate only since June 2019, after targeting a range for three-month Libor. A card that compares
 inflation with "the target", or reads "the policy rate", reads the definition in force on the run's
 date; for the Fed's target range, the card states whether it reads the midpoint or the effective
@@ -155,9 +155,9 @@ history starts at Atlas's first capture; before it, they are final data only, an
 ## Worked example
 
 US real GDP growth for the second quarter of 2024 was first released by the BEA on 25 July 2024 at
-08:30 New York time, at 2.8 % annualised; the second estimate on 29 August put it at 3.0 %, and the
-third on 26 September kept 3.0 %. Atlas would store three vintages of the same period, each with its
+08:30 New York time, at 2.8% annualised; the second estimate on 29 August put it at 3.0%, and the
+third on 26 September kept 3.0%. Atlas would store three vintages of the same period, each with its
 release stage, its four instants and its anchors into the BEA release file. A read as of 1 August
-2024 returns 2.8 %; a read as of 1 October returns 3.0 %; a read of the *first release* as of
-1 October still returns 2.8 %. A scenario written in July about that quarter is judged on the
+2024 returns 2.8%; a read as of 1 October returns 3.0%; a read of the *first release* as of
+1 October still returns 2.8%. A scenario written in July about that quarter is judged on the
 vintage it targeted, not on whichever came last.

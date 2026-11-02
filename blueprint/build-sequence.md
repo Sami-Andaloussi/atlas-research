@@ -6,7 +6,7 @@
 
 Atlas is built along one subject first: US inflation, from the source to its first registered scenario, before any breadth.
 Then depth on the United States, then Switzerland and the euro area by adding sources, lenses and cards, never by changing the engine, then the loop that turns real gaps into cards.
-Every phase ends on a gate and an isolated review by someone who built none of it.
+Each phase ends on a test it must pass, checked by a reviewer who did not build it.
 
 ## The phases
 
@@ -27,7 +27,7 @@ flowchart LR
     p7 --> p8
 ```
 
-| Phase | What it builds | Layers | Leave when |
+| Phase | What it builds | Layers | Done when |
 |---|---|---|---|
 | **0 · The frame** | The rules of the build, the [data contracts](data-contracts.md), access to the sources, the model behind the menus | All | Every source of the first economy has answered a real download; for Switzerland and the euro area, the same base series have been downloaded from their official sources, or the economy waits; one call to the model has returned a structured choice, with its latency and cost measured. |
 | **1 · US facts** | The series catalogue, capture, anchoring, vintages, the as-of read, capture from the release calendar | [L1](L1-facts.md) | Every value re-reads from its bytes; the as-of read cannot see a planted later vintage; capture runs from the calendar. |
@@ -52,7 +52,7 @@ flowchart LR
 - **Registry with the analysis, score before depth.** A scenario is registered by the run that
   produces it, and a scenario that is never judged teaches nothing. The registry runs from the first
   live report, because the record only accumulates forward
-  ([principle 8](principles.md#8-analysis-is-clean-from-its-production-date)).
+  ([principle 8](principles.md#8-analysis-counts-from-the-day-it-was-made)).
 - **Breadth by cards, as a test.** Phase 7 is the proof of [principle 5](principles.md#5-knowledge-in-cards-not-in-code):
   if adding an economy needs a change to the engine, the design has failed somewhere, and the
   phase says where.

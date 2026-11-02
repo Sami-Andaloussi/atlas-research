@@ -1,13 +1,13 @@
-# First Thing — studies: methods and proof
+# First Thing: methods and proof
 
-From time to time, First Thing publishes a short study in economics on
+First Thing publishes short studies in economics on
 [first-thing-research.com](https://first-thing-research.com): a question readers ask, answered from what economics
 already knows, from history's cases and from analyses of our own. The study itself, with its argument, its charts
-and its calculators, lives on the site. This folder holds what stands behind it, for the sceptic and the specialist.
+and its calculators, lives on the site. This folder holds what stands behind it, for the sceptic and the specialist. First Thing is my project; the studies use the publication's "we".
 
 The studies follow the discipline set out in [Atlas Research](../README.md): every number pinned to its source
-and its date, every protocol fixed before its result, every claim typed by the evidence behind it. They are
-built with their own tools, described below.
+and its date, every protocol fixed before its result, every claim labelled by the kind of evidence behind it. Their code is
+in each study's `code/` folder.
 
 ## What each study's folder holds
 
@@ -18,7 +18,7 @@ built with their own tools, described below.
   with sources), *measured* (an analysis of ours) or *judgement* (our reading, said as ours). Each number names the
   script that computed it or the source it is cited from.
 - **`cards/`**, the protocol of each analysis of ours, committed before any result on its data existed. A result
-  in `results/runs/` names the hash of the card it ran under. Cards are published as they were locked, apart from a private path replaced and the wording of the project's internal process removed or neutralised, with no change to any rule, number or source; `REDACTIONS.md` lists the hash of every card and protocol as first published and as it stands now.
+  in `results/runs/` names the hash of the card it ran under. Each card is published as it was locked, except that private file paths and internal notes were removed; no rule, number or source changed. `REDACTIONS.md` gives the hash of every card and protocol before and after.
 - **`code/`**, the scripts that compute every number and draw every figure.
 - **`data/`**, a manifest for each dataset: where it was fetched, when, and its hash. Fetched data is not
   republished. A dataset we built ships its values only when they are ours to share, such as our own coding of
@@ -34,8 +34,8 @@ built with their own tools, described below.
 ## How far a study can be reproduced
 
 Each study's README states its level. For the first studies it is **read the code**: every number and every source
-can be traced, but the scripts call a small shared toolkit that is not in this repository yet, so they cannot be
-rerun from a folder alone.
+can be traced to its script or its source, but the scripts rely on a shared toolkit that is not published, so they
+can be read and checked, not rerun from a folder alone.
 
 ## Corrections
 
@@ -45,11 +45,12 @@ the earlier version stays in this repository's history.
 ## The studies
 
 <!-- index:start -->
-| Study | Title |
-|---|---|
-| **FT-001** | *published part by part* |
-| part 1 — [FT-001-part-1-what-gives-a-money-its-value](FT-001-part-1-what-gives-a-money-its-value/) | What gives a money its value? — methods and proof |
-| part 1 — [FT-001-part-1-what-trust-rests-on](FT-001-part-1-what-trust-rests-on/) | Does a money lose its value when its backing goes? — methods and proof — *superseded by [FT-001-part-1-what-gives-a-money-its-value](FT-001-part-1-what-gives-a-money-its-value/)* |
-| part 2 — [FT-001-part-2-where-money-comes-from](FT-001-part-2-where-money-comes-from/) | Where money comes from — methods and proof |
-| part 2 — [FT-001-part-2-where-printed-money-goes](FT-001-part-2-where-printed-money-goes/) | Does printing money really cause inflation? — methods and proof — *superseded by [FT-001-part-2-where-money-comes-from](FT-001-part-2-where-money-comes-from/)* |
+| Study | Part | Title |
+|---|---|---|
+| **FT-001** · *The life of a money* | 1 | [What gives a money its value?](FT-001-part-1-what-gives-a-money-its-value/) |
+| | 2 | [Where money comes from](FT-001-part-2-where-money-comes-from/) |
+
+Earlier versions, kept for the record with their corrections:
+[Does a money lose its value when its backing goes?](FT-001-part-1-what-trust-rests-on/) (part 1) and
+[Does printing money really cause inflation?](FT-001-part-2-where-printed-money-goes/) (part 2).
 <!-- index:end -->

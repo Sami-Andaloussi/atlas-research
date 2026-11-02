@@ -87,7 +87,7 @@ with every analogue.
 ## Keeping score
 
 - **Live only.** Only scenarios produced on their own date count. There is no backtest of reasoning
-  ([principle 8](principles.md#8-analysis-is-clean-from-its-production-date)).
+  ([principle 8](principles.md#8-analysis-counts-from-the-day-it-was-made)).
 - **Against a benchmark for the same event.** When a branch's trigger fires, code computes and stores
   a benchmark probability for the same outcome, under the same condition, as of that instant: from a
   simple statistical model of the series (autoregressive, or no change), and from the Survey of

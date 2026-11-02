@@ -33,8 +33,8 @@ fingerprint.
 | Situations | Code conditions on quantities, combined with *all of* / *one of*, each with its claim kind | "PCE or core PCE more than half a point above the target" |
 | Calibrated ranges | For each quantity, the range seen in its calibration period | Core PCE three-month pace between its 1st and 99th percentiles |
 | Lenses | Lenses of the theory map, pinned by version, that read the subject. For each: the quantities it reads and why; its reading states, each a condition on those quantities with the expectation it implies; and its baseline's reading, computed the same way | Rule-based stance reads the policy rate against a family of rules: restrictive, neutral or loose, each implying the direction of demand and inflation over four to eight quarters |
-| Text bricks | Pre-written sentences for each situation or lens reading, with holes for numbers and two or three variants | "Total ({pce} %) or core ({pce_core} %): PCE inflation exceeds 2 % by more than half a point on at least one measure." |
-| Scenario templates | Sets of conditional branches: if a trigger fires, an outcome follows by the horizon, unless an invalidation comes first; each with its lens, its probability, the vintages it reads, and an observable that separates its lens from the rivals | If core PCE's three-month pace runs half a point above its trend, core PCE is higher six months on, probability 0.6 (cost-push branch: margins rising faster than unit labour costs) |
+| Text bricks | Pre-written sentences for each situation or lens reading, with holes for numbers and two or three variants | "Total ({pce} %) or core ({pce_core} %): PCE inflation exceeds 2% by more than half a point on at least one measure." |
+| Scenario templates | Sets of conditional branches: if a trigger fires, an outcome follows by the horizon, unless an invalidation comes first; each with its lens, its probability, the vintages it reads, and an observable that separates its lens from the rivals | If core PCE's last-3-month pace runs more than half a point above its 12-month rate, core PCE inflation is higher six months on, probability 0.6 (cost-push branch: margins rising faster than unit labour costs) |
 | Menus | The judgements left to a model or an analyst: options, each with the conditions under which it is offered and those that must confirm it afterwards | How a central-bank statement leans, classified against a fixed codebook |
 | Analogue specification | Where the card allows historical analogues: the state vector, its scaling, the distance and the exclusion window | Core pace, unemployment gap and expectations, standardised, ±12 months excluded |
 
@@ -51,11 +51,11 @@ improvisation.
 
 ## Rules every card follows
 
-- **A justified threshold.** Each non-trivial threshold has one line: its source (the FOMC's 2 %
+- **A justified threshold.** Each non-trivial threshold has one line: its source (the FOMC's 2%
   target on headline PCE, stated in January 2012), or a calibration ("10th and 90th percentiles of
   the series over 2010–2019"), or the admission "conventional, unsourced".
 - **True at every date.** Each brick carries the interval of dates in which it may be printed, and
-  the renderer checks it. "2 %, the FOMC's explicit target since January 2012" may only be printed
+  the renderer checks it. "2%, the FOMC's explicit target since January 2012" may only be printed
   from that month on.
 - **A rounded number never contradicts its word.** A situation that a text will state is evaluated
   on the value as it will be displayed, so "more than half a point above" never sits next to a
@@ -111,7 +111,7 @@ flowchart LR
    data exist (most Swiss history), the test runs on them and says so. A writer who chose a trigger
    after looking at both samples says so, and the card waits for a clean test. Because writer and reviewer both know how history turned out, a historical test can only
    reject a card; the test that counts is the live record that starts at acceptance
-   ([principle 8](principles.md#8-analysis-is-clean-from-its-production-date)).
+   ([principle 8](principles.md#8-analysis-counts-from-the-day-it-was-made)).
 6. **Versioning.** The accepted card is fingerprinted. Reports pin the version they used.
 
 ## Interfaces
