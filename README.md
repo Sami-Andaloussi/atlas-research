@@ -105,5 +105,5 @@ The other six, with why each matters and where it shows, are in the [design prin
 
 ## Author
 
-[Sami Andaloussi](https://github.com/Sami-Andaloussi), second-year economics student at HEC Lausanne.
+[Sami Andaloussi](https://github.com/Sami-Andaloussi).
 Corrections are welcome, especially a missing lens in the theory map.

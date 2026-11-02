@@ -45,11 +45,12 @@ the earlier version stays in this repository's history.
 ## The studies
 
 <!-- index:start -->
-| Study | Title |
-|---|---|
-| **FT-001** | *published part by part* |
-| part 1 — [FT-001-part-1-what-gives-a-money-its-value](FT-001-part-1-what-gives-a-money-its-value/) | What gives a money its value? — methods and proof |
-| part 1 — [FT-001-part-1-what-trust-rests-on](FT-001-part-1-what-trust-rests-on/) | Does a money lose its value when its backing goes? — methods and proof — *superseded by [FT-001-part-1-what-gives-a-money-its-value](FT-001-part-1-what-gives-a-money-its-value/)* |
-| part 2 — [FT-001-part-2-where-money-comes-from](FT-001-part-2-where-money-comes-from/) | Where money comes from — methods and proof |
-| part 2 — [FT-001-part-2-where-printed-money-goes](FT-001-part-2-where-printed-money-goes/) | Does printing money really cause inflation? — methods and proof — *superseded by [FT-001-part-2-where-money-comes-from](FT-001-part-2-where-money-comes-from/)* |
+| Study | Part | Title |
+|---|---|---|
+| **FT-001** · *The life of a money* | 1 | [What gives a money its value?](FT-001-part-1-what-gives-a-money-its-value/) |
+| | 2 | [Where money comes from](FT-001-part-2-where-money-comes-from/) |
+
+Earlier versions, kept for the record with their corrections:
+[Does a money lose its value when its backing goes?](FT-001-part-1-what-trust-rests-on/) (part 1) and
+[Does printing money really cause inflation?](FT-001-part-2-where-printed-money-goes/) (part 2).
 <!-- index:end -->
