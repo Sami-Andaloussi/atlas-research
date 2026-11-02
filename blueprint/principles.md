@@ -10,16 +10,16 @@ They answer four questions: what counts as a fact (1–2), what counts as analys
 
 | # | Principle | The rule in one sentence |
 |---|---|---|
-| 1 | [Exact or absent](#1-exact-or-absent) | A value traces back to its bytes, or it is refused; an absence is typed, never a zero. |
-| 2 | [What was known, when](#2-what-was-known-when) | Every read names an instant and cannot see past it; a revision adds a vintage and erases nothing. |
-| 3 | [No free text](#3-no-free-text) | What can be scored is a structured choice; what explains is pre-written text attached to it. |
-| 4 | [Rule, then pick, then abstain](#4-rule-then-pick-then-abstain) | Code decides first; a language model or an analyst only picks from a filtered menu; otherwise the engine says "not covered". |
-| 5 | [Knowledge in cards, not in code](#5-knowledge-in-cards-not-in-code) | Thresholds, texts, scenarios and menus live in versioned cards; the engine stays generic. |
+| 1 | [Exact or absent](#1-exact-or-absent) | A value traces back to its source document, or it is refused; a missing value is recorded with its reason, never as a zero. |
+| 2 | [What was known, when](#2-what-was-known-when) | Every query names a date and cannot see past it; a revision adds a vintage and erases nothing. |
+| 3 | [No free text](#3-no-free-text) | What can be scored is a structured choice; what explains is a pre-written sentence attached to it. |
+| 4 | [Rule, then pick, then abstain](#4-rule-then-pick-then-abstain) | Code decides first; a language model or an analyst only picks from a short list of pre-written options; otherwise the engine says "not covered". |
+| 5 | [Knowledge in cards, not in code](#5-knowledge-in-cards-not-in-code) | Thresholds, sentences, scenarios and menus live in versioned cards; adding a theory or an economy never changes the engine. |
 | 6 | [No house view](#6-no-house-view) | Competing explanations are kept side by side, and their disagreement is data. |
 | 7 | [Falsifiable before its date](#7-falsifiable-before-its-date) | A scenario has an observable trigger, an invalidation and an outcome fixed before its date, or it is refused. |
 | 8 | [Analysis counts from the day it was made](#8-analysis-counts-from-the-day-it-was-made) | Facts can be replayed over the history archives keep; analysis is scored only from the day it was produced. |
 | 9 | [The producer is never the judge](#9-the-producer-is-never-the-judge) | No card, rule or output is accepted on the word of whoever produced it. |
-| 10 | [Coverage is measured](#10-coverage-is-measured) | Every run says how much came from rules, from menu choices, and what was left uncovered. |
+| 10 | [Coverage is measured](#10-coverage-is-measured) | Every run reports how much was decided by rules, by picks, and left uncovered; the score then says whether the analysis was right. |
 
 ## 1. Exact or absent
 

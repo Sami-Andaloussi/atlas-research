@@ -6,8 +6,8 @@ already knows, from history's cases and from analyses of our own. The study itse
 and its calculators, lives on the site. This folder holds what stands behind it, for the sceptic and the specialist.
 
 The studies follow the discipline set out in [Atlas Research](../README.md): every number pinned to its source
-and its date, every protocol fixed before its result, every claim labelled by the kind of evidence behind it. They are
-built with their own tools, described below.
+and its date, every protocol fixed before its result, every claim labelled by the kind of evidence behind it. Their code is
+in each study's `code/` folder.
 
 ## What each study's folder holds
 
@@ -18,7 +18,7 @@ built with their own tools, described below.
   with sources), *measured* (an analysis of ours) or *judgement* (our reading, said as ours). Each number names the
   script that computed it or the source it is cited from.
 - **`cards/`**, the protocol of each analysis of ours, committed before any result on its data existed. A result
-  in `results/runs/` names the hash of the card it ran under. Cards are published as locked: only private file paths and internal process notes were edited, and no rule, number or source changed. `REDACTIONS.md` gives the hash of every card and protocol before and after.
+  in `results/runs/` names the hash of the card it ran under. Each card is published as it was locked, except that private file paths and internal notes were removed; no rule, number or source changed. `REDACTIONS.md` gives the hash of every card and protocol before and after.
 - **`code/`**, the scripts that compute every number and draw every figure.
 - **`data/`**, a manifest for each dataset: where it was fetched, when, and its hash. Fetched data is not
   republished. A dataset we built ships its values only when they are ours to share, such as our own coding of
