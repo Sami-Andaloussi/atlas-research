@@ -11,11 +11,11 @@ They come in pairs of concerns: what counts as a fact, what counts as analysis, 
 | # | Principle | The rule in one sentence |
 |---|---|---|
 | 1 | [Exact or absent](#1-exact-or-absent) | A value traces back to its bytes, or it is refused; an absence is typed, never a zero. |
-| 2 | [What was known, when](#2-what-was-known-when) | Every read names a date and cannot see past it; a revision adds a vintage and erases nothing. |
+| 2 | [What was known, when](#2-what-was-known-when) | Every read names an instant and cannot see past it; a revision adds a vintage and erases nothing. |
 | 3 | [No free text](#3-no-free-text) | What can be scored is a structured choice; what explains is pre-written text attached to it. |
 | 4 | [Rule, then menu, then abstain](#4-rule-then-menu-then-abstain) | Code decides first; a language model only picks from a filtered menu; otherwise the engine says "not covered". |
 | 5 | [Knowledge in cards, not in code](#5-knowledge-in-cards-not-in-code) | Thresholds, texts, scenarios and menus live in versioned cards; the engine stays generic. |
-| 6 | [No house view](#6-no-house-view) | Competing explanations are kept side by side, and their disagreement is data. |
+| 6 | [No single explanatory view](#6-no-single-explanatory-view) | Competing explanations are kept side by side, and their disagreement is data. |
 | 7 | [Falsifiable before it exists](#7-falsifiable-before-it-exists) | A scenario has an observable trigger, an invalidation and an outcome fixed before its date, or it is refused. |
 | 8 | [Analysis is clean from its production date](#8-analysis-is-clean-from-its-production-date) | Facts can be replayed over all history; analysis is tested only from the day it was produced. |
 | 9 | [The producer is never the judge](#9-the-producer-is-never-the-judge) | No card, rule or output is accepted on the word of whoever produced it. |
@@ -37,11 +37,13 @@ them ([L1](L1-facts.md)). A computed quantity that cannot be computed is `None` 
 
 ## 2. What was known, when
 
-**Rule.** Every value carries four dates: when the source published it, when Atlas captured it,
-when it became known, and when it entered the store. Every read is a read *as of* a date, and the
-reading function is unable to return anything known after that date.
+**Rule.** Every value carries four instants, in UTC: when the publisher released it, when it counts
+as knowable, when Atlas captured it, and when it entered the store. Every read is a read *as of* an
+instant, and the reading function is unable to return anything that became available after it
+([data contracts](data-contracts.md#time)).
 
-**Why.** GDP, payrolls and inflation are revised for years. Judging a past reading against today's
+**Why.** GDP and payrolls are revised for years, PCE prices are revised, and the seasonal factors
+behind every monthly pace are re-estimated each year. Judging a past reading against today's
 numbers is unfair in both directions: it punishes a call that was right on the data of its day,
 and rewards one fitted to data nobody had.
 
@@ -85,8 +87,9 @@ menus; every choice keeps its run log (model, prompt version, card versions, dat
 ## 5. Knowledge in cards, not in code
 
 **Rule.** Thresholds, text bricks, scenario templates and menus live in subject cards, versioned
-and fingerprinted. The engine only knows a closed set of operations (year-on-year, annualised
-pace, average, gap, linear combination) and how to evaluate a card.
+and fingerprinted. The engine only knows a closed set of operations, listed once in
+[L3](L3-subject-cards.md#what-a-card-contains), and how to evaluate a card. Quantities that come
+from a model (an output gap, a neutral-rate estimate) enter as published series, not as code.
 
 **Why.** Extending Atlas to a new subject, a new theory or a new economy should be writing and
 auditing a card, not a change to the engine that could break every subject at once.
@@ -94,7 +97,7 @@ auditing a card, not a change to the engine that could break every subject at on
 **Where it shows.** [L3](L3-subject-cards.md); the build sequence proves it by adding Switzerland
 and the euro area through sources and cards alone ([build sequence](build-sequence.md)).
 
-## 6. No house view
+## 6. No single explanatory view
 
 **Rule.** Where several lenses of the theory map read a situation, all of them are kept, with what
 each reads and what each would expect. Disagreement between them is stored, not averaged away.
@@ -102,15 +105,17 @@ Choosing which theories are on the map is itself a choice, so the map is publish
 per-family counts.
 
 **Why.** The most useful information in a macro debate is where serious explanations disagree and
-why. A reader who only hears one lens is missing most of the argument.
+why. A reader who only hears one lens is missing most of the argument. The thresholds and menus of
+a card are positions too: they are explicit, justified and versioned, not hidden.
 
 **Where it shows.** [L2](L2-theory-map.md); every output names the lenses it used.
 
 ## 7. Falsifiable before it exists
 
 **Rule.** A scenario set is refused if it has fewer than two branches, if a branch lacks an
-observable trigger, an invalidation condition or an outcome definition, or if its outcome
-definition was registered after the set's date. Branch strengths are never normalised to 100 %.
+observable trigger, an invalidation condition, an outcome definition, a horizon or a lens, or if it
+was registered after the run that produced it. A branch whose trigger never fires is void, not
+wrong.
 
 **Why.** A branch that cannot be wrong cannot be scored, and an outcome defined after the fact lets
 the goalposts move.
@@ -119,12 +124,14 @@ the goalposts move.
 
 ## 8. Analysis is clean from its production date
 
-**Rule.** Facts are clean over all history, thanks to vintages. Analysis is not: a language model
-knows how history turned out. So no analysis is ever tested before the date it was produced, and
-the export says so.
+**Rule.** Facts are clean over the history that real-time archives keep (ALFRED, the Philadelphia
+Fed's real-time dataset, the euro area's real-time database) and from Atlas's first capture
+elsewhere; older history is flagged as final data only. Analysis is cleaner still only from its
+production date: a language model, and whoever writes a card, knows how history turned out. So no
+analysis is scored before the date it was produced, and the export enforces it.
 
 **Why.** A backtest of reasoning run today over 2008 would be graded by a model that has read about
-2008. That is hindsight, not evidence.
+2008, on cards written by people who lived through it. That is hindsight, not evidence.
 
 **Where it shows.** The point-in-time export ([L6](L6-outputs.md)); the score counts only scenarios
 produced live ([L5](L5-scenarios-score.md)). It is also why production starts early: the record
@@ -133,7 +140,7 @@ only accumulates forward.
 ## 9. The producer is never the judge
 
 **Rule.** A card is written by one party and audited by another that wrote none of it, against its
-sources and on data it was not calibrated on. A change to the engine is accepted on a check that
+sources and on dates it was not calibrated on; its binding test is the live record that follows. A change to the engine is accepted on a check that
 can fail, shown to fail on a deliberate break, never on the word of whoever made it.
 
 **Why.** A producer is a weak judge of its own work: confident fixes that test nothing look the same
@@ -144,11 +151,13 @@ as real ones until someone else looks.
 
 ## 10. Coverage is measured
 
-**Rule.** Every run publishes, for its subject and date, the share of decisions taken by code rules,
-by menu choices, and the share that ended in "not covered".
+**Rule.** Every run publishes, for its subject and date and for each kind of decision, the share
+taken by code rules, by menu choices, and the share that ended in "not covered", including the
+situations no card anticipated ([L4](L4-analysis.md#6-coverage-and-the-residual)).
 
 **Why.** That ratio is the direct measure of what Atlas exists to do: move discretionary analysis
-into data. It also shows where the cards are thin.
+into data. Counted only against what a card already lists, it would measure the card's size;
+counted against the residual, it shows where the cards are thin.
 
 **Where it shows.** [L4](L4-analysis.md) computes it, [L6](L6-outputs.md) prints it, and the last
 phase of the [build sequence](build-sequence.md) turns real abstentions into cards.

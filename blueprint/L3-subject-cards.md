@@ -15,9 +15,10 @@ it, what could happen next, how to say it) **into versioned files that can be re
 corrected**, so that the engine itself stays generic.
 
 **Success looks like:**
-- Every threshold in a card is justified in one line, with its source or the admission
-  "conventional, unsourced".
-- A card passes its schema, its audit and an out-of-sample test before any report uses it.
+- Every non-trivial threshold in a card is justified in one line, with its source, its calibration
+  or the admission "conventional, unsourced".
+- A card passes its schema, its audit and a historical out-of-sample test before any report uses
+  it, and its scenarios are scored only from its acceptance date, live.
 - Adding a subject, a lens or an economy is writing a card, never a change to the engine.
 
 ## What a card contains
@@ -27,13 +28,22 @@ fingerprint.
 
 | Part | What it is | Example (US inflation) |
 |---|---|---|
-| Series | The catalogue keys the card reads | CPI and PCE, headline and core; long-run inflation expectations |
-| Quantities | Values computed from series with a closed set of operations: year-on-year, annualised pace over *n* months, average, gap, absolute value, linear combination | core PCE year-on-year; core PCE three-month pace; gap of PCE to 2 % |
-| Situations | Code conditions on quantities, combined with *all of* / *one of* | "PCE or core PCE more than half a point above 2 %" |
-| Lenses | Lenses of the theory map that read the subject, each with the quantities it reads and why | New Keynesian sticky prices reads core pace, core trend, the gap to target and long-run expectations |
+| Series | The catalogue keys the card reads, including dated facts such as the target in force | CPI and PCE, headline and core; long-run expectations; unemployment gap; the inflation target |
+| Quantities | Values computed from series with a closed set of operations (below), each with the latest period it may be from | core PCE year-on-year; core PCE three-month pace; gap of PCE to the target in force |
+| Situations | Code conditions on quantities, combined with *all of* / *one of*, each with its claim kind | "PCE or core PCE more than half a point above the target" |
+| Calibrated ranges | For each quantity, the range seen in its calibration period | Core PCE three-month pace between its 1st and 99th percentiles |
+| Lenses | Lenses of the theory map, pinned by version, that read the subject, each with the quantities it reads, why, and the baseline it is compared with | New Keynesian sticky prices reads core pace, core trend, the unemployment gap, the gap to target and long-run expectations |
 | Text bricks | Pre-written sentences for each situation or lens reading, with holes for numbers and two or three variants | "Total ({pce} %) or core ({pce_core} %): PCE inflation exceeds 2 % by more than half a point on at least one measure." |
-| Scenario templates | Sets of branches, each with a trigger, an invalidation and an outcome, as conditions on named quantities | Core inflation over the horizon: falling, stabilising, rising |
-| Menus | The few judgements left to a model: options, each with the conditions under which it may be offered | The tone of the reading: calm, vigilant on headline, vigilant on core, vigilant on pace |
+| Scenario templates | Sets of conditional branches: if a trigger fires, an outcome follows by the horizon, unless an invalidation comes first; each with its lens and the observable that would show that lens's mechanism at work | If core pace runs half a point above its trend, core inflation is higher at six months (cost-push branch: wage growth also above trend) |
+| Menus | The judgements left to a model: options, each with the conditions under which it is offered and those that must confirm it afterwards | How a central-bank statement leans, classified against a fixed codebook; the tone of the reading |
+| Analogue specification | Where the card allows historical analogues: the state vector, its scaling, the distance and the exclusion window | Core pace, unemployment gap and expectations, standardised, ±12 months excluded |
+
+**The closed operations**, the only computations a card can ask for: year-on-year change,
+annualised pace over *n* periods, difference, ratio, log-difference, absolute value, average,
+rolling quantile, resampling to a lower frequency with a declared method, gap between two series
+(an as-of join on period end), linear combination, and weighted contribution with vintaged weights.
+Anything a model estimates (an output gap, a neutral rate, a term premium) enters as a published
+series.
 
 A card the size of US inflation runs to some twenty series, about fifty quantities, forty
 situations and seventy text bricks. That is the scale at which a subject is covered without
@@ -44,13 +54,18 @@ improvisation.
 - **A justified threshold.** Each non-trivial threshold has one line: its source (the FOMC's 2 %
   target on headline PCE, stated in January 2012), or a calibration ("10th and 90th percentiles of
   the series over 2010–2019"), or the admission "conventional, unsourced".
-- **True at every date.** A text must be true whenever it can be printed. "2 %, the FOMC's explicit
-  target since January 2012" is; "the Fed's 2 % target" is not, before 2012.
-- **A rounded number never contradicts its word.** A threshold read by a text is shifted by half a
-  display unit, so "above 2 %" never sits next to a printed "2.0". Two numbers printed side by side
-  are described by their order, never by a gap computed from unrounded values.
+- **True at every date.** Each brick carries the interval of dates in which it may be printed, and
+  the renderer checks it. "2 %, the FOMC's explicit target since January 2012" may only be printed
+  from that month on.
+- **A rounded number never contradicts its word.** A situation that a text will state is evaluated
+  on the value as it will be displayed, so "more than half a point above" never sits next to a
+  printed gap of 0.5. Two numbers printed side by side are described by their order, never by a gap
+  computed from unrounded values.
 - **Variants without drift.** The two or three variants of a brick say the same thing; code picks
-  one reproducibly, so the same data always give the same page.
+  one from the row's identifier, so the same data always give the same page.
+- **A causal claim cites its evidence.** A situation or brick typed as causal names its mechanism,
+  its rivals and the study that identified the effect; the engine does not infer causality, it
+  cites it.
 - **A lens says why.** Each lens on a card states, in a sentence with its reference, why it reads
   this subject and which quantities it reads.
 - **Invalidation excludes the trigger.** No scenario branch can be triggered and invalidated by the
@@ -87,9 +102,12 @@ flowchart LR
 4. **Isolated audit.** A reviewer who wrote none of the card checks it against its sources and
    against the principles: the thresholds, the truth of each brick at every date, the economics of
    each lens reading.
-5. **Out-of-sample test.** The card's rules and scenarios are run on dates the writer did not see
-   while calibrating. A writer who chose a trigger after looking at both samples says so, and the
-   card waits for a clean test.
+5. **Out-of-sample test.** The card's rules and scenarios are run on a test period declared before
+   calibration (for a first card: calibrated on 2000–2014, tested on 2015–2019 and 2022–2025). A
+   writer who chose a trigger after looking at both samples says so, and the card waits for a clean
+   test. Because writer and reviewer both know how history turned out, a historical test can only
+   reject a card; the test that counts is the live record that starts at acceptance
+   ([principle 8](principles.md#8-analysis-is-clean-from-its-production-date)).
 6. **Versioning.** The accepted card is fingerprinted. Reports pin the version they used.
 
 ## Interfaces
@@ -103,6 +121,7 @@ flowchart LR
 | out | Card library, versioned and fingerprinted | [L4](L4-analysis.md), [L6](L6-outputs.md) |
 | out | Audit records | Kept with each card version |
 | out | New series wanted | [L1](L1-facts.md) catalogue |
+| out | New lenses wanted | [L2](L2-theory-map.md) |
 
 ## Gates
 
@@ -112,9 +131,8 @@ fact store.
 **Exit.** A card is accepted when:
 - its schema and completeness checks pass;
 - its audit has no blocking finding left unanswered;
-- its out-of-sample test passes, or the card is explicitly marked as untested and kept out of
-  scoring;
-- every threshold has its line of justification.
+- its historical out-of-sample test passes on the declared test period;
+- every non-trivial threshold has its line of justification.
 
 The layer is complete for a phase when every subject of the phase has an accepted card, and a real
 abstention from production has gone through the queue and come back as a card used in a later
