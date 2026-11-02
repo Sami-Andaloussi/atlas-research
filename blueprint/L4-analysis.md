@@ -32,8 +32,8 @@ flowchart TD
     r -->|yes| row["Analysis row"]
     r -->|no| m["Menu filtered by code<br/>to the options offered"]
     m -->|none left| ab["Abstention: not covered"]
-    m -->|one left| row
-    m -->|several left| c["Model returns one option id<br/>or abstains"]
+    m -->|one left: auto| k
+    m -->|several left| c["Model or analyst returns<br/>one option id, or abstains"]
     c --> k{"Code confirms the pick"}
     k -->|passes| row
     k -->|fails| ab
@@ -72,7 +72,8 @@ A menu is for a judgement that a threshold cannot make: how a central-bank state
 a fixed codebook; which of several mechanisms a card's evidence points to.
 
 - **Offer.** Each option declares the conditions under which it is offered. Code filters the menu.
-  No option left: abstention. One option left: taken without a model, and counted as a rule.
+  No option left: abstention. One option left: taken without a model (`auto`), still confirmed, and
+  counted with the rules.
 - **Ask.** With several options left, the model, or an analyst, receives the packet's values, the options' text and,
   where the card names one, the captured document to read (a statement, the minutes). It returns a
   structured answer: one option identifier, or `ABSTAIN`; and, where the card requires it, a
@@ -109,8 +110,8 @@ run.
 ### 5. Storage
 
 Each outcome becomes a row in the append-only analysis store ([records](data-contracts.md#records)):
-the decision kind (situation, lens reading, menu pick, scenario, analogue, abstention), how it was
-decided (rule, menu, automatic, abstained), the card entry, the claim kind and the run. The run log
+the decision kind (situation, lens reading, baseline reading, menu pick, scenario, analogue,
+abstention, residual), how it was decided (rule, auto, model, analyst, abstained), the card entry, the claim kind and the run. The run log
 holds the engine version, the card fingerprints, the theory catalogue version, the model and prompt
 version, the sampling parameters, the packet fingerprint, the instant and the mode (live, replay,
 counterfactual).

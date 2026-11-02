@@ -18,7 +18,7 @@ Two axes, both stored as UTC instants.
 |---|---|
 | `period_start`, `period_end` | The period a value describes, half-open: `[start, end)`. |
 | `published_at` | The publisher's official release instant, taken from its calendar: a CPI release at 08:30 New York time is stored as 12:30 or 13:30 UTC. ALFRED's vintage dates are the days FRED updated, which can lag the release, so they are not used for it. |
-| `known_at` | The instant from which a value counts as knowable: `published_at` when the publisher or a real-time archive certifies the release, `captured_at` otherwise. |
+| `known_at` | The instant from which a value counts as knowable: `published_at` when the publisher or a real-time archive certifies the release, `captured_at` otherwise. For history older than Atlas's first capture of a source with no real-time archive, it is an assumed instant, the end of the period plus the source's declared publication lag, and the record is flagged `point_in_time = false`. |
 | `available_at` | On every record: the instant it became available in the world. `known_at` for a fact, `produced_at` for a quantity or an analysis row, `registered_at` for a scenario, `judged_at` for a verdict, `accepted_at` for a card version, `raised_at` for an analyst's flag. |
 
 **System time: when Atlas recorded it.**
@@ -46,7 +46,7 @@ cannot change what the replay sees.
 | Vintage | `series_key@def_version/period/release_event`, where the release event is the publisher's release (with its `release_stage`: flash, advance, second, third, annual, benchmark) or a capture that found a change |
 | Card version | `card_id@version`, fingerprinted by SHA-256 of the canonicalised file, so reformatting does not change the fingerprint |
 | Theory catalogue | `catalogue@version` |
-| Run | SHA-256 of `(subject, as_of, recorded_by, values_as_of, card fingerprints, catalogue version, engine version, model, prompt version)` |
+| Run | SHA-256 of `(subject, as_of, recorded_by, values_as_of, card fingerprints, catalogue version, engine version, model, prompt version, mode, attempt)`; `attempt` numbers re-picks |
 | Quantity | `run_id/quantity_id/period` |
 | Row | `run_id/decision_kind/card_entry_id`, or `run_id/residual/residual_kind/subject_key` for a residual |
 | Scenario set, branch, verdict | `run_id/template_id`, `…/branch_id`, `…/branch_id/judged_at` |
@@ -78,8 +78,8 @@ the closed operations before a page may print it.
 **Analysis row.** `row_id, run_id, decision_kind (situation | lens_reading | baseline_reading |
 menu_pick | scenario | analogue | abstention | residual), decided_by (rule | auto | model | analyst |
 abstained), card_entry_id, claim_kind, payload, available_at`. A menu pick also stores the option ids
-offered, the rendered prompt and the raw response; an automatic pick still passes the confirm
-conditions.
+offered, the rendered prompt and the raw response. `auto` is a menu left with a single option: it
+still passes the confirm conditions, and counts with `rule` in coverage.
 
 **Analyst flag.** `flag_id, row_id or subject_key, raised_at, analyst, kind, text_ref`. Its own
 append-only record: a flag raised after a run never changes that run's rows.
@@ -111,8 +111,9 @@ values as known at `t2`, **for the periods already released by `as_of`**. That i
 replay reads: the same periods the original report saw, with their later values.
 
 Before Atlas's first capture of a source with no real-time archive, the read returns values flagged
-`point_in_time = false`. Scoring and the export's backtest reader refuse them; a card's historical
-calibration may use them, flagged.
+`point_in_time = false`, placed in time by their assumed `known_at`. Only a card's historical
+calibration and out-of-sample test may use them, and their results say so; live runs, scoring and
+the export's backtest reader refuse them.
 
 ## Idempotency and correction
 
@@ -121,9 +122,9 @@ calibration may use them, flagged.
 - **Vintages.** Every release event creates a vintage, even when it confirms the previous value (a
   third estimate equal to the second is still the third estimate). A capture outside a release event
   creates one only when a value changes.
-- **Runs.** The run identifier is a hash of its inputs, `recorded_by` included, with a unique
-  constraint: the same run twice adds nothing, and a run on different data gets a different
-  identifier.
+- **Runs.** The run identifier is a hash of its inputs, `recorded_by` and `mode` included, so a replay
+  never collides with the live run it replays. Live runs are also unique by `(subject, as_of,
+  engine_version)`: a second live run for the same subject and date is refused, not added.
 - **Scenarios.** A set is unique by `(run_id, template_id)`, and is registered inside its run's
   transaction.
 - **Workshop queue.** Each occurrence is an event; an item is the group of events with the same

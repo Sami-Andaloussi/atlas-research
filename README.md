@@ -39,7 +39,7 @@ needs: a record of what was knowable on each day, with no hindsight leaking in.
 | 2024-06-12 | Situation: core PCE more than half a point above the 2 % target | holds | BEA release of 31 May 2024 (April data); card *US · inflation* | Rule |
 | 2024-06-12 | Rule-based stance | restrictive | Fed funds range against a family of Taylor-type rules | Rule |
 | 2024-06-12 | FOMC statement leans | toward holding | FOMC statement of 12 June 2024, quoted by anchor | Menu pick, checked |
-| 2024-06-12 | Branch: if core pace stays above trend, core CPI higher at six months | probability 0.4 | Judged on the release for December 2024 | Card scenario |
+| 2024-06-12 | Branch: if core PCE's three-month pace runs half a point above its trend, core PCE higher six months on | probability 0.6 | Judged on the first release of October 2024 data, out at the end of November | Card scenario |
 
 ## The layers
 
@@ -83,9 +83,9 @@ The rules the design enforces ([glossary](blueprint/glossary.md) for every term)
    writing and auditing a card, not reprogramming the engine.
 5. **Several explanations stand side by side.** Atlas holds no single explanatory view. It records
    which theories read the situation and what each would expect.
-6. **Scenarios can be wrong, and are scored.** Each branch has an observable trigger, an invalidation
-   and an outcome definition registered before its date, and is credited only if it beats a
-   benchmark.
+6. **Scenarios can be wrong, and are scored.** Each branch has an observable trigger, an invalidation,
+   an outcome definition and a probability registered before its date, and is credited only for
+   what it adds over a benchmark for the same event.
 7. **Coverage is measured.** Every run reports the share of decisions taken by rules, by menu
    choices, and what was left uncovered, including situations no card anticipated: a measure of how
    much of the reading is specified in advance and checked, while the score measures how good it

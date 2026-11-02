@@ -6,7 +6,7 @@
 
 Atlas writes conditional scenarios, not forecasts: if a trigger fires, an outcome follows by the horizon, unless an invalidation comes first.
 Every scenario is registered, append-only, and judged when the release it targeted comes out, on that vintage.
-A branch is credited to its lens only if it beats the lens's baseline, with the evidence of the lens's own mechanism; failures go back to the card that produced them.
+A branch scores only what its probability adds over a benchmark for the same event, and counts for its lens only with evidence that separates the lens from its rivals; failures go back to the card.
 
 ## Purpose
 
@@ -92,8 +92,10 @@ with every analogue.
   a benchmark probability for the same outcome, under the same condition, as of that instant: from a
   simple statistical model of the series (autoregressive, or no change), and from the Survey of
   Professional Forecasters' probability distributions where their horizon matches. The branch
-  scores only what it adds over the benchmark, so a set whose branches cover every outcome earns
-  nothing by that alone.
+  scores only what it adds over the benchmark (its Brier skill score), so a set whose branches cover
+  every outcome earns nothing by that alone. The lens's baseline enters the same way: the card turns
+  the baseline's reading into a probability for the same outcome, and the lens is credited only for
+  the skill it adds over both.
 - **Consistent with a mechanism, not proof of it.** A branch names a discriminating observable, one
   its rival lenses predict differently: profit margins against unit labour costs separate a
   cost-push reading from a demand-driven one. An outcome met with that evidence is recorded as
@@ -136,7 +138,8 @@ vintages.
 - a set whose outcome definition was registered after its run is refused;
 - states are computed on the targeted vintage, shown on a series whose revision changes the state;
 - a void branch is not scored, and a missed outcome reaches the workshop queue with its card version;
-- scores by lens are computed against the baseline and the named benchmarks.
+- Brier skill scores by lens are computed against the statistical benchmark and the baseline's
+  probability.
 
 ## Steps
 

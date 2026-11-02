@@ -54,15 +54,16 @@ Take US inflation on a given date, the subject the build starts with.
 5. **Lenses.** The card says which lenses of the theory map read this situation and which values
    each reads: a sticky-price reading, a cost-push reading, a fiscal reading
    ([L2](L2-theory-map.md)). They are kept side by side.
-6. **Scenarios.** The card's conditional scenarios (if core pace stays above its trend, core
-   inflation is higher at six months, unless...) are instantiated with their triggers,
+6. **Scenarios.** The card's conditional scenarios (if core PCE's three-month pace runs half a point
+   above its trend, core PCE is higher six months on, probability 0.6, unless...) are instantiated with their triggers,
    invalidations, outcome definitions and targeted releases, and registered by the run
    ([L5](L5-scenarios-score.md)).
 7. **Report.** The page is assembled from stored rows and pre-written text bricks only. Every
    number on it is dated and sourced; every scenario shows what would invalidate it
    ([L6](L6-outputs.md)).
 8. **Score.** When the release a branch targeted comes out, the branch is judged on that vintage,
-   and compared with its lens's baseline and with published benchmarks. A miss puts the card back
+   and scored on what its probability adds over a statistical benchmark and over its lens's
+   baseline. A miss puts the card back
    in the workshop queue.
 
 ## The stores

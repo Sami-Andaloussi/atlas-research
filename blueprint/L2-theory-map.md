@@ -105,7 +105,8 @@ rather than a refutation, it is labelled a hard case.
 Two of the four read the **stance** of policy. A stance reading is a measurement, not a forecast:
 central banks tighten because demand and inflation are strong, so strong outcomes after a
 "restrictive" reading do not refute it. A stance lens is judged only through the conditional
-scenarios it supports, each against a forecast made as of the reading date.
+scenarios it supports, each scored against the statistical benchmark computed as of the reading
+date ([L5](L5-scenarios-score.md#keeping-score)).
 
 ### Rule-based policy stance (Taylor-type)
 
@@ -122,7 +123,7 @@ scenarios it supports, each against a forecast made as of the reading date.
   rule's gap is read against a shadow rate rather than the policy rate.
 - **Baseline:** the policy rate compared with its own recent average.
 - **Disconfirming outcomes:** a "restrictive" reading followed, over four to eight quarters, by
-  demand and inflation no weaker than a forecast made as of the reading date counts against it; so
+  demand and inflation no weaker than the benchmark forecast as of the reading date counts against it; so
   does a "loose" reading followed by nothing stronger than that forecast.
 - **Limitation and robustness:** the prescription moves one for one with the assumed neutral rate
   and the gap estimate, both unobserved and revised. The reading is run across a fixed family of
@@ -150,7 +151,7 @@ scenarios it supports, each against a forecast made as of the reading date.
   than read, or the estimates were too low; the lens alone cannot tell which.
 - **Baseline:** the real policy rate against a constant 2 % neutral rate.
 - **Disconfirming outcomes:** a restrictive reading persistently followed by demand and inflation
-  stronger than a forecast made as of the reading date, or the reverse, across the estimation
+  stronger than the benchmark forecast as of the reading date, or the reverse, across the estimation
   methods.
 - **Limitation and robustness:** estimates are imprecise and revised as new data arrive, and the
   market forward rate mixes the neutral rate with a term premium. The gap is always published with
