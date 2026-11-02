@@ -28,8 +28,8 @@ a sentence. A report can then be:
 - **scored:** an analyst's call and the rules' call sit side by side, both dated, both judged on the
   release they targeted.
 
-That is also the record a backtest needs: what was knowable on each day, with no hindsight leaking
-in.
+That is also the record a backtest needs: facts as they were knowable on each day, and calls recorded
+forward from the day they were made, with no hindsight leaking in.
 
 **For an investor**, it is the macro half of a decision log: which reading of the SNB, the franc and
 rates stood when a position was opened or a deal underwritten, what would have changed it, and
@@ -40,10 +40,10 @@ recorded it** (illustrative rows on real 2024 releases; Atlas keeps no record fr
 
 | As of | What was recorded | Value | Source | Decided by |
 |---|---|---|---|---|
-| 12 Jun 2024 | Core CPI inflation, year-on-year | 3.4% | BLS, May data, released 12 Jun | Computed |
+| 12 Jun 2024 | Core CPI inflation, year-on-year | 3.4% | BLS, May data, released 12 Jun | Rule (computed) |
 | 12 Jun 2024 | Core PCE inflation more than 0.5 pt above the Fed's 2% target | yes (2.8%) | BEA, April data, released 31 May | Rule |
 | 12 Jun 2024 | Lean of the FOMC statement | toward holding rates | FOMC statement, 12 Jun, passage quoted | Model pick from a fixed menu, code-checked |
-| 12 Jun 2024 | Scenario, branch 1 of 2: core PCE's 3-month annualised pace is more than 0.5 pt above its 12-month rate (trigger met on 12 Jun), so October's core PCE inflation will be above April's 2.8% as first released; invalidated if unemployment rises 0.5 pt first | probability 60% | Card *US · inflation*, registered 12 Jun | Card, fixed in advance |
+| 12 Jun 2024 | Scenario, branch 1 of 2: core PCE's 3-month annualised pace is more than 0.5 pt above its 12-month rate (trigger met on 12 Jun), so October's core PCE inflation, at its published one-decimal figure, will be above April's 2.8% as first released; invalidated if unemployment rises 0.5 pt first | probability 60% | Card *US · inflation*, registered 12 Jun | Card, fixed in advance |
 | 12 Jun 2024 | Branch 2 of 2: October's core PCE inflation at or below 2.8% | probability 40% | Same card | Card, fixed in advance |
 | 27 Nov 2024 | Verdict: October core PCE inflation 2.8%, not above; unemployment rose less than 0.5 pt | branch 1 wrong, branch 2 right | BEA, October data, released 27 Nov | Judged on the first release |
 
@@ -56,8 +56,8 @@ I publish short studies in economics at [First Thing](https://first-thing-resear
 same discipline: every printed number traced to its script or its source and date, every analysis
 protocol committed before its result, with any exception stated on the protocol itself. Read a study
 on the site, then its proof: protocols, code and data manifests are in [`first-thing/`](first-thing/),
-where every number can be traced line by line (the code is published to be read; it relies on a
-private toolkit to run).
+where each number can be checked against its source and the script that computed it (the code is
+published to be read; it relies on a private toolkit to run).
 
 ## The design
 
