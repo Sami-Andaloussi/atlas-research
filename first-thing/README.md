@@ -1,9 +1,13 @@
-# First Thing — Weekly Studies: methods and proof
+# First Thing — studies: methods and proof
 
-Every week, First Thing publishes a short study in economics on
+From time to time, First Thing publishes a short study in economics on
 [first-thing-research.com](https://first-thing-research.com): a question readers ask, answered from what economics
 already knows, from history's cases and from analyses of our own. The study itself, with its argument, its charts
 and its calculators, lives on the site. This folder holds what stands behind it, for the sceptic and the specialist.
+
+The studies follow the discipline set out in [Atlas Research](../README.md): every number pinned to its source
+and its date, every protocol fixed before its result, every claim typed by the evidence behind it. They are
+built with their own tools, described below.
 
 ## What each study's folder holds
 

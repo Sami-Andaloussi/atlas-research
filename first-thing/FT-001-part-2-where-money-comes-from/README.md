@@ -1,6 +1,6 @@
 # Where money comes from — methods and proof
 
-*A First Thing Weekly Study · FT-001, part 2 of "The life of a money" · as of 2026-10-11*
+*A First Thing Study · FT-001, part 2 of "The life of a money" · as of 2026-10-11*
 
 This folder is the proof behind the study published on First Thing's site, for the sceptic and the specialist: what
 each claim rests on, what was fixed before each result, what ran, what each result means and what it does not, where

@@ -1,187 +1,118 @@
 # Atlas Research
 
-**Turning discretionary analysis into data.**
+**Turning discretionary macro analysis into data.**
 
-*Competing theories. The same data. A dated verdict.*
+*Macro research that can be queried, compared and scored against what was actually known at the time.*
 
-> **Status, 2026-10-12.** The data chain works end to end on a small corpus. The theory map and the
-> rules for a valid scenario are written. No economic analysis is produced yet, and there is no track
-> record. Details in [Where it stands](#where-it-stands).
-> First Thing's Weekly Studies, which preview this approach, publish their methods and proof in [`first-thing/`](first-thing/).
-
----
-
-## Why this exists
-
-Economic commentary is everywhere, and very little of it is ever checked.
-
-- **It is rarely accountable.** A view is seldom dated in a form anyone can check, seldom says what
-  would prove it wrong, and is quietly rewritten once events move.
-- **It uses one lens at a time.** The same numbers can support a monetary, a fiscal, a supply-side or
-  a credit explanation. A reader usually gets the one the writer prefers, and loses the most useful
-  information: where serious explanations disagree, and why.
-- **The data moves underneath it.** GDP and employment figures are revised for years after they are
-  first published. Judging an old call against today's numbers is unfair in both directions.
-
-Forecasts are sometimes scored: by surveys of professional forecasters, by central banks reviewing
-their own projections, and in academic horse races between models. What is rarely done is to score
-*competing explanations* side by side, on the data that was available at the time, across many kinds
-of situation. Atlas is being built to do that.
-
----
+> **This repository is the design of Atlas: complete, and to be built.** Each layer states what it
+> takes in, what it hands on, what it refuses and the test it must pass; the
+> [build sequence](blueprint/build-sequence.md) gives the order of construction. Nothing here is
+> investment advice.
 
 ## The idea
 
-Atlas is being built to treat economic analysis the way a statistics office treats a data release:
-dated, sourced, versioned. Four steps. The first works today; the other three are specified, not yet
-running.
+A macro research report is a frozen document. It says that inflation is "above target and
+re-accelerating", leans on one or two theories, sketches what could happen next, and is then filed
+away. Six months later nobody can query it, compare it with the report that followed, or check it
+against the data as they stood when it was written, before the statistical offices revised them.
 
-1. **Record what was known, and when** (*point-in-time* data). Every number points to the exact source
-   it was read from and the date it became known. Revisions are added, never written over.
-2. **Run the relevant theories on the same data.** Each theory is a *lens*. Lenses will read the same
-   frozen snapshot of the data and never see each other's conclusions, so one cannot colour another.
-3. **Turn each lens into explicit scenarios.** At least two branches, each with an observable trigger,
-   a horizon, and the condition that would invalidate it. "Not enough information" is an accepted
-   answer.
-4. **Keep score.** What counts as the outcome is fixed when the scenario is written. Once the horizon
-   has passed, each branch will be marked realised, invalidated, not realised, or undecidable. Over
-   time, that becomes a map of which reasoning works for what.
+Atlas is designed to write its reports as data. Every number points to the exact place in the source
+document it was read from, and to the moment it became known. Every reading of the situation, every
+theory applied and every scenario is stored as a dated, structured choice, not as prose. A report
+then becomes something that can be:
 
----
+- **queried:** every report that read the Fed as restrictive while core inflation was falling;
+- **compared:** what changed between this month's report and last month's, and whether the facts
+  moved or only the reading did;
+- **checked against revised data:** whether a reading still holds once the data it relied on have
+  been revised, and whether its scenarios came true on the release they targeted.
 
-## Two disciplines, one system
+An analyst's own call goes through the same menus and checks as the machine's, so a human judgement
+becomes a dated row that can be scored next to the rules. The same discipline is what a backtest
+needs: a record of what was knowable on each day, with no hindsight leaking in.
 
-### The economics
+**What one stored report looks like** (illustrative):
 
-A **theory map** of 23 families and 72 named lenses, most of them competing explanations. It runs from
-New Keynesian inflation to the fiscal theory of the price level, and from sudden stops to the loop
-between sovereign debt and the banks that hold it. Each lens states its assumptions, the inputs it needs, a
-situation where it fails, the simpler baseline it has to beat, and the outcomes that would count
-against it.
+| As of | Element | Value | Source and vintage | Decided by |
+|---|---|---|---|---|
+| 2024-06-12 | Core CPI, year on year | 3.4 % | BLS release of 12 June 2024 | Computed |
+| 2024-06-12 | Situation: core PCE more than half a point above the 2 % target | holds | BEA release of 31 May 2024 (April data); card *US · inflation* | Rule |
+| 2024-06-12 | Rule-based stance | restrictive | Fed funds range against a family of Taylor-type rules | Rule |
+| 2024-06-12 | FOMC statement leans | toward holding | FOMC statement of 12 June 2024, quoted by anchor | Menu pick, checked |
+| 2024-06-12 | Branch: if core PCE's three-month pace runs half a point above its trend, core PCE higher six months on | probability 0.6 | Judged on the first release of October 2024 data, out at the end of November | Card scenario |
 
-Claims are typed. A claim filed as causal must name its mechanism, its rivals, how the effect was
-identified, and what would refute it. A scenario has to be falsifiable before it is allowed to exist.
-→ [`docs/ECONOMICS.md`](docs/ECONOMICS.md)
-
-### The data
-
-Public sources only. Every value keeps a pointer to the exact bytes of the document it was read from;
-if the document changes, the pointer breaks and the system refuses. Every observation carries its
-*vintage*, the version published on a given date. A missing value is never silently turned into a
-zero. Check the provenance claim yourself in one command: [`examples/`](examples/).
-→ [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)
-
-### Why they need each other
-
-- **Economics needs dated data to be judged.** Without a record of what was knowable on the day, a
-  theory that was right cannot be told apart from one fitted afterwards.
-- **Dated data is worth keeping because it judges reasoning.** Real-time archives such as ALFRED
-  already keep vintages for major US series. Atlas extends that discipline to every value it uses and
-  ties each one to the document it came from; what makes that worth the effort is using it to judge
-  reasoning.
-- **Scorekeeping is slow.** The United States has had about a dozen recessions since the Second World
-  War, so rare events give few test cases. Judging a way of reasoning needs many dated calls across
-  countries, sectors and horizons. That is why the recording starts before the first product.
-
-> You cannot learn which theory works if you let history be rewritten.
-
----
-
-## How it fits together
+## The layers
 
 ```mermaid
 flowchart LR
-  A["Public sources"] --> B["Captured documents<br/>fingerprinted"]
-  B --> C["Point-in-time store<br/>value + vintage + source"]
-  C --> D["Lenses from the theory map<br/>same frozen snapshot"]
-  D --> E["Scenario sets<br/>triggers, invalidation"]
-  E --> F["Scorecard<br/>judged against the vintage targeted"]
-  F -. "which lens works for what" .-> D
-  classDef built fill:#e8f1ea,stroke:#2f6b3a,color:#1b3a20;
-  classDef planned fill:#ffffff,stroke:#8a8a8a,stroke-dasharray:5 4,color:#555555;
-  class A,B,C built;
-  class D,E,F planned;
+    src["Public sources"] --> L1["L1 Facts<br/>dated, versioned, traced to the source"]
+    L2["L2 Theory map<br/>72 explanations, 23 families"] --> L3["L3 Subject cards<br/>the macro knowledge, written once"]
+    L1 --> L4["L4 Analysis as data<br/>rule, else a pick from a menu, else 'not covered'"]
+    L3 --> L4
+    L1 --> L5
+    L4 --> L5["L5 Scenarios and score<br/>judged on the release they targeted"]
+    L4 --> L6["L6 Outputs<br/>reports, comparisons, export"]
+    L1 --> L6
+    L5 --> L6
+    L5 -.->|"a scenario that failed"| L3
+    L4 -.->|"a situation not covered"| L3
 ```
 
-Green boxes work today, on a seven-record corpus. Dashed boxes are not running yet: the scenario rules
-are coded and tested on test cases only, lenses are not yet applied to any data, and the scorecard has
-not started.
-
----
-
-## What Atlas will serve
-
-Atlas is an engine rather than a single product. Built on it: research for people who need to
-understand the economy, and datasets for quantitative research. Coverage starts with the United
-States, then Switzerland and Europe.
-
-The exact shape of the first product is deliberately left open; it will be shaped with the people who
-ask for it. Nothing here is investment advice.
-
----
-
-## Where it stands
-
-| Component | State |
+| Layer | What it holds |
 |---|---|
-| Data chain: capture, anchoring, point-in-time storage, re-read, rendering | Works end to end |
-| Data volume | 7 records. The chain is proven; the corpus is not built |
-| Theory map: 23 families, 72 lenses | Written; every lens states what would count against it |
-| Scenario rules | Coded and tested on test cases; not yet fed by real data |
-| Lenses applied to stored data | Not yet: the report generator consults neither the classification layer nor the theory map |
-| Scorecard | Not started |
-| Independent review of the map's economic content | Not yet done |
-| Product (interface, users, subscription) | None |
+| [L1 · Facts](blueprint/L1-facts.md) | Public statistics, each value traced to its place in the source document, every revision kept as a new version, and a read "as of" any past moment that cannot see beyond it. |
+| [L2 · Theory map](blueprint/L2-theory-map.md) | A catalogue of 72 named economic explanations in 23 families, most of them competing, each stating what it assumes, a case where it fails, the simpler reading it must beat and what would prove it wrong. Four are worked in detail. |
+| [L3 · Subject cards](blueprint/L3-subject-cards.md) | The macro knowledge for one economy and subject (US inflation, say), written once and audited: the situations to recognise, the theories that read them, pre-written sentences, scenario templates. |
+| [L4 · Analysis as data](blueprint/L4-analysis.md) | For a subject and a date: code decides what it can; where it cannot, a language model or an analyst picks one of a few pre-written options, and code checks the pick; the rest is declared "not covered". |
+| [L5 · Scenarios and score](blueprint/L5-scenarios-score.md) | Conditional scenarios with a trigger, an invalidation and an outcome fixed in advance, judged against a benchmark when the release they targeted comes out. |
+| [L6 · Outputs](blueprint/L6-outputs.md) | Reports assembled word for word from stored choices, report-to-report comparison, re-reading against revised data, and a point-in-time export for quantitative research. |
 
-The build plan holds **170 steps across 14 arcs, 60 of them done**, and **45 blocking defects are open
-and tracked** (snapshot 2026-09-16: [progress](docs/PROGRESS.md), [roadmap](docs/ROADMAP.md)).
-Theory-map counts were taken on 2026-09-24.
+## In two minutes
 
----
+The rules the design enforces ([glossary](blueprint/glossary.md) for every term):
 
-## How it is built
+1. **Facts are exact or absent.** A value either traces back to its source document, or it is
+   refused. A missing value is recorded with the kind of absence it is, never as a zero.
+2. **No free text.** Whatever can be scored is a structured choice: a named series, a threshold, a
+   date, an entry of a card. Whatever explains is a pre-written sentence attached to those choices.
+3. **Decisions go in a fixed order:** a code rule where one exists; otherwise a language model or an
+   analyst picks from a short list of pre-written options that code has already filtered, and code
+   checks the pick; otherwise the engine says "not covered", and the gap goes to the workshop that writes the
+   cards.
+4. **Knowledge lives in cards, not in code.** Adding a theory, a threshold or an economy means
+   writing and auditing a card, not reprogramming the engine.
+5. **Several explanations stand side by side.** Atlas holds no single explanatory view. It records
+   which theories read the situation and what each would expect.
+6. **Scenarios can be wrong, and are scored.** Each branch has an observable trigger, an invalidation,
+   an outcome definition and a probability registered before its date, and is credited only for
+   what it adds over a benchmark for the same event.
+7. **Coverage is measured.** Every run reports the share of decisions taken by rules, by menu
+   choices, and what was left uncovered, including situations no card anticipated: a measure of how
+   much of the reading is specified in advance and checked, while the score measures how good it
+   is.
 
-Several LLM agents work in parallel under rules enforced by code. No agent reviews its own work: a
-separate agent does, and a human arbitrates when they disagree. The build can refuse its own builders,
-for instance when tooling commits pile up while the product has not advanced. Language models are used
-as a governed tool, never as a source of facts: code extracts candidate values, and the model picks
-one or abstains.
-→ [`docs/ENGINEERING.md`](docs/ENGINEERING.md)
+The [blueprint overview](blueprint/README.md) follows one report from the source to its score.
 
----
+## Reading it layer by layer
 
-## What is in this repository
-
-This is the public window on the project. The implementation is in a private repository.
-
-| Path | What it holds |
+| Page | What it answers |
 |---|---|
-| [`docs/ECONOMICS.md`](docs/ECONOMICS.md) | The economic method: the theory map, how lenses are kept apart, what makes a scenario valid, how scoring will work. |
-| [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) | The data chain layer by layer, and what each layer refuses. |
-| [`docs/ENGINEERING.md`](docs/ENGINEERING.md) | How the work is split between LLM agents, and the rules that keep them honest. |
-| [`docs/PROGRESS.md`](docs/PROGRESS.md) | Measured state, quoted from the project's own counters. |
-| [`docs/ROADMAP.md`](docs/ROADMAP.md) | The 14 arcs, and what is deliberately deferred. |
-| [`examples/`](examples/) | A real captured document and a script that re-reads its byte ranges: the provenance claim, checkable in one command. |
-| [`first-thing/`](first-thing/) | Methods and proof of First Thing's Weekly Studies: each study's protocols, code, data manifests and results. |
+| [Blueprint overview](blueprint/README.md) | The whole system in one drawing, and the path of one report. |
+| [Design principles](blueprint/principles.md) | The ten rules every layer follows. |
+| Layer pages, [L1](blueprint/L1-facts.md) to [L6](blueprint/L6-outputs.md) | Purpose, interfaces, gates, steps, deliverables and refusals of each layer. |
+| [Data contracts](blueprint/data-contracts.md) | Identifiers, records, time, the single read, idempotency, replay, a reference stack. |
+| [Build sequence](blueprint/build-sequence.md) | The order of construction, phase by phase, and the gate that closes each phase. |
+| [Glossary](blueprint/glossary.md) | Every term in plain words. |
 
----
+## First Thing
 
-## Limits
+[First Thing](https://first-thing-research.com) publishes sourced studies in economics. It follows
+the discipline designed for Atlas (every number pinned to its source and its date, every protocol
+fixed before its result, every claim typed by the evidence behind it) and applies it with its own
+tools, not with Atlas's code. The proof behind its published studies, with their protocols, code and data
+manifests, is in [`first-thing/`](first-thing/).
 
-- The corpus is tiny. Seven records prove the chain; they are not a dataset.
-- The engine produces no economic analysis yet. The theory map and the report generator are not
-  connected.
-- The theory map is uneven. Several central families (monetary policy, exchange rates, growth) hold
-  two lenses each today, and 20 of the 72 lenses still declare a gap where a reference work should be.
-  [`ECONOMICS.md`](docs/ECONOMICS.md) gives the count for every family.
-- The map's economic content has not been reviewed by an independent economist. Each lens has every
-  field filled in (references or a declared gap); none has been reviewed for being the best statement
-  of its theory.
-- There is no track record. The scorecard begins with the first dated scenarios.
-- Apart from the provenance check in [`examples/`](examples/), the claims here describe a private
-  repository and cannot be verified from this one.
+## Author
 
----
-
-Built by Sami Andaloussi. Corrections are welcome, especially "your number is wrong" and "your theory
-map is missing something".
+[Sami-Andaloussi](https://github.com/Sami-Andaloussi). Corrections are welcome, especially "your
+theory map is missing something".
