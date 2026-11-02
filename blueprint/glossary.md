@@ -8,7 +8,7 @@
 | <a id="absence"></a>**Absence** | A value that is not there, recorded as one of eleven kinds: missing, not observed, not applicable, suppressed, censored, below detection limit, withheld, invalid, not yet released, inaccessible, in unresolved conflict. Never a zero. |
 | <a id="analysis-row"></a>**Analysis row** | One dated decision of the engine (a situation held, a lens reading, a menu pick, a scenario, an abstention), with its run log. |
 | <a id="anchor"></a>**Anchor** | The byte range of a captured document a value was read from. Re-reading it must give back the value. |
-| <a id="as-of"></a>**As of** | The instant a read is made from. A read as of an instant returns only what had become available by then. |
+| <a id="as-of"></a>**As of** | The instant a read is made from. A read as of an instant returns only what had become available by then, and only what Atlas had recorded by the run's own time. |
 | <a id="available-at"></a>**Available at** | On every record: the instant it became available. A fact when it was knowable, a row when it was produced, a scenario when it was registered, a state when it was judged. |
 | <a id="baseline"></a>**Baseline** | The simpler reading a lens must beat to be worth using. |
 | <a id="brick"></a>**Text brick** | A pre-written sentence attached to a situation or a lens reading, with holes for numbers and two or three equivalent variants. |
@@ -22,7 +22,7 @@
 | <a id="frozen-packet"></a>**Frozen packet** | Everything an analysis may see for a subject and a date: the as-of facts and the quantities computed from them, with their anchors. |
 | <a id="judgement-date"></a>**Judgement date** | The release date of the vintage a branch targets for its horizon period, fixed from the publisher's calendar when the branch is registered. |
 | <a id="lens"></a>**Lens** | A named economic explanation on the theory map, with its assumptions, inputs, counterexample, baseline and disconfirming outcomes. The map holds 72. |
-| <a id="menu"></a>**Menu** | A short list of pre-written options for a judgement the card leaves open. Code filters it; a language model returns one option's identifier or abstains; code confirms the pick. |
+| <a id="menu"></a>**Menu** | A short list of pre-written options for a judgement the card leaves open. Code filters it; a language model or an analyst returns one option's identifier or abstains; code confirms the pick. |
 | <a id="mode"></a>**Mode** | Whether a run is live, a replay or a counterfactual. Only live rows count as analysis. |
 | <a id="outcome-definition"></a>**Outcome definition** | What counts as a branch coming true, fixed before the scenario's date. |
 | <a id="point-in-time"></a>**Point in time** | Kept so that any past instant can be replayed with exactly what was knowable then. History from before a source's real-time record is flagged as final data only. |
@@ -31,8 +31,8 @@
 | <a id="registry"></a>**Scenario registry** | The append-only record of every scenario set, its judgement date and its verdicts. |
 | <a id="revision-replay"></a>**Revision replay** | A past report rerun with its cards held fixed on a later vintage of the data, to see what the revisions alone change. |
 | <a id="run-log"></a>**Run log** | What a run could see and used: engine version, card fingerprints, theory catalogue version, model, prompt version, sampling parameters, packet fingerprint, instant, mode. |
-| <a id="scenario"></a>**Scenario set** | At least two conditional branches, each with an observable trigger, an invalidation, an outcome definition, a horizon, a lens and the vintage it targets. |
-| <a id="strength"></a>**Strength** | A branch's ordinal support, weak to strong, set by the card. It becomes a probability only once calibrated on the live record. |
+| <a id="scenario"></a>**Scenario set** | At least two conditional branches, each with an observable trigger, an invalidation, an outcome definition, a horizon, a lens, a probability and the vintage it targets. |
+| <a id="probability"></a>**Branch probability** | The probability a card gives a branch's outcome, given its trigger. Labelled uncalibrated until the live record allows calibration, and scored with the Brier score from the first day. |
 | <a id="situation"></a>**Situation** | A code condition on quantities, declared in a card, such as "core PCE more than half a point above the target". |
 | <a id="verdict"></a>**State of a branch** | Its judgement: void (trigger never fired), invalidated, outcome met, outcome missed, or undecidable. A branch that could be triggered and invalidated at once is a contradictory specification, a card defect. |
 | <a id="vintage"></a>**Vintage** | The version of a series published on a given date. A revision adds a vintage and erases none. |

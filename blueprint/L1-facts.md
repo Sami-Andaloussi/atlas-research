@@ -41,10 +41,15 @@ never edit it.
 | External and currency | Current account, broad dollar index | Current account, franc exchange rates, SNB foreign-currency reserves | Current account, euro exchange rates |
 | Housing | Permits, starts, prices, mortgage rates | Real-estate prices, mortgage rates | House prices |
 
-**Policy frameworks are facts with dates.** A target, its measure and its framework change: the
-Fed adopted an explicit 2 % target in January 2012 and revised its framework in 2020, the ECB moved
-to a symmetric 2 % target in 2021, the SNB defines price stability as CPI inflation below 2 %. A
-card that compares inflation with "the target" reads the target in force on the run's date.
+**Policy frameworks are facts with dates.** A target, its measure, its framework and even the
+meaning of "the policy rate" change. The Fed adopted an explicit 2 % target in January 2012 and
+revised its framework statement in 2020 and again in 2025; the ECB moved to a symmetric 2 % target
+in 2021 and reviewed its strategy in 2025, and steers through its deposit facility rate; the SNB
+equates price stability with CPI inflation below 2 %, deflation excluded, and has set an SNB policy
+rate only since June 2019, after targeting a range for three-month Libor. A card that compares
+inflation with "the target", or reads "the policy rate", reads the definition in force on the run's
+date; for the Fed's target range, the card states whether it reads the midpoint or the effective
+rate.
 
 **Published forecasts are facts about their forecaster.** A projection is stored under the instant
 it was published and the period it targets. It can be read as what the forecaster expected; it is
@@ -56,8 +61,15 @@ and SECO; for the euro area, Eurostat and the ECB. Where a publisher's own relea
 values are anchored to it; ALFRED supplies the vintages the publisher does not keep. An economy
 enters the catalogue only once a real download from each of its sources has succeeded. Inputs with
 no public source (priced policy paths from futures, the cross-currency basis, most emerging-market
-spreads) stay declared as not sourced; a lens that needs them reads without them, says so, or
-abstains.
+spreads) stay declared as not sourced. Where a public proxy exists it is used and named: the New
+York Fed's survey of market participants' expected policy path, Treasury bill and two-year yields.
+Otherwise a lens that needs the input reads without it, says so, or abstains. Some series that FRED
+shows are licensed by their owners; each series records whether it may be redistributed, and the
+export carries only those that may.
+
+**Published estimates have no vintages before Atlas.** Neutral-rate and term-premium estimates are
+re-estimated over their whole history at each update and mostly not archived. Their real-time
+history starts at Atlas's first capture; before it, they are final data only, and flagged.
 
 ## Interfaces
 
@@ -99,20 +111,22 @@ abstains.
 3. **Anchoring.** *Design and execution.* For every value, record the ranges of the value, the series
    label, the series identifier, the place and the period, through a decode path for spreadsheets
    and PDFs ([anchor](data-contracts.md#records)). A value that cannot be anchored is refused.
-4. **Vintages.** *Design.* Capture every vintage where a real-time archive keeps them; elsewhere,
-   start the history at the first capture and flag earlier history as final data only. Flash,
-   advance and later estimates are vintages, each with its release stage. A vintage is created only
-   when a value changes.
-5. **Definitions.** *Design.* Open a new definition version at a method break, a rebasing or a change
-   of composition (the euro area gained Croatia in 2023), so that a series never silently changes
-   meaning.
+4. **Vintages.** *Design.* Capture every vintage where a real-time archive keeps them (ALFRED, the
+   Philadelphia Fed's real-time dataset, the euro area's real-time database); elsewhere, start the
+   history at the first capture and flag earlier history as final data only. Every release event is
+   a vintage with its release stage, flash, advance or later, even when it confirms the previous
+   value.
+5. **Definitions.** *Design.* Open a new definition version at a method break, a rebasing, a change
+   of composition (the euro area gained Croatia in 2023 and Bulgaria in 2026), or a change in what a
+   policy rate means, so that a series never silently changes meaning.
 6. **Four instants.** *Execution.* Store with each value when it was released, when it counts as
    knowable, when it was captured and when it entered, in UTC.
 7. **Absences.** *Design.* Map each publisher's markers to the absence types. A "." that FRED writes
-   on a market holiday is not the same absence as a month that was never collected: the US CPI for
-   October 2025, which the government shutdown left uncollected, is missing for good, while a value
-   whose release date has not come is "not yet released" only until it does, so that type is
-   computed at read time.
+   on a market holiday is not the same absence as a month that was never published: the US CPI for
+   October 2025, which the government shutdown left uncollected, is missing for good, and any pace or
+   year-on-year rate that needs that month is absent too, with the same reason. A value whose release
+   date has not come is "not yet released" only until it does, so that type is computed at read
+   time.
 8. **The read.** *Execution.* One function reads the store, takes an instant and a vintage selector,
    and caps every answer at that instant. There is no other door; the export materialises the same
    function.

@@ -54,9 +54,10 @@ card's order, with the closed operations.
 - Each value carries the anchors of the values it was computed from.
 - What cannot be computed is absent, with a type from the same list as the fact store: a month never
   collected, a hole in the periods, a pace asked of a series of the wrong frequency.
-- **No forecast is read as an observation.** A value whose period ends after the instant is a
-  projection; it is used only where the card reads it as a forecast, attributed to its forecaster
-  and its publication date.
+- **No forecast is read as an observation.** Every fact is typed observation or forecast in the
+  catalogue, which also covers nowcasts of a period that has ended but is not yet released. A
+  forecast is used only where the card reads it as a forecast, attributed to its forecaster and its
+  publication date.
 - A gap between two series is an as-of join on period end: for each period of one, the latest value
   of the other whose period ended at or before it.
 
@@ -68,11 +69,11 @@ No model is involved.
 ### 3. Menu choices
 
 A menu is for a judgement that a threshold cannot make: how a central-bank statement leans, against
-a fixed codebook; which of several mechanisms a card's evidence points to; the tone of a reading.
+a fixed codebook; which of several mechanisms a card's evidence points to.
 
 - **Offer.** Each option declares the conditions under which it is offered. Code filters the menu.
   No option left: abstention. One option left: taken without a model, and counted as a rule.
-- **Ask.** With several options left, the model receives the packet's values, the options' text and,
+- **Ask.** With several options left, the model, or an analyst, receives the packet's values, the options' text and,
   where the card names one, the captured document to read (a statement, the minutes). It returns a
   structured answer: one option identifier, or `ABSTAIN`; and, where the card requires it, a
   quotation given as an anchor into that document.
@@ -84,6 +85,14 @@ a fixed codebook; which of several mechanisms a card's evidence points to; the t
 The prompt, the options offered, the raw response and the sampling parameters are stored with the
 row.
 
+### The analyst's call
+
+A human analyst can make the same judgements, on the same menus. The analyst's pick goes through the
+same offer and confirm conditions, the same quotation check and the same run log, and is stored with
+`decided_by = analyst`. It is scored like any other row. That is how discretionary judgement itself
+becomes data: a human call, a model's pick and a rule can be compared on the same record, and an
+analyst's call on a situation no card covers is exactly what the workshop turns into the next card.
+
 ### 4. Residual checks
 
 An abstention from a menu only covers what the card listed. The residual catches what it did not:
@@ -91,9 +100,11 @@ An abstention from a menu only covers what the card listed. The residual catches
 - a quantity outside its calibrated range;
 - no situation of any lens holding;
 - a scheduled event with no reading: an FOMC, ECB or SNB decision, a major release;
-- a flag raised by a human reader, stored as a typed row.
+- a flag raised by a human reader, stored in its own record against the row or subject it concerns,
+  so the run it comments on is never altered.
 
-Each produces a "not covered" row and a workshop item.
+Each produces a residual item for the workshop; the first three also produce a residual row in the
+run.
 
 ### 5. Storage
 
@@ -106,9 +117,11 @@ counterfactual).
 
 ### 6. Coverage and the residual
 
-Each run computes, for each decision kind, the share decided by rules, by menu choices and
-abstained, and the count of residual items. A card can raise its own coverage by listing easy
-situations; it cannot hide its residual.
+Each run computes, for each decision kind, the share decided by rules, by menu choices (model or
+analyst) and abstained, and the count of residual items. Coverage measures how much of a reading is
+specified in advance and checked, not how good it is; that is the score's job. A card can raise its
+own coverage by listing easy situations; it cannot hide its residual. Residual items are counted
+apart from abstentions, never twice.
 
 ## What the model may and may not do
 

@@ -20,7 +20,10 @@ flowchart TD
     store --> L5["L5 Scenarios and score<br/>registry, verdict at the horizon"]
     L1 -->|targeted vintage| L5
     store --> L6["L6 Outputs<br/>report, comparison, revision replay, export"]
-    L5 -->|verdicts| L6
+    L5 -->|states| L6
+    L3 -->|text bricks| L6
+    L1 -->|documents for citations| L6
+    L1 -.->|history to calibrate on| L3
     L4 -.->|not covered| ws["Workshop queue"]
     L5 -.->|failed scenario| ws
     ws -.-> L3
@@ -45,8 +48,8 @@ Take US inflation on a given date, the subject the build starts with.
    core PCE more than half a point above the target". Code decides which hold
    ([L3](L3-subject-cards.md)). Residual checks flag what the card did not anticipate.
 4. **Choices.** Where no rule decides, such as how the latest FOMC statement leans, code filters a
-   short menu of pre-written options to those that may be offered, and a language model returns
-   one option's identifier, or abstains. Code then checks the pick against the numbers and the
+   short menu of pre-written options to those that may be offered, and a language model, or an
+   analyst, returns one option's identifier, or abstains. Code then checks the pick against the numbers and the
    document.
 5. **Lenses.** The card says which lenses of the theory map read this situation and which values
    each reads: a sticky-price reading, a cost-push reading, a fiscal reading

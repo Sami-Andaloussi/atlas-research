@@ -32,8 +32,9 @@ reword anything stored. A renderer selects and lays out; it has no authority of 
 - **Every scenario shows its trigger, its invalidation, its horizon and its judgement date.**
 - **Its coverage is printed**: how much of the page was decided by rules, by menu choices, and what
   was left uncovered.
-- **Verified, then rendered.** A verifier re-reads every anchor the page will use and signs the
-  list; the renderer reads stored rows only, in a separate step that never held the raw
+- **Verified, then rendered.** A verifier re-reads every anchor the page will use, recomputes every
+  quantity from its input vintages with the closed operations, and signs the list, quoted text
+  included; the renderer reads stored rows only, in a separate step that never held the raw
   observations, and refuses any value the verifier did not sign. A page cannot carry anything the
   store does not hold.
 - **Not investment advice.** A scenario is an analysis, never an order or a recommendation.
@@ -46,15 +47,17 @@ row it shows. That turns three questions that are hard to ask of a document into
 
 ### Compare one report with the next
 
-Between two reports on the same subject, every difference is attributed to its causes, taken in a
-fixed order: revised data, then new data, then a card change, then a menu pick. Each step is a
-counterfactual run that changes one input, reuses the stored model responses wherever its inputs
-are unchanged, and is stored with the mode `counterfactual`. A difference can have several causes:
+Between two reports on the same subject, every difference is attributed to its causes, one input
+at a time, in a fixed order: revised data, then new data, then a card change, then a menu pick. The
+attribution is sequential, so it depends on that order, and the report shows the order it used.
+Each step is a counterfactual run that changes one input; menu picks are never asked again, the
+original pick is reused where its option is still offered and the step abstains otherwise; runs are
+stored with the mode `counterfactual`. A difference can have several causes:
 
 | Cause | Example |
 |---|---|
-| New data | A new CPI release moved core inflation's three-month pace. |
 | Revised data | The previous month's payrolls were revised down. |
+| New data | A new CPI release moved core inflation's three-month pace. |
 | A situation changed | Core PCE crossed half a point above 2 %. |
 | A lens reading changed | The rule-based stance moved from neutral to restrictive. |
 | A menu pick changed | The tone moved from calm to vigilant. |
@@ -64,7 +67,7 @@ are unchanged, and is stored with the mode `counterfactual`. A difference can ha
 A reader sees not only *what* the reading is now, but whether it moved because the world moved,
 because the data were revised, or because the method changed.
 
-### Confront a report with the revisions
+### Check a report against revised data
 
 A past report is replayed with its card versions held fixed, on a later vintage of the same data.
 Menu picks are not asked again, since the model now knows how things turned out: the original pick

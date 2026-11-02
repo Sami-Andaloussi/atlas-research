@@ -62,9 +62,13 @@ the map is itself a choice; publishing the counts lets a reader see where the ma
 question is not confined to one family: a question about the Fed can also draw on the business
 cycle, inflation and fiscal lenses.
 
-The map grows with the cards. The Swiss and euro-area cards will need lenses it does not yet hold,
-such as the franc as a safe haven and exchange-rate intervention; the workshop adds them, with every
-field, before those cards are written ([build sequence](build-sequence.md)).
+**The breadth is a long-run map; the depth follows the build.** Many families serve subjects far
+from the first economies, and the families the first subject needs are deepened first: for US
+inflation and rates, labour-market tightness (vacancies against unemployment), relative-price and
+supply shocks, money growth, de-anchoring expectations, and the term premium. The Swiss and
+euro-area cards will need lenses the map does not yet hold, such as the franc as a safe haven and
+exchange-rate intervention. The workshop adds each, with every field, before the cards that cite it
+are written ([build sequence](build-sequence.md)).
 
 ## What a family declares
 
@@ -94,8 +98,14 @@ financing channel restricts itself to describing liquidity; it does not invent a
 
 ## Four lenses in detail
 
-Central-bank stance, the dollar and currency risk, with the fields every lens declares. The
-contents come from the catalogue; the counterexamples are dated so that they can be checked.
+Central-bank stance, the dollar and currency risk, with the main fields each lens declares (the
+catalogue also holds its outputs, alternatives and tests). Where a dated case is a limit of the lens
+rather than a refutation, it is labelled a hard case.
+
+Two of the four read the **stance** of policy. A stance reading is a measurement, not a forecast:
+central banks tighten because demand and inflation are strong, so strong outcomes after a
+"restrictive" reading do not refute it. A stance lens is judged only through the conditional
+scenarios it supports, each against a forecast made as of the reading date.
 
 ### Rule-based policy stance (Taylor-type)
 
@@ -106,14 +116,14 @@ contents come from the catalogue; the counterexamples are dated so that they can
   enough in real time to bear a rule.
 - **Inputs:** the policy rate; core PCE inflation against the target in force; the output gap or the
   unemployment gap; an assumed neutral real rate.
-- **Counterexample:** at the zero lower bound. In 2009, rules in the family prescribed rates from
-  about zero (Taylor's 1993 weights) to several points below zero (rules with a larger weight on
-  slack), rates no central bank could set. The stance was then carried by guidance and asset
-  purchases, and the rule's gap is read against a shadow rate rather than the policy rate.
+- **Hard case:** the zero lower bound. In 2009, rules in the family prescribed rates from about zero
+  (Taylor's 1993 weights) to several points below zero (rules with a larger weight on slack), rates
+  no central bank could set. The stance was then carried by guidance and asset purchases, and the
+  rule's gap is read against a shadow rate rather than the policy rate.
 - **Baseline:** the policy rate compared with its own recent average.
-- **Disconfirming outcomes:** the reading is judged by what follows it. A "restrictive" reading that
-  is followed, over the next four to eight quarters, by demand and inflation no weaker than a
-  no-change benchmark counts against it; so does a "loose" reading followed by no pick-up.
+- **Disconfirming outcomes:** a "restrictive" reading followed, over four to eight quarters, by
+  demand and inflation no weaker than a forecast made as of the reading date counts against it; so
+  does a "loose" reading followed by nothing stronger than that forecast.
 - **Limitation and robustness:** the prescription moves one for one with the assumed neutral rate
   and the gap estimate, both unobserved and revised. The reading is run across a fixed family of
   rules, on headline and core inflation, and on real-time vintages as well as revised data; the
@@ -121,7 +131,7 @@ contents come from the catalogue; the counterexamples are dated so that they can
 - **Retirement:** demoted to description at the lower bound, or under a framework that is not a
   reaction to inflation and slack.
 - **References:** Taylor (1993); Woodford (2003); Walsh, *Monetary Theory and Policy*; Blanchard
-  (2017).
+  (*Macroeconomics*, 7th edition, 2017).
 
 ### Natural-rate (r\*) gap
 
@@ -131,13 +141,17 @@ contents come from the catalogue; the counterexamples are dated so that they can
   with potential output (Laubach-Williams type) or bracketed by long real forward rates.
 - **Inputs:** the policy rate less expected or core inflation; published estimates of the neutral
   rate with their bands; long real forward rates from inflation-indexed bonds; the output gap.
-- **Counterexample:** the reading a fixed neutral rate gives. From 2009 to 2016 the US real policy
-  rate, measured with core PCE, stayed below zero while core inflation stayed under 2 % in almost
-  every month: consistent with a collapsed neutral rate, not with loose policy. A constant 2 %
-  neutral rate reads that stance backwards, which is why the lens reads the published estimate.
+- **Why it reads an estimate, not a constant:** from 2009 to 2016 the US real policy rate, measured
+  with core PCE, stayed below zero while core inflation stayed under 2 % in almost every month. A
+  constant 2 % neutral rate reads that as loose policy; a collapsed neutral rate reads it as
+  roughly neutral, which is what inflation suggests.
+- **Hard case:** 2023–2024. The real policy rate stood well above published neutral-rate estimates,
+  a clearly restrictive reading, yet US growth stayed solid. Either the stance was less restrictive
+  than read, or the estimates were too low; the lens alone cannot tell which.
 - **Baseline:** the real policy rate against a constant 2 % neutral rate.
-- **Disconfirming outcomes:** a restrictive reading persistently followed by accelerating demand and
-  inflation, or the reverse, across the estimation methods.
+- **Disconfirming outcomes:** a restrictive reading persistently followed by demand and inflation
+  stronger than a forecast made as of the reading date, or the reverse, across the estimation
+  methods.
 - **Limitation and robustness:** estimates are imprecise and revised as new data arrive, and the
   market forward rate mixes the neutral rate with a term premium. The gap is always published with
   its band, from at least two methods, on real-time as well as smoothed estimates; a band that
@@ -155,7 +169,7 @@ contents come from the catalogue; the counterexamples are dated so that they can
 - **Inputs:** the Fed's broad dollar index, against advanced and emerging currencies; the US policy
   path and two-year yield; financial-conditions indices; the cross-currency basis and
   emerging-market spreads where a public source exists.
-- **Counterexample:** March 2020. The broad dollar index rose about 8 % in two weeks to a peak on
+- **Hard case:** March 2020. The broad dollar index rose sharply in two weeks to a peak on
   23 March. The Fed widened its dollar swap lines with other central banks on 15 and 19 March and
   opened a repo facility for foreign central banks on 31 March; funding conditions eased within
   weeks, yet the dollar gave back only part of its gain until mid-year. Official dollar supply can
@@ -177,8 +191,9 @@ contents come from the catalogue; the counterexamples are dated so that they can
   worth constrains borrowing; currency composition is observable below the national aggregate.
 - **Inputs:** liabilities by currency and sector; revenue exposure to tradable prices; credit growth
   and non-performing loans after the depreciation; investment by leverage and currency exposure.
-- **Counterexample:** a large real depreciation followed by faster growth and falling non-performing
-  loans, the expansionary case the lens denies.
+- **Counterexample:** Bleakley and Cowan (2008) found that Latin American firms holding more dollar
+  debt did not invest less than others after depreciations, because they tended to match it with
+  dollar revenues. Where mismatch is hedged by revenues, the lens's channel is absent.
 - **Baseline:** a depreciation read as expansionary through the trade channel alone.
 - **Disconfirming outcomes:** investment by heavily foreign-currency-indebted firms falling no more
   than others' after a depreciation; insolvencies concentrating among borrowers with no
@@ -186,7 +201,8 @@ contents come from the catalogue; the counterexamples are dated so that they can
 - **Limitation and robustness:** hedges written off balance sheet are invisible to it, so exposure
   is measured gross and net of declared hedges, with firms matched on sector and size.
 - **Retirement:** when the currency mismatch closes in the target, which removes the channel.
-- **References:** Krugman (1999); Céspedes, Chang and Velasco (2004).
+- **References:** Krugman (1999); Céspedes, Chang and Velasco (2004); against it, Bleakley and
+  Cowan (2008).
 
 ## Three readings of the same inflation
 
@@ -195,7 +211,7 @@ explanations, and what each would need to see to be wrong:
 
 | Lens | Explains inflation through | What would count against it |
 |---|---|---|
-| New Keynesian sticky prices | expected inflation and real marginal cost, or slack, with staggered price setting as the friction that makes inflation persist | expectations stay anchored and slack is stable, yet a burst of inflation is realised |
+| New Keynesian sticky prices | expected inflation and real marginal cost, with staggered price setting as the friction that makes inflation persist | expectations stay anchored and real marginal cost (unit labour costs, margins) is stable, yet a burst of inflation is realised |
 | Conflict and cost-push | cost shocks, defence of margins, wage-price bargaining | costs and margins rise, yet broad inflation does not propagate |
 | Fiscal theory of the price level | the price level adjusting so that real government debt equals the present value of expected primary surpluses | a measured fall in expected future surpluses, with real yields unchanged, moves neither prices, nor expectations, nor the value of long bonds. Expected surpluses are not observed directly, so this lens is weakly identified and is used to describe, not to score |
 

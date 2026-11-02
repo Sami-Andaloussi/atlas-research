@@ -26,21 +26,22 @@ These are rules checked by code, not guidelines. A scenario set is refused if:
 - **a branch lacks an observable trigger, an invalidation condition, an outcome definition, a
   horizon, a lens, or the vintage it targets.** A branch that cannot be wrong, or cannot be
   credited, cannot be scored;
-- **it was registered after the run that produced it**, or its observation window opens before its
-  registration. What counts as the outcome is fixed when the scenario is written, so the goalposts
+- **it was not registered inside the run that produced it**, the run was not live (started within a
+  declared tolerance of its date), or the release it targets came out before its registration. What counts as the outcome is fixed when the scenario is written, so the goalposts
   cannot move.
 
-Each branch carries a **strength** set by the card: weak, moderate or strong. It is an ordinal
-ranking, not a probability. A branch receives a probability only once the card's strengths have been
-calibrated on the live record, and from then on it is scored with a proper scoring rule (the Brier
-score). "Not enough information" is a valid output.
+Each branch carries a **probability** set by the card for its outcome, given its trigger. It is
+labelled uncalibrated until the live record is long enough to calibrate it, but it is scored from
+the first day with a proper scoring rule (the Brier score). An invalidation may not be defined on the
+outcome's own variable, so a branch cannot escape a miss by invalidating itself. "Not enough
+information" is a valid output.
 
 ## Judging
 
 The judgement date is fixed at registration: the release date, from the publisher's calendar, of the
 vintage the branch targets for its horizon period. A CPI branch with a twelve-month horizon is judged
 when that month's CPI comes out, about two weeks after the month ends. If the release has not come
-out within a stated delay, the branch is undecidable.
+out within the branch's declared maximum delay, the branch is undecidable.
 
 Each branch then takes one state:
 
@@ -52,7 +53,10 @@ Each branch then takes one state:
 | **Outcome missed** | its trigger fired and its outcome definition is not met |
 | **Undecidable** | it could not be observed: a series discontinued, a release missing |
 
-Where a trigger and an invalidation are both observed, the first observed wins. A branch whose trigger
+Triggers and invalidations are read release by release, in the order their values became knowable,
+on the vintage the branch declares for them; where both are observed, the first knowable wins. An
+outcome stated as a change ("higher at six months") is measured from a reference value whose vintage
+the branch also declares. A branch whose trigger
 and invalidation can be met by the same observation is a defect of the card, flagged as a
 **contradictory specification** and sent to the workshop, not judged.
 
@@ -70,9 +74,12 @@ exclusion window; the analogue is then an L4 decision, and Atlas puts it forward
   drawn, each one's closest match outside its exclusion window is found, and the analogue is kept
   only if the real match is closer than all of them. The rank is logged;
 - **the method, tested as a whole, does not find equally good matches in comparison histories**:
-  other economies, and the same series shuffled in blocks. If it does, it is matching noise;
+  the same series shuffled in blocks and, once a second economy is in the store, other economies. If
+  it does, it is matching noise;
 - **it is published with its distance, the number of past states searched and the number of exact
-  ties.**
+  ties**;
+- **and it is scored on what followed.** An analogue implies a path; that path is scored against the
+  baseline like any branch, since a close match that predicts nothing is not worth keeping.
 
 The state vector, the distance and the number of draws are fixed in the card before use and logged
 with every analogue.
@@ -81,21 +88,27 @@ with every analogue.
 
 - **Live only.** Only scenarios produced on their own date count. There is no backtest of reasoning
   ([principle 8](principles.md#8-analysis-is-clean-from-its-production-date)).
-- **Against a benchmark.** Each lens is scored on its fired branches against its own baseline and
-  against named benchmarks: no change, published consensus (the Survey of Professional
-  Forecasters), the central bank's own projections. A set whose branches together cover every
-  outcome earns no credit by that alone, because each branch is compared with what the benchmark
-  expected.
-- **Credited to a mechanism.** A branch names the observable that would show its lens's mechanism at
-  work (wage growth for a cost-push branch, expectations for a sticky-price one). An outcome met
-  without that evidence counts for the outcome, not for the lens.
+- **Against a benchmark for the same event.** When a branch's trigger fires, code computes and stores
+  a benchmark probability for the same outcome, under the same condition, as of that instant: from a
+  simple statistical model of the series (autoregressive, or no change), and from the Survey of
+  Professional Forecasters' probability distributions where their horizon matches. The branch
+  scores only what it adds over the benchmark, so a set whose branches cover every outcome earns
+  nothing by that alone.
+- **Consistent with a mechanism, not proof of it.** A branch names a discriminating observable, one
+  its rival lenses predict differently: profit margins against unit labour costs separate a
+  cost-push reading from a demand-driven one. An outcome met with that evidence is recorded as
+  consistent with the lens; without it, it counts for the outcome only.
+- **Void and invalidated branches are counted.** Their rates are published per card, so a card whose
+  triggers rarely fire, or whose invalidations are broad, shows it.
 - **Honest about overlap.** Monthly scenarios with twelve-month horizons overlap and are
   autocorrelated, so lenses are compared on non-overlapping windows or with errors corrected for
   overlap, and the number of lenses, subjects and horizons tested is recorded: a system that scores
   thousands of branches will find lenses that look good by chance.
-- **Slow by nature.** The NBER dates about a dozen US recessions since 1945; rare events give few test
-  cases. The record starts with the first live report, accumulates forward, and reports its void rate
-  next to its hit rate.
+- **Slow by nature, and said so.** With twelve-month horizons on non-overlapping windows, one
+  subject gives about one independent observation a year, and the NBER dates about a dozen US
+  recessions since 1945. Ranking lenses is a long-run aim, pooled across subjects and economies;
+  what the record gives from the first year is an audit trail, and the comparison of each report
+  with the next.
 
 ## The loop
 
