@@ -6,7 +6,7 @@
 
 Six layers turn public data and economic theory into reports that are themselves data.
 Facts (L1) and knowledge (L2, L3) feed an analysis stored as dated choices (L4), whose scenarios are scored (L5) and whose outputs are assembled from stored rows only (L6).
-Two loops keep it alive: a situation the cards do not cover, and a scenario that fails, both go back to the workshop that writes the cards.
+Two feedback loops send work back to the workshop that writes the cards: situations no card covers, and scenarios that fail.
 
 ## The system in one drawing
 
@@ -78,7 +78,7 @@ Take US inflation on a given date, the subject the build starts with.
 | Scenario registry | L5 | Every registered scenario set, its judgement date and, later, its states. Append-only. |
 | Workshop queue | L3 | Uncovered situations and failed scenarios waiting for a card to be written or revised. |
 
-## Where to find
+## Where to find what
 
 | Topic | Start here |
 |---|---|

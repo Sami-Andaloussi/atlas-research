@@ -5,7 +5,7 @@
 ## TL;DR
 
 For a subject and an instant, the engine freezes what was knowable, computes what the card asks for, and decides in a fixed order: a code rule, else a model's pick from a filtered menu, else "not covered".
-Every decision becomes a dated, typed row with its run log, so an analysis can be queried, compared and scored like a price index.
+Every decision becomes a dated, typed row with its run log, so an analysis can be queried, compared and scored like any other time series.
 No sentence is ever written by the model: it returns an identifier, and code checks every pick.
 
 ## Purpose
@@ -27,7 +27,9 @@ card versions.
 flowchart TD
     in["Subject + instant (as of)"] --> p["Frozen packet<br/>as-of read, quantities computed, anchors carried"]
     p --> res{"Residual checks:<br/>anything the card did not anticipate?"}
-    res -->|yes| ab
+    res -->|yes| resid["Residual item"]
+    resid --> q
+    resid --> row
     p --> r{"A code rule<br/>decides?"}
     r -->|yes| row["Analysis row"]
     r -->|no| m["Menu filtered by code<br/>to the options offered"]
@@ -137,7 +139,7 @@ apart from abstentions, never twice.
 
 A row is not free text, and its kind is declared. The contract distinguishes eleven kinds of claim:
 description, measurement, association, identity, causal effect, causal mechanism, forecast,
-scenario condition, valuation, legal status and normative. Most errors in macro commentary are type
+scenario condition, valuation, legal status and normative. Many errors in macro commentary are type
 errors: a correlation sold as a cause, an accounting identity sold as behaviour, a forecast sold as
 a fact. The kind is set by the card entry and stored on the row; a causal kind is only allowed where
 the card cites the study that identified the effect.

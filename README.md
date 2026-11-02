@@ -1,53 +1,64 @@
 # Atlas Research
 
-**Turning discretionary macro analysis into data.**
+**Macro research as data: every number sourced, every call dated, every scenario scored.**
 
-*Macro research that can be queried, compared and scored against what was actually known at the time.*
-
-> **This repository is the design of Atlas: complete, and to be built.** Each layer states what it
-> takes in, what it hands on, what it refuses and the test it must pass; the
-> [build sequence](blueprint/build-sequence.md) gives the order of construction. Nothing here is
-> investment advice.
+> The full design of Atlas, specified layer by layer before the build. Each layer states what it
+> takes in, what it hands on, what it refuses and the test that proves it works; the
+> [build sequence](blueprint/build-sequence.md) gives the order. Nothing here is investment advice.
 
 ## The idea
 
 A macro research report is a frozen document. It says that inflation is "above target and
-re-accelerating", leans on one or two theories, sketches what could happen next, and is then filed
-away. Six months later nobody can query it, compare it with the report that followed, or check it
-against the data as they stood when it was written, before the statistical offices revised them.
+re-accelerating", leans on one or two theories, sketches what could happen next, and is filed away.
+Six months later nobody can query it, compare it with the report that followed, or check it against
+the data as they stood when it was written, before the statistical offices revised them.
 
-Atlas is designed to write its reports as data. Every number points to the exact place in the source
-document it was read from, and to the moment it became known. Every reading of the situation, every
-theory applied and every scenario is stored as a dated, structured choice, not as prose. A report
-then becomes something that can be:
+Atlas is designed to turn that discretionary analysis, the analyst's reading of the economy, into
+data. Every number points to the exact place in the source it was read from and to the moment it
+became known. Every reading, every theory applied and every scenario is stored as a dated choice,
+not as prose. A report can then be:
 
 - **queried:** every report that read the Fed as restrictive while core inflation was falling;
-- **compared:** what changed between this month's report and last month's, and whether the facts
-  moved or only the reading did;
-- **checked against revised data:** whether a reading still holds once the data it relied on have
-  been revised, and whether its scenarios came true on the release they targeted.
+- **compared:** what changed since last month's report, and whether the facts moved or only the
+  reading did;
+- **checked against revised data:** whether a reading still holds once its data are revised;
+- **scored:** an analyst's call and the rules' call sit side by side, both dated, both judged on the
+  release they targeted.
 
-An analyst's own call goes through the same menus and checks as the machine's, so a human judgement
-becomes a dated row that can be scored next to the rules. The same discipline is what a backtest
-needs: a record of what was knowable on each day, with no hindsight leaking in.
+That is also the record a backtest needs: what was knowable on each day, with no hindsight leaking
+in. For an investor, it is the macro half of a position log: which reading of rates, inflation and
+the cycle was on the table when a position was opened, what would have changed it, and whether it
+held.
 
-**What one stored report looks like** (illustrative):
+**One stored report, illustrated:**
 
-| As of | Element | Value | Source and vintage | Decided by |
+| As of | What was recorded | Value | Source | Decided by |
 |---|---|---|---|---|
-| 2024-06-12 | Core CPI, year on year | 3.4 % | BLS release of 12 June 2024 | Computed |
-| 2024-06-12 | Situation: core PCE more than half a point above the 2 % target | holds | BEA release of 31 May 2024 (April data); card *US · inflation* | Rule |
-| 2024-06-12 | Rule-based stance | restrictive | Fed funds range against a family of Taylor-type rules | Rule |
-| 2024-06-12 | FOMC statement leans | toward holding | FOMC statement of 12 June 2024, quoted by anchor | Menu pick, checked |
-| 2024-06-12 | Branch: if core PCE's three-month pace runs half a point above its trend, core PCE higher six months on | probability 0.6 | Judged on the first release of October 2024 data, out at the end of November | Card scenario |
+| 12 Jun 2024 | Core CPI, year-on-year | 3.4% | BLS, May data, released 12 Jun | Computed |
+| 12 Jun 2024 | Core PCE more than 0.5 pt above the 2% target | true | BEA, April data, released 31 May | Rule |
+| 12 Jun 2024 | Fed policy stance, against Taylor-type rules | restrictive | Fed funds target range, 12 Jun | Rule |
+| 12 Jun 2024 | Lean of the FOMC statement | toward holding | FOMC statement, 12 Jun, passage quoted | Menu pick, checked |
+| 12 Jun 2024 | If core PCE's 3-month pace beats its trend by 0.5 pt: core PCE higher six months on | p = 0.6 | Judged on October data, released late Nov | Card scenario |
 
-## The layers
+Each row says what was known, from where, on which date, and what decided it: a rule in code, a
+pick among pre-written options that code then checks, or a scenario written in advance in the
+subject's *card*, the audited knowledge file for one topic.
+
+## Already in use
+
+The discipline is already applied in [First Thing](https://first-thing-research.com)'s published
+studies in economics: every printed number traced to its script or its source and date, every
+analysis protocol fixed before its result. The proof is in [`first-thing/`](first-thing/); start
+with [FT-001, part 1](first-thing/FT-001-part-1-what-gives-a-money-its-value/). The studies follow
+Atlas's method with their own tools.
+
+## The design
 
 ```mermaid
 flowchart LR
     src["Public sources"] --> L1["L1 Facts<br/>dated, versioned, traced to the source"]
-    L2["L2 Theory map<br/>72 explanations, 23 families"] --> L3["L3 Subject cards<br/>the macro knowledge, written once"]
-    L1 --> L4["L4 Analysis as data<br/>rule, else a pick from a menu, else 'not covered'"]
+    L2["L2 Theory map<br/>competing explanations, each refutable"] --> L3["L3 Subject cards<br/>the macro knowledge, written once"]
+    L1 --> L4["L4 Analysis as data<br/>rule, else a checked pick, else 'not covered'"]
     L3 --> L4
     L1 --> L5
     L4 --> L5["L5 Scenarios and score<br/>judged on the release they targeted"]
@@ -58,61 +69,41 @@ flowchart LR
     L4 -.->|"a situation not covered"| L3
 ```
 
-| Layer | What it holds |
+| Page | What it holds |
 |---|---|
-| [L1 · Facts](blueprint/L1-facts.md) | Public statistics, each value traced to its place in the source document, every revision kept as a new version, and a read "as of" any past moment that cannot see beyond it. |
-| [L2 · Theory map](blueprint/L2-theory-map.md) | A catalogue of 72 named economic explanations in 23 families, most of them competing, each stating what it assumes, a case where it fails, the simpler reading it must beat and what would prove it wrong. Four are worked in detail. |
-| [L3 · Subject cards](blueprint/L3-subject-cards.md) | The macro knowledge for one economy and subject (US inflation, say), written once and audited: the situations to recognise, the theories that read them, pre-written sentences, scenario templates. |
-| [L4 · Analysis as data](blueprint/L4-analysis.md) | For a subject and a date: code decides what it can; where it cannot, a language model or an analyst picks one of a few pre-written options, and code checks the pick; the rest is declared "not covered". |
-| [L5 · Scenarios and score](blueprint/L5-scenarios-score.md) | Conditional scenarios with a trigger, an invalidation and an outcome fixed in advance, judged against a benchmark when the release they targeted comes out. |
-| [L6 · Outputs](blueprint/L6-outputs.md) | Reports assembled word for word from stored choices, report-to-report comparison, re-reading against revised data, and a point-in-time export for quantitative research. |
+| [L1 · Facts](blueprint/L1-facts.md) | Public statistics, each value traced to its place in the source, each revised version (a *vintage*) kept, and the data readable exactly as they stood on any past date. |
+| [L2 · Theory map](blueprint/L2-theory-map.md) | 72 named economic explanations, called *lenses*, in 23 families, each stating what it assumes, where it fails and what would prove it wrong. Four are worked in detail. |
+| [L3 · Subject cards](blueprint/L3-subject-cards.md) | The knowledge for one economy and subject, written once and audited: the situations to recognise, the lenses that read them, pre-written sentences, scenarios. |
+| [L4 · Analysis as data](blueprint/L4-analysis.md) | Code decides what it can; otherwise a language model or an analyst picks one of a few pre-written options, and code checks the pick; the rest is declared "not covered". |
+| [L5 · Scenarios and score](blueprint/L5-scenarios-score.md) | Conditional scenarios fixed in advance, judged against a benchmark when the release they targeted comes out. |
+| [L6 · Outputs](blueprint/L6-outputs.md) | Reports assembled word for word from stored choices, report-to-report comparison, re-reading against revised data, a point-in-time export. |
+| [Overview](blueprint/README.md) · [Principles](blueprint/principles.md) · [Data contracts](blueprint/data-contracts.md) · [Build sequence](blueprint/build-sequence.md) · [Glossary](blueprint/glossary.md) | One report from source to score; the ten rules; records and time; the order of construction; every term. |
 
-## In two minutes
+The build starts with US inflation, then extends to Switzerland (the SNB, the franc) and the euro
+area by adding sources and cards, not by changing the engine.
 
-The rules the design enforces ([glossary](blueprint/glossary.md) for every term):
+## The ten rules
 
-1. **Facts are exact or absent.** A value either traces back to its source document, or it is
-   refused. A missing value is recorded with the kind of absence it is, never as a zero.
-2. **No free text.** Whatever can be scored is a structured choice: a named series, a threshold, a
-   date, an entry of a card. Whatever explains is a pre-written sentence attached to those choices.
-3. **Decisions go in a fixed order:** a code rule where one exists; otherwise a language model or an
-   analyst picks from a short list of pre-written options that code has already filtered, and code
-   checks the pick; otherwise the engine says "not covered", and the gap goes to the workshop that writes the
-   cards.
-4. **Knowledge lives in cards, not in code.** Adding a theory, a threshold or an economy means
-   writing and auditing a card, not reprogramming the engine.
-5. **Several explanations stand side by side.** Atlas holds no single explanatory view. It records
-   which theories read the situation and what each would expect.
-6. **Scenarios can be wrong, and are scored.** Each branch has an observable trigger, an invalidation,
-   an outcome definition and a probability registered before its date, and is credited only for
-   what it adds over a benchmark for the same event.
-7. **Coverage is measured.** Every run reports the share of decisions taken by rules, by menu
-   choices, and what was left uncovered, including situations no card anticipated: a measure of how
-   much of the reading is specified in advance and checked, while the score measures how good it
-   is.
-
-The [blueprint overview](blueprint/README.md) follows one report from the source to its score.
-
-## Reading it layer by layer
-
-| Page | What it answers |
-|---|---|
-| [Blueprint overview](blueprint/README.md) | The whole system in one drawing, and the path of one report. |
-| [Design principles](blueprint/principles.md) | The ten rules every layer follows. |
-| Layer pages, [L1](blueprint/L1-facts.md) to [L6](blueprint/L6-outputs.md) | Purpose, interfaces, gates, steps, deliverables and refusals of each layer. |
-| [Data contracts](blueprint/data-contracts.md) | Identifiers, records, time, the single read, idempotency, replay, a reference stack. |
-| [Build sequence](blueprint/build-sequence.md) | The order of construction, phase by phase, and the gate that closes each phase. |
-| [Glossary](blueprint/glossary.md) | Every term in plain words. |
-
-## First Thing
-
-[First Thing](https://first-thing-research.com) publishes sourced studies in economics. It follows
-the discipline designed for Atlas (every number pinned to its source and its date, every protocol
-fixed before its result, every claim typed by the evidence behind it) and applies it with its own
-tools, not with Atlas's code. The proof behind its published studies, with their protocols, code and data
-manifests, is in [`first-thing/`](first-thing/).
+1. **Exact or absent.** A value traces back to its source, or it is refused; a missing value is
+   recorded with the reason it is missing, never as a zero.
+2. **What was known, when.** Every read names a moment and cannot see past it; a revision adds a
+   vintage and erases nothing.
+3. **No free text.** What can be scored is a structured choice; what explains is a pre-written
+   sentence attached to it.
+4. **Rule, then pick, then abstain.** Code decides first; a model or an analyst only picks from a
+   filtered list; otherwise the engine says "not covered".
+5. **Knowledge in cards, not in code.** Adding a theory or an economy is writing a card, not
+   reprogramming the engine.
+6. **No house view.** Competing explanations are kept side by side; their disagreement is data.
+7. **Falsifiable before its date.** A scenario has a trigger, an invalidation and an outcome fixed in
+   advance, or it is refused.
+8. **Analysis counts from the day it was made.** Facts can be replayed over history; analysis is
+   scored only from the day it was produced.
+9. **The producer is never the judge.** Nothing is accepted on the word of whoever produced it.
+10. **Coverage is measured.** Coverage says how much of the analysis was fixed in advance; the score
+    says whether it was right.
 
 ## Author
 
-[Sami-Andaloussi](https://github.com/Sami-Andaloussi). Corrections are welcome, especially "your
-theory map is missing something".
+Sami Andaloussi, economics student at HEC Lausanne. Corrections are welcome, especially "your
+theory map is missing a lens".

@@ -58,7 +58,7 @@ stored with the mode `counterfactual`. A difference can have several causes:
 |---|---|
 | Revised data | The previous month's payrolls were revised down. |
 | New data | A new CPI release moved core inflation's three-month pace. |
-| A situation changed | Core PCE crossed half a point above 2 %. |
+| A situation changed | Core PCE crossed half a point above 2%. |
 | A lens reading changed | The rule-based stance moved from neutral to restrictive. |
 | A menu pick changed | The tone moved from calm to vigilant. |
 | A card changed | The inflation card moved from one version to the next. |

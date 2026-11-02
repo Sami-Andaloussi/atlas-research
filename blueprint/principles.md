@@ -6,27 +6,27 @@
 
 Ten rules every layer follows.
 Each gives the rule, why it matters, and where it shows.
-They come in pairs of concerns: what counts as a fact, what counts as analysis, who decides, and how the system learns.
+They answer four questions: what counts as a fact (1–2), what counts as analysis (3–5), who decides and how (6–9), and how the system learns (10).
 
 | # | Principle | The rule in one sentence |
 |---|---|---|
 | 1 | [Exact or absent](#1-exact-or-absent) | A value traces back to its bytes, or it is refused; an absence is typed, never a zero. |
 | 2 | [What was known, when](#2-what-was-known-when) | Every read names an instant and cannot see past it; a revision adds a vintage and erases nothing. |
 | 3 | [No free text](#3-no-free-text) | What can be scored is a structured choice; what explains is pre-written text attached to it. |
-| 4 | [Rule, then menu, then abstain](#4-rule-then-menu-then-abstain) | Code decides first; a language model only picks from a filtered menu; otherwise the engine says "not covered". |
+| 4 | [Rule, then pick, then abstain](#4-rule-then-pick-then-abstain) | Code decides first; a language model or an analyst only picks from a filtered menu; otherwise the engine says "not covered". |
 | 5 | [Knowledge in cards, not in code](#5-knowledge-in-cards-not-in-code) | Thresholds, texts, scenarios and menus live in versioned cards; the engine stays generic. |
-| 6 | [No single explanatory view](#6-no-single-explanatory-view) | Competing explanations are kept side by side, and their disagreement is data. |
-| 7 | [Falsifiable before it exists](#7-falsifiable-before-it-exists) | A scenario has an observable trigger, an invalidation and an outcome fixed before its date, or it is refused. |
-| 8 | [Analysis is clean from its production date](#8-analysis-is-clean-from-its-production-date) | Facts can be replayed over all history; analysis is tested only from the day it was produced. |
+| 6 | [No house view](#6-no-house-view) | Competing explanations are kept side by side, and their disagreement is data. |
+| 7 | [Falsifiable before its date](#7-falsifiable-before-its-date) | A scenario has an observable trigger, an invalidation and an outcome fixed before its date, or it is refused. |
+| 8 | [Analysis counts from the day it was made](#8-analysis-counts-from-the-day-it-was-made) | Facts can be replayed over the history archives keep; analysis is scored only from the day it was produced. |
 | 9 | [The producer is never the judge](#9-the-producer-is-never-the-judge) | No card, rule or output is accepted on the word of whoever produced it. |
 | 10 | [Coverage is measured](#10-coverage-is-measured) | Every run says how much came from rules, from menu choices, and what was left uncovered. |
 
 ## 1. Exact or absent
 
 **Rule.** A value in Atlas is the value printed in a captured document, at a known byte range, or
-it is not in Atlas. When a value is missing it is recorded as one of eleven kinds of absence:
-missing, not observed, not applicable, suppressed, censored, below detection limit, withheld,
-invalid, not yet released, inaccessible, or in unresolved conflict.
+it is not in Atlas. A missing value is recorded with the reason it is missing (never published, not
+yet released, suppressed, in conflict between sources...), from a fixed list of eleven kinds in the
+[glossary](glossary.md#absence), never as a zero.
 
 **Why.** A report that cannot show where its number came from cannot be checked, and a zero that
 stands for "we do not know" becomes a fact in every calculation downstream.
@@ -63,7 +63,7 @@ next report's, counted across a thousand reports, and judged when its horizon pa
 **Where it shows.** Text bricks in the cards ([L3](L3-subject-cards.md)), analysis rows
 ([L4](L4-analysis.md)), reports assembled word for word from stored rows ([L6](L6-outputs.md)).
 
-## 4. Rule, then menu, then abstain
+## 4. Rule, then pick, then abstain
 
 **Rule.** Each decision of the engine is taken in this order, without exception:
 
@@ -94,10 +94,10 @@ from a model (an output gap, a neutral-rate estimate) enter as published series,
 **Why.** Extending Atlas to a new subject, a new theory or a new economy should be writing and
 auditing a card, not a change to the engine that could break every subject at once.
 
-**Where it shows.** [L3](L3-subject-cards.md); the build sequence proves it by adding Switzerland
-and the euro area through sources and cards alone ([build sequence](build-sequence.md)).
+**Where it shows.** [L3](L3-subject-cards.md); the build sequence tests it: Switzerland and the
+euro area must be added through sources and cards alone ([phase 7](build-sequence.md)).
 
-## 6. No single explanatory view
+## 6. No house view
 
 **Rule.** Where several lenses of the theory map read a situation, all of them are kept, with what
 each reads and what each would expect. Disagreement between them is stored, not averaged away.
@@ -110,7 +110,7 @@ a card are positions too: they are explicit, justified and versioned, not hidden
 
 **Where it shows.** [L2](L2-theory-map.md); every output names the lenses it used.
 
-## 7. Falsifiable before it exists
+## 7. Falsifiable before its date
 
 **Rule.** A scenario set is refused if it has fewer than two branches, if a branch lacks an
 observable trigger, an invalidation condition, an outcome definition, a horizon or a lens, or if it
@@ -122,13 +122,13 @@ the goalposts move.
 
 **Where it shows.** [L5](L5-scenarios-score.md).
 
-## 8. Analysis is clean from its production date
+## 8. Analysis counts from the day it was made
 
 **Rule.** Facts are clean over the history that real-time archives keep (ALFRED, the Philadelphia
 Fed's real-time dataset, the euro area's real-time database) and from Atlas's first capture
-elsewhere; older history is flagged as final data only. Analysis is cleaner still only from its
-production date: a language model, and whoever writes a card, knows how history turned out. So no
-analysis is scored before the date it was produced, and the export enforces it.
+elsewhere; older history is flagged as final data only. Analysis cannot be replayed that way: a
+language model, and whoever writes a card, already knows how history turned out. So no analysis is
+scored before the date it was produced, and the export enforces it.
 
 **Why.** A backtest of reasoning run today over 2008 would be graded by a model that has read about
 2008, on cards written by people who lived through it. That is hindsight, not evidence.
