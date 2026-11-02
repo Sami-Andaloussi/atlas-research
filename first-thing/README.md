@@ -3,7 +3,7 @@
 First Thing publishes short studies in economics on
 [first-thing-research.com](https://first-thing-research.com): a question readers ask, answered from what economics
 already knows, from history's cases and from analyses of our own. The study itself, with its argument, its charts
-and its calculators, lives on the site. This folder holds what stands behind it, for the sceptic and the specialist.
+and its calculators, lives on the site. This folder holds what stands behind it, for the sceptic and the specialist. First Thing is my project; the studies use the publication's "we".
 
 The studies follow the discipline set out in [Atlas Research](../README.md): every number pinned to its source
 and its date, every protocol fixed before its result, every claim labelled by the kind of evidence behind it. Their code is

@@ -6,7 +6,7 @@
 
 Ten rules every layer follows.
 Each gives the rule, why it matters, and where it shows.
-They answer four questions: what counts as a fact (1–2), what counts as analysis (3–5), who decides and how (6–9), and how the system learns (10).
+They answer five questions: what counts as a fact (1–2), what counts as analysis (3–5), how rival views are kept (6), who decides and how (7–9), and how much is covered (10).
 
 | # | Principle | The rule in one sentence |
 |---|---|---|
